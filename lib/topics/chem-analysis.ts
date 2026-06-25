@@ -856,9 +856,9 @@ The solubility in ammonia is a useful extra test to distinguish the three.
           },
           {
             id: "chem-analysis-bank-qa2-q02",
-            question: "Gas X is evolved when a solid reacts with dilute hydrochloric acid. Gas X turns damp red litmus paper blue. (a) Identify gas X. [1 mark] (b) Write a balanced equation for the reaction that produces gas X if the solid is ammonium carbonate. [2 marks] (c) Describe how you would confirm gas X is NOT carbon dioxide, using a separate test. [2 marks]",
+            question: "Gas X is evolved when a solid is heated. Gas X turns damp red litmus paper blue. (a) Identify gas X. [1 mark] (b) Write a balanced equation for the reaction that produces gas X if the solid is ammonium carbonate. [2 marks] (c) Describe how you would confirm gas X is NOT carbon dioxide, using a separate test. [2 marks]",
             marks: 5,
-            modelAnswer: "(a) Gas X is ammonia (NH3). (b) Ammonium carbonate reacts with hydrochloric acid: (NH4)2CO3(s) + 2HCl(aq) → 2NH4Cl(aq) + H2O(l) + CO2(g). However, the ammonia must come from the ammonium ion reacting with the acid: NH4+(aq) does not directly produce NH3 with HCl (this produces NH4Cl). On reconsideration: heating ammonium carbonate in the presence of HCl — the carbonate reacts with HCl to give CO2, while the ammonium ion in acid would not give NH3. To produce NH3, the ammonium carbonate must be heated alone or with alkali. Corrected: if solid ammonium carbonate is heated: (NH4)2CO3(s) → 2NH3(g) + H2O(g) + CO2(g). (c) To confirm X is NOT CO2: bubble gas X through limewater. If limewater remains clear, CO2 is absent (CO2 would turn limewater milky). Ammonia does NOT turn limewater milky, but does turn damp red litmus blue.",
+            modelAnswer: "(a) Gas X is ammonia (NH3). (b) Ammonium carbonate thermally decomposes on heating: (NH4)2CO3(s) → 2NH3(g) + H2O(g) + CO2(g). (c) To confirm X is NOT CO2: bubble gas X through limewater. If limewater remains clear, CO2 is absent (CO2 would turn limewater milky). Ammonia does NOT turn limewater milky, but does turn damp red litmus blue.",
             markScheme: [
               "Gas X is ammonia / NH3 [1]",
               "Equation for thermal decomposition of ammonium carbonate: (NH4)2CO3 → 2NH3 + H2O + CO2 (balanced, accept arrow instead of equation arrows) [1]",

@@ -623,10 +623,10 @@ Repeat unit: –(CH₂–CH(CH₃))ₙ–
               "CH₄, C₂H₄, C₃H₄ — differ by CH₂ each time",
               "CH₄, C₂H₆, C₃H₈ — differ by CH₂ each time and same functional group",
               "CH₄, C₂H₅OH, CH₃COOH — all contain carbon",
-              "C₂H₄, C₃H₆, C₄H₈ — same general formula but different functional groups",
+              "C₂H₄, C₂H₅OH, CH₃COOH — each differs by one carbon",
             ],
             answerIndex: 1,
-            explanation: "A homologous series requires the same functional group AND successive members differing by CH₂. Option B (alkanes: CH₄, C₂H₆, C₃H₈) meets all criteria. Option A changes from alkenes (no, C₂H₄ is alkene) but mixes series. Option D is actually alkenes (same general formula CₙH₂ₙ and same functional group C=C) — this would also qualify, but option B is the cleaner, unambiguous answer.",
+            explanation: "A homologous series requires the same general formula, the same functional group, and successive members differing by –CH₂–. Option B (alkanes: CH₄, C₂H₆, C₃H₈) meets all criteria: general formula CₙH₂ₙ₊₂, no functional group (saturated), and successive members differ by CH₂. Option A mixes series (CH₄ is an alkane; C₂H₄ is an alkene; C₃H₄ is an alkyne/diene — they do not share the same functional group). Option C mixes completely different series (alkane, alcohol, carboxylic acid). Option D also mixes different series (alkene, alcohol, carboxylic acid) with different functional groups.",
             guideRef: "Homologous Series and Alkanes",
             difficulty: "core",
             hints: [
