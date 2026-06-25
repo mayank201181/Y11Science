@@ -621,7 +621,7 @@ At t = 10 s: s_A = s_B = 200 m. Car A catches Car B after 10 s and 200 m.`,
           },
           {
             id: "phys-motion-bank-mcq1-q02",
-            question: "A straight line on a distance–time graph becomes steeper. This indicates that the object is:",
+            question: "A line on a distance–time graph becomes progressively steeper. This indicates that the object is:",
             options: ["Decelerating", "Stationary", "Travelling at constant speed", "Accelerating"],
             answerIndex: 3,
             explanation: "The gradient of a distance–time graph equals speed. A line becoming steeper means the gradient is increasing, so speed is increasing — the object is accelerating.",
