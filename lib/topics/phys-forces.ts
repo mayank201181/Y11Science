@@ -667,8 +667,8 @@ This applies to all collisions and explosions. It is a consequence of Newton's t
             id: "phys-forces-bank-mcq2-q05",
             question: "A 3 kg object moving at 6 m/s experiences a braking force of 9 N for 2 s. What is its final velocity?",
             options: ["0 m/s", "2 m/s", "4 m/s", "12 m/s"],
-            answerIndex: 1,
-            explanation: "Deceleration a = F/m = 9/3 = 3 m/s². Using v = u + at: v = 6 + (−3)(2) = 6 − 6 = 0? No: v = 6 − 6 = 0 m/s. Wait — that gives 0. Let me recheck: a = 9/3 = 3 m/s² deceleration; v = 6 − 3×2 = 0 m/s. So answer index should be 0. Correcting: answer is 0 m/s, index 0.",
+            answerIndex: 0,
+            explanation: "Deceleration a = F/m = 9/3 = 3 m/s². v = u + at = 6 + (−3)(2) = 6 − 6 = 0 m/s. The object comes to rest exactly after 2 s. Option B arises from using a = 9/6; option C from v = u − F (omitting mass).",
             guideRef: "Newton's Laws of Motion",
             difficulty: "core",
             hints: [
