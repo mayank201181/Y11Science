@@ -790,16 +790,6 @@ This process, called **fermentation**, is exploited commercially:
               "Check: 7.5 × 24 = 180 dm³.",
             ],
             strategy: "unit analysis",
-            solutions: [
-              {
-                label: "Stoichiometric method",
-                steps: [
-                  "Ratio: 1 mol lactic acid → 3 mol O₂",
-                  "Moles of O₂ = 2.5 × 3 = 7.5 mol",
-                  "Volume = 7.5 mol × 24 dm³ mol⁻¹ = 180 dm³",
-                ],
-              },
-            ],
           },
         ],
       },
