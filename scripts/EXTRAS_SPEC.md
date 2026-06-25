@@ -4,11 +4,9 @@ You write ONE extras file that adds engagement features for a topic WITHOUT touc
 content. Extras are separate so answer keys are never at risk.
 
 ## What you write
-A file at `lib/extras/<id>.ts` exporting `export const extras: TopicExtras = {...}` where `topicId`
-equals the topic's id. Then you MUST also add a one-line import + array entry to
-`lib/extras/index.ts` (read it first; append your import and push your `extras` into `EXTRAS_LIST`).
-IMPORTANT: only EDIT `lib/extras/index.ts` by adding your lines — do not remove others' lines.
-(If two of you edit it at once a line may be lost; that's fine, it will be reconciled later.)
+A single file at `lib/extras/<id>.ts` exporting `export const extras: TopicExtras = {...}` where
+`topicId` equals the topic's id. DO NOT edit `lib/extras/index.ts` — the index is generated
+automatically from the files in this directory. Only write your one `lib/extras/<id>.ts` file.
 
 ## The TopicExtras type (from lib/types.ts)
 ```ts
