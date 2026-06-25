@@ -496,8 +496,8 @@ export const chemEnergetics: Topic = {
         question:
           "Methane burns: CH₄(g) + 2O₂(g) → CO₂(g) + 2H₂O(g). Bond energies: C–H = 413, O=O = 498, C=O = 805, O–H = 464 kJ mol⁻¹. What is ΔH?",
         options: [
-          "−802 kJ mol⁻¹",
-          "+802 kJ mol⁻¹",
+          "−818 kJ mol⁻¹",
+          "+818 kJ mol⁻¹",
           "−652 kJ mol⁻¹",
           "+652 kJ mol⁻¹",
         ],
@@ -505,12 +505,7 @@ export const chemEnergetics: Topic = {
         explanation:
           "Bonds broken: 4 × C–H (4 × 413 = 1652) + 2 × O=O (2 × 498 = 996) = 2648 kJ. " +
           "Bonds made: 2 × C=O in CO₂ (2 × 805 = 1610) + 4 × O–H in 2H₂O (4 × 464 = 1856) = 3466 kJ. " +
-          "Wait — let me recount: CO₂ has 2 C=O bonds per molecule, 1 molecule → 2 × 805 = 1610. " +
-          "2H₂O has 2 O–H bonds each, so 4 O–H = 4 × 464 = 1856. Total made = 1610 + 1856 = 3466 kJ. " +
-          "ΔH = 2648 − 3466 = −818 kJ mol⁻¹... but using the given options the closest is −802, which " +
-          "reflects the standard tabulated value. With these exact bond energies: ΔH = 2648 − 3466 = −818 kJ mol⁻¹. " +
-          "The answer −802 kJ mol⁻¹ is the commonly cited experimental value. Using the bond energies given: " +
-          "ΔH = 2648 − 3466 = −818 kJ mol⁻¹. For IGCSE exam purposes −802 kJ mol⁻¹ is the accepted answer for this reaction.",
+          "ΔH = 2648 − 3466 = −818 kJ mol⁻¹. Negative confirms exothermic.",
         guideRef: "Calculating ΔH from Bond Energies",
         difficulty: "challenge",
         hints: [

@@ -116,7 +116,7 @@ export const physSpace: Topic = {
             '<line x1="160" y1="100" x2="160" y2="30" stroke="#475569" stroke-width="1" stroke-dasharray="3,3"/>' +
             '<text x="143" y="68" font-size="7.5" fill="#94a3b8" font-family="sans-serif">r</text>' +
             // Formula
-            '<text x="10" y="185" font-size="8.5" fill="#a78bfa" font-family="sans-serif">v = 2r / T</text>' +
+            '<text x="10" y="185" font-size="8.5" fill="#a78bfa" font-family="sans-serif">v = 2&#x03C0;r / T</text>' +
             '</svg>',
         },
       ],

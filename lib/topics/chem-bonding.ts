@@ -683,7 +683,7 @@ For melting/boiling point questions, always state **which forces must be overcom
               "Methane has a higher relative molecular mass than ammonia",
             ],
             answerIndex: 1,
-            explanation: "Both are simple molecular substances with weak intermolecular forces. Ammonia (Mr = 17) has a lone pair on nitrogen and is a polar molecule, leading to stronger intermolecular attractions (including hydrogen bonding) than the non-polar methane (Mr = 16). This is an extension point — the core answer is that NH₃ has stronger intermolecular forces than CH₄. Option D is wrong: Mr(CH₄) = 16 < Mr(NH₃) = 17, so if anything mass favours CH₄ having a higher bp.",
+            explanation: "Both are simple molecular substances with weak intermolecular forces. Ammonia (Mr = 17) has a lone pair on nitrogen and is a polar molecule, leading to stronger intermolecular attractions (including hydrogen bonding) than the non-polar methane (Mr = 16). This is an extension point — the core answer is that NH₃ has stronger intermolecular forces than CH₄. Option D is wrong: Mr(CH₄) = 16 < Mr(NH₃) = 17, so mass alone would if anything predict NH₃ (not CH₄) to have the higher boiling point — the option's factual premise is incorrect.",
             difficulty: "challenge",
             hints: [
               "Both are simple molecular — so boiling point depends on intermolecular forces.",

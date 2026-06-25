@@ -24,48 +24,7 @@ Together these cells form a physical and biological barrier protecting the delic
       diagrams: [
         {
           caption: "The human breathing system — major structures labelled",
-          svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Diagram of the human breathing system showing trachea, bronchi, bronchioles, alveoli, ribs and diaphragm">
-  <rect width="320" height="200" fill="#0f172a"/>
-  <!-- Trachea -->
-  <rect x="148" y="10" width="24" height="50" rx="4" fill="none" stroke="#38bdf8" stroke-width="2"/>
-  <text x="178" y="36" fill="#b7bce0" font-size="10" font-family="sans-serif">Trachea</text>
-  <!-- Left bronchus -->
-  <path d="M148 60 Q120 75 100 90" fill="none" stroke="#38bdf8" stroke-width="2"/>
-  <!-- Right bronchus -->
-  <path d="M172 60 Q200 75 220 90" fill="none" stroke="#38bdf8" stroke-width="2"/>
-  <!-- Left lung outline -->
-  <ellipse cx="90" cy="120" rx="45" ry="55" fill="#1e3a5f" stroke="#38bdf8" stroke-width="1.5"/>
-  <!-- Right lung outline -->
-  <ellipse cx="230" cy="120" rx="45" ry="55" fill="#1e3a5f" stroke="#38bdf8" stroke-width="1.5"/>
-  <!-- Bronchioles left -->
-  <path d="M100 90 Q85 105 75 115" fill="none" stroke="#34d399" stroke-width="1.5"/>
-  <path d="M100 90 Q95 110 90 125" fill="none" stroke="#34d399" stroke-width="1.5"/>
-  <path d="M100 90 Q110 108 105 122" fill="none" stroke="#34d399" stroke-width="1.5"/>
-  <!-- Bronchioles right -->
-  <path d="M220 90 Q215 105 215 118" fill="none" stroke="#34d399" stroke-width="1.5"/>
-  <path d="M220 90 Q225 108 230 122" fill="none" stroke="#34d399" stroke-width="1.5"/>
-  <path d="M220 90 Q235 105 242 117" fill="none" stroke="#34d399" stroke-width="1.5"/>
-  <!-- Alveoli clusters left -->
-  <circle cx="72" cy="120" r="7" fill="#a78bfa" opacity="0.7"/>
-  <circle cx="87" cy="130" r="7" fill="#a78bfa" opacity="0.7"/>
-  <circle cx="102" cy="128" r="7" fill="#a78bfa" opacity="0.7"/>
-  <!-- Alveoli clusters right -->
-  <circle cx="212" cy="123" r="7" fill="#a78bfa" opacity="0.7"/>
-  <circle cx="228" cy="130" r="7" fill="#a78bfa" opacity="0.7"/>
-  <circle cx="245" cy="122" r="7" fill="#a78bfa" opacity="0.7"/>
-  <!-- Ribs (simplified) -->
-  <path d="M60 85 Q65 70 160 68 Q255 70 260 85" fill="none" stroke="#fbbf24" stroke-width="1" stroke-dasharray="4,3"/>
-  <path d="M55 100 Q60 85 160 83 Q260 85 265 100" fill="none" stroke="#fbbf24" stroke-width="1" stroke-dasharray="4,3"/>
-  <!-- Diaphragm -->
-  <path d="M45 170 Q160 148 275 170" fill="none" stroke="#fb7185" stroke-width="2.5"/>
-  <!-- Labels -->
-  <text x="42" y="108" fill="#b7bce0" font-size="9" font-family="sans-serif">Left lung</text>
-  <text x="225" y="78" fill="#b7bce0" font-size="9" font-family="sans-serif">Right lung</text>
-  <text x="63" y="115" fill="#a78bfa" font-size="8" font-family="sans-serif">Alveoli</text>
-  <text x="118" y="88" fill="#34d399" font-size="8" font-family="sans-serif">Bronchioles</text>
-  <text x="155" y="185" fill="#fb7185" font-size="9" font-family="sans-serif">Diaphragm</text>
-  <text x="268" y="108" fill="#fbbf24" font-size="9" font-family="sans-serif">Ribs</text>
-</svg>`,
+          svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Diagram of the human breathing system showing trachea, bronchi, bronchioles, alveoli, ribs and diaphragm"><rect width="320" height="200" fill="#0f172a"/><rect x="148" y="10" width="24" height="50" rx="4" fill="none" stroke="#38bdf8" stroke-width="2"/><text x="178" y="36" fill="#b7bce0" font-size="10" font-family="sans-serif">Trachea</text><path d="M148 60 Q120 75 100 90" fill="none" stroke="#38bdf8" stroke-width="2"/><path d="M172 60 Q200 75 220 90" fill="none" stroke="#38bdf8" stroke-width="2"/><ellipse cx="90" cy="120" rx="45" ry="55" fill="#1e3a5f" stroke="#38bdf8" stroke-width="1.5"/><ellipse cx="230" cy="120" rx="45" ry="55" fill="#1e3a5f" stroke="#38bdf8" stroke-width="1.5"/><path d="M100 90 Q85 105 75 115" fill="none" stroke="#34d399" stroke-width="1.5"/><path d="M100 90 Q95 110 90 125" fill="none" stroke="#34d399" stroke-width="1.5"/><path d="M100 90 Q110 108 105 122" fill="none" stroke="#34d399" stroke-width="1.5"/><path d="M220 90 Q215 105 215 118" fill="none" stroke="#34d399" stroke-width="1.5"/><path d="M220 90 Q225 108 230 122" fill="none" stroke="#34d399" stroke-width="1.5"/><path d="M220 90 Q235 105 242 117" fill="none" stroke="#34d399" stroke-width="1.5"/><circle cx="72" cy="120" r="7" fill="#a78bfa" opacity="0.7"/><circle cx="87" cy="130" r="7" fill="#a78bfa" opacity="0.7"/><circle cx="102" cy="128" r="7" fill="#a78bfa" opacity="0.7"/><circle cx="212" cy="123" r="7" fill="#a78bfa" opacity="0.7"/><circle cx="228" cy="130" r="7" fill="#a78bfa" opacity="0.7"/><circle cx="245" cy="122" r="7" fill="#a78bfa" opacity="0.7"/><path d="M60 85 Q65 70 160 68 Q255 70 260 85" fill="none" stroke="#fbbf24" stroke-width="1" stroke-dasharray="4,3"/><path d="M55 100 Q60 85 160 83 Q260 85 265 100" fill="none" stroke="#fbbf24" stroke-width="1" stroke-dasharray="4,3"/><path d="M45 170 Q160 148 275 170" fill="none" stroke="#fb7185" stroke-width="2.5"/><text x="42" y="108" fill="#b7bce0" font-size="9" font-family="sans-serif">Left lung</text><text x="225" y="78" fill="#b7bce0" font-size="9" font-family="sans-serif">Right lung</text><text x="63" y="115" fill="#a78bfa" font-size="8" font-family="sans-serif">Alveoli</text><text x="118" y="88" fill="#34d399" font-size="8" font-family="sans-serif">Bronchioles</text><text x="155" y="185" fill="#fb7185" font-size="9" font-family="sans-serif">Diaphragm</text><text x="268" y="108" fill="#fbbf24" font-size="9" font-family="sans-serif">Ribs</text></svg>',
         },
       ],
       keyPoints: [
@@ -102,52 +61,7 @@ During **forced expiration** (e.g., blowing hard), the **internal intercostal mu
       diagrams: [
         {
           caption: "Breathing mechanism — inspiration (left) vs expiration (right)",
-          svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Comparison diagram showing rib and diaphragm positions during inspiration and expiration">
-  <rect width="320" height="200" fill="#0f172a"/>
-  <!-- Divider -->
-  <line x1="160" y1="5" x2="160" y2="195" stroke="#334155" stroke-width="1" stroke-dasharray="5,4"/>
-  <!-- INSPIRATION (left) -->
-  <text x="30" y="18" fill="#38bdf8" font-size="11" font-family="sans-serif" font-weight="bold">INSPIRATION</text>
-  <!-- Ribs out -->
-  <ellipse cx="80" cy="90" rx="55" ry="65" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
-  <!-- Diaphragm flat -->
-  <path d="M30 155 Q80 152 130 155" fill="none" stroke="#fb7185" stroke-width="2.5"/>
-  <!-- Arrows ribs out -->
-  <line x1="20" y1="90" x2="8" y2="90" stroke="#34d399" stroke-width="1.5" marker-end="url(#arr)"/>
-  <line x1="140" y1="90" x2="152" y2="90" stroke="#34d399" stroke-width="1.5" marker-end="url(#arr)"/>
-  <!-- Arrow diaphragm down -->
-  <line x1="80" y1="148" x2="80" y2="162" stroke="#34d399" stroke-width="1.5" marker-end="url(#arr)"/>
-  <text x="14" y="170" fill="#34d399" font-size="9" font-family="sans-serif">Volume increases</text>
-  <text x="18" y="180" fill="#34d399" font-size="9" font-family="sans-serif">Pressure decreases</text>
-  <text x="28" y="190" fill="#38bdf8" font-size="9" font-family="sans-serif">Air flows IN</text>
-  <text x="56" y="110" fill="#b7bce0" font-size="8" font-family="sans-serif">Diaphragm</text>
-  <text x="50" y="120" fill="#b7bce0" font-size="8" font-family="sans-serif">contracts (flat)</text>
-  <!-- EXPIRATION (right) -->
-  <text x="172" y="18" fill="#fb7185" font-size="11" font-family="sans-serif" font-weight="bold">EXPIRATION</text>
-  <!-- Ribs in (smaller ellipse) -->
-  <ellipse cx="240" cy="95" rx="45" ry="57" fill="none" stroke="#fb7185" stroke-width="1.5"/>
-  <!-- Diaphragm domed up -->
-  <path d="M195 148 Q240 130 285 148" fill="none" stroke="#fb7185" stroke-width="2.5"/>
-  <!-- Arrows ribs in -->
-  <line x1="200" y1="95" x2="210" y2="95" stroke="#fbbf24" stroke-width="1.5" marker-end="url(#arr2)"/>
-  <line x1="280" y1="95" x2="270" y2="95" stroke="#fbbf24" stroke-width="1.5" marker-end="url(#arr2)"/>
-  <!-- Arrow diaphragm up -->
-  <line x1="240" y1="140" x2="240" y2="128" stroke="#fbbf24" stroke-width="1.5" marker-end="url(#arr2)"/>
-  <text x="174" y="170" fill="#fbbf24" font-size="9" font-family="sans-serif">Volume decreases</text>
-  <text x="174" y="180" fill="#fbbf24" font-size="9" font-family="sans-serif">Pressure increases</text>
-  <text x="182" y="190" fill="#fb7185" font-size="9" font-family="sans-serif">Air flows OUT</text>
-  <text x="212" y="110" fill="#b7bce0" font-size="8" font-family="sans-serif">Diaphragm</text>
-  <text x="210" y="120" fill="#b7bce0" font-size="8" font-family="sans-serif">relaxes (domed)</text>
-  <!-- Arrow markers -->
-  <defs>
-    <marker id="arr" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
-      <path d="M0,0 L6,3 L0,6 Z" fill="#34d399"/>
-    </marker>
-    <marker id="arr2" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
-      <path d="M0,0 L6,3 L0,6 Z" fill="#fbbf24"/>
-    </marker>
-  </defs>
-</svg>`,
+          svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Comparison diagram showing rib and diaphragm positions during inspiration and expiration"><rect width="320" height="200" fill="#0f172a"/><line x1="160" y1="5" x2="160" y2="195" stroke="#334155" stroke-width="1" stroke-dasharray="5,4"/><text x="30" y="18" fill="#38bdf8" font-size="11" font-family="sans-serif" font-weight="bold">INSPIRATION</text><ellipse cx="80" cy="90" rx="55" ry="65" fill="none" stroke="#38bdf8" stroke-width="1.5"/><path d="M30 155 Q80 152 130 155" fill="none" stroke="#fb7185" stroke-width="2.5"/><line x1="20" y1="90" x2="8" y2="90" stroke="#34d399" stroke-width="1.5" marker-end="url(#arr)"/><line x1="140" y1="90" x2="152" y2="90" stroke="#34d399" stroke-width="1.5" marker-end="url(#arr)"/><line x1="80" y1="148" x2="80" y2="162" stroke="#34d399" stroke-width="1.5" marker-end="url(#arr)"/><text x="14" y="170" fill="#34d399" font-size="9" font-family="sans-serif">Volume increases</text><text x="18" y="180" fill="#34d399" font-size="9" font-family="sans-serif">Pressure decreases</text><text x="28" y="190" fill="#38bdf8" font-size="9" font-family="sans-serif">Air flows IN</text><text x="56" y="110" fill="#b7bce0" font-size="8" font-family="sans-serif">Diaphragm</text><text x="50" y="120" fill="#b7bce0" font-size="8" font-family="sans-serif">contracts (flat)</text><text x="172" y="18" fill="#fb7185" font-size="11" font-family="sans-serif" font-weight="bold">EXPIRATION</text><ellipse cx="240" cy="95" rx="45" ry="57" fill="none" stroke="#fb7185" stroke-width="1.5"/><path d="M195 148 Q240 130 285 148" fill="none" stroke="#fb7185" stroke-width="2.5"/><line x1="200" y1="95" x2="210" y2="95" stroke="#fbbf24" stroke-width="1.5" marker-end="url(#arr2)"/><line x1="280" y1="95" x2="270" y2="95" stroke="#fbbf24" stroke-width="1.5" marker-end="url(#arr2)"/><line x1="240" y1="140" x2="240" y2="128" stroke="#fbbf24" stroke-width="1.5" marker-end="url(#arr2)"/><text x="174" y="170" fill="#fbbf24" font-size="9" font-family="sans-serif">Volume decreases</text><text x="174" y="180" fill="#fbbf24" font-size="9" font-family="sans-serif">Pressure increases</text><text x="182" y="190" fill="#fb7185" font-size="9" font-family="sans-serif">Air flows OUT</text><text x="212" y="110" fill="#b7bce0" font-size="8" font-family="sans-serif">Diaphragm</text><text x="210" y="120" fill="#b7bce0" font-size="8" font-family="sans-serif">relaxes (domed)</text><defs><marker id="arr" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#34d399"/></marker><marker id="arr2" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#fbbf24"/></marker></defs></svg>',
         },
       ],
       keyPoints: [
@@ -185,52 +99,7 @@ All five features work together to maximise the **rate of diffusion** described 
       diagrams: [
         {
           caption: "Alveolus and surrounding capillary — gas exchange across the thin membrane",
-          svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Cross-section diagram showing gas exchange between an alveolus and surrounding blood capillary, with oxygen and carbon dioxide arrows">
-  <rect width="320" height="200" fill="#0f172a"/>
-  <!-- Alveolus -->
-  <ellipse cx="130" cy="100" rx="80" ry="70" fill="#1e3a5f" stroke="#38bdf8" stroke-width="2"/>
-  <text x="90" y="55" fill="#38bdf8" font-size="11" font-family="sans-serif" font-weight="bold">Alveolus</text>
-  <text x="85" y="68" fill="#b7bce0" font-size="9" font-family="sans-serif">(air space)</text>
-  <!-- Alveolar epithelium label -->
-  <text x="190" y="72" fill="#34d399" font-size="9" font-family="sans-serif">Alveolar</text>
-  <text x="190" y="82" fill="#34d399" font-size="9" font-family="sans-serif">epithelium</text>
-  <text x="190" y="92" fill="#34d399" font-size="9" font-family="sans-serif">(1 cell thick)</text>
-  <!-- Capillary wall -->
-  <ellipse cx="230" cy="110" rx="58" ry="48" fill="#7f1d1d" stroke="#fb7185" stroke-width="2"/>
-  <text x="210" y="145" fill="#fb7185" font-size="9" font-family="sans-serif">Capillary</text>
-  <text x="205" y="155" fill="#fb7185" font-size="9" font-family="sans-serif">(1 cell thick)</text>
-  <!-- Red blood cells in capillary -->
-  <ellipse cx="222" cy="108" rx="14" ry="9" fill="#dc2626" opacity="0.8"/>
-  <ellipse cx="248" cy="118" rx="13" ry="8" fill="#dc2626" opacity="0.8"/>
-  <!-- O2 arrow: alveolus to capillary -->
-  <line x1="175" y1="95" x2="210" y2="100" stroke="#34d399" stroke-width="2" marker-end="url(#o2arr)"/>
-  <text x="178" y="88" fill="#34d399" font-size="10" font-family="sans-serif" font-weight="bold">O2</text>
-  <!-- CO2 arrow: capillary to alveolus -->
-  <line x1="208" y1="118" x2="175" y2="115" stroke="#fbbf24" stroke-width="2" marker-end="url(#co2arr)"/>
-  <text x="178" y="130" fill="#fbbf24" font-size="10" font-family="sans-serif" font-weight="bold">CO2</text>
-  <!-- Diffusion distance label -->
-  <line x1="172" y1="103" x2="208" y2="103" stroke="#a78bfa" stroke-width="1" stroke-dasharray="3,2"/>
-  <text x="165" y="140" fill="#a78bfa" font-size="8" font-family="sans-serif">~1-2 um</text>
-  <text x="155" y="150" fill="#a78bfa" font-size="8" font-family="sans-serif">diffusion distance</text>
-  <!-- Moist lining -->
-  <text x="50" y="105" fill="#b7bce0" font-size="8" font-family="sans-serif">Moist</text>
-  <text x="45" y="115" fill="#b7bce0" font-size="8" font-family="sans-serif">lining</text>
-  <!-- Blood flow arrows -->
-  <text x="278" y="85" fill="#b7bce0" font-size="8" font-family="sans-serif">Blood</text>
-  <text x="276" y="94" fill="#b7bce0" font-size="8" font-family="sans-serif">flow</text>
-  <line x1="286" y1="97" x2="286" y2="115" stroke="#b7bce0" stroke-width="1" marker-end="url(#blarr)"/>
-  <defs>
-    <marker id="o2arr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
-      <path d="M0,0 L6,3 L0,6 Z" fill="#34d399"/>
-    </marker>
-    <marker id="co2arr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
-      <path d="M0,0 L6,3 L0,6 Z" fill="#fbbf24"/>
-    </marker>
-    <marker id="blarr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
-      <path d="M0,0 L6,3 L0,6 Z" fill="#b7bce0"/>
-    </marker>
-  </defs>
-</svg>`,
+          svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Cross-section diagram showing gas exchange between an alveolus and surrounding blood capillary, with oxygen and carbon dioxide arrows"><rect width="320" height="200" fill="#0f172a"/><ellipse cx="130" cy="100" rx="80" ry="70" fill="#1e3a5f" stroke="#38bdf8" stroke-width="2"/><text x="90" y="55" fill="#38bdf8" font-size="11" font-family="sans-serif" font-weight="bold">Alveolus</text><text x="85" y="68" fill="#b7bce0" font-size="9" font-family="sans-serif">(air space)</text><text x="190" y="72" fill="#34d399" font-size="9" font-family="sans-serif">Alveolar</text><text x="190" y="82" fill="#34d399" font-size="9" font-family="sans-serif">epithelium</text><text x="190" y="92" fill="#34d399" font-size="9" font-family="sans-serif">(1 cell thick)</text><ellipse cx="230" cy="110" rx="58" ry="48" fill="#7f1d1d" stroke="#fb7185" stroke-width="2"/><text x="210" y="145" fill="#fb7185" font-size="9" font-family="sans-serif">Capillary</text><text x="205" y="155" fill="#fb7185" font-size="9" font-family="sans-serif">(1 cell thick)</text><ellipse cx="222" cy="108" rx="14" ry="9" fill="#dc2626" opacity="0.8"/><ellipse cx="248" cy="118" rx="13" ry="8" fill="#dc2626" opacity="0.8"/><line x1="175" y1="95" x2="210" y2="100" stroke="#34d399" stroke-width="2" marker-end="url(#o2arr)"/><text x="178" y="88" fill="#34d399" font-size="10" font-family="sans-serif" font-weight="bold">O2</text><line x1="208" y1="118" x2="175" y2="115" stroke="#fbbf24" stroke-width="2" marker-end="url(#co2arr)"/><text x="178" y="130" fill="#fbbf24" font-size="10" font-family="sans-serif" font-weight="bold">CO2</text><line x1="172" y1="103" x2="208" y2="103" stroke="#a78bfa" stroke-width="1" stroke-dasharray="3,2"/><text x="165" y="140" fill="#a78bfa" font-size="8" font-family="sans-serif">~1-2 um</text><text x="155" y="150" fill="#a78bfa" font-size="8" font-family="sans-serif">diffusion distance</text><text x="50" y="105" fill="#b7bce0" font-size="8" font-family="sans-serif">Moist</text><text x="45" y="115" fill="#b7bce0" font-size="8" font-family="sans-serif">lining</text><text x="278" y="85" fill="#b7bce0" font-size="8" font-family="sans-serif">Blood</text><text x="276" y="94" fill="#b7bce0" font-size="8" font-family="sans-serif">flow</text><line x1="286" y1="97" x2="286" y2="115" stroke="#b7bce0" stroke-width="1" marker-end="url(#blarr)"/><defs><marker id="o2arr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#34d399"/></marker><marker id="co2arr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#fbbf24"/></marker><marker id="blarr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#b7bce0"/></marker></defs></svg>',
         },
       ],
       keyPoints: [

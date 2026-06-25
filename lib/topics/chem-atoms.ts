@@ -748,7 +748,7 @@ where X = element symbol, A = mass number (top), Z = proton number (bottom).
           {
             id: "chem-atoms-bank-mcq2-q03",
             question: "Naturally occurring lithium consists of ⁶Li (7.5%) and ⁷Li (92.5%). What is the Ar of lithium?",
-            options: ["6.50", "6.93", "6.50", "7.00"],
+            options: ["6.50", "6.93", "6.25", "7.00"],
             answerIndex: 1,
             explanation: "Ar = (6 × 7.5 + 7 × 92.5) ÷ 100 = (45 + 647.5) ÷ 100 = 692.5 ÷ 100 = 6.925 ≈ 6.93. Since ⁷Li dominates, Ar is close to 7 but below it.",
             guideRef: "Relative Atomic Mass from Isotopic Abundances",
@@ -761,9 +761,9 @@ where X = element symbol, A = mass number (top), Z = proton number (bottom).
           {
             id: "chem-atoms-bank-mcq2-q04",
             question: "Which of the following species has the same number of electrons as Ne (Z = 10)?",
-            options: ["Mg²⁺ (Z = 12)", "N³⁻ (Z = 7)", "Na (Z = 11)", "O⁻ (Z = 8)"],
+            options: ["Mg⁺ (Z = 12)", "N³⁻ (Z = 7)", "Na (Z = 11)", "O⁻ (Z = 8)"],
             answerIndex: 1,
-            explanation: "N³⁻: Z = 7, charge = 3−, electrons = 7 + 3 = 10. Mg²⁺: 12 − 2 = 10 electrons — also correct! Wait: check all. Mg²⁺ = 10 electrons. N³⁻ = 10 electrons. Na = 11 electrons. O⁻ = 9 electrons. Both A and B have 10 electrons. However, only option B (N³⁻) is listed as the single correct answer here — checking: N(7) + 3 = 10 ✓ and Mg(12) − 2 = 10 ✓. The question asks which IS isoelectronic with Ne. N³⁻ is the intended IGCSE example. Accept Mg²⁺ as equally valid.",
+            explanation: "N³⁻: Z = 7, charge = 3−, electrons = 7 + 3 = 10. This matches Ne (10 electrons). Mg⁺: 12 − 1 = 11 electrons (not 10). Na: 11 electrons (not 10). O⁻: 8 + 1 = 9 electrons (not 10). Only N³⁻ has 10 electrons, the same as Ne.",
             guideRef: "Ion Formation: Electron Loss and Gain",
             difficulty: "core",
             hints: [

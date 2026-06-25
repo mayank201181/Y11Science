@@ -509,7 +509,7 @@ export const bioCoordination: Topic = {
         questions: [
           {
             id: "bio-coordination-bank-mcq2-q01",
-            question: "During vigorous exercise, body temperature rises. Which combination of responses reduces heat loss from the skin?",
+            question: "During vigorous exercise, body temperature rises. Which combination of responses increases heat loss from the skin?",
             options: [
               "Vasodilation and increased sweating",
               "Vasoconstriction and reduced sweating",

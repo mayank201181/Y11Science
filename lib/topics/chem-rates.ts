@@ -980,13 +980,13 @@ Unreacted N2 and H2 are recycled back into the reactor, so overall conversion is
             id: "chem-rates-bank-qa2-q03",
             question: "RATE GRAPH CHALLENGE: A student investigates the reaction between calcium carbonate and hydrochloric acid. She collects the CO2 gas produced and records volume at regular intervals.\n\nShe performs three experiments:\n- Experiment 1: 5 g large chips, 100 cm³ of 1 mol/dm³ HCl\n- Experiment 2: 5 g powder, 100 cm³ of 1 mol/dm³ HCl\n- Experiment 3: 5 g large chips, 100 cm³ of 2 mol/dm³ HCl\n\n(a) On a sketch of volume vs. time, show all three curves. Label which curve is steepest and which produces the most gas. Explain your reasoning. [5]\n(b) In Experiment 3, the acid is in large excess. Identify the limiting reactant and explain how this affects the final volume of CO2. [2]\n(c) Explain why all three experiments eventually stop producing gas. [1]\n(d) A fourth experiment uses 5 g large chips, 50 cm³ of 1 mol/dm³ HCl (half the volume of Experiment 1). Predict how the final volume of CO2 compares to Experiment 1, and explain your answer. [3]",
             marks: 11,
-            modelAnswer: "(a) Experiment 2 (powder) is steepest — greatest surface area, highest collision frequency, fastest rate. Experiment 3 (higher concentration) is next steepest — more HCl particles per unit volume, more frequent collisions than Experiment 1. Experiment 1 is least steep.\n\nFinal volumes: Experiment 3 produces more CO2 than Experiments 1 and 2 because there is more HCl (2 mol/dm³ vs 1 mol/dm³ in the same volume), so more CaCO3 can react — HCl is the limiting reactant in Experiments 1 and 2 (see part b). Experiments 1 and 2 produce the same final volume (same mass of CaCO3, same moles of HCl).\n\n(b) In Experiment 3, CaCO3 is the limiting reactant because the acid is in large excess. The reaction stops when all 5 g of CaCO3 is consumed. The final volume of CO2 is determined by the 5 g of CaCO3, not by the acid.\n\n(c) The reaction stops when the limiting reactant is completely used up.\n\n(d) In Experiment 4, the acid (50 cm³ of 1 mol/dm³) contains half the moles of HCl compared to Experiment 1 (100 cm³ of 1 mol/dm³). This means HCl becomes the limiting reactant (insufficient to react with all 5 g of CaCO3). The final volume of CO2 in Experiment 4 will be approximately half that of Experiment 1. (Alternatively: the CaCO3 is now in excess — only half of it can react.)",
+            modelAnswer: "(a) Experiment 2 (powder) is steepest — greatest surface area, highest collision frequency, fastest rate. Experiment 3 (higher concentration) is next steepest — more HCl particles per unit volume, more frequent collisions than Experiment 1. Experiment 1 is least steep.\n\nFinal volumes: All three experiments produce the same final volume of CO2. In each experiment, 5 g of CaCO3 (0.05 mol) is used, and the HCl is either exactly stoichiometric (Exps 1 and 2: 0.1 mol HCl, requiring exactly 0.1 mol for 0.05 mol CaCO3) or in excess (Exp 3: 0.2 mol HCl). In all cases CaCO3 is fully consumed and the same moles of CO2 are produced.\n\n(b) In Experiment 3, CaCO3 is the limiting reactant because the acid is in large excess. The reaction stops when all 5 g of CaCO3 is consumed. The final volume of CO2 is determined by the 5 g of CaCO3, not by the acid.\n\n(c) The reaction stops when the limiting reactant is completely used up.\n\n(d) In Experiment 4, the acid (50 cm³ of 1 mol/dm³) contains half the moles of HCl compared to Experiment 1 (100 cm³ of 1 mol/dm³). This means HCl becomes the limiting reactant (insufficient to react with all 5 g of CaCO3). The final volume of CO2 in Experiment 4 will be approximately half that of Experiment 1. (Alternatively: the CaCO3 is now in excess — only half of it can react.)",
             markScheme: [
               "Experiment 2 is steepest / highest initial gradient (1)",
               "Correct reasoning: powder has greatest surface area / more frequent collisions (1)",
-              "Experiment 3 produces most CO2 / has highest plateau (1)",
-              "Correct reasoning: more HCl moles present so more CaCO3 can react / HCl is limiting in Exp 1 and 2 (1)",
-              "Experiments 1 and 2 reach the same final volume (1)",
+              "All three experiments reach the same final volume of CO2 (1)",
+              "Correct reasoning: same mass of CaCO3 (0.05 mol) is the limiting reactant in all three / HCl is stoichiometric or in excess in each case (1)",
+              "Experiment 3 reaches the plateau faster than Experiment 1 / Experiment 2 reaches plateau fastest (1)",
               "CaCO3 is limiting in Experiment 3 (acid in excess) (1)",
               "All 5 g CaCO3 consumed → final volume determined by CaCO3 (1)",
               "Reaction stops when limiting reactant is used up (1)",
@@ -994,12 +994,12 @@ Unreacted N2 and H2 are recycled back into the reactor, so overall conversion is
               "HCl is now limiting / CaCO3 is in excess (1)",
               "Final volume is approximately half that of Experiment 1 (1)"
             ],
-            commonError: "Students assume higher concentration always means more product — it only does so if concentration determines the *amount* of limiting reactant. If the same volume of acid is used at higher concentration, there are more moles of acid, so it may no longer be limiting.",
+            commonError: "Students often assume Experiment 3 produces more CO2 because the HCl concentration is doubled. In fact, CaCO3 is the limiting reactant in all three experiments (or exactly stoichiometric in Exp 1 and 2: 0.05 mol CaCO3 needs exactly 0.10 mol HCl, which is what Exp 1 and 2 provide). All three produce the same final volume of CO2 — only the rate differs.",
             guideRef: "Measuring Rate & Interpreting Rate Graphs",
             difficulty: "challenge",
             hints: [
               "Part (a): for each experiment, identify which variable changes and how that affects rate (gradient). Then separately think about the total amount of CO2 — what limits it?",
-              "Part (a): moles of HCl in Exp 1 and 2 = 0.1 dm³ × 1 mol/dm³ = 0.1 mol. In Exp 3 = 0.1 dm³ × 2 mol/dm³ = 0.2 mol. Does the same mass of CaCO3 react completely in each case?",
+              "Part (a): moles of HCl in Exp 1 and 2 = 0.1 dm³ × 1 mol/dm³ = 0.1 mol; moles CaCO3 = 5/100 = 0.05 mol. The equation CaCO3 + 2HCl → ... needs 0.10 mol HCl for 0.05 mol CaCO3 — exactly stoichiometric in Exp 1 and 2. In Exp 3, 0.2 mol HCl reacts with 0.05 mol CaCO3 (acid in excess, CaCO3 limiting). All three produce the same amount of CO2.",
               "Part (d): moles of HCl in Exp 4 = 0.05 dm³ × 1 mol/dm³ = 0.05 mol. Compare to Exp 1.",
               "When the amount of limiting reactant halves, the amount of product halves too."
             ],
@@ -1010,7 +1010,7 @@ Unreacted N2 and H2 are recycled back into the reactor, so overall conversion is
                 steps: [
                   "Exp 1: moles HCl = 0.100 dm³ × 1.00 mol/dm³ = 0.100 mol",
                   "Exp 2: same as Exp 1 → same moles HCl → same final volume",
-                  "Exp 3: moles HCl = 0.100 dm³ × 2.00 mol/dm³ = 0.200 mol (acid in excess, CaCO3 limiting)",
+                  "Exp 3: moles HCl = 0.100 dm³ × 2.00 mol/dm³ = 0.200 mol (acid in excess, CaCO3 limiting → same final CO2 as Exp 1)",
                   "Exp 4: moles HCl = 0.050 dm³ × 1.00 mol/dm³ = 0.050 mol (half of Exp 1 → half the CO2)"
                 ]
               }

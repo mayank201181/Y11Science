@@ -668,7 +668,7 @@ Both ions are absorbed from soil solution by active transport — an energy-requ
           {
             label: "Method: interpreting a graph then designing an experiment",
             steps: [
-              "Read off the data: 40 cm and 80 cm both give 10 bubbles/min — no change despite halving the light intensity at 80 cm.",
+              "Read off the data: 40 cm and 80 cm both give 10 bubbles/min — no change despite quartering the light intensity at 80 cm (doubling the distance reduces intensity to one quarter, since intensity ∝ 1/distance²).",
               "A flat section means that factor (light) is no longer limiting — something else controls the rate.",
               "To test CO₂: add NaHCO₃ to the water (cheap, safe CO₂ source) and repeat the bubble count at 40 cm.",
               "If the rate rises, CO₂ was limiting. If it stays at 10 bubbles/min, temperature is probably limiting.",

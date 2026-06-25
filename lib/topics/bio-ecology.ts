@@ -156,7 +156,7 @@ export const bioEcology: Topic = {
         "Heat dissipates into the environment and cannot be recaptured by organisms. " +
         "This unidirectional loss is why energy must continuously enter ecosystems from the Sun.",
       thinkDeeper:
-        "If transfer efficiency rose from 10% to 20%, a 4-level chain starting with 10 000 kJ would deliver 160 kJ to TL4 instead of 10 kJ. " +
+        "If transfer efficiency rose from 10% to 20%, a 4-level chain starting with 10 000 kJ would deliver 80 kJ to TL4 instead of 10 kJ. " +
         "Could this support a fifth trophic level? Work through the numbers for both efficiencies and decide.",
       strategies: ["Apply 10% rule at each step", "Identify energy loss routes", "Always label units (kJ/m²/yr)"],
     },

@@ -114,7 +114,7 @@ export const chemElectrochemistry: Topic = {
             // Beaker
             '<rect x="40" y="62" width="240" height="118" rx="6" fill="none" stroke="#fbbf24" stroke-width="2"/>' +
             '<rect x="50" y="72" width="220" height="98" rx="3" fill="#1c2a3a" opacity="0.9"/>' +
-            '<text x="160" y="185" font-size="8" fill="#fbbf24" font-family="sans-serif" text-anchor="middle">Molten PbBr2 (950 C)</text>' +
+            '<text x="160" y="185" font-size="8" fill="#fbbf24" font-family="sans-serif" text-anchor="middle">Molten PbBr2 (~400 C)</text>' +
             // Carbon anode (left +)
             '<rect x="70" y="64" width="18" height="80" rx="2" fill="#475569"/>' +
             '<text x="79" y="58" font-size="10" fill="#38bdf8" font-family="sans-serif" text-anchor="middle">+</text>' +

@@ -572,7 +572,7 @@ Bacteria in the mouth (especially *Streptococcus mutans*) feed on sugars and pro
         question: "Explain why the stomach produces both pepsin and hydrochloric acid. [4 marks]",
         marks: 4,
         modelAnswer:
-          "The stomach produces pepsin, which is a protease enzyme that digests proteins by hydrolysingpeptide bonds, breaking proteins into shorter peptides and amino acids. Hydrochloric acid (HCl) creates the strongly acidic conditions (pH ≈ 2) in the stomach lumen, which is the optimal pH for pepsin to work efficiently. HCl also kills most bacteria and other pathogens that enter with food, protecting against infection. Additionally, HCl denatures proteins, unfolding them and making their peptide bonds more accessible to pepsin.",
+          "The stomach produces pepsin, which is a protease enzyme that digests proteins by hydrolysing peptide bonds, breaking proteins into shorter peptides and amino acids. Hydrochloric acid (HCl) creates the strongly acidic conditions (pH ≈ 2) in the stomach lumen, which is the optimal pH for pepsin to work efficiently. HCl also kills most bacteria and other pathogens that enter with food, protecting against infection. Additionally, HCl denatures proteins, unfolding them and making their peptide bonds more accessible to pepsin.",
         markScheme: [
           "Pepsin is a protease / digests proteins into peptides / amino acids",
           "HCl provides optimal (acidic) pH for pepsin activity",
