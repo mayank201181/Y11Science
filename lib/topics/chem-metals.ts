@@ -92,7 +92,7 @@ Potassium (K) > Sodium (Na) > Calcium (Ca) > Magnesium (Mg) > Aluminium (Al) > *
 **Reactions with cold water and steam:**
 - K, Na, Ca react vigorously with cold water: e.g. 2Na(s) + 2H₂O(l) → 2NaOH(aq) + H₂(g)
 - Mg reacts slowly with cold water but vigorously with steam: Mg(s) + H₂O(g) → MgO(s) + H₂(g)
-- Zn and Fe react only with steam (not cold water): e.g. Fe(s) + H₂O(g) → FeO(s) + H₂(g)
+- Zn and Fe react only with steam (not cold water): e.g. 3Fe(s) + 4H₂O(g) → Fe₃O₄(s) + 4H₂(g)
 - Cu, Ag, Au do not react with water or steam.
 
 **Reactions with dilute acids (e.g. dilute H₂SO₄ or HCl):**
@@ -876,14 +876,14 @@ Recycling metals uses far less energy than extracting them from ores. For alumin
             question: "The reactivity series can be determined by observing reactions of metals with water and dilute acids.\n(a) Write a balanced equation, including state symbols, for the reaction of sodium with cold water. [2]\n(b) Calcium also reacts with cold water. A student claims that sodium is more reactive than calcium based on the observation that sodium reacts more vigorously. Describe one further piece of experimental evidence that could support this ordering. [2]\n(c) Iron reacts with steam but not with cold water. Write a balanced equation for this reaction. [2]",
             marks: 6,
             modelAnswer:
-              "(a) 2Na(s) + 2H₂O(l) → 2NaOH(aq) + H₂(g)\n\n(b) Any one of: React both metals with the same dilute acid and measure the temperature rise — sodium should give a larger temperature rise. OR collect and measure the volume of hydrogen gas produced per unit time — sodium produces gas faster. OR observe that sodium ignites/melts on the water surface whereas calcium simply fizzes steadily.\n\n(c) Fe(s) + H₂O(g) → FeO(s) + H₂(g) [or Fe₃O₄ formed with excess steam: 3Fe + 4H₂O → Fe₃O₄ + 4H₂]",
+              "(a) 2Na(s) + 2H₂O(l) → 2NaOH(aq) + H₂(g)\n\n(b) Any one of: React both metals with the same dilute acid and measure the temperature rise — sodium should give a larger temperature rise. OR collect and measure the volume of hydrogen gas produced per unit time — sodium produces gas faster. OR observe that sodium ignites/melts on the water surface whereas calcium simply fizzes steadily.\n\n(c) 3Fe(s) + 4H₂O(g) → Fe₃O₄(s) + 4H₂(g)",
             markScheme: [
               "(a) 2Na + 2H₂O → 2NaOH + H₂",
               "(a) Correct state symbols: (s), (l), (aq), (g)",
               "(b) Any valid comparative experiment: temperature rise / rate of gas production / vigour of reaction in acid / visual observation with water",
               "(b) Prediction stated (sodium gives larger/faster result)",
-              "(c) Fe + H₂O → FeO + H₂ (balanced) / Fe₃O₄ version also acceptable with balance",
-              "(c) State symbols: Fe(s) + H₂O(g) → FeO(s) + H₂(g)",
+              "(c) 3Fe + 4H₂O → Fe₃O₄ + 4H₂ (balanced)",
+              "(c) State symbols: 3Fe(s) + 4H₂O(g) → Fe₃O₄(s) + 4H₂(g)",
             ],
             commonError: "Students write H₂O(l) instead of H₂O(g) for the steam reaction with iron — steam is a gas, not a liquid. Also, NaOH is often omitted from the sodium + water equation.",
             guideRef: "The Reactivity Series",
