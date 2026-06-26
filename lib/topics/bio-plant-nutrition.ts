@@ -717,39 +717,29 @@ Both ions are absorbed from soil solution by active transport — an energy-requ
         questions: [
           {
             id: "bio-plant-nutrition-bm1-01",
-            question:
-              "What is the word equation for photosynthesis?",
-            options: [
-              "glucose + oxygen → carbon dioxide + water",
-              "carbon dioxide + water → glucose + oxygen",
-              "glucose + water → carbon dioxide + oxygen",
-              "oxygen + carbon dioxide → water + glucose",
-            ],
-            answerIndex: 1,
+            question: "Which gas is produced as a by-product of photosynthesis?",
+            options: ["Carbon dioxide", "Nitrogen", "Oxygen", "Water vapour"],
+            answerIndex: 2,
             explanation:
-              "Photosynthesis uses carbon dioxide and water as reactants, and produces glucose and oxygen. Glucose + oxygen → carbon dioxide + water is the word equation for respiration (the reverse process).",
+              "During photosynthesis, water molecules are split (photolysis) and the oxygen atoms are released as O₂ gas. This is why aquatic plants produce visible bubbles of oxygen when photosynthesising.",
             guideRef: "The Photosynthesis Equation",
             difficulty: "warmup",
           },
           {
-            id: "bio-plant-nutrition-bank-mcq1-q02",
+            id: "bio-plant-nutrition-bm1-02",
             question:
-              "Which of the following is NOT an adaptation of the palisade mesophyll for photosynthesis?",
+              "Which of the following correctly describes the role of chlorophyll in photosynthesis?",
             options: [
-              "Cells are closely packed near the upper surface.",
-              "Cells contain many chloroplasts.",
-              "Large air spaces between cells allow gas exchange.",
-              "Column shape allows more cells to be stacked near the top.",
+              "It provides carbon atoms used to build glucose.",
+              "It absorbs light energy and transfers it to chemical reactions.",
+              "It directly reacts with CO₂ to produce glucose.",
+              "It transports glucose from leaves to roots.",
             ],
-            answerIndex: 2,
+            answerIndex: 1,
             explanation:
-              "Large air spaces are a feature of the SPONGY mesophyll, not the palisade mesophyll. The palisade cells are tightly packed with few air spaces. All other options correctly describe palisade mesophyll adaptations.",
-            guideRef: "Leaf Structure and Adaptations",
-            difficulty: "core",
-            hints: [
-              "Which layer of the leaf has large air spaces?",
-              "Think about the difference between palisade and spongy mesophyll layers.",
-            ],
+              "Chlorophyll is a pigment that absorbs light energy (mainly red and blue wavelengths) and transfers it to the chemical reactions of photosynthesis. It does not provide carbon atoms, directly react with CO₂, or transport glucose.",
+            guideRef: "Uses of Glucose and Role of Chlorophyll",
+            difficulty: "warmup",
           },
           {
             id: "bio-plant-nutrition-bank-mcq1-q03",

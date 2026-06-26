@@ -583,7 +583,7 @@ White light is a mixture of all visible wavelengths (colours). When it enters a 
   questionBank: {
     mcqPapers: [
       {
-        id: "phys-waves-bank-mcq-1",
+        id: "phys-waves-bankmcq-1",
         title: "Waves & Light — MCQ Paper 1",
         description: "Six multiple-choice questions covering wave properties, wave equation, and reflection.",
         questions: [

@@ -468,7 +468,7 @@ Actual size = Image size / Magnification = 24 mm / 400 = 0.06 mm = 60 µm.
   questionBank: {
     mcqPapers: [
       {
-        id: "bio-cells-bank-mcq-1",
+        id: "bio-cells-bankmcq-1",
         title: "Cell Structure MCQ Paper 1",
         description: "6 multiple-choice questions covering animal, plant and bacterial cells.",
         questions: [

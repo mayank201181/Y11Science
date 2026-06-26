@@ -465,480 +465,1735 @@ export const physNuclear: Topic = {
   questionBank: {
     mcqPapers: [
       {
-        id: "phys-nuclear-bank-mcq-1",
-        title: "Nuclear Physics MCQ Paper 1",
-        description: "6 multiple-choice questions covering the nuclear model, radiation types and decay equations.",
+        id: "phys-nuclear-bankmcq-1",
+        title: "Question Bank — MCQ Paper 1",
         questions: [
           {
-            id: "phys-nuclear-bank-mcq1-q01",
-            question:
-              "Which of the following correctly describes the nuclear atom according to the Rutherford model?",
-            options: [
-              "Positive charge spread evenly throughout a sphere with electrons embedded in it",
-              "A tiny, dense, positively charged nucleus surrounded by electrons at a relatively large distance",
-              "A tiny, dense, negatively charged nucleus with protons orbiting it",
-              "A diffuse cloud of protons with electrons in the centre",
-            ],
-            answerIndex: 1,
+            id: "phys-nuclear-bm1-01",
+            question: "Approximately how many times larger is the diameter of an atom than the diameter of its nucleus?",
+            options: ["About 10 times", "About 100 times", "About 10 000 times", "About 1 000 000 times"],
+            answerIndex: 2,
             explanation:
-              "Rutherford's nuclear model: tiny dense positive nucleus (containing protons and neutrons), with electrons orbiting at much greater distances. The plum-pudding (option A) was the model Rutherford's experiment disproved.",
+              "The atom is about 10 raised to the minus 10 m across, while the nucleus is about 10 raised to the minus 14 m across. The ratio is therefore about 10 000 to 1, which is why the atom is described as mostly empty space.",
             difficulty: "warmup",
             guideRef: "The Nuclear Model of the Atom",
           },
           {
-            id: "phys-nuclear-bank-mcq1-q02",
-            question: "Which pair of atoms are isotopes of the same element?",
-            options: ["¹²₆C and ¹⁴₇N", "²³⁵₉₂U and ²³⁸₉₂U", "⁴₂He and ⁴₄Be", "¹H and ²He"],
+            id: "phys-nuclear-bm1-02",
+            question: "In the Geiger-Marsden experiment, what was used to detect the alpha particles after they passed the gold foil?",
+            options: [
+              "A photographic plate that turned black",
+              "A zinc-sulfide screen that produced tiny flashes of light",
+              "A magnetic compass needle",
+              "A glass thermometer",
+            ],
             answerIndex: 1,
             explanation:
-              "Isotopes must have the same proton number (Z). Both ²³⁵₉₂U and ²³⁸₉₂U have Z = 92 (uranium) — they differ only in nucleon number (neutron count). The other pairs have different Z values.",
+              "A movable zinc-sulfide (scintillation) screen produced a small flash of light each time an alpha particle struck it, allowing the scientists to count particles at different angles.",
+            difficulty: "warmup",
+            guideRef: "The Nuclear Model of the Atom",
+          },
+          {
+            id: "phys-nuclear-bm1-03",
+            question: "How many neutrons are present in a nucleus of carbon-14, written as the nuclide with nucleon number 14 and proton number 6?",
+            options: ["6", "8", "14", "20"],
+            answerIndex: 1,
+            explanation:
+              "Neutron number N = A minus Z = 14 minus 6 = 8. The proton number tells you the element (carbon); the nucleon number minus the proton number gives the neutrons.",
             difficulty: "warmup",
             guideRef: "Proton Number, Nucleon Number and Isotopes",
           },
           {
-            id: "phys-nuclear-bank-mcq1-q03",
-            question: "A student uses a Geiger counter near a radioactive source and records a count rate of 240 counts/min, then shields the source with a sheet of paper and the count rate drops to 30 counts/min. Which conclusion is correct?",
+            id: "phys-nuclear-bm1-04",
+            question: "Which statement about isotopes of the same element is correct?",
             options: [
-              "The source emits only gamma radiation",
-              "The source emits only beta radiation",
-              "The source emits alpha radiation (and possibly beta/gamma)",
-              "The paper has absorbed all the radiation",
-            ],
-            answerIndex: 2,
-            explanation:
-              "Paper stops alpha radiation. A large reduction in count rate when paper is added indicates an alpha component. Beta and gamma would largely pass through paper, so the remaining 30 counts/min could be beta and/or gamma. We cannot conclude there is ONLY alpha from this one experiment.",
-            difficulty: "core",
-            guideRef: "Types of Nuclear Radiation",
-            hints: [
-              "Which radiation type is stopped by paper?",
-              "The count rate does not drop to zero — some radiation still passes through.",
-            ],
-          },
-          {
-            id: "phys-nuclear-bank-mcq1-q04",
-            question:
-              "Which nuclear equation is correctly balanced for alpha decay?\n(i) ²²⁶₈₈Ra → ²²²₈₆Rn + ⁴₂He\n(ii) ²¹⁰₈₃Bi → ²¹⁰₈₄Po + ⁰₋₁e\n(iii) ²³⁸₉₂U → ²³⁴₉₀Th + ⁴₂He",
-            options: [
-              "Only (i) is an alpha decay equation that balances",
-              "Only (iii) is an alpha decay equation that balances",
-              "Both (i) and (iii) are correctly balanced alpha decay equations",
-              "(ii) is the only balanced equation shown",
-            ],
-            answerIndex: 2,
-            explanation:
-              "(i) Ra-226: 226 = 222 + 4 ✓; 88 = 86 + 2 ✓. Alpha decay. (iii) U-238: 238 = 234 + 4 ✓; 92 = 90 + 2 ✓. Alpha decay. (ii) is beta decay (not alpha). So both (i) and (iii) are correctly balanced alpha equations.",
-            difficulty: "core",
-            guideRef: "Radioactive Decay and Nuclear Equations",
-            hints: [
-              "Check both A and Z are conserved in each equation.",
-              "Alpha decay emits ⁴₂He; beta decay emits ⁰₋₁e.",
-              "Check (i): 226 = 222+4 and 88 = 86+2.",
-            ],
-          },
-          {
-            id: "phys-nuclear-bank-mcq1-q05",
-            question:
-              "The activity of a radioactive sample falls from 6400 Bq to 400 Bq in 48 hours. What is the half-life of the isotope?",
-            options: ["4 hours", "8 hours", "12 hours", "16 hours"],
-            answerIndex: 2,
-            explanation:
-              "6400/400 = 16 = 2⁴, so 4 half-lives elapsed in 48 hours. t½ = 48 ÷ 4 = 12 hours. (Sequential check: 6400 → 3200 → 1600 → 800 → 400, four halvings.)",
-            difficulty: "core",
-            guideRef: "Half-Life",
-            hints: [
-              "Find the ratio: 6400/400 = 16.",
-              "Express 16 as a power of 2: 16 = 2⁴, so n = 4 half-lives.",
-              "t½ = total time / number of half-lives = 48/4.",
-            ],
-          },
-          {
-            id: "phys-nuclear-bank-mcq1-q06",
-            question:
-              "Why is gamma radiation used for sterilising medical equipment rather than alpha radiation?",
-            options: [
-              "Alpha cannot ionise atoms in bacteria",
-              "Gamma has greater penetrating power and can sterilise equipment inside sealed packaging",
-              "Alpha would make the equipment radioactive",
-              "Gamma is the cheapest type of radiation to produce",
+              "They have the same number of neutrons but different numbers of protons",
+              "They have the same number of protons but different numbers of neutrons",
+              "They have different chemical properties",
+              "They always have the same nucleon number",
             ],
             answerIndex: 1,
             explanation:
-              "Gamma radiation can penetrate the sealed packaging and the equipment itself, killing bacteria throughout. Alpha particles would be stopped by the packaging material and never reach the equipment inside. Ionising ability is not the issue — alpha actually ionises more — but penetration is the key factor.",
+              "Isotopes have the same proton number Z (so they are the same element with the same chemistry) but different numbers of neutrons, giving different nucleon numbers A.",
             difficulty: "core",
+            guideRef: "Proton Number, Nucleon Number and Isotopes",
+            hints: [
+              "What single quantity defines which element an atom is?",
+              "Isotopes share that quantity but differ in another nuclear particle.",
+              "Same protons, different neutrons.",
+            ],
+          },
+          {
+            id: "phys-nuclear-bm1-05",
+            question: "Which type of radiation is an electromagnetic wave and carries no charge?",
+            options: ["Alpha", "Beta", "Gamma", "Neutron"],
+            answerIndex: 2,
+            explanation:
+              "Gamma radiation is a high-frequency electromagnetic wave (a photon). It has no mass and no charge, so it is not deflected by electric or magnetic fields.",
+            difficulty: "warmup",
+            guideRef: "Types of Nuclear Radiation",
+          },
+          {
+            id: "phys-nuclear-bm1-06",
+            question: "A beam containing alpha, beta and gamma radiation passes between two charged metal plates, with the left plate positive and the right plate negative. Which radiation bends towards the negative (right) plate?",
+            options: ["Alpha", "Beta", "Gamma", "None of them bend"],
+            answerIndex: 0,
+            explanation:
+              "Alpha particles carry charge +2, so they are attracted towards the negative plate (to the right). Beta particles are negative and bend the opposite way; gamma has no charge and goes straight.",
+            difficulty: "core",
+            guideRef: "Types of Nuclear Radiation",
+            hints: [
+              "Opposite charges attract.",
+              "Alpha is positive (+2), beta is negative (-1), gamma is neutral.",
+              "A positive particle is pulled towards the negative plate.",
+            ],
+          },
+          {
+            id: "phys-nuclear-bm1-07",
+            question: "Radium-226 (proton number 88) decays by alpha emission. What is the proton number of the daughter nucleus?",
+            options: ["84", "86", "88", "90"],
+            answerIndex: 1,
+            explanation:
+              "Alpha decay reduces the proton number by 2: 88 minus 2 = 86. The daughter is radon (Rn). The nucleon number falls from 226 to 222.",
+            difficulty: "core",
+            guideRef: "Radioactive Decay and Nuclear Equations",
+            hints: [
+              "An alpha particle carries away 2 protons and 2 neutrons.",
+              "Z decreases by 2 in alpha decay.",
+              "88 minus 2 = 86.",
+            ],
+          },
+          {
+            id: "phys-nuclear-bm1-08",
+            question: "A sample starts with a count rate of 800 counts/min and the half-life is 4 days. What is the count rate after 12 days?",
+            options: ["400 counts/min", "200 counts/min", "100 counts/min", "50 counts/min"],
+            answerIndex: 2,
+            explanation:
+              "Number of half-lives = 12 divided by 4 = 3. The count rate halves three times: 800 to 400 to 200 to 100 counts/min.",
+            difficulty: "core",
+            guideRef: "Half-Life",
+            hints: [
+              "Number of half-lives = total time divided by half-life.",
+              "12 divided by 4 = 3 half-lives.",
+              "Halve the count rate three times from 800.",
+            ],
+            strategy: "count-the-halvings: find n, then halve repeatedly",
+          },
+          {
+            id: "phys-nuclear-bm1-09",
+            question: "Which of these is the largest single source of background radiation for most people?",
+            options: ["Nuclear power stations", "Radon gas from rocks and soil", "Medical X-rays", "Cosmic rays from space"],
+            answerIndex: 1,
+            explanation:
+              "Radon gas, which seeps from uranium-bearing rocks and soil, is typically the largest single contributor to background radiation (around half of the average dose in many countries).",
+            difficulty: "core",
+            guideRef: "Types of Nuclear Radiation",
+            hints: [
+              "The largest source is natural, not man-made.",
+              "It is a radioactive gas that collects in buildings.",
+              "It comes from rocks such as granite.",
+            ],
+          },
+          {
+            id: "phys-nuclear-bm1-10",
+            question: "Smoke detectors commonly contain americium-241, an alpha emitter. Why is an alpha emitter a safe choice for the user?",
+            options: [
+              "Alpha radiation cannot ionise air, so it never reaches the user",
+              "Alpha particles are absorbed by the detector casing and a short layer of air, so they do not reach the user",
+              "Alpha emitters never have a long half-life",
+              "Alpha radiation is the most penetrating type",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Alpha particles have a very short range and are stopped by a few centimetres of air or the plastic casing, so they cannot reach or harm the user. Inside the detector they ionise the air, allowing the device to sense smoke.",
+            difficulty: "challenge",
             guideRef: "Uses, Dangers and Safety of Radioactivity",
             hints: [
-              "Think about which radiation penetrates packaging materials.",
-              "Sterilisation requires the radiation to reach the bacteria inside sealed containers.",
+              "Think about the penetrating power and range of alpha radiation.",
+              "Alpha is stopped by paper or a few centimetres of air.",
+              "If it cannot escape the casing, it cannot reach the user.",
             ],
+            strategy: "match the radiation property (short range) to the safety requirement",
           },
         ],
       },
       {
-        id: "phys-nuclear-bank-mcq-2",
-        title: "Nuclear Physics MCQ Paper 2",
-        description: "6 multiple-choice questions covering half-life calculations, safety and synoptic applications.",
+        id: "phys-nuclear-bankmcq-2",
+        title: "Question Bank — MCQ Paper 2",
         questions: [
           {
-            id: "phys-nuclear-bank-mcq2-q01",
-            question:
-              "What fraction of a radioactive sample remains undecayed after 5 half-lives?",
-            options: ["1/16", "1/25", "1/32", "1/64"],
+            id: "phys-nuclear-bm2-01",
+            question: "What two particles are found inside the nucleus of an atom?",
+            options: ["Protons and electrons", "Protons and neutrons", "Neutrons and electrons", "Electrons and positrons"],
+            answerIndex: 1,
+            explanation:
+              "The nucleus contains protons (positive) and neutrons (neutral), together called nucleons. Electrons orbit outside the nucleus.",
+            difficulty: "warmup",
+            guideRef: "The Nuclear Model of the Atom",
+          },
+          {
+            id: "phys-nuclear-bm2-02",
+            question: "Which radiation has the greatest penetrating power?",
+            options: ["Alpha", "Beta", "Gamma", "They are all equal"],
             answerIndex: 2,
-            explanation: "(1/2)⁵ = 1/32. After 5 half-lives only 1/32 of the original sample remains undecayed.",
+            explanation:
+              "Gamma is the most penetrating: it is only reduced by several centimetres of lead or metres of concrete. Alpha is stopped by paper and beta by a few millimetres of aluminium.",
+            difficulty: "warmup",
+            guideRef: "Types of Nuclear Radiation",
+          },
+          {
+            id: "phys-nuclear-bm2-03",
+            question: "What fraction of a radioactive sample remains undecayed after 4 half-lives?",
+            options: ["1/4", "1/8", "1/16", "1/32"],
+            answerIndex: 2,
+            explanation:
+              "Fraction remaining = (1/2) raised to the power 4 = 1/16. After 4 half-lives only one sixteenth of the original sample is left.",
             difficulty: "warmup",
             guideRef: "Half-Life",
           },
           {
-            id: "phys-nuclear-bank-mcq2-q02",
-            question:
-              "A Geiger counter near a radioactive source records 840 counts/min. The background count rate is 40 counts/min. After 2 half-lives, what is the measured count rate recorded by the counter (including background)?",
-            options: ["200 counts/min", "240 counts/min", "250 counts/min", "280 counts/min"],
+            id: "phys-nuclear-bm2-04",
+            question: "A neutron inside a nucleus changes into a proton. Which radiation is emitted?",
+            options: ["An alpha particle", "A beta-minus particle (electron)", "A gamma ray only", "A second neutron"],
             answerIndex: 1,
             explanation:
-              "Corrected initial count rate (source only) = 840 − 40 = 800 counts/min. After 2 half-lives: 800 / 4 = 200 counts/min from source. Measured count rate = 200 (source) + 40 (background) = 240 counts/min.",
+              "When a neutron converts to a proton, a fast-moving electron is created and ejected from the nucleus. This electron is the beta-minus particle. The proton number increases by 1.",
+            difficulty: "core",
+            guideRef: "Radioactive Decay and Nuclear Equations",
+            hints: [
+              "The neutron becomes a proton, so the nuclear charge increases by one.",
+              "Charge must be conserved, so a negative particle is released.",
+              "That negative particle is an electron, the beta-minus particle.",
+            ],
+          },
+          {
+            id: "phys-nuclear-bm2-05",
+            question: "Iodine-131 (proton number 53) is a beta-minus emitter. What is the proton number of the daughter nucleus?",
+            options: ["51", "52", "54", "55"],
+            answerIndex: 2,
+            explanation:
+              "In beta-minus decay the proton number increases by 1: 53 plus 1 = 54. The daughter is xenon (Xe). The nucleon number stays at 131.",
+            difficulty: "core",
+            guideRef: "Radioactive Decay and Nuclear Equations",
+            hints: [
+              "Beta-minus decay: A unchanged, Z increases by 1.",
+              "53 plus 1 = 54.",
+              "Element with Z = 54 is xenon.",
+            ],
+          },
+          {
+            id: "phys-nuclear-bm2-06",
+            question: "A radioactive source gives a corrected count rate of 1600 counts/min. After 18 hours it has fallen to 200 counts/min. What is the half-life?",
+            options: ["3 hours", "6 hours", "9 hours", "12 hours"],
+            answerIndex: 1,
+            explanation:
+              "1600 divided by 200 = 8 = 2 cubed, so 3 half-lives have passed. t-half = 18 divided by 3 = 6 hours. Check: 1600 to 800 to 400 to 200, three halvings.",
+            difficulty: "core",
+            guideRef: "Half-Life",
+            hints: [
+              "Find the ratio of initial to final count rate.",
+              "1600 divided by 200 = 8 = 2 cubed, so n = 3.",
+              "t-half = total time divided by number of half-lives = 18 divided by 3.",
+            ],
+            strategy: "count-the-halvings: express the ratio as a power of 2",
+          },
+          {
+            id: "phys-nuclear-bm2-07",
+            question: "Which precaution does NOT reduce a worker's radiation dose from a source?",
+            options: [
+              "Increasing the distance from the source",
+              "Reducing the time spent near the source",
+              "Storing the source in a lead-lined box when not in use",
+              "Warming the source before handling it",
+            ],
+            answerIndex: 3,
+            explanation:
+              "Temperature has no effect on radioactivity or dose. Distance, time and shielding (lead) all reduce the dose received by a worker.",
+            difficulty: "core",
+            guideRef: "Uses, Dangers and Safety of Radioactivity",
+            hints: [
+              "Radioactive decay is unaffected by external conditions.",
+              "Which option changes a physical condition that has no effect on radiation?",
+              "Heating a source does not change its activity.",
+            ],
+          },
+          {
+            id: "phys-nuclear-bm2-08",
+            question: "Why is technetium-99m, with a half-life of 6 hours, a good choice as a medical tracer?",
+            options: [
+              "It is an alpha emitter that stays in the body forever",
+              "It lasts long enough to scan the patient but decays to a low activity within about a day",
+              "It has such a long half-life that one dose lasts a lifetime",
+              "It cannot be detected outside the body",
+            ],
+            answerIndex: 1,
+            explanation:
+              "A 6-hour half-life is long enough for the gamma radiation to be imaged during a scan but short enough that the activity falls to a low level within roughly a day, minimising the patient's total dose.",
+            difficulty: "core",
+            guideRef: "Uses, Dangers and Safety of Radioactivity",
+            hints: [
+              "Consider the total radiation dose to the patient over time.",
+              "Too long a half-life means a high lingering dose; too short means it decays before the scan finishes.",
+              "Six hours balances both needs.",
+            ],
+          },
+          {
+            id: "phys-nuclear-bm2-09",
+            question: "A radioactive source is placed close to a Geiger counter. A sheet of paper is added and the count rate is almost unchanged. A few millimetres of aluminium is then added and the count rate falls almost to background. Which radiation does the source emit?",
+            options: ["Alpha only", "Beta only", "Gamma only", "Alpha and gamma"],
+            answerIndex: 1,
+            explanation:
+              "Paper does not stop the radiation, so there is no alpha. Aluminium of a few millimetres stops it almost completely, which is characteristic of beta radiation. Gamma would still pass through aluminium.",
+            difficulty: "challenge",
+            guideRef: "Types of Nuclear Radiation",
+            hints: [
+              "Paper stops alpha; if paper has no effect, there is no significant alpha.",
+              "A few millimetres of aluminium stops beta.",
+              "Gamma would pass through aluminium with little reduction.",
+            ],
+            strategy: "absorption logic: identify which barrier first removes the radiation",
+          },
+          {
+            id: "phys-nuclear-bm2-10",
+            question: "A source has a corrected count rate of 6000 counts/min and a half-life of 2 hours. After how long will the corrected count rate fall to 750 counts/min?",
+            options: ["4 hours", "6 hours", "8 hours", "12 hours"],
+            answerIndex: 1,
+            explanation:
+              "6000 divided by 750 = 8 = 2 cubed, so 3 half-lives are needed. Time = 3 times 2 hours = 6 hours. Check: 6000 to 3000 to 1500 to 750.",
             difficulty: "challenge",
             guideRef: "Half-Life",
             hints: [
-              "First subtract background: corrected count rate = 840 − 40 = 800 counts/min.",
-              "Apply half-life to the corrected (source-only) count rate: 800 / 4 = 200.",
-              "Background is always present — add it back to get the measured reading: 200 + 40.",
+              "Work out how many times the count rate must halve.",
+              "6000 divided by 750 = 8 = 2 cubed, so n = 3.",
+              "Time = n times half-life = 3 times 2 hours.",
             ],
-            strategy: "subtract background before applying the half-life formula; add background back for the final measured count rate",
+            strategy: "count-the-halvings then multiply by the half-life",
           },
+        ],
+      },
+      {
+        id: "phys-nuclear-bankmcq-3",
+        title: "Question Bank — MCQ Paper 3",
+        questions: [
           {
-            id: "phys-nuclear-bank-mcq2-q03",
-            question:
-              "In which situation would alpha radiation be MOST dangerous to a person?",
+            id: "phys-nuclear-bm3-01",
+            question: "Which statement about radioactive decay is correct?",
             options: [
-              "Standing 2 m from an alpha source in open air",
-              "Holding an alpha source inside thick rubber gloves",
-              "Inhaling dust containing an alpha-emitting isotope",
-              "Wearing a lead apron while working with an alpha source",
+              "It can be sped up by heating the source",
+              "It is random and spontaneous",
+              "It only happens when a nucleus is struck by light",
+              "It can be predicted exactly for each individual nucleus",
             ],
-            answerIndex: 2,
+            answerIndex: 1,
             explanation:
-              "Alpha particles have very short range in air and are stopped by skin — so external alpha sources are not especially dangerous. However, if an alpha emitter is inhaled or ingested, it is inside the body where it can irradiate sensitive lung or gut tissue at very close range, causing serious cell damage. Lead aprons and rubber gloves both stop alpha particles completely.",
+              "Radioactive decay is random (you cannot predict which nucleus decays next or when) and spontaneous (it is not triggered or changed by external conditions such as temperature, pressure or chemical state).",
+            difficulty: "warmup",
+            guideRef: "Radioactive Decay and Nuclear Equations",
+          },
+          {
+            id: "phys-nuclear-bm3-02",
+            question: "An alpha particle is identical to the nucleus of which atom?",
+            options: ["Hydrogen-1", "Helium-4", "Lithium-7", "Carbon-12"],
+            answerIndex: 1,
+            explanation:
+              "An alpha particle is made of 2 protons and 2 neutrons, which is exactly a helium-4 nucleus, written as the nuclide with nucleon number 4 and proton number 2.",
+            difficulty: "warmup",
+            guideRef: "Types of Nuclear Radiation",
+          },
+          {
+            id: "phys-nuclear-bm3-03",
+            question: "Which quantities must be conserved (equal on both sides) in a balanced nuclear equation?",
+            options: [
+              "Nucleon number and proton number",
+              "Number of electrons and temperature",
+              "Mass in grams and volume",
+              "Neutron number only",
+            ],
+            answerIndex: 0,
+            explanation:
+              "Both the nucleon number A (total at top) and the proton number Z (total at bottom) must be the same on each side of a nuclear equation.",
+            difficulty: "warmup",
+            guideRef: "Radioactive Decay and Nuclear Equations",
+          },
+          {
+            id: "phys-nuclear-bm3-04",
+            question: "Radon-222 (proton number 86) decays by alpha emission. What is the daughter nuclide?",
+            options: [
+              "Polonium-218, proton number 84",
+              "Radium-226, proton number 88",
+              "Astatine-218, proton number 85",
+              "Polonium-222, proton number 84",
+            ],
+            answerIndex: 0,
+            explanation:
+              "Alpha decay: nucleon number falls by 4 (222 to 218) and proton number falls by 2 (86 to 84). Element with Z = 84 is polonium, so the daughter is polonium-218.",
             difficulty: "core",
-            guideRef: "Uses, Dangers and Safety of Radioactivity",
+            guideRef: "Radioactive Decay and Nuclear Equations",
             hints: [
-              "Alpha has very short range — what does that mean for external exposure at 2 m?",
-              "What changes if the source is inside your body?",
+              "Alpha decay removes 2 protons and 2 neutrons.",
+              "A: 222 minus 4 = 218; Z: 86 minus 2 = 84.",
+              "Element with Z = 84 is polonium.",
             ],
           },
           {
-            id: "phys-nuclear-bank-mcq2-q04",
-            question:
-              "An archaeologist finds a wooden artefact. She measures the ¹⁴C/¹²C ratio and finds it is 1/8 of the ratio in living wood. If t½(¹⁴C) = 5730 years, how old is the artefact?",
-            options: ["5 730 years", "11 460 years", "17 190 years", "22 920 years"],
-            answerIndex: 2,
+            id: "phys-nuclear-bm3-05",
+            question: "The count rate of a sample falls from 960 counts/min to 120 counts/min in 9 hours. How many half-lives have passed?",
+            options: ["2", "3", "4", "8"],
+            answerIndex: 1,
             explanation:
-              "Ratio = 1/8 = (1/2)³, so 3 half-lives have elapsed. Age = 3 × 5730 = 17 190 years.",
+              "960 divided by 120 = 8 = 2 cubed, so 3 half-lives have passed (960 to 480 to 240 to 120).",
             difficulty: "core",
-            guideRef: "Uses, Dangers and Safety of Radioactivity",
+            guideRef: "Half-Life",
             hints: [
-              "Express 1/8 as a power of 1/2: 1/8 = (1/2)³.",
-              "This means 3 half-lives have passed.",
-              "Age = n × t½ = 3 × 5730.",
+              "Find the ratio of the two count rates.",
+              "960 divided by 120 = 8.",
+              "8 = 2 cubed, so n = 3.",
             ],
           },
           {
-            id: "phys-nuclear-bank-mcq2-q05",
-            question:
-              "A radioactive nucleus ²²⁸₈₈Ra undergoes alpha decay, followed immediately by beta-minus decay. What is the proton number of the final nucleus produced?",
-            options: ["85", "86", "87", "88"],
-            answerIndex: 2,
+            id: "phys-nuclear-bm3-06",
+            question: "Carbon dating is reliable only up to about 50 000 years. Which property of carbon-14 explains this limit?",
+            options: [
+              "Its very long half-life of billions of years",
+              "Its half-life of about 5730 years, so after roughly 50 000 years very little carbon-14 remains to measure",
+              "It only decays by alpha emission",
+              "It is not found in living things",
+            ],
+            answerIndex: 1,
             explanation:
-              "Alpha decay: Z = 88 − 2 = 86 (radon). Beta-minus decay: Z = 86 + 1 = 87 (francium). Final proton number = 87.",
+              "After about 50 000 years (roughly nine half-lives of 5730 years), so little carbon-14 remains that the measurement becomes too unreliable. This sets the practical upper limit of the method.",
+            difficulty: "core",
+            guideRef: "Uses, Dangers and Safety of Radioactivity",
+            hints: [
+              "The half-life of carbon-14 is about 5730 years.",
+              "After many half-lives almost none of the isotope is left.",
+              "If too little remains, it cannot be measured accurately.",
+            ],
+          },
+          {
+            id: "phys-nuclear-bm3-07",
+            question: "Why are beta emitters used to monitor the thickness of metal or paper sheets in a factory?",
+            options: [
+              "Alpha would not be absorbed at all by the sheet",
+              "Gamma passes through almost unchanged so changes in thickness would not affect the count, while alpha is stopped completely; beta is partly absorbed so the count changes with thickness",
+              "Beta cannot pass through any thickness of metal",
+              "Beta makes the metal radioactive, which is useful",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Beta is partly absorbed by the sheet, so the count rate that gets through depends on the thickness. Alpha would be stopped completely (no signal varies) and gamma would pass through almost unchanged (insensitive to small thickness changes), so beta is ideal.",
+            difficulty: "core",
+            guideRef: "Uses, Dangers and Safety of Radioactivity",
+            hints: [
+              "The radiation must be partly absorbed so the detector reading depends on thickness.",
+              "Alpha would be totally stopped; gamma would pass straight through.",
+              "Beta sits in between and is sensitive to thickness changes.",
+            ],
+          },
+          {
+            id: "phys-nuclear-bm3-08",
+            question: "Cobalt-60 (proton number 27) is a beta-minus emitter. What is the daughter nuclide?",
+            options: [
+              "Nickel-60, proton number 28",
+              "Iron-60, proton number 26",
+              "Cobalt-59, proton number 27",
+              "Copper-60, proton number 29",
+            ],
+            answerIndex: 0,
+            explanation:
+              "Beta-minus decay: nucleon number unchanged (60) and proton number increases by 1 (27 to 28). Element with Z = 28 is nickel, so the daughter is nickel-60.",
+            difficulty: "core",
+            guideRef: "Radioactive Decay and Nuclear Equations",
+            hints: [
+              "Beta-minus: A stays the same, Z increases by 1.",
+              "27 plus 1 = 28.",
+              "Element with Z = 28 is nickel.",
+            ],
+          },
+          {
+            id: "phys-nuclear-bm3-09",
+            question: "A sample of 6.4 grams of a pure radioactive isotope has a half-life of 5 years. What mass of the original isotope remains after 20 years?",
+            options: ["0.2 g", "0.4 g", "0.8 g", "1.6 g"],
+            answerIndex: 1,
+            explanation:
+              "Number of half-lives = 20 divided by 5 = 4. Fraction remaining = (1/2) raised to power 4 = 1/16. Mass = 6.4 divided by 16 = 0.4 g.",
+            difficulty: "challenge",
+            guideRef: "Half-Life",
+            hints: [
+              "Number of half-lives = 20 divided by 5.",
+              "Fraction remaining = (1/2) to the power 4 = 1/16.",
+              "Mass = 6.4 divided by 16.",
+            ],
+            strategy: "find n, then multiply the starting amount by (1/2) to the power n",
+          },
+          {
+            id: "phys-nuclear-bm3-10",
+            question: "A radioactive nuclide with nucleon number 234 and proton number 90 (thorium-234) emits a beta-minus particle. The product then emits a second beta-minus particle. What is the proton number of the final nuclide?",
+            options: ["88", "90", "91", "92"],
+            answerIndex: 3,
+            explanation:
+              "Each beta-minus decay increases the proton number by 1 and leaves the nucleon number unchanged. Starting at Z = 90: after one beta, Z = 91; after a second beta, Z = 92. The nucleon number stays at 234. The final nuclide is uranium-234.",
             difficulty: "challenge",
             guideRef: "Radioactive Decay and Nuclear Equations",
             hints: [
-              "Apply changes to Z for each decay in sequence.",
-              "Alpha: Z − 2; then beta-minus: Z + 1.",
-              "Start: Z = 88. After alpha: 88 − 2 = 86. After beta: 86 + 1 = 87.",
+              "Beta-minus increases Z by 1 each time and leaves A unchanged.",
+              "Apply the change twice: 90 to 91 to 92.",
+              "A stays at 234 throughout.",
             ],
-            strategy: "Apply decay rules sequentially to track proton number.",
+            strategy: "apply the decay rule once per emission, tracking A and Z separately",
+          },
+        ],
+      },
+      {
+        id: "phys-nuclear-bankmcq-4",
+        title: "Question Bank — MCQ Paper 4",
+        questions: [
+          {
+            id: "phys-nuclear-bm4-01",
+            question: "Which observation from the alpha-scattering experiment showed that the atom is mostly empty space?",
+            options: [
+              "A few alpha particles bounced straight back",
+              "Most alpha particles passed straight through the foil with little or no deflection",
+              "Some alpha particles were absorbed by the screen",
+              "The foil became hot",
+            ],
+            answerIndex: 1,
+            explanation:
+              "The fact that the great majority of alpha particles passed straight through the thin foil shows there is very little matter in their path, so the atom must be mostly empty space.",
+            difficulty: "warmup",
+            guideRef: "The Nuclear Model of the Atom",
           },
           {
-            id: "phys-nuclear-bank-mcq2-q06",
-            question:
-              "Which statement about nuclear fission is correct?",
+            id: "phys-nuclear-bm4-02",
+            question: "Which radiation is the most strongly ionising?",
+            options: ["Alpha", "Beta", "Gamma", "All ionise equally"],
+            answerIndex: 0,
+            explanation:
+              "Alpha is the most ionising because its large charge (+2) and mass cause many ionisations per unit length. This also makes its range short.",
+            difficulty: "warmup",
+            guideRef: "Types of Nuclear Radiation",
+          },
+          {
+            id: "phys-nuclear-bm4-03",
+            question: "Which of these correctly states the change in nucleon number A and proton number Z during alpha decay?",
             options: [
-              "Fission releases energy because products have more mass than reactants",
-              "Fission joins two light nuclei together",
-              "A neutron causes a heavy nucleus to split into smaller nuclei, releasing energy and more neutrons",
-              "Fission only occurs in stars at temperatures above 10⁷ K",
+              "A decreases by 4, Z decreases by 2",
+              "A unchanged, Z increases by 1",
+              "A decreases by 2, Z decreases by 4",
+              "A increases by 4, Z increases by 2",
+            ],
+            answerIndex: 0,
+            explanation:
+              "An alpha particle carries away 2 protons and 2 neutrons, so the nucleon number falls by 4 and the proton number falls by 2.",
+            difficulty: "warmup",
+            guideRef: "Radioactive Decay and Nuclear Equations",
+          },
+          {
+            id: "phys-nuclear-bm4-04",
+            question: "Polonium-210 (proton number 84) decays by alpha emission. Which is the correctly balanced equation, where Pb has proton number 82 and He has proton number 2?",
+            options: [
+              "Po-210 gives Pb-206 (Z 82) plus He-4 (Z 2)",
+              "Po-210 gives Pb-210 (Z 82) plus He-4 (Z 2)",
+              "Po-210 gives Bi-210 (Z 83) plus an electron",
+              "Po-210 gives Pb-206 (Z 82) plus an electron",
+            ],
+            answerIndex: 0,
+            explanation:
+              "Alpha decay: A 210 minus 4 = 206; Z 84 minus 2 = 82, which is lead (Pb). Check: 210 = 206 + 4 and 84 = 82 + 2. The daughter is lead-206.",
+            difficulty: "core",
+            guideRef: "Radioactive Decay and Nuclear Equations",
+            hints: [
+              "Alpha emission gives off helium-4, not an electron.",
+              "A: 210 minus 4 = 206; Z: 84 minus 2 = 82.",
+              "Check that A and Z balance on both sides.",
+            ],
+          },
+          {
+            id: "phys-nuclear-bm4-05",
+            question: "A decay graph shows the count rate halving from 400 to 200 counts/min between 0 and 6 minutes. What will the count rate be at 18 minutes?",
+            options: ["100 counts/min", "50 counts/min", "25 counts/min", "12.5 counts/min"],
+            answerIndex: 1,
+            explanation:
+              "The half-life is 6 minutes (time to fall from 400 to 200). At 18 minutes, n = 18 divided by 6 = 3 half-lives: 400 to 200 to 100 to 50 counts/min.",
+            difficulty: "core",
+            guideRef: "Half-Life",
+            hints: [
+              "First read the half-life: the time for the count to halve is 6 minutes.",
+              "Number of half-lives at 18 minutes = 18 divided by 6 = 3.",
+              "Halve 400 three times.",
+            ],
+            strategy: "read the half-life from the graph, then count the halvings",
+          },
+          {
+            id: "phys-nuclear-bm4-06",
+            question: "Why does a medical gamma tracer need to be a gamma emitter rather than an alpha emitter?",
+            options: [
+              "Alpha radiation is not ionising",
+              "Gamma can pass out of the body to reach a detector, while alpha would be absorbed inside the body",
+              "Gamma stays in the body longer than alpha",
+              "Alpha emitters are always more expensive",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Gamma radiation penetrates body tissue and reaches a detector or gamma camera outside the patient. Alpha would be absorbed within a fraction of a millimetre of tissue and could not be detected externally (and would do harm inside).",
+            difficulty: "core",
+            guideRef: "Uses, Dangers and Safety of Radioactivity",
+            hints: [
+              "The radiation must escape the body to be detected.",
+              "Alpha has a very short range and would be absorbed by tissue.",
+              "Gamma is penetrating and can be picked up outside the body.",
+            ],
+          },
+          {
+            id: "phys-nuclear-bm4-07",
+            question: "Which list places the three radiations in order of increasing penetrating power?",
+            options: [
+              "Gamma, beta, alpha",
+              "Alpha, beta, gamma",
+              "Beta, alpha, gamma",
+              "Alpha, gamma, beta",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Alpha is least penetrating (stopped by paper), beta is intermediate (stopped by a few mm of aluminium), gamma is most penetrating (only reduced by thick lead or concrete).",
+            difficulty: "core",
+            guideRef: "Types of Nuclear Radiation",
+            hints: [
+              "Recall what stops each radiation: paper, aluminium, lead.",
+              "Least penetrating is stopped most easily.",
+              "Order from paper-stopped to lead-needed.",
+            ],
+          },
+          {
+            id: "phys-nuclear-bm4-08",
+            question: "Lead-214 (proton number 82) decays by beta-minus emission. What is the daughter nuclide, where Bi has proton number 83?",
+            options: [
+              "Bismuth-214, proton number 83",
+              "Thallium-210, proton number 81",
+              "Lead-213, proton number 82",
+              "Polonium-214, proton number 84",
+            ],
+            answerIndex: 0,
+            explanation:
+              "Beta-minus decay: nucleon number stays at 214 and proton number increases by 1 (82 to 83). Element with Z = 83 is bismuth, so the daughter is bismuth-214.",
+            difficulty: "core",
+            guideRef: "Radioactive Decay and Nuclear Equations",
+            hints: [
+              "Beta-minus: A unchanged, Z increases by 1.",
+              "82 plus 1 = 83.",
+              "Element with Z = 83 is bismuth.",
+            ],
+          },
+          {
+            id: "phys-nuclear-bm4-09",
+            question: "Uranium-238 has a half-life of 4.5 billion years, while technetium-99m has a half-life of 6 hours. Which statement comparing them is correct?",
+            options: [
+              "Both decay to negligible activity in the same time",
+              "Uranium-238 is far more useful as a short-term medical tracer",
+              "Technetium-99m decays to a low activity in about a day, whereas uranium-238 remains active over geological timescales",
+              "Half-life depends on the size of the sample, so neither value is fixed",
             ],
             answerIndex: 2,
             explanation:
-              "In fission, a neutron is absorbed by a heavy nucleus (e.g., ²³⁵U), which splits into two smaller nuclei and releases typically 2–3 neutrons plus a large amount of energy. The released neutrons can trigger further fissions (chain reaction). Fusion (not fission) joins light nuclei and requires stellar temperatures.",
-            difficulty: "warmup",
-            guideRef: "Uses, Dangers and Safety of Radioactivity",
+              "The very short half-life of technetium-99m means its activity falls quickly (good for tracers), while uranium-238's enormous half-life means it stays active for billions of years (used for dating rocks). Half-life is a fixed property of the isotope, independent of sample size.",
+            difficulty: "challenge",
+            guideRef: "Half-Life",
+            hints: [
+              "Short half-life means activity drops fast.",
+              "Long half-life means the isotope stays active for a very long time.",
+              "Half-life does not depend on how much you have.",
+            ],
+            strategy: "link half-life length to the timescale of the application",
+          },
+          {
+            id: "phys-nuclear-bm4-10",
+            question: "A sealed source emits radiation that passes through paper and through several millimetres of aluminium with the count rate barely changing, but is greatly reduced by a thick lead block. Which radiation is it?",
+            options: ["Alpha", "Beta", "Gamma", "A mixture of alpha and beta only"],
+            answerIndex: 2,
+            explanation:
+              "Paper would stop alpha and aluminium would stop beta, but neither reduces this radiation. Only thick lead reduces it, which is the signature of gamma radiation.",
+            difficulty: "challenge",
+            guideRef: "Types of Nuclear Radiation",
+            hints: [
+              "Paper has no effect, so there is no alpha.",
+              "Aluminium has no effect, so there is no significant beta.",
+              "Only lead reduces it, which points to gamma.",
+            ],
+            strategy: "use the absorption results to rule out each radiation in turn",
           },
         ],
       },
     ],
     qaPapers: [
       {
-        id: "phys-nuclear-bank-qa-1",
-        title: "Nuclear Physics Structured Paper 1",
-        description: "4 structured questions: nuclear model, radiation properties, decay equations, half-life.",
+        id: "phys-nuclear-bankqa-1",
+        title: "Question Bank — Structured Paper 1",
         questions: [
           {
-            id: "phys-nuclear-bank-qa1-q01",
-            question:
-              "Describe the structure of the nuclear atom. Include the location, relative size and charge of the nucleus compared to the atom, and state what particles are found in each region. [4]",
+            id: "phys-nuclear-bq1-01",
+            question: "Describe the structure of an atom according to the nuclear model. In your answer name the particles, state their relative charges, and state where each is found.",
             marks: 4,
             modelAnswer:
-              "The atom consists of a tiny, dense nucleus at the centre, surrounded by electrons that orbit at relatively large distances. The nucleus has a diameter of approximately 10⁻¹⁴ m, about 10 000 times smaller than the atom (diameter ≈ 10⁻¹⁰ m). The nucleus contains protons, which carry a positive charge, and neutrons, which are electrically neutral. The atom as a whole is mostly empty space. Electrons, which carry a negative charge, orbit the nucleus; in a neutral atom the number of electrons equals the proton number Z.",
+              "An atom has a tiny, dense central nucleus containing protons and neutrons. Protons have a relative charge of +1 and neutrons have a relative charge of 0 (they are neutral). Electrons, which have a relative charge of -1, orbit the nucleus at a relatively large distance. Most of the atom is empty space, and almost all of its mass is concentrated in the nucleus.",
             markScheme: [
-              "nucleus is tiny / small / dense compared to the atom (quantitative e.c.f. accepted)",
-              "nucleus contains protons (positive) and neutrons (neutral)",
-              "electrons orbit the nucleus / are outside the nucleus",
-              "atom is mostly empty space / mass concentrated in nucleus",
+              "nucleus is central, tiny and dense / contains most of the mass",
+              "nucleus contains protons (+1) and neutrons (0/neutral)",
+              "electrons (-1) orbit / surround the nucleus",
+              "most of the atom is empty space",
             ],
             commonError:
-              "Students sometimes place neutrons outside the nucleus, or forget to mention that the atom is mostly empty space.",
+              "Some students place electrons inside the nucleus or give the neutron a charge. Neutrons are neutral and electrons orbit outside the nucleus.",
             difficulty: "warmup",
             guideRef: "The Nuclear Model of the Atom",
           },
           {
-            id: "phys-nuclear-bank-qa1-q02",
-            question:
-              "A student investigates a radioactive source using a Geiger–Müller tube. With no source present the background count rate is 15 counts/min. With the source present, the count rate is 735 counts/min. When a sheet of aluminium is placed between source and detector, the count rate falls to 165 counts/min. When a thick block of lead is added, the count rate falls to 20 counts/min.\n\n(a) Determine the corrected count rate from the source before any shielding. [1]\n(b) State what type(s) of radiation the aluminium stopped. [1]\n(c) State what can be deduced about the type of radiation that penetrates the aluminium. [2]\n(d) Suggest why the count rate with lead shielding (20 counts/min) is slightly higher than the background alone (15 counts/min). [1]",
-            marks: 5,
+            id: "phys-nuclear-bq1-02",
+            question: "The nuclide notation for an atom shows a nucleon number of 27 and a proton number of 13 (aluminium). (a) State the number of protons. (b) State the number of neutrons. (c) State the number of electrons in the neutral atom.",
+            marks: 3,
             modelAnswer:
-              "(a) Corrected count rate = 735 − 15 = 720 counts/min.\n\n(b) The aluminium stopped beta radiation (and possibly alpha, though alpha would already be stopped by the air gap).\n\n(c) The radiation that penetrates the aluminium is gamma radiation. Evidence: 165 − 15 = 150 counts/min of corrected count rate passes through aluminium (and is only partially reduced by thick lead), which is consistent with gamma (EM radiation with no charge, high penetrating power).\n\n(d) The lead does not fully stop gamma radiation — some gamma from the source still reaches the detector, giving a count rate slightly above background.",
+              "(a) Number of protons = proton number = 13.\n(b) Number of neutrons = nucleon number minus proton number = 27 minus 13 = 14.\n(c) In a neutral atom the number of electrons equals the number of protons = 13.",
             markScheme: [
-              "(a) 735 − 15 = 720 counts/min",
-              "(b) beta (radiation) / beta particles",
-              "(c) gamma radiation penetrates the aluminium",
-              "(c) gamma is only partially absorbed by lead / gamma highly penetrating",
-              "(d) some gamma still penetrates the lead / lead does not completely stop gamma",
+              "(a) 13 protons",
+              "(b) neutrons = 27 minus 13 = 14",
+              "(c) 13 electrons (equals protons in a neutral atom)",
             ],
             commonError:
-              "Students often omit to subtract background radiation when calculating corrected count rates.",
+              "Students sometimes give the neutron number as 27 (the nucleon number) instead of subtracting the proton number.",
+            difficulty: "warmup",
+            guideRef: "Proton Number, Nucleon Number and Isotopes",
+          },
+          {
+            id: "phys-nuclear-bq1-03",
+            question: "Explain what is meant by isotopes. Use chlorine-35 and chlorine-37 (both proton number 17) as an example, stating the number of neutrons in each.",
+            marks: 4,
+            modelAnswer:
+              "Isotopes are atoms of the same element that have the same proton number but different nucleon numbers (different numbers of neutrons). Chlorine-35 and chlorine-37 both have 17 protons, so they are the same element with the same chemical properties. Chlorine-35 has 35 minus 17 = 18 neutrons; chlorine-37 has 37 minus 17 = 20 neutrons. They differ only in the number of neutrons.",
+            markScheme: [
+              "same proton number / same element",
+              "different nucleon number / different number of neutrons",
+              "chlorine-35 has 18 neutrons (35 minus 17)",
+              "chlorine-37 has 20 neutrons (37 minus 17)",
+            ],
+            commonError:
+              "A common error is to say isotopes have different numbers of protons. Isotopes always have the same proton number; only the neutron number differs.",
+            difficulty: "core",
+            guideRef: "Proton Number, Nucleon Number and Isotopes",
+            hints: [
+              "Define isotopes in terms of proton number and nucleon number.",
+              "Neutrons = nucleon number minus proton number.",
+              "Apply N = A minus Z to each isotope using Z = 17.",
+            ],
+            strategy: "state the definition, then apply N = A minus Z to each example",
+          },
+          {
+            id: "phys-nuclear-bq1-04",
+            question: "A teacher places a radioactive source near a detector and records the count rate. The class then puts different absorbers between the source and the detector. With no absorber the count rate is 500 counts/s. With a sheet of paper it falls to 360 counts/s. With a 5 mm aluminium plate added it falls to 40 counts/s, which is close to the background level. State and explain which types of radiation the source emits.",
+            marks: 4,
+            modelAnswer:
+              "The source emits both alpha and beta radiation. The drop when paper is added (500 to 360 counts/s) shows that some alpha radiation was present, because paper stops alpha. The further large drop when aluminium is added (360 to 40 counts/s, near background) shows that beta was also present, because a few millimetres of aluminium stops beta. Since the final count rate is close to background, there is little or no gamma radiation, as gamma would pass through the aluminium and keep the count rate well above background.",
+            markScheme: [
+              "alpha is present: paper causes a drop, paper stops alpha",
+              "beta is present: aluminium causes a further large drop, aluminium stops beta",
+              "little or no gamma: final reading near background, gamma would penetrate aluminium",
+              "correct overall conclusion: alpha and beta (no significant gamma)",
+            ],
+            commonError:
+              "Students often forget to use the background reading: because the final count is near background, gamma can be ruled out. Always compare the final value with the background level.",
             difficulty: "core",
             guideRef: "Types of Nuclear Radiation",
             hints: [
-              "Corrected count rate = measured − background.",
-              "Which radiation is stopped by aluminium? Which passes through?",
-              "What does the fact that lead reduces but doesn't eliminate the count rate tell you about the type of radiation?",
+              "Each absorber removes one type of radiation: paper removes alpha, aluminium removes beta.",
+              "Look at which step causes a drop to decide what is present.",
+              "Compare the final reading to background to decide about gamma.",
             ],
+            strategy: "interpret each absorption step in turn, then check the final value against background",
           },
           {
-            id: "phys-nuclear-bank-qa1-q03",
-            question:
-              "Radon-222 (²²²₈₆Rn) undergoes alpha decay.\n\n(a) Write a balanced nuclear equation for this decay. [3]\n(b) The half-life of ²²²₈₆Rn is 3.8 days. A sample initially contains 1.6 × 10¹⁰ atoms of ²²²Rn. Calculate the number of ²²²Rn atoms remaining after 19 days. Show your working. [3]",
-            marks: 6,
+            id: "phys-nuclear-bq1-05",
+            question: "Radium-226 (nucleon number 226, proton number 88) decays by alpha emission to radon (Rn). Write the balanced nuclear equation, giving the nucleon number and proton number of the radon nuclide and of the alpha particle.",
+            marks: 3,
             modelAnswer:
-              "(a) ²²²₈₆Rn → ²¹⁸₈₄Po + ⁴₂He\n\nDaughter: A = 222 − 4 = 218; Z = 86 − 2 = 84 → polonium (Po).\n\n(b) n = 19 / 3.8 = 5 half-lives.\nFraction remaining = (1/2)⁵ = 1/32.\nNumber remaining = 1.6 × 10¹⁰ ÷ 32 = 5.0 × 10⁸ atoms.",
+              "Radium-226 (A 226, Z 88) gives radon (A 222, Z 86) plus an alpha particle helium-4 (A 4, Z 2).\nCheck: nucleon numbers 226 = 222 + 4. Proton numbers 88 = 86 + 2. Both balance.",
             markScheme: [
-              "(a) ⁴₂He written correctly (alpha particle)",
-              "(a) daughter A = 218",
-              "(a) daughter Z = 84 and correct symbol Po / polonium",
-              "(b) n = 19 / 3.8 = 5 (half-lives)",
-              "(b) fraction = (1/2)⁵ = 1/32",
-              "(b) N = 1.6×10¹⁰ / 32 = 5.0×10⁸ atoms (allow 4.9–5.1×10⁸)",
+              "alpha particle written as helium-4 (A 4, Z 2)",
+              "radon daughter A = 222 (226 minus 4)",
+              "radon daughter Z = 86 (88 minus 2)",
             ],
             commonError:
-              "In part (a) students sometimes write Z = 84 correctly but then give the wrong element symbol — always verify Z against the periodic table.",
+              "Students sometimes change A by 2 and Z by 4 (reversing the rule). Alpha removes 2 protons and 2 neutrons, so A falls by 4 and Z falls by 2.",
             difficulty: "core",
             guideRef: "Radioactive Decay and Nuclear Equations",
             hints: [
-              "Alpha emission: A − 4, Z − 2.",
-              "New Z = 86 − 2 = 84; identify this element.",
-              "For (b): divide total time by t½ to get n.",
-              "Remaining = initial × (1/2)^n.",
+              "The alpha particle is helium-4: A = 4, Z = 2.",
+              "Subtract 4 from the nucleon number and 2 from the proton number.",
+              "Check both totals balance across the equation.",
             ],
-            strategy: "balance-the-equation; count-the-halvings",
+            strategy: "balance-the-equation: conserve A and Z, then identify the daughter",
             solutions: [
               {
-                label: "Fraction method",
+                label: "Conserving A and Z",
                 steps: [
-                  "n = 19 / 3.8 = 5 half-lives",
-                  "Fraction remaining = (1/2)^5 = 1/32",
-                  "N = 1.6×10^10 / 32 = 5.0×10^8 atoms",
-                ],
-              },
-              {
-                label: "Sequential halving",
-                steps: [
-                  "After 1 t½ (3.8 d): 8.0×10^9",
-                  "After 2 t½ (7.6 d): 4.0×10^9",
-                  "After 3 t½ (11.4 d): 2.0×10^9",
-                  "After 4 t½ (15.2 d): 1.0×10^9",
-                  "After 5 t½ (19.0 d): 5.0×10^8 atoms",
+                  "Daughter nucleon number = 226 minus 4 = 222",
+                  "Daughter proton number = 88 minus 2 = 86",
+                  "Element with Z = 86 is radon (Rn), so daughter is radon-222",
+                  "Check: 226 = 222 + 4 and 88 = 86 + 2",
                 ],
               },
             ],
           },
           {
-            id: "phys-nuclear-bank-qa1-q04",
-            question:
-              "Evaluate the suitability of using carbon-14 dating to estimate the age of (i) a wooden Egyptian coffin thought to be about 3 000 years old, and (ii) a dinosaur bone thought to be about 70 million years old. In each case, state whether the method is suitable and explain your reasoning. [4]",
+            id: "phys-nuclear-bq1-06",
+            question: "A radioactive sample has an initial count rate of 1280 counts/min. Its half-life is 3 hours. (a) Calculate the count rate after 12 hours. (b) State the fraction of the original undecayed nuclei remaining after 12 hours.",
             marks: 4,
             modelAnswer:
-              "(i) The Egyptian coffin: Carbon-14 dating is suitable. The half-life of ¹⁴C is ≈5 730 years. 3 000 years is about 0.5 half-lives — so approximately (1/2)^0.5 ≈ 71% of the original ¹⁴C remains. This is well above the detection threshold, and the measurement uncertainty is acceptable relative to the 3 000-year age. Carbon-14 dating works well for ages up to ≈50 000 years.\n\n(ii) The dinosaur bone: Carbon-14 dating is NOT suitable. 70 million years = 70 × 10⁶ years. Number of half-lives = 70 × 10⁶ / 5730 ≈ 12 200 half-lives. The fraction remaining = (1/2)^12200, which is effectively zero — far below any detectable level. A radioisotope with a much longer half-life (e.g., uranium-238, t½ = 4.5 × 10⁹ yr) would be needed.",
+              "(a) Number of half-lives = 12 divided by 3 = 4. Count rate halves four times: 1280 to 640 to 320 to 160 to 80 counts/min. So the count rate after 12 hours is 80 counts/min.\n(b) Fraction remaining = (1/2) to the power 4 = 1/16.",
             markScheme: [
-              "(i) suitable — 3000 yr is within the reliable range of ¹⁴C dating (up to ~50 000 yr)",
-              "(i) ¹⁴C t½ = 5730 yr; measurable ¹⁴C remains after 3000 yr",
-              "(ii) not suitable — 70 million yr is vastly longer than several ¹⁴C half-lives",
-              "(ii) virtually no ¹⁴C remains after 70 million years / below detection limit; long-half-life method needed",
+              "(a) number of half-lives n = 12 / 3 = 4",
+              "(a) count rate = 1280 / 16 = 80 counts/min",
+              "(b) fraction = (1/2) to power 4",
+              "(b) fraction = 1/16",
             ],
             commonError:
-              "Students often say carbon dating is always reliable without considering the timescale. The key is whether measurable ¹⁴C remains.",
+              "A frequent error is to divide the count rate by the number of half-lives (1280 divided by 4) instead of halving it n times. Each half-life halves the value, so divide by 2 to the power n.",
+            difficulty: "core",
+            guideRef: "Half-Life",
+            hints: [
+              "Number of half-lives = total time divided by half-life.",
+              "Halve the count rate once for each half-life.",
+              "Fraction remaining = (1/2) to the power n.",
+            ],
+            strategy: "count-the-halvings",
+            solutions: [
+              {
+                label: "Successive halving",
+                steps: [
+                  "n = 12 / 3 = 4 half-lives",
+                  "1280 to 640 (1 half-life)",
+                  "640 to 320 to 160 to 80 (half-lives 2, 3, 4)",
+                  "Count rate = 80 counts/min; fraction = 1/16",
+                ],
+              },
+            ],
+          },
+          {
+            id: "phys-nuclear-bq1-07",
+            question: "State four safety precautions that should be taken when handling radioactive sources in a school laboratory, and briefly explain why each one reduces the risk.",
+            marks: 4,
+            modelAnswer:
+              "1. Use long-handled tongs to hold the source, increasing the distance from the body so the dose received is reduced. 2. Keep the time of handling as short as possible, so less radiation is received. 3. Point the source away from people and never towards the eyes, to avoid irradiating sensitive tissue. 4. Store the source in a lead-lined container when not in use, because lead absorbs the radiation and shields people nearby.",
+            markScheme: [
+              "use tongs / maximise distance: dose decreases with distance",
+              "minimise time of exposure: less radiation received",
+              "point source away from people / body: avoid irradiating tissue",
+              "store in lead-lined box: lead shields / absorbs radiation",
+            ],
+            commonError:
+              "Some answers simply list precautions without explaining why each works. The question asks for a brief reason for each precaution.",
+            difficulty: "core",
+            guideRef: "Uses, Dangers and Safety of Radioactivity",
+            hints: [
+              "Think of the three key factors: time, distance and shielding.",
+              "For each precaution, link it to reducing the dose received.",
+              "Storage and handling both matter.",
+            ],
+            strategy: "use the time-distance-shielding framework and add a reason for each",
+          },
+          {
+            id: "phys-nuclear-bq1-08",
+            question: "Explain why alpha radiation is the most dangerous type if a source is taken into the body (for example by inhaling radioactive dust), even though alpha is the least penetrating type outside the body.",
+            marks: 4,
+            modelAnswer:
+              "Outside the body, alpha is the least dangerous because it has a very short range and is stopped by the outer layer of dead skin, so it does not reach living tissue. Inside the body, however, the alpha source is in direct contact with living cells. Alpha is very strongly ionising, so it deposits all its energy over a very short distance within a small region of tissue, causing intense ionisation and damage to cells and DNA. This concentrated damage makes inhaled or ingested alpha emitters especially harmful.",
+            markScheme: [
+              "outside: alpha has short range / stopped by skin, so does not reach living tissue",
+              "inside: source is in direct contact with living cells",
+              "alpha is very strongly ionising / deposits energy over a short distance",
+              "intense ionisation damages cells / DNA, so it is most dangerous internally",
+            ],
+            commonError:
+              "Students sometimes say alpha is always the most dangerous or always the least dangerous. The danger depends on whether the source is inside or outside the body.",
             difficulty: "challenge",
             guideRef: "Uses, Dangers and Safety of Radioactivity",
             hints: [
-              "Compare the age to the half-life of ¹⁴C (5730 years).",
-              "After many half-lives, essentially no ¹⁴C remains — how many half-lives is 70 million years?",
-              "For dating to work, a measurable quantity of the isotope must remain.",
+              "Consider where the alpha energy is deposited inside versus outside the body.",
+              "Alpha has a short range but very high ionising power.",
+              "Inside the body there is no skin to absorb it before it reaches cells.",
             ],
-            strategy: "Compare the timescale of the object's age to the half-life; assess whether the isotope has decayed to below detectable levels.",
+            strategy: "contrast the external and internal cases using range and ionising power",
+          },
+          {
+            id: "phys-nuclear-bq1-09",
+            question: "A nuclide with nucleon number 218 and proton number 84 (polonium-218) decays by alpha emission. The daughter then decays by beta-minus emission. Determine the nucleon number and proton number of the final nuclide after both decays.",
+            marks: 4,
+            modelAnswer:
+              "Step 1 (alpha decay): A falls by 4 to 218 minus 4 = 214; Z falls by 2 to 84 minus 2 = 82. The daughter has A 214, Z 82 (lead-214).\nStep 2 (beta-minus decay): A is unchanged at 214; Z increases by 1 to 82 plus 1 = 83. The final nuclide has nucleon number 214 and proton number 83 (bismuth-214).",
+            markScheme: [
+              "after alpha: A = 214 (218 minus 4)",
+              "after alpha: Z = 82 (84 minus 2)",
+              "after beta: A unchanged at 214",
+              "after beta: Z = 83 (82 plus 1)",
+            ],
+            commonError:
+              "A common slip is to change A during the beta step. Beta-minus decay leaves the nucleon number unchanged; only the proton number rises by 1.",
+            difficulty: "challenge",
+            guideRef: "Radioactive Decay and Nuclear Equations",
+            hints: [
+              "Apply the alpha rule first: A minus 4, Z minus 2.",
+              "Then apply the beta rule: A unchanged, Z plus 1.",
+              "Track A and Z separately through both steps.",
+            ],
+            strategy: "apply each decay rule in sequence, updating A and Z each time",
+            solutions: [
+              {
+                label: "Two-step decay chain",
+                steps: [
+                  "Alpha: A = 218 minus 4 = 214; Z = 84 minus 2 = 82",
+                  "Daughter after alpha is lead-214 (A 214, Z 82)",
+                  "Beta-minus: A stays 214; Z = 82 plus 1 = 83",
+                  "Final nuclide: nucleon number 214, proton number 83 (bismuth-214)",
+                ],
+              },
+            ],
+          },
+          {
+            id: "phys-nuclear-bq1-10",
+            question: "A sample of carbon-14, half-life 5730 years, is found in an ancient piece of wood. The activity of the carbon-14 in the wood is one quarter of the activity in living wood of the same mass. (a) State how many half-lives have passed. (b) Estimate the age of the wood.",
+            marks: 4,
+            modelAnswer:
+              "(a) The activity has fallen to one quarter, which is (1/2) to the power 2, so 2 half-lives have passed.\n(b) Age = number of half-lives times half-life = 2 times 5730 = 11 460 years.",
+            markScheme: [
+              "(a) one quarter = (1/2) squared, so n = 2 half-lives",
+              "(b) age = n times half-life = 2 times 5730",
+              "(b) age = 11 460 years (accept about 11 500 years)",
+            ],
+            commonError:
+              "Students sometimes treat one quarter as two half-lives of time directly without multiplying by the half-life, or read one quarter as four half-lives. One quarter equals (1/2) squared, which is 2 half-lives.",
+            difficulty: "core",
+            guideRef: "Uses, Dangers and Safety of Radioactivity",
+            hints: [
+              "Express the fraction remaining as a power of one half.",
+              "One quarter = (1/2) squared, so n = 2.",
+              "Age = n times the half-life.",
+            ],
+            strategy: "convert the fraction to a number of half-lives, then multiply by the half-life",
+            solutions: [
+              {
+                label: "Fraction to age",
+                steps: [
+                  "Fraction remaining = 1/4 = (1/2) squared, so n = 2 half-lives",
+                  "Age = n times half-life = 2 times 5730",
+                  "Age = 11 460 years",
+                ],
+              },
+            ],
           },
         ],
       },
       {
-        id: "phys-nuclear-bank-qa-2",
-        title: "Nuclear Physics Structured Paper 2",
-        description: "4 structured questions including challenging half-life graph reading and synoptic applications.",
+        id: "phys-nuclear-bankqa-2",
+        title: "Question Bank — Structured Paper 2",
         questions: [
           {
-            id: "phys-nuclear-bank-qa2-q01",
-            question:
-              "Describe how you would use a Geiger-Müller tube and absorbers to identify whether a radioactive source emits alpha, beta, gamma, or a mixture of these radiations. State what you would measure and how you would interpret your results. [5]",
-            marks: 5,
+            id: "phys-nuclear-bq2-01",
+            question: "State what is meant by the term half-life of a radioactive isotope.",
+            marks: 2,
             modelAnswer:
-              "First, measure the background radiation (count rate with no source present) and subtract this from all subsequent readings.\n\n1. Measure the count rate with the source and no absorber (call this R₀).\n2. Place a thin sheet of paper between source and detector. If the count rate falls significantly, alpha radiation is present.\n3. Replace the paper with a few millimetres of aluminium. If the count rate falls further compared to paper alone, beta radiation is present.\n4. Replace the aluminium with a thick block of lead (several cm). If the count rate is still above background, gamma radiation is present (since gamma is only reduced, not stopped, by lead).\n\nBy comparing the count rates at each stage, it is possible to identify which types of radiation are present. Always subtract background from each measurement.",
+              "The half-life is the time taken for half of the radioactive nuclei in a sample to decay. Equivalently, it is the time for the activity or count rate of the sample to fall to half its initial value.",
             markScheme: [
-              "measure and subtract background radiation",
-              "use paper absorber — significant reduction indicates alpha",
-              "use aluminium absorber — further reduction indicates beta",
-              "use lead absorber — count rate still above background indicates gamma",
-              "compare corrected count rates at each stage to identify radiation type(s) present",
+              "time taken for half the (radioactive) nuclei to decay",
+              "or time for the activity / count rate to halve",
             ],
             commonError:
-              "Students forget to subtract background radiation before comparing count rates, leading to incorrect conclusions.",
-            difficulty: "core",
+              "Students sometimes say half-life is the time for the whole sample to decay, or for half the mass of the object to disappear. It is the time for half the radioactive nuclei (or the activity) to halve.",
+            difficulty: "warmup",
+            guideRef: "Half-Life",
+          },
+          {
+            id: "phys-nuclear-bq2-02",
+            question: "State two natural sources and one artificial (man-made) source of background radiation.",
+            marks: 3,
+            modelAnswer:
+              "Two natural sources: radon gas from rocks and soil; cosmic rays from space (other acceptable answers: rocks and building materials such as granite, or potassium-40 in food and drink). One artificial source: medical X-rays or radiotherapy (other acceptable answer: fallout from nuclear weapons testing or waste from the nuclear industry).",
+            markScheme: [
+              "first natural source (e.g. radon gas / rocks / cosmic rays / food)",
+              "second different natural source",
+              "one artificial source (e.g. medical X-rays / nuclear industry / weapons fallout)",
+            ],
+            commonError:
+              "Students sometimes list two versions of the same source (for example rocks and granite) instead of two distinct sources, or give a natural source as artificial.",
+            difficulty: "warmup",
             guideRef: "Types of Nuclear Radiation",
+          },
+          {
+            id: "phys-nuclear-bq2-03",
+            question: "Explain what is meant by saying that radioactive decay is random and spontaneous.",
+            marks: 3,
+            modelAnswer:
+              "Random means it is impossible to predict which particular nucleus will decay next or exactly when any given nucleus will decay; we can only describe the behaviour of large numbers of nuclei statistically. Spontaneous means the decay happens by itself and is not triggered or affected by external conditions such as temperature, pressure or chemical state.",
+            markScheme: [
+              "random: cannot predict which nucleus decays / when a given nucleus decays",
+              "random: only statistical / average behaviour can be predicted",
+              "spontaneous: not affected by external conditions (temperature, pressure, chemistry)",
+            ],
+            commonError:
+              "Students often confuse the two terms or only define one. Random refers to unpredictability; spontaneous refers to independence from external conditions.",
+            difficulty: "core",
+            guideRef: "Radioactive Decay and Nuclear Equations",
             hints: [
-              "Start with no absorber, then add absorbers of increasing stopping power.",
-              "What does each absorber specifically stop?",
-              "Remember to subtract background at each stage.",
+              "Random is about not being able to predict individual nuclei.",
+              "Spontaneous is about external conditions having no effect.",
+              "Address both terms separately.",
+            ],
+            strategy: "define each term separately with a clear distinguishing idea",
+          },
+          {
+            id: "phys-nuclear-bq2-04",
+            question: "Strontium-90 (nucleon number 90, proton number 38) is a beta-minus emitter. (a) Write the balanced nuclear equation, identifying the daughter as yttrium (Y), Z = 39. (b) Explain why the daughter nucleus is a different element from strontium.",
+            marks: 4,
+            modelAnswer:
+              "(a) Strontium-90 (A 90, Z 38) gives yttrium-90 (A 90, Z 39) plus a beta-minus particle, the electron with A 0, Z minus 1.\nCheck: nucleon numbers 90 = 90 + 0. Proton numbers 38 = 39 + (minus 1). Both balance.\n(b) In beta-minus decay a neutron in the nucleus changes into a proton, so the proton number increases by 1. Because the proton number defines the element, the daughter (Z = 39) is a different element (yttrium) from strontium (Z = 38).",
+            markScheme: [
+              "(a) daughter yttrium-90 with A = 90, Z = 39",
+              "(a) beta particle written as electron with A 0, Z minus 1",
+              "(a) equation balances for A and Z",
+              "(b) proton number increases by 1 / neutron becomes a proton, so element changes",
+            ],
+            commonError:
+              "Students sometimes keep the proton number the same in the equation. In beta-minus decay Z must increase by 1, giving a new element.",
+            difficulty: "core",
+            guideRef: "Radioactive Decay and Nuclear Equations",
+            hints: [
+              "Beta-minus: A unchanged, Z increases by 1.",
+              "Write the electron as A 0, Z minus 1.",
+              "The element is defined by the proton number.",
+            ],
+            strategy: "balance-the-equation, then link the change in Z to the change of element",
+            solutions: [
+              {
+                label: "Balancing the beta equation",
+                steps: [
+                  "Daughter A = 90 (unchanged in beta decay)",
+                  "Daughter Z = 38 plus 1 = 39 (yttrium)",
+                  "Beta particle is the electron: A 0, Z minus 1",
+                  "Check: 90 = 90 + 0 and 38 = 39 + (minus 1)",
+                ],
+              },
             ],
           },
           {
-            id: "phys-nuclear-bank-qa2-q02",
-            question:
-              "The table below shows the count rate (corrected for background) from a radioactive source at different times:\n\nTime (min): 0, 4, 8, 12, 16, 20\nCount rate (counts/min): 960, 680, 480, 340, 240, 170\n\n(a) Plot these values on a decay graph (sketch the general shape and mark key coordinates). [2]\n(b) Use the data to determine the half-life of this isotope. Show your method clearly. [3]\n(c) Predict the count rate at t = 28 min. [2]",
-            marks: 7,
+            id: "phys-nuclear-bq2-05",
+            question: "A radioactive source has a measured count rate of 1640 counts/min. The background count rate is 40 counts/min. The half-life of the source is 5 minutes. Calculate the measured count rate (including background) after 15 minutes.",
+            marks: 4,
             modelAnswer:
-              "(a) The graph is an exponential decay curve starting at (0, 960) and decreasing towards zero. [Award marks for correct starting point and smooth decreasing curve through plotted points.]\n\n(b) Method: Find the time when count rate = 960/2 = 480 counts/min.\nFrom the table, at t = 8 min, count rate = 480 counts/min.\nSo t½ ≈ 8 min.\nVerification: at t = 0, rate = 960; at t = 8 min, rate = 480 ✓ (halved).\nAlternative: at t = 8 min, rate = 480; at t = 16 min, rate = 240 — interval = 8 min ✓.\n\n(c) From t = 20 min (rate = 170 counts/min), 28 min is 8 min later = 1 half-life.\nCount rate at t = 28 min = 170/2 = 85 counts/min.",
+              "First correct for background: source count rate = 1640 minus 40 = 1600 counts/min.\nNumber of half-lives = 15 divided by 5 = 3.\nSource count rate after 15 minutes = 1600 times (1/2) cubed = 1600 divided by 8 = 200 counts/min.\nMeasured count rate (add background) = 200 plus 40 = 240 counts/min.",
             markScheme: [
-              "(a) smooth exponential decay curve / correct shape",
-              "(a) starts at (0, 960) and passes through plotted data points",
-              "(b) correctly identifies that count rate halves from 960 to 480 between t=0 and t=8 min",
-              "(b) states t½ = 8 min",
-              "(b) verifies with a second pair of values (e.g., 480→240 also takes 8 min)",
-              "(c) 28 − 20 = 8 min = 1 half-life; rate = 170/2 = 85 counts/min",
-              "(c) answer 85 counts/min (allow 82–88)",
+              "subtract background: 1640 minus 40 = 1600 counts/min",
+              "number of half-lives n = 15 / 5 = 3",
+              "source count rate = 1600 / 8 = 200 counts/min",
+              "add background back: 200 + 40 = 240 counts/min",
             ],
             commonError:
-              "Students often read the half-life from a single point without verifying with a second — the two-point check is good practice and gains the verification mark.",
+              "Students often forget to subtract the background before applying the half-life, and forget to add it back at the end. Background is always present and must be handled at both ends of the calculation.",
+            difficulty: "challenge",
+            guideRef: "Half-Life",
+            hints: [
+              "Background must be removed before applying the half-life.",
+              "Apply the half-life only to the source (corrected) count rate.",
+              "Add the background back to get the final measured reading.",
+            ],
+            strategy: "subtract background, apply the half-life, then add background back",
+            solutions: [
+              {
+                label: "Background-corrected half-life calculation",
+                steps: [
+                  "Corrected source count rate = 1640 minus 40 = 1600 counts/min",
+                  "n = 15 / 5 = 3 half-lives",
+                  "Source after 15 min = 1600 / 8 = 200 counts/min",
+                  "Measured = 200 + 40 = 240 counts/min",
+                ],
+              },
+            ],
+          },
+          {
+            id: "phys-nuclear-bq2-06",
+            question: "Describe how a beta source can be used to control the thickness of aluminium foil as it is produced on a rolling machine. Explain how the system corrects the thickness automatically.",
+            marks: 4,
+            modelAnswer:
+              "A beta source is placed on one side of the foil and a detector on the other side. Beta radiation is partly absorbed by the foil, so the count rate reaching the detector depends on the foil thickness. If the foil becomes too thick, more beta is absorbed and the count rate falls; if too thin, less is absorbed and the count rate rises. The detector signal is fed to a control system that adjusts the pressure of the rollers: a falling count rate makes the rollers press harder to thin the foil, and a rising count rate eases the rollers, keeping the thickness constant.",
+            markScheme: [
+              "beta source one side, detector the other side of the foil",
+              "beta is partly absorbed, so count rate depends on thickness",
+              "thicker foil absorbs more (lower count); thinner foil absorbs less (higher count)",
+              "detector feeds back to rollers to adjust thickness automatically",
+            ],
+            commonError:
+              "Students sometimes choose alpha or gamma. Alpha would be stopped completely (no signal) and gamma would pass through almost unchanged (insensitive). Beta is needed because it is partly absorbed.",
+            difficulty: "core",
+            guideRef: "Uses, Dangers and Safety of Radioactivity",
+            hints: [
+              "Place source and detector on opposite sides of the foil.",
+              "Relate the count rate to how much beta is absorbed.",
+              "Describe the feedback that adjusts the rollers.",
+            ],
+            strategy: "describe the set-up, the physics of absorption, then the feedback loop",
+          },
+          {
+            id: "phys-nuclear-bq2-07",
+            question: "A nuclide of bismuth-212 has nucleon number 212 and proton number 83. It emits an alpha particle. (a) Write the nucleon number and proton number of the daughter nucleus. (b) Using the fact that Z = 81 is thallium, name the daughter nuclide.",
+            marks: 3,
+            modelAnswer:
+              "(a) Alpha decay: A = 212 minus 4 = 208; Z = 83 minus 2 = 81.\n(b) The element with proton number 81 is thallium, so the daughter is thallium-208.",
+            markScheme: [
+              "(a) daughter A = 208 (212 minus 4)",
+              "(a) daughter Z = 81 (83 minus 2)",
+              "(b) daughter named thallium-208",
+            ],
+            commonError:
+              "Students may subtract the wrong amounts. Alpha removes 4 from A and 2 from Z.",
+            difficulty: "core",
+            guideRef: "Radioactive Decay and Nuclear Equations",
+            hints: [
+              "Alpha decay: A minus 4, Z minus 2.",
+              "212 minus 4 = 208; 83 minus 2 = 81.",
+              "Z = 81 is thallium.",
+            ],
+            strategy: "apply the alpha rule, then read off the element from Z",
+            solutions: [
+              {
+                label: "Alpha decay of bismuth-212",
+                steps: [
+                  "A = 212 minus 4 = 208",
+                  "Z = 83 minus 2 = 81",
+                  "Element with Z = 81 is thallium",
+                  "Daughter nuclide is thallium-208",
+                ],
+              },
+            ],
+          },
+          {
+            id: "phys-nuclear-bq2-08",
+            question: "Explain why a radioactive isotope used as a tracer to study the flow of liquid through underground pipes should be a gamma emitter with a half-life of a few hours rather than a few years.",
+            marks: 4,
+            modelAnswer:
+              "A gamma emitter is needed because gamma radiation can penetrate the soil and pipe walls and be detected at the surface, whereas alpha and beta would be absorbed before reaching the detector. The half-life should be a few hours so that the tracer remains active long enough to follow the liquid through the pipes and locate a leak, but then decays to a negligible activity quickly. If the half-life were a few years, the tracer would remain radioactive in the ground and water supply for a very long time, creating a lasting contamination and safety hazard.",
+            markScheme: [
+              "gamma is penetrating, so it can be detected through soil / pipe walls",
+              "alpha and beta would be absorbed and not detected",
+              "half-life of a few hours lasts long enough to track the flow / find a leak",
+              "but then decays quickly, avoiding long-term contamination",
+            ],
+            commonError:
+              "Students may explain only the choice of gamma or only the half-life. The question asks about both the type and the half-life.",
+            difficulty: "challenge",
+            guideRef: "Uses, Dangers and Safety of Radioactivity",
+            hints: [
+              "Think about which radiation can be detected through the ground.",
+              "The tracer must last long enough to follow the flow.",
+              "A long half-life would leave radioactivity in the water supply.",
+            ],
+            strategy: "justify the radiation type and the half-life separately, both with practical reasons",
+          },
+          {
+            id: "phys-nuclear-bq2-09",
+            question: "The table shows the count rate of a sample measured every 2 hours. Time/h: 0, 2, 4, 6, 8 with count rates 2000, 1410, 1000, 707, 500 counts/min. (a) Use the data to determine the half-life of the sample. (b) Predict the count rate at 12 hours.",
+            marks: 5,
+            modelAnswer:
+              "(a) The count rate falls from 2000 to 1000 counts/min between 0 and 4 hours, so the half-life is 4 hours. This is confirmed by the fall from 1000 (at 4 h) to 500 (at 8 h), again a 4-hour interval.\n(b) From 0 to 12 hours, number of half-lives = 12 divided by 4 = 3. Count rate = 2000 times (1/2) cubed = 2000 divided by 8 = 250 counts/min.",
+            markScheme: [
+              "(a) identify a halving: 2000 to 1000 takes 4 hours",
+              "(a) confirm with a second halving: 1000 to 500 also takes 4 hours",
+              "(a) half-life = 4 hours",
+              "(b) n = 12 / 4 = 3 half-lives",
+              "(b) count rate = 2000 / 8 = 250 counts/min",
+            ],
+            commonError:
+              "Students sometimes pick two points that are not exactly half of each other. Choose points where the count rate clearly halves (for example 2000 to 1000) to read the half-life reliably.",
             difficulty: "core",
             guideRef: "Half-Life",
             hints: [
-              "Half-life is the time for the count rate to halve — not the time for it to reach zero.",
-              "Find two count rates where one is exactly double the other; the time difference is t½.",
-              "For part (c), start from the last known value and apply one more halving.",
+              "Find a pair of times where the count rate halves.",
+              "2000 to 1000 takes 4 hours, so the half-life is 4 hours.",
+              "For part (b), n = 12 divided by 4, then halve repeatedly.",
             ],
-            strategy: "Read t½ from graph: find two successive values where one is half the other; the time interval is t½.",
+            strategy: "read the half-life from a clear halving in the data, then extrapolate",
             solutions: [
               {
-                label: "Reading from table directly",
+                label: "Reading and extrapolating",
                 steps: [
-                  "960/2 = 480 at t = 8 min → t½ = 8 min",
-                  "Check: 480/2 = 240 at t = 16 min (interval = 8 min) ✓",
-                  "For t = 28 min: 28 − 20 = 8 min = 1 half-life beyond t = 20 min",
-                  "Count rate = 170/2 = 85 counts/min",
+                  "2000 counts/min at 0 h halves to 1000 at 4 h, so t-half = 4 h",
+                  "Confirm: 1000 at 4 h halves to 500 at 8 h (another 4 h)",
+                  "At 12 h: n = 12 / 4 = 3 half-lives",
+                  "Count rate = 2000 / 8 = 250 counts/min",
                 ],
               },
             ],
           },
           {
-            id: "phys-nuclear-bank-qa2-q03",
-            question:
-              "Iodine-131 (¹³¹₅₃I) is a beta-minus emitter used in the treatment of thyroid cancer. It has a half-life of 8 days.\n\n(a) Write a balanced nuclear equation for the beta-minus decay of iodine-131. [3]\n(b) A patient is given a dose containing 6.4 × 10¹⁰ atoms of ¹³¹I. Calculate the time taken for the number of ¹³¹I atoms to fall to 5.0 × 10⁹ atoms. [3]\n(c) Explain one reason why iodine-131 is suitable for treating thyroid cancer, and one safety precaution that should be taken when handling the source. [2]",
-            marks: 8,
+            id: "phys-nuclear-bq2-10",
+            question: "A nuclide of uranium-238 (nucleon number 238, proton number 92) decays by alpha emission to thorium (Th). The thorium then decays by beta-minus emission to protactinium (Pa). Using Z = 90 for thorium and Z = 91 for protactinium, write the two balanced nuclear equations.",
+            marks: 5,
             modelAnswer:
-              "(a) ¹³¹₅₃I → ¹³¹₅₄Xe + ⁰₋₁e\n\nDaughter: A = 131 (unchanged), Z = 53 + 1 = 54 → xenon (Xe).\n\n(b) Ratio = 6.4×10¹⁰ / 5.0×10⁹ = 12.8.\nThis is not a whole-number power of 2, so we use: n = log(12.8)/log(2) ≈ 3.68 half-lives.\nTime = 3.68 × 8 = 29.4 ≈ 29 days.\n\nAlternatively (approximate method): 6.4×10¹⁰ → 3.2×10¹⁰ → 1.6×10¹⁰ → 8.0×10⁹ → ~5.0×10⁹ (a little less than 4 half-lives), so between 24 and 32 days, ≈29 days.\n\n(c) Suitable: The thyroid gland selectively absorbs iodine, so ¹³¹I concentrates in the gland, delivering radiation directly to the tumour with minimal dose to surrounding tissue / the half-life of 8 days is long enough for treatment but short enough that the dose falls quickly.\n\nSafety precaution: use remote-handling tongs or robotic arms; store in lead-lined container; work behind a lead shield; minimise time of exposure; work at maximum practical distance.",
+              "Step 1 (alpha): uranium-238 (A 238, Z 92) gives thorium-234 (A 234, Z 90) plus an alpha particle helium-4 (A 4, Z 2). Check: 238 = 234 + 4 and 92 = 90 + 2.\nStep 2 (beta-minus): thorium-234 (A 234, Z 90) gives protactinium-234 (A 234, Z 91) plus a beta particle, the electron with A 0, Z minus 1. Check: 234 = 234 + 0 and 90 = 91 + (minus 1).",
             markScheme: [
-              "(a) daughter symbol Xe / xenon",
-              "(a) daughter A = 131, Z = 54",
-              "(a) ⁰₋₁e beta particle written correctly",
-              "(b) ratio = 6.4×10¹⁰ / 5.0×10⁹ = 12.8 (or equivalent method)",
-              "(b) n = log(12.8)/log(2) = 3.68 half-lives (or correct graph/iterative method)",
-              "(b) time = 3.68 × 8 = 29 days (allow 28–31 days)",
-              "(c) thyroid concentrates iodine / targeted delivery to tumour",
-              "(c) any valid safety precaution: lead container, tongs, lead shield, maximise distance, minimise time",
+              "step 1: alpha particle helium-4 (A 4, Z 2)",
+              "step 1: thorium-234 with A = 234, Z = 90 and equation balances",
+              "step 2: beta particle electron with A 0, Z minus 1",
+              "step 2: protactinium-234 with A = 234, Z = 91",
+              "step 2: equation balances for A and Z",
             ],
             commonError:
-              "In part (b) students assume a whole number of half-lives and get 32 days (4 half-lives giving 4.0×10⁹, which overshoots). The correct approach uses logarithms or interpolation.",
+              "Students sometimes change the nucleon number during the beta step or change the proton number by 2 during the alpha step. Alpha: A minus 4, Z minus 2. Beta-minus: A unchanged, Z plus 1.",
             difficulty: "challenge",
-            guideRef: "Uses, Dangers and Safety of Radioactivity",
+            guideRef: "Radioactive Decay and Nuclear Equations",
             hints: [
-              "Set up the ratio: initial/final = 6.4×10¹⁰ / 5.0×10⁹.",
-              "This ratio is not exactly a power of 2, so use n = log(ratio)/log(2).",
-              "Then time = n × t½.",
-              "For part (c), think about why the thyroid is the target organ for iodine.",
+              "Do the alpha step first: A minus 4, Z minus 2.",
+              "Then the beta-minus step: A unchanged, Z plus 1.",
+              "Check that both equations balance for A and Z.",
             ],
-            strategy: "Use logarithms when the ratio is not an exact power of 2; n = log₂(N₀/N).",
+            strategy: "balance each equation separately, carrying the daughter of step 1 into step 2",
             solutions: [
               {
-                label: "Logarithm method",
+                label: "Two-equation decay chain",
                 steps: [
-                  "Ratio = 6.4×10^10 / 5.0×10^9 = 12.8",
-                  "n = log(12.8) / log(2) = 1.107 / 0.301 = 3.68 half-lives",
-                  "Time = 3.68 × 8 days = 29.4 days ≈ 29 days",
+                  "Alpha: A = 238 minus 4 = 234; Z = 92 minus 2 = 90 (thorium-234)",
+                  "Equation 1: uranium-238 gives thorium-234 plus helium-4",
+                  "Beta-minus: A stays 234; Z = 90 plus 1 = 91 (protactinium-234)",
+                  "Equation 2: thorium-234 gives protactinium-234 plus an electron (A 0, Z minus 1)",
                 ],
               },
+            ],
+          },
+        ],
+      },
+      {
+        id: "phys-nuclear-bankqa-3",
+        title: "Question Bank — Structured Paper 3",
+        questions: [
+          {
+            id: "phys-nuclear-bq3-01",
+            question: "State the relative charge and the relative mass of a proton, a neutron and an electron.",
+            marks: 3,
+            modelAnswer:
+              "Proton: relative charge +1, relative mass 1. Neutron: relative charge 0, relative mass 1. Electron: relative charge minus 1, relative mass about 1/2000 (negligible compared with a nucleon).",
+            markScheme: [
+              "proton: charge +1, mass 1",
+              "neutron: charge 0, mass 1",
+              "electron: charge minus 1, mass about 1/2000 (negligible)",
+            ],
+            commonError:
+              "Students sometimes give the electron a relative mass of 1 or give the neutron a charge. The electron mass is negligible and the neutron is neutral.",
+            difficulty: "warmup",
+            guideRef: "The Nuclear Model of the Atom",
+          },
+          {
+            id: "phys-nuclear-bq3-02",
+            question: "Define the proton number Z and the nucleon number A of an atom.",
+            marks: 2,
+            modelAnswer:
+              "The proton number Z is the number of protons in the nucleus; it defines which element the atom is. The nucleon number A is the total number of protons and neutrons in the nucleus.",
+            markScheme: [
+              "proton number = number of protons (in the nucleus)",
+              "nucleon number = total number of protons and neutrons",
+            ],
+            commonError:
+              "Students sometimes define the nucleon number as the number of neutrons only. It is the total of protons and neutrons.",
+            difficulty: "warmup",
+            guideRef: "Proton Number, Nucleon Number and Isotopes",
+          },
+          {
+            id: "phys-nuclear-bq3-03",
+            question: "Describe how alpha and beta particles behave differently when they pass through a uniform magnetic field, and explain why gamma radiation is undeflected.",
+            marks: 4,
+            modelAnswer:
+              "Both alpha and beta particles are charged, so they experience a force in a magnetic field and follow curved paths. Because alpha is positive (+2) and beta is negative (minus 1), they curve in opposite directions to each other. The beta particle is much lighter and faster than the alpha, so for the same field it is deflected much more (a tighter curve). Gamma radiation has no charge, so it experiences no magnetic force and travels straight through undeflected.",
+            markScheme: [
+              "both alpha and beta are charged, so both are deflected",
+              "alpha and beta deflect in opposite directions (opposite charges)",
+              "beta deflected more than alpha (much lighter / faster)",
+              "gamma has no charge so is not deflected",
+            ],
+            commonError:
+              "Students often say alpha and beta deflect by the same amount. Because beta is far lighter, it deflects much more than alpha in the same field.",
+            difficulty: "core",
+            guideRef: "Types of Nuclear Radiation",
+            hints: [
+              "Only charged particles feel a force in a magnetic field.",
+              "Opposite charges curve in opposite directions.",
+              "A lighter particle is deflected more for the same field.",
+            ],
+            strategy: "compare charge (direction) and mass (amount of deflection), then handle gamma separately",
+          },
+          {
+            id: "phys-nuclear-bq3-04",
+            question: "Caesium-137 (nucleon number 137, proton number 55) is a beta-minus emitter. (a) Write the balanced nuclear equation, given that the daughter barium has Z = 56. (b) State how many neutrons the caesium-137 nucleus contains.",
+            marks: 4,
+            modelAnswer:
+              "(a) Caesium-137 (A 137, Z 55) gives barium-137 (A 137, Z 56) plus a beta particle, the electron with A 0, Z minus 1. Check: 137 = 137 + 0 and 55 = 56 + (minus 1).\n(b) Neutrons in caesium-137 = A minus Z = 137 minus 55 = 82.",
+            markScheme: [
+              "(a) daughter barium-137 with A = 137, Z = 56",
+              "(a) beta particle electron with A 0, Z minus 1",
+              "(a) equation balances for A and Z",
+              "(b) neutrons = 137 minus 55 = 82",
+            ],
+            commonError:
+              "In part (b) some students use the daughter's proton number. The neutron number of caesium-137 uses its own Z = 55.",
+            difficulty: "core",
+            guideRef: "Radioactive Decay and Nuclear Equations",
+            hints: [
+              "Beta-minus: A unchanged, Z plus 1.",
+              "Daughter Z = 55 plus 1 = 56 (barium).",
+              "Neutrons = A minus Z = 137 minus 55.",
+            ],
+            strategy: "balance the equation, then apply N = A minus Z to the parent",
+            solutions: [
               {
-                label: "Successive halving (approximate)",
+                label: "Beta decay and neutron count",
                 steps: [
-                  "6.4×10^10 → 3.2×10^10 (8 d) → 1.6×10^10 (16 d) → 8.0×10^9 (24 d) → 4.0×10^9 (32 d)",
-                  "5.0×10^9 lies between 24 d and 32 d, closer to 24+5 = 29 d",
-                  "Estimate: ~29 days",
+                  "Daughter A = 137 (unchanged)",
+                  "Daughter Z = 55 plus 1 = 56 (barium-137)",
+                  "Beta particle is the electron: A 0, Z minus 1",
+                  "Neutrons in caesium-137 = 137 minus 55 = 82",
                 ],
               },
             ],
           },
           {
-            id: "phys-nuclear-bank-qa2-q04",
-            question:
-              "A nuclear power station uses uranium-235 as fuel. Controlled nuclear fission occurs in the reactor core.\n\n(a) Explain what is meant by nuclear fission. [2]\n(b) Explain how a chain reaction is initiated and sustained in a reactor. [3]\n(c) Compare nuclear fission with nuclear fusion, identifying one similarity and two differences. [3]",
-            marks: 8,
+            id: "phys-nuclear-bq3-05",
+            question: "A sample contains 6.0 times 10 to the power 8 undecayed nuclei of an isotope with a half-life of 25 minutes. (a) How many nuclei remain undecayed after 75 minutes? (b) How many nuclei have decayed in this time?",
+            marks: 4,
             modelAnswer:
-              "(a) Nuclear fission is the splitting of a heavy nucleus (such as ²³⁵U) into two smaller (daughter) nuclei when it absorbs a neutron. A large amount of energy is released, along with two or three more neutrons.\n\n(b) A neutron is absorbed by a ²³⁵U nucleus, which becomes unstable and splits, releasing 2–3 fast neutrons and energy. These neutrons can then be absorbed by other ²³⁵U nuclei, each producing further fissions and releasing more neutrons. This self-sustaining process is a chain reaction. In a reactor, control rods (e.g., boron) absorb some neutrons to keep the reaction at a steady, controlled rate (preventing runaway reaction).\n\n(c) Similarity: both fission and fusion release energy from nuclear reactions (E = mc², mass is converted to energy in both cases).\n\nDifferences:\n1. Fission splits a heavy nucleus; fusion joins two light nuclei.\n2. Fusion requires extremely high temperatures (>10⁷ K) because the positive nuclei must overcome electrostatic repulsion to get close enough for the strong nuclear force to act; fission requires only a low-energy neutron to trigger it (no extreme temperature needed).",
+              "(a) Number of half-lives = 75 divided by 25 = 3. Fraction remaining = (1/2) cubed = 1/8. Nuclei remaining = 6.0 times 10 to power 8, divided by 8 = 7.5 times 10 to power 7.\n(b) Nuclei decayed = initial minus remaining = 6.0 times 10 to power 8, minus 7.5 times 10 to power 7 = 5.25 times 10 to power 8.",
             markScheme: [
-              "(a) heavy nucleus splits into two smaller nuclei / daughter nuclei",
-              "(a) triggered by neutron absorption; releases energy and further neutrons",
-              "(b) neutron absorbed by ²³⁵U → fission → releases 2-3 neutrons",
-              "(b) released neutrons trigger further fissions / chain reaction described",
-              "(b) control rods absorb neutrons to regulate rate / prevent runaway",
-              "(c) similarity: both release nuclear energy / energy from mass (E=mc²)",
-              "(c) difference 1: fission splits heavy nucleus; fusion joins light nuclei",
-              "(c) difference 2: fusion requires very high temperature; fission does not / fission needs slow neutron",
+              "(a) number of half-lives n = 75 / 25 = 3",
+              "(a) fraction remaining = (1/2) cubed = 1/8",
+              "(a) nuclei remaining = 6.0e8 / 8 = 7.5e7",
+              "(b) nuclei decayed = 6.0e8 minus 7.5e7 = 5.25e8",
             ],
             commonError:
-              "Students often confuse fission and fusion, or claim that fission joins nuclei and fusion splits them — always recall: fission = split (like 'fissure'), fusion = join (like 'fuse together').",
+              "In part (b) students sometimes give the number remaining instead of the number decayed. The number decayed is the initial number minus the number remaining.",
+            difficulty: "core",
+            guideRef: "Half-Life",
+            hints: [
+              "Find n = 75 divided by 25.",
+              "Remaining = initial times (1/2) to the power n.",
+              "Decayed = initial minus remaining.",
+            ],
+            strategy: "find the remaining nuclei first, then subtract from the start to get those decayed",
+            solutions: [
+              {
+                label: "Remaining then decayed",
+                steps: [
+                  "n = 75 / 25 = 3 half-lives",
+                  "Fraction remaining = (1/2) cubed = 1/8",
+                  "Remaining = 6.0e8 / 8 = 7.5e7 nuclei",
+                  "Decayed = 6.0e8 minus 7.5e7 = 5.25e8 nuclei",
+                ],
+              },
+            ],
+          },
+          {
+            id: "phys-nuclear-bq3-06",
+            question: "Explain why the half-life of a particular isotope is the same whether the sample is large or small, hot or cold, or chemically combined or pure.",
+            marks: 3,
+            modelAnswer:
+              "Radioactive decay is a property of the unstable nucleus itself. Each nucleus has a fixed probability of decaying in a given time, set only by the type of nucleus. This probability is not affected by external conditions such as temperature, pressure or chemical bonding, because these involve the electrons and the surroundings, not the nucleus. The number of nuclei present does not change the probability per nucleus, so the fraction decaying in one half-life is always one half. Therefore the half-life is constant for a given isotope.",
+            markScheme: [
+              "decay is a property of the nucleus / each nucleus has a fixed decay probability",
+              "external conditions (temperature, chemistry) do not affect the nucleus",
+              "the probability per nucleus is independent of sample size, so the half-life is constant",
+            ],
+            commonError:
+              "Students sometimes claim that a larger sample has a longer half-life. The half-life is independent of how many nuclei are present.",
+            difficulty: "core",
+            guideRef: "Half-Life",
+            hints: [
+              "Think about what controls decay: the nucleus or its surroundings?",
+              "External conditions affect electrons, not the nucleus.",
+              "The fraction decaying per half-life is always one half regardless of amount.",
+            ],
+            strategy: "argue from the nucleus having a fixed, condition-independent decay probability",
+          },
+          {
+            id: "phys-nuclear-bq3-07",
+            question: "Describe how radiation is used to treat cancer (radiotherapy) and explain one way the treatment is arranged to protect healthy tissue.",
+            marks: 4,
+            modelAnswer:
+              "In radiotherapy a beam of gamma radiation (or another high-energy radiation) is aimed at the tumour. The radiation ionises and damages the cancer cells, killing them or stopping them dividing. To protect healthy tissue, the beam is directed from several different directions, all aimed at the tumour, or the source is rotated around the patient. This way the tumour at the centre receives a high total dose from every direction, while each path of healthy tissue receives only a small fraction of the dose.",
+            markScheme: [
+              "high-energy radiation (gamma) aimed at the tumour",
+              "radiation kills / damages cancer cells",
+              "beam directed from several directions or rotated around the patient",
+              "tumour gets a high dose; surrounding healthy tissue gets a lower dose",
+            ],
+            commonError:
+              "Students sometimes say radiotherapy avoids harming healthy cells entirely. It reduces the dose to healthy tissue, but cannot avoid it completely; rotating the beam concentrates the dose at the tumour.",
+            difficulty: "core",
+            guideRef: "Uses, Dangers and Safety of Radioactivity",
+            hints: [
+              "Radiation damages cells by ionising them.",
+              "The tumour is the target, but the beam passes through healthy tissue too.",
+              "Rotating or crossing beams concentrates the dose at the tumour.",
+            ],
+            strategy: "describe the mechanism (ionisation kills cells), then the geometry that spares healthy tissue",
+          },
+          {
+            id: "phys-nuclear-bq3-08",
+            question: "A radioactive source has an activity of 8000 Bq. After 36 days the activity has fallen to 500 Bq. (a) Determine the half-life of the source. (b) Calculate the activity that would remain after a further 12 days beyond the 36 days.",
+            marks: 5,
+            modelAnswer:
+              "(a) 8000 divided by 500 = 16 = 2 to the power 4, so 4 half-lives have passed in 36 days. Half-life = 36 divided by 4 = 9 days.\n(b) A further 12 days is not a whole number of half-lives, so work in half-lives. From the 36-day point (activity 500 Bq), 12 days = 12 divided by 9 = 4/3 half-lives. After 1 half-life (9 days) the activity is 250 Bq; the remaining 3 days is 1/3 of a half-life. Using activity equals 500 times (1/2) to the power (12/9): (1/2) to the power 1.333 = about 0.397, so activity = 500 times 0.397 = about 198 Bq (approximately 200 Bq).",
+            markScheme: [
+              "(a) ratio 8000 / 500 = 16 = 2 to power 4, so n = 4 half-lives",
+              "(a) half-life = 36 / 4 = 9 days",
+              "(b) further 12 days = 12 / 9 = 1.33 half-lives from the 500 Bq point",
+              "(b) activity = 500 times (1/2) to power (12/9)",
+              "(b) activity is about 198 to 200 Bq",
+            ],
+            commonError:
+              "Students often assume the extra 12 days is a whole number of half-lives. Here it is 12/9 of a half-life, so the activity does not simply halve a whole number of times.",
+            difficulty: "challenge",
+            guideRef: "Half-Life",
+            hints: [
+              "Find the half-life from the first part using the ratio of activities.",
+              "Express the further 12 days as a number of half-lives: 12 divided by 9.",
+              "Activity = starting activity times (1/2) to the power (number of half-lives).",
+            ],
+            strategy: "find the half-life first, then use the (1/2) to the power n formula for a non-integer number of half-lives",
+            solutions: [
+              {
+                label: "Half-life then fractional decay",
+                steps: [
+                  "8000 / 500 = 16 = 2 to power 4, so n = 4 half-lives in 36 days",
+                  "Half-life = 36 / 4 = 9 days",
+                  "Further 12 days = 12 / 9 = 1.33 half-lives, starting from 500 Bq",
+                  "Activity = 500 times (1/2) to power 1.33 = about 198 Bq (roughly 200 Bq)",
+                ],
+              },
+            ],
+          },
+          {
+            id: "phys-nuclear-bq3-09",
+            question: "A nuclide of radon-220 (nucleon number 220, proton number 86) undergoes a decay and the product is polonium-216 (proton number 84). (a) State the type of decay. (b) Justify your answer by showing the changes in nucleon number and proton number.",
+            marks: 4,
+            modelAnswer:
+              "(a) The decay is alpha decay.\n(b) The nucleon number falls from 220 to 216, a decrease of 4, and the proton number falls from 86 to 84, a decrease of 2. A decrease of 4 in A and 2 in Z is exactly what happens when an alpha particle (helium-4, A 4, Z 2) is emitted, so the decay must be alpha decay.",
+            markScheme: [
+              "(a) alpha decay",
+              "(b) nucleon number decreases by 4 (220 to 216)",
+              "(b) proton number decreases by 2 (86 to 84)",
+              "(b) these changes match the loss of a helium-4 nucleus (alpha particle)",
+            ],
+            commonError:
+              "Students sometimes name the decay correctly but do not justify it with the changes in A and Z, which the question requires.",
+            difficulty: "core",
+            guideRef: "Radioactive Decay and Nuclear Equations",
+            hints: [
+              "Compare the nucleon numbers and proton numbers of parent and product.",
+              "A decrease of 4 in A and 2 in Z is the alpha signature.",
+              "Link the changes to the particle emitted.",
+            ],
+            strategy: "find the changes in A and Z, then match them to the decay type",
+            solutions: [
+              {
+                label: "Identifying the decay",
+                steps: [
+                  "Change in A = 220 minus 216 = 4 (decrease)",
+                  "Change in Z = 86 minus 84 = 2 (decrease)",
+                  "A minus 4 and Z minus 2 corresponds to emitting helium-4",
+                  "Therefore the decay is alpha decay",
+                ],
+              },
+            ],
+          },
+          {
+            id: "phys-nuclear-bq3-10",
+            question: "Compare nuclear fission and nuclear fusion. Your answer should include one similarity and two differences, and should explain why fusion requires very high temperatures.",
+            marks: 5,
+            modelAnswer:
+              "Similarity: both fission and fusion release a large amount of energy from the nucleus (mass is converted to energy). Difference 1: fission is the splitting of a heavy nucleus, such as uranium-235, into two smaller nuclei, while fusion is the joining of two light nuclei, such as hydrogen nuclei, to form a heavier one. Difference 2: fission is triggered when a heavy nucleus absorbs a neutron and needs no extreme temperature, whereas fusion needs extremely high temperatures and pressures. Fusion needs very high temperatures because the positively charged nuclei repel each other strongly; only at very high temperatures do the nuclei move fast enough to overcome this electrostatic repulsion and get close enough for the strong nuclear force to fuse them.",
+            markScheme: [
+              "similarity: both release (large amounts of) nuclear energy / from mass-energy conversion",
+              "difference 1: fission splits a heavy nucleus; fusion joins light nuclei",
+              "difference 2: fission triggered by neutron absorption / no high temperature needed; fusion needs very high temperature",
+              "high temperature gives nuclei enough speed / energy",
+              "to overcome the electrostatic repulsion between positive nuclei and get close enough to fuse",
+            ],
+            commonError:
+              "Students often reverse the definitions of fission and fusion. Fission splits a heavy nucleus; fusion joins light nuclei.",
             difficulty: "challenge",
             guideRef: "Uses, Dangers and Safety of Radioactivity",
             hints: [
-              "Fission: think 'fissure' — a crack or split.",
-              "Fusion: like fusing/joining two things together.",
-              "For the chain reaction: what happens to the neutrons produced in each fission?",
-              "For temperature: why do nuclei need to get very close for fusion, and why is that difficult?",
+              "Both processes release energy from the nucleus.",
+              "One splits heavy nuclei; the other joins light nuclei.",
+              "Fusion needs to overcome repulsion between positive nuclei.",
             ],
+            strategy: "structure the answer as one similarity, two differences, then the temperature explanation",
+          },
+        ],
+      },
+      {
+        id: "phys-nuclear-bankqa-4",
+        title: "Question Bank — Structured Paper 4",
+        questions: [
+          {
+            id: "phys-nuclear-bq4-01",
+            question: "State which type of nuclear radiation is described by each of the following: (a) the most penetrating; (b) the most strongly ionising; (c) an electromagnetic wave.",
+            marks: 3,
+            modelAnswer:
+              "(a) Gamma is the most penetrating. (b) Alpha is the most strongly ionising. (c) Gamma is an electromagnetic wave.",
+            markScheme: [
+              "(a) gamma (most penetrating)",
+              "(b) alpha (most ionising)",
+              "(c) gamma (electromagnetic wave)",
+            ],
+            commonError:
+              "Students sometimes confuse penetrating and ionising power. Gamma is the most penetrating but the least ionising; alpha is the most ionising but least penetrating.",
+            difficulty: "warmup",
+            guideRef: "Types of Nuclear Radiation",
+          },
+          {
+            id: "phys-nuclear-bq4-02",
+            question: "An alpha particle and a beta particle are described by their make-up and charge. (a) State what an alpha particle is made of. (b) State what a beta-minus particle is and where it comes from.",
+            marks: 3,
+            modelAnswer:
+              "(a) An alpha particle is made of 2 protons and 2 neutrons; it is a helium-4 nucleus. (b) A beta-minus particle is a fast-moving electron; it is created and emitted from the nucleus when a neutron changes into a proton.",
+            markScheme: [
+              "(a) alpha = 2 protons and 2 neutrons / helium nucleus",
+              "(b) beta-minus = (fast) electron",
+              "(b) emitted from the nucleus when a neutron becomes a proton",
+            ],
+            commonError:
+              "Students sometimes say the beta electron comes from the electron shells. It is created in the nucleus when a neutron converts to a proton.",
+            difficulty: "warmup",
+            guideRef: "Types of Nuclear Radiation",
+          },
+          {
+            id: "phys-nuclear-bq4-03",
+            question: "Describe the Geiger-Marsden (Rutherford) alpha-scattering experiment and state the three main observations.",
+            marks: 4,
+            modelAnswer:
+              "A beam of alpha particles from a radioactive source was directed at a very thin sheet of gold foil in a vacuum. A movable detector (a zinc-sulfide screen) was used to count the alpha particles arriving at different angles around the foil. The three main observations were: most alpha particles passed straight through the foil with little or no deflection; a small fraction were deflected through large angles (more than 90 degrees); and a very small fraction (about 1 in 8000) bounced almost straight back towards the source.",
+            markScheme: [
+              "alpha particles fired at thin gold foil (in a vacuum)",
+              "movable detector / screen counts particles at different angles",
+              "most pass straight through with little deflection",
+              "a few deflected through large angles and a very few bounce straight back",
+            ],
+            commonError:
+              "Students sometimes omit the back-scattering observation, which was the most important clue for the existence of a tiny, dense nucleus.",
+            difficulty: "core",
+            guideRef: "The Nuclear Model of the Atom",
+            hints: [
+              "Describe the source, the foil and how particles were detected.",
+              "Give all three observations: straight through, large deflection, back-scatter.",
+              "The rare back-scatter is the key observation.",
+            ],
+            strategy: "describe the apparatus first, then list each of the three observations",
+          },
+          {
+            id: "phys-nuclear-bq4-04",
+            question: "A nucleus of americium-241 (nucleon number 241, proton number 95) decays by alpha emission to neptunium (Np). Given that neptunium has Z = 93, write the balanced nuclear equation and state the number of neutrons in the americium-241 nucleus.",
+            marks: 4,
+            modelAnswer:
+              "Americium-241 (A 241, Z 95) gives neptunium-237 (A 237, Z 93) plus an alpha particle helium-4 (A 4, Z 2). Check: 241 = 237 + 4 and 95 = 93 + 2.\nNeutrons in americium-241 = A minus Z = 241 minus 95 = 146.",
+            markScheme: [
+              "alpha particle written as helium-4 (A 4, Z 2)",
+              "neptunium daughter A = 237 (241 minus 4)",
+              "neptunium daughter Z = 93 (95 minus 2)",
+              "neutrons in americium-241 = 241 minus 95 = 146",
+            ],
+            commonError:
+              "Students sometimes use the daughter's data to find the neutron number. The neutron number of americium-241 uses its own A and Z.",
+            difficulty: "core",
+            guideRef: "Radioactive Decay and Nuclear Equations",
+            hints: [
+              "Alpha decay: A minus 4, Z minus 2.",
+              "Daughter A = 237, Z = 93 (neptunium).",
+              "Neutrons in the parent = A minus Z = 241 minus 95.",
+            ],
+            strategy: "balance the equation, then apply N = A minus Z to the parent nucleus",
+            solutions: [
+              {
+                label: "Alpha decay and neutron count",
+                steps: [
+                  "Daughter A = 241 minus 4 = 237",
+                  "Daughter Z = 95 minus 2 = 93 (neptunium-237)",
+                  "Alpha particle is helium-4 (A 4, Z 2)",
+                  "Neutrons in americium-241 = 241 minus 95 = 146",
+                ],
+              },
+            ],
+          },
+          {
+            id: "phys-nuclear-bq4-05",
+            question: "A radioactive isotope used in a hospital has a half-life of 8 days. A delivery contains an activity of 3200 MBq. The isotope can only be used while its activity is above 100 MBq. For how many days after delivery can it be used?",
+            marks: 4,
+            modelAnswer:
+              "Find how many half-lives reduce 3200 MBq to 100 MBq. 3200 divided by 100 = 32 = 2 to the power 5, so 5 half-lives bring the activity to exactly 100 MBq. Time for 5 half-lives = 5 times 8 = 40 days. After 40 days the activity is 100 MBq; below that it can no longer be used. So it can be used for up to 40 days after delivery.",
+            markScheme: [
+              "ratio 3200 / 100 = 32",
+              "32 = 2 to power 5, so n = 5 half-lives",
+              "time = 5 times 8 days = 40 days",
+              "correct conclusion: usable for up to 40 days",
+            ],
+            commonError:
+              "Students sometimes stop when the activity is just above 100 MBq and give 4 half-lives (200 MBq). Here 100 MBq is reached after exactly 5 half-lives, so 40 days is the limit.",
+            difficulty: "core",
+            guideRef: "Half-Life",
+            hints: [
+              "Work out how many times the activity must halve to reach 100 MBq.",
+              "3200 / 100 = 32 = 2 to the power 5.",
+              "Multiply the number of half-lives by the half-life.",
+            ],
+            strategy: "express the activity ratio as a power of 2, then convert half-lives to days",
+            solutions: [
+              {
+                label: "Activity ratio to time",
+                steps: [
+                  "3200 / 100 = 32",
+                  "32 = 2 to power 5, so n = 5 half-lives",
+                  "Time = 5 times 8 = 40 days",
+                  "Activity reaches 100 MBq at 40 days, so usable for up to 40 days",
+                ],
+              },
+            ],
+          },
+          {
+            id: "phys-nuclear-bq4-06",
+            question: "Explain why background radiation must be measured and subtracted when finding the half-life of a source from count-rate readings.",
+            marks: 3,
+            modelAnswer:
+              "Background radiation is always present from natural and artificial sources, so every reading from the counter includes a background contribution as well as the radiation from the source. If the background is not subtracted, the count rate will not fall to half as quickly as it should appear to, because the background part does not decay. Subtracting the (constant) background count rate from each reading gives the true count rate from the source alone, which is what halves each half-life, so the half-life found is correct.",
+            markScheme: [
+              "background radiation is always present and adds to every reading",
+              "background does not decay / stays constant",
+              "subtracting it gives the true source count rate, so the half-life is measured correctly",
+            ],
+            commonError:
+              "Students sometimes think background can be ignored if it is small. Even a small constant background distorts the apparent halving of the count rate, so it must be subtracted.",
+            difficulty: "core",
+            guideRef: "Half-Life",
+            hints: [
+              "Every reading includes background plus source.",
+              "The background part does not decay over time.",
+              "Subtracting it leaves the true source count rate that halves.",
+            ],
+            strategy: "explain that only the source decays, so the constant background must be removed first",
+          },
+          {
+            id: "phys-nuclear-bq4-07",
+            question: "A nuclide of plutonium-239 (nucleon number 239, proton number 94) decays by alpha emission. The product then decays by alpha emission again. Determine the nucleon number and proton number of the nuclide formed after both alpha decays.",
+            marks: 4,
+            modelAnswer:
+              "Each alpha decay reduces A by 4 and Z by 2.\nAfter the first alpha: A = 239 minus 4 = 235; Z = 94 minus 2 = 92 (uranium-235).\nAfter the second alpha: A = 235 minus 4 = 231; Z = 92 minus 2 = 90 (thorium-231).\nSo the final nuclide has nucleon number 231 and proton number 90.",
+            markScheme: [
+              "after first alpha: A = 235, Z = 92",
+              "after second alpha: A = 231",
+              "after second alpha: Z = 90",
+              "correct final nuclide: nucleon number 231, proton number 90",
+            ],
+            commonError:
+              "Students sometimes apply the change only once or subtract 8 from A and 2 from Z. Each alpha decay subtracts 4 from A and 2 from Z, so two decays subtract 8 from A and 4 from Z.",
+            difficulty: "challenge",
+            guideRef: "Radioactive Decay and Nuclear Equations",
+            hints: [
+              "Apply A minus 4, Z minus 2 for each alpha.",
+              "Do it twice in sequence.",
+              "Total change: A minus 8, Z minus 4.",
+            ],
+            strategy: "apply the alpha rule once per emission, updating A and Z each time",
+            solutions: [
+              {
+                label: "Two alpha decays",
+                steps: [
+                  "First alpha: A = 239 minus 4 = 235; Z = 94 minus 2 = 92",
+                  "Second alpha: A = 235 minus 4 = 231; Z = 92 minus 2 = 90",
+                  "Total change: A down by 8, Z down by 4",
+                  "Final nuclide: nucleon number 231, proton number 90 (thorium-231)",
+                ],
+              },
+            ],
+          },
+          {
+            id: "phys-nuclear-bq4-08",
+            question: "Describe how carbon-14 dating is used to estimate the age of an ancient piece of bone, and state one assumption the method relies on.",
+            marks: 4,
+            modelAnswer:
+              "While an organism is alive it takes in carbon, including a small fixed proportion of radioactive carbon-14, so the ratio of carbon-14 to ordinary carbon stays constant. When it dies it stops taking in carbon, and the carbon-14 it contains decays with a half-life of about 5730 years. By measuring the remaining carbon-14 activity (or the carbon-14 to carbon-12 ratio) in the bone and comparing it with that of living material, the number of half-lives that have passed is found, and hence the age. One assumption is that the proportion of carbon-14 in the atmosphere has stayed roughly constant over time (so the starting amount in the living organism is known).",
+            markScheme: [
+              "living organism takes in carbon-14, ratio stays constant while alive",
+              "at death intake stops and carbon-14 decays (half-life about 5730 years)",
+              "measure remaining carbon-14 and compare with living material to find number of half-lives / age",
+              "assumption: proportion of carbon-14 in the atmosphere has stayed roughly constant",
+            ],
+            commonError:
+              "Students sometimes forget to state an assumption, or assume carbon-14 is taken in after death. Intake stops at death; the method assumes a constant atmospheric carbon-14 level.",
+            difficulty: "core",
+            guideRef: "Uses, Dangers and Safety of Radioactivity",
+            hints: [
+              "While alive, the organism keeps a constant carbon-14 level.",
+              "At death the carbon-14 starts to decay.",
+              "Comparing the remaining activity with living material gives the age.",
+            ],
+            strategy: "describe uptake while alive, decay after death, then the measurement and an assumption",
+          },
+          {
+            id: "phys-nuclear-bq4-09",
+            question: "A sample of a radioactive isotope has an initial mass of 80 g. After 36 hours, 75 g of the original isotope has decayed (so 5 g of the original isotope remains). (a) Determine how many half-lives have passed. (b) Calculate the half-life of the isotope.",
+            marks: 5,
+            modelAnswer:
+              "(a) Mass of original isotope remaining = 80 minus 75 = 5 g. Fraction remaining = 5 divided by 80 = 1/16 = (1/2) to the power 4, so 4 half-lives have passed.\n(b) Half-life = total time divided by number of half-lives = 36 divided by 4 = 9 hours.",
+            markScheme: [
+              "(a) remaining original isotope = 80 minus 75 = 5 g",
+              "(a) fraction remaining = 5 / 80 = 1/16",
+              "(a) 1/16 = (1/2) to power 4, so n = 4 half-lives",
+              "(b) half-life = 36 / 4 = 9 hours",
+            ],
+            commonError:
+              "Students sometimes use the 75 g that has decayed as the remaining amount. The amount remaining is the original mass minus the decayed mass (80 minus 75 = 5 g).",
+            difficulty: "challenge",
+            guideRef: "Half-Life",
+            hints: [
+              "First find the mass of the original isotope still remaining: 80 minus 75.",
+              "Fraction remaining = remaining divided by initial.",
+              "Express the fraction as (1/2) to a power to find n, then half-life = time divided by n.",
+            ],
+            strategy: "find the remaining fraction, convert to a number of half-lives, then divide the time by n",
+            solutions: [
+              {
+                label: "Mass decayed to half-life",
+                steps: [
+                  "Remaining original isotope = 80 minus 75 = 5 g",
+                  "Fraction remaining = 5 / 80 = 1/16",
+                  "1/16 = (1/2) to power 4, so n = 4 half-lives",
+                  "Half-life = 36 / 4 = 9 hours",
+                ],
+              },
+            ],
+          },
+          {
+            id: "phys-nuclear-bq4-10",
+            question: "Outline how a nuclear fission chain reaction works in a reactor, and explain the role of the control rods.",
+            marks: 5,
+            modelAnswer:
+              "A slow-moving neutron is absorbed by a heavy nucleus such as uranium-235, making it unstable so that it splits (fissions) into two smaller nuclei, releasing energy and two or three more neutrons. These released neutrons can be absorbed by other uranium-235 nuclei, causing them to fission and release still more neutrons. This self-sustaining sequence is a chain reaction, and the energy released heats the reactor. Control rods, made of a neutron-absorbing material such as boron or cadmium, are lowered into or raised out of the reactor core to absorb some of the neutrons. By adjusting how far the rods are inserted, the number of neutrons available to cause further fissions is controlled, keeping the chain reaction steady and preventing it from running out of control.",
+            markScheme: [
+              "neutron absorbed by uranium-235, which splits / fissions",
+              "fission releases energy and 2 or 3 more neutrons",
+              "released neutrons cause further fissions: chain reaction",
+              "control rods absorb neutrons (made of boron / cadmium)",
+              "adjusting the rods controls the rate / prevents a runaway reaction",
+            ],
+            commonError:
+              "Students sometimes say control rods slow the neutrons down (that is the moderator) rather than absorb them. Control rods absorb neutrons to control the reaction rate.",
+            difficulty: "challenge",
+            guideRef: "Uses, Dangers and Safety of Radioactivity",
+            hints: [
+              "Start with a neutron being absorbed by a uranium-235 nucleus.",
+              "Each fission releases more neutrons that can cause further fissions.",
+              "Control rods absorb neutrons to keep the rate steady.",
+            ],
+            strategy: "describe the neutron-fission-neutron cycle, then how the rods regulate the neutron number",
           },
         ],
       },

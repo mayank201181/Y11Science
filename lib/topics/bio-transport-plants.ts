@@ -566,9 +566,9 @@ A shoot in still air moves the bubble 20 mm in 5 min. In a breeze it moves 50 mm
   questionBank: {
     mcqPapers: [
       {
-        id: "bio-transport-plants-bank-mcq-1",
-        title: "Transport in Plants — MCQ Paper 1",
-        description: "Xylem, phloem, root uptake and vascular tissue positions. 6 questions.",
+        id: "bio-transport-plants-bankmcq-1",
+        title: "Question Bank — MCQ Paper 1",
+        description: "Xylem and phloem structure, function, and position of vascular tissue in root, stem and leaf.",
         questions: [
           {
             id: "bio-transport-plants-bank-mcq1-q01",

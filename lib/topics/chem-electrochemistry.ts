@@ -637,7 +637,7 @@ export const chemElectrochemistry: Topic = {
         questions: [
           {
             id: "chem-electrochemistry-bm1-01",
-            question: "Which statement correctly describes what happens at the cathode during electrolysis?",
+            question: "PLACEHOLDER_UNIQUE_START Which statement correctly describes what happens at the cathode during electrolysis?",
             options: [
               "Anions are oxidised and give up electrons.",
               "Cations are reduced and gain electrons.",

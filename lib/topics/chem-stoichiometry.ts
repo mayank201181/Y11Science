@@ -573,7 +573,7 @@ Equation: HCl(aq) + NaOH(aq) → NaCl(aq) + H₂O(l)
         questions: [
           {
             id: "chem-stoichiometry-bm1-01",
-            question: "Which of the following correctly balances the equation for the combustion of propane?\nC₃H₈ + ? O₂ → ? CO₂ + ? H₂O",
+            question: "Which of the following correctly balances the combustion of propane?\nC₃H₈ + ? O₂ → ? CO₂ + ? H₂O",
             options: [
               "C₃H₈ + 4O₂ → 3CO₂ + 4H₂O",
               "C₃H₈ + 5O₂ → 3CO₂ + 4H₂O",

@@ -611,8 +611,8 @@ All objects emit thermal radiation. The rate of emission depends on:
   questionBank: {
     mcqPapers: [
       {
-        id: "phys-thermal-bank-mcq-1",
-        title: "Thermal Physics MCQ Paper 1",
+        id: "phys-thermal-bankmcq-1",
+        title: "Question Bank — MCQ Paper 1",
         description: "Covers kinetic model, Brownian motion, thermal expansion, and gas laws.",
         questions: [
           {

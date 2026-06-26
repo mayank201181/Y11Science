@@ -449,10 +449,10 @@ export const chemAcidsBases: Topic = {
       {
         id: "chem-acids-bases-bankmcq-1",
         title: "Question Bank — MCQ Paper 1",
-        description: "Ten multiple-choice questions covering acid/base ion definitions, pH, indicators, and neutralisation.",
+        description: "Ten multiple-choice questions covering acid/base definitions, pH, indicators, and neutralisation reactions.",
         questions: [
           {
-            id: "chem-acids-bases-bank-mcq1-q01",
+            id: "chem-acids-bases-bm1-01",
             question: "Which of the following is the correct ionic equation for the neutralisation of sodium hydroxide with hydrochloric acid?",
             options: [
               "Na⁺(aq) + Cl⁻(aq) → NaCl(aq)",

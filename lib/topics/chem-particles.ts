@@ -545,12 +545,12 @@ A **white ring of ammonium chloride** (NH₄Cl) forms inside the tube. Because N
   questionBank: {
     mcqPapers: [
       {
-        id: "chem-particles-bank-mcq-1",
-        title: "States of Matter & Particles — MCQ Paper 1",
-        description: "6 questions covering particle theory, states, and changes of state.",
+        id: "chem-particles-bankmcq-1",
+        title: "Question Bank — MCQ Paper 1",
+        description: "10 questions covering states of matter, particle properties, and changes of state.",
         questions: [
           {
-            id: "chem-particles-bank-mcq1-q01",
+            id: "chem-particles-bm1-01",
             question: "Which statement about the particles in a solid is correct?",
             options: [
               "They move freely throughout the solid",

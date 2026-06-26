@@ -464,12 +464,12 @@ This process, called **fermentation**, is exploited commercially:
   questionBank: {
     mcqPapers: [
       {
-        id: "bio-gas-respiration-bank-mcq-1",
-        title: "Gas Exchange & Respiration — MCQ Paper 1",
-        description: "Six multiple-choice questions covering the breathing system, ventilation, and gas exchange adaptations.",
+        id: "bio-gas-respiration-bankmcq-1",
+        title: "Question Bank — MCQ Paper 1",
+        description: "Ten multiple-choice questions covering the breathing system, ventilation mechanics, alveolar gas exchange, and inspired vs expired air.",
         questions: [
           {
-            id: "bio-gas-respiration-bank-mcq1-q01",
+            id: "bio-gas-respiration-bm1-01",
             question: "What is the correct order of structures through which air passes when entering the lungs?",
             options: [
               "Trachea → bronchioles → bronchi → alveoli",
