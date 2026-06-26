@@ -14,11 +14,14 @@ phys-energy phys-forces phys-magnetism phys-sound-em phys-space phys-thermal phy
 ## REMAINING topics (still on audited 2-paper banks)
 (none — all 37 topic banks expanded to 4x10 MCQ + 4x10 structured; full build green)
 
-## REMAINING exams
-lib/exams/biology.ts, lib/exams/chemistry.ts, lib/exams/physics.ts  (expand to 4x25 MCQ + 4x20 QA)
+## EXAMS — DONE (expanded to 4x25 MCQ + 4x20 QA)
+lib/exams/biology.ts, lib/exams/chemistry.ts, lib/exams/physics.ts  (100 MCQ + 80 structured each)
 
-## How to resume (when platform throttling has cleared)
-Run direct-write agents in small batches (<=6 concurrent), one topic per agent, per BANK_SPEC.md.
-After each batch: npm run build (must be green), commit, push. Then deploy:
-  npx vercel deploy --prod --yes --token $VERCEL_TOKEN
-Ids: <id>-bankmcq-1..4 / <id>-bankqa-1..4 ; questions <id>-bm{1-4}-{01-10} / <id>-bq{1-4}-{01-10}.
+## STATUS: COMPLETE ✅
+All 37 topic banks expanded to 4x10 MCQ + 4x10 structured (2,960 questions) and all 3 subject
+mock exams expanded to 4x25 MCQ + 4x20 structured (540 questions) = 3,500 new bank/exam questions.
+Full `npm run build` green; `tsc --noEmit` clean; zero duplicate question ids across topics + exams.
+
+Id schemes used:
+- Topic banks: papers <id>-bankmcq-1..4 / <id>-bankqa-1..4 ; questions <id>-bm{1-4}-{01-10} / <id>-bq{1-4}-{01-10}.
+- Exams: papers exam-<subj>-mcq-1..4 / exam-<subj>-qa-1..4 ; questions exam-<subj>-mcq-p{1-4}-{01-25} / exam-<subj>-qa-p{1-4}-{01-20}.
