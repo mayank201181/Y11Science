@@ -9,9 +9,10 @@ bio-cells bio-enzymes chem-atoms chem-stoichiometry phys-motion
 bio-ecology bio-gas-respiration bio-human-nutrition bio-molecules bio-plant-nutrition bio-reproduction
 bio-transport-animals bio-transport-cell chem-acids-bases chem-analysis chem-bonding chem-electrochemistry
 chem-environment chem-metals chem-organic chem-particles chem-periodic chem-rates
+phys-energy phys-forces phys-magnetism phys-sound-em phys-space phys-thermal phys-waves
 
 ## REMAINING topics (still on audited 2-paper banks)
-phys-energy phys-forces phys-magnetism phys-sound-em phys-space phys-thermal phys-waves 
+(none — all 37 topic banks expanded to 4x10 MCQ + 4x10 structured; full build green)
 
 ## REMAINING exams
 lib/exams/biology.ts, lib/exams/chemistry.ts, lib/exams/physics.ts  (expand to 4x25 MCQ + 4x20 QA)
