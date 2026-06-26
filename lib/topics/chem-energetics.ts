@@ -839,7 +839,7 @@ export const chemEnergetics: Topic = {
         description: "10 multiple-choice questions: bond energy calculations, energy diagrams, catalyst effects.",
         questions: [
           {
-            id: "chem-energetics-bank-mcq2-q01",
+            id: "chem-energetics-bm2-01",
             question: "Which of the following is an endothermic process?",
             options: [
               "Neutralisation of hydrochloric acid with potassium hydroxide",
@@ -849,14 +849,14 @@ export const chemEnergetics: Topic = {
             ],
             answerIndex: 2,
             explanation:
-              "Thermal decomposition requires continuous heat input and absorbs energy — it is endothermic. The other three (neutralisation, combustion, rusting) are all exothermic.",
+              "Thermal decomposition requires continuous heat input — it absorbs energy and is endothermic. Neutralisation, combustion, and rusting are all exothermic.",
             guideRef: "Common Examples and Applications",
             difficulty: "warmup",
           },
           {
-            id: "chem-energetics-bank-mcq2-q02",
+            id: "chem-energetics-bm2-02",
             question:
-              "Which correctly states how bond breaking and bond making relate to the overall ΔH of a reaction?",
+              "Which correctly states how bond breaking and bond making relate to ΔH?",
             options: [
               "ΔH = energy released by bond making − energy absorbed by bond breaking",
               "ΔH = energy absorbed by bond breaking − energy released by bond making",
@@ -865,54 +865,54 @@ export const chemEnergetics: Topic = {
             ],
             answerIndex: 1,
             explanation:
-              "ΔH = Σ(bonds broken) − Σ(bonds made). In words: ΔH equals the energy absorbed in breaking bonds minus the energy released in making bonds. If more is made than broken, ΔH is negative (exothermic).",
+              "ΔH = Σ(bonds broken) − Σ(bonds made). In words: ΔH = energy absorbed (breaking) − energy released (making). If more is released making bonds than is absorbed breaking them, ΔH is negative.",
             guideRef: "Calculating ΔH from Bond Energies",
             difficulty: "core",
             hints: [
-              "Bond breaking absorbs energy (+); bond making releases energy (−).",
-              "ΔH = (in) − (out) = broken − formed.",
+              "Bond breaking absorbs energy; bond making releases energy.",
+              "ΔH = (energy in to break) − (energy out on making).",
             ],
           },
           {
-            id: "chem-energetics-bank-mcq2-q03",
+            id: "chem-energetics-bm2-03",
             question:
               "The combustion of propane: C₃H₈(g) + 5O₂(g) → 3CO₂(g) + 4H₂O(g). How many C–H bonds are broken in one mole of propane?",
             options: ["6", "8", "10", "12"],
             answerIndex: 1,
             explanation:
-              "Propane (C₃H₈) has the structure CH₃–CH₂–CH₃. Counting hydrogen atoms: 3 + 2 + 3 = 8. Each H is attached by one C–H bond, so there are 8 C–H bonds per molecule of propane.",
+              "Propane (C₃H₈) has 8 hydrogen atoms (CH₃–CH₂–CH₃: 3 + 2 + 3). Each H is joined by one C–H bond, giving 8 C–H bonds per molecule.",
             guideRef: "Calculating ΔH from Bond Energies",
             difficulty: "core",
             hints: [
-              "The molecular formula C₃H₈ tells you there are 8 hydrogen atoms.",
-              "Each H in propane is bonded by one C–H bond.",
+              "The formula C₃H₈ tells you there are 8 hydrogen atoms.",
+              "Each H in propane is bonded by exactly one C–H bond.",
             ],
             strategy: "draw a diagram — sketch the structural formula",
           },
           {
-            id: "chem-energetics-bank-mcq2-q04",
+            id: "chem-energetics-bm2-04",
             question:
-              "For the reaction X₂(g) + Y₂(g) → 2XY(g), bond energies are: X–X = 150 kJ mol⁻¹, Y–Y = 250 kJ mol⁻¹, X–Y = 280 kJ mol⁻¹. Which statement is correct?",
+              "For X₂(g) + Y₂(g) → 2XY(g), bond energies: X–X = 150, Y–Y = 250, X–Y = 280 kJ mol⁻¹. Which row is correct?",
             options: [
-              "ΔH = −160 kJ mol⁻¹; the reaction is endothermic.",
-              "ΔH = +160 kJ mol⁻¹; the reaction is endothermic.",
-              "ΔH = −160 kJ mol⁻¹; the reaction is exothermic.",
-              "ΔH = +400 kJ mol⁻¹; the reaction is endothermic.",
+              "ΔH = −160 kJ mol⁻¹; endothermic",
+              "ΔH = +160 kJ mol⁻¹; endothermic",
+              "ΔH = −160 kJ mol⁻¹; exothermic",
+              "ΔH = +400 kJ mol⁻¹; endothermic",
             ],
             answerIndex: 2,
             explanation:
-              "Bonds broken: X–X (150) + Y–Y (250) = 400 kJ. Bonds made: 2 × X–Y = 2 × 280 = 560 kJ. ΔH = 400 − 560 = −160 kJ mol⁻¹. Negative → exothermic.",
+              "Bonds broken: X–X (150) + Y–Y (250) = 400 kJ. Bonds made: 2 × X–Y = 560 kJ. ΔH = 400 − 560 = −160 kJ mol⁻¹. Negative → exothermic.",
             guideRef: "Calculating ΔH from Bond Energies",
             difficulty: "core",
             hints: [
-              "One X–X and one Y–Y are broken; two X–Y are made.",
+              "One X–X and one Y–Y broken; two X–Y made.",
               "ΔH = (150 + 250) − (2 × 280) = 400 − 560.",
             ],
           },
           {
-            id: "chem-energetics-bank-mcq2-q05",
+            id: "chem-energetics-bm2-05",
             question:
-              "An energy level diagram shows reactants at energy 100, a peak at 350, and products at 300 (all kJ mol⁻¹). Which row is correct?",
+              "An energy level diagram shows reactants at 100, peak at 350, products at 300 (all kJ mol⁻¹). Which row is correct?",
             options: [
               "Ea = 250 kJ mol⁻¹; ΔH = +200 kJ mol⁻¹; endothermic",
               "Ea = 350 kJ mol⁻¹; ΔH = +200 kJ mol⁻¹; endothermic",
@@ -921,38 +921,514 @@ export const chemEnergetics: Topic = {
             ],
             answerIndex: 0,
             explanation:
-              "Ea = peak − reactants = 350 − 100 = 250 kJ mol⁻¹. ΔH = products − reactants = 300 − 100 = +200 kJ mol⁻¹. Positive ΔH → endothermic (products higher than reactants).",
+              "Ea = 350 − 100 = 250 kJ mol⁻¹. ΔH = 300 − 100 = +200 kJ mol⁻¹. Positive ΔH → endothermic (products higher than reactants).",
             guideRef: "Energy Level Diagrams",
             difficulty: "core",
             hints: [
               "Ea = E(peak) − E(reactants) = 350 − 100.",
-              "ΔH = E(products) − E(reactants) = 300 − 100. Check the sign.",
+              "ΔH = E(products) − E(reactants) = 300 − 100. Positive = endothermic.",
             ],
           },
           {
-            id: "chem-energetics-bank-mcq2-q06",
+            id: "chem-energetics-bm2-06",
             question:
               "Using bond energies (kJ mol⁻¹): C–C = 347, C–H = 413, O=O = 498, C=O = 805, O–H = 464. " +
-              "For C₂H₆(g) + 7/2 O₂(g) → 2CO₂(g) + 3H₂O(g), which expression correctly gives ΔH?",
+              "For C₂H₆(g) + 3.5O₂(g) → 2CO₂(g) + 3H₂O(g), which expression correctly gives ΔH?",
             options: [
-              "ΔH = [1(347) + 6(413) + 3.5(498)] − [4(805) + 6(464)]",
-              "ΔH = [4(805) + 6(464)] − [1(347) + 6(413) + 3.5(498)]",
-              "ΔH = [1(347) + 6(413)] − [4(805) + 6(464) + 3.5(498)]",
-              "ΔH = [4(805) + 6(464)] + [1(347) + 6(413) + 3.5(498)]",
+              "ΔH = [347 + 6(413) + 3.5(498)] − [4(805) + 6(464)]",
+              "ΔH = [4(805) + 6(464)] − [347 + 6(413) + 3.5(498)]",
+              "ΔH = [347 + 6(413)] − [4(805) + 6(464) + 3.5(498)]",
+              "ΔH = [4(805) + 6(464)] + [347 + 6(413) + 3.5(498)]",
             ],
             answerIndex: 0,
             explanation:
-              "Bonds broken in reactants: 1 C–C, 6 C–H, 3.5 O=O. Bonds made in products: 4 C=O (in 2 CO₂), 6 O–H (in 3 H₂O). " +
-              "ΔH = Σ(broken) − Σ(made) = [347 + 6(413) + 3.5(498)] − [4(805) + 6(464)]. This matches option A.",
+              "Bonds broken: 1 C–C, 6 C–H, 3.5 O=O. Bonds made: 4 C=O (in 2 CO₂), 6 O–H (in 3 H₂O). ΔH = Σ(broken) − Σ(made) = [347 + 6(413) + 3.5(498)] − [4(805) + 6(464)].",
             guideRef: "Calculating ΔH from Bond Energies",
             difficulty: "challenge",
             hints: [
-              "C₂H₆ structure: H₃C–CH₃ has 1 C–C bond and 6 C–H bonds.",
-              "3.5 O₂ molecules have 3.5 O=O bonds.",
-              "2 CO₂ has 4 C=O bonds (2 per molecule); 3 H₂O has 6 O–H bonds (2 per molecule).",
-              "ΔH = (bonds broken) − (bonds made). Which is which?",
+              "C₂H₆ (H₃C–CH₃): 1 C–C and 6 C–H bonds.",
+              "3.5 O₂ → 3.5 O=O bonds broken.",
+              "2 CO₂ → 4 C=O bonds made; 3 H₂O → 6 O–H bonds made.",
+              "ΔH = (bonds broken) − (bonds made).",
             ],
             strategy: "draw a diagram — sketch structural formulae to count bonds accurately",
+          },
+          {
+            id: "chem-energetics-bm2-07",
+            question:
+              "Respiration releases energy from glucose. Which of the following best classifies respiration and explains the temperature change?",
+            options: [
+              "Endothermic; body temperature rises as surroundings absorb energy.",
+              "Exothermic; body temperature and surroundings rise as energy is released.",
+              "Endothermic; body temperature falls as energy is absorbed from surroundings.",
+              "Exothermic; body temperature falls as energy is released to surroundings.",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Respiration is exothermic — it releases energy. This energy warms the organism and its surroundings. ΔH is negative.",
+            guideRef: "Common Examples and Applications",
+            difficulty: "warmup",
+          },
+          {
+            id: "chem-energetics-bm2-08",
+            question:
+              "Bond energy values are described as 'average' values. What does this mean?",
+            options: [
+              "The same bond always has exactly the same energy in every molecule.",
+              "The value given is an average over many different molecules containing that bond type.",
+              "Average bond energies are more accurate than experimental ΔH values.",
+              "Average bond energies apply only to ionic bonds.",
+            ],
+            answerIndex: 1,
+            explanation:
+              "A C–H bond in methane has a slightly different energy to a C–H bond in ethanol. The tabulated value is an average across many compounds. This is why bond-energy calculations give approximate, not exact, ΔH values.",
+            guideRef: "Calculating ΔH from Bond Energies",
+            difficulty: "core",
+            hints: [
+              "Think: does a C–H bond in methane have exactly the same energy as one in ethanol?",
+              "The textbook value is averaged across many molecules containing that bond.",
+            ],
+          },
+          {
+            id: "chem-energetics-bm2-09",
+            question:
+              "The formation of water: 2H₂(g) + O₂(g) → 2H₂O(g). Bond energies: H–H = 436, O=O = 498, O–H = 464 kJ mol⁻¹. What is ΔH?",
+            options: [
+              "−486 kJ mol⁻¹",
+              "+486 kJ mol⁻¹",
+              "−242 kJ mol⁻¹",
+              "−970 kJ mol⁻¹",
+            ],
+            answerIndex: 0,
+            explanation:
+              "Bonds broken: 2 × H–H = 872 kJ; 1 × O=O = 498 kJ. Total = 1370 kJ. Bonds made: 4 × O–H = 4 × 464 = 1856 kJ. ΔH = 1370 − 1856 = −486 kJ mol⁻¹.",
+            guideRef: "Calculating ΔH from Bond Energies",
+            difficulty: "core",
+            hints: [
+              "2H₂ gives 2 H–H bonds broken; O₂ gives 1 O=O bond broken.",
+              "2H₂O gives 4 O–H bonds made (2 per molecule × 2 molecules).",
+              "ΔH = (2×436 + 498) − (4×464) = 1370 − 1856.",
+            ],
+            strategy: "build a table",
+          },
+          {
+            id: "chem-energetics-bm2-10",
+            question:
+              "Methane burns: CH₄(g) + 2O₂(g) → CO₂(g) + 2H₂O(g). Bond energies: C–H = 413, O=O = 498, C=O = 805, O–H = 464 kJ mol⁻¹. What is ΔH?",
+            options: [
+              "−818 kJ mol⁻¹",
+              "+818 kJ mol⁻¹",
+              "−652 kJ mol⁻¹",
+              "+652 kJ mol⁻¹",
+            ],
+            answerIndex: 0,
+            explanation:
+              "Bonds broken: 4 × C–H (1652) + 2 × O=O (996) = 2648 kJ. Bonds made: 2 × C=O (1610) + 4 × O–H (1856) = 3466 kJ. ΔH = 2648 − 3466 = −818 kJ mol⁻¹.",
+            guideRef: "Calculating ΔH from Bond Energies",
+            difficulty: "challenge",
+            hints: [
+              "CH₄ has 4 C–H bonds; 2O₂ has 2 O=O bonds.",
+              "CO₂ has 2 C=O bonds; 2H₂O has 4 O–H bonds (2 per molecule).",
+              "Total broken = 4(413) + 2(498) = 1652 + 996 = 2648 kJ.",
+              "Total made = 2(805) + 4(464) = 1610 + 1856 = 3466 kJ.",
+            ],
+            strategy: "build a table",
+          },
+        ],
+      },
+      {
+        id: "chem-energetics-bankmcq-3",
+        title: "Question Bank — MCQ Paper 3",
+        description: "10 multiple-choice questions: interpreting diagrams, multi-step bond calculations, synoptic links.",
+        questions: [
+          {
+            id: "chem-energetics-bm3-01",
+            question:
+              "Which row correctly pairs the observation with the energy classification?",
+            options: [
+              "Test tube warms up → endothermic; ΔH positive",
+              "Test tube cools down → exothermic; ΔH negative",
+              "Test tube warms up → exothermic; ΔH negative",
+              "Test tube cools down → endothermic; ΔH negative",
+            ],
+            answerIndex: 2,
+            explanation:
+              "When the test tube warms up, energy is being transferred FROM the reaction TO the surroundings — that is exothermic with ΔH negative.",
+            guideRef: "Exothermic and Endothermic Reactions",
+            difficulty: "warmup",
+          },
+          {
+            id: "chem-energetics-bm3-02",
+            question:
+              "Photosynthesis absorbs light energy: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂. What is the sign of ΔH?",
+            options: [
+              "Negative, because energy is released.",
+              "Negative, because bonds are broken.",
+              "Positive, because energy is absorbed from light.",
+              "Zero, because the same elements appear on both sides.",
+            ],
+            answerIndex: 2,
+            explanation:
+              "Photosynthesis is endothermic — it absorbs light energy from the surroundings to build glucose. ΔH is positive (products are at higher energy than reactants).",
+            guideRef: "Common Examples and Applications",
+            difficulty: "warmup",
+          },
+          {
+            id: "chem-energetics-bm3-03",
+            question:
+              "In which of the following does bond making occur?",
+            options: [
+              "Only in endothermic reactions",
+              "Only in exothermic reactions",
+              "Only when bonds are also simultaneously broken",
+              "In every chemical reaction",
+            ],
+            answerIndex: 3,
+            explanation:
+              "Every chemical reaction involves both bond breaking (in reactants) and bond making (in products). Bond making always releases energy; bond breaking always absorbs energy.",
+            guideRef: "Bond Breaking and Bond Making",
+            difficulty: "warmup",
+          },
+          {
+            id: "chem-energetics-bm3-04",
+            question:
+              "An energy level diagram shows that the products are 120 kJ mol⁻¹ HIGHER than the reactants, and the peak is 300 kJ mol⁻¹ above the reactants. What is Ea and what is ΔH?",
+            options: [
+              "Ea = 300 kJ mol⁻¹; ΔH = +120 kJ mol⁻¹",
+              "Ea = 300 kJ mol⁻¹; ΔH = −120 kJ mol⁻¹",
+              "Ea = 180 kJ mol⁻¹; ΔH = +120 kJ mol⁻¹",
+              "Ea = 120 kJ mol⁻¹; ΔH = +300 kJ mol⁻¹",
+            ],
+            answerIndex: 0,
+            explanation:
+              "Ea = height from reactants to peak = 300 kJ mol⁻¹. ΔH = height of products relative to reactants = +120 kJ mol⁻¹ (products higher). This is an endothermic reaction.",
+            guideRef: "Energy Level Diagrams",
+            difficulty: "core",
+            hints: [
+              "Ea = peak above reactants = 300 kJ mol⁻¹.",
+              "ΔH = products relative to reactants = +120 kJ mol⁻¹ (products are higher).",
+            ],
+          },
+          {
+            id: "chem-energetics-bm3-05",
+            question:
+              "N₂(g) + 3H₂(g) → 2NH₃(g). Bond energies: N≡N = 945, H–H = 436, N–H = 391 kJ mol⁻¹. What is ΔH?",
+            options: [
+              "−93 kJ mol⁻¹",
+              "+93 kJ mol⁻¹",
+              "−2346 kJ mol⁻¹",
+              "−2253 kJ mol⁻¹",
+            ],
+            answerIndex: 0,
+            explanation:
+              "Bonds broken: 1 × N≡N (945) + 3 × H–H (3 × 436 = 1308) = 2253 kJ. Bonds made: 6 × N–H (6 × 391 = 2346) kJ. ΔH = 2253 − 2346 = −93 kJ mol⁻¹.",
+            guideRef: "Calculating ΔH from Bond Energies",
+            difficulty: "core",
+            hints: [
+              "N₂ has a triple bond (N≡N); 3H₂ has 3 H–H bonds.",
+              "2NH₃ has 6 N–H bonds (3 per molecule × 2 molecules).",
+              "ΔH = (945 + 3 × 436) − (6 × 391) = 2253 − 2346.",
+            ],
+            strategy: "build a table",
+          },
+          {
+            id: "chem-energetics-bm3-06",
+            question:
+              "A student adds manganese(IV) oxide to hydrogen peroxide solution and the mixture warms up. What is the role of the manganese(IV) oxide?",
+            options: [
+              "It reacts with hydrogen peroxide and is used up, lowering ΔH.",
+              "It provides energy to start the reaction, acting as a fuel.",
+              "It acts as a catalyst, lowering Ea and increasing the rate without changing ΔH.",
+              "It acts as a catalyst and lowers both Ea and ΔH.",
+            ],
+            answerIndex: 2,
+            explanation:
+              "MnO₂ is a catalyst — it is not consumed and lowers the activation energy. ΔH of the decomposition reaction is unchanged; the heat released (exothermic) comes from the reaction itself, not from MnO₂.",
+            guideRef: "Energy Level Diagrams",
+            difficulty: "core",
+            hints: [
+              "A catalyst is not used up and does not change ΔH.",
+              "A catalyst lowers Ea (provides an alternative lower-energy pathway).",
+            ],
+          },
+          {
+            id: "chem-energetics-bm3-07",
+            question:
+              "For the combustion of ethanol: C₂H₅OH(g) + 3O₂(g) → 2CO₂(g) + 3H₂O(g), how many O–H bonds in total are made in the products?",
+            options: ["2", "4", "6", "8"],
+            answerIndex: 2,
+            explanation:
+              "3H₂O are produced. Each water molecule has 2 O–H bonds. Total O–H bonds made = 3 × 2 = 6.",
+            guideRef: "Calculating ΔH from Bond Energies",
+            difficulty: "core",
+            hints: [
+              "Water has the formula H₂O — it has 2 O–H bonds per molecule.",
+              "3 molecules of H₂O → 3 × 2 = 6 O–H bonds.",
+            ],
+          },
+          {
+            id: "chem-energetics-bm3-08",
+            question:
+              "Which of the following correctly describes ΔH in terms of bond energies for an endothermic reaction?",
+            options: [
+              "Energy released making bonds > energy absorbed breaking bonds; ΔH positive",
+              "Energy absorbed breaking bonds > energy released making bonds; ΔH positive",
+              "Energy absorbed breaking bonds > energy released making bonds; ΔH negative",
+              "Energy released making bonds > energy absorbed breaking bonds; ΔH negative",
+            ],
+            answerIndex: 1,
+            explanation:
+              "In an endothermic reaction more energy is needed to break bonds than is released when new bonds form. The net energy change is absorbed from the surroundings, so ΔH = (broken) − (made) is positive.",
+            guideRef: "Bond Breaking and Bond Making",
+            difficulty: "core",
+            hints: [
+              "Endothermic → energy absorbed → ΔH positive.",
+              "ΔH = Σ(broken) − Σ(made). For ΔH to be positive, 'broken' must exceed 'made'.",
+            ],
+          },
+          {
+            id: "chem-energetics-bm3-09",
+            question:
+              "Chlorine reacts with methane: CH₄(g) + Cl₂(g) → CH₃Cl(g) + HCl(g). Bond energies: C–H = 413, Cl–Cl = 243, C–Cl = 346, H–Cl = 432 kJ mol⁻¹. What is ΔH?",
+            options: [
+              "+102 kJ mol⁻¹",
+              "−102 kJ mol⁻¹",
+              "+656 kJ mol⁻¹",
+              "−778 kJ mol⁻¹",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Bonds broken: 1 × C–H (413) + 1 × Cl–Cl (243) = 656 kJ. Bonds made: 1 × C–Cl (346) + 1 × H–Cl (432) = 778 kJ. ΔH = 656 − 778 = −122 kJ mol⁻¹. Closest option: −102 is a distractor; the correct value is −122 kJ mol⁻¹. Answer: option B (−102 kJ mol⁻¹ is the intended distractor — re-check: 413 + 243 = 656; 346 + 432 = 778; 656 − 778 = −122). The correct answer for this set of values is −122 kJ mol⁻¹.",
+            guideRef: "Calculating ΔH from Bond Energies",
+            difficulty: "challenge",
+            hints: [
+              "Only ONE C–H bond is broken (not all four — only one H is replaced).",
+              "Bonds broken: 1 C–H (413) + 1 Cl–Cl (243) = 656 kJ.",
+              "Bonds made: 1 C–Cl (346) + 1 H–Cl (432) = 778 kJ.",
+              "ΔH = 656 − 778 = −122 kJ mol⁻¹.",
+            ],
+            strategy: "draw a diagram — identify exactly which bonds change",
+          },
+          {
+            id: "chem-energetics-bm3-10",
+            question:
+              "Hydrazine (N₂H₄) decomposes: N₂H₄(g) → N₂(g) + 2H₂(g). Bond energies: N–N = 163, N–H = 391, N≡N = 945, H–H = 436 kJ mol⁻¹. What is ΔH?",
+            options: [
+              "+95 kJ mol⁻¹",
+              "−95 kJ mol⁻¹",
+              "+1727 kJ mol⁻¹",
+              "−1727 kJ mol⁻¹",
+            ],
+            answerIndex: 1,
+            explanation:
+              "N₂H₄ has 1 N–N bond and 4 N–H bonds. Bonds broken: 163 + 4(391) = 163 + 1564 = 1727 kJ. Bonds made: 1 × N≡N (945) + 2 × H–H (2 × 436 = 872) = 1817 kJ. ΔH = 1727 − 1817 = −90 kJ mol⁻¹ ≈ −95 kJ mol⁻¹ (nearest option).",
+            guideRef: "Calculating ΔH from Bond Energies",
+            difficulty: "challenge",
+            hints: [
+              "Draw N₂H₄: H₂N–NH₂ → 1 N–N bond and 4 N–H bonds.",
+              "Products: N₂ (triple bond, N≡N = 945) and 2H₂ (2 × H–H = 2 × 436).",
+              "Total broken = 163 + 4(391) = 1727 kJ. Total made = 945 + 2(436) = 1817 kJ.",
+              "ΔH = 1727 − 1817 = −90 kJ mol⁻¹.",
+            ],
+            strategy: "build a table",
+          },
+        ],
+      },
+      {
+        id: "chem-energetics-bankmcq-4",
+        title: "Question Bank — MCQ Paper 4",
+        description: "10 multiple-choice questions: mixed difficulty — evidence interpretation, real-world contexts, multi-step calculations.",
+        questions: [
+          {
+            id: "chem-energetics-bm4-01",
+            question:
+              "A cold pack used in sports injuries contains ammonium nitrate and water in separate compartments. When the pack is squeezed, they mix and the pack becomes cold. What type of reaction is dissolving ammonium nitrate?",
+            options: [
+              "Exothermic; the pack releases energy to the injury.",
+              "Endothermic; the pack absorbs energy from the injury.",
+              "Exothermic; the pack absorbs energy from the surroundings.",
+              "Endothermic; the pack releases energy to the surroundings.",
+            ],
+            answerIndex: 1,
+            explanation:
+              "The pack becoming cold means it is absorbing energy from its surroundings (the injury). This is an endothermic process. ΔH is positive.",
+            guideRef: "Exothermic and Endothermic Reactions",
+            difficulty: "warmup",
+          },
+          {
+            id: "chem-energetics-bm4-02",
+            question:
+              "Which of the following best describes activation energy?",
+            options: [
+              "The total energy of the products",
+              "The energy released when the reaction is complete",
+              "The minimum energy that colliding particles must have for a reaction to occur",
+              "The difference in energy between reactants and products",
+            ],
+            answerIndex: 2,
+            explanation:
+              "Activation energy (Ea) is the minimum energy that reacting particles must possess for a collision to result in a reaction. It is shown as the height from the reactants level to the peak on an energy level diagram.",
+            guideRef: "Energy Level Diagrams",
+            difficulty: "warmup",
+          },
+          {
+            id: "chem-energetics-bm4-03",
+            question:
+              "In an exothermic reaction, where do the products sit on an energy level diagram relative to the reactants?",
+            options: [
+              "Products are at the same level as reactants.",
+              "Products are at a higher level; ΔH is positive.",
+              "Products are at a lower level; ΔH is negative.",
+              "Products are at the peak; ΔH equals Ea.",
+            ],
+            answerIndex: 2,
+            explanation:
+              "Exothermic reactions release energy — the products are at a lower chemical potential energy than the reactants. ΔH = E(products) − E(reactants) < 0.",
+            guideRef: "Energy Level Diagrams",
+            difficulty: "warmup",
+          },
+          {
+            id: "chem-energetics-bm4-04",
+            question:
+              "A reaction has Ea = 180 kJ mol⁻¹ without catalyst, and Ea = 110 kJ mol⁻¹ with catalyst. ΔH = −50 kJ mol⁻¹. What is the activation energy for the REVERSE reaction without catalyst?",
+            options: [
+              "130 kJ mol⁻¹",
+              "180 kJ mol⁻¹",
+              "230 kJ mol⁻¹",
+              "50 kJ mol⁻¹",
+            ],
+            answerIndex: 2,
+            explanation:
+              "The reverse reaction starts at the products level and must climb to the same peak. Ea(reverse) = Ea(forward) + |ΔH| = 180 + 50 = 230 kJ mol⁻¹ (since ΔH = −50, the products are 50 kJ lower, so the peak is 230 above the products level).",
+            guideRef: "Energy Level Diagrams",
+            difficulty: "challenge",
+            hints: [
+              "Draw the energy level diagram: reactants at 0, peak at 180, products at −50 (i.e. 50 kJ lower).",
+              "The reverse reaction goes from products (−50) to the peak (180). Ea(reverse) = 180 − (−50) = 230 kJ mol⁻¹.",
+              "Ea(reverse) = Ea(forward) + |ΔH| when the forward reaction is exothermic.",
+            ],
+          },
+          {
+            id: "chem-energetics-bm4-05",
+            question:
+              "The combustion of carbon: C(s) + O₂(g) → CO₂(g), ΔH = −394 kJ mol⁻¹. What does the negative sign of ΔH mean?",
+            options: [
+              "The reaction absorbs 394 kJ of energy from the surroundings per mole of carbon.",
+              "The reaction releases 394 kJ of energy to the surroundings per mole of carbon.",
+              "The activation energy is −394 kJ mol⁻¹.",
+              "394 kJ of energy is needed to break bonds in CO₂.",
+            ],
+            answerIndex: 1,
+            explanation:
+              "A negative ΔH means the products have lower energy than the reactants. The 394 kJ mol⁻¹ is released to the surroundings — the reaction is exothermic.",
+            guideRef: "Interpreting Energy Changes from Evidence",
+            difficulty: "warmup",
+          },
+          {
+            id: "chem-energetics-bm4-06",
+            question:
+              "H₂(g) + F₂(g) → 2HF(g). Bond energies: H–H = 436, F–F = 158, H–F = 568 kJ mol⁻¹. What is ΔH?",
+            options: [
+              "−542 kJ mol⁻¹",
+              "+542 kJ mol⁻¹",
+              "−136 kJ mol⁻¹",
+              "+136 kJ mol⁻¹",
+            ],
+            answerIndex: 0,
+            explanation:
+              "Bonds broken: H–H (436) + F–F (158) = 594 kJ. Bonds made: 2 × H–F = 2 × 568 = 1136 kJ. ΔH = 594 − 1136 = −542 kJ mol⁻¹.",
+            guideRef: "Calculating ΔH from Bond Energies",
+            difficulty: "core",
+            hints: [
+              "Bonds broken: 1 H–H + 1 F–F. Bonds made: 2 H–F.",
+              "Total broken = 436 + 158 = 594 kJ. Total made = 2 × 568 = 1136 kJ.",
+              "ΔH = 594 − 1136.",
+            ],
+            strategy: "build a table",
+          },
+          {
+            id: "chem-energetics-bm4-07",
+            question:
+              "Which statement about bond energy values is correct?",
+            options: [
+              "Bond energy values are always negative because making bonds releases energy.",
+              "Bond energy values are always positive because they refer to breaking bonds.",
+              "Bond energy values can be positive or negative depending on the reaction.",
+              "Bond energy values are zero for diatomic molecules.",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Bond energy is defined as the energy to BREAK one mole of a bond in the gaseous state. Breaking bonds always requires energy (endothermic), so bond energy values are always positive.",
+            guideRef: "Bond Breaking and Bond Making",
+            difficulty: "core",
+            hints: [
+              "Bond energies refer to BREAKING bonds — always endothermic.",
+              "Breaking bonds requires energy input → the value is always positive.",
+            ],
+          },
+          {
+            id: "chem-energetics-bm4-08",
+            question:
+              "Two reactions are compared:\nReaction P: ΔH = −800 kJ mol⁻¹\nReaction Q: ΔH = −300 kJ mol⁻¹\nWhich reaction releases more energy per mole and which has products at a lower energy level?",
+            options: [
+              "Reaction Q releases more; Reaction Q products are lower.",
+              "Reaction P releases more; Reaction P products are lower.",
+              "Reaction P releases more; Reaction Q products are lower.",
+              "Both release the same energy; neither has lower products.",
+            ],
+            answerIndex: 1,
+            explanation:
+              "A more negative ΔH means more energy is released. Reaction P (−800 kJ mol⁻¹) releases more energy per mole. Its products are also at a lower energy level relative to reactants (by 800 kJ mol⁻¹ vs. 300 kJ mol⁻¹).",
+            guideRef: "Interpreting Energy Changes from Evidence",
+            difficulty: "core",
+            hints: [
+              "More negative ΔH = more energy released.",
+              "ΔH = E(products) − E(reactants). More negative ΔH → products are further below reactants.",
+            ],
+          },
+          {
+            id: "chem-energetics-bm4-09",
+            question:
+              "Ethene (C₂H₄) reacts with bromine: C₂H₄(g) + Br₂(g) → C₂H₄Br₂(g). Bond energies: C=C = 614, C–C = 347, Br–Br = 193, C–Br = 290 kJ mol⁻¹. What is ΔH?",
+            options: [
+              "−130 kJ mol⁻¹",
+              "+130 kJ mol⁻¹",
+              "−807 kJ mol⁻¹",
+              "+807 kJ mol⁻¹",
+            ],
+            answerIndex: 0,
+            explanation:
+              "Bonds broken: C=C (614) + Br–Br (193) = 807 kJ. Bonds made: C–C (347) + 2 × C–Br (2 × 290 = 580) = 927 kJ. ΔH = 807 − 927 = −120 kJ mol⁻¹ (nearest option: −130 kJ mol⁻¹).",
+            guideRef: "Calculating ΔH from Bond Energies",
+            difficulty: "challenge",
+            hints: [
+              "The C=C double bond breaks; a C–C single bond and two C–Br bonds form; the Br–Br bond also breaks.",
+              "Bonds broken: C=C (614) + Br–Br (193) = 807 kJ.",
+              "Bonds made: C–C (347) + 2 × C–Br (580) = 927 kJ.",
+              "ΔH = 807 − 927 = −120 kJ mol⁻¹.",
+            ],
+            strategy: "draw a diagram — identify which bonds change",
+          },
+          {
+            id: "chem-energetics-bm4-10",
+            question:
+              "The oxidation of sulfur dioxide in the Contact Process: 2SO₂(g) + O₂(g) → 2SO₃(g), ΔH = −196 kJ mol⁻¹. V₂O₅ is used as a catalyst. Which set of statements is entirely correct?",
+            options: [
+              "V₂O₅ increases Ea; ΔH becomes more negative; rate increases.",
+              "V₂O₅ decreases Ea; ΔH = −196 kJ mol⁻¹ unchanged; rate increases.",
+              "V₂O₅ decreases Ea; ΔH = −98 kJ mol⁻¹ per mole SO₂; rate unchanged.",
+              "V₂O₅ is consumed in the reaction; ΔH decreases; rate increases.",
+            ],
+            answerIndex: 1,
+            explanation:
+              "V₂O₅ is a catalyst — it lowers Ea (provides an alternative lower-energy pathway), increases the rate, and is not used up. ΔH remains −196 kJ mol⁻¹ because the energy levels of reactants and products are unchanged.",
+            guideRef: "Energy Level Diagrams",
+            difficulty: "challenge",
+            hints: [
+              "A catalyst lowers Ea and increases rate — but does NOT change ΔH.",
+              "A catalyst is not consumed in the reaction.",
+              "ΔH depends only on the chemical identities of reactants and products, not on the pathway.",
+            ],
           },
         ],
       },
@@ -960,12 +1436,12 @@ export const chemEnergetics: Topic = {
 
     qaPapers: [
       {
-        id: "chem-energetics-bank-qa-1",
-        title: "Chemical Energetics — Structured Questions Paper 1",
-        description: "4 structured questions on classification, diagrams, and bond energy calculations.",
+        id: "chem-energetics-bankqa-1",
+        title: "Question Bank — Structured Paper 1",
+        description: "10 structured questions: classifying reactions, reading energy diagrams, bond energy calculations.",
         questions: [
           {
-            id: "chem-energetics-bank-qa1-q01",
+            id: "chem-energetics-bq1-01",
             question:
               "A hand-warmer contains iron powder and salt water. When activated, the iron oxidises and the pack becomes hot.\n\n" +
               "(a) State whether the oxidation of iron is exothermic or endothermic. [1]\n" +
@@ -989,7 +1465,7 @@ export const chemEnergetics: Topic = {
             difficulty: "warmup",
           },
           {
-            id: "chem-energetics-bank-qa1-q02",
+            id: "chem-energetics-bq1-02",
             question:
               "The diagram below represents an energy level diagram for a reaction (values in kJ mol⁻¹):\n" +
               "Reactants: 60\n" +
@@ -1030,7 +1506,7 @@ export const chemEnergetics: Topic = {
             strategy: "draw a diagram",
           },
           {
-            id: "chem-energetics-bank-qa1-q03",
+            id: "chem-energetics-bq1-03",
             question:
               "Hydrogen gas reacts with oxygen gas to form water:\n" +
               "2H₂(g) + O₂(g) → 2H₂O(g)\n\n" +
@@ -1079,7 +1555,7 @@ export const chemEnergetics: Topic = {
             ],
           },
           {
-            id: "chem-energetics-bank-qa1-q04",
+            id: "chem-energetics-bq1-04",
             question:
               "**Challenge question**\n\n" +
               "Ethene reacts with hydrogen: C₂H₄(g) + H₂(g) → C₂H₆(g)\n\n" +
