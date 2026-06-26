@@ -529,458 +529,1797 @@ export const physSpace: Topic = {
 
   questionBank: {
     mcqPapers: [
+      // ── MCQ PAPER 1 ── Solar System structure, orbits, Sun
       {
-        id: "phys-space-bank-mcq-1",
-        title: "Space Physics MCQ — Paper 1",
-        description: "18 minutes · 6 questions · Solar System, orbits, stellar life cycles",
+        id: "phys-space-bankmcq-1",
+        title: "Question Bank — MCQ Paper 1",
+        description: "The Solar System, planetary order, orbits, and the Sun.",
         questions: [
           {
-            id: "phys-space-bank-mcq1-q01",
-            question: "In which region of the Solar System is the asteroid belt found?",
+            id: "phys-space-bm1-01",
+            question: "Which list gives the four inner (rocky) planets in the correct order from the Sun?",
             options: [
-              "Between Earth and Mars",
-              "Between Mars and Jupiter",
-              "Between Jupiter and Saturn",
-              "Beyond Neptune",
+              "Mercury, Venus, Earth, Mars",
+              "Venus, Mercury, Earth, Mars",
+              "Mercury, Earth, Venus, Mars",
+              "Mars, Earth, Venus, Mercury",
+            ],
+            answerIndex: 0,
+            explanation:
+              "The order outward from the Sun is Mercury, Venus, Earth, Mars (then Jupiter, Saturn, Uranus, Neptune). The four inner planets are small and rocky.",
+            difficulty: "warmup",
+            guideRef: "The Solar System",
+          },
+          {
+            id: "phys-space-bm1-02",
+            question: "Which body provides the centripetal force that keeps a planet in orbit around the Sun?",
+            options: [
+              "The magnetic field of the Sun",
+              "The gravitational attraction of the Sun on the planet",
+              "The solar wind pushing the planet",
+              "The gravitational attraction of nearby planets",
             ],
             answerIndex: 1,
-            explanation: "The asteroid belt lies between Mars and Jupiter, at roughly 2.2–3.2 AU from the Sun.",
-            guideRef: "The Solar System",
+            explanation:
+              "Gravitational attraction between the Sun and the planet acts toward the centre of the orbit, providing the centripetal force needed for circular (or elliptical) motion.",
             difficulty: "warmup",
-          },
-          {
-            id: "phys-space-bank-mcq1-q02",
-            question: "A geostationary satellite has an orbital period of:",
-            options: ["90 minutes", "12 hours", "24 hours", "365 days"],
-            answerIndex: 2,
-            explanation: "A geostationary satellite must have a period of exactly 24 hours so that it orbits at the same rate as Earth rotates, remaining stationary above one point on the equator.",
             guideRef: "Orbits and Gravitational Force",
-            difficulty: "warmup",
           },
           {
-            id: "phys-space-bank-mcq1-q03",
-            question: "Planet X orbits a star at twice the orbital radius of planet Y. Compared with Y, planet X has:",
+            id: "phys-space-bm1-03",
+            question: "Which statement correctly compares the outer gas giants with the inner planets?",
             options: [
-              "A shorter period and higher speed",
-              "A shorter period and lower speed",
-              "A longer period and lower speed",
-              "A longer period and higher speed",
-            ],
-            answerIndex: 2,
-            explanation: "A larger orbital radius means a weaker gravitational force, so less centripetal acceleration and a lower orbital speed. The larger circumference combined with lower speed gives a much longer period (T ∝ r^3/2).",
-            guideRef: "Orbits and Gravitational Force",
-            difficulty: "core",
-            hints: [
-              "From v = 2πr/T: if r increases and v decreases, what happens to T?",
-              "Gravity weakens with distance, so a planet farther out moves more slowly.",
-            ],
-          },
-          {
-            id: "phys-space-bank-mcq1-q04",
-            question: "During which stage of a star's life does hydrogen fusion first ignite?",
-            options: ["Nebula", "Protostar", "Main-sequence star", "Red giant"],
-            answerIndex: 2,
-            explanation: "Hydrogen fusion begins when the star joins the main sequence. A protostar is still contracting and too cool for fusion to start; a nebula is even earlier.",
-            guideRef: "The Life Cycle of a Star",
-            difficulty: "core",
-            hints: [
-              "Fusion requires extremely high temperature and pressure — does the protostar yet have this?",
-              "The main sequence begins when the star is hot enough to sustain fusion.",
-            ],
-          },
-          {
-            id: "phys-space-bank-mcq1-q05",
-            question: "A comet travels in a highly elliptical orbit around the Sun. At which point in its orbit is the comet moving fastest?",
-            options: [
-              "At the point farthest from the Sun (aphelion)",
-              "At the point closest to the Sun (perihelion)",
-              "At the midpoint of the orbit",
-              "Its speed is constant throughout",
+              "The gas giants are smaller and denser than the rocky planets",
+              "The gas giants are larger, less dense, and orbit more slowly than the rocky planets",
+              "The gas giants are closer to the Sun and orbit faster",
+              "The gas giants and rocky planets all orbit at the same speed",
             ],
             answerIndex: 1,
-            explanation: "Gravitational potential energy is lowest (most negative) when closest to the Sun, so kinetic energy (and speed) is greatest. As the comet moves away, it slows as kinetic energy is converted back to gravitational potential energy.",
-            guideRef: "The Solar System",
+            explanation:
+              "Gas giants (Jupiter, Saturn, Uranus, Neptune) are much larger but far less dense than the rocky inner planets. Being farther out, gravity is weaker there, so they orbit more slowly and have longer periods.",
             difficulty: "core",
             hints: [
-              "Consider energy conservation: GPE + KE = constant.",
-              "Where is GPE at its minimum? What does that mean for KE?",
+              "Compare size: are Jupiter and Saturn bigger or smaller than Earth?",
+              "Compare density: gas vs rock — which packs more mass per unit volume?",
+              "Farther from the Sun means weaker gravity, so a slower orbital speed.",
             ],
+            guideRef: "The Solar System",
           },
           {
-            id: "phys-space-bank-mcq1-q06",
-            question: "Which of the following is the best unit for expressing the distance between two galaxies?",
-            options: ["Metre (m)", "Kilometre (km)", "Astronomical unit (AU)", "Light-year (ly)"],
-            answerIndex: 3,
-            explanation: "Intergalactic distances are measured in millions of light-years. Metres, kilometres, and astronomical units give unwieldy numbers at these scales. The light-year (≈ 9.46 × 10¹⁵ m) is the standard astronomical unit for such distances.",
-            guideRef: "Galaxies and the Scale of the Universe",
+            id: "phys-space-bm1-04",
+            question: "A moon orbits a planet of radius r with period T. Which expression gives its orbital speed?",
+            options: ["v = πr / T", "v = 2πr × T", "v = 2πr / T", "v = r / (2πT)"],
+            answerIndex: 2,
+            explanation:
+              "In one period the moon travels the full circumference 2πr. Speed = distance / time = 2πr / T.",
             difficulty: "warmup",
+            guideRef: "Orbits and Gravitational Force",
+          },
+          {
+            id: "phys-space-bm1-05",
+            question: "Why does Neptune take much longer than Earth to complete one orbit of the Sun?",
+            options: [
+              "Neptune is more massive, so it moves more slowly",
+              "Neptune has a much larger orbit and a lower orbital speed",
+              "Neptune is pushed back by the solar wind",
+              "Neptune orbits in the opposite direction to Earth",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Neptune's orbital radius is about 30 times Earth's, so its orbit is far longer. The Sun's gravity is also much weaker there, giving Neptune a lower orbital speed. A longer path travelled more slowly gives a far longer period (~165 years).",
+            difficulty: "core",
+            hints: [
+              "Period depends on both the distance to travel and the speed.",
+              "How does the size of Neptune's orbit compare with Earth's?",
+              "Does a planet farther out move faster or slower?",
+            ],
+            guideRef: "Orbits and Gravitational Force",
+          },
+          {
+            id: "phys-space-bm1-06",
+            question: "The Sun is best described as:",
+            options: [
+              "A planet made mostly of rock and iron",
+              "A main-sequence star made mostly of hydrogen and helium",
+              "A red giant nearing the end of its life",
+              "A cloud of gas and dust that has not yet ignited",
+            ],
+            answerIndex: 1,
+            explanation:
+              "The Sun is a stable main-sequence star composed mainly of hydrogen and helium, generating energy by fusing hydrogen into helium in its core.",
+            difficulty: "warmup",
+            guideRef: "The Sun and Stellar Energy",
+          },
+          {
+            id: "phys-space-bm1-07",
+            question: "A comet has a highly elliptical orbit. Compared with when it is far from the Sun, when it is close to the Sun the comet has:",
+            options: [
+              "Lower speed and lower kinetic energy",
+              "Higher speed and higher kinetic energy",
+              "The same speed throughout its orbit",
+              "Higher speed but lower kinetic energy",
+            ],
+            answerIndex: 1,
+            explanation:
+              "As the comet falls toward the Sun, gravity does work on it: gravitational potential energy is converted to kinetic energy, so it moves fastest (highest KE) at perihelion, the closest point.",
+            difficulty: "core",
+            hints: [
+              "Use conservation of energy: GPE + KE is constant.",
+              "GPE is lowest when closest to the Sun — so KE is greatest there.",
+              "Greater KE means greater speed.",
+            ],
+            guideRef: "The Solar System",
+          },
+          {
+            id: "phys-space-bm1-08",
+            question: "The Solar System is thought to have formed by accretion. This means:",
+            options: [
+              "A single huge planet broke apart into smaller pieces",
+              "Material in a rotating cloud of gas and dust gradually clumped together under gravity",
+              "The Sun captured ready-made planets passing nearby",
+              "Stars exploded and the fragments cooled into planets",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Accretion is the gradual accumulation of gas and dust under gravity. In a rotating nebula, most mass formed the Sun while the remaining disc material clumped together to build planets, moons, and smaller bodies.",
+            difficulty: "core",
+            hints: [
+              "The root of 'accretion' means 'to grow by adding material'.",
+              "Where did the gas and dust come from? A rotating nebula.",
+              "Gravity pulls material together rather than apart.",
+            ],
+            guideRef: "The Solar System",
+          },
+          {
+            id: "phys-space-bm1-09",
+            question: "A satellite is moved to a higher orbit (larger radius) around Earth. Which statement is correct?",
+            options: [
+              "Its orbital speed increases and its period decreases",
+              "Its orbital speed decreases and its period increases",
+              "Both its orbital speed and period increase",
+              "Both its orbital speed and period decrease",
+            ],
+            answerIndex: 1,
+            explanation:
+              "At a larger radius, Earth's gravity is weaker, so less centripetal force is available and the orbital speed is lower. A larger, slower orbit means a longer period (geostationary orbits at ~36 000 km take 24 h, far longer than low orbits at ~90 min).",
+            difficulty: "challenge",
+            hints: [
+              "Gravity provides the centripetal force; how does it change with distance?",
+              "Setting GMm/r² = mv²/r gives v² = GM/r, so v falls as r rises.",
+              "A bigger circumference covered at a lower speed means a longer period.",
+              "Compare a 90-minute low orbit with a 24-hour geostationary orbit.",
+            ],
+            strategy: "Equate gravitational and centripetal force to see how v and T depend on r.",
+            guideRef: "Orbits and Gravitational Force",
+          },
+          {
+            id: "phys-space-bm1-10",
+            question: "In the Sun's core, fusion releases energy because:",
+            options: [
+              "Hydrogen nuclei are split into smaller particles",
+              "The helium nucleus formed has slightly more mass than the hydrogen nuclei",
+              "The helium nucleus formed has slightly less mass than the hydrogen nuclei that fused, and the lost mass becomes energy",
+              "Chemical bonds form between hydrogen atoms, releasing heat",
+            ],
+            answerIndex: 2,
+            explanation:
+              "Four hydrogen nuclei fuse to form one helium nucleus, which has slightly less mass than the reactants. This mass defect is converted to energy via E = mc². Fusion joins nuclei (it is not fission, and it is not a chemical reaction).",
+            difficulty: "challenge",
+            hints: [
+              "Fusion joins light nuclei; fission splits heavy ones — which is happening here?",
+              "Compare the total mass before and after the reaction.",
+              "A small loss of mass releases a large amount of energy (E = mc²).",
+              "This is a nuclear process, not a chemical one involving bonds.",
+            ],
+            strategy: "Track mass before vs after; the missing mass becomes the released energy.",
+            guideRef: "The Sun and Stellar Energy",
           },
         ],
       },
+      // ── MCQ PAPER 2 ── orbital calculations, period-radius, comets
       {
-        id: "phys-space-bank-mcq-2",
-        title: "Space Physics MCQ — Paper 2",
-        description: "18 minutes · 6 questions · Orbits (calculation), Big Bang, stellar end-states",
+        id: "phys-space-bankmcq-2",
+        title: "Question Bank — MCQ Paper 2",
+        description: "Orbital-speed calculations, the radius–period relationship, and satellites.",
         questions: [
           {
-            id: "phys-space-bank-mcq2-q01",
-            question: "A satellite orbits Earth at a radius of 6.7 × 10⁶ m with a period of 5400 s. What is its orbital speed?",
-            options: ["3.9 × 10³ m/s", "7.8 × 10³ m/s", "1.2 × 10⁴ m/s", "2.4 × 10⁴ m/s"],
+            id: "phys-space-bm2-01",
+            question: "A planet orbits a star at radius 6.0 × 10¹⁰ m with a period of 1.0 × 10⁷ s. What is its orbital speed?",
+            options: ["1.9 × 10³ m/s", "3.8 × 10⁴ m/s", "6.0 × 10³ m/s", "1.9 × 10⁵ m/s"],
             answerIndex: 1,
-            explanation: "v = 2πr / T = (2π × 6.7 × 10⁶) / 5400 = (4.21 × 10⁷) / 5400 ≈ 7800 m/s = 7.8 × 10³ m/s.",
-            guideRef: "Orbits and Gravitational Force",
+            explanation:
+              "v = 2πr / T = (2π × 6.0 × 10¹⁰) / (1.0 × 10⁷) = (3.77 × 10¹¹) / (1.0 × 10⁷) ≈ 3.8 × 10⁴ m/s.",
             difficulty: "core",
             hints: [
-              "Use v = 2πr / T; both r and T are already in SI units.",
-              "Calculate the circumference first: 2π × 6.7 × 10⁶ ≈ 4.21 × 10⁷ m.",
-              "Then divide by T = 5400 s.",
+              "Use v = 2πr / T; both values are already in SI units.",
+              "First find the circumference: 2π × 6.0 × 10¹⁰ ≈ 3.77 × 10¹¹ m.",
+              "Divide by T = 1.0 × 10⁷ s.",
             ],
-            strategy: "Substitute directly; no unit conversion needed here.",
+            strategy: "Compute circumference, then divide by period.",
+            guideRef: "Orbits and Gravitational Force",
           },
           {
-            id: "phys-space-bank-mcq2-q02",
-            question: "What provides the evidence that the Universe is expanding?",
+            id: "phys-space-bm2-02",
+            question: "Which of these planets has the longest orbital period?",
+            options: ["Mercury", "Earth", "Jupiter", "Neptune"],
+            answerIndex: 3,
+            explanation:
+              "Neptune is the farthest of the four from the Sun, so it has the largest orbit and the slowest orbital speed, giving the longest period (~165 years).",
+            difficulty: "warmup",
+            guideRef: "Orbits and Gravitational Force",
+          },
+          {
+            id: "phys-space-bm2-03",
+            question: "The Moon orbits Earth at a radius of 3.84 × 10⁸ m with a period of about 2.36 × 10⁶ s (27.3 days). Its orbital speed is closest to:",
+            options: ["1.0 × 10² m/s", "1.0 × 10³ m/s", "1.0 × 10⁴ m/s", "1.0 × 10⁵ m/s"],
+            answerIndex: 1,
+            explanation:
+              "v = 2πr / T = (2π × 3.84 × 10⁸) / (2.36 × 10⁶) = (2.41 × 10⁹) / (2.36 × 10⁶) ≈ 1.0 × 10³ m/s (about 1 km/s).",
+            difficulty: "core",
+            hints: [
+              "The period is already given in seconds — no conversion needed.",
+              "Circumference = 2π × 3.84 × 10⁸ ≈ 2.41 × 10⁹ m.",
+              "Divide by 2.36 × 10⁶ s.",
+            ],
+            strategy: "Substitute directly into v = 2πr / T.",
+            guideRef: "Orbits and Gravitational Force",
+          },
+          {
+            id: "phys-space-bm2-04",
+            question: "A geostationary satellite must have an orbital period of:",
+            options: ["About 90 minutes", "Exactly 12 hours", "Exactly 24 hours", "Exactly 1 year"],
+            answerIndex: 2,
+            explanation:
+              "A geostationary satellite orbits in the same time Earth takes to rotate once (24 hours), so it stays above the same point on the equator.",
+            difficulty: "warmup",
+            guideRef: "Orbits and Gravitational Force",
+          },
+          {
+            id: "phys-space-bm2-05",
+            question: "A satellite in low Earth orbit (radius 6.8 × 10⁶ m) has an orbital speed of about 7.6 × 10³ m/s. What is its approximate orbital period?",
+            options: ["About 90 minutes", "About 12 hours", "About 24 hours", "About 6 minutes"],
+            answerIndex: 0,
+            explanation:
+              "Rearrange v = 2πr / T to T = 2πr / v = (2π × 6.8 × 10⁶) / (7.6 × 10³) = (4.27 × 10⁷) / (7.6 × 10³) ≈ 5.6 × 10³ s ≈ 93 minutes.",
+            difficulty: "core",
+            hints: [
+              "Rearrange v = 2πr / T to make T the subject: T = 2πr / v.",
+              "Circumference = 2π × 6.8 × 10⁶ ≈ 4.27 × 10⁷ m.",
+              "Divide by 7.6 × 10³ m/s, then convert seconds to minutes.",
+            ],
+            strategy: "Rearrange the orbital-speed formula for T, then convert to minutes.",
+            guideRef: "Orbits and Gravitational Force",
+          },
+          {
+            id: "phys-space-bm2-06",
+            question: "For planets orbiting the Sun, which graph relationship correctly describes how orbital speed v depends on orbital radius r?",
             options: [
-              "The Sun emits light in all directions",
-              "Distant galaxies show redshift, with more distant ones receding faster",
-              "Stars have different colours depending on their temperature",
-              "The Milky Way is a spiral galaxy",
+              "v increases as r increases",
+              "v decreases as r increases",
+              "v is independent of r",
+              "v increases then decreases as r increases",
             ],
             answerIndex: 1,
-            explanation: "Redshift of light from distant galaxies, with greater redshift for more distant galaxies, shows they are all moving away — consistent with universal expansion.",
-            guideRef: "The Expanding Universe and the Big Bang",
-            difficulty: "warmup",
+            explanation:
+              "Gravity weakens with distance, so planets at larger radii orbit more slowly: v decreases as r increases (in fact v ∝ 1/√r).",
+            difficulty: "core",
+            hints: [
+              "Equate gravity to centripetal force: GMm/r² = mv²/r.",
+              "This gives v² = GM/r, so v gets smaller as r grows.",
+              "Mercury (small r) is the fastest planet; Neptune (large r) the slowest.",
+            ],
+            guideRef: "Orbits and Gravitational Force",
           },
           {
-            id: "phys-space-bank-mcq2-q03",
-            question: "A neutron star is most likely formed from which type of star?",
+            id: "phys-space-bm2-07",
+            question: "Two satellites orbit Earth. Satellite A has a period of 2 h; satellite B has a period of 24 h. Which statement is correct?",
             options: [
-              "A Sun-like star after it becomes a red giant",
-              "A Sun-like star after it becomes a white dwarf",
-              "A massive star after a supernova explosion",
-              "Any star after it leaves the main sequence",
+              "A has the larger orbital radius",
+              "B has the larger orbital radius and the lower orbital speed",
+              "B has the larger orbital radius and the higher orbital speed",
+              "Both have the same orbital radius",
+            ],
+            answerIndex: 1,
+            explanation:
+              "A longer period corresponds to a larger orbit. Satellite B (24 h) orbits farther out, where gravity is weaker, so it moves at a lower orbital speed than A.",
+            difficulty: "core",
+            hints: [
+              "Longer period generally means a bigger orbit.",
+              "Farther out means weaker gravity and a slower speed.",
+              "Compare with low orbit (~90 min) vs geostationary (24 h).",
+            ],
+            guideRef: "Orbits and Gravitational Force",
+          },
+          {
+            id: "phys-space-bm2-08",
+            question: "A comet's speed is 50 km/s at perihelion and 1 km/s at aphelion. Which best explains this difference?",
+            options: [
+              "The Sun's gravity does work on the comet, converting GPE to KE as it falls inward",
+              "Friction with space slows the comet at aphelion",
+              "The comet's mass changes during the orbit",
+              "The Sun pushes the comet faster when it is close",
+            ],
+            answerIndex: 0,
+            explanation:
+              "As the comet falls toward the Sun, gravitational potential energy is converted to kinetic energy, so it is fastest at perihelion. Moving back out, KE converts to GPE and it slows. There is no friction in space.",
+            difficulty: "core",
+            hints: [
+              "Think about energy conservation, not friction.",
+              "Falling inward: GPE decreases, so KE (and speed) increases.",
+              "Moving outward: KE converts back to GPE, so it slows.",
+            ],
+            guideRef: "The Solar System",
+          },
+          {
+            id: "phys-space-bm2-09",
+            question: "Planet P orbits the Sun at four times the radius of planet Q. Using the qualitative relationship for circular orbits, P's orbital speed compared with Q's is:",
+            options: [
+              "Twice as large",
+              "Four times as large",
+              "Half as large",
+              "One quarter as large",
             ],
             answerIndex: 2,
-            explanation: "Neutron stars form when a massive star explodes as a supernova and the remnant core (up to ~3 solar masses) is compressed to an extremely dense state. Sun-like stars become white dwarfs, not neutron stars.",
-            guideRef: "The Life Cycle of a Star",
-            difficulty: "core",
-            hints: [
-              "Only massive stars undergo supernovae.",
-              "What are the two possible remnants left after a supernova?",
-            ],
-          },
-          {
-            id: "phys-space-bank-mcq2-q04",
-            question: "Two planets, P and Q, orbit the same star. P is at twice the orbital radius of Q. How does the orbital period of P compare with that of Q?",
-            options: [
-              "P's period is 2 times Q's period",
-              "P's period is √2 times Q's period",
-              "P's period is 4 times Q's period",
-              "P's period is 2√2 times Q's period",
-            ],
-            answerIndex: 3,
-            explanation: "By Kepler's Third Law, T ∝ r^(3/2). If r doubles, T increases by 2^(3/2) = 2√2 ≈ 2.83. So P's period is 2√2 times Q's period.",
-            guideRef: "Orbits and Gravitational Force",
+            explanation:
+              "Since v ∝ 1/√r, multiplying r by 4 divides v by √4 = 2. So P moves at half the speed of Q.",
             difficulty: "challenge",
             hints: [
-              "From v = 2πr/T and the fact that v ∝ 1/√r (from gravity providing centripetal force), combine to find T in terms of r.",
-              "T = 2πr/v. If v ∝ r^(-1/2), then T ∝ r / r^(-1/2) = r^(3/2).",
-              "If r doubles: T scales by 2^(3/2) = 2 × √2.",
+              "Equate gravity and centripetal force: GMm/r² = mv²/r, so v² = GM/r.",
+              "This means v ∝ 1/√r.",
+              "If r becomes 4r, then √r becomes 2√r.",
+              "So v is divided by 2.",
             ],
-            strategy: "Combine v = 2πr/T with v ∝ 1/√r to derive T ∝ r^(3/2).",
+            strategy: "Use v ∝ 1/√r and substitute the radius factor.",
+            guideRef: "Orbits and Gravitational Force",
           },
           {
-            id: "phys-space-bank-mcq2-q05",
-            question: "Astronomers detect spectral lines from a distant galaxy that are shifted to longer wavelengths than the same lines observed in a laboratory. This observation is best explained by:",
+            id: "phys-space-bm2-10",
+            question: "A spacecraft orbits a planet at radius 8.0 × 10⁶ m with speed 5.0 × 10³ m/s. What is its orbital period?",
+            options: ["1.0 × 10⁴ s", "1.0 × 10³ s", "8.0 × 10³ s", "2.5 × 10⁴ s"],
+            answerIndex: 0,
+            explanation:
+              "T = 2πr / v = (2π × 8.0 × 10⁶) / (5.0 × 10³) = (5.03 × 10⁷) / (5.0 × 10³) ≈ 1.0 × 10⁴ s.",
+            difficulty: "challenge",
+            hints: [
+              "Rearrange v = 2πr / T to T = 2πr / v.",
+              "Circumference = 2π × 8.0 × 10⁶ ≈ 5.03 × 10⁷ m.",
+              "Divide by 5.0 × 10³ m/s.",
+            ],
+            strategy: "Rearrange for T, then substitute.",
+            guideRef: "Orbits and Gravitational Force",
+          },
+        ],
+      },
+      // ── MCQ PAPER 3 ── Sun, fusion, stellar life cycles
+      {
+        id: "phys-space-bankmcq-3",
+        title: "Question Bank — MCQ Paper 3",
+        description: "Stellar energy, fusion, and the life cycles of low- and high-mass stars.",
+        questions: [
+          {
+            id: "phys-space-bm3-01",
+            question: "What is the correct early sequence in the formation of a star?",
             options: [
-              "The galaxy being much hotter than a lab source",
-              "The galaxy moving away from Earth due to the expansion of the Universe",
-              "Absorption of light by interstellar dust",
-              "The galaxy rotating very slowly",
+              "Protostar → nebula → main-sequence star",
+              "Nebula → protostar → main-sequence star",
+              "Nebula → main-sequence star → protostar",
+              "Main-sequence star → protostar → nebula",
             ],
             answerIndex: 1,
-            explanation: "Longer wavelength (redshift) is a Doppler effect caused by the galaxy receding. This is the key evidence for the expanding Universe.",
-            guideRef: "The Expanding Universe and the Big Bang",
-            difficulty: "core",
-            hints: [
-              "What does the Doppler effect predict for wavelength when a source moves away?",
-              "A longer wavelength means the source is receding.",
-            ],
+            explanation:
+              "A nebula (gas and dust) contracts under gravity to form a protostar, which heats up until fusion ignites and it joins the main sequence.",
+            difficulty: "warmup",
+            guideRef: "The Life Cycle of a Star",
           },
           {
-            id: "phys-space-bank-mcq2-q06",
-            question: "A student claims: 'The Sun is unusual because it is the only star to have planets.' Which statement best evaluates this claim?",
+            id: "phys-space-bm3-02",
+            question: "The Sun is mainly composed of which two elements?",
+            options: ["Oxygen and nitrogen", "Hydrogen and helium", "Carbon and oxygen", "Hydrogen and carbon"],
+            answerIndex: 1,
+            explanation:
+              "The Sun is mostly hydrogen, with helium the second most abundant element. Fusion converts hydrogen into helium.",
+            difficulty: "warmup",
+            guideRef: "The Sun and Stellar Energy",
+          },
+          {
+            id: "phys-space-bm3-03",
+            question: "Which sequence shows the final stages for a star with a similar mass to the Sun?",
             options: [
-              "Correct — the Solar System formed in a unique way",
-              "Incorrect — all stars must have planets",
-              "Incorrect — the Milky Way contains billions of stars, many of which are known to host planetary systems",
-              "Correct — planets require the exact conditions found only in our Solar System",
+              "Red giant → planetary nebula → white dwarf",
+              "Red supergiant → supernova → neutron star",
+              "Red giant → supernova → black hole",
+              "Red supergiant → planetary nebula → white dwarf",
             ],
-            answerIndex: 2,
-            explanation: "The Milky Way contains hundreds of billions of stars, and observations (e.g., with the Kepler space telescope) have confirmed that exoplanetary systems are common. The Solar System's accretion process is not unique.",
-            guideRef: "The Solar System",
+            answerIndex: 0,
+            explanation:
+              "A Sun-like star becomes a red giant, sheds its outer layers as a planetary nebula, and leaves a hot dense core — a white dwarf. Supernovae and neutron stars/black holes are the fate of much more massive stars.",
             difficulty: "core",
             hints: [
-              "Think about the scale of the galaxy and whether our Solar System's formation is unique.",
-              "Accretion from a nebular disc is a general process, not specific to our Sun.",
+              "Only massive stars explode as supernovae.",
+              "A Sun-like star gently ejects its outer layers — what is this called?",
+              "The remnant core of a Sun-like star is a white dwarf.",
             ],
+            guideRef: "The Life Cycle of a Star",
+          },
+          {
+            id: "phys-space-bm3-04",
+            question: "What keeps a main-sequence star stable in size over billions of years?",
+            options: [
+              "There are no forces acting on the star",
+              "Inward gravity is balanced by outward pressure from radiation and hot gas",
+              "The star is held together by magnetic fields only",
+              "The star is solid and cannot change shape",
+            ],
+            answerIndex: 1,
+            explanation:
+              "A main-sequence star is in equilibrium: the inward pull of gravity is balanced by the outward pressure produced by the energy released in fusion (radiation and hot gas). This keeps its size stable.",
+            difficulty: "core",
+            hints: [
+              "Two opposing influences keep the star the same size.",
+              "Gravity acts inward — what acts outward?",
+              "Fusion in the core produces hot gas and radiation pressure.",
+            ],
+            guideRef: "The Sun and Stellar Energy",
+          },
+          {
+            id: "phys-space-bm3-05",
+            question: "A red supergiant explodes. The most massive possible remnant left behind is:",
+            options: ["A white dwarf", "A planetary nebula", "A neutron star", "A black hole"],
+            answerIndex: 3,
+            explanation:
+              "After a supernova, the remnant core forms a neutron star if it is up to ~3 solar masses, or collapses into a black hole if it is more massive. The black hole is the most massive remnant.",
+            difficulty: "core",
+            hints: [
+              "Supernovae leave one of two remnants.",
+              "The more massive the core, the more extreme the remnant.",
+              "Nothing, not even light, escapes the most massive one.",
+            ],
+            guideRef: "The Life Cycle of a Star",
+          },
+          {
+            id: "phys-space-bm3-06",
+            question: "Why do massive stars spend far less time on the main sequence than Sun-like stars?",
+            options: [
+              "They contain less hydrogen fuel in total",
+              "They fuse their fuel much faster because of higher core temperature and pressure",
+              "They never reach the temperature needed for fusion",
+              "They lose all their mass as a planetary nebula very early",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Although massive stars have more fuel, their far higher core temperature and pressure make them fuse hydrogen at a much greater rate, so they exhaust their fuel in millions rather than billions of years.",
+            difficulty: "challenge",
+            hints: [
+              "It is the rate of fusion, not just the amount of fuel, that matters.",
+              "A massive star has a hotter, denser core.",
+              "A hotter core fuses fuel much faster, burning through it quickly.",
+              "Lifetime ≈ fuel available ÷ rate of use.",
+            ],
+            strategy: "Compare lifetime as fuel ÷ rate of consumption, not fuel alone.",
+            guideRef: "The Life Cycle of a Star",
+          },
+          {
+            id: "phys-space-bm3-07",
+            question: "Elements heavier than helium, such as carbon and iron, are mainly produced:",
+            options: [
+              "In nebulae before stars form",
+              "By fusion inside stars and scattered by supernovae",
+              "By the Sun's solar wind",
+              "Only during the Big Bang",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Heavier elements are forged by fusion inside stars; supernovae of massive stars scatter these elements into space, enriching the nebulae from which later stars and planets form.",
+            difficulty: "challenge",
+            hints: [
+              "The Big Bang produced mainly hydrogen and helium.",
+              "Where does fusion of heavier nuclei occur?",
+              "How are these elements then spread into space?",
+            ],
+            strategy: "Link element formation (fusion in stars) to dispersal (supernovae).",
+            guideRef: "The Life Cycle of a Star",
+          },
+          {
+            id: "phys-space-bm3-08",
+            question: "A hot star appears blue-white while a cooler star appears red. This shows that a star's colour depends on its:",
+            options: ["Distance from Earth", "Surface temperature", "Mass only", "Age only"],
+            answerIndex: 1,
+            explanation:
+              "A star's colour is determined mainly by its surface temperature: hotter stars appear blue-white, cooler stars orange or red. The Sun, at ~5500 °C, appears yellow-white.",
+            difficulty: "warmup",
+            guideRef: "The Sun and Stellar Energy",
+          },
+          {
+            id: "phys-space-bm3-09",
+            question: "Which stage is common to the life cycle of BOTH a Sun-like star and a massive star?",
+            options: [
+              "Supernova",
+              "White dwarf",
+              "Main-sequence (hydrogen-fusing) star",
+              "Black hole",
+            ],
+            answerIndex: 2,
+            explanation:
+              "Both kinds of star form from a nebula, become a protostar, and spend a long stable period as a main-sequence star fusing hydrogen. Their paths diverge only afterwards.",
+            difficulty: "core",
+            hints: [
+              "Find the stage that appears in both pathways before they split.",
+              "White dwarfs and black holes are end-states of different masses.",
+              "Both stars fuse hydrogen for most of their lives.",
+            ],
+            guideRef: "The Life Cycle of a Star",
+          },
+          {
+            id: "phys-space-bm3-10",
+            question: "A protostar continues to contract but has not yet become a main-sequence star. The key event still to occur is:",
+            options: [
+              "The onset of nuclear fusion in the core",
+              "The expansion into a red giant",
+              "The ejection of a planetary nebula",
+              "A supernova explosion",
+            ],
+            answerIndex: 0,
+            explanation:
+              "A protostar becomes a main-sequence star only when its core becomes hot and dense enough for hydrogen fusion to begin. The other events occur much later (or only for some stars).",
+            difficulty: "core",
+            hints: [
+              "What defines a main-sequence star?",
+              "A protostar is still heating up as it contracts.",
+              "Fusion must start before it joins the main sequence.",
+            ],
+            guideRef: "The Life Cycle of a Star",
+          },
+        ],
+      },
+      // ── MCQ PAPER 4 ── galaxies, light-year, redshift, Big Bang
+      {
+        id: "phys-space-bankmcq-4",
+        title: "Question Bank — MCQ Paper 4",
+        description: "Galaxies, the light-year, redshift, and the expanding Universe.",
+        questions: [
+          {
+            id: "phys-space-bm4-01",
+            question: "Our Sun belongs to which galaxy?",
+            options: ["Andromeda", "The Milky Way", "The Large Magellanic Cloud", "The Local Group"],
+            answerIndex: 1,
+            explanation:
+              "The Sun is one of hundreds of billions of stars in the Milky Way, a barred-spiral galaxy. (The Local Group is a cluster of galaxies, not a single galaxy.)",
+            difficulty: "warmup",
+            guideRef: "Galaxies and the Scale of the Universe",
+          },
+          {
+            id: "phys-space-bm4-02",
+            question: "A light-year is a unit of:",
+            options: ["Time", "Distance", "Speed", "Brightness"],
+            answerIndex: 1,
+            explanation:
+              "A light-year is the distance light travels in one year (≈ 9.46 × 10¹⁵ m). Despite the word 'year', it measures distance, not time.",
+            difficulty: "warmup",
+            guideRef: "Galaxies and the Scale of the Universe",
+          },
+          {
+            id: "phys-space-bm4-03",
+            question: "Light from a distant galaxy has its spectral lines shifted toward longer wavelengths. This is called:",
+            options: ["Blueshift", "Refraction", "Redshift", "Diffraction"],
+            answerIndex: 2,
+            explanation:
+              "A shift to longer (redder) wavelengths is redshift, caused by the galaxy moving away from us — evidence that the Universe is expanding.",
+            difficulty: "warmup",
+            guideRef: "The Expanding Universe and the Big Bang",
+          },
+          {
+            id: "phys-space-bm4-04",
+            question: "Taking the speed of light as 3.0 × 10⁸ m/s and one year as 3.15 × 10⁷ s, approximately how far is one light-year?",
+            options: ["9.5 × 10¹⁵ m", "9.5 × 10¹² m", "9.5 × 10¹⁸ m", "4.8 × 10¹⁵ m"],
+            answerIndex: 0,
+            explanation:
+              "distance = speed × time = (3.0 × 10⁸) × (3.15 × 10⁷) = 9.45 × 10¹⁵ m ≈ 9.5 × 10¹⁵ m.",
+            difficulty: "core",
+            hints: [
+              "Use distance = speed × time.",
+              "Multiply 3.0 × 10⁸ m/s by the number of seconds in a year.",
+              "Add the powers of ten: 10⁸ × 10⁷ = 10¹⁵.",
+            ],
+            strategy: "distance = speed × time; combine the powers of ten.",
+            guideRef: "Galaxies and the Scale of the Universe",
+          },
+          {
+            id: "phys-space-bm4-05",
+            question: "Astronomers observe that more distant galaxies have greater redshifts. What does this strongly suggest?",
+            options: [
+              "Distant galaxies are hotter",
+              "The Universe is expanding, with more distant galaxies receding faster",
+              "Light slows down over large distances",
+              "Distant galaxies are made of different elements",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Greater redshift means faster recession. The pattern 'more distant = faster' is exactly what a uniformly expanding Universe predicts, supporting the Big Bang theory.",
+            difficulty: "core",
+            hints: [
+              "Greater redshift corresponds to a higher recession speed.",
+              "What does 'farther away means moving away faster' imply about the whole Universe?",
+              "Think of dots on an inflating balloon.",
+            ],
+            guideRef: "The Expanding Universe and the Big Bang",
+          },
+          {
+            id: "phys-space-bm4-06",
+            question: "Why do astronomers use the light-year instead of the metre to measure distances between galaxies?",
+            options: [
+              "The metre cannot be defined in space",
+              "Distances in metres would be impractically large numbers",
+              "Light-years are more accurate than metres",
+              "Galaxies do not have a measurable size in metres",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Intergalactic distances in metres run to 10²² and beyond. The light-year (≈ 9.46 × 10¹⁵ m) gives far more manageable numbers — e.g. 'about 2.5 million ly to Andromeda'.",
+            difficulty: "core",
+            hints: [
+              "Think about how many metres lie between galaxies.",
+              "Very large numbers are awkward to write and compare.",
+              "The light-year scales the numbers down to something usable.",
+            ],
+            guideRef: "Galaxies and the Scale of the Universe",
+          },
+          {
+            id: "phys-space-bm4-07",
+            question: "Proxima Centauri is about 4.2 light-years away. Roughly how far is this in metres? (1 ly ≈ 9.46 × 10¹⁵ m)",
+            options: ["4.0 × 10¹⁶ m", "4.0 × 10¹⁵ m", "2.3 × 10¹⁵ m", "4.0 × 10¹⁴ m"],
+            answerIndex: 0,
+            explanation:
+              "distance = 4.2 × 9.46 × 10¹⁵ = 39.7 × 10¹⁵ ≈ 4.0 × 10¹⁶ m.",
+            difficulty: "core",
+            hints: [
+              "Multiply the number of light-years by the metres in one light-year.",
+              "4.2 × 9.46 ≈ 39.7.",
+              "39.7 × 10¹⁵ = 3.97 × 10¹⁶ m.",
+            ],
+            strategy: "Multiply ly by 9.46 × 10¹⁵ m, then tidy the standard form.",
+            guideRef: "Galaxies and the Scale of the Universe",
+          },
+          {
+            id: "phys-space-bm4-08",
+            question: "When we observe a galaxy 100 million light-years away, we are seeing it:",
+            options: [
+              "As it is right now",
+              "As it was 100 million years ago",
+              "As it will be in 100 million years",
+              "Exactly as the Milky Way looks",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Light takes 100 million years to reach us from a galaxy 100 million ly away, so we see it as it was 100 million years ago — observing distant objects means looking back in time.",
+            difficulty: "core",
+            hints: [
+              "A light-year is the distance light travels in one year.",
+              "How long did the light take to reach us from that distance?",
+              "We see the galaxy as it was when the light left it.",
+            ],
+            guideRef: "Galaxies and the Scale of the Universe",
+          },
+          {
+            id: "phys-space-bm4-09",
+            question: "Galaxy A shows twice the redshift of galaxy B. Using the qualitative Hubble relationship, galaxy A is approximately:",
+            options: [
+              "Half as far away as B",
+              "The same distance as B",
+              "Twice as far away as B",
+              "Four times as far away as B",
+            ],
+            answerIndex: 2,
+            explanation:
+              "Redshift indicates recession speed, and recession speed is proportional to distance (v = H₀d). Twice the redshift means roughly twice the speed and therefore about twice the distance.",
+            difficulty: "challenge",
+            hints: [
+              "Redshift increases with recession speed.",
+              "Recession speed is proportional to distance.",
+              "If speed doubles, distance roughly doubles too.",
+            ],
+            strategy: "Use v ∝ redshift and v ∝ distance to link redshift with distance.",
+            guideRef: "The Expanding Universe and the Big Bang",
+          },
+          {
+            id: "phys-space-bm4-10",
+            question: "Besides the redshift of galaxies, which additional observation supports the Big Bang theory?",
+            options: [
+              "The Sun's daily motion across the sky",
+              "The cosmic microwave background radiation detected from all directions",
+              "The phases of the Moon",
+              "The existence of the asteroid belt",
+            ],
+            answerIndex: 1,
+            explanation:
+              "The cosmic microwave background radiation (CMBR) is faint microwave radiation arriving uniformly from all directions — the cooled afterglow of the hot, dense early Universe predicted by the Big Bang theory.",
+            difficulty: "challenge",
+            hints: [
+              "Look for evidence about the early, hot Universe.",
+              "It is a faint radiation coming from everywhere in the sky.",
+              "It lies in the microwave part of the spectrum.",
+            ],
+            strategy: "Recall the two main lines of Big Bang evidence: redshift and the CMBR.",
+            guideRef: "The Expanding Universe and the Big Bang",
           },
         ],
       },
     ],
     qaPapers: [
+      // ── QA PAPER 1 ── Solar System and orbits
       {
-        id: "phys-space-bank-qa-1",
-        title: "Space Physics Structured Questions — Paper 1",
-        description: "4 questions · Orbits, the Solar System, and stellar life cycles",
+        id: "phys-space-bankqa-1",
+        title: "Question Bank — Structured Paper 1",
+        description: "The Solar System, planetary order, and gravitational orbits.",
         questions: [
           {
-            id: "phys-space-bank-qa1-q01",
+            id: "phys-space-bq1-01",
             question:
-              "Mars orbits the Sun at an orbital radius of 2.28 × 10¹¹ m.\n(a) The orbital period of Mars is 687 days. Calculate the orbital speed of Mars. Give your answer in m/s to 2 significant figures.\n(b) State the name and direction of the force that keeps Mars in its orbit.\n(c) Explain why Mars has a longer orbital period than Earth, which orbits at a radius of 1.50 × 10¹¹ m.",
-            marks: 6,
+              "(a) Name the eight planets of the Solar System in order of increasing distance from the Sun.\n(b) State which of these are described as rocky planets and which are gas giants.\n(c) Where in the Solar System is the asteroid belt located?",
+            marks: 5,
             modelAnswer:
-              "(a) T = 687 × 24 × 3600 = 5.936 × 10⁷ s\nv = 2πr / T = (2π × 2.28 × 10¹¹) / (5.936 × 10⁷)\nv = 1.433 × 10¹² / 5.936 × 10⁷ ≈ 2.4 × 10⁴ m/s\n\n(b) Gravitational attraction / gravitational force directed toward the Sun / toward the centre of the orbit.\n\n(c) Mars has a larger orbital radius than Earth. A larger radius means the gravitational force (and hence centripetal force) is weaker, so Mars moves more slowly. The orbit is also longer in circumference. Both effects (lower speed, greater distance) result in a longer period.",
+              "(a) Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune.\n(b) Rocky planets: Mercury, Venus, Earth, Mars (the four inner planets). Gas giants: Jupiter, Saturn, Uranus, Neptune (the four outer planets).\n(c) The asteroid belt lies between the orbits of Mars and Jupiter.",
             markScheme: [
-              "T converted correctly to seconds (5.93–5.94 × 10⁷ s) [1]",
-              "Correct substitution into v = 2πr / T [1]",
-              "v = 2.4 × 10⁴ m/s (accept 2.3–2.5 × 10⁴) [1]",
-              "Gravitational attraction / gravitational force [1]",
-              "Directed toward the Sun / toward the centre of the orbit [1]",
-              "Larger radius → weaker gravity / lower orbital speed / longer circumference → longer period [1]",
+              "All eight planets named in the correct order [1]",
+              "Rocky planets correctly identified as Mercury, Venus, Earth, Mars [1]",
+              "Gas giants correctly identified as Jupiter, Saturn, Uranus, Neptune [1]",
+              "Asteroid belt located between Mars and Jupiter [1]",
+              "Clear distinction made between inner (rocky) and outer (gas) groups [1]",
             ],
             commonError:
-              "Omitting the direction of the centripetal force, or stating it acts 'outward' — centripetal force always acts inward toward the centre.",
-            guideRef: "Orbits and Gravitational Force",
-            difficulty: "core",
-            hints: [
-              "Convert T to seconds before using the formula.",
-              "v = 2πr / T — circumference divided by time for one orbit.",
-              "Name the force and state its direction (toward what object?).",
-              "Compare radii and recall how speed and period depend on orbital radius.",
-            ],
-            strategy: "Unit conversion → substitution → compare with Earth qualitatively.",
-            solutions: [
-              {
-                label: "Standard calculation",
-                steps: [
-                  "T = 687 × 86400 = 5.936 × 10⁷ s",
-                  "v = 2π × 2.28 × 10¹¹ / 5.936 × 10⁷",
-                  "v = 1.433 × 10¹² / 5.936 × 10⁷",
-                  "v ≈ 2.4 × 10⁴ m/s",
-                ],
-              },
-            ],
+              "Swapping the order of Uranus and Neptune, or placing the asteroid belt beyond Neptune instead of between Mars and Jupiter.",
+            difficulty: "warmup",
+            guideRef: "The Solar System",
           },
           {
-            id: "phys-space-bank-qa1-q02",
+            id: "phys-space-bq1-02",
             question:
-              "Describe how the Solar System is thought to have formed. In your answer, refer to the role of gravity and include the term 'accretion'.",
+              "Explain why a planet orbiting the Sun does not fly off into space in a straight line, even though no engine pushes it along its path.",
             marks: 4,
             modelAnswer:
-              "The Solar System formed from a large, rotating cloud of gas and dust called a nebula. Gravity caused the nebula to contract (collapse inward). Most of the mass concentrated at the centre, heating up to form the protostar that became the Sun. In the surrounding disc, solid particles collided and stuck together, gradually growing into larger bodies through a process called accretion. Over millions of years, accretion built up the planets, moons, and other smaller bodies (asteroids, comets) of the Solar System.",
+              "Any object moving in a circle needs a resultant force directed toward the centre of the circle, called the centripetal force. For a planet, this force is provided by the gravitational attraction between the planet and the Sun. This force continuously changes the direction of the planet's velocity, pulling it toward the Sun and curving its path into an orbit instead of a straight line. Without gravity the planet would travel in a straight line (Newton's first law).",
             markScheme: [
-              "Began as a nebula / rotating cloud of gas and dust [1]",
-              "Gravity caused the cloud to contract / collapse [1]",
-              "Most mass formed the Sun at the centre / protostar [1]",
-              "Remaining material formed planets/moons by accretion (particles colliding and sticking together to form larger bodies) [1]",
+              "Circular motion requires a centripetal force directed toward the centre [1]",
+              "This force is provided by gravitational attraction between planet and Sun [1]",
+              "The force changes the direction of the planet's velocity / acts at right angles to motion [1]",
+              "Without this force the planet would move in a straight line [1]",
             ],
             commonError:
-              "Describing the process as an explosion rather than a gravitational collapse — stars form by contraction, not explosion.",
-            guideRef: "The Solar System",
+              "Saying gravity 'speeds the planet up' or that a forward force keeps it moving — gravity acts toward the Sun and changes direction, not forward speed, in a circular orbit.",
             difficulty: "core",
             hints: [
-              "Start with the nebula.",
-              "What force drives the contraction?",
-              "Where did most of the mass go?",
-              "Accretion = particles sticking together to grow larger.",
+              "What kind of force is needed for any circular motion?",
+              "Which body provides that force for a planet?",
+              "In which direction does this force act?",
+              "What would happen to the planet if the force suddenly disappeared?",
             ],
+            strategy: "Identify the centripetal force, its source, and its effect on direction.",
+            guideRef: "Orbits and Gravitational Force",
           },
           {
-            id: "phys-space-bank-qa1-q03",
+            id: "phys-space-bq1-03",
             question:
-              "Compare the life cycles of a star similar in mass to the Sun and a star of much greater mass. Your answer should include all major stages for each and identify where the life cycles diverge.",
+              "The Earth orbits the Sun at a radius of 1.50 × 10¹¹ m with a period of 365 days.\n(a) Show that the orbital speed of the Earth is approximately 3.0 × 10⁴ m/s. Show your working.\n(b) State and explain how the orbital speed of Mars (orbital radius ~2.3 × 10¹¹ m) compares with that of the Earth.",
             marks: 6,
             modelAnswer:
-              "Both stars begin as a nebula that contracts under gravity to form a protostar, then join the main sequence when hydrogen fusion ignites. This is where the life cycles are identical. They diverge after hydrogen is exhausted in the core:\n- Sun-like star: expands to become a red giant, then sheds outer layers as a planetary nebula, leaving a white dwarf that gradually cools.\n- Massive star: expands to become a red supergiant, then explodes as a supernova, leaving either a neutron star (if remnant mass ≤ ~3 solar masses) or a black hole (if more massive).",
+              "(a) Convert the period to seconds: T = 365 × 24 × 3600 = 3.15 × 10⁷ s.\nv = 2πr / T = (2π × 1.50 × 10¹¹) / (3.15 × 10⁷) = (9.42 × 10¹¹) / (3.15 × 10⁷) ≈ 3.0 × 10⁴ m/s. ✓\n(b) Mars orbits more slowly than the Earth. It is farther from the Sun, so the Sun's gravitational attraction is weaker there; less centripetal force is available, giving a lower orbital speed.",
             markScheme: [
-              "Both start: nebula → protostar → main sequence [1]",
-              "Diverge when core hydrogen is exhausted [1]",
-              "Sun-like: red giant → planetary nebula → white dwarf [1]",
-              "Massive: red supergiant → supernova [1]",
-              "Supernova remnant: neutron star or black hole [1]",
-              "Clear distinction that Sun-like → white dwarf (not supernova) and massive → supernova (not white dwarf) [1]",
+              "Period converted to seconds (≈ 3.15 × 10⁷ s) [1]",
+              "Correct substitution into v = 2πr / T [1]",
+              "Answer ≈ 3.0 × 10⁴ m/s [1]",
+              "Mars orbits more slowly than Earth [1]",
+              "Because Mars is farther from the Sun [1]",
+              "Weaker gravity / smaller centripetal force at larger radius → lower speed [1]",
             ],
             commonError:
-              "Stating that a Sun-like star undergoes a supernova, or that a massive star becomes a white dwarf — these are the reverse of what actually happens.",
-            guideRef: "The Life Cycle of a Star",
+              "Leaving the period in days, which gives a meaningless answer; or stating Mars moves faster because it 'has farther to go'.",
             difficulty: "core",
             hints: [
-              "Both begin the same — up to and including the main sequence.",
-              "The fork occurs when the core hydrogen runs out.",
-              "Use the correct term: red giant (Sun-like) vs red supergiant (massive).",
-              "List both possible final remnants for the massive star.",
+              "Convert the period to seconds before substituting.",
+              "Use v = 2πr / T with r in metres.",
+              "For part (b), think about how gravity changes with distance.",
+              "Weaker gravity means a smaller centripetal force and a lower speed.",
             ],
-            strategy: "Parallel structure: trace both paths simultaneously; mark where they fork.",
-          },
-          {
-            id: "phys-space-bank-qa1-q04",
-            question:
-              "A satellite is placed in a circular orbit at a height where its orbital speed is 5600 m/s and its period is 8100 s.\n(a) Calculate the orbital radius of the satellite.\n(b) A second satellite orbits at a greater radius. State and explain whether this satellite has a greater or smaller orbital speed than the first.\n(c) Explain why geostationary satellites are used for television broadcasting rather than satellites in low Earth orbit.",
-            marks: 7,
-            modelAnswer:
-              "(a) From v = 2πr / T: r = vT / (2π) = (5600 × 8100) / (2π) = 45 360 000 / 6.283 ≈ 7.22 × 10⁶ m\n\n(b) The second satellite has a smaller orbital speed. At a greater radius, the gravitational force (providing centripetal force) is weaker. A smaller centripetal force corresponds to a smaller centripetal acceleration for the same orbit radius, which means a lower speed. (Formally, v ∝ 1/√r.)\n\n(c) A geostationary satellite remains stationary above the same point on Earth's surface (because its period = 24 h matches Earth's rotation). A dish antenna on the ground can therefore be fixed and aimed permanently at the satellite. A low Earth orbit satellite moves rapidly across the sky, requiring tracking equipment and causing signal interruptions — unsuitable for continuous broadcasting.",
-            markScheme: [
-              "Rearrangement: r = vT / (2π) [1]",
-              "Correct substitution: (5600 × 8100) / (2π) [1]",
-              "r ≈ 7.2 × 10⁶ m (accept 7.1–7.3 × 10⁶ m) [1]",
-              "Second satellite has smaller orbital speed [1]",
-              "Gravitational force weaker at greater radius / gravity ∝ 1/r² [1]",
-              "Geostationary satellite remains above the same point on Earth [1]",
-              "Fixed dish can be used / no tracking needed / continuous signal [1]",
-            ],
-            commonError:
-              "Rearranging the formula incorrectly — students sometimes write r = vT × 2π (multiplying instead of dividing by 2π).",
-            guideRef: "Orbits and Gravitational Force",
-            difficulty: "challenge",
-            hints: [
-              "Rearrange v = 2πr / T for r: multiply both sides by T and divide by 2π.",
-              "r = vT / (2π).",
-              "For part (b), think about what provides centripetal force and how it changes with distance.",
-              "For part (c), 'geostationary' means fixed above one point — what does that mean for a dish antenna?",
-            ],
-            strategy: "Rearrange formula algebraically before substituting numbers.",
+            strategy: "Convert units, substitute, then reason qualitatively for the comparison.",
             solutions: [
               {
-                label: "Rearrangement from v = 2πr / T",
+                label: "Method: orbital-speed formula",
                 steps: [
-                  "v = 2πr / T → r = vT / (2π)",
-                  "r = (5600 × 8100) / (2 × 3.1416)",
-                  "r = 45 360 000 / 6.283",
-                  "r ≈ 7.22 × 10⁶ m",
+                  "T = 365 × 24 × 3600 = 3.1536 × 10⁷ s (≈ 3.15 × 10⁷ s)",
+                  "Circumference = 2πr = 2π × 1.50 × 10¹¹ = 9.42 × 10¹¹ m",
+                  "v = 9.42 × 10¹¹ / 3.15 × 10⁷ = 2.99 × 10⁴ ≈ 3.0 × 10⁴ m/s",
                 ],
               },
             ],
+            guideRef: "Orbits and Gravitational Force",
+          },
+          {
+            id: "phys-space-bq1-04",
+            question:
+              "A comet moves in a highly elliptical orbit around the Sun.\n(a) State at which point in its orbit the comet moves fastest, and name that point.\n(b) Explain, in terms of energy, why the comet speeds up as it approaches the Sun.",
+            marks: 4,
+            modelAnswer:
+              "(a) The comet moves fastest at perihelion — the point in its orbit closest to the Sun.\n(b) As the comet approaches the Sun, the Sun's gravity does work on it. Gravitational potential energy is converted into kinetic energy, so the comet's kinetic energy (and therefore its speed) increases. As it moves away again, kinetic energy is converted back to gravitational potential energy and it slows.",
+            markScheme: [
+              "Fastest when closest to the Sun [1]",
+              "Named as perihelion [1]",
+              "Gravity does work / GPE converted to KE as it approaches [1]",
+              "Increased KE means increased speed [1]",
+            ],
+            commonError:
+              "Saying the Sun 'pushes' the comet faster, rather than that gravity converts GPE into KE as the comet falls inward.",
+            difficulty: "core",
+            hints: [
+              "Where is the comet's speed greatest — near or far from the Sun?",
+              "The closest point has a special name (perihelion).",
+              "Use energy conservation: GPE + KE = constant.",
+              "As the comet falls inward, GPE decreases — where does that energy go?",
+            ],
+            strategy: "Use energy conservation: falling inward converts GPE to KE.",
+            guideRef: "The Solar System",
+          },
+          {
+            id: "phys-space-bq1-05",
+            question:
+              "A geostationary communications satellite orbits Earth at a radius of 4.23 × 10⁷ m (measured from Earth's centre) with a period of exactly 24 hours.\n(a) Calculate its orbital speed. Show your working.\n(b) State one advantage of a geostationary orbit for communications.",
+            marks: 5,
+            modelAnswer:
+              "(a) Convert the period to seconds: T = 24 × 3600 = 8.64 × 10⁴ s.\nv = 2πr / T = (2π × 4.23 × 10⁷) / (8.64 × 10⁴) = (2.658 × 10⁸) / (8.64 × 10⁴) ≈ 3.08 × 10³ m/s (about 3.1 × 10³ m/s).\n(b) A geostationary satellite stays above the same point on the Earth's surface, so a ground antenna (e.g. a satellite dish) can be fixed in one direction and does not need to track the satellite.",
+            markScheme: [
+              "Period converted to seconds (8.64 × 10⁴ s) [1]",
+              "Correct substitution into v = 2πr / T [1]",
+              "Answer ≈ 3.1 × 10³ m/s (allow 3.0–3.1 × 10³) [1]",
+              "Advantage stated: stays above the same point on Earth [1]",
+              "So the receiving dish/antenna can stay fixed / no tracking needed [1]",
+            ],
+            commonError:
+              "Forgetting to convert 24 hours into seconds, or using 12 hours instead of 24.",
+            difficulty: "core",
+            hints: [
+              "Convert 24 hours into seconds first.",
+              "Use v = 2πr / T with r in metres.",
+              "Circumference = 2π × 4.23 × 10⁷ m.",
+              "For the advantage, think about whether the dish must move.",
+            ],
+            strategy: "Convert the period, substitute, then state a practical benefit.",
+            solutions: [
+              {
+                label: "Method: orbital-speed formula",
+                steps: [
+                  "T = 24 × 3600 = 8.64 × 10⁴ s",
+                  "Circumference = 2π × 4.23 × 10⁷ = 2.658 × 10⁸ m",
+                  "v = 2.658 × 10⁸ / 8.64 × 10⁴ = 3.08 × 10³ ≈ 3.1 × 10³ m/s",
+                ],
+              },
+            ],
+            guideRef: "Orbits and Gravitational Force",
+          },
+          {
+            id: "phys-space-bq1-06",
+            question:
+              "Describe the accretion model for the formation of the Solar System, starting from a nebula. Explain why most of the mass ended up in the Sun.",
+            marks: 5,
+            modelAnswer:
+              "The Solar System formed from a rotating cloud of gas and dust called a nebula. Gravity pulled this material together. Most of the mass collapsed toward the centre, where the high density and temperature eventually allowed fusion to begin, forming the Sun. The remaining material formed a rotating disc; over time, dust and gas in the disc clumped together under gravity — a process called accretion — building up larger and larger bodies that became the planets, moons, asteroids, and comets. Most of the mass ended up at the centre because gravity drew the bulk of the material inward to the densest region, leaving only a small fraction in the surrounding disc.",
+            markScheme: [
+              "Started from a (rotating) cloud of gas and dust / nebula [1]",
+              "Gravity pulled material together [1]",
+              "Most mass collapsed to the centre to form the Sun [1]",
+              "Remaining disc material clumped together (accretion) to form planets/moons/asteroids [1]",
+              "Most mass at centre because gravity drew the bulk of material inward [1]",
+            ],
+            commonError:
+              "Describing the planets forming first and the Sun forming from leftover planets, which reverses the actual sequence.",
+            difficulty: "challenge",
+            hints: [
+              "Name the starting cloud and what it is made of.",
+              "What force pulls the material together?",
+              "Where does most of the mass go, and what does it form?",
+              "Define accretion: gradual clumping of material under gravity.",
+            ],
+            strategy: "Sequence: nebula → gravity → central Sun → disc → accretion of planets.",
+            guideRef: "The Solar System",
+          },
+          {
+            id: "phys-space-bq1-07",
+            question:
+              "Two satellites orbit the Earth. Satellite X is in a low orbit (period ~90 minutes) and satellite Y is in a higher, geostationary orbit (period 24 hours).\n(a) State which satellite has the greater orbital radius.\n(b) Explain why that satellite also has the lower orbital speed.",
+            marks: 4,
+            modelAnswer:
+              "(a) Satellite Y (geostationary, 24-hour period) has the greater orbital radius.\n(b) At a larger orbital radius the Earth's gravitational attraction is weaker (gravity decreases with distance). A weaker gravitational force means a smaller centripetal force is available, so the satellite must orbit at a lower speed. Combining v = 2πr / T, the very long period compared with the modest increase in circumference also indicates a lower speed.",
+            markScheme: [
+              "Satellite Y has the greater orbital radius [1]",
+              "At larger radius, gravitational force is weaker [1]",
+              "Weaker / smaller centripetal force available [1]",
+              "Therefore lower orbital speed [1]",
+            ],
+            commonError:
+              "Assuming the higher satellite must move faster because it has a longer period — in fact the longer period reflects a slower speed over a larger orbit.",
+            difficulty: "core",
+            hints: [
+              "A longer period corresponds to a larger orbit.",
+              "How does gravity change as the orbital radius increases?",
+              "Less centripetal force available means what for the speed?",
+              "Geostationary (24 h) orbits are much higher than 90-minute orbits.",
+            ],
+            strategy: "Relate radius to gravitational force strength, then to orbital speed.",
+            guideRef: "Orbits and Gravitational Force",
+          },
+          {
+            id: "phys-space-bq1-08",
+            question:
+              "Distinguish between a planet, a moon, and a comet. Give one defining feature of each.",
+            marks: 3,
+            modelAnswer:
+              "A planet is a large body that orbits the Sun directly and has cleared its orbital path of other material. A moon (natural satellite) is a body that orbits a planet rather than the Sun directly. A comet is a small icy body that orbits the Sun in a highly elliptical path, growing a tail of gas and dust when heated near the Sun.",
+            markScheme: [
+              "Planet: large body that orbits the Sun (directly) [1]",
+              "Moon: natural satellite that orbits a planet [1]",
+              "Comet: small icy body in a highly elliptical orbit / develops a tail near the Sun [1]",
+            ],
+            commonError:
+              "Defining a moon as anything that orbits the Sun, which fails to distinguish it from a planet.",
+            difficulty: "warmup",
+            guideRef: "The Solar System",
+          },
+          {
+            id: "phys-space-bq1-09",
+            question:
+              "The planet Jupiter has an orbital radius of about 7.8 × 10¹¹ m and an orbital period of about 3.7 × 10⁸ s.\n(a) Calculate Jupiter's orbital speed. Show your working.\n(b) Earth's orbital speed is about 3.0 × 10⁴ m/s. Comment on how your answer compares and why.",
+            marks: 5,
+            modelAnswer:
+              "(a) v = 2πr / T = (2π × 7.8 × 10¹¹) / (3.7 × 10⁸) = (4.90 × 10¹²) / (3.7 × 10⁸) ≈ 1.3 × 10⁴ m/s.\n(b) Jupiter's orbital speed (~1.3 × 10⁴ m/s) is lower than Earth's (~3.0 × 10⁴ m/s). Jupiter is much farther from the Sun, so the Sun's gravity is weaker there; a smaller centripetal force gives a lower orbital speed.",
+            markScheme: [
+              "Correct substitution into v = 2πr / T [1]",
+              "Circumference 2πr ≈ 4.9 × 10¹² m [1]",
+              "Answer ≈ 1.3 × 10⁴ m/s [1]",
+              "Jupiter is slower than Earth [1]",
+              "Because it is farther out / gravity weaker / less centripetal force [1]",
+            ],
+            commonError:
+              "Arithmetic slips with powers of ten when dividing 10¹² by 10⁸ (should give 10⁴).",
+            difficulty: "core",
+            hints: [
+              "Both r and T are already in SI units, so substitute directly.",
+              "Circumference = 2π × 7.8 × 10¹¹ m.",
+              "Divide by 3.7 × 10⁸ s; subtract the indices (12 − 8 = 4).",
+              "Compare with Earth and explain using distance and gravity.",
+            ],
+            strategy: "Substitute into v = 2πr / T, then compare using the gravity–radius link.",
+            solutions: [
+              {
+                label: "Method: orbital-speed formula",
+                steps: [
+                  "Circumference = 2π × 7.8 × 10¹¹ = 4.90 × 10¹² m",
+                  "v = 4.90 × 10¹² / 3.7 × 10⁸",
+                  "v = 1.32 × 10⁴ ≈ 1.3 × 10⁴ m/s (slower than Earth)",
+                ],
+              },
+            ],
+            guideRef: "Orbits and Gravitational Force",
+          },
+          {
+            id: "phys-space-bq1-10",
+            question:
+              "For a planet in a circular orbit, the gravitational force provides the centripetal force. Use this idea to explain qualitatively why planets farther from the Sun take longer to complete one orbit. (You are not required to derive an equation.)",
+            marks: 4,
+            modelAnswer:
+              "For a planet farther from the Sun there are two effects. First, the orbit is larger, so there is a greater circumference to travel. Second, the Sun's gravitational force is weaker at a larger radius, so the centripetal force is smaller and the planet's orbital speed is lower. A longer distance covered at a lower speed means the time for one orbit (the period) is much longer. (More precisely, T² is proportional to r³, but the qualitative reasoning is enough.)",
+            markScheme: [
+              "Larger orbit = greater distance/circumference to travel [1]",
+              "Gravity is weaker at larger radius [1]",
+              "Smaller centripetal force → lower orbital speed [1]",
+              "Greater distance at lower speed → longer period [1]",
+            ],
+            commonError:
+              "Considering only the larger circumference and forgetting that the orbital speed is also lower — both effects lengthen the period.",
+            difficulty: "challenge",
+            hints: [
+              "There are two reasons the period is longer; try to find both.",
+              "Think about the size of the orbit (distance to travel).",
+              "Think about how gravity, and hence speed, changes with radius.",
+              "Combine: longer distance and slower speed both increase the period.",
+            ],
+            strategy: "Combine two effects — bigger orbit and lower speed — to explain the longer period.",
+            guideRef: "Orbits and Gravitational Force",
           },
         ],
       },
+      // ── QA PAPER 2 ── the Sun and stellar life cycles
       {
-        id: "phys-space-bank-qa-2",
-        title: "Space Physics Structured Questions — Paper 2",
-        description: "4 questions · Expansion of the Universe, stellar fusion, challenge problems",
+        id: "phys-space-bankqa-2",
+        title: "Question Bank — Structured Paper 2",
+        description: "The Sun as a star, nuclear fusion, and stellar evolution.",
         questions: [
           {
-            id: "phys-space-bank-qa2-q01",
+            id: "phys-space-bq2-01",
             question:
-              "Astronomers measure the spectra of three galaxies (A, B, and C) and observe the following redshifts: galaxy A has a small redshift, galaxy B has a moderate redshift, and galaxy C has a large redshift.\n(a) State what redshift indicates about the motion of a galaxy.\n(b) Which galaxy is farthest from Earth? Explain your reasoning.\n(c) Explain how this pattern of redshifts supports the Big Bang theory.",
+              "(a) Name the two elements that make up most of the Sun.\n(b) Name the process by which the Sun releases energy in its core, and write a word/symbol summary of what happens.",
+            marks: 4,
+            modelAnswer:
+              "(a) Hydrogen (most abundant) and helium.\n(b) Nuclear fusion. In the core, hydrogen nuclei fuse together to form helium nuclei, releasing energy: 4 ¹H → ⁴He + energy.",
+            markScheme: [
+              "Hydrogen named [1]",
+              "Helium named [1]",
+              "Process named as nuclear fusion [1]",
+              "Hydrogen fusing/joining to form helium (with energy released) [1]",
+            ],
+            commonError:
+              "Writing 'nuclear fission' instead of fusion — the Sun joins light nuclei, it does not split heavy ones.",
+            difficulty: "warmup",
+            guideRef: "The Sun and Stellar Energy",
+          },
+          {
+            id: "phys-space-bq2-02",
+            question:
+              "Explain how a main-sequence star such as the Sun stays the same size for billions of years. Refer to the forces or pressures involved.",
+            marks: 4,
+            modelAnswer:
+              "A main-sequence star is in equilibrium. Gravity acts inward, tending to make the star collapse. Energy released by nuclear fusion in the core produces an outward pressure from the hot gas and radiation. These two effects are balanced: the outward pressure exactly opposes the inward pull of gravity, so the star neither collapses nor expands and stays the same size while fusion continues.",
+            markScheme: [
+              "Gravity acts inward / tends to collapse the star [1]",
+              "Fusion produces outward pressure (radiation / hot gas) [1]",
+              "The two are balanced / in equilibrium [1]",
+              "So the star stays a constant size while fusion continues [1]",
+            ],
+            commonError:
+              "Mentioning only gravity or only radiation pressure, instead of explaining the balance between the two.",
+            difficulty: "core",
+            hints: [
+              "Identify the force that acts inward.",
+              "Identify what produces an outward push.",
+              "How do the two compare in a stable star?",
+              "Use the word 'equilibrium' or 'balanced'.",
+            ],
+            strategy: "Name the inward and outward effects, then state that they balance.",
+            guideRef: "The Sun and Stellar Energy",
+          },
+          {
+            id: "phys-space-bq2-03",
+            question:
+              "Describe the life cycle of a star with a similar mass to the Sun, from a nebula to its final stage. Name each stage in order.",
             marks: 6,
             modelAnswer:
-              "(a) Redshift indicates that the galaxy is moving away from Earth (receding).\n\n(b) Galaxy C is farthest. A larger redshift means the galaxy is receding faster, and more distant galaxies recede at greater speeds (the recession speed is proportional to distance). So C has the greatest speed and greatest distance.\n\n(c) All galaxies show redshift — they are all moving away from us. More distant galaxies recede faster, consistent with a uniform expansion of the Universe. If the Universe is expanding, running time backward implies it was once much smaller and concentrated in a hot, dense state. The Big Bang theory states this is how the Universe began (~13.8 billion years ago), and the redshift pattern is direct evidence for ongoing expansion.",
+              "A nebula (cloud of gas and dust) contracts under gravity. As material falls inward it heats up, forming a protostar. When the core is hot and dense enough, hydrogen fusion begins and the star becomes a stable main-sequence star, lasting billions of years. When the core hydrogen runs out, the core contracts while the outer layers expand and cool, so the star becomes a red giant. The red giant then ejects its outer layers as a planetary nebula, leaving behind a hot, dense core — a white dwarf — which slowly cools over time.",
             markScheme: [
-              "Redshift indicates galaxy moving away from Earth / receding [1]",
-              "Galaxy C is farthest [1]",
-              "Greater redshift → greater recession speed → greater distance [1]",
-              "All galaxies receding → Universe is expanding [1]",
-              "More distant galaxies recede faster → uniform expansion [1]",
-              "Expansion implies Universe was once concentrated in a hot, dense state / supports Big Bang [1]",
+              "Nebula contracts under gravity [1]",
+              "Protostar forms as material heats up [1]",
+              "Main-sequence star (hydrogen fusion begins) [1]",
+              "Red giant (core hydrogen exhausted, outer layers expand/cool) [1]",
+              "Planetary nebula (outer layers ejected) [1]",
+              "White dwarf (hot dense remnant core) [1]",
             ],
             commonError:
-              "Claiming that redshift means the galaxy is 'getting redder' — redshift is about wavelength change of spectral lines, not the visual colour of the galaxy.",
-            guideRef: "The Expanding Universe and the Big Bang",
+              "Adding a supernova or neutron star to a Sun-like star's life cycle — those belong to massive stars.",
             difficulty: "core",
             hints: [
-              "Redshift → galaxy moving away.",
-              "Greater redshift → moving away faster → farther away.",
-              "If everything is moving away, what was happening to the Universe in the past?",
-              "Link to Big Bang: reverse the expansion to find a single hot, dense origin.",
+              "Start with the nebula and the role of gravity.",
+              "What forms before fusion starts?",
+              "Name the long stable phase.",
+              "End with the planetary nebula and white dwarf — no supernova.",
             ],
-            strategy: "Chain of reasoning: observation → interpretation → theoretical implication.",
+            strategy: "List the stages in order; remember Sun-like stars do not explode.",
+            guideRef: "The Life Cycle of a Star",
           },
           {
-            id: "phys-space-bank-qa2-q02",
+            id: "phys-space-bq2-04",
             question:
-              "Explain why the Sun has remained stable for about 4.6 billion years and will continue to be stable for roughly the same period again. In your answer, refer to the process occurring in the core and the forces involved in maintaining equilibrium.",
+              "(a) State the two possible final remnants of a massive star after a supernova.\n(b) Explain what determines which of these forms.",
+            marks: 4,
+            modelAnswer:
+              "(a) A neutron star or a black hole.\n(b) The remnant depends on the mass of the core left after the supernova. If the remnant core is up to about 3 solar masses, it forms a neutron star. If the remnant core is more massive than this, gravity is so strong that it collapses further into a black hole.",
+            markScheme: [
+              "Neutron star [1]",
+              "Black hole [1]",
+              "Outcome depends on the mass of the remnant core [1]",
+              "More massive core → black hole; less massive → neutron star [1]",
+            ],
+            commonError:
+              "Stating that the original star's brightness or temperature decides the remnant, rather than the remnant core's mass.",
+            difficulty: "core",
+            hints: [
+              "There are exactly two possible remnants.",
+              "What property of the remnant core decides between them?",
+              "Greater mass leads to the more extreme object.",
+              "A black hole forms from the most massive cores.",
+            ],
+            strategy: "Name both remnants, then link the outcome to remnant mass.",
+            guideRef: "The Life Cycle of a Star",
+          },
+          {
+            id: "phys-space-bq2-05",
+            question:
+              "Each second, the Sun converts about 4 × 10⁹ kg of mass into energy. The energy released per second (its power output) can be estimated using E = mc², with c = 3.0 × 10⁸ m/s.\n(a) Calculate the energy released by the Sun each second. Show your working.\n(b) Explain why the Sun can keep shining for billions of years despite this huge rate.",
             marks: 5,
             modelAnswer:
-              "The Sun is stable because it is in a state of equilibrium between two competing effects: gravity, which tends to compress the Sun inward, and the outward pressure of hot gas and radiation produced by nuclear fusion. In the core, extreme temperature and pressure cause hydrogen nuclei to fuse, forming helium nuclei and releasing a large amount of energy (because the helium nucleus has less mass than the hydrogen nuclei that combined). This energy travels outward as radiation, creating an outward radiation pressure that exactly balances the inward gravitational force. As long as sufficient hydrogen fuel remains, this balance is maintained. The Sun has enough hydrogen in its core to sustain fusion for approximately 10 billion years in total, so it has roughly 5 billion years of main-sequence life remaining.",
+              "(a) E = mc² = (4 × 10⁹) × (3.0 × 10⁸)² = (4 × 10⁹) × (9.0 × 10¹⁶) = 3.6 × 10²⁶ J. So the Sun releases about 3.6 × 10²⁶ joules each second.\n(b) The Sun is enormously massive (about 2 × 10³⁰ kg). Even converting billions of kilograms of mass to energy every second, this is a tiny fraction of its total mass, so its hydrogen fuel supply lasts for billions of years on the main sequence.",
             markScheme: [
-              "Equilibrium between gravity (inward) and radiation/gas pressure (outward) [1]",
-              "Core hydrogen fusion: hydrogen → helium, releasing energy [1]",
-              "Energy released because helium has less mass than reacting hydrogen (mass defect / E = mc²) [1]",
-              "Outward radiation pressure balances gravitational compression [1]",
-              "Sufficient hydrogen fuel for ~10 billion years total / ~5 billion years remaining [1]",
+              "c² evaluated correctly: (3.0 × 10⁸)² = 9.0 × 10¹⁶ [1]",
+              "Correct substitution E = (4 × 10⁹) × (9.0 × 10¹⁶) [1]",
+              "Answer ≈ 3.6 × 10²⁶ J [1]",
+              "Sun is extremely massive [1]",
+              "Mass lost each second is a tiny fraction of the total, so fuel lasts billions of years [1]",
             ],
             commonError:
-              "Stating the Sun 'burns' hydrogen — combustion (burning) is a chemical reaction; fusion is a nuclear reaction and releases far more energy per kilogram.",
-            guideRef: "The Sun and Stellar Energy",
-            difficulty: "core",
-            hints: [
-              "Stability = equilibrium between two opposing forces.",
-              "Name the nuclear process in the core.",
-              "Why does fusion release energy? (Mass of products vs reactants.)",
-              "How long does the fuel last?",
-            ],
-          },
-          {
-            id: "phys-space-bank-qa2-q03",
-            question:
-              "The Hubble Space Telescope is placed in a circular orbit at a radius of 6.92 × 10⁶ m from Earth's centre.\n(a) Its orbital speed is 7660 m/s. Show that its orbital period is approximately 5670 s.\n(b) A proposed replacement telescope would orbit at a radius of 1.50 × 10⁶ m less than the Hubble telescope. Predict whether its orbital speed would be greater or smaller, and whether its period would be greater or smaller. Justify each answer.\n(c) Calculate the orbital speed of the replacement telescope. (r = 5.42 × 10⁶ m, T = 4429 s)",
-            marks: 8,
-            modelAnswer:
-              "(a) From v = 2πr / T: T = 2πr / v = (2π × 6.92 × 10⁶) / 7660 = (4.35 × 10⁷) / 7660 ≈ 5673 s ≈ 5670 s ✓\n\n(b) The replacement telescope orbits at a smaller radius (5.42 × 10⁶ m). At a smaller radius, gravity is stronger, providing a larger centripetal force. This means the satellite must travel faster to maintain its circular orbit. Therefore its orbital speed is **greater**. A smaller radius also means a shorter circumference, and a higher speed; both effects reduce the time for one orbit, so its orbital period is **smaller**.\n\n(c) v = 2πr / T = (2π × 5.42 × 10⁶) / 4429 = (3.405 × 10⁷) / 4429 ≈ 7690 m/s",
-            markScheme: [
-              "T = 2πr / v shown explicitly [1]",
-              "Correct calculation giving T ≈ 5670 s [1]",
-              "Orbital speed greater (at smaller radius) [1]",
-              "Justification: stronger gravity / larger centripetal force at smaller r [1]",
-              "Period smaller [1]",
-              "Justification: smaller circumference and/or higher speed → shorter time [1]",
-              "Correct substitution: v = 2π × 5.42 × 10⁶ / 4429 [1]",
-              "v ≈ 7690 m/s (accept 7600–7800) [1]",
-            ],
-            commonError:
-              "Confusing the effect of radius on speed: students sometimes think a larger radius means higher speed because 'it has further to go'. The key is that gravity weakens more quickly than the circumference grows.",
-            guideRef: "Orbits and Gravitational Force",
+              "Forgetting to square the speed of light, or squaring only the 3.0 and not the power of ten.",
             difficulty: "challenge",
             hints: [
-              "For (a): rearrange v = 2πr / T to give T = 2πr / v.",
-              "For (b): think about gravity — does it get stronger or weaker as you move closer to Earth?",
-              "For (b): stronger gravity → more centripetal force → satellite must move faster.",
-              "For (c): use v = 2πr / T directly with the given values.",
+              "Square the speed of light first: (3.0 × 10⁸)² = 9.0 × 10¹⁶.",
+              "Multiply by the mass converted each second.",
+              "Add the indices: 10⁹ × 10¹⁶ = 10²⁵, times 9 × 4 = 36.",
+              "For (b), compare the mass lost per second with the Sun's total mass.",
             ],
-            strategy: "Rearrange formula for 'show that' parts; use qualitative reasoning before calculating.",
+            strategy: "Square c, multiply by m, tidy the standard form; then reason about total mass.",
             solutions: [
               {
-                label: "Method: rearranging v = 2πr / T",
+                label: "Method: E = mc²",
                 steps: [
-                  "(a) T = 2πr / v = (2π × 6.92 × 10⁶) / 7660 = 4.348 × 10⁷ / 7660 ≈ 5673 s",
-                  "(c) v = 2π × 5.42 × 10⁶ / 4429 = 3.405 × 10⁷ / 4429 ≈ 7690 m/s",
+                  "c² = (3.0 × 10⁸)² = 9.0 × 10¹⁶ m²/s²",
+                  "E = mc² = (4 × 10⁹) × (9.0 × 10¹⁶)",
+                  "E = 36 × 10²⁵ = 3.6 × 10²⁶ J per second",
                 ],
               },
             ],
+            guideRef: "The Sun and Stellar Energy",
           },
           {
-            id: "phys-space-bank-qa2-q04",
+            id: "phys-space-bq2-06",
             question:
-              "A student studying star life cycles makes the following statements:\n(i) 'All stars eventually become black holes.'\n(ii) 'A white dwarf is a star that has begun to fuse helium instead of hydrogen.'\n(iii) 'Supernovae are important because they scatter heavy elements into space.'\nFor each statement, state whether it is correct or incorrect and explain your reasoning.",
-            marks: 6,
+              "Compare the life cycle of a massive star with that of a Sun-like star after they leave the main sequence. Give two differences.",
+            marks: 4,
             modelAnswer:
-              "(i) Incorrect. Only the most massive stellar remnants (with remnant core mass greater than ~3 solar masses) become black holes. Sun-like stars become white dwarfs; less massive stellar remnants after a supernova become neutron stars. Most stars (including the Sun) never become black holes.\n\n(ii) Incorrect. A white dwarf is the dense, hot remnant core left after a Sun-like red giant has expelled its outer layers as a planetary nebula. No fusion is occurring in a white dwarf — it is simply cooling down. The student may be confusing white dwarfs with the helium-fusing phase during the red giant stage.\n\n(iii) Correct. During a supernova, the explosion is so energetic that it disperses the heavy elements (such as carbon, oxygen, iron) that were formed by nuclear fusion within the massive star. These elements are ejected into space, enriching the interstellar medium and providing the material from which future planetary systems can form.",
+              "After the main sequence, a Sun-like star becomes a red giant, whereas a massive star becomes a (larger) red supergiant. A Sun-like star then gently ejects its outer layers as a planetary nebula, leaving a white dwarf; a massive star instead explodes violently as a supernova, leaving a neutron star or a black hole. Massive stars also spend much less time on the main sequence because they fuse fuel faster.",
             markScheme: [
-              "(i) Incorrect [1]; only massive stellar remnants (core >~3 solar masses) / Sun-like stars become white dwarfs, not black holes [1]",
-              "(ii) Incorrect [1]; white dwarf is a cooling remnant core after planetary nebula phase / no fusion occurring in a white dwarf [1]",
-              "(iii) Correct [1]; supernova explosion scatters/disperses heavy elements formed by stellar fusion into space / enriches interstellar medium [1]",
+              "Sun-like → red giant; massive → red supergiant [1]",
+              "Sun-like leaves a white dwarf (via planetary nebula) [1]",
+              "Massive star explodes as a supernova [1]",
+              "Massive star leaves a neutron star or black hole [1]",
             ],
             commonError:
-              "Thinking that all stars end as black holes — the final fate depends entirely on the remnant core mass, and the vast majority of stars end as white dwarfs.",
+              "Mixing the terms 'red giant' and 'red supergiant', or giving a Sun-like star a supernova.",
+            difficulty: "core",
+            hints: [
+              "Compare the giant stage: giant vs supergiant.",
+              "Compare how each star ends: gentle ejection vs explosion.",
+              "Compare the remnants: white dwarf vs neutron star/black hole.",
+              "Pick two clear differences and state both sides.",
+            ],
+            strategy: "Match each stage side by side and highlight the differences.",
             guideRef: "The Life Cycle of a Star",
+          },
+          {
+            id: "phys-space-bq2-07",
+            question:
+              "Explain how heavy elements such as carbon and iron come to be present in planets like the Earth, given that the early Universe contained mainly hydrogen and helium.",
+            marks: 4,
+            modelAnswer:
+              "Heavy elements are produced by nuclear fusion inside stars, where lighter nuclei are fused into heavier ones. When a massive star reaches the end of its life it explodes as a supernova, scattering these heavier elements into space. This enriched material becomes part of new nebulae, from which later stars and planets — including the Earth — form by accretion. So the heavy elements in the Earth were made inside earlier generations of stars.",
+            markScheme: [
+              "Heavy elements made by fusion inside stars [1]",
+              "Supernova explosions scatter these elements into space [1]",
+              "Enriched material forms new nebulae [1]",
+              "New stars and planets (e.g. Earth) form from this material [1]",
+            ],
+            commonError:
+              "Claiming the heavy elements were made in the Big Bang — the Big Bang produced mainly hydrogen and helium.",
             difficulty: "challenge",
             hints: [
-              "For (i): recall the two possible end states after a supernova, and remember that most stars never undergo a supernova.",
-              "For (ii): what processes occur (or don't occur) in a white dwarf?",
-              "For (iii): think about where the heavy elements in the Universe came from.",
+              "Where does fusion of heavier nuclei take place?",
+              "How are these elements released into space?",
+              "What do later stars and planets form from?",
+              "Connect supernova debris to the formation of the Solar System.",
             ],
-            strategy: "Evaluate each claim: state correct/incorrect, then cite specific scientific evidence.",
+            strategy: "Trace the path: fusion in stars → supernova dispersal → new nebula → planets.",
+            guideRef: "The Life Cycle of a Star",
+          },
+          {
+            id: "phys-space-bq2-08",
+            question:
+              "A protostar is contracting but is not yet a main-sequence star.\n(a) State what must happen for it to become a main-sequence star.\n(b) Explain why the protostar heats up as it contracts.",
+            marks: 4,
+            modelAnswer:
+              "(a) Hydrogen fusion must begin in the core — this happens when the core becomes hot and dense enough.\n(b) As gravity pulls the gas and dust inward, the material loses gravitational potential energy, which is transferred to kinetic energy of the particles. Faster-moving particles mean a higher temperature, so the protostar heats up as it contracts.",
+            markScheme: [
+              "Hydrogen fusion must start [1]",
+              "Occurs when core is hot/dense enough [1]",
+              "Contraction converts gravitational PE to kinetic energy of particles [1]",
+              "Faster particles = higher temperature, so it heats up [1]",
+            ],
+            commonError:
+              "Saying the protostar is already fusing hydrogen — fusion only begins once it joins the main sequence.",
+            difficulty: "core",
+            hints: [
+              "What process defines a main-sequence star?",
+              "What conditions are needed for fusion to begin?",
+              "As material falls inward, what happens to its potential energy?",
+              "Faster particles correspond to a higher temperature.",
+            ],
+            strategy: "Link gravitational contraction to a rise in temperature, then to fusion.",
+            guideRef: "The Life Cycle of a Star",
+          },
+          {
+            id: "phys-space-bq2-09",
+            question:
+              "The colour of a star is related to its surface temperature. The Sun appears yellow-white at about 5500 °C.\n(a) State the colour of a star much hotter than the Sun.\n(b) State the colour of a star much cooler than the Sun.\n(c) Explain why a red giant is red.",
+            marks: 4,
+            modelAnswer:
+              "(a) A much hotter star appears blue-white.\n(b) A much cooler star appears orange or red.\n(c) A red giant has expanded enormously, so its outer surface has a much lower temperature than before. Cooler surfaces emit light toward the red end of the spectrum, so the star appears red.",
+            markScheme: [
+              "Hotter star: blue / blue-white [1]",
+              "Cooler star: orange / red [1]",
+              "Red giant has a low surface temperature [1]",
+              "Cool surfaces emit red light, so it appears red [1]",
+            ],
+            commonError:
+              "Assuming a bigger star must be hotter; a red giant is large but its expanded surface is cooler.",
+            difficulty: "core",
+            hints: [
+              "Hotter stars sit at the blue end of the colour scale.",
+              "Cooler stars sit at the red end.",
+              "A red giant has expanded — what does that do to its surface temperature?",
+              "Lower temperature means redder light.",
+            ],
+            strategy: "Use the temperature–colour link, then apply it to the cool, expanded red giant.",
+            guideRef: "The Sun and Stellar Energy",
+          },
+          {
+            id: "phys-space-bq2-10",
+            question:
+              "Explain why nuclear fusion releases energy, referring to the masses of the particles involved. Use the relationship E = mc² in your answer.",
+            marks: 4,
+            modelAnswer:
+              "When light nuclei such as hydrogen fuse to form a heavier nucleus such as helium, the mass of the product nucleus is slightly less than the total mass of the nuclei that fused. This 'missing' mass (the mass defect, Δm) is not destroyed — it is converted into energy according to E = mc². Because c² is an extremely large number, even a very small mass defect releases a large amount of energy, which is why fusion is such a powerful energy source.",
+            markScheme: [
+              "Product nucleus has less mass than the reactant nuclei (mass defect) [1]",
+              "This mass is converted to energy [1]",
+              "Using E = mc² [1]",
+              "c² is very large, so a small mass loss gives a large energy release [1]",
+            ],
+            commonError:
+              "Saying mass is 'lost' or destroyed; it is converted into energy, conserving mass-energy overall.",
+            difficulty: "challenge",
+            hints: [
+              "Compare the total mass before and after fusion.",
+              "What happens to the small difference in mass?",
+              "Apply E = mc² to that mass difference.",
+              "Why does a tiny mass produce so much energy? Look at the size of c².",
+            ],
+            strategy: "Identify the mass defect, then convert it to energy with E = mc².",
+            guideRef: "The Sun and Stellar Energy",
+          },
+        ],
+      },
+      // ── QA PAPER 3 ── galaxies, scale, light-year
+      {
+        id: "phys-space-bankqa-3",
+        title: "Question Bank — Structured Paper 3",
+        description: "Galaxies, the Milky Way, the light-year, and the scale of the Universe.",
+        questions: [
+          {
+            id: "phys-space-bq3-01",
+            question:
+              "(a) Define the term 'galaxy'.\n(b) Name our galaxy and state approximately how many stars it contains.",
+            marks: 3,
+            modelAnswer:
+              "(a) A galaxy is a large collection of billions of stars (together with gas and dust) held together by gravity.\n(b) Our galaxy is the Milky Way, which contains roughly 200–400 billion stars (accept 'hundreds of billions').",
+            markScheme: [
+              "Galaxy: a (large) collection of billions of stars held together by gravity [1]",
+              "Our galaxy is the Milky Way [1]",
+              "Contains hundreds of billions of stars (e.g. ~200–400 billion) [1]",
+            ],
+            commonError:
+              "Confusing a galaxy (billions of stars) with the Solar System (one star).",
+            difficulty: "warmup",
+            guideRef: "Galaxies and the Scale of the Universe",
+          },
+          {
+            id: "phys-space-bq3-02",
+            question:
+              "(a) Define a light-year.\n(b) Given the speed of light c = 3.0 × 10⁸ m/s and that one year is about 3.15 × 10⁷ s, show that one light-year is approximately 9.5 × 10¹⁵ m.",
+            marks: 4,
+            modelAnswer:
+              "(a) A light-year is the distance that light travels (through a vacuum) in one year.\n(b) distance = speed × time = (3.0 × 10⁸) × (3.15 × 10⁷) = 9.45 × 10¹⁵ m ≈ 9.5 × 10¹⁵ m. ✓",
+            markScheme: [
+              "Light-year defined as a distance (the distance light travels in one year) [1]",
+              "Uses distance = speed × time [1]",
+              "Correct substitution (3.0 × 10⁸) × (3.15 × 10⁷) [1]",
+              "Answer ≈ 9.5 × 10¹⁵ m [1]",
+            ],
+            commonError:
+              "Defining a light-year as a time rather than a distance.",
+            difficulty: "core",
+            hints: [
+              "A light-year measures distance, despite the word 'year'.",
+              "Use distance = speed × time.",
+              "Multiply 3.0 × 10⁸ by 3.15 × 10⁷.",
+              "Add the indices: 10⁸ × 10⁷ = 10¹⁵.",
+            ],
+            strategy: "Apply distance = speed × time with c and the seconds in a year.",
+            solutions: [
+              {
+                label: "Method: distance = speed × time",
+                steps: [
+                  "time for one year = 3.15 × 10⁷ s",
+                  "distance = (3.0 × 10⁸) × (3.15 × 10⁷)",
+                  "distance = 9.45 × 10¹⁵ ≈ 9.5 × 10¹⁵ m",
+                ],
+              },
+            ],
+            guideRef: "Galaxies and the Scale of the Universe",
+          },
+          {
+            id: "phys-space-bq3-03",
+            question:
+              "The nearest star to the Sun, Proxima Centauri, is about 4.2 light-years away. Taking one light-year as 9.46 × 10¹⁵ m, calculate this distance in metres. Show your working.",
+            marks: 3,
+            modelAnswer:
+              "distance = 4.2 × 9.46 × 10¹⁵ = 39.7 × 10¹⁵ = 3.97 × 10¹⁶ m ≈ 4.0 × 10¹⁶ m.",
+            markScheme: [
+              "Recognises distance = number of ly × metres per ly [1]",
+              "Correct substitution 4.2 × 9.46 × 10¹⁵ [1]",
+              "Answer ≈ 4.0 × 10¹⁶ m (allow 3.97 × 10¹⁶ m) [1]",
+            ],
+            commonError:
+              "Leaving the answer as 39.7 × 10¹⁵ m without converting to proper standard form (3.97 × 10¹⁶ m).",
+            difficulty: "core",
+            hints: [
+              "Multiply the number of light-years by the metres in one light-year.",
+              "4.2 × 9.46 ≈ 39.7.",
+              "Rewrite 39.7 × 10¹⁵ in standard form as 3.97 × 10¹⁶ m.",
+            ],
+            strategy: "Multiply, then express the result in proper standard form.",
+            solutions: [
+              {
+                label: "Method: convert light-years to metres",
+                steps: [
+                  "distance = 4.2 × (9.46 × 10¹⁵)",
+                  "= 39.7 × 10¹⁵ m",
+                  "= 3.97 × 10¹⁶ ≈ 4.0 × 10¹⁶ m",
+                ],
+              },
+            ],
+            guideRef: "Galaxies and the Scale of the Universe",
+          },
+          {
+            id: "phys-space-bq3-04",
+            question:
+              "Explain why astronomers measure distances to galaxies in light-years rather than in metres.",
+            marks: 3,
+            modelAnswer:
+              "Distances between galaxies are extremely large — typically 10²² m or more — so expressing them in metres gives enormously large, unwieldy numbers that are hard to write and compare. The light-year (≈ 9.46 × 10¹⁵ m) is a much larger unit, so the same distances become manageable numbers, for example '2.5 million light-years to Andromeda'. This makes the values easier to understand and compare.",
+            markScheme: [
+              "Intergalactic distances are extremely large in metres [1]",
+              "Metres give unwieldy / very large numbers [1]",
+              "The light-year scales the numbers down to manageable values [1]",
+            ],
+            commonError:
+              "Saying the light-year is more accurate, when in fact it is simply a more convenient (larger) unit.",
+            difficulty: "warmup",
+            guideRef: "Galaxies and the Scale of the Universe",
+          },
+          {
+            id: "phys-space-bq3-05",
+            question:
+              "The Andromeda Galaxy is about 2.5 million light-years away.\n(a) Explain what this tells us about how long ago the light we see now left Andromeda.\n(b) State what this means about observing very distant objects in general.",
+            marks: 3,
+            modelAnswer:
+              "(a) Light from Andromeda takes 2.5 million years to reach us, so the light we see now left Andromeda about 2.5 million years ago — we see it as it was then, not as it is today.\n(b) Observing very distant objects means looking back in time: the farther away an object is, the further into the past we see it.",
+            markScheme: [
+              "Light takes 2.5 million years to travel the distance [1]",
+              "So we see Andromeda as it was 2.5 million years ago [1]",
+              "Observing distant objects = looking back in time [1]",
+            ],
+            commonError:
+              "Assuming we see distant galaxies as they are 'now', ignoring the travel time of light.",
+            difficulty: "core",
+            hints: [
+              "A light-year is the distance light travels in a year.",
+              "How long did the light take to cross 2.5 million light-years?",
+              "We see the galaxy as it was when the light set off.",
+            ],
+            strategy: "Link distance in light-years directly to light-travel time, then generalise.",
+            guideRef: "Galaxies and the Scale of the Universe",
+          },
+          {
+            id: "phys-space-bq3-06",
+            question:
+              "Place the following in order of increasing size: the Solar System, a galaxy, the observable Universe, a planet. For each step, state roughly how the scale changes.",
+            marks: 4,
+            modelAnswer:
+              "In order of increasing size: planet → Solar System → galaxy → observable Universe. A planet (e.g. Earth, ~10⁷ m across) is far smaller than the Solar System (light-hours to light-days across). The Solar System is, in turn, tiny compared with a galaxy like the Milky Way (~100 000 light-years across). The galaxy is itself a very small part of the observable Universe (~93 billion light-years across), which contains an estimated 2 trillion galaxies. Each step up represents an enormous increase in scale.",
+            markScheme: [
+              "Correct order: planet → Solar System → galaxy → observable Universe [1]",
+              "Planet much smaller than the Solar System [1]",
+              "Solar System much smaller than a galaxy (~100 000 ly) [1]",
+              "Galaxy a tiny part of the observable Universe (~93 billion ly / 2 trillion galaxies) [1]",
+            ],
+            commonError:
+              "Placing the Solar System larger than a galaxy, or treating 'Universe' and 'galaxy' as similar in size.",
+            difficulty: "challenge",
+            hints: [
+              "Start with the smallest single body.",
+              "A star system contains a planet; a galaxy contains many star systems.",
+              "The Universe contains all the galaxies.",
+              "Each step is many orders of magnitude larger.",
+            ],
+            strategy: "Nest each object inside the next larger one to fix the order.",
+            guideRef: "Galaxies and the Scale of the Universe",
+          },
+          {
+            id: "phys-space-bq3-07",
+            question:
+              "Light from the Sun takes about 500 s to reach the Earth. Taking the speed of light as 3.0 × 10⁸ m/s, calculate the distance from the Sun to the Earth. Show your working and give your answer in standard form.",
+            marks: 3,
+            modelAnswer:
+              "distance = speed × time = (3.0 × 10⁸) × 500 = 1.5 × 10¹¹ m. This matches the known Earth–Sun distance of about 1.5 × 10¹¹ m.",
+            markScheme: [
+              "Uses distance = speed × time [1]",
+              "Correct substitution (3.0 × 10⁸) × 500 [1]",
+              "Answer = 1.5 × 10¹¹ m (standard form) [1]",
+            ],
+            commonError:
+              "Writing the answer as 150 000 000 000 m without converting to standard form, or multiplying by the wrong time.",
+            difficulty: "core",
+            hints: [
+              "Use distance = speed × time.",
+              "Multiply 3.0 × 10⁸ by 500 (= 5.0 × 10²).",
+              "Combine: 3.0 × 5.0 = 15 and 10⁸ × 10² = 10¹⁰.",
+              "Tidy 15 × 10¹⁰ to 1.5 × 10¹¹ m.",
+            ],
+            strategy: "Apply distance = speed × time, then convert to standard form.",
+            solutions: [
+              {
+                label: "Method: distance = speed × time",
+                steps: [
+                  "time = 500 s = 5.0 × 10² s",
+                  "distance = (3.0 × 10⁸) × (5.0 × 10²)",
+                  "= 15 × 10¹⁰ = 1.5 × 10¹¹ m",
+                ],
+              },
+            ],
+            guideRef: "Galaxies and the Scale of the Universe",
+          },
+          {
+            id: "phys-space-bq3-08",
+            question:
+              "State two things that are held together by gravitational attraction on the scale of galaxies, and explain the role gravity plays in each.",
+            marks: 4,
+            modelAnswer:
+              "Within a galaxy, gravity holds the billions of stars (and gas and dust) together, preventing them from drifting apart and keeping the galaxy bound as a single system. On a larger scale, gravity also holds galaxies together in groups and clusters, binding neighbouring galaxies (such as the Milky Way and Andromeda in the Local Group). In each case, gravitational attraction provides the force that keeps the objects bound rather than dispersing into space.",
+            markScheme: [
+              "Gravity holds the stars (and gas/dust) within a galaxy together [1]",
+              "Without it the stars would drift apart [1]",
+              "Gravity holds galaxies together in groups/clusters [1]",
+              "Provides the binding force keeping the systems together [1]",
+            ],
+            commonError:
+              "Describing gravity as only acting between the Sun and its planets, ignoring its role on galactic and intergalactic scales.",
+            difficulty: "core",
+            hints: [
+              "Think about what keeps the stars in a galaxy from flying apart.",
+              "Think about whether galaxies themselves cluster together.",
+              "Gravity is an attractive force on every scale.",
+              "State the role gravity plays in each case.",
+            ],
+            strategy: "Apply the same attractive role of gravity at two different scales.",
+            guideRef: "Galaxies and the Scale of the Universe",
+          },
+          {
+            id: "phys-space-bq3-09",
+            question:
+              "A radio signal is sent from Earth to a spacecraft orbiting a planet 1.2 × 10¹² m away. Radio waves travel at 3.0 × 10⁸ m/s.\n(a) Calculate the time for the signal to reach the spacecraft. Show your working.\n(b) Use your answer to comment on why controlling such a spacecraft in real time is difficult.",
+            marks: 4,
+            modelAnswer:
+              "(a) time = distance / speed = (1.2 × 10¹²) / (3.0 × 10⁸) = 4.0 × 10³ s (about 67 minutes).\n(b) Because the signal takes over an hour to arrive (and the reply takes just as long again), controllers cannot react to events in real time — by the time a command arrives, the situation at the spacecraft may have changed. Spacecraft far from Earth must therefore operate largely autonomously.",
+            markScheme: [
+              "Uses time = distance / speed [1]",
+              "Correct substitution (1.2 × 10¹²) / (3.0 × 10⁸) [1]",
+              "Answer = 4.0 × 10³ s (≈ 67 minutes) [1]",
+              "Comment: long delay means no real-time control / round trip even longer [1]",
+            ],
+            commonError:
+              "Dividing the powers of ten incorrectly (10¹² / 10⁸ = 10⁴, not 10³ before the 1.2/3.0 factor).",
+            difficulty: "challenge",
+            hints: [
+              "Rearrange speed = distance / time to time = distance / speed.",
+              "Divide 1.2 × 10¹² by 3.0 × 10⁸.",
+              "1.2 / 3.0 = 0.4 and 10¹² / 10⁸ = 10⁴, giving 0.4 × 10⁴ = 4.0 × 10³ s.",
+              "Think about the round-trip delay for a command and its reply.",
+            ],
+            strategy: "Use time = distance / speed; handle the indices carefully, then interpret.",
+            solutions: [
+              {
+                label: "Method: time = distance / speed",
+                steps: [
+                  "time = (1.2 × 10¹²) / (3.0 × 10⁸)",
+                  "= 0.4 × 10⁴ s",
+                  "= 4.0 × 10³ s ≈ 67 minutes",
+                ],
+              },
+            ],
+            guideRef: "Galaxies and the Scale of the Universe",
+          },
+          {
+            id: "phys-space-bq3-10",
+            question:
+              "A student says: 'The Milky Way is the whole Universe.' Evaluate this statement, referring to the relative scales of galaxies and the Universe.",
+            marks: 4,
+            modelAnswer:
+              "The statement is incorrect. The Milky Way is just one galaxy, about 100 000 light-years across, containing a few hundred billion stars. The observable Universe is vastly larger — around 93 billion light-years across — and contains an estimated 2 trillion (2 × 10¹²) galaxies, of which the Milky Way is only one. So the Milky Way is an extremely small part of the whole Universe, not the entire Universe.",
+            markScheme: [
+              "States the statement is incorrect [1]",
+              "Milky Way is a single galaxy (~100 000 ly, hundreds of billions of stars) [1]",
+              "The Universe contains a huge number of galaxies (~2 trillion) [1]",
+              "Milky Way is therefore a tiny part of the Universe [1]",
+            ],
+            commonError:
+              "Agreeing with the statement, or confusing 'galaxy' with 'Universe' as if they were the same scale.",
+            difficulty: "core",
+            hints: [
+              "Is the Milky Way one galaxy or all of them?",
+              "How big is the Milky Way compared with the observable Universe?",
+              "Roughly how many galaxies does the Universe contain?",
+              "Conclude whether the statement is right or wrong.",
+            ],
+            strategy: "Compare one galaxy with the total number of galaxies to judge the claim.",
+            guideRef: "Galaxies and the Scale of the Universe",
+          },
+        ],
+      },
+      // ── QA PAPER 4 ── redshift, expanding Universe, Big Bang
+      {
+        id: "phys-space-bankqa-4",
+        title: "Question Bank — Structured Paper 4",
+        description: "Redshift, the expanding Universe, the Big Bang, and the CMBR.",
+        questions: [
+          {
+            id: "phys-space-bq4-01",
+            question:
+              "(a) State what is meant by redshift.\n(b) State what the redshift of light from a distant galaxy tells us about the motion of that galaxy.",
+            marks: 3,
+            modelAnswer:
+              "(a) Redshift is an increase in the observed wavelength of light (a shift toward the red end of the spectrum) compared with the wavelength measured from a stationary laboratory source.\n(b) It tells us that the galaxy is moving away from us (receding).",
+            markScheme: [
+              "Redshift: increase in observed wavelength / shift to red end of spectrum [1]",
+              "Compared with a stationary (lab) source [1]",
+              "Means the galaxy is moving away from us [1]",
+            ],
+            commonError:
+              "Saying redshift means the light has 'turned red' rather than that its wavelength is longer than expected.",
+            difficulty: "warmup",
+            guideRef: "The Expanding Universe and the Big Bang",
+          },
+          {
+            id: "phys-space-bq4-02",
+            question:
+              "Explain how the redshift of light from distant galaxies provides evidence that the Universe is expanding. Refer to the observation that more distant galaxies have greater redshifts.",
+            marks: 4,
+            modelAnswer:
+              "Light from distant galaxies is redshifted, which shows that the galaxies are moving away from us. Crucially, the more distant a galaxy, the greater its redshift, meaning it is receding faster. This pattern — every galaxy moving away, with recession speed increasing with distance — is exactly what is expected if the whole of space is expanding and carrying the galaxies apart. There is no special centre; from any galaxy, all the others appear to recede. This is strong evidence that the Universe is expanding.",
+            markScheme: [
+              "Redshift shows galaxies are moving away from us [1]",
+              "More distant galaxies have greater redshift / recede faster [1]",
+              "This pattern is what an expanding Universe predicts [1]",
+              "No special centre / all galaxies recede from each other [1]",
+            ],
+            commonError:
+              "Concluding only that galaxies move away, without using the 'farther = faster' pattern that specifically indicates expansion.",
+            difficulty: "core",
+            hints: [
+              "What does redshift on its own tell you about each galaxy?",
+              "What is special about the redshift of more distant galaxies?",
+              "What overall motion would produce 'farther = faster'?",
+              "Think of dots on an inflating balloon — is there a centre?",
+            ],
+            strategy: "Build the argument: redshift → recession → farther = faster → expansion.",
+            guideRef: "The Expanding Universe and the Big Bang",
+          },
+          {
+            id: "phys-space-bq4-03",
+            question:
+              "(a) State the name of the theory describing the origin of the Universe.\n(b) Describe, in outline, what this theory proposes.\n(c) State approximately how long ago this is thought to have happened.",
+            marks: 4,
+            modelAnswer:
+              "(a) The Big Bang theory.\n(b) It proposes that the Universe began as an extremely hot, dense state and has been expanding (and cooling) ever since, which is why galaxies are now moving apart.\n(c) About 13.8 billion years ago.",
+            markScheme: [
+              "Big Bang theory [1]",
+              "Universe began as a hot, dense state/point [1]",
+              "Has been expanding ever since [1]",
+              "About 13.8 billion years ago (accept ~14 billion) [1]",
+            ],
+            commonError:
+              "Describing the Big Bang as an explosion 'in' space, rather than an expansion of space itself.",
+            difficulty: "core",
+            hints: [
+              "The theory has a 'beginning' built into its name.",
+              "What was the early Universe like — hot or cold, dense or sparse?",
+              "What has been happening to the Universe ever since?",
+              "The accepted age is just under 14 billion years.",
+            ],
+            strategy: "Name the theory, describe the hot dense start and expansion, give the age.",
+            guideRef: "The Expanding Universe and the Big Bang",
+          },
+          {
+            id: "phys-space-bq4-04",
+            question:
+              "Besides the redshift of galaxies, scientists also point to the cosmic microwave background radiation (CMBR) as evidence for the Big Bang.\n(a) State one observable property of the CMBR.\n(b) Explain briefly why its existence supports the Big Bang theory.",
+            marks: 3,
+            modelAnswer:
+              "(a) The CMBR is faint microwave radiation that is detected coming almost uniformly from all directions in space.\n(b) The Big Bang theory predicts that the early Universe was extremely hot and filled with radiation. As the Universe expanded and cooled, this radiation stretched to longer wavelengths and is now detected as cool microwave radiation from all directions — exactly as observed, so it supports the theory.",
+            markScheme: [
+              "CMBR comes from all directions / is uniform / is in the microwave region [1]",
+              "Big Bang predicts a hot early Universe filled with radiation [1]",
+              "Expansion cooled/stretched this radiation to microwaves we now detect [1]",
+            ],
+            commonError:
+              "Confusing the CMBR with the redshift of galaxies; they are two separate pieces of evidence.",
+            difficulty: "challenge",
+            hints: [
+              "From which directions in the sky is the CMBR detected?",
+              "Which part of the electromagnetic spectrum is it in?",
+              "What does the Big Bang predict about the early Universe's temperature?",
+              "What happens to that radiation as the Universe expands?",
+            ],
+            strategy: "State a property of the CMBR, then link it to the cooling of a hot early Universe.",
+            guideRef: "The Expanding Universe and the Big Bang",
+          },
+          {
+            id: "phys-space-bq4-05",
+            question:
+              "Two galaxies, A and B, are observed. Galaxy A shows a much larger redshift than galaxy B.\n(a) State which galaxy is receding faster.\n(b) State which galaxy is farther away, and justify your answer.",
+            marks: 4,
+            modelAnswer:
+              "(a) Galaxy A is receding faster, because a larger redshift corresponds to a higher recession speed.\n(b) Galaxy A is farther away. In an expanding Universe, recession speed increases with distance (more distant galaxies recede faster), so the faster-receding galaxy A must be the more distant one.",
+            markScheme: [
+              "Galaxy A recedes faster [1]",
+              "Because larger redshift = higher recession speed [1]",
+              "Galaxy A is farther away [1]",
+              "Because recession speed increases with distance [1]",
+            ],
+            commonError:
+              "Reversing the relationship and assuming the larger redshift means the galaxy is nearer.",
+            difficulty: "core",
+            hints: [
+              "Larger redshift means a higher recession speed.",
+              "In an expanding Universe, how do speed and distance relate?",
+              "Faster recession implies a greater distance.",
+              "Apply 'farther = faster' to identify the more distant galaxy.",
+            ],
+            strategy: "Link redshift → speed, then speed → distance using the expansion relationship.",
+            guideRef: "The Expanding Universe and the Big Bang",
+          },
+          {
+            id: "phys-space-bq4-06",
+            question:
+              "Light from a galaxy is found to have a spectral line at a wavelength of 6.6 × 10⁻⁷ m, whereas the same line measured in a laboratory has a wavelength of 6.0 × 10⁻⁷ m.\n(a) Calculate the change in wavelength.\n(b) State whether this is a redshift or a blueshift, and what it implies about the galaxy's motion.",
+            marks: 4,
+            modelAnswer:
+              "(a) change in wavelength = 6.6 × 10⁻⁷ − 6.0 × 10⁻⁷ = 0.6 × 10⁻⁷ = 6.0 × 10⁻⁸ m.\n(b) The observed wavelength is longer than the laboratory wavelength, so this is a redshift. It implies the galaxy is moving away from us (receding).",
+            markScheme: [
+              "Subtracts wavelengths: 6.6 × 10⁻⁷ − 6.0 × 10⁻⁷ [1]",
+              "Change = 6.0 × 10⁻⁸ m (or 0.6 × 10⁻⁷ m) [1]",
+              "Identified as a redshift (observed wavelength is longer) [1]",
+              "Galaxy is moving away / receding [1]",
+            ],
+            commonError:
+              "Calling it a blueshift, or giving the change as 0.6 × 10⁻⁷ but mis-stating the standard form.",
+            difficulty: "core",
+            hints: [
+              "Subtract the laboratory wavelength from the observed wavelength.",
+              "0.6 × 10⁻⁷ m can be written as 6.0 × 10⁻⁸ m.",
+              "Is the observed wavelength longer or shorter than the lab value?",
+              "Longer wavelength means redshift, so the source is receding.",
+            ],
+            strategy: "Find the wavelength change, then judge red/blue shift from its sign.",
+            solutions: [
+              {
+                label: "Method: difference in wavelength",
+                steps: [
+                  "Δλ = λ(observed) − λ(lab) = 6.6 × 10⁻⁷ − 6.0 × 10⁻⁷",
+                  "Δλ = 0.6 × 10⁻⁷ m",
+                  "Δλ = 6.0 × 10⁻⁸ m (positive → longer wavelength → redshift)",
+                ],
+              },
+            ],
+            guideRef: "The Expanding Universe and the Big Bang",
+          },
+          {
+            id: "phys-space-bq4-07",
+            question:
+              "Explain, using the idea of the Doppler effect, why light from a galaxy moving away from us is redshifted.",
+            marks: 3,
+            modelAnswer:
+              "As the galaxy moves away, each successive wave crest is emitted from a position slightly farther from us than the previous one. This stretches the waves out, so the wavelength reaching us is longer than it would be from a stationary source. Longer wavelength means the light is shifted toward the red end of the spectrum — a redshift. This is the Doppler effect applied to light.",
+            markScheme: [
+              "As the source recedes, successive crests are emitted from farther away [1]",
+              "Waves are stretched / wavelength increased [1]",
+              "Longer wavelength = shift toward red (redshift) [1]",
+            ],
+            commonError:
+              "Describing the light slowing down; the speed of light is constant, it is the wavelength that increases.",
+            difficulty: "core",
+            hints: [
+              "Think about where each successive wave crest is emitted from.",
+              "If the source moves away, are the crests bunched or stretched?",
+              "Stretched waves means a longer or shorter wavelength?",
+              "Longer wavelength corresponds to the red end of the spectrum.",
+            ],
+            strategy: "Describe wave stretching for a receding source, then link to longer wavelength.",
+            guideRef: "The Expanding Universe and the Big Bang",
+          },
+          {
+            id: "phys-space-bq4-08",
+            question:
+              "A student models the expanding Universe by drawing dots on a balloon and then inflating it.\n(a) Explain what the dots and the balloon's surface represent.\n(b) Explain how this model demonstrates that there is no special centre to the expansion.",
+            marks: 4,
+            modelAnswer:
+              "(a) The dots represent galaxies and the stretchy surface of the balloon represents space itself.\n(b) As the balloon inflates, the surface stretches and every dot moves away from every other dot. From the point of view of any one dot, all the others appear to be receding, and more distant dots move away faster. No dot is at the 'centre' of this expansion — the centre of the balloon is not on the surface — so the model shows that the expansion has no special centre, just as we observe for the real Universe.",
+            markScheme: [
+              "Dots represent galaxies [1]",
+              "Balloon surface represents space (which expands) [1]",
+              "Every dot moves away from every other as the surface stretches [1]",
+              "From any dot all others recede → no special centre [1]",
+            ],
+            commonError:
+              "Treating the inside of the balloon as part of the model; only the 2-D surface represents space in this analogy.",
+            difficulty: "challenge",
+            hints: [
+              "What do the dots stand for, and what does the rubber surface stand for?",
+              "As the balloon inflates, what happens to the spacing between dots?",
+              "Choose any one dot — how do the others appear to move?",
+              "Is any dot on the surface the obvious centre of the expansion?",
+            ],
+            strategy: "Map each part of the model to the real Universe, then reason about the 'centre'.",
+            guideRef: "The Expanding Universe and the Big Bang",
+          },
+          {
+            id: "phys-space-bq4-09",
+            question:
+              "Outline the chain of reasoning that leads from the observation of redshift to the conclusion that the Universe began with a Big Bang.",
+            marks: 4,
+            modelAnswer:
+              "Light from distant galaxies is redshifted, showing that the galaxies are moving away from us. Because more distant galaxies recede faster, the most natural explanation is that the whole Universe is expanding, carrying galaxies apart. If the Universe is expanding now, then running time backwards means everything was once much closer together — and in the distant past it must have been concentrated in an extremely hot, dense state. The expansion of the Universe from this hot, dense beginning is the Big Bang, thought to have occurred about 13.8 billion years ago.",
+            markScheme: [
+              "Redshift → galaxies moving away [1]",
+              "Farther = faster → Universe is expanding [1]",
+              "Running expansion backwards → everything was once together / hot and dense [1]",
+              "This beginning is the Big Bang (~13.8 billion years ago) [1]",
+            ],
+            commonError:
+              "Jumping straight from redshift to the Big Bang without the intermediate step that expansion implies a hot, dense origin.",
+            difficulty: "challenge",
+            hints: [
+              "Start with what redshift tells you about galaxy motion.",
+              "Add the 'farther = faster' pattern to reach expansion.",
+              "Now imagine playing the expansion backwards in time.",
+              "What state must the Universe have been in at the start?",
+            ],
+            strategy: "Chain the steps: redshift → recession → expansion → reverse in time → hot dense start.",
+            guideRef: "The Expanding Universe and the Big Bang",
+          },
+          {
+            id: "phys-space-bq4-10",
+            question:
+              "Distinguish between redshift and blueshift, and explain what each would tell you about a galaxy's motion relative to the Earth.",
+            marks: 4,
+            modelAnswer:
+              "Redshift is an increase in the observed wavelength of light (a shift toward the red end of the spectrum); it occurs when a source is moving away from us, so a redshifted galaxy is receding. Blueshift is a decrease in the observed wavelength (a shift toward the blue end of the spectrum); it occurs when a source is moving toward us, so a blueshifted galaxy would be approaching. Almost all distant galaxies show redshift, which is why we conclude the Universe is expanding.",
+            markScheme: [
+              "Redshift: longer wavelength / shift to red [1]",
+              "Redshift means the galaxy is moving away [1]",
+              "Blueshift: shorter wavelength / shift to blue [1]",
+              "Blueshift means the galaxy is moving toward us [1]",
+            ],
+            commonError:
+              "Mixing up the two — associating redshift with approaching or blueshift with receding.",
+            difficulty: "core",
+            hints: [
+              "Which shift corresponds to longer wavelength?",
+              "Longer wavelength means the source is moving which way?",
+              "Blueshift is the opposite case — shorter wavelength.",
+              "State the direction of motion implied by each.",
+            ],
+            strategy: "Pair each shift with its wavelength change and the implied direction of motion.",
+            guideRef: "The Expanding Universe and the Big Bang",
           },
         ],
       },
