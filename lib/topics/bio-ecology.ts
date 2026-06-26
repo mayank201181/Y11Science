@@ -665,499 +665,1734 @@ export const bioEcology: Topic = {
   // ── QUESTION BANK ────────────────────────────────────────────────────────────
   questionBank: {
     mcqPapers: [
+      // ── MCQ PAPER 1 ── ecosystems, food chains/webs, trophic levels
       {
-        id: "bio-ecology-bank-mcq-1",
-        title: "MCQ Paper 1 — Ecosystems & Energy",
-        description: "Covers ecosystem vocabulary, food chains/webs, trophic levels and energy pyramids.",
+        id: "bio-ecology-bankmcq-1",
+        title: "Question Bank — MCQ Paper 1",
+        description: "Ecosystem vocabulary, food chains and webs, trophic levels, and feeding relationships.",
         questions: [
           {
-            id: "bio-ecology-bank-mcq1-q01",
-            question: "Which term describes ALL the species living and interacting in one area?",
-            options: ["Population", "Habitat", "Community", "Ecosystem"],
+            id: "bio-ecology-bm1-01",
+            question: "What does an arrow in a food chain represent?",
+            options: [
+              "The direction in which energy is transferred",
+              "The direction in which the predator moves",
+              "Which organism is the larger of the two",
+              "The order in which organisms evolved",
+            ],
+            answerIndex: 0,
+            explanation:
+              "An arrow points from the organism that is eaten to the one that eats it, showing the direction of energy (and nutrient) transfer along the chain. It does not show movement, size, or evolution.",
+            guideRef: "Food Chains, Food Webs & Trophic Levels",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-ecology-bm1-02",
+            question: "Which pair correctly matches a term to its definition?",
+            options: [
+              "Population = all the different species in an area",
+              "Community = all the organisms of one species in an area",
+              "Habitat = the place where an organism lives",
+              "Niche = the non-living part of an ecosystem",
+            ],
             answerIndex: 2,
             explanation:
-              "A community is all the populations of different species in one area. A population is one species; a habitat is the place; an ecosystem adds the abiotic environment.",
+              "A habitat is the place where an organism lives. A population is one species; a community is all the different species; a niche is the role an organism plays (not the abiotic environment).",
             guideRef: "Ecosystem Vocabulary",
             difficulty: "warmup",
           },
           {
-            id: "bio-ecology-bank-mcq1-q02",
-            question: "Which organisms are the producers in most terrestrial ecosystems?",
-            options: ["Herbivores", "Bacteria", "Green plants", "Fungi"],
-            answerIndex: 2,
+            id: "bio-ecology-bm1-03",
+            question:
+              "In the chain phytoplankton → krill → herring → seal, which organism is a primary consumer?",
+            options: ["Phytoplankton", "Krill", "Herring", "Seal"],
+            answerIndex: 1,
             explanation:
-              "Green plants (and algae) are producers because they photosynthesise, converting light energy into chemical energy. Herbivores are primary consumers; bacteria and fungi are typically decomposers.",
+              "Phytoplankton are producers (TL1). Krill eat the producers, so they are primary consumers (TL2). Herring are secondary consumers (TL3) and seals are tertiary consumers (TL4).",
             guideRef: "Food Chains, Food Webs & Trophic Levels",
             difficulty: "warmup",
           },
           {
-            id: "bio-ecology-bank-mcq1-q03",
-            question: "A food chain is: oak tree → caterpillar → blue tit → sparrowhawk. Which is the secondary consumer?",
-            options: ["Oak tree", "Caterpillar", "Blue tit", "Sparrowhawk"],
+            id: "bio-ecology-bm1-04",
+            question:
+              "Which organisms break down dead matter and return mineral ions to the soil?",
+            options: [
+              "Producers",
+              "Herbivores",
+              "Decomposers",
+              "Top carnivores",
+            ],
             answerIndex: 2,
             explanation:
-              "Oak tree = producer (TL1); caterpillar = primary consumer (TL2); blue tit = secondary consumer (TL3); sparrowhawk = tertiary consumer (TL4).",
+              "Decomposers (bacteria and fungi) break down dead organisms and waste, releasing mineral ions back into the environment for producers to reabsorb. Producers make food; herbivores and carnivores are consumers.",
             guideRef: "Food Chains, Food Webs & Trophic Levels",
             difficulty: "warmup",
           },
           {
-            id: "bio-ecology-bank-mcq1-q04",
+            id: "bio-ecology-bm1-05",
             question:
-              "Producers in an ecosystem fix 80 000 kJ. Using 10% efficiency, how much energy reaches tertiary consumers?",
-            options: ["800 kJ", "80 kJ", "8 000 kJ", "8 kJ"],
-            answerIndex: 1,
-            explanation:
-              "TL2: 80 000 × 0.1 = 8 000 kJ. TL3: 8 000 × 0.1 = 800 kJ. TL4 (tertiary): 800 × 0.1 = 80 kJ.",
-            guideRef: "Energy Flow & Pyramids",
-            difficulty: "core",
-            hints: [
-              "Count the number of transfer steps from producer to tertiary consumer.",
-              "Producer → primary → secondary → tertiary = three steps.",
-              "Apply 10% (×0.1) three times: 80 000 × 0.1 × 0.1 × 0.1.",
-            ],
-          },
-          {
-            id: "bio-ecology-bank-mcq1-q05",
-            question:
-              "Which statement about pyramids of biomass is correct?",
+              "In a food web, a fox eats both rabbits (herbivores) and birds that eat insects. The fox is therefore occupying which trophic level(s)?",
             options: [
-              "They are always a true pyramid shape.",
-              "They can be inverted in aquatic ecosystems.",
-              "They measure energy flow per unit time.",
-              "They are always more accurate than pyramids of numbers.",
-            ],
-            answerIndex: 1,
-            explanation:
-              "Biomass pyramids can be inverted in aquatic systems where phytoplankton (TL1) have a very high turnover rate — the standing crop at any moment can be less than the mass of zooplankton consuming them. Only pyramids of energy are always a true pyramid.",
-            guideRef: "Energy Flow & Pyramids",
-            difficulty: "core",
-            hints: [
-              "Which type of pyramid is ALWAYS a true pyramid?",
-              "Think about what 'standing crop' biomass means versus energy flow.",
-            ],
-          },
-          {
-            id: "bio-ecology-bank-mcq1-q06",
-            question:
-              "A student draws a pyramid of numbers for a forest ecosystem where 1 oak tree supports 5 000 caterpillars, which support 200 blue tits, which support 2 sparrowhawks. Which description is correct?",
-            options: [
-              "A true pyramid with the largest bar at the bottom",
-              "An inverted pyramid with the largest bar at the top",
-              "An irregular shape with a very narrow base",
-              "An inverted pyramid because decomposers are excluded",
+              "Only the third trophic level",
+              "Only the second trophic level",
+              "Both the third and fourth trophic levels",
+              "Only the first trophic level",
             ],
             answerIndex: 2,
             explanation:
-              "One oak tree (TL1) is a single individual supporting thousands of caterpillars. The pyramid of numbers has a very narrow base (TL1 = 1) expanding outwards at TL2 (5 000 caterpillars) — an irregular shape, not a true pyramid. This is a classic exception in pyramids of numbers.",
-            guideRef: "Energy Flow & Pyramids",
+              "When the fox eats a rabbit (TL2 herbivore) it acts as a secondary consumer (TL3). When it eats an insect-eating bird (TL3) it acts as a tertiary consumer (TL4). In real food webs an organism can feed at more than one trophic level.",
+            guideRef: "Food Chains, Food Webs & Trophic Levels",
             difficulty: "core",
             hints: [
-              "Count the actual number of individuals at TL1 — is it larger or smaller than TL2?",
-              "Pyramids of numbers represent count of individuals, not energy or mass.",
+              "Work out the trophic level of each prey item first.",
+              "A herbivore is TL2; an insect-eating bird is TL3.",
+              "A consumer's trophic level is one above whatever it is currently eating.",
             ],
+          },
+          {
+            id: "bio-ecology-bm1-06",
+            question:
+              "Which abiotic factor would most directly limit the rate of photosynthesis of producers in a deep lake?",
+            options: [
+              "Predation by zooplankton",
+              "Light intensity, which falls with depth",
+              "Competition between fish species",
+              "The number of decomposers present",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Light intensity decreases with depth, directly limiting photosynthesis of producers lower in the water. Predation and competition are biotic factors; decomposer number does not directly limit photosynthesis.",
+            guideRef: "Ecosystem Vocabulary",
+            difficulty: "core",
+            hints: [
+              "Abiotic means non-living — rule out the living factors.",
+              "Photosynthesis needs a particular resource that decreases with depth.",
+              "Which of the options is a physical, non-living variable?",
+            ],
+          },
+          {
+            id: "bio-ecology-bm1-07",
+            question:
+              "A grassland food web loses all of its rabbits to disease. Foxes that ate rabbits now eat more voles, and grass grows taller. Which statement best describes this?",
+            options: [
+              "Removing one species can have knock-on effects throughout the web (a trophic cascade)",
+              "Food webs are unaffected when a single species is removed",
+              "The grass grows taller because foxes fertilise it",
+              "Voles will increase because they have fewer predators",
+            ],
+            answerIndex: 0,
+            explanation:
+              "Removing rabbits releases grazing pressure (grass grows taller) and shifts fox predation onto voles, reducing vole numbers — knock-on effects spreading through the web. This is a trophic cascade. Voles decrease, not increase, because foxes now hunt them more.",
+            guideRef: "Food Chains, Food Webs & Trophic Levels",
+            difficulty: "core",
+            hints: [
+              "Trace each arrow connected to the rabbit and ask what changes.",
+              "Fewer rabbits means less grazing — what happens to grass?",
+              "Foxes still need food, so what do they switch to eating?",
+            ],
+          },
+          {
+            id: "bio-ecology-bm1-08",
+            question:
+              "Why is a single food chain a poorer model of an ecosystem than a food web?",
+            options: [
+              "A food chain shows energy flowing in both directions",
+              "A food chain ignores the many alternative feeding relationships that actually exist",
+              "A food chain always contains decomposers",
+              "A food web only applies to aquatic ecosystems",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Most organisms eat, and are eaten by, several species. A food web shows these interlinked relationships; a single food chain shows only one pathway and so oversimplifies the ecosystem.",
+            guideRef: "Food Chains, Food Webs & Trophic Levels",
+            difficulty: "core",
+            hints: [
+              "Think about how many different things a fox actually eats.",
+              "Energy flow is always one-way, so rule that option out.",
+              "Which model captures alternative feeding routes?",
+            ],
+          },
+          {
+            id: "bio-ecology-bm1-09",
+            question:
+              "Two species of bird in the same wood feed on insects at the same time of day in the same trees. According to the niche concept, what is the likely long-term outcome?",
+            options: [
+              "Both will coexist indefinitely with no effect on each other",
+              "They will interbreed to form one species",
+              "Competition will be intense; one may be excluded or the species will diverge in resource use",
+              "The abiotic factors will change to support both",
+            ],
+            answerIndex: 2,
+            explanation:
+              "No two species can occupy exactly the same niche indefinitely. Intense competition for the identical resource means one species is usually excluded, or natural selection drives them to use slightly different resources (resource partitioning).",
+            guideRef: "Ecosystem Vocabulary",
+            difficulty: "challenge",
+            hints: [
+              "Recall the rule about two species sharing one niche.",
+              "If two species need exactly the same resources, what does competition do?",
+              "Either one loses out, or they must differ in how they use the resource.",
+            ],
+            strategy: "Link the niche definition to the consequence of competition.",
+          },
+          {
+            id: "bio-ecology-bm1-10",
+            question:
+              "A pyramid of numbers for a parasite food chain is: 1 oak tree → 200 aphids → 2000 parasitic wasps. What shape is this pyramid?",
+            options: [
+              "A regular upright pyramid",
+              "An irregular shape that widens towards the top",
+              "An inverted pyramid that is widest at the bottom",
+              "A perfect rectangle",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Numbers rise at each level (1 → 200 → 2000), so the bars get wider going up — an irregular shape that widens towards the top. Pyramids of numbers can be irregular because they count individuals regardless of size; parasites are tiny and numerous.",
+            guideRef: "Energy Flow & Pyramids",
+            difficulty: "challenge",
+            hints: [
+              "Compare the count of individuals at each level: do they go up or down?",
+              "Pyramids of numbers ignore the size of organisms.",
+              "If each bar is wider than the one below it, what does the overall shape do?",
+            ],
+            strategy: "Read the actual counts before assuming a pyramid shape.",
           },
         ],
       },
+      // ── MCQ PAPER 2 ── energy flow, pyramids, % transfer calculations
       {
-        id: "bio-ecology-bank-mcq-2",
-        title: "MCQ Paper 2 — Cycles, Human Impact & Biotechnology",
-        description: "Covers carbon and nitrogen cycles, human impact, conservation, and biotechnology/GM.",
+        id: "bio-ecology-bankmcq-2",
+        title: "Question Bank — MCQ Paper 2",
+        description: "Energy flow, energy losses, pyramids of number/biomass/energy, and percentage transfer calculations.",
         questions: [
           {
-            id: "bio-ecology-bank-mcq2-q01",
-            question: "Which process converts nitrates back into atmospheric nitrogen gas?",
-            options: ["Nitrification", "Nitrogen fixation", "Denitrification", "Ammonification"],
+            id: "bio-ecology-bm2-01",
+            question: "What is the principal source of energy for almost all ecosystems?",
+            options: ["The Sun", "Heat from the Earth's core", "Decomposing bacteria", "Mineral ions in the soil"],
+            answerIndex: 0,
+            explanation:
+              "Sunlight is the principal energy source. Producers capture a small fraction of it during photosynthesis, making it available to the rest of the ecosystem.",
+            guideRef: "Energy Flow & Pyramids",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-ecology-bm2-02",
+            question: "Which type of ecological pyramid is ALWAYS a true upright pyramid?",
+            options: ["Pyramid of numbers", "Pyramid of biomass", "Pyramid of energy", "All three are always upright"],
             answerIndex: 2,
             explanation:
-              "Denitrification is carried out by denitrifying bacteria in anaerobic (waterlogged) soils; they convert nitrate (NO₃⁻) → N₂, returning nitrogen to the atmosphere. Nitrification converts ammonium → nitrate. Nitrogen fixation does the reverse (N₂ → NH₄⁺). Ammonification converts organic N → ammonium.",
+              "A pyramid of energy is always upright because energy is lost at every trophic level and can never be gained. Pyramids of numbers and biomass can be irregular or inverted.",
+            guideRef: "Energy Flow & Pyramids",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-ecology-bm2-03",
+            question:
+              "Which is NOT a way that energy is lost between one trophic level and the next?",
+            options: [
+              "Heat released during respiration",
+              "Undigested material lost in faeces (egestion)",
+              "Energy stored in new body tissue of the consumer",
+              "Nitrogenous waste lost in excretion",
+            ],
+            answerIndex: 2,
+            explanation:
+              "Energy stored in new body tissue is energy that IS passed on to the next level — it is not a loss. Respiration (heat), egestion, and excretion are all routes by which energy leaves the chain.",
+            guideRef: "Energy Flow & Pyramids",
+            difficulty: "core",
+            hints: [
+              "Three options describe energy leaving the food chain.",
+              "One option describes energy that the next consumer could actually eat.",
+              "New tissue/growth is the energy available to the next level.",
+            ],
+          },
+          {
+            id: "bio-ecology-bm2-04",
+            question:
+              "Producers fix 60 000 kJ/m²/yr. Primary consumers contain 5 400 kJ/m²/yr. What is the percentage energy transfer between these levels?",
+            options: ["9%", "11%", "0.9%", "90%"],
+            answerIndex: 0,
+            explanation:
+              "Percentage transfer = (energy in next level ÷ energy in previous level) × 100 = (5 400 ÷ 60 000) × 100 = 9%.",
+            guideRef: "Energy Flow & Pyramids",
+            difficulty: "core",
+            hints: [
+              "Percentage transfer = (energy received ÷ energy available) × 100.",
+              "Divide 5 400 by 60 000 first.",
+              "5 400 ÷ 60 000 = 0.09; multiply by 100.",
+            ],
+            strategy: "Always divide the SMALLER (upper-level) value by the larger and ×100.",
+          },
+          {
+            id: "bio-ecology-bm2-05",
+            question:
+              "A crop stores 8 000 kJ/m². When eaten by cattle, only 800 kJ/m² becomes new cattle tissue. Roughly how much MORE food energy reaches humans if they eat the crop directly rather than eating the cattle?",
+            options: [
+              "About 10 times more",
+              "About 2 times more",
+              "About the same",
+              "About 100 times more",
+            ],
+            answerIndex: 0,
+            explanation:
+              "Eating the crop directly gives access to 8 000 kJ; eating the cattle gives only the 800 kJ that became cattle tissue (a 10% transfer). So humans gain roughly 10× more energy by eating producers directly — this is why shorter food chains feed more people.",
+            guideRef: "Energy Flow & Pyramids",
+            difficulty: "core",
+            hints: [
+              "Compare 8 000 kJ (crop) with 800 kJ (cattle tissue).",
+              "8 000 ÷ 800 = ?",
+              "Removing a trophic level avoids one 90% energy loss.",
+            ],
+            strategy: "Each extra trophic level loses ~90% of the energy.",
+          },
+          {
+            id: "bio-ecology-bm2-06",
+            question:
+              "A pyramid of biomass for a small pond appears inverted (the producer bar is smaller than the primary-consumer bar). What is the best explanation?",
+            options: [
+              "Energy was created at the second trophic level",
+              "The phytoplankton have a very high turnover rate, so their standing biomass at any moment is small",
+              "Zooplankton photosynthesise to add biomass",
+              "The pyramid was drawn incorrectly; biomass pyramids cannot be inverted",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Phytoplankton reproduce extremely fast and are eaten almost as quickly as they grow, so their standing biomass (mass present at one instant) can be lower than that of the zooplankton eating them. Energy is never created; a pyramid of energy would still be upright.",
+            guideRef: "Energy Flow & Pyramids",
+            difficulty: "challenge",
+            hints: [
+              "Biomass is a snapshot of mass at one moment, not a measure over time.",
+              "Phytoplankton are eaten almost as fast as they are produced.",
+              "A high reproduction/turnover rate keeps standing biomass low.",
+            ],
+            strategy: "Distinguish standing crop (a snapshot) from productivity (a rate).",
+          },
+          {
+            id: "bio-ecology-bm2-07",
+            question:
+              "Energy enters producers at 100 000 kJ/m²/yr. If transfer efficiency is 10% at each step, how much energy is available to TERTIARY consumers?",
+            options: ["100 kJ/m²/yr", "1 000 kJ/m²/yr", "10 kJ/m²/yr", "10 000 kJ/m²/yr"],
+            answerIndex: 0,
+            explanation:
+              "Producer → primary → secondary → tertiary is three transfers. 100 000 × 0.1 × 0.1 × 0.1 = 100 kJ/m²/yr.",
+            guideRef: "Energy Flow & Pyramids",
+            difficulty: "core",
+            hints: [
+              "Count the transfer steps to a tertiary consumer.",
+              "Producer to tertiary consumer = three ×0.1 steps.",
+              "100 000 × (0.1)³ = 100 000 × 0.001.",
+            ],
+            strategy: "Use (0.1)^n where n is the number of arrows.",
+          },
+          {
+            id: "bio-ecology-bm2-08",
+            question:
+              "Why are food chains usually limited to four or five trophic levels?",
+            options: [
+              "Predators above this size do not exist",
+              "So little energy remains at high levels that it cannot support another consumer",
+              "Decomposers stop working beyond four levels",
+              "The Sun cannot provide enough light",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Because roughly 90% of energy is lost at each step, the energy remaining after several transfers is too small to support a further trophic level, limiting chain length to about 4–5 links.",
+            guideRef: "Energy Flow & Pyramids",
+            difficulty: "core",
+            hints: [
+              "Apply the 10% rule a few times and watch the energy shrink.",
+              "After several steps, is there enough energy left to feed another level?",
+              "The limit comes from energy, not from predator size.",
+            ],
+          },
+          {
+            id: "bio-ecology-bm2-09",
+            question:
+              "An ecologist measures fresh mass to compare biomass at two trophic levels. Why is DRY mass a more reliable measure?",
+            options: [
+              "Dry mass includes the energy in water",
+              "Water content varies between organisms and over time, so fresh mass is inconsistent",
+              "Drying adds carbon to the sample",
+              "Fresh mass cannot be measured on a balance",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Water content varies widely between organisms and from day to day, so fresh mass is an unreliable comparison. Dry mass (after removing water) reflects the actual organic material and is comparable. The drawback is that organisms must be killed.",
+            guideRef: "Energy Flow & Pyramids",
+            difficulty: "challenge",
+            hints: [
+              "What part of fresh mass is not living tissue and varies a lot?",
+              "Two organisms of equal dry mass can hold very different amounts of water.",
+              "Removing the variable component makes the comparison fair.",
+            ],
+            strategy: "Identify the variable that dry mass removes.",
+          },
+          {
+            id: "bio-ecology-bm2-10",
+            question:
+              "A pyramid of energy shows 10 000 kJ at TL1 and 90 kJ at TL3. What was the approximate percentage transfer between TL2 and TL3 if TL2 held 900 kJ?",
+            options: ["10%", "9%", "1%", "90%"],
+            answerIndex: 0,
+            explanation:
+              "Between TL2 (900 kJ) and TL3 (90 kJ): (90 ÷ 900) × 100 = 10%. (The TL1→TL2 step here was 9%, but the question asks only about TL2→TL3.)",
+            guideRef: "Energy Flow & Pyramids",
+            difficulty: "core",
+            hints: [
+              "Use only the TL2 and TL3 figures for this step.",
+              "Percentage = (90 ÷ 900) × 100.",
+              "90 ÷ 900 = 0.1.",
+            ],
+            strategy: "Pick out the two adjacent levels named in the question and ignore the others.",
+          },
+        ],
+      },
+      // ── MCQ PAPER 3 ── carbon cycle, nitrogen cycle, decomposition, populations
+      {
+        id: "bio-ecology-bankmcq-3",
+        title: "Question Bank — MCQ Paper 3",
+        description: "Carbon and nitrogen cycles, decomposition, nutrient recycling, and population size.",
+        questions: [
+          {
+            id: "bio-ecology-bm3-01",
+            question: "Which process returns CO₂ to the atmosphere?",
+            options: ["Photosynthesis", "Respiration", "Nitrogen fixation", "Transpiration"],
+            answerIndex: 1,
+            explanation:
+              "Respiration in all living organisms oxidises glucose and releases CO₂ to the atmosphere. Photosynthesis removes CO₂; nitrogen fixation and transpiration do not involve CO₂.",
+            guideRef: "The Carbon Cycle & The Nitrogen Cycle",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-ecology-bm3-02",
+            question: "In which form do plants absorb nitrogen from the soil?",
+            options: ["Nitrogen gas (N₂)", "Nitrate ions (NO₃⁻)", "Ammonia gas", "Protein"],
+            answerIndex: 1,
+            explanation:
+              "Plants absorb nitrogen as nitrate ions (NO₃⁻) through their roots and use it to make amino acids and proteins. They cannot use N₂ gas directly.",
+            guideRef: "The Carbon Cycle & The Nitrogen Cycle",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-ecology-bm3-03",
+            question: "Which process locks carbon away for millions of years?",
+            options: [
+              "Combustion of wood",
+              "Formation of fossil fuels from undecomposed organisms",
+              "Respiration of animals",
+              "Decomposition of leaf litter",
+            ],
+            answerIndex: 1,
+            explanation:
+              "When organisms die in conditions that prevent full decomposition, their carbon can become coal, oil, or gas (fossil fuels) over millions of years. The other processes release carbon relatively quickly.",
             guideRef: "The Carbon Cycle & The Nitrogen Cycle",
             difficulty: "core",
             hints: [
-              "The prefix 'de-' means removal or reversal.",
-              "Which process REMOVES nitrogen from the soil and puts it into the air?",
+              "Which option stores carbon rather than releasing it?",
+              "Think about where coal and oil come from.",
+              "Fossil fuels form when decomposition is incomplete.",
             ],
           },
           {
-            id: "bio-ecology-bank-mcq2-q02",
-            question: "How does deforestation affect atmospheric CO₂ concentration?",
+            id: "bio-ecology-bm3-04",
+            question:
+              "Nitrifying bacteria carry out which conversion in the nitrogen cycle?",
             options: [
-              "Decreases it, because fewer trees are respiring",
-              "Increases it, because burning trees releases CO₂ and fewer trees photosynthesise",
-              "Has no effect, because soil bacteria compensate",
-              "Decreases it, because less decomposition occurs",
+              "Nitrogen gas → ammonium ions",
+              "Ammonium ions → nitrite → nitrate",
+              "Nitrate → nitrogen gas",
+              "Protein → ammonium ions",
             ],
             answerIndex: 1,
             explanation:
-              "Burning trees releases stored carbon as CO₂. Fewer trees means less photosynthesis removing CO₂ from the atmosphere. Both effects raise CO₂ concentration.",
+              "Nitrifying bacteria oxidise ammonium ions to nitrite and then to nitrate (nitrification). Nitrogen fixation makes ammonium from N₂; denitrification makes N₂ from nitrate; decomposers (ammonification) make ammonium from protein.",
+            guideRef: "The Carbon Cycle & The Nitrogen Cycle",
+            difficulty: "core",
+            hints: [
+              "The word 'nitrification' points to making nitrate.",
+              "Which starting and ending substances both contain combined nitrogen for plants?",
+              "Ammonium → nitrite → nitrate is the nitrifying pathway.",
+            ],
+          },
+          {
+            id: "bio-ecology-bm3-05",
+            question:
+              "Decomposition of leaf litter slows markedly during a cold winter. Which factor best explains this?",
+            options: [
+              "Low temperature slows the enzyme activity and respiration of decomposers",
+              "There is more oxygen available in winter",
+              "Leaves contain more nitrogen in winter",
+              "Decomposers stop needing water in winter",
+            ],
+            answerIndex: 0,
+            explanation:
+              "Decomposers rely on enzymes, which work slowly at low temperatures, and their metabolic rate falls in the cold. Warmth, moisture, and oxygen all speed decomposition; cold slows it.",
+            guideRef: "The Carbon Cycle & The Nitrogen Cycle",
+            difficulty: "core",
+            hints: [
+              "Decomposers are organisms with enzymes — how does temperature affect enzymes?",
+              "Cold reduces the rate of metabolic reactions.",
+              "Think about the conditions that speed up rotting in a compost heap.",
+            ],
+          },
+          {
+            id: "bio-ecology-bm3-06",
+            question:
+              "A pond is sealed off so that no decomposers can act. Over time, what happens to the supply of mineral ions for plant growth?",
+            options: [
+              "It increases because nothing uses the minerals",
+              "It decreases because dead matter is not broken down to release minerals",
+              "It stays the same because plants make their own minerals",
+              "It increases because dead organisms dissolve directly",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Without decomposers, dead organisms and waste are not broken down, so the mineral ions locked in them are not recycled. The available supply for plant growth falls.",
+            guideRef: "The Carbon Cycle & The Nitrogen Cycle",
+            difficulty: "core",
+            hints: [
+              "What job do decomposers do for nutrient supply?",
+              "Minerals are locked inside dead bodies until something releases them.",
+              "Plants cannot grow well without recycled mineral ions.",
+            ],
+          },
+          {
+            id: "bio-ecology-bm3-07",
+            question:
+              "Which factor would cause the size of a rabbit population to DECREASE?",
+            options: [
+              "An increase in available food",
+              "A decrease in the number of predators",
+              "An outbreak of disease",
+              "An increase in suitable nesting sites",
+            ],
+            answerIndex: 2,
+            explanation:
+              "Disease raises the death rate and lowers the population. More food, fewer predators, and more nesting sites would all tend to increase the population.",
+            guideRef: "Ecosystem Vocabulary",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-ecology-bm3-08",
+            question:
+              "A predator and its prey show repeating linked cycles: prey numbers rise, then predator numbers rise, then prey fall, then predators fall. Why do the predator peaks come AFTER the prey peaks?",
+            options: [
+              "Predators reproduce instantly when prey appear",
+              "There is a time delay: more prey means more food, so predators reproduce and increase only later",
+              "Prey eat the predators",
+              "The two cycles are unrelated and the timing is coincidence",
+            ],
+            answerIndex: 1,
+            explanation:
+              "A rise in prey provides more food, but predators take time to feed, reproduce, and raise young, so their population peaks after the prey peak. The rising predators then reduce prey numbers, and the cycle repeats.",
+            guideRef: "Ecosystem Vocabulary",
+            difficulty: "challenge",
+            hints: [
+              "Reproduction is not instant — it takes time.",
+              "Predators can only increase once there is plenty of prey to eat.",
+              "The lag reflects the time to feed and raise offspring.",
+            ],
+            strategy: "Explain the time lag between cause (more food) and effect (more predators).",
+          },
+          {
+            id: "bio-ecology-bm3-09",
+            question:
+              "Why does growing a legume crop (with Rhizobium in its root nodules) improve soil fertility for the next crop?",
+            options: [
+              "Legumes remove nitrate from the soil",
+              "Rhizobium fix nitrogen gas into compounds, adding combined nitrogen to the soil",
+              "Legumes raise the soil temperature",
+              "Rhizobium denitrify the soil, releasing N₂",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Rhizobium bacteria in the root nodules fix atmospheric N₂ into ammonium/combined nitrogen. When the legumes die and decompose, this adds nitrogen compounds to the soil, raising fertility for the following crop.",
+            guideRef: "The Carbon Cycle & The Nitrogen Cycle",
+            difficulty: "challenge",
+            hints: [
+              "What does Rhizobium do with nitrogen gas?",
+              "Nitrogen fixation adds usable nitrogen to the system.",
+              "When the legume dies, where do its nitrogen compounds go?",
+            ],
+            strategy: "Connect nitrogen fixation to the later release of nitrogen on decomposition.",
+          },
+          {
+            id: "bio-ecology-bm3-10",
+            question:
+              "Waterlogged, compacted soil tends to be low in nitrate. Which process is most responsible?",
+            options: [
+              "Increased nitrification by nitrifying bacteria",
+              "Increased denitrification by denitrifying bacteria in anaerobic conditions",
+              "Increased nitrogen fixation",
+              "Increased absorption of nitrate by decomposers",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Waterlogged soil is low in oxygen (anaerobic), which favours denitrifying bacteria. They convert nitrate to N₂ gas, lowering soil nitrate and fertility. Aeration would favour the nitrifying bacteria instead.",
+            guideRef: "The Carbon Cycle & The Nitrogen Cycle",
+            difficulty: "challenge",
+            hints: [
+              "Waterlogged soil is short of one important gas.",
+              "Which bacteria thrive in anaerobic (low-oxygen) conditions?",
+              "Denitrification converts nitrate to nitrogen gas, removing it from soil.",
+            ],
+            strategy: "Link the abiotic condition (low oxygen) to the bacteria it favours.",
+          },
+        ],
+      },
+      // ── MCQ PAPER 4 ── human impact, pollution, eutrophication, greenhouse, conservation
+      {
+        id: "bio-ecology-bankmcq-4",
+        title: "Question Bank — MCQ Paper 4",
+        description: "Pollution, eutrophication, deforestation, the greenhouse effect, climate change, and conservation.",
+        questions: [
+          {
+            id: "bio-ecology-bm4-01",
+            question: "Which gas is the main contributor to the enhanced greenhouse effect from burning fossil fuels?",
+            options: ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
+            answerIndex: 1,
+            explanation:
+              "Carbon dioxide released by burning fossil fuels is the main greenhouse gas driving the enhanced greenhouse effect. Methane also contributes. Oxygen and nitrogen are not greenhouse gases.",
             guideRef: "Human Impact on the Environment",
             difficulty: "warmup",
           },
           {
-            id: "bio-ecology-bank-mcq2-q03",
-            question:
-              "Which PAIR of enzymes is used to create a recombinant plasmid during insulin production?",
+            id: "bio-ecology-bm4-02",
+            question: "Which is a direct effect of deforestation?",
             options: [
-              "Amylase and lipase",
-              "Restriction enzyme and DNA ligase",
-              "DNA polymerase and restriction enzyme",
-              "Ligase and RNA polymerase",
+              "Increased biodiversity",
+              "Loss of habitat and reduced biodiversity",
+              "More carbon dioxide removed from the air",
+              "Increased rainfall locally",
             ],
             answerIndex: 1,
             explanation:
-              "Restriction enzymes cut the DNA at specific sequences, producing sticky ends. DNA ligase joins (seals) the insulin gene into the opened plasmid, creating the recombinant plasmid.",
-            guideRef: "Conservation, Biotechnology & Genetic Modification",
-            difficulty: "core",
-            hints: [
-              "One enzyme cuts; one enzyme joins. Which is which?",
-              "Ligase is named for its function: ligation = joining.",
-            ],
-          },
-          {
-            id: "bio-ecology-bank-mcq2-q04",
-            question:
-              "During eutrophication, what is the DIRECT cause of the algal bloom?",
-            options: [
-              "Increased water temperature from climate change",
-              "Excess nitrates and phosphates stimulating algal growth",
-              "Sewage providing organic food for algae to consume",
-              "Reduction of fish that normally graze on algae",
-            ],
-            answerIndex: 1,
-            explanation:
-              "Excess mineral ions (nitrates and phosphates) from agricultural run-off directly stimulate the growth of algae and cyanobacteria. While temperature and grazing can influence algal populations, the direct trigger in eutrophication is the nutrient enrichment.",
+              "Deforestation destroys habitats and reduces biodiversity. It also reduces photosynthesis (less CO₂ removed) and reduces transpiration (often less rainfall). So the other options are wrong.",
             guideRef: "Human Impact on the Environment",
             difficulty: "warmup",
           },
           {
-            id: "bio-ecology-bank-mcq2-q05",
-            question:
-              "A GM crop is modified to produce a bacterial toxin (Bt toxin) that kills insect pests. Which is a potential DISADVANTAGE of this modification?",
+            id: "bio-ecology-bm4-03",
+            question: "What is the IMMEDIATE cause of fish death in eutrophication?",
             options: [
-              "The crop will require more water to grow",
-              "Insects that are not pest species may also be harmed (non-target organisms)",
-              "The crop will produce less yield than a conventional variety",
-              "Farmers will need to apply more pesticide to protect the crop",
+              "Fertiliser poisoning the fish",
+              "Lack of dissolved oxygen as bacteria decompose dead plants",
+              "Algae blocking the fishes' gills",
+              "A rise in water temperature",
             ],
             answerIndex: 1,
             explanation:
-              "If the Bt toxin affects non-target insects (e.g. pollinators), this could reduce biodiversity and harm ecosystems. The other options are incorrect: Bt crops generally require LESS pesticide and often have equivalent or improved yields.",
-            guideRef: "Conservation, Biotechnology & Genetic Modification",
+              "Bacteria decomposing the dead water plants respire aerobically and use up dissolved oxygen, so fish suffocate. The fertiliser itself is not directly toxic, and algae do not block gills.",
+            guideRef: "Human Impact on the Environment",
             difficulty: "core",
             hints: [
-              "Think about other insects that visit crops — not all are pests.",
-              "What would happen to the food web if populations of non-pest insects declined?",
+              "Recall the end of the eutrophication sequence.",
+              "Which organisms multiply and consume the oxygen?",
+              "Fish need dissolved oxygen to respire.",
             ],
           },
           {
-            id: "bio-ecology-bank-mcq2-q06",
+            id: "bio-ecology-bm4-04",
             question:
-              "The equation for alcoholic fermentation by yeast is:\nC₆H₁₂O₆ → 2C₂H₅OH + 2CO₂\n\nWhich condition is required for this process to occur?",
+              "Acid rain is mainly produced when which gases dissolve in rainwater?",
             options: [
-              "Presence of oxygen (aerobic conditions)",
-              "Absence of oxygen (anaerobic conditions)",
-              "Temperature above 60°C to activate yeast enzymes",
-              "Presence of mineral ions as a substrate",
+              "Carbon dioxide and oxygen",
+              "Sulfur dioxide and oxides of nitrogen",
+              "Methane and ammonia",
+              "Nitrogen and water vapour",
             ],
             answerIndex: 1,
             explanation:
-              "Alcoholic fermentation is an ANAEROBIC process — yeast ferments glucose to ethanol and CO₂ in the absence of oxygen. Above about 45°C yeast enzymes denature. Mineral ions are not the substrate; glucose is.",
+              "Sulfur dioxide (SO₂) and oxides of nitrogen (NOₓ) from burning fossil fuels dissolve in rain to form acid rain, which damages soils, lakes, and buildings.",
+            guideRef: "Human Impact on the Environment",
+            difficulty: "core",
+            hints: [
+              "Acid rain comes from burning fossil fuels.",
+              "Two acidic oxides are involved, one of sulfur and one of nitrogen.",
+              "Think SO₂ and NOₓ.",
+            ],
+          },
+          {
+            id: "bio-ecology-bm4-05",
+            question:
+              "Which conservation method most directly helps a fish population recover from over-fishing?",
+            options: [
+              "Adding fertiliser to the sea",
+              "Introducing catch quotas and larger net mesh sizes",
+              "Removing all predators of the fish",
+              "Draining coastal wetlands",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Catch quotas limit how many fish are taken, and larger mesh sizes let young fish escape to breed. Both allow the population to recover. The other options harm the ecosystem.",
             guideRef: "Conservation, Biotechnology & Genetic Modification",
-            difficulty: "warmup",
+            difficulty: "core",
+            hints: [
+              "Sustainable fishing protects breeding stock.",
+              "How do you let young fish survive to reproduce?",
+              "Quotas limit numbers taken; mesh size lets juveniles through.",
+            ],
+          },
+          {
+            id: "bio-ecology-bm4-06",
+            question:
+              "How does the natural greenhouse effect keep the Earth warm?",
+            options: [
+              "Greenhouse gases reflect sunlight back to space",
+              "Greenhouse gases absorb outgoing infrared radiation and re-radiate some of it back to the surface",
+              "Greenhouse gases generate heat by reacting with oxygen",
+              "Greenhouse gases stop the Sun's rays reaching the Earth",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Greenhouse gases (CO₂, CH₄, water vapour) absorb infrared radiation emitted by the warmed Earth and re-radiate part of it back to the surface, keeping the planet warmer than it would otherwise be. Human activity enhances this effect.",
+            guideRef: "Human Impact on the Environment",
+            difficulty: "core",
+            hints: [
+              "The Sun's energy arrives and the warm Earth re-emits it as infrared.",
+              "Greenhouse gases act on the OUTGOING radiation, not the incoming light.",
+              "They absorb infrared and send some back down.",
+            ],
+          },
+          {
+            id: "bio-ecology-bm4-07",
+            question:
+              "Why do micro-plastics pose a particular risk to top predators such as seabirds?",
+            options: [
+              "Plastics dissolve quickly and release oxygen",
+              "Plastics are eaten low in the food chain and pass up to predators, accumulating along the way",
+              "Plastics increase the energy available to predators",
+              "Plastics only affect producers, never consumers",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Small organisms ingest micro-plastics, which then pass up the food chain. Because plastics persist and accumulate, top predators can end up with the highest amounts (bioaccumulation), harming them.",
+            guideRef: "Human Impact on the Environment",
+            difficulty: "challenge",
+            hints: [
+              "Where do plastics first enter the food chain?",
+              "Plastics are not broken down and do not leave the body easily.",
+              "Each predator concentrates what its prey contained.",
+            ],
+            strategy: "Trace the plastic from low trophic levels up to the predator.",
+          },
+          {
+            id: "bio-ecology-bm4-08",
+            question:
+              "A captive-breeding programme for an endangered mammal keeps detailed records to pair unrelated individuals. Why is this important?",
+            options: [
+              "To increase the body size of offspring",
+              "To maintain genetic variation and avoid the harmful effects of inbreeding",
+              "To make the animals tamer",
+              "To reduce the number of offspring produced",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Pairing unrelated individuals maintains genetic variation and reduces inbreeding, which can expose harmful recessive alleles and weaken the population. Healthy variation improves survival on release.",
+            guideRef: "Conservation, Biotechnology & Genetic Modification",
+            difficulty: "challenge",
+            hints: [
+              "Small populations risk breeding close relatives.",
+              "What problem arises when closely related individuals breed?",
+              "Genetic variation helps a population stay healthy and adaptable.",
+            ],
+            strategy: "Link record-keeping to maintaining genetic diversity.",
+          },
+          {
+            id: "bio-ecology-bm4-09",
+            question:
+              "Reforestation is described as a way to reduce atmospheric CO₂. Which statement best justifies this?",
+            options: [
+              "Trees release CO₂ as they grow",
+              "Growing trees photosynthesise, fixing CO₂ into wood and acting as a carbon sink",
+              "Trees increase soil denitrification",
+              "Forests reflect more sunlight, cooling the air directly",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Growing trees photosynthesise, removing CO₂ from the air and storing the carbon in wood — a carbon sink. This helps offset emissions and reduce the enhanced greenhouse effect.",
+            guideRef: "Conservation, Biotechnology & Genetic Modification",
+            difficulty: "core",
+            hints: [
+              "What process in trees removes CO₂ from the air?",
+              "Carbon fixed by photosynthesis is stored in wood.",
+              "A growing forest stores more carbon than it releases.",
+            ],
+          },
+          {
+            id: "bio-ecology-bm4-10",
+            question:
+              "Which statement best defines SUSTAINABLE use of a resource such as timber?",
+            options: [
+              "Using as much as possible while it is cheap",
+              "Using the resource at a rate that allows it to be replaced, so future generations can still use it",
+              "Never using the resource at all",
+              "Replacing the resource only after it has run out",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Sustainable use means harvesting at a rate that allows natural replacement (e.g. replanting trees), meeting present needs without preventing future generations from meeting theirs.",
+            guideRef: "Conservation, Biotechnology & Genetic Modification",
+            difficulty: "core",
+            hints: [
+              "Sustainability is about the rate of use versus the rate of replacement.",
+              "The resource must not run out for future generations.",
+              "Replanting matches removal to renewal.",
+            ],
           },
         ],
       },
     ],
-
     qaPapers: [
+      // ── QA PAPER 1 ── ecosystems, food chains/webs, trophic levels
       {
-        id: "bio-ecology-bank-qa-1",
-        title: "Structured Questions Paper 1 — Ecosystems & Energy",
-        description: "Ecosystem vocabulary, food webs, energy calculations, and carbon/nitrogen cycles.",
+        id: "bio-ecology-bankqa-1",
+        title: "Question Bank — Structured Paper 1",
+        description: "Ecosystem vocabulary, food chains and webs, trophic levels, and feeding relationships.",
         questions: [
           {
-            id: "bio-ecology-bank-qa1-q01",
+            id: "bio-ecology-bq1-01",
             question:
-              "Fig. 1 shows a food web in a woodland ecosystem:\n\n" +
-              "oak leaves → caterpillar → blue tit → sparrowhawk\n" +
-              "oak leaves → aphid → blue tit\n" +
-              "oak leaves → aphid → lacewing → blue tit\n\n" +
-              "(a) Name the producer in this food web. [1]\n" +
-              "(b) Name one secondary consumer. [1]\n" +
-              "(c) Suggest what might happen to the sparrowhawk population if all blue tits were removed. Give a reason. [2]\n" +
-              "(d) Explain why the sparrowhawk population is small compared to the oak tree population. [3]",
-            marks: 7,
+              "Define the terms population and community, and give one example of each from a woodland. [4]",
+            marks: 4,
             modelAnswer:
-              "(a) Oak leaves (oak tree).\n\n" +
-              "(b) Blue tit (also accept lacewing — it eats aphids which are primary consumers).\n\n" +
-              "(c) The sparrowhawk population would decrease/fall. Blue tits are the only food source for sparrowhawks in this web, so removing them would remove the sparrowhawk's food supply, causing sparrowhawks to starve/die.\n\n" +
-              "(d) Energy is lost at each trophic level — through respiration (heat), egestion, and movement. By the time energy reaches the sparrowhawk (TL4), approximately only 0.1% of the energy originally fixed by the oak tree remains. There is insufficient energy to support a large sparrowhawk population.",
+              "A population is all the individuals of one species living in an area at a given time — for example, all the oak trees in the woodland. A community is all the populations of different species living and interacting in the same area — for example, the oak trees, squirrels, fungi, insects and birds of the woodland together.",
             markScheme: [
-              "(a) Oak leaves / oak tree",
-              "(b) Blue tit OR lacewing (with correct justification)",
-              "(c) Sparrowhawk numbers decrease",
-              "(c) Because blue tit is only prey / no alternative food source / sparrowhawks starve",
-              "(d) Energy is lost at each trophic level",
-              "(d) Lost as heat (respiration) / egestion / movement (any two routes stated)",
-              "(d) Very little energy remains at TL4 / only ~0.1% of original energy / insufficient to support large numbers",
+              "Population = all individuals of one species / one type of organism in an area (1)",
+              "Suitable example of a population, e.g. all oak trees / all grey squirrels (1)",
+              "Community = all the populations of different species living/interacting in an area (1)",
+              "Suitable example of a community, e.g. all the organisms of the woodland together (1)",
             ],
             commonError:
-              "Students describe sparrowhawks eating oak leaves when tracing the food web — always follow the arrows.",
+              "Mixing up the two: a population is ONE species; a community is MANY species. An example of a community must include several different species, not just one.",
+            guideRef: "Ecosystem Vocabulary",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-ecology-bq1-02",
+            question:
+              "State what the arrows in a food chain represent, and explain why every food chain begins with a producer. [3]",
+            marks: 3,
+            modelAnswer:
+              "The arrows show the direction of energy (and nutrient) transfer — from the organism that is eaten to the organism that eats it. Every food chain begins with a producer because producers (plants/algae) trap light energy in photosynthesis and convert it into chemical energy in food, providing the energy input for all the consumers in the chain.",
+            markScheme: [
+              "Arrows show direction of energy transfer / energy flow (1)",
+              "Producers carry out photosynthesis / capture light energy (1)",
+              "They convert light energy into chemical energy / make food that consumers depend on (1)",
+            ],
+            commonError:
+              "Saying the arrow points 'to what is eaten' — it points FROM the food TO the feeder (the direction energy travels).",
+            guideRef: "Food Chains, Food Webs & Trophic Levels",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-ecology-bq1-03",
+            question:
+              "A food chain is: lettuce → slug → frog → heron.\n(a) Name the primary consumer and the trophic level of the heron. [2]\n(b) Explain what would happen to the frog population if all the slugs were removed. [2]",
+            marks: 4,
+            modelAnswer:
+              "(a) The slug is the primary consumer. The heron is at the fourth trophic level (TL4), a tertiary consumer.\n\n(b) The frogs would lose their food source, so the frog population would fall/decrease, because slugs are the frogs' main prey in this chain. Some frogs may starve or move away.",
+            markScheme: [
+              "(a) Primary consumer = slug (1)",
+              "(a) Heron = fourth trophic level / TL4 / tertiary consumer (1)",
+              "(b) Frog population decreases / falls (1)",
+              "(b) Because the frogs lose their food source / less food available (1)",
+            ],
+            commonError:
+              "Counting the producer as trophic level 0 — the producer is TL1, so the heron (four organisms along) is TL4.",
             guideRef: "Food Chains, Food Webs & Trophic Levels",
             difficulty: "core",
             hints: [
-              "For (c): trace what the sparrowhawk eats — what happens if that is gone?",
-              "For (d): calculate roughly how much energy passes through 3 transfers at 10% each.",
+              "Number each organism starting with the producer as TL1.",
+              "The primary consumer is the first animal in the chain.",
+              "For (b), remove the slug and ask what the frog now has to eat.",
             ],
-            strategy: "Read arrows carefully; trace feeding relationships step by step.",
           },
           {
-            id: "bio-ecology-bank-qa1-q02",
+            id: "bio-ecology-bq1-04",
             question:
-              "The table shows the energy content at each trophic level in a lake ecosystem:\n\n" +
-              "TL1 (phytoplankton): 500 000 kJ/m²/yr\n" +
-              "TL2 (zooplankton): 45 000 kJ/m²/yr\n" +
-              "TL3 (small fish): 4 000 kJ/m²/yr\n" +
-              "TL4 (large fish): 320 kJ/m²/yr\n\n" +
-              "(a) Calculate the percentage efficiency of energy transfer from TL1 to TL2. Show your working. [2]\n" +
-              "(b) Suggest two reasons why the efficiency is less than 100%. [2]\n" +
-              "(c) A student claims: 'this ecosystem has an inverted pyramid of biomass.' Explain why this is possible even though the pyramid of energy is a true pyramid. [3]",
-            marks: 7,
+              "Explain the difference between a habitat and a niche, using a named example. [3]",
+            marks: 3,
             modelAnswer:
-              "(a) Efficiency = (energy at TL2 / energy at TL1) × 100\n" +
-              "= (45 000 / 500 000) × 100 = 9% (accept 9.0%).\n\n" +
-              "(b) Any two from: energy is lost as heat through respiration; some material is not digested and is egested in faeces; energy is lost through excretion; energy is used for movement.\n\n" +
-              "(c) The pyramid of biomass shows standing crop (biomass present at one moment). Phytoplankton reproduce very rapidly (high turnover rate), so although they produce a large total amount of biomass over the year, at any snapshot in time their standing biomass may be less than the zooplankton consuming them. The pyramid of energy measures total energy flow over time, which is always decreasing — so it is always a true pyramid regardless of turnover rate.",
+              "A habitat is the place where an organism lives, defined by its physical and biological features — for example, the rocky shore where a limpet lives. A niche is the role the organism plays in its ecosystem: what it eats, where and when it is active, and how it interacts with other species — for example, the limpet's niche is grazing algae off the rocks at high tide. The habitat is the 'address'; the niche is the 'occupation'.",
             markScheme: [
-              "(a) Correct formula: (TL2 / TL1) × 100",
-              "(a) Answer: 9% (allow 8.9%–9.1%; penalise missing %)",
-              "(b) Any TWO: heat from respiration; egestion; excretion; movement/growth",
-              "(c) Biomass pyramid = standing crop at one moment in time",
-              "(c) Phytoplankton have very high turnover/reproduction rate",
-              "(c) Their standing biomass at any moment can be less than zooplankton that consume them",
-              "(c) Energy pyramid measures flow over time — always true pyramid because energy always lost",
+              "Habitat = the place / where an organism lives (1)",
+              "Niche = the role of the organism / what it eats, where and when it is active (1)",
+              "Suitable example distinguishing the two (e.g. limpet on rocky shore grazing algae) (1)",
             ],
             commonError:
-              "Confusing percentage efficiency with percentage energy lost — if 9% is transferred, 91% is lost, not 9%.",
+              "Treating habitat and niche as the same thing. The habitat is the location; the niche is the role/function within that location.",
+            guideRef: "Ecosystem Vocabulary",
+            difficulty: "core",
+            hints: [
+              "One term is about WHERE, the other about WHAT the organism does.",
+              "Habitat = address; niche = job.",
+              "Choose one organism and describe both for it.",
+            ],
+          },
+          {
+            id: "bio-ecology-bq1-05",
+            question:
+              "Using a food web, explain why removing a single species can affect many other species in the ecosystem. [4]",
+            marks: 4,
+            modelAnswer:
+              "In a food web, most organisms are linked to several others as predators and prey. Removing one species breaks these links: its prey may increase because they are no longer eaten, while its predators lose a food source and may decrease or switch to other prey. These changes pass on to further species — for example, increased prey may overgraze producers — so effects spread through the web (a trophic cascade). The interconnections mean a change at one point rarely stays isolated.",
+            markScheme: [
+              "Most species are linked to several others in the web (1)",
+              "Removing a species means its prey is no longer eaten / prey numbers may rise (1)",
+              "Its predators lose a food source / may decrease or switch prey (1)",
+              "Effects pass on to further species / spread through the web (trophic cascade) (1)",
+            ],
+            commonError:
+              "Only describing the immediate predator OR prey. Marks require showing knock-on effects spreading to further species.",
+            guideRef: "Food Chains, Food Webs & Trophic Levels",
+            difficulty: "core",
+            hints: [
+              "Follow every arrow that touches the removed species.",
+              "Predators lose food; prey lose a predator — what happens to each?",
+              "Then follow the next set of arrows from those species.",
+            ],
+          },
+          {
+            id: "bio-ecology-bq1-06",
+            question:
+              "Decomposers are essential to ecosystems but are rarely drawn in food chains. Explain their role and why they are usually left out. [3]",
+            marks: 3,
+            modelAnswer:
+              "Decomposers (bacteria and fungi) break down dead organic matter and waste, releasing mineral ions (such as nitrate) back into the soil for producers to reabsorb, recycling nutrients. They are usually left out of food chains because they feed on dead material from every trophic level rather than fitting neatly into a single linear position in the chain.",
+            markScheme: [
+              "Decomposers break down dead organisms / waste (1)",
+              "Release mineral ions / nutrients back into the soil for producers / recycle nutrients (1)",
+              "Left out because they act on dead matter from all trophic levels / do not fit one position (1)",
+            ],
+            commonError:
+              "Calling decomposers 'producers'. They are not producers — they obtain energy from dead organic matter, not from light.",
+            guideRef: "Food Chains, Food Webs & Trophic Levels",
+            difficulty: "core",
+            hints: [
+              "What do decomposers do to dead bodies and waste?",
+              "Where do the released minerals go and who uses them?",
+              "Why can't a decomposer be placed at a single trophic level?",
+            ],
+          },
+          {
+            id: "bio-ecology-bq1-07",
+            question:
+              "Two bird species in a wood both feed on the same insects in the same trees. Predict and explain the likely long-term outcome in terms of niches and competition. [4]",
+            marks: 4,
+            modelAnswer:
+              "The two species would be attempting to occupy the same niche, so they would compete intensely for the same food. Because no two species can occupy exactly the same niche indefinitely, one of three things tends to happen: the better-adapted species outcompetes the other, which declines or is excluded from that area; or natural selection favours individuals that use slightly different resources (e.g. feeding at different heights or times), so the niches diverge and the species partition the resource and coexist. Either way, the intense overlap cannot persist unchanged.",
+            markScheme: [
+              "They occupy the same / overlapping niche so compete strongly for the same resource (1)",
+              "No two species can occupy exactly the same niche indefinitely (1)",
+              "One species may be outcompeted / excluded / decline (1)",
+              "OR natural selection leads to resource partitioning / niche divergence so they coexist (1)",
+            ],
+            commonError:
+              "Concluding only that 'they share the food happily' — the principle is that identical niches lead to competitive exclusion or divergence.",
+            guideRef: "Ecosystem Vocabulary",
+            difficulty: "challenge",
+            hints: [
+              "Start from the rule about two species and one niche.",
+              "Intense competition has winners and losers.",
+              "Alternatively, the species might change how they use the resource.",
+            ],
+            strategy: "Give both possible outcomes (exclusion or divergence) for full marks.",
+          },
+          {
+            id: "bio-ecology-bq1-08",
+            question:
+              "Abiotic and biotic factors both affect the size of a population. Define each type of factor and give two examples of each that could limit a population of water snails in a pond. [4]",
+            marks: 4,
+            modelAnswer:
+              "Abiotic factors are non-living, physical or chemical features of the environment. For water snails, two examples are the temperature of the water and the concentration of dissolved oxygen (or pH/light). Biotic factors are the living influences from other organisms. For water snails, two examples are predation (e.g. by fish or birds) and competition for food/algae with other grazers (or disease/parasitism).",
+            markScheme: [
+              "Abiotic = non-living / physical / chemical factor (1)",
+              "Two suitable abiotic examples (temperature, dissolved O₂, pH, light, mineral availability) (1)",
+              "Biotic = living factor / caused by other organisms (1)",
+              "Two suitable biotic examples (predation, competition, disease, parasitism) (1)",
+            ],
+            commonError:
+              "Listing 'water' or 'food' without classifying correctly, or giving predators as abiotic. Predation and competition are biotic; temperature and oxygen are abiotic.",
+            guideRef: "Ecosystem Vocabulary",
+            difficulty: "challenge",
+            hints: [
+              "Abiotic means non-living; biotic means living.",
+              "Temperature and oxygen are physical/chemical — which category?",
+              "Predators and competitors are other organisms — which category?",
+            ],
+            strategy: "Sort each example as living or non-living before writing it down.",
+          },
+          {
+            id: "bio-ecology-bq1-09",
+            question:
+              "An oak tree (1 individual) supports 4000 caterpillars, which support 60 blue tits, which support 3 sparrowhawks.\n(a) Sketch in words the shape of the pyramid of NUMBERS and explain why it is not a regular pyramid. [3]\n(b) Explain why a pyramid of BIOMASS for the same community would be a regular upright pyramid. [2]",
+            marks: 5,
+            modelAnswer:
+              "(a) The pyramid of numbers has a very narrow base because there is only one producer (the oak tree), then a much wider bar at TL2 (4000 caterpillars), narrowing again at TL3 (60 blue tits) and TL4 (3 sparrowhawks). It is irregular because pyramids of numbers count individuals regardless of size, and one huge producer can support thousands of small consumers.\n\n(b) A pyramid of biomass measures the total dry mass at each level. The single oak tree has a very large mass, far greater than the total mass of the caterpillars, which is greater than the blue tits, which is greater than the sparrowhawks. So the bars decrease going up, giving a regular upright pyramid.",
+            markScheme: [
+              "(a) Narrow base (1 producer) then much wider TL2 / describes irregular widening (1)",
+              "(a) Pyramid of numbers counts individuals regardless of size (1)",
+              "(a) One large producer supports many small consumers, so shape is irregular (1)",
+              "(b) Biomass = total (dry) mass; the oak's mass exceeds that of all caterpillars etc. (1)",
+              "(b) Mass decreases at each level so it is a regular upright pyramid (1)",
+            ],
+            commonError:
+              "Confusing numbers with biomass. A single large tree gives a tiny NUMBER bar but a huge BIOMASS bar — that is why the two pyramids look different.",
             guideRef: "Energy Flow & Pyramids",
             difficulty: "challenge",
             hints: [
-              "Efficiency = (output / input) × 100 — make sure you divide TL2 by TL1, not the other way.",
-              "For part (b), name specific routes: what happens to energy that is eaten but not digested?",
-              "For part (c), think about what 'standing crop' means versus total production over a year.",
-              "Phytoplankton cell division times can be as short as a few hours — how does this affect their numbers at any given moment?",
+              "Pyramid of numbers ignores size — count the individuals.",
+              "One oak = 1 individual but a very large mass.",
+              "Biomass orders the levels by total mass, not count.",
             ],
-            strategy: "Show formula, substitution, and answer with units. Distinguish standing crop from production rate.",
+            strategy: "Separate the idea of 'how many' (numbers) from 'how much mass' (biomass).",
+          },
+          {
+            id: "bio-ecology-bq1-10",
+            question:
+              "Explain why most food chains contain no more than four or five trophic levels. [3]",
+            marks: 3,
+            modelAnswer:
+              "At each trophic level a large proportion of energy (around 90%) is lost — as heat from respiration, in undigested egested material, and in excretory waste. Only about 10% is passed to the next level. After several transfers, so little energy remains that it cannot support the metabolic needs of a further trophic level, so chains are limited to about four or five links.",
+            markScheme: [
+              "Energy is lost at each trophic level (heat from respiration / egestion / excretion) (1)",
+              "Only about 10% / a small proportion passes to the next level (1)",
+              "After several steps too little energy remains to support another level (1)",
+            ],
+            commonError:
+              "Saying 'predators get too big' — the limit is set by ENERGY availability, not body size.",
+            guideRef: "Energy Flow & Pyramids",
+            difficulty: "core",
+            hints: [
+              "How much energy passes to each successive level?",
+              "List the routes by which energy is lost.",
+              "What runs out after several transfers?",
+            ],
+          },
+        ],
+      },
+      // ── QA PAPER 2 ── energy flow, pyramids, % transfer calculations
+      {
+        id: "bio-ecology-bankqa-2",
+        title: "Question Bank — Structured Paper 2",
+        description: "Energy flow, energy losses, ecological pyramids, and percentage transfer calculations.",
+        questions: [
+          {
+            id: "bio-ecology-bq2-01",
+            question:
+              "State the principal source of energy for ecosystems and describe how this energy first enters the living part of an ecosystem. [2]",
+            marks: 2,
+            modelAnswer:
+              "The principal source of energy is the Sun (sunlight). It enters the living part of the ecosystem when producers (plants and algae) absorb light and use it in photosynthesis to make chemical energy stored in organic molecules such as glucose.",
+            markScheme: [
+              "The Sun / sunlight (1)",
+              "Producers absorb light and convert it to chemical energy by photosynthesis (1)",
+            ],
+            commonError:
+              "Saying energy enters 'through the soil' or 'from minerals' — energy enters through producers via photosynthesis of sunlight.",
+            guideRef: "Energy Flow & Pyramids",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-ecology-bq2-02",
+            question:
+              "List three ways in which energy is lost between one trophic level and the next. [3]",
+            marks: 3,
+            modelAnswer:
+              "Energy is lost as heat released during respiration (including heat from movement and, in mammals/birds, maintaining body temperature); in undigested material egested as faeces; and in nitrogenous waste removed by excretion (e.g. urea).",
+            markScheme: [
+              "Heat from respiration / movement / maintaining body temperature (1)",
+              "Egestion / undigested material lost in faeces (1)",
+              "Excretion / nitrogenous waste / urea (1)",
+            ],
+            commonError:
+              "Writing 'energy is lost when organisms die' — the standard routes are respiration (heat), egestion and excretion.",
+            guideRef: "Energy Flow & Pyramids",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-ecology-bq2-03",
+            question:
+              "Producers in a meadow fix 90 000 kJ/m²/yr. The primary consumers contain 9000 kJ/m²/yr and the secondary consumers contain 720 kJ/m²/yr.\n(a) Calculate the percentage energy transfer from producers to primary consumers. [2]\n(b) Calculate the percentage energy transfer from primary to secondary consumers. [2]",
+            marks: 4,
+            modelAnswer:
+              "(a) Percentage transfer = (9000 ÷ 90 000) × 100 = 10%.\n\n(b) Percentage transfer = (720 ÷ 9000) × 100 = 8%.",
+            markScheme: [
+              "(a) Correct method (9000 ÷ 90 000 × 100) (1)",
+              "(a) = 10% (1)",
+              "(b) Correct method (720 ÷ 9000 × 100) (1)",
+              "(b) = 8% (1)",
+            ],
+            commonError:
+              "Dividing the wrong way round (90 000 ÷ 9000) — always divide the energy RECEIVED by the energy AVAILABLE in the level below.",
+            guideRef: "Energy Flow & Pyramids",
+            difficulty: "core",
+            hints: [
+              "Percentage transfer = (energy in upper level ÷ energy in lower level) × 100.",
+              "For (a) use 9000 and 90 000.",
+              "For (b) use 720 and 9000.",
+            ],
+            strategy: "Always put the smaller (upper-level) value on top of the fraction.",
             solutions: [
               {
-                label: "Efficiency calculation",
+                label: "Step-by-step percentages",
                 steps: [
-                  "Efficiency (%) = (energy transferred to next level / energy at current level) × 100",
-                  "= (45 000 / 500 000) × 100",
-                  "= 0.09 × 100",
-                  "= 9%",
+                  "(a) Fraction transferred = 9000 ÷ 90 000 = 0.10",
+                  "(a) × 100 = 10%",
+                  "(b) Fraction transferred = 720 ÷ 9000 = 0.08",
+                  "(b) × 100 = 8%",
                 ],
               },
             ],
           },
           {
-            id: "bio-ecology-bank-qa1-q03",
+            id: "bio-ecology-bq2-04",
             question:
-              "Describe the role of decomposers in both the carbon cycle and the nitrogen cycle. [5]",
+              "A food chain is: maize → cattle → human. The maize stores 500 000 kJ/m². Transfer efficiency is 10% at each step.\n(a) Calculate the energy available to humans who eat the cattle. [2]\n(b) Calculate the energy available to humans if they eat the maize directly. [1]\n(c) Use your answers to explain why feeding a growing human population is easier with a more plant-based diet. [2]",
             marks: 5,
             modelAnswer:
-              "In the carbon cycle, decomposers (bacteria and fungi) break down dead organic matter and excretory products through the process of decomposition. " +
-              "They respire aerobically, releasing CO₂ back into the atmosphere. " +
-              "This returns carbon from dead organisms to the atmosphere as carbon dioxide.\n\n" +
-              "In the nitrogen cycle, decomposers break down proteins and other nitrogen-containing organic compounds in dead organisms and excretory products into ammonium ions (NH₄⁺). " +
-              "This process is called ammonification (or saprotrophic nutrition). " +
-              "The ammonium ions are then available for nitrifying bacteria to convert into nitrate, which plants can absorb.",
+              "(a) Cattle (TL2) = 500 000 × 0.1 = 50 000 kJ/m². Humans eating cattle (TL3) = 50 000 × 0.1 = 5000 kJ/m².\n\n(b) Humans eating maize directly (TL2) = 500 000 × 0.1 = 50 000 kJ/m².\n\n(c) Eating the maize directly gives 50 000 kJ/m², ten times more than the 5000 kJ/m² obtained by eating cattle. Removing the cattle trophic level avoids one 90% energy loss, so far more food energy is available to support a larger human population.",
             markScheme: [
-              "Carbon cycle: decomposers break down dead organic matter",
-              "Carbon cycle: release CO₂ through respiration / decomposition",
-              "Nitrogen cycle: decomposers break down proteins / nitrogen-containing compounds in dead organisms",
-              "Nitrogen cycle: produce / release ammonium ions (NH₄⁺) / ammonification",
-              "Nitrogen cycle: ammonium ions can be converted to nitrate by nitrifying bacteria for plant uptake",
+              "(a) Two steps of ×0.1 shown / 500 000 × 0.1 × 0.1 (1)",
+              "(a) = 5000 kJ/m² (1)",
+              "(b) = 50 000 kJ/m² (1)",
+              "(c) Eating plants gives ~10× more energy / avoids one trophic level loss (1)",
+              "(c) More energy/food available so more people can be fed (1)",
             ],
             commonError:
-              "Students often confuse decomposers with nitrifying bacteria — decomposers produce ammonium; nitrifying bacteria then convert ammonium to nitrate.",
-            guideRef: "The Carbon Cycle & The Nitrogen Cycle",
+              "Applying 10% only once for the cattle route, or forgetting that eating the maize directly is still ONE transfer (producer to human), not zero.",
+            guideRef: "Energy Flow & Pyramids",
             difficulty: "core",
             hints: [
-              "In the carbon cycle, what gas do decomposers release when they respire?",
-              "In the nitrogen cycle, proteins contain nitrogen — what simpler molecule is produced when decomposers break proteins down?",
+              "Count the arrows: maize→cattle→human is two transfers; maize→human is one.",
+              "Apply ×0.1 once for each arrow.",
+              "Compare the two final figures to answer (c).",
             ],
-            strategy: "Deal with each cycle separately; name the process and the product.",
+            strategy: "Show every ×0.1 step and keep the units kJ/m².",
+            solutions: [
+              {
+                label: "Energy down each route",
+                steps: [
+                  "Maize (TL1) = 500 000 kJ/m²",
+                  "(a) Cattle (TL2) = 500 000 × 0.1 = 50 000 kJ/m²",
+                  "(a) Human eating cattle (TL3) = 50 000 × 0.1 = 5000 kJ/m²",
+                  "(b) Human eating maize (TL2) = 500 000 × 0.1 = 50 000 kJ/m²",
+                  "Ratio = 50 000 ÷ 5000 = 10 times more energy",
+                ],
+              },
+            ],
           },
           {
-            id: "bio-ecology-bank-qa1-q04",
+            id: "bio-ecology-bq2-05",
             question:
-              "A scientist claims: 'If humans ate more plant-based food and less meat, the same area of farmland could feed more people.' " +
-              "Use your knowledge of energy transfer in food chains to evaluate this claim. [4]",
+              "Explain why a pyramid of energy is ALWAYS a regular upright pyramid, whereas a pyramid of numbers can be irregular. [4]",
             marks: 4,
             modelAnswer:
-              "The claim is correct. When humans eat meat, they are at a higher trophic level (TL3 or TL4 in some cases) compared with eating plants directly (TL2). " +
-              "At each trophic level, approximately 90% of energy is lost (as heat through respiration, egestion, and movement). " +
-              "This means that producing 1 kg of beef requires far more plant material (and farmland) than producing 1 kg of plant food for direct human consumption. " +
-              "By eating lower on the food chain, humans capture more of the energy originally fixed by producers, meaning the same area of land can support more people.",
+              "A pyramid of energy shows the energy transferred per unit area per unit time. Because energy is lost at every trophic level (as heat in respiration, egestion and excretion) and can never be gained, each level always contains less energy than the one below, so the bars always decrease going up — a regular upright pyramid. A pyramid of numbers counts individuals regardless of their size, so a single large producer (e.g. one tree) can support thousands of small consumers; this makes the number bars irregular and sometimes wider higher up.",
             markScheme: [
-              "Eating meat = higher trophic level than eating plants",
-              "~90% of energy is lost at each trophic level (respiration/egestion/heat)",
-              "More energy/biomass available to humans when eating plants directly (fewer transfers)",
-              "Therefore the same area of land can feed more people on a plant-based diet",
+              "Pyramid of energy measures energy flow per area per time (1)",
+              "Energy is always lost at each level and cannot be gained, so energy always decreases upward (1)",
+              "Therefore energy pyramid is always a regular/upright pyramid (1)",
+              "Pyramid of numbers counts individuals regardless of size, so it can be irregular (e.g. one tree → many insects) (1)",
             ],
             commonError:
-              "Vague answers stating 'meat wastes energy' without quantifying or explaining which trophic levels are involved.",
+              "Saying numbers pyramids are 'always inverted'. They can be irregular in either direction; the key point is that they ignore organism size.",
+            guideRef: "Energy Flow & Pyramids",
+            difficulty: "core",
+            hints: [
+              "What does an energy pyramid measure, and why can it only decrease?",
+              "Energy cannot be created, only lost as you move up.",
+              "Why does counting individuals give a misleading shape?",
+            ],
+          },
+          {
+            id: "bio-ecology-bq2-06",
+            question:
+              "An ecologist wants to compare the biomass of plankton and fish in a lake. Explain why she measures DRY mass rather than fresh (wet) mass, and state one disadvantage of using dry mass. [3]",
+            marks: 3,
+            modelAnswer:
+              "Fresh mass includes water, and the amount of water in organisms varies greatly between species and over time, so fresh mass gives an unreliable, inconsistent comparison. Dry mass is measured after all the water is removed, so it reflects only the organic material and allows a fair comparison between trophic levels. One disadvantage is that the organisms must be killed (and dried) to measure dry mass, so it is destructive and only a sample can be taken.",
+            markScheme: [
+              "Water content varies between organisms / over time, making fresh mass unreliable (1)",
+              "Dry mass removes water so reflects actual organic material / gives fair comparison (1)",
+              "Disadvantage: organisms must be killed/dried / destructive / only a sample can be used (1)",
+            ],
+            commonError:
+              "Saying dry mass 'measures the water' — it is the opposite: water is removed first.",
             guideRef: "Energy Flow & Pyramids",
             difficulty: "challenge",
             hints: [
-              "Draw a simple food chain: plant → cow → human. At which trophic level is each organism?",
-              "What happens at each arrow in the chain?",
-              "If 10% is transferred at each step, how much energy reaches a human eating a plant versus eating a cow that ate a plant?",
+              "Why is the water content of organisms a problem for comparisons?",
+              "Dry mass leaves only the organic material.",
+              "Think about what you must do to an organism to dry it fully.",
             ],
-            strategy: "Quantify the argument using the 10% rule; compare trophic levels explicitly.",
+            strategy: "Give the reason FOR dry mass and one drawback, as the question demands both.",
+          },
+          {
+            id: "bio-ecology-bq2-07",
+            question:
+              "A pond pyramid of biomass is inverted: phytoplankton biomass is smaller than the zooplankton biomass above it. Explain how this is possible without breaking the rule that energy always decreases up a food chain. [4]",
+            marks: 4,
+            modelAnswer:
+              "Biomass is the mass present at a single moment (the standing crop). Phytoplankton reproduce very rapidly and are eaten almost as fast as they grow, so the mass present at any instant is small, even though a large total mass is produced over time. The zooplankton are larger and longer-lived, so more of their mass is present at once, giving an inverted biomass pyramid. Over time, however, the total energy produced by the phytoplankton is still greater than that reaching the zooplankton, so a pyramid of energy (measured per unit time) remains upright — no energy rule is broken.",
+            markScheme: [
+              "Biomass is a snapshot / standing crop at one moment (1)",
+              "Phytoplankton have a high turnover / reproduce and are eaten very fast (1)",
+              "So little phytoplankton mass is present at any instant (lower than zooplankton) (1)",
+              "Energy measured over time is still greater at the producer level, so energy pyramid stays upright (1)",
+            ],
+            commonError:
+              "Claiming energy is 'created' at the zooplankton level. Energy is not created — the inversion is only a snapshot of mass, not of energy flow over time.",
+            guideRef: "Energy Flow & Pyramids",
+            difficulty: "challenge",
+            hints: [
+              "Distinguish a snapshot of mass from a flow of energy over time.",
+              "Phytoplankton turnover is extremely fast.",
+              "What does an energy pyramid measure that a biomass snapshot does not?",
+            ],
+            strategy: "Use the words 'standing crop' (snapshot) versus 'energy per unit time' (flow).",
+          },
+          {
+            id: "bio-ecology-bq2-08",
+            question:
+              "A grassland fixes 1 000 000 kJ/m²/yr in producers. Transfer efficiency is 10% per step.\n(a) Calculate the energy reaching the THIRD trophic level. [2]\n(b) A farmer wants to feed more people from this land. Suggest, with a reason, whether they should raise sheep (which eat grass) or grow vegetables for people to eat. [2]",
+            marks: 4,
+            modelAnswer:
+              "(a) TL2 = 1 000 000 × 0.1 = 100 000 kJ/m²/yr. TL3 = 100 000 × 0.1 = 10 000 kJ/m²/yr.\n\n(b) They should grow vegetables for people to eat. Vegetables make people primary consumers (TL2), one transfer from the producers, whereas eating sheep makes people secondary consumers (TL3), losing another ~90% of the energy. The shorter food chain means far more food energy is available, so more people can be fed.",
+            markScheme: [
+              "(a) 1 000 000 × 0.1 × 0.1 / shows two steps (1)",
+              "(a) = 10 000 kJ/m²/yr (1)",
+              "(b) Grow vegetables / shorter food chain chosen (1)",
+              "(b) Fewer transfers means less energy lost / more food energy available to feed people (1)",
+            ],
+            commonError:
+              "Stopping at TL2 for part (a). The third trophic level needs TWO ×0.1 steps from the producers.",
+            guideRef: "Energy Flow & Pyramids",
+            difficulty: "core",
+            hints: [
+              "Producer to third level is two ×0.1 steps.",
+              "Which option makes humans the lower trophic level?",
+              "Shorter chain = less energy lost.",
+            ],
+            strategy: "Tie the calculation to the food-supply argument.",
+            solutions: [
+              {
+                label: "Energy to the third level",
+                steps: [
+                  "TL1 producers = 1 000 000 kJ/m²/yr",
+                  "TL2 = 1 000 000 × 0.1 = 100 000 kJ/m²/yr",
+                  "TL3 = 100 000 × 0.1 = 10 000 kJ/m²/yr",
+                ],
+              },
+            ],
+          },
+          {
+            id: "bio-ecology-bq2-09",
+            question:
+              "Explain, in terms of energy, why intensive farming methods such as keeping animals warm and limiting their movement can increase meat production. [3]",
+            marks: 3,
+            modelAnswer:
+              "Energy taken in by farm animals is normally lost as heat from respiration, including the energy used to maintain body temperature and to move around. Keeping the animals warm means less of their food energy is used to generate body heat, and restricting movement reduces the energy used in muscle activity. More of the energy from food is therefore converted into new body tissue (growth), increasing meat yield from the same amount of feed.",
+            markScheme: [
+              "Energy is normally lost as heat (respiration) and in movement (1)",
+              "Keeping warm / limiting movement reduces these energy losses (1)",
+              "More energy goes into growth / new tissue, so more meat is produced (1)",
+            ],
+            commonError:
+              "Saying the animal 'gains energy' — it does not gain energy; it simply LOSES less, so more is available for growth.",
+            guideRef: "Energy Flow & Pyramids",
+            difficulty: "challenge",
+            hints: [
+              "Where does an animal's food energy normally go besides growth?",
+              "Heat loss and movement both use energy.",
+              "Reduce those losses and more energy is left for tissue.",
+            ],
+            strategy: "Frame it as 'less energy lost = more energy for growth'.",
+          },
+          {
+            id: "bio-ecology-bq2-10",
+            question:
+              "The energy in a pyramid is: TL1 = 12 000 kJ, TL2 = 1080 kJ, TL3 = 108 kJ.\n(a) Calculate the percentage efficiency of transfer at each step. [2]\n(b) Comment on whether the transfer efficiencies are typical. [1]",
+            marks: 3,
+            modelAnswer:
+              "(a) TL1 → TL2: (1080 ÷ 12 000) × 100 = 9%. TL2 → TL3: (108 ÷ 1080) × 100 = 10%.\n\n(b) Both efficiencies (9% and 10%) are close to the typical ‘about 10%’ rule of thumb for energy transfer between trophic levels, so they are typical.",
+            markScheme: [
+              "(a) TL1→TL2 = 9% (1080 ÷ 12 000 × 100) (1)",
+              "(a) TL2→TL3 = 10% (108 ÷ 1080 × 100) (1)",
+              "(b) Both close to the typical ~10% transfer / yes typical (1)",
+            ],
+            commonError:
+              "Calculating one overall efficiency from TL1 to TL3 instead of each step separately.",
+            guideRef: "Energy Flow & Pyramids",
+            difficulty: "core",
+            hints: [
+              "Do each adjacent pair separately.",
+              "Step 1 uses 1080 and 12 000; step 2 uses 108 and 1080.",
+              "Compare your answers with the ‘about 10%’ rule.",
+            ],
+            strategy: "Treat each transfer as its own division.",
+            solutions: [
+              {
+                label: "Two separate transfers",
+                steps: [
+                  "TL1 → TL2: 1080 ÷ 12 000 = 0.09 → 9%",
+                  "TL2 → TL3: 108 ÷ 1080 = 0.10 → 10%",
+                  "Both ≈ 10%, the typical value",
+                ],
+              },
+            ],
           },
         ],
       },
+      // ── QA PAPER 3 ── carbon cycle, nitrogen cycle, decomposition, populations
       {
-        id: "bio-ecology-bank-qa-2",
-        title: "Structured Questions Paper 2 — Human Impact & Biotechnology",
-        description: "Covers eutrophication, greenhouse effect, conservation, and genetic modification.",
+        id: "bio-ecology-bankqa-3",
+        title: "Question Bank — Structured Paper 3",
+        description: "Carbon and nitrogen cycles, decomposition, nutrient recycling, and population factors.",
         questions: [
           {
-            id: "bio-ecology-bank-qa2-q01",
+            id: "bio-ecology-bq3-01",
             question:
-              "A river receives run-off from a nearby farm that uses large amounts of nitrogen-based fertiliser.\n\n" +
-              "(a) Describe and explain the sequence of events that leads to fish death in the river. [5]\n" +
-              "(b) Suggest TWO ways farmers could reduce fertiliser run-off. [2]",
-            marks: 7,
+              "Name the two processes that REMOVE carbon dioxide from the atmosphere and return it, and state which organisms carry out the removal process. [3]",
+            marks: 3,
             modelAnswer:
-              "(a) Excess nitrates from fertiliser are washed by rain into the river (leaching/run-off). " +
-              "The nitrates cause rapid growth of algae on the water surface (algal bloom). " +
-              "The algal bloom prevents light from penetrating to submerged aquatic plants, which can no longer photosynthesise and die. " +
-              "Bacteria decompose the dead plants and reproduce rapidly, consuming dissolved oxygen through aerobic respiration. " +
-              "Dissolved oxygen levels fall below the level needed to sustain fish and other aerobic organisms, which suffocate and die.\n\n" +
-              "(b) Any two from: apply fertiliser at times of low rainfall / when rain is not forecast; use slow-release fertilisers; apply only the recommended amount; create buffer strips of vegetation along riverbanks to absorb run-off; test soil before applying fertiliser to avoid over-application.",
+              "Photosynthesis removes carbon dioxide from the atmosphere; it is carried out by producers (green plants and algae). Respiration (by all living organisms) and combustion (burning of fuels) return carbon dioxide to the atmosphere.",
             markScheme: [
-              "(a) Nitrate/fertiliser run-off / leaching into river",
-              "(a) Algal bloom on surface / rapid algal growth",
-              "(a) Light blocked from reaching submerged plants",
-              "(a) Submerged plants die",
-              "(a) Bacteria decompose plants / bacteria multiply / bacteria use O2 for respiration",
-              "(a) Dissolved O2 decreases / deoxygenation",
-              "(a) Fish die / suffocate",
-              "(b) Any TWO suitable strategies from model answer (1 mark each)",
+              "Photosynthesis removes CO₂ (1)",
+              "Carried out by producers / plants / algae (1)",
+              "Respiration and/or combustion return CO₂ (1)",
             ],
             commonError:
-              "Saying algae directly kill fish — the mechanism is via oxygen depletion by decomposing bacteria, not direct toxicity from algae.",
-            guideRef: "Human Impact on the Environment",
-            difficulty: "core",
-            hints: [
-              "Focus on the oxygen level — what does it do and why?",
-              "Which organisms are responsible for the oxygen depletion?",
-              "For (b): think about timing, quantity, and preventing water contact.",
-            ],
-            strategy: "Use SEQUENCE language: first → then → as a result → finally.",
+              "Saying respiration removes CO₂ — respiration RELEASES it. Only photosynthesis removes CO₂ from the air.",
+            guideRef: "The Carbon Cycle & The Nitrogen Cycle",
+            difficulty: "warmup",
           },
           {
-            id: "bio-ecology-bank-qa2-q02",
+            id: "bio-ecology-bq3-02",
             question:
-              "Describe how burning fossil fuels contributes to climate change. Include the role of greenhouse gases in your answer. [5]",
-            marks: 5,
+              "State the form in which plants take up nitrogen, and explain why plants need nitrogen. [3]",
+            marks: 3,
             modelAnswer:
-              "Burning fossil fuels releases carbon dioxide (and other gases such as methane) into the atmosphere. " +
-              "CO₂ is a greenhouse gas: it absorbs outgoing infrared radiation (long-wave radiation) emitted by the Earth's surface, and re-radiates it in all directions, including back towards Earth. " +
-              "This warms the Earth's surface — the natural greenhouse effect. " +
-              "Human activities have increased atmospheric CO₂ concentration significantly above pre-industrial levels, enhancing the greenhouse effect. " +
-              "The enhanced greenhouse effect causes the average global temperature to rise (global warming). " +
-              "Consequences of this include melting ice caps, rising sea levels, more frequent extreme weather events, and shifts in species distributions and habitats.",
+              "Plants take up nitrogen as nitrate ions (NO₃⁻) from the soil through their roots. They need nitrogen to make amino acids, which are joined to form proteins (including enzymes), and other nitrogen-containing molecules such as DNA and chlorophyll. Proteins are essential for growth and healthy development.",
             markScheme: [
-              "Burning fossil fuels releases CO₂ (and/or methane) into atmosphere",
-              "Greenhouse gases absorb outgoing infrared/heat radiation from Earth",
-              "Re-radiate it back towards Earth / in all directions",
-              "Enhanced greenhouse effect / greater warming than natural level",
-              "Average global temperature increases (global warming)",
-              "Any ONE consequence: sea level rise; extreme weather; species distribution changes; ice caps melting",
+              "Taken up as nitrate ions (NO₃⁻) (1)",
+              "Used to make amino acids / proteins (1)",
+              "Proteins needed for growth / enzymes / (also DNA, chlorophyll) (1)",
             ],
             commonError:
-              "Saying greenhouse gases 'trap the Sun's rays coming in' — they actually absorb OUTGOING infrared radiation from Earth's surface, not incoming solar radiation.",
-            guideRef: "Human Impact on the Environment",
-            difficulty: "core",
-            hints: [
-              "The key is the direction of radiation — is CO₂ affecting incoming or outgoing radiation?",
-              "What is the difference between the natural greenhouse effect and the enhanced greenhouse effect?",
-            ],
-            strategy: "Flow: fuel burned → CO₂ released → IR absorbed → heat retained → temperature rises → consequences.",
+              "Saying plants absorb nitrogen gas (N₂). Plants cannot use N₂ directly; they absorb nitrate ions.",
+            guideRef: "The Carbon Cycle & The Nitrogen Cycle",
+            difficulty: "warmup",
           },
           {
-            id: "bio-ecology-bank-qa2-q03",
+            id: "bio-ecology-bq3-03",
             question:
-              "Evaluate the use of GM crops that are resistant to herbicides. Include both potential benefits and concerns in your answer. [6]",
+              "Describe the role of decomposers in both the carbon cycle and the nitrogen cycle. [4]",
+            marks: 4,
+            modelAnswer:
+              "In the carbon cycle, decomposers (bacteria and fungi) break down dead organisms and waste, and as they respire they release carbon dioxide back into the atmosphere. In the nitrogen cycle, decomposers break down proteins and other nitrogen compounds in dead matter and waste, releasing ammonium ions (ammonification). These ammonium ions can then be converted to nitrate by nitrifying bacteria and reabsorbed by plants, recycling the nitrogen.",
+            markScheme: [
+              "Decomposers break down dead organisms / waste (1)",
+              "Carbon cycle: respiration of decomposers releases CO₂ (1)",
+              "Nitrogen cycle: break down proteins to release ammonium ions / ammonification (1)",
+              "Ammonium can be converted to nitrate (nitrification) and reabsorbed by plants (1)",
+            ],
+            commonError:
+              "Only mentioning one cycle. The question asks for the decomposers' role in BOTH carbon and nitrogen cycles.",
+            guideRef: "The Carbon Cycle & The Nitrogen Cycle",
+            difficulty: "core",
+            hints: [
+              "What gas do decomposers release when they respire?",
+              "What nitrogen compound do they release from dead protein?",
+              "How does that nitrogen get back to plants?",
+            ],
+          },
+          {
+            id: "bio-ecology-bq3-04",
+            question:
+              "Explain the roles of nitrogen-fixing bacteria, nitrifying bacteria and denitrifying bacteria in the nitrogen cycle. [4]",
+            marks: 4,
+            modelAnswer:
+              "Nitrogen-fixing bacteria (e.g. Rhizobium in root nodules, or free-living bacteria) convert atmospheric nitrogen gas (N₂) into ammonium ions/nitrogen compounds that organisms can use. Nitrifying bacteria convert ammonium ions into nitrite and then nitrate (nitrification), the form plants absorb. Denitrifying bacteria, in anaerobic/waterlogged soils, convert nitrate back into nitrogen gas (denitrification), returning nitrogen to the atmosphere and reducing soil fertility.",
+            markScheme: [
+              "Nitrogen-fixing bacteria: convert N₂ gas to ammonium / nitrogen compounds (1)",
+              "Nitrifying bacteria: convert ammonium → nitrite → nitrate (1)",
+              "Plants absorb nitrate / nitrate is the usable form (1)",
+              "Denitrifying bacteria: convert nitrate → N₂ gas (in anaerobic soil) (1)",
+            ],
+            commonError:
+              "Mixing up nitrification and nitrogen fixation. Fixation makes ammonium from N₂; nitrification makes nitrate from ammonium.",
+            guideRef: "The Carbon Cycle & The Nitrogen Cycle",
+            difficulty: "core",
+            hints: [
+              "Fixation starts from nitrogen GAS.",
+              "Nitrification ends at NITRATE for plants.",
+              "Denitrification puts nitrogen back into the air.",
+            ],
+            strategy: "Pair each bacterium with its specific conversion.",
+          },
+          {
+            id: "bio-ecology-bq3-05",
+            question:
+              "A gardener finds that a warm, moist, well-aerated compost heap rots much faster than a cold, dry, compacted one. Explain how temperature, moisture and oxygen each affect the rate of decomposition. [4]",
+            marks: 4,
+            modelAnswer:
+              "Warmth increases the rate of decomposition because decomposers' enzymes and respiration work faster at higher temperatures (up to an optimum), so they break matter down more quickly. Moisture is needed because decomposers require water for their reactions and to dissolve and absorb nutrients; a dry heap slows their activity. Oxygen is needed for aerobic respiration of the decomposers, providing the energy for growth and breakdown; a well-aerated heap supplies oxygen, whereas a compacted, anaerobic heap rots slowly.",
+            markScheme: [
+              "Warmth speeds enzyme activity / respiration of decomposers (up to optimum) (1)",
+              "Moisture/water needed for reactions / nutrient uptake by decomposers (1)",
+              "Oxygen needed for aerobic respiration of decomposers (1)",
+              "Each suitable condition links to a faster rate of breakdown (1)",
+            ],
+            commonError:
+              "Listing the conditions without saying WHY each one speeds decomposers (enzymes, respiration, water for reactions).",
+            guideRef: "The Carbon Cycle & The Nitrogen Cycle",
+            difficulty: "core",
+            hints: [
+              "Decomposers are organisms with enzymes — how does warmth affect enzymes?",
+              "Why do living cells need water?",
+              "Aerobic respiration needs which gas?",
+            ],
+          },
+          {
+            id: "bio-ecology-bq3-06",
+            question:
+              "Explain why growing a crop of clover (a legume) one year can reduce the amount of nitrogen fertiliser a farmer needs the next year. [3]",
+            marks: 3,
+            modelAnswer:
+              "Clover has root nodules containing nitrogen-fixing bacteria (Rhizobium) that convert atmospheric nitrogen gas into nitrogen compounds. When the clover dies and is ploughed in, decomposers break it down, releasing these nitrogen compounds (as ammonium, then nitrate) into the soil. This raises the soil's natural nitrate content, so less artificial nitrogen fertiliser is needed for the next crop.",
+            markScheme: [
+              "Clover/legume root nodules contain nitrogen-fixing bacteria (Rhizobium) (1)",
+              "Bacteria fix N₂ into nitrogen compounds / ammonium (1)",
+              "Decomposition of clover releases nitrate/nitrogen into soil, raising fertility (1)",
+            ],
+            commonError:
+              "Saying the clover 'absorbs' nitrogen from the air through its leaves. It is the bacteria in the ROOT NODULES that fix nitrogen.",
+            guideRef: "The Carbon Cycle & The Nitrogen Cycle",
+            difficulty: "challenge",
+            hints: [
+              "What lives in a legume's root nodules?",
+              "Those bacteria carry out which process?",
+              "What happens to the fixed nitrogen when the clover decomposes?",
+            ],
+            strategy: "Connect fixation in the living plant to release on decomposition.",
+          },
+          {
+            id: "bio-ecology-bq3-07",
+            question:
+              "State three factors that can increase the size of a population and three that can decrease it. [3]",
+            marks: 3,
+            modelAnswer:
+              "Factors that increase a population include: more available food, fewer predators, more breeding sites/space, an absence of disease, or a suitable climate. Factors that decrease a population include: shortage of food, more predators, disease, competition, and unfavourable abiotic conditions (e.g. drought or extreme temperature).",
+            markScheme: [
+              "Three valid increasing factors (more food, fewer predators, more space/breeding sites, no disease) (1)",
+              "Three valid decreasing factors (less food, more predators, disease, competition, harsh abiotic conditions) (1)",
+              "Factors correctly assigned to the right effect (1)",
+            ],
+            commonError:
+              "Giving the same factor for both lists without explaining direction — be clear whether more or less of the factor is meant.",
+            guideRef: "Ecosystem Vocabulary",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-ecology-bq3-08",
+            question:
+              "Graphs of a predator (lynx) and its prey (hare) over many years show repeating cycles, with the lynx peaks lagging just behind the hare peaks. Explain the cause of this pattern. [4]",
+            marks: 4,
+            modelAnswer:
+              "When hare numbers rise, there is more food for lynx, so more lynx survive and reproduce — but this takes time, so the lynx population peaks shortly AFTER the hare peak (a time lag). The increased number of lynx then eat more hares, so the hare population falls. With fewer hares, food becomes scarce for lynx, so the lynx population falls too. Reduced predation then allows hares to recover, and the cycle repeats. The predator and prey populations are linked through food supply and predation, producing the lagged oscillations.",
+            markScheme: [
+              "More hares = more food, so lynx survive/reproduce and increase (1)",
+              "Time lag: lynx peak comes after hare peak because reproduction takes time (1)",
+              "More lynx eat more hares, so hares decline (1)",
+              "Fewer hares = less food, so lynx decline; hares then recover and cycle repeats (1)",
+            ],
+            commonError:
+              "Forgetting the time lag. The key idea is that the predator response is delayed because reproduction is not instant.",
+            guideRef: "Ecosystem Vocabulary",
+            difficulty: "challenge",
+            hints: [
+              "Start with what plenty of prey does for the predator.",
+              "Why can't the predator increase instantly?",
+              "Once predators are abundant, what happens to prey, then back to predators?",
+            ],
+            strategy: "Describe one full loop of the cycle, stressing the time lag.",
+          },
+          {
+            id: "bio-ecology-bq3-09",
+            question:
+              "Carbon can be locked away in fossil fuels for millions of years. Explain how fossil fuels form and how their carbon is suddenly returned to the atmosphere. [3]",
+            marks: 3,
+            modelAnswer:
+              "Fossil fuels (coal, oil, natural gas) form from the remains of organisms that died and were buried in conditions (e.g. low oxygen) that prevented complete decomposition. Over millions of years, heat and pressure converted this organic matter into fossil fuels, locking the carbon away. The carbon is suddenly returned to the atmosphere as carbon dioxide when the fossil fuels are burned (combustion).",
+            markScheme: [
+              "Formed from remains of dead organisms not fully decomposed / buried in low-oxygen conditions (1)",
+              "Heat and pressure over millions of years convert remains to fossil fuels (1)",
+              "Combustion / burning releases the carbon as CO₂ (1)",
+            ],
+            commonError:
+              "Saying fossil fuels form 'quickly' or that respiration releases their carbon — it is combustion that releases fossil-fuel carbon.",
+            guideRef: "The Carbon Cycle & The Nitrogen Cycle",
+            difficulty: "core",
+            hints: [
+              "What conditions stop dead organisms decomposing fully?",
+              "What two physical factors act over millions of years?",
+              "Which process releases the stored carbon rapidly?",
+            ],
+          },
+          {
+            id: "bio-ecology-bq3-10",
+            question:
+              "Lightning and the Haber process both add usable nitrogen to ecosystems without bacteria. Explain how each does so and why this matters for the nitrogen cycle. [3]",
+            marks: 3,
+            modelAnswer:
+              "Lightning provides enough energy to make nitrogen gas (N₂) react with oxygen, forming oxides of nitrogen that dissolve in rain to give nitrates, which are washed into the soil and absorbed by plants. The Haber process (industrial) combines nitrogen and hydrogen to make ammonia, which is used to manufacture nitrogen fertilisers added to soil. Both routes add combined/usable nitrogen to ecosystems alongside the work of nitrogen-fixing bacteria, increasing the nitrate available for plant growth.",
+            markScheme: [
+              "Lightning: energy makes N₂ react (with O₂) forming nitrogen oxides/nitrates washed into soil (1)",
+              "Haber process: makes ammonia → nitrogen fertiliser added to soil (1)",
+              "Both add usable/combined nitrogen (nitrate) for plants, supplementing bacterial fixation (1)",
+            ],
+            commonError:
+              "Assuming all nitrogen fixation is biological. Lightning and the Haber process are non-biological routes that also fix nitrogen.",
+            guideRef: "The Carbon Cycle & The Nitrogen Cycle",
+            difficulty: "challenge",
+            hints: [
+              "What does lightning give that lets unreactive N₂ react?",
+              "The Haber process makes which compound used in fertilisers?",
+              "Both routes end up adding nitrate to the soil.",
+            ],
+            strategy: "Cover both routes and link them to nitrate available for plants.",
+          },
+        ],
+      },
+      // ── QA PAPER 4 ── human impact, pollution, eutrophication, greenhouse, conservation
+      {
+        id: "bio-ecology-bankqa-4",
+        title: "Question Bank — Structured Paper 4",
+        description: "Pollution, eutrophication, deforestation, the greenhouse effect, climate change, and conservation.",
+        questions: [
+          {
+            id: "bio-ecology-bq4-01",
+            question:
+              "State two greenhouse gases and describe two human activities that increase their concentration. [4]",
+            marks: 4,
+            modelAnswer:
+              "Two greenhouse gases are carbon dioxide and methane. Burning fossil fuels (e.g. in power stations and vehicles) increases carbon dioxide. Deforestation increases carbon dioxide (less is removed by photosynthesis and burning timber releases it). Cattle farming and rice paddy fields increase methane. (Any two valid activities.)",
+            markScheme: [
+              "Two greenhouse gases named: carbon dioxide and methane (1)",
+              "Burning fossil fuels increases CO₂ (1)",
+              "Deforestation increases CO₂ (less photosynthesis / burning) (1)",
+              "Cattle / rice paddies increase methane (1) — any two activities credited",
+            ],
+            commonError:
+              "Naming oxygen or nitrogen as greenhouse gases — they are not. The main greenhouse gases are CO₂, methane and water vapour.",
+            guideRef: "Human Impact on the Environment",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-ecology-bq4-02",
+            question:
+              "Describe three harmful effects of deforestation on the environment. [3]",
+            marks: 3,
+            modelAnswer:
+              "Deforestation reduces biodiversity by destroying the habitats of many species. It increases atmospheric carbon dioxide, because fewer trees remove CO₂ by photosynthesis and burning timber releases stored carbon, enhancing the greenhouse effect. It also disrupts the water cycle (less transpiration leads to reduced rainfall) and can cause soil erosion and flooding, as tree roots no longer bind the soil.",
+            markScheme: [
+              "Reduces biodiversity / destroys habitats (1)",
+              "Increases atmospheric CO₂ (less photosynthesis / burning timber) (1)",
+              "Disrupts water cycle / less rainfall, OR soil erosion / flooding (1)",
+            ],
+            commonError:
+              "Only stating 'animals lose homes' — give the named consequences (biodiversity, CO₂, water cycle/erosion) for the marks.",
+            guideRef: "Human Impact on the Environment",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-ecology-bq4-03",
+            question:
+              "Describe the full sequence of eutrophication, from fertiliser use to the death of fish. [6]",
             marks: 6,
             modelAnswer:
-              "Benefits of herbicide-resistant GM crops: Farmers can spray fields with broad-spectrum herbicides that kill all weeds but not the GM crop. " +
-              "This reduces competition from weeds, leading to higher crop yields. " +
-              "Weed control may reduce the need for repeated mechanical tillage, decreasing fuel use and soil erosion. " +
-              "Potentially reduces the total amount of herbicide needed as it can be applied more efficiently.\n\n" +
-              "Concerns: herbicide-resistant genes may transfer to wild related plant species through cross-pollination, creating herbicide-resistant 'superweeds' that are very difficult to control. " +
-              "Broad-spectrum herbicide use may eliminate wildflowers and plants that serve as food and habitat for insects (including pollinators) and birds, reducing biodiversity. " +
-              "Farmers may become dependent on proprietary GM seeds from large corporations, raising economic and food-security concerns. " +
-              "Long-term effects of consuming GM food on human health are not yet fully understood.",
+              "Excess fertiliser containing nitrates and phosphates is washed (leached) by rain from farmland into rivers and lakes. The mineral ions cause rapid growth of algae and cyanobacteria, forming an algal bloom over the water surface. The bloom blocks light from reaching submerged water plants, which can no longer photosynthesise and so die. Decomposing bacteria break down the dead plants and multiply rapidly. These bacteria respire aerobically, using up the dissolved oxygen in the water faster than it is replaced. The dissolved oxygen falls so low that fish and other aerobic organisms cannot respire and they suffocate and die.",
             markScheme: [
-              "Benefit: farmers can apply herbicide to kill all weeds without damaging crop",
-              "Benefit: increased yield / reduced competition from weeds",
-              "Benefit: may reduce total herbicide use / fewer spray applications / less tillage",
-              "Concern: herbicide-resistance gene may transfer to wild plants via cross-pollination ('superweeds')",
-              "Concern: broad-spectrum herbicide kills wildflowers/reduces plant diversity",
-              "Concern: loss of plant diversity reduces food/habitat for insects, birds / reduced biodiversity",
-              "Concern: corporate control / dependency of farmers on GM seed companies (ethical/economic)",
-              "Concern: unknown long-term effects on human health",
+              "Fertiliser (nitrate/phosphate) leaches/runs off into water body (1)",
+              "Causes rapid algal growth / algal bloom on surface (1)",
+              "Bloom blocks light from submerged plants (1)",
+              "Submerged plants cannot photosynthesise and die (1)",
+              "Bacteria decompose dead plants and increase in number (1)",
+              "Bacteria use up dissolved oxygen (aerobic respiration) → fish suffocate/die (1)",
             ],
             commonError:
-              "Giving only benefits or only concerns — the question asks you to 'evaluate', which requires both sides.",
+              "Saying the ALGAE use up the oxygen. It is the DECOMPOSING BACTERIA respiring that deplete the dissolved oxygen.",
+            guideRef: "Human Impact on the Environment",
+            difficulty: "core",
+            hints: [
+              "Where do the minerals come from and how do they reach the water?",
+              "What do excess minerals do to algae?",
+              "Trace the effect of the bloom on plants, then on bacteria, then on oxygen.",
+            ],
+            strategy: "Write the six steps in strict cause-and-effect order.",
+          },
+          {
+            id: "bio-ecology-bq4-04",
+            question:
+              "Explain how the enhanced greenhouse effect leads to global warming, and state two possible consequences of climate change. [5]",
+            marks: 5,
+            modelAnswer:
+              "The Sun's radiation warms the Earth, which re-emits energy as infrared radiation. Greenhouse gases such as carbon dioxide and methane absorb this outgoing infrared radiation and re-radiate some of it back to the surface, keeping the planet warm (the natural greenhouse effect). Human activities (burning fossil fuels, deforestation, cattle and rice farming) have increased the concentration of these gases, so more infrared is absorbed and re-radiated, enhancing the effect and raising average global temperatures. Two possible consequences are: rising sea levels (from melting ice and thermal expansion) causing flooding of low-lying land; and more frequent extreme weather events, OR shifts/extinctions in species distribution.",
+            markScheme: [
+              "Earth re-emits energy as infrared radiation (1)",
+              "Greenhouse gases absorb outgoing infrared and re-radiate some back to surface (1)",
+              "Human activity raises greenhouse gas concentration, enhancing the effect / warming (1)",
+              "Consequence 1: rising sea levels / flooding (1)",
+              "Consequence 2: extreme weather / changed species distribution / extinctions (1)",
+            ],
+            commonError:
+              "Saying greenhouse gases 'trap the Sun's rays' or 'make a hole in the ozone' — they absorb OUTGOING infrared; ozone depletion is a separate issue.",
+            guideRef: "Human Impact on the Environment",
+            difficulty: "core",
+            hints: [
+              "Distinguish incoming sunlight from outgoing infrared.",
+              "Which radiation do greenhouse gases actually absorb?",
+              "Name effects on sea level and on weather/species.",
+            ],
+          },
+          {
+            id: "bio-ecology-bq4-05",
+            question:
+              "Acid rain damages forests and lakes far from where the polluting gases were released. Explain how acid rain forms and one effect on aquatic life. [4]",
+            marks: 4,
+            modelAnswer:
+              "Burning fossil fuels releases sulfur dioxide and oxides of nitrogen into the atmosphere. These gases dissolve in water vapour/rain to form sulfuric acid and nitric acid, producing acid rain, which can be carried long distances by wind before it falls. In lakes, the acid lowers the pH of the water; this can damage fish gills and the eggs and young of aquatic organisms, and release toxic aluminium ions from soils, killing fish and reducing biodiversity.",
+            markScheme: [
+              "Burning fossil fuels releases SO₂ and oxides of nitrogen (1)",
+              "These dissolve in rain/water to form acids (sulfuric/nitric acid) (1)",
+              "Acid rain lowers pH of lakes/soil (1)",
+              "Effect on aquatic life: damages fish/eggs / releases toxic ions / kills organisms / reduces biodiversity (1)",
+            ],
+            commonError:
+              "Naming carbon dioxide as the main cause of acid rain. The key gases are sulfur dioxide and oxides of nitrogen.",
+            guideRef: "Human Impact on the Environment",
+            difficulty: "core",
+            hints: [
+              "Which gases from burning fuels are acidic?",
+              "What do they form when they dissolve in rain?",
+              "How does a low pH harm life in a lake?",
+            ],
+          },
+          {
+            id: "bio-ecology-bq4-06",
+            question:
+              "Explain why non-biodegradable plastics are a particular pollution problem, and describe how micro-plastics can affect a marine food chain. [4]",
+            marks: 4,
+            modelAnswer:
+              "Non-biodegradable plastics are not broken down by decomposers, so they persist in the environment for hundreds of years and accumulate, polluting land and oceans. Plastics break into tiny micro-plastics that small marine organisms ingest. These pass up the food chain as larger animals eat the smaller ones, and because plastics are not removed from the body they build up (bioaccumulate), reaching the highest concentrations in top predators such as seabirds and large fish, which can be harmed or killed.",
+            markScheme: [
+              "Plastics are non-biodegradable / not broken down by decomposers, so persist/accumulate (1)",
+              "Micro-plastics are ingested by small organisms low in the food chain (1)",
+              "Passed up the food chain as organisms are eaten (1)",
+              "Bioaccumulate / concentrate in top predators, harming them (1)",
+            ],
+            commonError:
+              "Saying plastics 'decompose slowly' and release nutrients — the point is that they are NOT broken down and instead accumulate in food chains.",
+            guideRef: "Human Impact on the Environment",
+            difficulty: "challenge",
+            hints: [
+              "Why don't decomposers remove plastic?",
+              "Where do micro-plastics first enter the food chain?",
+              "Why do top predators end up with the most?",
+            ],
+            strategy: "Link 'not broken down' to 'accumulates up the chain'.",
+          },
+          {
+            id: "bio-ecology-bq4-07",
+            question:
+              "Describe three methods used to conserve endangered species or maintain biodiversity, and for ONE method explain why it is effective. [4]",
+            marks: 4,
+            modelAnswer:
+              "Three conservation methods are: establishing nature reserves and protected areas; running captive-breeding programmes (e.g. in zoos) to increase numbers before releasing animals back into the wild; and storing seeds in seed banks to preserve plant genetic material. Captive breeding is effective because it allows endangered animals to reproduce safely away from predators and habitat loss, with breeding records used to pair unrelated individuals and maintain genetic variation, so a healthy population can be built up and reintroduced.",
+            markScheme: [
+              "Three valid methods (nature reserves / protected areas; captive breeding; seed banks; sustainable fishing/forestry; controlling pollution) (1)+(1)+(1)",
+              "Clear explanation of why ONE chosen method is effective (e.g. captive breeding boosts numbers / maintains genetic variation for reintroduction) (1)",
+            ],
+            commonError:
+              "Listing methods without an explanation. The question requires a reason WHY one method works for the final mark.",
+            guideRef: "Conservation, Biotechnology & Genetic Modification",
+            difficulty: "core",
+            hints: [
+              "Think of protected areas, breeding programmes, and seed/gene banks.",
+              "Pick the method you can best justify.",
+              "For captive breeding, why is safety and record-keeping important?",
+            ],
+          },
+          {
+            id: "bio-ecology-bq4-08",
+            question:
+              "Explain what is meant by sustainable resource use, and describe how a forest can be harvested sustainably. [4]",
+            marks: 4,
+            modelAnswer:
+              "Sustainable resource use means using a resource at a rate that allows it to be replaced naturally, so that present needs are met without preventing future generations from meeting their own needs. A forest can be harvested sustainably by replanting (or allowing natural regrowth of) a tree for each one felled, so the number of trees does not fall; by removing only mature trees and leaving younger ones to grow; by managing the rate of felling to match the rate of regrowth; and by protecting habitats and biodiversity within the forest while it is used.",
+            markScheme: [
+              "Sustainable = use at a rate that allows replacement (1)",
+              "Meets present needs without harming future generations' needs (1)",
+              "Replant a tree for each one felled / match felling to regrowth (1)",
+              "Selective felling of mature trees / protect biodiversity (1)",
+            ],
+            commonError:
+              "Defining sustainability as 'never using the resource'. It means using it at a renewable rate, not avoiding use entirely.",
+            guideRef: "Conservation, Biotechnology & Genetic Modification",
+            difficulty: "core",
+            hints: [
+              "Sustainability balances use against replacement.",
+              "How do you stop the number of trees falling?",
+              "Selective felling and replanting are key ideas.",
+            ],
+          },
+          {
+            id: "bio-ecology-bq4-09",
+            question:
+              "Over-fishing has reduced cod stocks in a sea area. Suggest and justify three measures that could allow the cod population to recover. [4]",
+            marks: 4,
+            modelAnswer:
+              "Catch quotas could limit the number/mass of cod taken each year, preventing the population from being fished faster than it can reproduce. Increasing the net mesh size would let smaller, younger cod escape so they survive to breed and replace the population. Closed seasons or protected breeding areas during spawning would allow cod to reproduce undisturbed. Monitoring fish numbers and enforcing the rules ensures the measures actually work, so the population can grow back to a sustainable level.",
+            markScheme: [
+              "Catch quotas limit numbers taken so population not over-exploited (1)",
+              "Larger mesh size lets young fish escape and survive to breed (1)",
+              "Closed seasons / protected breeding areas allow reproduction (1)",
+              "Each measure justified by linking to recovery/breeding (1)",
+            ],
+            commonError:
+              "Listing measures without a reason. Each measure must be linked to letting cod breed/recover for full marks.",
             guideRef: "Conservation, Biotechnology & Genetic Modification",
             difficulty: "challenge",
             hints: [
-              "Evaluate = give BOTH advantages AND disadvantages, then reach a conclusion.",
-              "Think about effects on: the farmer (economics), the environment (biodiversity), other organisms (insects), and consumers (health).",
-              "What happens if herbicide-resistant genes spread to weeds?",
-              "Who benefits from GM crop sales — the farmer or the corporation?",
+              "How do you limit how many fish are caught?",
+              "How can net design protect young fish?",
+              "When and where is it most important to protect cod?",
             ],
-            strategy: "Structure: benefits paragraph → concerns paragraph → brief overall conclusion.",
+            strategy: "Pair every measure with a justification about breeding/recovery.",
           },
           {
-            id: "bio-ecology-bank-qa2-q04",
+            id: "bio-ecology-bq4-10",
             question:
-              "Bacteria can be used to produce useful substances in fermenters.\n\n" +
-              "(a) State THREE conditions that are controlled in a fermenter to maximise bacterial growth. [3]\n" +
-              "(b) Describe the steps by which the gene for human insulin is inserted into a bacterium. [4]\n" +
-              "(c) Suggest ONE advantage of using bacteria to produce insulin rather than extracting it from animal pancreases. [1]",
-            marks: 8,
+              "Genetically modified (GM) crops can be made resistant to insect pests. Discuss one benefit and one concern of growing such GM crops. [4]",
+            marks: 4,
             modelAnswer:
-              "(a) Any three from: temperature (kept at optimum for enzymes); pH; oxygen supply (aeration/stirring); nutrient supply (glucose/minerals); sterile conditions (to prevent contamination).\n\n" +
-              "(b) The human insulin gene is identified in human DNA and cut out using restriction enzymes, which cut at specific recognition sites, leaving sticky ends. " +
-              "A bacterial plasmid is cut open with the same restriction enzyme, producing complementary sticky ends. " +
-              "The insulin gene is inserted into the plasmid; complementary sticky ends bind together and DNA ligase seals the joins, forming a recombinant plasmid. " +
-              "The recombinant plasmid is introduced into E. coli bacteria (transformation).\n\n" +
-              "(c) Any one from: human insulin produced is identical to natural human insulin so less likely to cause immune reactions; animal insulin may not work as effectively in humans; avoids ethical concerns about using animals; can be produced in unlimited quantities from bacterial cultures.",
+              "A benefit is that pest-resistant GM crops (e.g. carrying the Bt toxin gene) are damaged less by insect pests, so yields are higher and farmers need to spray fewer chemical pesticides, reducing cost and pesticide pollution. A concern is the possible effect on biodiversity and non-target organisms: the toxin or the spread of the inserted gene to wild plants ('gene escape') could harm helpful insects or create resistant 'superweeds', and there are ethical worries about long-term effects and corporate control of seed supply.",
             markScheme: [
-              "(a) Any THREE: temperature; pH; oxygen/aeration/stirring; nutrient supply; sterility",
-              "(b) Insulin gene cut from human DNA using restriction enzyme",
-              "(b) Plasmid cut with same restriction enzyme (complementary sticky ends)",
-              "(b) Insulin gene inserted into plasmid; ligase seals joins (recombinant plasmid formed)",
-              "(b) Recombinant plasmid introduced into E. coli / bacterium (transformation)",
-              "(c) Human insulin identical to natural / fewer allergic reactions / unlimited supply / avoids animal use (any ONE valid point)",
+              "Benefit: higher yield / less crop damage from pests (1)",
+              "Benefit detail: less pesticide use / less pollution / lower cost (1)",
+              "Concern: harm to biodiversity / non-target organisms / gene escape / superweeds (1)",
+              "Concern detail: unknown long-term/health effects OR ethical/corporate concerns (1)",
             ],
             commonError:
-              "Saying the insulin gene is copied and pasted — in genetic modification, it is physically cut and joined. Also confusing restriction enzyme (cuts) with ligase (joins).",
+              "Giving only benefits or only concerns. A 'discuss' question needs both sides for full marks.",
             guideRef: "Conservation, Biotechnology & Genetic Modification",
-            difficulty: "core",
+            difficulty: "challenge",
             hints: [
-              "For (a): think about what bacteria need to grow and what variables can be controlled.",
-              "For (b): the steps are — cut → cut plasmid → insert → join → transform.",
-              "Which enzyme cuts and which enzyme joins?",
-              "For (c): compare the product (human insulin from bacteria) with pig/cow insulin.",
+              "What does pest resistance do to yield and pesticide use?",
+              "What might happen to non-target insects or to wild plants?",
+              "Give one clear point on each side.",
             ],
-            strategy: "Name each enzyme by function; give the steps in order.",
+            strategy: "Balance one benefit against one concern, each with a supporting detail.",
           },
         ],
       },
