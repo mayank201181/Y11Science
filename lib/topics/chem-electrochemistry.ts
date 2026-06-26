@@ -631,12 +631,12 @@ export const chemElectrochemistry: Topic = {
   questionBank: {
     mcqPapers: [
       {
-        id: "chem-electrochemistry-bank-mcq-1",
-        title: "Electrochemistry MCQ Paper 1",
+        id: "chem-electrochemistry-bankmcq-1",
+        title: "Question Bank — MCQ Paper 1",
         description: "Core concepts: ion movement, electrode products in molten and aqueous systems, half-equations.",
         questions: [
           {
-            id: "chem-electrochemistry-bank-mcq1-q01",
+            id: "chem-electrochemistry-bm1-01",
             question: "Which statement correctly describes what happens at the cathode during electrolysis?",
             options: [
               "Anions are oxidised and give up electrons.",

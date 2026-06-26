@@ -447,9 +447,9 @@ export const chemAcidsBases: Topic = {
   questionBank: {
     mcqPapers: [
       {
-        id: "chem-acids-bases-bank-mcq-1",
-        title: "MCQ Paper 1 — Acids, Bases & Salts",
-        description: "Six multiple-choice questions covering acid/base definitions, pH, neutralisation, and oxide types.",
+        id: "chem-acids-bases-bankmcq-1",
+        title: "Question Bank — MCQ Paper 1",
+        description: "Ten multiple-choice questions covering acid/base ion definitions, pH, indicators, and neutralisation.",
         questions: [
           {
             id: "chem-acids-bases-bank-mcq1-q01",

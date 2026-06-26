@@ -606,12 +606,12 @@ At t = 10 s: s_A = s_B = 200 m. Car A catches Car B after 10 s and 200 m.`,
   questionBank: {
     mcqPapers: [
       {
-        id: "phys-motion-bank-mcq-1",
-        title: "Motion — MCQ Paper 1",
-        description: "Twelve multiple-choice questions covering definitions, graph reading and acceleration calculations.",
+        id: "phys-motion-bankmcq-1",
+        title: "Question Bank — MCQ Paper 1",
+        description: "Ten multiple-choice questions covering scalar/vector distinctions, speed calculations, and distance–time graphs.",
         questions: [
           {
-            id: "phys-motion-bank-mcq1-q01",
+            id: "phys-motion-bm1-01",
             question: "Which of the following is a vector quantity?",
             options: ["Distance", "Speed", "Time", "Velocity"],
             answerIndex: 3,

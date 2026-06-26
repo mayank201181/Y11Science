@@ -557,12 +557,12 @@ export const bioTransportCell: Topic = {
   questionBank: {
     mcqPapers: [
       {
-        id: "bio-transport-cell-bank-mcq-1",
-        title: "MCQ Paper 1 — Movement In & Out of Cells",
-        description: "6 multiple-choice questions covering diffusion, osmosis, and active transport.",
+        id: "bio-transport-cell-bankmcq-1",
+        title: "Question Bank — MCQ Paper 1",
+        description: "10 multiple-choice questions covering diffusion, osmosis, osmosis in cells, active transport, SA:V ratio, and osmosis experiments.",
         questions: [
           {
-            id: "bio-transport-cell-bank-mcq1-q01",
+            id: "bio-transport-cell-bm1-PLACEHOLDER2",
             question: "A student drops a crystal of potassium manganate(VII) into still water. Over time the purple colour spreads evenly through the water. Which statement best explains this?",
             options: [
               "The crystal dissolves and then is carried by convection currents",

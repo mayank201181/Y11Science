@@ -712,8 +712,8 @@ Both ions are absorbed from soil solution by active transport — an energy-requ
   questionBank: {
     mcqPapers: [
       {
-        id: "bio-plant-nutrition-bank-mcq-1",
-        title: "Plant Nutrition MCQ Paper 1",
+        id: "bio-plant-nutrition-bankmcq-1",
+        title: "Question Bank — MCQ Paper 1",
         description:
           "Six multiple-choice questions covering photosynthesis equations, leaf structure, and limiting factors.",
         questions: [

@@ -567,12 +567,12 @@ Equation: HCl(aq) + NaOH(aq) → NaCl(aq) + H₂O(l)
   questionBank: {
     mcqPapers: [
       {
-        id: "chem-stoichiometry-bank-mcq-1",
-        title: "MCQ Paper 1 — Formulae, Moles and Masses",
-        description: "Six questions covering symbols, Mᵣ, moles, reacting masses and empirical formula.",
+        id: "chem-stoichiometry-bankmcq-1",
+        title: "Question Bank — MCQ Paper 1",
+        description: "Ten MCQs covering symbols, balancing equations, Mᵣ, moles from mass, and empirical formula.",
         questions: [
           {
-            id: "chem-stoichiometry-bank-mcq1-q01",
+            id: "chem-stoichiometry-bm1-01",
             question: "Which of the following correctly balances the equation for the combustion of propane?\nC₃H₈ + ? O₂ → ? CO₂ + ? H₂O",
             options: [
               "C₃H₈ + 4O₂ → 3CO₂ + 4H₂O",

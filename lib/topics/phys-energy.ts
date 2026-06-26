@@ -590,12 +590,12 @@ export const physEnergy: Topic = {
   questionBank: {
     mcqPapers: [
       {
-        id: "phys-energy-bank-mcq-1",
-        title: "MCQ Paper 1 — Stores, Transfers and Calculations",
-        description: "Covers energy stores, transfers, Ek/GPE/work formulae, and efficiency.",
+        id: "phys-energy-bankmcq-1",
+        title: "Question Bank — MCQ Paper 1",
+        description: "Energy stores and transfers, conservation of energy, kinetic and gravitational potential energy calculations.",
         questions: [
           {
-            id: "phys-energy-bank-mcq1-q01",
+            id: "phys-energy-bm1-01",
             question: "Which of the following correctly defines 'work done' in physics?",
             options: [
               "The amount of energy stored in an object",
