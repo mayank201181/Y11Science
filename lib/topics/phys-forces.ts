@@ -508,15 +508,10 @@ This applies to all collisions and explosions. It is a consequence of Newton's t
     ],
   },
 
-  questionBank: {
+  questionBank_REPLACED: {
     mcqPapers: [
       {
-        id: "phys-forces-bank-mcq-1",
-        title: "Forces & Momentum — MCQ Paper 1",
-        description: "Six multiple-choice questions covering forces, Newton's laws, Hooke's law, and moments.",
-        questions: [
-          {
-            id: "phys-forces-bank-mcq1-q01",
+        id: "phys-forces-bankmcq-1-REPLACED",
             question: "A 12 N resultant force acts on a 3 kg object. What is the acceleration of the object?",
             options: ["0.25 m/s²", "4 m/s²", "9 m/s²", "36 m/s²"],
             answerIndex: 1,

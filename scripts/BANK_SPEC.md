@@ -1,5 +1,11 @@
 # Question-bank EXPANSION spec (v2)
 
+## ⛔ DO THE WORK YOURSELF — NO DELEGATION
+You MUST complete this task yourself in THIS session using only the Read, Edit and Write tools.
+Do NOT use the Task or Agent tools. Do NOT spawn, launch, or delegate to any sub-agent. Do NOT
+"wait to be notified". Write all the questions yourself and apply the edit before you reply. If you
+delegate, the work is lost and the task fails.
+
 You are EXPANDING the question bank of ONE existing, audited topic file for a Cambridge IGCSE
 revision app. Curriculum: Cambridge IGCSE Biology 0610 / Chemistry 0620 / Physics 0625 (Extended).
 Accuracy is paramount (exam prep).

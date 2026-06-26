@@ -714,22 +714,20 @@ Both ions are absorbed from soil solution by active transport — an energy-requ
       {
         id: "bio-plant-nutrition-bankmcq-1",
         title: "Question Bank — MCQ Paper 1",
-        description:
-          "Six multiple-choice questions covering photosynthesis equations, leaf structure, and limiting factors.",
         questions: [
           {
-            id: "bio-plant-nutrition-bank-mcq1-q01",
+            id: "bio-plant-nutrition-bm1-01",
             question:
-              "What is the role of light energy in photosynthesis?",
+              "What is the word equation for photosynthesis?",
             options: [
-              "It provides the carbon atoms for glucose.",
-              "It is transferred to chemical energy stored in glucose.",
-              "It breaks down glucose to release energy for the plant.",
-              "It replaces the role of chlorophyll in absorbing CO₂.",
+              "glucose + oxygen → carbon dioxide + water",
+              "carbon dioxide + water → glucose + oxygen",
+              "glucose + water → carbon dioxide + oxygen",
+              "oxygen + carbon dioxide → water + glucose",
             ],
             answerIndex: 1,
             explanation:
-              "Chlorophyll traps light energy and transfers it to chemical potential energy, which is stored in the bonds of glucose. Light does not provide carbon atoms (CO₂ does), does not break down glucose (respiration does that), and cannot replace chlorophyll.",
+              "Photosynthesis uses carbon dioxide and water as reactants, and produces glucose and oxygen. Glucose + oxygen → carbon dioxide + water is the word equation for respiration (the reverse process).",
             guideRef: "The Photosynthesis Equation",
             difficulty: "warmup",
           },
