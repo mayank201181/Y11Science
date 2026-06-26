@@ -4,10 +4,11 @@ Goal: every topic bank = 4 MCQ papers x10 + 4 structured papers x10; each subjec
 Spec: scripts/BANK_SPEC.md (agents must write files directly, NO delegation).
 
 ## DONE (expanded to 4x10+4x10)
-bio-coordination bio-disease-immunity bio-inheritance bio-transport-pla.ts chem-energetics phys-electricity phys-nuclear 
+bio-coordination bio-disease-immunity bio-inheritance bio-transport-plants chem-energetics phys-electricity phys-nuclear
+bio-cells bio-enzymes chem-atoms chem-stoichiometry phys-motion
 
 ## REMAINING topics (still on audited 2-paper banks)
-bio-cells bio-ecology bio-enzymes bio-gas-respiration bio-human-nutrition bio-molecules bio-plant-nutrition bio-reproduction bio-transport-animals bio-transport-cell chem-acids-bases chem-analysis chem-atoms chem-bonding chem-electrochemistry chem-environment chem-metals chem-organic chem-particles chem-periodic chem-rates chem-stoichiometry phys-energy phys-forces phys-magnetism phys-motion phys-sound-em phys-space phys-thermal phys-waves 
+bio-ecology bio-gas-respiration bio-human-nutrition bio-molecules bio-plant-nutrition bio-reproduction bio-transport-animals bio-transport-cell chem-acids-bases chem-analysis chem-bonding chem-electrochemistry chem-environment chem-metals chem-organic chem-particles chem-periodic chem-rates phys-energy phys-forces phys-magnetism phys-sound-em phys-space phys-thermal phys-waves 
 
 ## REMAINING exams
 lib/exams/biology.ts, lib/exams/chemistry.ts, lib/exams/physics.ts  (expand to 4x25 MCQ + 4x20 QA)
