@@ -1438,7 +1438,7 @@ export const chemEnergetics: Topic = {
       {
         id: "chem-energetics-bankqa-1",
         title: "Question Bank — Structured Paper 1",
-        description: "10 structured questions: classifying reactions, reading energy diagrams, bond energy calculations.",
+        description: "10 structured questions: classifying reactions, energy diagrams, basic bond energy calculations.",
         questions: [
           {
             id: "chem-energetics-bq1-01",
@@ -1466,6 +1466,55 @@ export const chemEnergetics: Topic = {
           },
           {
             id: "chem-energetics-bq1-02",
+            question:
+              "A student investigates three reactions:\n" +
+              "Reaction 1: Magnesium ribbon added to dilute hydrochloric acid — fizzing and the test tube becomes hot.\n" +
+              "Reaction 2: Barium hydroxide solid mixed with ammonium chloride solid — mixture becomes very cold.\n" +
+              "Reaction 3: Sodium burned in a gas jar of oxygen — bright orange flame.\n\n" +
+              "For each reaction, state: (i) whether it is exothermic or endothermic, and (ii) the sign of ΔH. [6]",
+            marks: 6,
+            modelAnswer:
+              "Reaction 1: (i) Exothermic. (ii) ΔH is negative. The test tube becomes hot → energy released to surroundings.\n" +
+              "Reaction 2: (i) Endothermic. (ii) ΔH is positive. The mixture becomes cold → energy absorbed from surroundings.\n" +
+              "Reaction 3: (i) Exothermic. (ii) ΔH is negative. Combustion/burning always releases energy.",
+            markScheme: [
+              "Reaction 1: exothermic (1)",
+              "Reaction 1: ΔH negative (1)",
+              "Reaction 2: endothermic (1)",
+              "Reaction 2: ΔH positive (1)",
+              "Reaction 3: exothermic (1)",
+              "Reaction 3: ΔH negative (1)",
+            ],
+            commonError:
+              "For Reaction 2, students may wrongly say exothermic because ammonium chloride is a salt and they associate dissolving salts with neutralisation (exothermic). Always use the observed temperature change as the key evidence.",
+            guideRef: "Exothermic and Endothermic Reactions",
+            difficulty: "warmup",
+          },
+          {
+            id: "chem-energetics-bq1-03",
+            question:
+              "Explain, in terms of bond breaking and bond making, why some reactions are exothermic and others are endothermic.\n\n" +
+              "(a) State whether bond breaking is exothermic or endothermic, and why. [1]\n" +
+              "(b) State whether bond making is exothermic or endothermic, and why. [1]\n" +
+              "(c) State the condition (in terms of energy) for a reaction to be exothermic overall. [2]",
+            marks: 4,
+            modelAnswer:
+              "(a) Bond breaking is endothermic — energy must be supplied (absorbed) to overcome the attraction between the bonded atoms.\n" +
+              "(b) Bond making is exothermic — energy is released when new bonds form between atoms.\n" +
+              "(c) A reaction is exothermic overall when the energy released making the new bonds in the products is greater than the energy absorbed breaking the bonds in the reactants.",
+            markScheme: [
+              "Bond breaking is endothermic / requires (absorbs) energy (1)",
+              "Bond making is exothermic / releases energy (1)",
+              "Exothermic when energy released making bonds > energy absorbed breaking bonds (1)",
+              "Hence ΔH is negative (1)",
+            ],
+            commonError:
+              "Students sometimes reverse the rule, writing that bond breaking releases energy. Always: breaking absorbs (endothermic), making releases (exothermic).",
+            guideRef: "Bond Breaking and Bond Making",
+            difficulty: "warmup",
+          },
+          {
+            id: "chem-energetics-bq1-04",
             question:
               "The diagram below represents an energy level diagram for a reaction (values in kJ mol⁻¹):\n" +
               "Reactants: 60\n" +
@@ -1504,9 +1553,20 @@ export const chemEnergetics: Topic = {
               "A catalyst never changes the start or end energy — only the peak.",
             ],
             strategy: "draw a diagram",
+            solutions: [
+              {
+                label: "Method: read values directly from the energy axis",
+                steps: [
+                  "Ea = E(peak) − E(reactants) = 210 − 60 = 150 kJ mol⁻¹.",
+                  "ΔH = E(products) − E(reactants) = 160 − 60 = +100 kJ mol⁻¹ (positive → endothermic).",
+                  "Catalysed Ea uses the new peak: 130 − 60 = 70 kJ mol⁻¹.",
+                  "ΔH still = 160 − 60 = +100 kJ mol⁻¹ — the catalyst does not move the reactant or product levels.",
+                ],
+              },
+            ],
           },
           {
-            id: "chem-energetics-bq1-03",
+            id: "chem-energetics-bq1-05",
             question:
               "Hydrogen gas reacts with oxygen gas to form water:\n" +
               "2H₂(g) + O₂(g) → 2H₂O(g)\n\n" +
@@ -1555,7 +1615,170 @@ export const chemEnergetics: Topic = {
             ],
           },
           {
-            id: "chem-energetics-bq1-04",
+            id: "chem-energetics-bq1-06",
+            question:
+              "In a school experiment, 50.0 cm³ of dilute hydrochloric acid is mixed with 50.0 cm³ of sodium hydroxide solution in a polystyrene cup. The temperature rises from 21.0 °C to 27.8 °C.\n\n" +
+              "(Assume the density of the mixture is 1.0 g cm⁻³ and its specific heat capacity is 4.2 J g⁻¹ °C⁻¹.)\n\n" +
+              "(a) State the word equation for the reaction. [1]\n" +
+              "(b) Calculate the temperature change, ΔT. [1]\n" +
+              "(c) Calculate the energy released, Q, using Q = mcΔT. Show your working and give the answer in joules and kilojoules. [3]\n" +
+              "(d) Explain why a polystyrene cup is used rather than a glass beaker. [1]",
+            marks: 6,
+            modelAnswer:
+              "(a) Hydrochloric acid + sodium hydroxide → sodium chloride + water.\n" +
+              "(b) ΔT = 27.8 − 21.0 = 6.8 °C.\n" +
+              "(c) Total volume = 50.0 + 50.0 = 100 cm³, so m = 100 g. Q = mcΔT = 100 × 4.2 × 6.8 = 2856 J = 2.856 kJ ≈ 2.86 kJ.\n" +
+              "(d) Polystyrene is a good thermal insulator, so it reduces heat loss to the surroundings, giving a more accurate temperature rise.",
+            markScheme: [
+              "Hydrochloric acid + sodium hydroxide → sodium chloride + water (1)",
+              "ΔT = 27.8 − 21.0 = 6.8 °C (1)",
+              "m = 100 g (combined volume used) (1)",
+              "Q = 100 × 4.2 × 6.8 (1)",
+              "Q = 2856 J = 2.86 kJ (allow 2.856 kJ) (1)",
+              "Polystyrene insulates / reduces heat loss to surroundings (1)",
+            ],
+            commonError:
+              "Students often use only 50 g (one solution) instead of the combined 100 g. In Q = mcΔT, m is the total mass of the mixture being heated.",
+            guideRef: "Interpreting Energy Changes from Evidence",
+            difficulty: "core",
+            hints: [
+              "ΔT = final temperature − initial temperature.",
+              "Mass m is the total mass of solution: add both volumes, then use density 1.0 g cm⁻³.",
+              "Q = mcΔT. Substitute m = 100 g, c = 4.2, ΔT = 6.8.",
+              "Convert J to kJ by dividing by 1000.",
+            ],
+            strategy: "build a table — list m, c and ΔT before substituting",
+            solutions: [
+              {
+                label: "Method: Q = mcΔT step-by-step",
+                steps: [
+                  "m = total volume × density = (50.0 + 50.0) × 1.0 = 100 g.",
+                  "ΔT = 27.8 − 21.0 = 6.8 °C.",
+                  "Q = mcΔT = 100 × 4.2 × 6.8 = 2856 J.",
+                  "Convert: 2856 ÷ 1000 = 2.856 kJ ≈ 2.86 kJ released.",
+                ],
+              },
+            ],
+          },
+          {
+            id: "chem-energetics-bq1-07",
+            question:
+              "A cold pack used for sports injuries contains ammonium nitrate which dissolves in water when the pack is squeezed. The pack becomes cold.\n\n" +
+              "(a) State whether dissolving ammonium nitrate is exothermic or endothermic. [1]\n" +
+              "(b) Explain, in terms of energy transfer between the system and the surroundings, why the pack feels cold. [2]\n" +
+              "(c) State the sign of ΔH for this process. [1]",
+            marks: 4,
+            modelAnswer:
+              "(a) Endothermic.\n" +
+              "(b) Energy is absorbed by the dissolving process (the system) from the surroundings (the water and the skin). Because the surroundings lose energy, their temperature falls, so the pack feels cold.\n" +
+              "(c) ΔH is positive.",
+            markScheme: [
+              "Endothermic (1)",
+              "Energy is absorbed/taken in by the system from the surroundings (1)",
+              "Surroundings lose energy so temperature falls (1)",
+              "ΔH is positive (1)",
+            ],
+            commonError:
+              "Students may say the pack 'gives out cold'. Cold is not transferred — energy is absorbed FROM the surroundings, which lowers their temperature.",
+            guideRef: "Exothermic and Endothermic Reactions",
+            difficulty: "warmup",
+          },
+          {
+            id: "chem-energetics-bq1-08",
+            question:
+              "An energy level diagram for an exothermic reaction shows: reactants at 90 kJ mol⁻¹, transition state peak at 250 kJ mol⁻¹, and products at 30 kJ mol⁻¹.\n\n" +
+              "(a) Calculate the activation energy, Ea. [1]\n" +
+              "(b) Calculate ΔH and give its sign. [2]\n" +
+              "(c) The reverse reaction (products → reactants) takes place over the same peak. Calculate the activation energy of the reverse reaction. [2]\n" +
+              "(d) State and explain whether the reverse reaction is exothermic or endothermic. [1]",
+            marks: 6,
+            modelAnswer:
+              "(a) Ea = 250 − 90 = 160 kJ mol⁻¹.\n" +
+              "(b) ΔH = 30 − 90 = −60 kJ mol⁻¹ (negative).\n" +
+              "(c) Ea(reverse) = peak − products = 250 − 30 = 220 kJ mol⁻¹.\n" +
+              "(d) Endothermic. The reverse reaction goes from the lower products level (30) up to the higher reactants level (90), so energy is absorbed and ΔH(reverse) = +60 kJ mol⁻¹.",
+            markScheme: [
+              "Ea(forward) = 250 − 90 = 160 kJ mol⁻¹ (1)",
+              "ΔH = 30 − 90 (1)",
+              "ΔH = −60 kJ mol⁻¹ / negative (1)",
+              "Ea(reverse) = 250 − 30 = 220 kJ mol⁻¹ (1)",
+              "Working shown / measured from products level (1)",
+              "Endothermic, energy absorbed going from products up to reactants (1)",
+            ],
+            commonError:
+              "For Ea of the reverse reaction, students measure from the reactants level again. The reverse reaction starts at the PRODUCTS level, so Ea(reverse) = peak − products.",
+            guideRef: "Energy Level Diagrams",
+            difficulty: "core",
+            hints: [
+              "Forward Ea is measured from the reactants level to the peak.",
+              "ΔH = E(products) − E(reactants).",
+              "The reverse reaction begins at the products level — measure its Ea from there to the same peak.",
+              "Ea(reverse) = Ea(forward) + |ΔH| when the forward reaction is exothermic.",
+            ],
+            solutions: [
+              {
+                label: "Method: work from the three energy levels",
+                steps: [
+                  "Forward Ea = peak − reactants = 250 − 90 = 160 kJ mol⁻¹.",
+                  "ΔH = products − reactants = 30 − 90 = −60 kJ mol⁻¹ (exothermic).",
+                  "Reverse Ea = peak − products = 250 − 30 = 220 kJ mol⁻¹.",
+                  "Check: Ea(reverse) = Ea(forward) + |ΔH| = 160 + 60 = 220 kJ mol⁻¹. ✓",
+                ],
+              },
+            ],
+          },
+          {
+            id: "chem-energetics-bq1-09",
+            question:
+              "The formation of ammonia is:\n" +
+              "N₂(g) + 3H₂(g) → 2NH₃(g)\n\n" +
+              "Bond energies (kJ mol⁻¹): N≡N = 945; H–H = 436; N–H = 391.\n\n" +
+              "(a) State the number and type of each bond broken in the reactants. [2]\n" +
+              "(b) State the number and type of each bond made in the products. [1]\n" +
+              "(c) Calculate ΔH for this reaction. Show your working. [3]\n" +
+              "(d) State whether the reaction is exothermic or endothermic. [1]",
+            marks: 7,
+            modelAnswer:
+              "(a) 1 × N≡N bond and 3 × H–H bonds are broken.\n" +
+              "(b) 6 × N–H bonds are made (2 molecules of NH₃, each with 3 N–H bonds).\n" +
+              "(c) Energy to break bonds = (1 × 945) + (3 × 436) = 945 + 1308 = 2253 kJ.\n" +
+              "Energy released making bonds = 6 × 391 = 2346 kJ.\n" +
+              "ΔH = 2253 − 2346 = −93 kJ mol⁻¹.\n" +
+              "(d) Exothermic (ΔH is negative).",
+            markScheme: [
+              "1 × N≡N (triple bond) broken (1)",
+              "3 × H–H bonds broken (1)",
+              "6 × N–H bonds made / 2NH₃ each with 3 N–H bonds (1)",
+              "Energy in: 945 + 3(436) = 2253 kJ (1)",
+              "Energy out: 6 × 391 = 2346 kJ (1)",
+              "ΔH = 2253 − 2346 = −93 kJ mol⁻¹ (1)",
+              "Exothermic / ΔH negative (1)",
+            ],
+            commonError:
+              "Students often forget to multiply the N–H bonds by 2 (the coefficient of NH₃). Each NH₃ has 3 N–H bonds, so 2NH₃ has 6 N–H bonds.",
+            guideRef: "Calculating ΔH from Bond Energies",
+            difficulty: "core",
+            hints: [
+              "Nitrogen has a triple bond (N≡N) and the coefficient for H₂ is 3.",
+              "Count bonds in products: 2 molecules of NH₃, each with 3 N–H bonds = 6 total.",
+              "Energy in = (1 × 945) + (3 × 436). Energy out = 6 × 391.",
+              "ΔH = energy in − energy out. A negative result → exothermic.",
+            ],
+            strategy: "build a table",
+            solutions: [
+              {
+                label: "Method: tabular bond energy approach",
+                steps: [
+                  "Bonds broken: 1 N≡N = 945 kJ; 3 H–H = 3 × 436 = 1308 kJ. Total in = 2253 kJ.",
+                  "Bonds made: 6 N–H = 6 × 391 = 2346 kJ. Total out = 2346 kJ.",
+                  "ΔH = 2253 − 2346 = −93 kJ mol⁻¹.",
+                  "Negative → exothermic.",
+                ],
+              },
+            ],
+          },
+          {
+            id: "chem-energetics-bq1-10",
             question:
               "**Challenge question**\n\n" +
               "Ethene reacts with hydrogen: C₂H₄(g) + H₂(g) → C₂H₆(g)\n\n" +
@@ -1568,15 +1791,13 @@ export const chemEnergetics: Topic = {
             modelAnswer:
               "(a) Ethene: H₂C=CH₂ with 1 C=C bond and 4 C–H bonds. " +
               "Ethane: H₃C–CH₃ with 1 C–C bond and 6 C–H bonds.\n" +
-              "(b) Bonds broken: 1 C=C (614 kJ) + 1 H–H (436 kJ) = 1050 kJ. " +
-              "Bonds made: 1 C–C (347 kJ) + 6 C–H but only 2 NEW C–H bonds (4 C–H bonds in ethene persist; 2 new ones form at the CH₂ ends) = 2 × 413 + 1 C–C (347) = 826 + 347 = 1173 kJ.\n" +
-              "Actually, more carefully: bonds broken = C=C (614) + H–H (436) = 1050 kJ. " +
-              "Bonds made = C–C (347) + 2 × C–H (2 × 413 = 826) = 1173 kJ. " +
+              "(b) The bonds that change: bonds broken = 1 C=C (614 kJ) + 1 H–H (436 kJ) = 1050 kJ. " +
+              "Bonds made = 1 C–C (347 kJ) + 2 NEW C–H (2 × 413 = 826 kJ) = 1173 kJ. " +
               "(The 4 C–H bonds already in ethene remain in ethane, so they cancel.)\n" +
               "(c) ΔH = 1050 − 1173 = −123 kJ mol⁻¹.\n" +
               "(d) The C=C double bond (614 kJ mol⁻¹) is broken but replaced by a C–C single bond (347 kJ mol⁻¹). " +
               "The single bond releases less energy than the double bond cost to break — a deficit of 614 − 347 = 267 kJ. " +
-              "However, two new C–H bonds (2 × 413 = 826 kJ) are made from the H–H bond (436 kJ), giving a surplus of 826 − 436 = 390 kJ. " +
+              "However, two new C–H bonds (2 × 413 = 826 kJ) are made from one H–H bond broken (436 kJ), giving a surplus of 826 − 436 = 390 kJ. " +
               "Overall surplus = 390 − 267 = 123 kJ released → exothermic (ΔH = −123 kJ mol⁻¹).",
             markScheme: [
               "Ethene: C=C with 4 C–H bonds correctly shown (1)",
@@ -1591,12 +1812,12 @@ export const chemEnergetics: Topic = {
               "C=C broken → C–C made: the H–H energy surplus offsets the loss from double to single bond change (1)",
             ],
             commonError:
-              "Students often wrongly break AND re-form all 6 C–H bonds in ethane. Only the bonds that actually change need to be counted: the C=C is broken (not both C–C bonds), and 2 new C–H bonds are made (not 6). Counting all 6 C–H bonds on both sides is valid only if they appear on both sides and cancel — but you must be consistent.",
+              "Students often wrongly break AND re-form all 6 C–H bonds. Only the bonds that change need to be counted, or count ALL bonds on both sides consistently — either method gives ΔH = −123 kJ mol⁻¹.",
             guideRef: "Calculating ΔH from Bond Energies",
             difficulty: "challenge",
             hints: [
               "Identify ONLY the bonds that change between reactants and products.",
-              "The C=C double bond (one bond) breaks; a C–C single bond forms. The H–H bond breaks; two new C–H bonds form.",
+              "The C=C double bond breaks; a C–C single bond forms. The H–H bond breaks; two new C–H bonds form.",
               "Total broken: C=C (614) + H–H (436) = 1050 kJ. Total made: C–C (347) + 2 C–H (826) = 1173 kJ.",
               "ΔH = 1050 − 1173. Check the sign — is this exo or endothermic?",
             ],
@@ -1625,40 +1846,84 @@ export const chemEnergetics: Topic = {
         ],
       },
       {
-        id: "chem-energetics-bank-qa-2",
-        title: "Chemical Energetics — Structured Questions Paper 2",
-        description: "4 structured questions focusing on application, synoptic links, and multi-step reasoning.",
+        id: "chem-energetics-bankqa-2",
+        title: "Question Bank — Structured Paper 2",
+        description: "10 structured questions: bond energy calculations, energy diagrams and calorimetry.",
         questions: [
           {
-            id: "chem-energetics-bank-qa2-q01",
+            id: "chem-energetics-bq2-01",
             question:
-              "A student investigates three reactions:\n" +
-              "Reaction 1: Magnesium ribbon added to dilute hydrochloric acid — fizzing and the test tube becomes hot.\n" +
-              "Reaction 2: Barium hydroxide solid mixed with ammonium chloride solid — mixture becomes very cold.\n" +
-              "Reaction 3: Sodium burned in a gas jar of oxygen — bright orange flame.\n\n" +
-              "For each reaction, state: (i) whether it is exothermic or endothermic, and (ii) the sign of ΔH. [6]",
-            marks: 6,
+              "Classify each of the following as exothermic or endothermic:\n" +
+              "(a) Burning methane in a Bunsen burner. [1]\n" +
+              "(b) Photosynthesis in a green leaf. [1]\n" +
+              "(c) Neutralising sulfuric acid with potassium hydroxide. [1]\n" +
+              "(d) Thermal decomposition of calcium carbonate in a kiln. [1]",
+            marks: 4,
             modelAnswer:
-              "Reaction 1: (i) Exothermic. (ii) ΔH is negative. The test tube becomes hot → energy released to surroundings.\n" +
-              "Reaction 2: (i) Endothermic. (ii) ΔH is positive. The mixture becomes cold → energy absorbed from surroundings.\n" +
-              "Reaction 3: (i) Exothermic. (ii) ΔH is negative. Combustion/burning always releases energy.",
+              "(a) Exothermic (combustion).\n" +
+              "(b) Endothermic (absorbs light energy).\n" +
+              "(c) Exothermic (neutralisation).\n" +
+              "(d) Endothermic (thermal decomposition needs continuous heating).",
             markScheme: [
-              "Reaction 1: exothermic (1)",
-              "Reaction 1: ΔH negative (1)",
-              "Reaction 2: endothermic (1)",
-              "Reaction 2: ΔH positive (1)",
-              "Reaction 3: exothermic (1)",
-              "Reaction 3: ΔH negative (1)",
+              "(a) exothermic (1)",
+              "(b) endothermic (1)",
+              "(c) exothermic (1)",
+              "(d) endothermic (1)",
             ],
             commonError:
-              "For Reaction 2, students may wrongly say exothermic because ammonium chloride is a salt and they associate dissolving salts with neutralisation (exothermic). Always use the observed temperature change as the key evidence.",
-            guideRef: "Exothermic and Endothermic Reactions",
+              "Thermal decomposition is sometimes wrongly called exothermic because heat is applied. The reaction ABSORBS that heat, so it is endothermic; remove the heat and it stops.",
+            guideRef: "Common Examples and Applications",
             difficulty: "warmup",
           },
           {
-            id: "chem-energetics-bank-qa2-q02",
+            id: "chem-energetics-bq2-02",
             question:
-              "The decomposition of hydrogen peroxide can be written as:\n" +
+              "Methane burns completely in oxygen:\n" +
+              "CH₄(g) + 2O₂(g) → CO₂(g) + 2H₂O(g)\n\n" +
+              "Bond energies (kJ mol⁻¹): C–H = 413; O=O = 498; C=O (in CO₂) = 805; O–H = 464.\n\n" +
+              "(a) Calculate the total energy needed to break all bonds in the reactants. [2]\n" +
+              "(b) Calculate the total energy released making all bonds in the products. [2]\n" +
+              "(c) Calculate ΔH and state whether the reaction is exothermic or endothermic. [2]",
+            marks: 6,
+            modelAnswer:
+              "(a) Bonds broken: 4 × C–H (4 × 413 = 1652) + 2 × O=O (2 × 498 = 996) = 2648 kJ.\n" +
+              "(b) Bonds made: 2 × C=O (2 × 805 = 1610) + 4 × O–H (4 × 464 = 1856) = 3466 kJ.\n" +
+              "(c) ΔH = 2648 − 3466 = −818 kJ mol⁻¹. Exothermic (ΔH is negative).",
+            markScheme: [
+              "Bonds broken: 4(413) + 2(498) = 1652 + 996 (1)",
+              "Total broken = 2648 kJ (1)",
+              "Bonds made: 2(805) + 4(464) = 1610 + 1856 (1)",
+              "Total made = 3466 kJ (1)",
+              "ΔH = 2648 − 3466 = −818 kJ mol⁻¹ (1)",
+              "Exothermic / ΔH negative (1)",
+            ],
+            commonError:
+              "Each CO₂ molecule has 2 C=O bonds and each H₂O has 2 O–H bonds. Students frequently miscount these or forget the coefficient 2 in front of H₂O.",
+            guideRef: "Calculating ΔH from Bond Energies",
+            difficulty: "core",
+            hints: [
+              "CH₄ has 4 C–H bonds; 2O₂ has 2 O=O bonds.",
+              "CO₂ has 2 C=O bonds; 2H₂O has 2 × 2 = 4 O–H bonds.",
+              "Broken = 4(413) + 2(498). Made = 2(805) + 4(464).",
+              "ΔH = broken − made.",
+            ],
+            strategy: "build a table",
+            solutions: [
+              {
+                label: "Method: full bond-energy table",
+                steps: [
+                  "Bonds broken: 4 C–H = 1652 kJ; 2 O=O = 996 kJ. Total = 2648 kJ.",
+                  "Bonds made: 2 C=O = 1610 kJ; 4 O–H = 1856 kJ. Total = 3466 kJ.",
+                  "ΔH = 2648 − 3466 = −818 kJ mol⁻¹.",
+                  "Negative → exothermic.",
+                ],
+              },
+            ],
+          },
+          {
+            id: "chem-energetics-bq2-03",
+            question:
+              "The decomposition of hydrogen peroxide is:\n" +
               "2H₂O₂(g) → 2H₂O(g) + O₂(g)\n\n" +
               "Bond energies (kJ mol⁻¹): O–H = 464; O–O = 146; O=O = 498.\n\n" +
               "(a) List all the bonds broken in the reactants, with their bond energies. [2]\n" +
@@ -1672,7 +1937,7 @@ export const chemEnergetics: Topic = {
               "(b) 2 H₂O each with 2 O–H bonds: 4 × O–H (4 × 464 = 1856 kJ). 1 O₂ with 1 O=O bond: 1 × O=O (498 kJ). Total made = 2354 kJ.\n" +
               "(c) ΔH = 2148 − 2354 = −206 kJ mol⁻¹.\n" +
               "(d) Exothermic; ΔH is negative / more energy released making bonds than absorbed breaking bonds.\n" +
-              "(e) MnO₂ increases the rate of decomposition / the reaction happens faster; and it lowers the activation energy (Ea). ΔH is unchanged / the same amount of energy is released per mole.",
+              "(e) MnO₂ increases the rate of decomposition / the reaction happens faster; and it lowers the activation energy (Ea). ΔH is unchanged.",
             markScheme: [
               "4 O–H bonds broken: 4 × 464 = 1856 kJ (1)",
               "2 O–O bonds broken: 2 × 146 = 292 kJ; total broken = 2148 kJ (1)",
@@ -1682,42 +1947,440 @@ export const chemEnergetics: Topic = {
               "Correct sign and arithmetic (1)",
               "Exothermic / ΔH negative (1)",
               "Catalyst increases rate / reaction faster (1)",
-              "Ea is lowered / catalyst provides alternative lower-energy pathway (1)",
-              "ΔH unchanged (1)",
+              "Ea is lowered / catalyst provides alternative lower-energy pathway / ΔH unchanged (1)",
             ],
             commonError:
-              "Students often misidentify the bonds in H₂O₂. The structure is H–O–O–H: it has 2 O–H bonds AND 1 O–O bond per molecule. Forgetting the O–O single bond in H₂O₂ is a very common error.",
+              "Students often misidentify the bonds in H₂O₂. The structure is H–O–O–H: it has 2 O–H bonds AND 1 O–O bond per molecule. Forgetting the O–O single bond is a very common error.",
             guideRef: "Calculating ΔH from Bond Energies",
             difficulty: "core",
             hints: [
               "Draw H₂O₂ as H–O–O–H. Identify every bond type.",
               "2 molecules of H₂O₂: 4 O–H bonds + 2 O–O bonds (one per molecule).",
               "Products: 2 H₂O each with 2 O–H (=4 O–H total) + 1 O₂ with 1 O=O.",
-              "ΔH = 2148 − 2354. For part (e), a catalyst speeds up the reaction but ΔH is unchanged.",
+              "ΔH = 2148 − 2354.",
             ],
             strategy: "draw a diagram — sketch structural formulae to count bonds accurately",
+            solutions: [
+              {
+                label: "Method: bond-by-bond table",
+                steps: [
+                  "Broken (2 H–O–O–H): 4 O–H = 1856 kJ; 2 O–O = 292 kJ. Total = 2148 kJ.",
+                  "Made (2 H₂O + O₂): 4 O–H = 1856 kJ; 1 O=O = 498 kJ. Total = 2354 kJ.",
+                  "ΔH = 2148 − 2354 = −206 kJ mol⁻¹.",
+                  "Negative → exothermic.",
+                ],
+              },
+            ],
           },
           {
-            id: "chem-energetics-bank-qa2-q03",
+            id: "chem-energetics-bq2-04",
+            question:
+              "A student burns 0.46 g of ethanol to heat 100 g of water in a copper calorimeter. The temperature of the water rises from 19.0 °C to 39.0 °C. (c of water = 4.2 J g⁻¹ °C⁻¹.)\n\n" +
+              "(a) Calculate the energy gained by the water using Q = mcΔT. [2]\n" +
+              "(b) The actual energy released by burning ethanol is larger than your answer to (a). Give one reason. [1]\n" +
+              "(c) State the sign of ΔH for the combustion of ethanol. [1]",
+            marks: 4,
+            modelAnswer:
+              "(a) ΔT = 39.0 − 19.0 = 20.0 °C. Q = mcΔT = 100 × 4.2 × 20.0 = 8400 J = 8.4 kJ.\n" +
+              "(b) Heat is lost to the surroundings / to the calorimeter and the air, so not all the energy released reaches the water (also some incomplete combustion / evaporation of ethanol).\n" +
+              "(c) ΔH is negative (combustion is exothermic).",
+            markScheme: [
+              "ΔT = 20.0 °C and Q = 100 × 4.2 × 20.0 (1)",
+              "Q = 8400 J = 8.4 kJ (1)",
+              "Heat lost to surroundings / calorimeter / air / incomplete combustion (1)",
+              "ΔH negative (1)",
+            ],
+            commonError:
+              "Use the mass of WATER being heated (100 g) in Q = mcΔT, not the mass of fuel burned (0.46 g). The fuel mass is only needed if you go on to find energy per gram or per mole.",
+            guideRef: "Interpreting Energy Changes from Evidence",
+            difficulty: "core",
+            hints: [
+              "m in Q = mcΔT is the mass of the water being heated (100 g).",
+              "ΔT = 39.0 − 19.0 = 20.0 °C.",
+              "Q = 100 × 4.2 × 20.0.",
+              "For (b), think about where some of the released energy goes instead of into the water.",
+            ],
+            strategy: "build a table — list m, c, ΔT before substituting",
+            solutions: [
+              {
+                label: "Method: Q = mcΔT",
+                steps: [
+                  "ΔT = 39.0 − 19.0 = 20.0 °C.",
+                  "m = 100 g (the water). c = 4.2 J g⁻¹ °C⁻¹.",
+                  "Q = mcΔT = 100 × 4.2 × 20.0 = 8400 J.",
+                  "Convert: 8400 ÷ 1000 = 8.4 kJ transferred to the water.",
+                ],
+              },
+            ],
+          },
+          {
+            id: "chem-energetics-bq2-05",
+            question:
+              "Hydrogen reacts with chlorine:\n" +
+              "H₂(g) + Cl₂(g) → 2HCl(g)\n\n" +
+              "Bond energies (kJ mol⁻¹): H–H = 436; Cl–Cl = 243; H–Cl = 432.\n\n" +
+              "(a) Calculate the total energy absorbed breaking bonds. [1]\n" +
+              "(b) Calculate the total energy released making bonds. [1]\n" +
+              "(c) Calculate ΔH and state whether the reaction is exothermic or endothermic. [2]",
+            marks: 4,
+            modelAnswer:
+              "(a) Bonds broken: H–H (436) + Cl–Cl (243) = 679 kJ.\n" +
+              "(b) Bonds made: 2 × H–Cl = 2 × 432 = 864 kJ.\n" +
+              "(c) ΔH = 679 − 864 = −185 kJ mol⁻¹. Exothermic (ΔH negative).",
+            markScheme: [
+              "Energy absorbed = 436 + 243 = 679 kJ (1)",
+              "Energy released = 2 × 432 = 864 kJ (1)",
+              "ΔH = 679 − 864 = −185 kJ mol⁻¹ (1)",
+              "Exothermic / ΔH negative (1)",
+            ],
+            commonError:
+              "Remember the coefficient: 2HCl means 2 H–Cl bonds are made (2 × 432), not just one.",
+            guideRef: "Calculating ΔH from Bond Energies",
+            difficulty: "warmup",
+            solutions: [
+              {
+                label: "Method: ΔH = bonds broken − bonds made",
+                steps: [
+                  "Broken: 1 H–H (436) + 1 Cl–Cl (243) = 679 kJ.",
+                  "Made: 2 H–Cl = 2 × 432 = 864 kJ.",
+                  "ΔH = 679 − 864 = −185 kJ mol⁻¹.",
+                  "Negative → exothermic.",
+                ],
+              },
+            ],
+          },
+          {
+            id: "chem-energetics-bq2-06",
+            question:
+              "A reaction has the following energy levels (kJ mol⁻¹): reactants 120; peak 300; products 200.\n\n" +
+              "(a) Calculate Ea. [1]\n" +
+              "(b) Calculate ΔH and state its sign. [2]\n" +
+              "(c) State whether the reaction is exothermic or endothermic. [1]\n" +
+              "(d) A catalyst is added that lowers the peak to 240 kJ mol⁻¹. State the new Ea and the new ΔH. [2]",
+            marks: 6,
+            modelAnswer:
+              "(a) Ea = 300 − 120 = 180 kJ mol⁻¹.\n" +
+              "(b) ΔH = 200 − 120 = +80 kJ mol⁻¹ (positive).\n" +
+              "(c) Endothermic (products higher than reactants).\n" +
+              "(d) New Ea = 240 − 120 = 120 kJ mol⁻¹. ΔH is unchanged at +80 kJ mol⁻¹.",
+            markScheme: [
+              "Ea = 300 − 120 = 180 kJ mol⁻¹ (1)",
+              "ΔH = 200 − 120 (1)",
+              "ΔH = +80 kJ mol⁻¹ / positive (1)",
+              "Endothermic (1)",
+              "New Ea = 240 − 120 = 120 kJ mol⁻¹ (1)",
+              "ΔH unchanged / still +80 kJ mol⁻¹ (1)",
+            ],
+            commonError:
+              "When a catalyst is added, only the peak (and hence Ea) changes. ΔH stays the same because the reactant and product levels are unchanged.",
+            guideRef: "Energy Level Diagrams",
+            difficulty: "core",
+            hints: [
+              "Ea = peak − reactants.",
+              "ΔH = products − reactants; check the sign.",
+              "For the catalyst, use the new peak with the SAME reactants level.",
+              "The catalyst never changes ΔH.",
+            ],
+            solutions: [
+              {
+                label: "Method: read the energy levels",
+                steps: [
+                  "Ea = 300 − 120 = 180 kJ mol⁻¹.",
+                  "ΔH = 200 − 120 = +80 kJ mol⁻¹ (endothermic).",
+                  "Catalysed Ea = 240 − 120 = 120 kJ mol⁻¹.",
+                  "ΔH unchanged: still +80 kJ mol⁻¹.",
+                ],
+              },
+            ],
+          },
+          {
+            id: "chem-energetics-bq2-07",
+            question:
+              "(a) Define the term bond energy. [2]\n" +
+              "(b) Explain why bond energy values are always positive. [1]\n" +
+              "(c) Bond energy values from a data book are described as 'average' values. Explain what this means and one consequence for calculated values of ΔH. [2]",
+            marks: 5,
+            modelAnswer:
+              "(a) Bond energy is the energy required to break one mole of a particular covalent bond in the gaseous state, measured in kJ mol⁻¹.\n" +
+              "(b) Because breaking bonds always requires (absorbs) energy — it is endothermic — so the value is always positive.\n" +
+              "(c) The same type of bond (e.g. C–H) has slightly different strengths in different molecules, so a data book quotes an average over many compounds. As a consequence, a ΔH calculated from average bond energies is approximate and may differ from the experimentally measured value.",
+            markScheme: [
+              "Energy to break one mole of a (named/particular) bond (1)",
+              "In the gaseous state / kJ mol⁻¹ (1)",
+              "Breaking bonds absorbs energy / is endothermic → always positive (1)",
+              "Average = the same bond differs slightly between molecules / averaged over compounds (1)",
+              "Calculated ΔH is approximate / differs from experimental value (1)",
+            ],
+            commonError:
+              "Bond energy refers to BREAKING a bond (energy in), not making it. The value is positive for this reason.",
+            guideRef: "Bond Breaking and Bond Making",
+            difficulty: "core",
+            hints: [
+              "Bond energy is always defined for BREAKING a bond.",
+              "Breaking is endothermic, so the value is positive.",
+              "'Average' means the same bond type varies a little between molecules.",
+            ],
+          },
+          {
+            id: "chem-energetics-bq2-08",
+            question:
+              "Nitrogen monoxide forms in car engines:\n" +
+              "N₂(g) + O₂(g) → 2NO(g)\n\n" +
+              "Bond energies (kJ mol⁻¹): N≡N = 945; O=O = 498; N=O (in NO) = 631.\n\n" +
+              "(a) Calculate the total energy absorbed breaking bonds. [1]\n" +
+              "(b) Calculate the total energy released making bonds. [1]\n" +
+              "(c) Calculate ΔH. [1]\n" +
+              "(d) State whether the reaction is exothermic or endothermic, and use this to explain why NO only forms at the very high temperatures inside an engine. [2]",
+            marks: 5,
+            modelAnswer:
+              "(a) Bonds broken: N≡N (945) + O=O (498) = 1443 kJ.\n" +
+              "(b) Bonds made: 2 × N=O = 2 × 631 = 1262 kJ.\n" +
+              "(c) ΔH = 1443 − 1262 = +181 kJ mol⁻¹.\n" +
+              "(d) Endothermic (ΔH positive). Energy must be supplied for the reaction to proceed; the very high temperature inside the engine provides enough energy to break the strong N≡N bond and drive this endothermic reaction.",
+            markScheme: [
+              "Energy absorbed = 945 + 498 = 1443 kJ (1)",
+              "Energy released = 2 × 631 = 1262 kJ (1)",
+              "ΔH = 1443 − 1262 = +181 kJ mol⁻¹ (1)",
+              "Endothermic / ΔH positive (1)",
+              "High temperature supplies the energy needed / to break strong N≡N bond (1)",
+            ],
+            commonError:
+              "This reaction is endothermic (positive ΔH). Students who expect all reactions of common gases to be exothermic may write the wrong sign — always compare bonds broken with bonds made.",
+            guideRef: "Calculating ΔH from Bond Energies",
+            difficulty: "core",
+            hints: [
+              "Bonds broken: 1 N≡N + 1 O=O. Bonds made: 2 N=O.",
+              "Broken = 945 + 498. Made = 2 × 631.",
+              "ΔH = broken − made. Here made < broken, so check the sign.",
+              "A positive ΔH means energy must be supplied — link to the engine temperature.",
+            ],
+            strategy: "build a table",
+            solutions: [
+              {
+                label: "Method: ΔH = bonds broken − bonds made",
+                steps: [
+                  "Broken: N≡N (945) + O=O (498) = 1443 kJ.",
+                  "Made: 2 N=O = 2 × 631 = 1262 kJ.",
+                  "ΔH = 1443 − 1262 = +181 kJ mol⁻¹.",
+                  "Positive → endothermic.",
+                ],
+              },
+            ],
+          },
+          {
+            id: "chem-energetics-bq2-09",
+            question:
+              "A student neutralises 25.0 cm³ of 1.0 mol dm⁻³ hydrochloric acid with 25.0 cm³ of 1.0 mol dm⁻³ sodium hydroxide. The temperature rises by 6.7 °C. (Density of mixture = 1.0 g cm⁻³; c = 4.2 J g⁻¹ °C⁻¹.)\n\n" +
+              "(a) Calculate the heat released, Q. [2]\n" +
+              "(b) Calculate the number of moles of water formed. [1]\n" +
+              "(c) Calculate the enthalpy change of neutralisation in kJ per mole of water, giving the correct sign. [2]",
+            marks: 5,
+            modelAnswer:
+              "(a) m = 25.0 + 25.0 = 50.0 g. Q = mcΔT = 50.0 × 4.2 × 6.7 = 1407 J ≈ 1.41 kJ.\n" +
+              "(b) Moles of HCl = 1.0 × 25.0/1000 = 0.025 mol; this reacts 1:1 with NaOH to give 0.025 mol of water.\n" +
+              "(c) ΔH = −Q/n = −1407 / 0.025 = −56 280 J mol⁻¹ ≈ −56.3 kJ mol⁻¹ (negative, exothermic).",
+            markScheme: [
+              "m = 50.0 g; Q = 50.0 × 4.2 × 6.7 (1)",
+              "Q = 1407 J ≈ 1.41 kJ (1)",
+              "moles of water = 0.025 mol (1)",
+              "ΔH = −1407 / 0.025 = −56 280 J mol⁻¹ ≈ −56.3 kJ mol⁻¹ (1)",
+              "Negative sign / exothermic (1)",
+            ],
+            commonError:
+              "Use the COMBINED mass (50 g) in Q = mcΔT, and remember to make ΔH negative because the reaction releases heat (exothermic).",
+            guideRef: "Interpreting Energy Changes from Evidence",
+            difficulty: "challenge",
+            hints: [
+              "m is the total mass of solution = 25 + 25 = 50 g.",
+              "Q = mcΔT = 50 × 4.2 × 6.7.",
+              "moles = concentration × volume in dm³ = 1.0 × 0.025 = 0.025 mol; HCl:H₂O is 1:1.",
+              "ΔH = −Q ÷ n; the minus sign shows energy is released.",
+            ],
+            strategy: "build a table — list m, c, ΔT, then n, then divide",
+            solutions: [
+              {
+                label: "Method: calorimetry to molar enthalpy",
+                steps: [
+                  "Q = mcΔT = 50.0 × 4.2 × 6.7 = 1407 J.",
+                  "n(H₂O) = n(HCl) = 1.0 mol dm⁻³ × 0.0250 dm³ = 0.025 mol.",
+                  "ΔH = −Q/n = −1407 ÷ 0.025 = −56 280 J mol⁻¹.",
+                  "Convert: −56 280 ÷ 1000 ≈ −56.3 kJ mol⁻¹ (exothermic).",
+                ],
+              },
+            ],
+          },
+          {
+            id: "chem-energetics-bq2-10",
+            question:
+              "**Challenge question**\n\n" +
+              "Ethene undergoes addition with bromine:\n" +
+              "C₂H₄(g) + Br₂(g) → C₂H₄Br₂(g)\n\n" +
+              "Bond energies (kJ mol⁻¹): C=C = 614; C–C = 347; Br–Br = 193; C–Br = 290; C–H = 413.\n\n" +
+              "(a) Identify which bonds are broken and which are made (consider only the bonds that change). [3]\n" +
+              "(b) Calculate ΔH. Show your working. [3]\n" +
+              "(c) Explain why considering only the bonds that change gives the same ΔH as counting every bond. [2]",
+            marks: 8,
+            modelAnswer:
+              "(a) Bonds broken: 1 C=C (614) and 1 Br–Br (193). Bonds made: 1 C–C (347) and 2 C–Br (2 × 290 = 580). The 4 C–H bonds are unchanged.\n" +
+              "(b) Total broken = 614 + 193 = 807 kJ. Total made = 347 + 580 = 927 kJ. ΔH = 807 − 927 = −120 kJ mol⁻¹ (exothermic).\n" +
+              "(c) The 4 C–H bonds appear unchanged in both the reactant (ethene) and product (1,2-dibromoethane). If you counted all bonds, the 4 C–H bonds would be broken and then re-made for the same energy, so they cancel out and have no effect on ΔH.",
+            markScheme: [
+              "Bonds broken: C=C (614) and Br–Br (193) (1)",
+              "Bonds made: C–C (347) and 2 C–Br (2 × 290) (1)",
+              "Recognise the 4 C–H bonds are unchanged (1)",
+              "Total broken = 807 kJ; total made = 927 kJ (1)",
+              "ΔH = 807 − 927 (1)",
+              "ΔH = −120 kJ mol⁻¹ / exothermic (1)",
+              "C–H bonds broken and re-made cancel / no net contribution (1)",
+              "So same ΔH either way (1)",
+            ],
+            commonError:
+              "Students often forget that 2 C–Br bonds form (one on each carbon), counting only one. Both carbons of the former double bond gain a bromine atom.",
+            guideRef: "Calculating ΔH from Bond Energies",
+            difficulty: "challenge",
+            hints: [
+              "Only the C=C double bond and the Br–Br bond break; the 4 C–H bonds stay the same.",
+              "Two new C–Br bonds form (one per carbon) plus the C=C becomes a C–C single bond.",
+              "Broken = 614 + 193 = 807 kJ. Made = 347 + 2 × 290 = 927 kJ.",
+              "ΔH = 807 − 927.",
+            ],
+            strategy: "draw a diagram — identify which bonds change",
+            solutions: [
+              {
+                label: "Method: change-only bond accounting",
+                steps: [
+                  "Bonds broken: C=C (614) + Br–Br (193) = 807 kJ.",
+                  "Bonds made: C–C (347) + 2 C–Br (2 × 290 = 580) = 927 kJ.",
+                  "ΔH = 807 − 927 = −120 kJ mol⁻¹.",
+                  "Negative → exothermic. The 4 unchanged C–H bonds cancel.",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: "chem-energetics-bankqa-3",
+        title: "Question Bank — Structured Paper 3",
+        description: "10 structured questions: calorimetry, neutralisation, fuel cells and applications.",
+        questions: [
+          {
+            id: "chem-energetics-bq3-01",
+            question:
+              "When ammonium nitrate dissolves in water in a beaker, a thermometer in the water reads a drop of 4 °C.\n\n" +
+              "(a) State whether the process is exothermic or endothermic. [1]\n" +
+              "(b) State the direction of energy transfer between the system and surroundings. [1]\n" +
+              "(c) State the sign of ΔH. [1]",
+            marks: 3,
+            modelAnswer:
+              "(a) Endothermic.\n" +
+              "(b) Energy is transferred FROM the surroundings (the water) TO the system (the dissolving process).\n" +
+              "(c) ΔH is positive.",
+            markScheme: [
+              "Endothermic (1)",
+              "Energy transferred from surroundings to system (1)",
+              "ΔH positive (1)",
+            ],
+            commonError:
+              "A temperature drop means the surroundings LOSE energy — that energy is absorbed by the endothermic process, so ΔH is positive.",
+            guideRef: "Exothermic and Endothermic Reactions",
+            difficulty: "warmup",
+          },
+          {
+            id: "chem-energetics-bq3-02",
+            question:
+              "A student burns three different alcohols to heat 150 g of water and records the temperature rise for each. Using Q = mcΔT, the energy transferred to the water is:\n" +
+              "Methanol: ΔT = 18.0 °C\n" +
+              "Ethanol: ΔT = 24.0 °C\n" +
+              "(c of water = 4.2 J g⁻¹ °C⁻¹.)\n\n" +
+              "(a) Calculate Q for methanol. [2]\n" +
+              "(b) Calculate Q for ethanol. [1]\n" +
+              "(c) State which fuel transferred more energy to the water and by how many kilojoules. [2]",
+            marks: 5,
+            modelAnswer:
+              "(a) Q(methanol) = mcΔT = 150 × 4.2 × 18.0 = 11 340 J = 11.34 kJ.\n" +
+              "(b) Q(ethanol) = 150 × 4.2 × 24.0 = 15 120 J = 15.12 kJ.\n" +
+              "(c) Ethanol transferred more energy. Difference = 15.12 − 11.34 = 3.78 kJ.",
+            markScheme: [
+              "Q(methanol) = 150 × 4.2 × 18.0 (1)",
+              "= 11 340 J = 11.34 kJ (1)",
+              "Q(ethanol) = 150 × 4.2 × 24.0 = 15 120 J = 15.12 kJ (1)",
+              "Ethanol transferred more energy (1)",
+              "Difference = 3.78 kJ (1)",
+            ],
+            commonError:
+              "Keep the mass of water constant (150 g) for both calculations. Only ΔT changes between the two fuels.",
+            guideRef: "Interpreting Energy Changes from Evidence",
+            difficulty: "core",
+            hints: [
+              "Use m = 150 g and c = 4.2 for both.",
+              "Q = mcΔT. Substitute each ΔT in turn.",
+              "Convert J to kJ by dividing by 1000.",
+              "Difference = larger Q − smaller Q.",
+            ],
+            strategy: "build a table — one row per fuel",
+            solutions: [
+              {
+                label: "Method: Q = mcΔT for each fuel",
+                steps: [
+                  "Methanol: Q = 150 × 4.2 × 18.0 = 11 340 J = 11.34 kJ.",
+                  "Ethanol: Q = 150 × 4.2 × 24.0 = 15 120 J = 15.12 kJ.",
+                  "Ethanol > methanol.",
+                  "Difference = 15.12 − 11.34 = 3.78 kJ.",
+                ],
+              },
+            ],
+          },
+          {
+            id: "chem-energetics-bq3-03",
+            question:
+              "A hydrogen–oxygen fuel cell produces electricity from the reaction:\n" +
+              "2H₂(g) + O₂(g) → 2H₂O(l)\n\n" +
+              "(a) State whether this reaction is exothermic or endothermic. [1]\n" +
+              "(b) State one advantage of a hydrogen–oxygen fuel cell compared with burning a hydrocarbon fuel. [1]\n" +
+              "(c) State one disadvantage or practical difficulty of using hydrogen fuel cells. [1]\n" +
+              "(d) Explain why the reaction releases energy, in terms of bonds broken and bonds made. [2]",
+            marks: 5,
+            modelAnswer:
+              "(a) Exothermic.\n" +
+              "(b) The only product is water, so it does not produce carbon dioxide or other pollutants / it is more efficient than combustion.\n" +
+              "(c) Hydrogen is difficult and expensive to store and transport safely (it is flammable and a gas) / producing hydrogen often uses energy from fossil fuels.\n" +
+              "(d) More energy is released when the strong O–H bonds in water form than is absorbed breaking the H–H and O=O bonds in the reactants, so overall energy is released (ΔH negative).",
+            markScheme: [
+              "Exothermic (1)",
+              "Advantage: only product is water / no CO₂ or pollutants / more efficient (1)",
+              "Disadvantage: hard/expensive to store/transport hydrogen / hydrogen production may use fossil fuels (1)",
+              "Energy released making O–H bonds > energy absorbed breaking H–H and O=O bonds (1)",
+              "So overall energy is released / ΔH negative (1)",
+            ],
+            commonError:
+              "Fuel cells are exothermic overall — the appeal is that the chemical energy is converted to electrical energy with only water as the product, not that they are endothermic.",
+            guideRef: "Common Examples and Applications",
+            difficulty: "core",
+            hints: [
+              "The reaction is the same combustion of hydrogen — is that exo or endothermic?",
+              "Think about what comes OUT of a hydrogen fuel cell compared with a petrol engine.",
+              "Storage and source of the hydrogen are common drawbacks.",
+              "For (d), compare energy released making O–H bonds with energy absorbed breaking H–H and O=O.",
+            ],
+          },
+          {
+            id: "chem-energetics-bq3-04",
             question:
               "**Challenge — multi-step and synoptic**\n\n" +
               "The industrial production of sulfuric acid involves the Contact Process. " +
               "A key step is the oxidation of sulfur dioxide:\n" +
               "2SO₂(g) + O₂(g) → 2SO₃(g), ΔH = −196 kJ mol⁻¹\n\n" +
               "(a) State the sign of ΔH and explain what it tells you about the energy change. [2]\n" +
-              "(b) Vanadium(V) oxide (V₂O₅) is the catalyst used in the Contact Process. " +
-              "Draw a sketch energy level diagram for this reaction WITHOUT and WITH the catalyst, " +
-              "labelling Ea (uncatalysed), Ea (catalysed), and ΔH. Describe the key features. [4]\n" +
-              "(c) Explain, using bond energy terms, why the reaction releases energy. " +
-              "You do not need to calculate numerical values. [2]\n" +
-              "(d) If the reaction is cooled below the optimum temperature, it proceeds more slowly. " +
-              "Using activation energy, explain why. [2]",
+              "(b) Vanadium(V) oxide (V₂O₅) is the catalyst used. Describe the energy level diagram for this reaction WITHOUT and WITH the catalyst, labelling Ea (uncatalysed), Ea (catalysed), and ΔH. State the key features. [4]\n" +
+              "(c) Explain, using bond energy terms, why the reaction releases energy. You do not need numerical values. [2]\n" +
+              "(d) If the reaction mixture is cooled, it proceeds more slowly. Using activation energy, explain why. [2]",
             marks: 10,
             modelAnswer:
-              "(a) ΔH = −196 kJ mol⁻¹, which is negative. This means the reaction is exothermic — energy is released to the surroundings. The products (SO₃) have lower chemical potential energy than the reactants (SO₂ + O₂).\n" +
-              "(b) Diagram should show: reactants at a certain energy level; products at a lower energy level (exothermic, products below reactants); a high peak for the uncatalysed pathway labelled Ea(uncatalysed); a lower peak for the catalysed pathway labelled Ea(catalysed); a single ΔH arrow from reactants to products, the same for both pathways. Key features: same reactants and products energy levels; lower peak with catalyst; ΔH unchanged.\n" +
-              "(c) More energy is released when the new S=O bonds form in SO₃ than is absorbed when the S=O bonds in SO₂ and the O=O bond in O₂ are broken. Since energy released by bond making exceeds energy absorbed by bond breaking, the reaction is exothermic.\n" +
-              "(d) At lower temperatures, reactant particles have lower average kinetic energy. Fewer particles have energy greater than or equal to the activation energy Ea. Therefore fewer effective collisions occur per second and the rate decreases.",
+              "(a) ΔH = −196 kJ mol⁻¹, which is negative. The reaction is exothermic — energy is released to the surroundings. The products (SO₃) have lower chemical potential energy than the reactants.\n" +
+              "(b) Reactants at a certain energy level; products at a lower energy level (exothermic). A high peak for the uncatalysed pathway labelled Ea(uncatalysed); a lower peak for the catalysed pathway labelled Ea(catalysed); a single ΔH arrow from reactants down to products, the same for both pathways. Key features: same reactants and products energy levels; lower peak with catalyst; ΔH unchanged.\n" +
+              "(c) More energy is released when the new S–O/S=O bonds form in SO₃ than is absorbed when the bonds in SO₂ and the O=O bond in O₂ are broken. Since energy released by bond making exceeds energy absorbed by bond breaking, the reaction is exothermic.\n" +
+              "(d) At lower temperatures, reactant particles have lower average kinetic energy. Fewer particles have energy greater than or equal to the activation energy Ea, so fewer effective collisions occur per second and the rate decreases.",
             markScheme: [
               "ΔH negative (1)",
               "Exothermic / energy released to surroundings / products at lower energy (1)",
@@ -1731,19 +2394,213 @@ export const chemEnergetics: Topic = {
               "Fewer particles have energy ≥ Ea → fewer effective collisions → slower rate (1)",
             ],
             commonError:
-              "In part (d), students often just say 'particles move more slowly'. The key point is that fewer particles meet or exceed the activation energy threshold — this is the cause of the rate decrease, not merely reduced speed in general.",
+              "In part (d), students often just say 'particles move more slowly'. The key point is that fewer particles meet or exceed the activation energy threshold.",
             guideRef: "Energy Level Diagrams",
             difficulty: "challenge",
             hints: [
               "For part (a): negative ΔH = exothermic — energy is released.",
-              "For part (b): draw two curves on the same axes — same start and end, two different peaks.",
-              "For part (c): think about bonds broken vs bonds made — which contributes more energy?",
-              "For part (d): link temperature to kinetic energy, kinetic energy to Ea, Ea to collision frequency.",
+              "For part (b): two curves on the same axes — same start and end, two different peaks.",
+              "For part (c): compare bonds broken vs bonds made — which contributes more energy?",
+              "For part (d): link temperature → kinetic energy → Ea → collision frequency.",
             ],
             strategy: "draw a diagram; identify what is being compared",
           },
           {
-            id: "chem-energetics-bank-qa2-q04",
+            id: "chem-energetics-bq3-05",
+            question:
+              "Propane is used as a camping-gas fuel:\n" +
+              "C₃H₈(g) + 5O₂(g) → 3CO₂(g) + 4H₂O(g)\n\n" +
+              "Bond energies (kJ mol⁻¹): C–C = 347; C–H = 413; O=O = 498; C=O = 805; O–H = 464.\n\n" +
+              "(a) Show that propane (C₃H₈) contains 2 C–C bonds and 8 C–H bonds. [1]\n" +
+              "(b) Calculate the total energy absorbed breaking all bonds in the reactants. [2]\n" +
+              "(c) Calculate the total energy released making all bonds in the products. [2]\n" +
+              "(d) Calculate ΔH and state whether the reaction is exothermic or endothermic. [2]",
+            marks: 7,
+            modelAnswer:
+              "(a) Propane is CH₃–CH₂–CH₃: three carbons joined by 2 C–C bonds, with 3 + 2 + 3 = 8 C–H bonds.\n" +
+              "(b) Bonds broken: 2 C–C (2 × 347 = 694) + 8 C–H (8 × 413 = 3304) + 5 O=O (5 × 498 = 2490) = 6488 kJ.\n" +
+              "(c) Bonds made: 6 C=O (in 3CO₂: 3 × 2 = 6, so 6 × 805 = 4830) + 8 O–H (in 4H₂O: 4 × 2 = 8, so 8 × 464 = 3712) = 8542 kJ.\n" +
+              "(d) ΔH = 6488 − 8542 = −2054 kJ mol⁻¹. Exothermic (ΔH negative).",
+            markScheme: [
+              "C₃H₈ as CH₃–CH₂–CH₃: 2 C–C and 8 C–H (1)",
+              "Bonds broken: 694 + 3304 + 2490 (1)",
+              "Total broken = 6488 kJ (1)",
+              "Bonds made: 6 C=O = 4830 kJ; 8 O–H = 3712 kJ (1)",
+              "Total made = 8542 kJ (1)",
+              "ΔH = 6488 − 8542 = −2054 kJ mol⁻¹ (1)",
+              "Exothermic / ΔH negative (1)",
+            ],
+            commonError:
+              "Watch the coefficients: 3CO₂ contains 6 C=O bonds and 4H₂O contains 8 O–H bonds. Forgetting to multiply by the coefficient is the most common slip.",
+            guideRef: "Calculating ΔH from Bond Energies",
+            difficulty: "challenge",
+            hints: [
+              "Draw propane CH₃–CH₂–CH₃ to count 2 C–C and 8 C–H bonds.",
+              "Reactants: 2 C–C + 8 C–H + 5 O=O.",
+              "Products: 3CO₂ → 6 C=O; 4H₂O → 8 O–H.",
+              "ΔH = total broken − total made.",
+            ],
+            strategy: "build a table",
+            solutions: [
+              {
+                label: "Method: full bond-energy table",
+                steps: [
+                  "Broken: 2 C–C (694) + 8 C–H (3304) + 5 O=O (2490) = 6488 kJ.",
+                  "Made: 6 C=O (4830) + 8 O–H (3712) = 8542 kJ.",
+                  "ΔH = 6488 − 8542 = −2054 kJ mol⁻¹.",
+                  "Negative → exothermic.",
+                ],
+              },
+            ],
+          },
+          {
+            id: "chem-energetics-bq3-06",
+            question:
+              "Two fuels are compared by burning them under identical conditions to heat 200 g of water. (c = 4.2 J g⁻¹ °C⁻¹.)\n" +
+              "Fuel A raises the temperature by 15.0 °C burning 0.50 g.\n" +
+              "Fuel B raises the temperature by 21.0 °C burning 0.70 g.\n\n" +
+              "(a) Calculate the energy transferred to the water by each fuel. [2]\n" +
+              "(b) Calculate the energy released per gram for each fuel. [2]\n" +
+              "(c) State, with a reason, which fuel is the better energy source per gram. [1]",
+            marks: 5,
+            modelAnswer:
+              "(a) Fuel A: Q = 200 × 4.2 × 15.0 = 12 600 J = 12.6 kJ. Fuel B: Q = 200 × 4.2 × 21.0 = 17 640 J = 17.64 kJ.\n" +
+              "(b) Fuel A: 12.6 kJ ÷ 0.50 g = 25.2 kJ g⁻¹. Fuel B: 17.64 kJ ÷ 0.70 g = 25.2 kJ g⁻¹.\n" +
+              "(c) They release the same energy per gram (25.2 kJ g⁻¹), so neither is better per gram — they are equally good energy sources by mass.",
+            markScheme: [
+              "Fuel A: Q = 12 600 J = 12.6 kJ (1)",
+              "Fuel B: Q = 17 640 J = 17.64 kJ (1)",
+              "Fuel A: 12.6 / 0.50 = 25.2 kJ g⁻¹ (1)",
+              "Fuel B: 17.64 / 0.70 = 25.2 kJ g⁻¹ (1)",
+              "Equal energy per gram / neither better (1)",
+            ],
+            commonError:
+              "To compare fuels fairly, divide the energy released by the mass burned (energy per gram). Comparing only the temperature rise ignores the different masses burned.",
+            guideRef: "Interpreting Energy Changes from Evidence",
+            difficulty: "core",
+            hints: [
+              "Q = mcΔT with m = 200 g for both.",
+              "Energy per gram = energy released ÷ mass of fuel burned.",
+              "Work out both per-gram values before comparing.",
+            ],
+            strategy: "build a table — one row per fuel",
+            solutions: [
+              {
+                label: "Method: energy then energy-per-gram",
+                steps: [
+                  "Fuel A: Q = 200 × 4.2 × 15.0 = 12 600 J = 12.6 kJ; per gram = 12.6 / 0.50 = 25.2 kJ g⁻¹.",
+                  "Fuel B: Q = 200 × 4.2 × 21.0 = 17 640 J = 17.64 kJ; per gram = 17.64 / 0.70 = 25.2 kJ g⁻¹.",
+                  "Both = 25.2 kJ g⁻¹.",
+                  "Equal energy density by mass.",
+                ],
+              },
+            ],
+          },
+          {
+            id: "chem-energetics-bq3-07",
+            question:
+              "(a) Sketch and describe the shape of an energy level diagram for an EXOTHERMIC reaction. Label reactants, products, Ea and ΔH. [3]\n" +
+              "(b) On the same axes, describe how the curve would change if a catalyst were added. [2]\n" +
+              "(c) Explain why the value of ΔH is unchanged when a catalyst is added. [2]",
+            marks: 7,
+            modelAnswer:
+              "(a) The reactants are drawn as a horizontal line on the left, the products as a lower horizontal line on the right (exothermic). The curve rises from the reactants to a peak (transition state) then falls to the products. Ea is the height from the reactants level up to the peak; ΔH is the (downward) gap from the reactants level to the products level.\n" +
+              "(b) The catalysed curve has a lower peak (lower Ea) but starts and ends at exactly the same reactant and product levels.\n" +
+              "(c) ΔH = E(products) − E(reactants). A catalyst only provides an alternative pathway with a lower peak; it does not change the energy levels of the reactants or products, so the difference between them — ΔH — is unchanged.",
+            markScheme: [
+              "Products drawn lower than reactants (exothermic) (1)",
+              "Peak/transition state shown between them (1)",
+              "Ea labelled reactants→peak; ΔH labelled reactants→products (downward) (1)",
+              "Catalysed curve: lower peak / lower Ea (1)",
+              "Same reactant and product levels (1)",
+              "ΔH depends only on energy levels of reactants and products (1)",
+              "Catalyst does not change those levels, so ΔH unchanged (1)",
+            ],
+            commonError:
+              "When sketching the catalysed pathway, students sometimes lower the products level too. Only the peak height (Ea) changes — the reactant and product levels are fixed.",
+            guideRef: "Energy Level Diagrams",
+            difficulty: "core",
+            hints: [
+              "Exothermic: products below reactants.",
+              "Ea is measured from reactants to the peak; ΔH from reactants to products.",
+              "A catalyst lowers only the peak.",
+              "ΔH is a difference between two fixed levels.",
+            ],
+            strategy: "draw a diagram; label all key features before answering",
+          },
+          {
+            id: "chem-energetics-bq3-08",
+            question:
+              "Hydrazine, N₂H₄, is used as a rocket fuel. It burns in oxygen:\n" +
+              "N₂H₄(g) + O₂(g) → N₂(g) + 2H₂O(g)\n\n" +
+              "Bond energies (kJ mol⁻¹): N–N = 158; N–H = 391; O=O = 498; N≡N = 945; O–H = 464.\n\n" +
+              "(a) State the bonds present in one molecule of N₂H₄. [1]\n" +
+              "(b) Calculate the total energy absorbed breaking all bonds in the reactants. [2]\n" +
+              "(c) Calculate the total energy released making all bonds in the products. [2]\n" +
+              "(d) Calculate ΔH and state whether the reaction is exothermic or endothermic. [2]",
+            marks: 7,
+            modelAnswer:
+              "(a) N₂H₄ is H₂N–NH₂: it has 1 N–N bond and 4 N–H bonds.\n" +
+              "(b) Bonds broken: 1 N–N (158) + 4 N–H (4 × 391 = 1564) + 1 O=O (498) = 2220 kJ.\n" +
+              "(c) Bonds made: 1 N≡N (945) + 4 O–H (in 2H₂O: 2 × 2 = 4, so 4 × 464 = 1856) = 2801 kJ.\n" +
+              "(d) ΔH = 2220 − 2801 = −581 kJ mol⁻¹. Exothermic (ΔH negative).",
+            markScheme: [
+              "N₂H₄ has 1 N–N and 4 N–H bonds (1)",
+              "Bonds broken: 158 + 1564 + 498 (1)",
+              "Total broken = 2220 kJ (1)",
+              "Bonds made: N≡N (945) + 4 O–H (1856) (1)",
+              "Total made = 2801 kJ (1)",
+              "ΔH = 2220 − 2801 = −581 kJ mol⁻¹ (1)",
+              "Exothermic / ΔH negative (1)",
+            ],
+            commonError:
+              "The product nitrogen has a TRIPLE bond (N≡N = 945), not a single N–N bond. Using the wrong nitrogen bond energy is the key error here.",
+            guideRef: "Calculating ΔH from Bond Energies",
+            difficulty: "challenge",
+            hints: [
+              "Draw N₂H₄ as H₂N–NH₂: 1 N–N and 4 N–H bonds.",
+              "Reactants: those bonds plus 1 O=O in O₂.",
+              "Products: N₂ has a triple bond N≡N; 2H₂O has 4 O–H bonds.",
+              "ΔH = total broken − total made.",
+            ],
+            strategy: "build a table",
+            solutions: [
+              {
+                label: "Method: full bond-energy table",
+                steps: [
+                  "Broken: 1 N–N (158) + 4 N–H (1564) + 1 O=O (498) = 2220 kJ.",
+                  "Made: 1 N≡N (945) + 4 O–H (1856) = 2801 kJ.",
+                  "ΔH = 2220 − 2801 = −581 kJ mol⁻¹.",
+                  "Negative → exothermic.",
+                ],
+              },
+            ],
+          },
+          {
+            id: "chem-energetics-bq3-09",
+            question:
+              "(a) Give one example each of an exothermic and an endothermic reaction, other than combustion and thermal decomposition. [2]\n" +
+              "(b) Explain how you could tell, by experiment, whether dissolving a salt in water is exothermic or endothermic. [2]\n" +
+              "(c) State why respiration is described as exothermic. [1]",
+            marks: 5,
+            modelAnswer:
+              "(a) Exothermic: neutralisation of an acid with an alkali (or oxidation/rusting). Endothermic: photosynthesis (or dissolving ammonium nitrate in water).\n" +
+              "(b) Measure the temperature of the water before adding the salt and the lowest/highest temperature after dissolving with a thermometer. A temperature rise means exothermic; a temperature fall means endothermic.\n" +
+              "(c) Respiration releases energy from glucose to the body / surroundings, so it is exothermic.",
+            markScheme: [
+              "Valid exothermic example, e.g. neutralisation / oxidation (1)",
+              "Valid endothermic example, e.g. photosynthesis / dissolving ammonium nitrate (1)",
+              "Measure temperature before and after with a thermometer (1)",
+              "Rise = exothermic; fall = endothermic (1)",
+              "Respiration releases energy from glucose / to the body (1)",
+            ],
+            commonError:
+              "Make sure the examples are NOT combustion or thermal decomposition, since the question excludes those.",
+            guideRef: "Common Examples and Applications",
+            difficulty: "warmup",
+          },
+          {
+            id: "chem-energetics-bq3-10",
             question:
               "**Challenge — extended calculation and analysis**\n\n" +
               "Methanol (CH₃OH) can be burned as a fuel:\n" +
@@ -1753,8 +2610,7 @@ export const chemEnergetics: Topic = {
               "(b) Write down all bonds made in 2CO₂ and 4H₂O. State the quantity of each bond and the total energy released. [2]\n" +
               "(c) Calculate ΔH for the combustion of 2 moles of methanol. Show your working. [2]\n" +
               "(d) Calculate ΔH per mole of methanol. [1]\n" +
-              "(e) A student claims: 'The reaction releases more energy per mole than the combustion of hydrogen.' " +
-              "Using ΔH values, evaluate this claim. (ΔH for H₂ combustion = −243 kJ mol⁻¹ per mole H₂.) [2]",
+              "(e) A student claims: 'Methanol releases more energy per mole than the combustion of hydrogen.' Using ΔH values, evaluate this claim. (ΔH for H₂ combustion = −243 kJ mol⁻¹ per mole H₂.) [2]",
             marks: 11,
             modelAnswer:
               "(a) In CH₃OH: 3 C–H bonds, 1 C–O bond, 1 O–H bond. For 2CH₃OH: 6 C–H + 2 C–O + 2 O–H. For 3O₂: 3 O=O.\n" +
@@ -1766,9 +2622,9 @@ export const chemEnergetics: Topic = {
               "(d) ΔH per mole = −1316 / 2 = −658 kJ mol⁻¹.\n" +
               "(e) ΔH for methanol combustion = −658 kJ mol⁻¹; ΔH for hydrogen combustion = −243 kJ mol⁻¹. " +
               "Methanol releases more energy per mole (658 > 243 kJ mol⁻¹), so the student's claim is correct. " +
-              "However, this is per mole of fuel; to compare fairly as fuels you would also need to consider energy per gram or energy per unit cost.",
+              "However, this is per mole of fuel; to compare fairly as fuels you would also need to consider energy per gram or per unit cost.",
             markScheme: [
-              "6 C–H from 2CH₃OH correctly identified: 6 × 413 = 2478 kJ (1)",
+              "6 C–H from 2CH₃OH: 6 × 413 = 2478 kJ (1)",
               "2 C–O + 2 O–H identified: 716 + 928 = 1644 kJ (1)",
               "3 O=O from 3O₂: 3 × 498 = 1494 kJ (1)",
               "Total broken = 5616 kJ (1)",
@@ -1776,28 +2632,417 @@ export const chemEnergetics: Topic = {
               "8 O–H in 4H₂O: 8 × 464 = 3712 kJ; total made = 6932 kJ (1)",
               "ΔH = 5616 − 6932 = −1316 kJ (for 2 mol) (1)",
               "ΔH per mole = −658 kJ mol⁻¹ (1)",
-              "Methanol: 658 kJ mol⁻¹ > hydrogen: 243 kJ mol⁻¹ — claim is correct (1)",
-              "Appropriate qualification, e.g. per mole comparison is valid; per gram or other measures may differ (1)",
+              "Methanol 658 > hydrogen 243 kJ mol⁻¹ — claim is correct (1)",
+              "Appropriate qualification, e.g. per gram or other measures may differ (1)",
             ],
             commonError:
-              "In methanol (CH₃OH), students often miss the O–H bond, counting only C–H and C–O bonds. The hydroxyl –OH group contributes one O–H bond per molecule. For 2 CH₃OH, that's 2 O–H bonds in the reactants.",
+              "In methanol (CH₃OH), students often miss the O–H bond, counting only C–H and C–O bonds. The hydroxyl –OH group contributes one O–H bond per molecule.",
             guideRef: "Calculating ΔH from Bond Energies",
             difficulty: "challenge",
             hints: [
-              "Draw the structural formula of methanol: H–C(H₂)–O–H. Count every bond type.",
+              "Draw methanol H₃C–O–H. Count every bond type.",
               "Per CH₃OH molecule: 3 C–H, 1 C–O, 1 O–H. For 2 molecules: double everything.",
-              "For products: each CO₂ has 2 C=O bonds (double bond ×2); each H₂O has 2 O–H bonds.",
+              "Products: each CO₂ has 2 C=O bonds; each H₂O has 2 O–H bonds.",
               "ΔH for 2 mol, then halve for 1 mol. Compare magnitudes for part (e).",
             ],
             strategy: "draw a diagram; build a table",
             solutions: [
               {
-                label: "Method: Full bond-by-bond table",
+                label: "Method: full bond-by-bond table",
                 steps: [
                   "Methanol structure: H₃C–O–H → 3 C–H, 1 C–O, 1 O–H per molecule.",
-                  "2 CH₃OH: 6 C–H (6×413=2478), 2 C–O (2×358=716), 2 O–H (2×464=928). 3 O₂: 3 O=O (3×498=1494). Total broken = 5616 kJ.",
-                  "2 CO₂: 4 C=O (4×805=3220). 4 H₂O: 8 O–H (8×464=3712). Total made = 6932 kJ.",
+                  "2 CH₃OH: 6 C–H (2478), 2 C–O (716), 2 O–H (928). 3 O₂: 3 O=O (1494). Total broken = 5616 kJ.",
+                  "2 CO₂: 4 C=O (3220). 4 H₂O: 8 O–H (3712). Total made = 6932 kJ.",
                   "ΔH(2 mol) = 5616 − 6932 = −1316 kJ. Per mole = −658 kJ mol⁻¹.",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: "chem-energetics-bankqa-4",
+        title: "Question Bank — Structured Paper 4",
+        description: "10 structured questions: mixed and synoptic — evidence, diagrams and multi-step calculations.",
+        questions: [
+          {
+            id: "chem-energetics-bq4-01",
+            question:
+              "Define the following terms:\n" +
+              "(a) Exothermic reaction. [2]\n" +
+              "(b) Activation energy. [2]\n" +
+              "(c) Enthalpy change, ΔH. [1]",
+            marks: 5,
+            modelAnswer:
+              "(a) An exothermic reaction transfers energy to the surroundings, causing the temperature of the surroundings to rise; ΔH is negative.\n" +
+              "(b) Activation energy is the minimum energy that colliding particles must have for a reaction to occur.\n" +
+              "(c) ΔH is the heat energy change of a reaction; ΔH = H(products) − H(reactants).",
+            markScheme: [
+              "Energy transferred TO surroundings / temperature of surroundings rises (1)",
+              "ΔH negative (1)",
+              "Minimum energy for a reaction to occur (1)",
+              "Possessed by colliding/reacting particles (1)",
+              "ΔH = H(products) − H(reactants) / heat change of reaction (1)",
+            ],
+            commonError:
+              "For exothermic, state that the SURROUNDINGS gain energy (temperature rises). Saying 'the reaction gains energy' is the opposite of what happens.",
+            guideRef: "Exothermic and Endothermic Reactions",
+            difficulty: "warmup",
+          },
+          {
+            id: "chem-energetics-bq4-02",
+            question:
+              "A reaction releases 60 kJ of energy. The energy level diagram shows reactants at 100 kJ mol⁻¹ and an activation energy of 90 kJ mol⁻¹.\n\n" +
+              "(a) State the energy of the products. [1]\n" +
+              "(b) State the energy of the peak (transition state). [1]\n" +
+              "(c) Sketch and describe the diagram, indicating whether it is exothermic or endothermic. [3]",
+            marks: 5,
+            modelAnswer:
+              "(a) Energy released = 60 kJ, so products = 100 − 60 = 40 kJ mol⁻¹.\n" +
+              "(b) Peak = reactants + Ea = 100 + 90 = 190 kJ mol⁻¹.\n" +
+              "(c) Reactants at 100, rising to a peak at 190 (Ea = 90), then falling to products at 40. Products are lower than reactants, so the reaction is exothermic (ΔH = 40 − 100 = −60 kJ mol⁻¹).",
+            markScheme: [
+              "Products = 100 − 60 = 40 kJ mol⁻¹ (1)",
+              "Peak = 100 + 90 = 190 kJ mol⁻¹ (1)",
+              "Diagram shows reactants (100) above products (40) (1)",
+              "Peak at 190 / Ea = 90 shown (1)",
+              "Exothermic (ΔH = −60 kJ mol⁻¹) (1)",
+            ],
+            commonError:
+              "'Releases 60 kJ' means the products sit 60 kJ BELOW the reactants — subtract from the reactants level to find the products level.",
+            guideRef: "Energy Level Diagrams",
+            difficulty: "core",
+            hints: [
+              "Energy released → products are below reactants by that amount.",
+              "Products = reactants − 60.",
+              "Peak = reactants + Ea.",
+              "Compare products and reactants to classify the reaction.",
+            ],
+            solutions: [
+              {
+                label: "Method: build the diagram from the data",
+                steps: [
+                  "Reactants = 100 kJ mol⁻¹ (given).",
+                  "Energy released 60 kJ → products = 100 − 60 = 40 kJ mol⁻¹.",
+                  "Peak = reactants + Ea = 100 + 90 = 190 kJ mol⁻¹.",
+                  "Products (40) < reactants (100) → exothermic, ΔH = −60 kJ mol⁻¹.",
+                ],
+              },
+            ],
+          },
+          {
+            id: "chem-energetics-bq4-03",
+            question:
+              "Ethanol burns completely:\n" +
+              "C₂H₅OH(g) + 3O₂(g) → 2CO₂(g) + 3H₂O(g)\n\n" +
+              "Bond energies (kJ mol⁻¹): C–C = 347; C–H = 413; C–O = 358; O–H = 464; O=O = 498; C=O = 805.\n\n" +
+              "(a) State the number of each type of bond in one molecule of C₂H₅OH. [2]\n" +
+              "(b) Calculate the total energy absorbed breaking all bonds in the reactants. [2]\n" +
+              "(c) Calculate the total energy released making all bonds in the products. [2]\n" +
+              "(d) Calculate ΔH and state whether the reaction is exothermic or endothermic. [2]",
+            marks: 8,
+            modelAnswer:
+              "(a) C₂H₅OH (CH₃–CH₂–O–H) has: 1 C–C, 5 C–H, 1 C–O and 1 O–H bond.\n" +
+              "(b) Bonds broken: 1 C–C (347) + 5 C–H (5 × 413 = 2065) + 1 C–O (358) + 1 O–H (464) + 3 O=O (3 × 498 = 1494) = 4728 kJ.\n" +
+              "(c) Bonds made: 4 C=O (in 2CO₂: 2 × 2 = 4, so 4 × 805 = 3220) + 6 O–H (in 3H₂O: 3 × 2 = 6, so 6 × 464 = 2784) = 6004 kJ.\n" +
+              "(d) ΔH = 4728 − 6004 = −1276 kJ mol⁻¹. Exothermic (ΔH negative).",
+            markScheme: [
+              "C₂H₅OH: 1 C–C, 5 C–H, 1 C–O, 1 O–H (1)",
+              "All four bond types correct (1)",
+              "Bonds broken: 347 + 2065 + 358 + 464 + 1494 (1)",
+              "Total broken = 4728 kJ (1)",
+              "Bonds made: 4 C=O (3220) + 6 O–H (2784) (1)",
+              "Total made = 6004 kJ (1)",
+              "ΔH = 4728 − 6004 = −1276 kJ mol⁻¹ (1)",
+              "Exothermic / ΔH negative (1)",
+            ],
+            commonError:
+              "Ethanol has 5 C–H bonds (CH₃ has 3, CH₂ has 2), plus 1 C–O and 1 O–H. Forgetting the O–H of the hydroxyl group, or miscounting the C–H bonds, is a common error.",
+            guideRef: "Calculating ΔH from Bond Energies",
+            difficulty: "challenge",
+            hints: [
+              "Draw ethanol CH₃–CH₂–O–H: 1 C–C, 5 C–H, 1 C–O, 1 O–H.",
+              "Reactants also include 3 O=O from 3O₂.",
+              "Products: 2CO₂ → 4 C=O; 3H₂O → 6 O–H.",
+              "ΔH = total broken − total made.",
+            ],
+            strategy: "draw a diagram; build a table",
+            solutions: [
+              {
+                label: "Method: full bond-energy table",
+                steps: [
+                  "Broken: 1 C–C (347) + 5 C–H (2065) + 1 C–O (358) + 1 O–H (464) + 3 O=O (1494) = 4728 kJ.",
+                  "Made: 4 C=O (3220) + 6 O–H (2784) = 6004 kJ.",
+                  "ΔH = 4728 − 6004 = −1276 kJ mol⁻¹.",
+                  "Negative → exothermic.",
+                ],
+              },
+            ],
+          },
+          {
+            id: "chem-energetics-bq4-04",
+            question:
+              "When 1.0 g of a fuel is burned, it raises the temperature of 250 g of water by 28.5 °C. (c of water = 4.2 J g⁻¹ °C⁻¹.)\n\n" +
+              "(a) Calculate the energy transferred to the water, in kJ. [2]\n" +
+              "(b) The relative molecular mass (Mr) of the fuel is 32. Calculate the energy released per mole of fuel. [2]\n" +
+              "(c) Suggest why the experimental value is smaller in magnitude than the data-book value. [1]",
+            marks: 5,
+            modelAnswer:
+              "(a) Q = mcΔT = 250 × 4.2 × 28.5 = 29 925 J ≈ 29.9 kJ.\n" +
+              "(b) Moles of fuel = mass / Mr = 1.0 / 32 = 0.03125 mol. Energy per mole = 29.925 kJ / 0.03125 = 957.6 kJ mol⁻¹ ≈ 958 kJ mol⁻¹ released.\n" +
+              "(c) Heat is lost to the surroundings (and the container), and combustion may be incomplete, so less energy reaches the water than the true value.",
+            markScheme: [
+              "Q = 250 × 4.2 × 28.5 (1)",
+              "Q = 29 925 J ≈ 29.9 kJ (1)",
+              "moles = 1.0 / 32 = 0.03125 mol (1)",
+              "Energy per mole = 29.925 / 0.03125 ≈ 958 kJ mol⁻¹ (1)",
+              "Heat lost to surroundings / incomplete combustion (1)",
+            ],
+            commonError:
+              "Use the water mass (250 g) in Q = mcΔT, then divide the energy by the MOLES of fuel (mass ÷ Mr) for energy per mole.",
+            guideRef: "Interpreting Energy Changes from Evidence",
+            difficulty: "challenge",
+            hints: [
+              "Q = mcΔT uses the water mass 250 g.",
+              "moles of fuel = mass ÷ Mr = 1.0 ÷ 32.",
+              "Energy per mole = Q (kJ) ÷ moles of fuel.",
+              "Some energy escapes to the surroundings — that lowers the measured value.",
+            ],
+            strategy: "build a table — Q first, then per-mole",
+            solutions: [
+              {
+                label: "Method: calorimetry to per-mole energy",
+                steps: [
+                  "Q = mcΔT = 250 × 4.2 × 28.5 = 29 925 J = 29.925 kJ.",
+                  "moles of fuel = 1.0 ÷ 32 = 0.03125 mol.",
+                  "Energy per mole = 29.925 ÷ 0.03125 = 957.6 kJ mol⁻¹.",
+                  "≈ 958 kJ mol⁻¹ released (heat loss makes this an underestimate).",
+                ],
+              },
+            ],
+          },
+          {
+            id: "chem-energetics-bq4-05",
+            question:
+              "The combustion of carbon is: C(s) + O₂(g) → CO₂(g), ΔH = −394 kJ mol⁻¹.\n\n" +
+              "(a) State what the negative sign of ΔH tells you. [1]\n" +
+              "(b) State how much energy is released when 2 moles of carbon are burned. [1]\n" +
+              "(c) On an energy level diagram for this reaction, state which is higher: the reactants or the products. [1]\n" +
+              "(d) State whether the surroundings get hotter or colder, and explain. [2]",
+            marks: 5,
+            modelAnswer:
+              "(a) The reaction is exothermic; 394 kJ of energy is released to the surroundings per mole of carbon.\n" +
+              "(b) 2 × 394 = 788 kJ released.\n" +
+              "(c) The reactants are higher than the products.\n" +
+              "(d) The surroundings get hotter, because the reaction releases energy to the surroundings, raising their temperature.",
+            markScheme: [
+              "Exothermic / energy released (394 kJ per mole) (1)",
+              "2 × 394 = 788 kJ (1)",
+              "Reactants higher than products (1)",
+              "Surroundings get hotter (1)",
+              "Because energy is released to the surroundings (1)",
+            ],
+            commonError:
+              "A negative ΔH means energy is RELEASED, not absorbed. The reactants are higher than the products on the diagram.",
+            guideRef: "Interpreting Energy Changes from Evidence",
+            difficulty: "warmup",
+          },
+          {
+            id: "chem-energetics-bq4-06",
+            question:
+              "Hydrogen reacts with fluorine:\n" +
+              "H₂(g) + F₂(g) → 2HF(g)\n\n" +
+              "Bond energies (kJ mol⁻¹): H–H = 436; F–F = 158; H–F = 568.\n\n" +
+              "(a) Calculate the energy absorbed breaking bonds. [1]\n" +
+              "(b) Calculate the energy released making bonds. [1]\n" +
+              "(c) Calculate ΔH. [1]\n" +
+              "(d) The H–F bond is much stronger than the H–H or F–F bonds. Explain how this leads to a large negative ΔH. [2]",
+            marks: 5,
+            modelAnswer:
+              "(a) Bonds broken: H–H (436) + F–F (158) = 594 kJ.\n" +
+              "(b) Bonds made: 2 × H–F = 2 × 568 = 1136 kJ.\n" +
+              "(c) ΔH = 594 − 1136 = −542 kJ mol⁻¹.\n" +
+              "(d) Because the H–F bonds formed are very strong, a large amount of energy (1136 kJ) is released making them — much more than the energy absorbed breaking the weaker H–H and F–F bonds (594 kJ). The large surplus released gives a large negative ΔH.",
+            markScheme: [
+              "Energy absorbed = 436 + 158 = 594 kJ (1)",
+              "Energy released = 2 × 568 = 1136 kJ (1)",
+              "ΔH = 594 − 1136 = −542 kJ mol⁻¹ (1)",
+              "Strong H–F bonds release a lot of energy when formed (1)",
+              "Energy released making bonds >> energy absorbed breaking bonds → large negative ΔH (1)",
+            ],
+            commonError:
+              "Two H–F bonds form (2HF), so multiply 568 by 2. A single H–F gives the wrong total.",
+            guideRef: "Calculating ΔH from Bond Energies",
+            difficulty: "core",
+            hints: [
+              "Bonds broken: 1 H–H + 1 F–F.",
+              "Bonds made: 2 H–F (the coefficient is 2).",
+              "ΔH = (436 + 158) − (2 × 568).",
+              "Stronger bonds made → more energy released → more negative ΔH.",
+            ],
+            strategy: "build a table",
+            solutions: [
+              {
+                label: "Method: ΔH = bonds broken − bonds made",
+                steps: [
+                  "Broken: H–H (436) + F–F (158) = 594 kJ.",
+                  "Made: 2 H–F = 2 × 568 = 1136 kJ.",
+                  "ΔH = 594 − 1136 = −542 kJ mol⁻¹.",
+                  "Negative → exothermic; the strong H–F bonds drive the large release.",
+                ],
+              },
+            ],
+          },
+          {
+            id: "chem-energetics-bq4-07",
+            question:
+              "(a) Explain why a catalyst increases the rate of a reaction, with reference to activation energy. [2]\n" +
+              "(b) Explain why a catalyst does not change the amount of energy released by an exothermic reaction. [2]\n" +
+              "(c) A reaction has Ea = 75 kJ mol⁻¹ and ΔH = −40 kJ mol⁻¹. State the activation energy of the reverse reaction. [1]",
+            marks: 5,
+            modelAnswer:
+              "(a) A catalyst provides an alternative reaction pathway with a lower activation energy. More reactant particles have energy greater than or equal to this lower Ea, so more collisions are successful and the rate increases.\n" +
+              "(b) The amount of energy released depends on ΔH, which is the difference between the reactant and product energy levels. A catalyst does not change those levels, so ΔH — and the energy released — is unchanged.\n" +
+              "(c) Ea(reverse) = Ea(forward) + |ΔH| = 75 + 40 = 115 kJ mol⁻¹.",
+            markScheme: [
+              "Catalyst provides alternative pathway with lower Ea (1)",
+              "More particles have energy ≥ Ea → more successful collisions → faster rate (1)",
+              "Energy released depends on ΔH / difference in reactant and product levels (1)",
+              "Catalyst does not change those levels, so ΔH unchanged (1)",
+              "Ea(reverse) = 75 + 40 = 115 kJ mol⁻¹ (1)",
+            ],
+            commonError:
+              "For (c), since the forward reaction is exothermic, the reverse reaction must climb higher to reach the same peak: add |ΔH| to the forward Ea.",
+            guideRef: "Energy Level Diagrams",
+            difficulty: "core",
+            hints: [
+              "A catalyst lowers Ea, so more particles can react.",
+              "ΔH is fixed by the energy levels of reactants and products.",
+              "Reverse Ea = forward Ea + |ΔH| for an exothermic forward reaction.",
+            ],
+          },
+          {
+            id: "chem-energetics-bq4-08",
+            question:
+              "Hydrogen is proposed as a clean fuel, either burned directly or used in a fuel cell:\n" +
+              "2H₂(g) + O₂(g) → 2H₂O(l)\n\n" +
+              "(a) State the type of energy change (exo/endothermic) and the sign of ΔH. [2]\n" +
+              "(b) Give one environmental advantage of using hydrogen rather than petrol. [1]\n" +
+              "(c) Give one reason why hydrogen is not yet widely used as a fuel. [1]\n" +
+              "(d) In a fuel cell, the chemical energy is converted mainly into which useful form of energy? [1]",
+            marks: 5,
+            modelAnswer:
+              "(a) Exothermic; ΔH is negative.\n" +
+              "(b) The only product is water, so no carbon dioxide (a greenhouse gas) or other pollutants are produced.\n" +
+              "(c) Hydrogen is difficult and expensive to store and transport safely / much hydrogen is currently made using energy from fossil fuels.\n" +
+              "(d) Electrical energy.",
+            markScheme: [
+              "Exothermic (1)",
+              "ΔH negative (1)",
+              "Only product is water / no CO₂ or pollutants (1)",
+              "Storage/transport difficulty / production uses fossil fuels (1)",
+              "Electrical energy (1)",
+            ],
+            commonError:
+              "A fuel cell converts chemical energy directly to ELECTRICAL energy (not just heat) — that is its advantage over simple combustion.",
+            guideRef: "Common Examples and Applications",
+            difficulty: "core",
+            hints: [
+              "Combustion of hydrogen is exothermic.",
+              "Consider what the only product (water) means for pollution.",
+              "Storage and source of hydrogen are key drawbacks.",
+              "Fuel cells generate electricity.",
+            ],
+          },
+          {
+            id: "chem-energetics-bq4-09",
+            question:
+              "Two reactions are compared:\n" +
+              "Reaction P: ΔH = −572 kJ mol⁻¹\n" +
+              "Reaction Q: ΔH = +180 kJ mol⁻¹\n\n" +
+              "(a) State which reaction is exothermic and which is endothermic. [2]\n" +
+              "(b) For each reaction, state whether the products are higher or lower in energy than the reactants. [2]\n" +
+              "(c) Reaction P is the combustion of hydrogen to form 2 moles of water. Calculate the energy released when 1 mole of water is formed. [1]",
+            marks: 5,
+            modelAnswer:
+              "(a) Reaction P (ΔH negative) is exothermic; Reaction Q (ΔH positive) is endothermic.\n" +
+              "(b) Reaction P: products lower than reactants. Reaction Q: products higher than reactants.\n" +
+              "(c) 572 kJ is released forming 2 moles of water, so per mole = 572 / 2 = 286 kJ released.",
+            markScheme: [
+              "P exothermic (1)",
+              "Q endothermic (1)",
+              "P: products lower than reactants (1)",
+              "Q: products higher than reactants (1)",
+              "572 / 2 = 286 kJ per mole of water (1)",
+            ],
+            commonError:
+              "Negative ΔH = exothermic = products LOWER. Positive ΔH = endothermic = products HIGHER. Keep these pairings consistent.",
+            guideRef: "Interpreting Energy Changes from Evidence",
+            difficulty: "core",
+            hints: [
+              "Negative ΔH → exothermic; positive ΔH → endothermic.",
+              "Exothermic: products below reactants. Endothermic: products above.",
+              "For (c) divide the total energy by the number of moles of water.",
+            ],
+            solutions: [
+              {
+                label: "Method: classify then scale",
+                steps: [
+                  "ΔH(P) = −572 → exothermic, products below reactants.",
+                  "ΔH(Q) = +180 → endothermic, products above reactants.",
+                  "P forms 2 mol water releasing 572 kJ.",
+                  "Per mole = 572 ÷ 2 = 286 kJ released.",
+                ],
+              },
+            ],
+          },
+          {
+            id: "chem-energetics-bq4-10",
+            question:
+              "**Challenge — extended analysis**\n\n" +
+              "The complete combustion of butane is:\n" +
+              "2C₄H₁₀(g) + 13O₂(g) → 8CO₂(g) + 10H₂O(g)\n\n" +
+              "Bond energies (kJ mol⁻¹): C–C = 347; C–H = 413; O=O = 498; C=O = 805; O–H = 464.\n\n" +
+              "(a) Show that one molecule of butane (C₄H₁₀) contains 3 C–C bonds and 10 C–H bonds. [1]\n" +
+              "(b) Calculate the total energy absorbed breaking all bonds in the reactants. [3]\n" +
+              "(c) Calculate the total energy released making all bonds in the products. [2]\n" +
+              "(d) Calculate ΔH for the equation as written (2 moles of butane), then ΔH per mole of butane. [3]",
+            marks: 9,
+            modelAnswer:
+              "(a) Butane is CH₃–CH₂–CH₂–CH₃: four carbons joined by 3 C–C bonds, with 3 + 2 + 2 + 3 = 10 C–H bonds.\n" +
+              "(b) For 2C₄H₁₀: 2 × 3 = 6 C–C (6 × 347 = 2082) + 2 × 10 = 20 C–H (20 × 413 = 8260). For 13O₂: 13 O=O (13 × 498 = 6474). Total broken = 2082 + 8260 + 6474 = 16 816 kJ.\n" +
+              "(c) 8CO₂ has 16 C=O bonds (8 × 2): 16 × 805 = 12 880 kJ. 10H₂O has 20 O–H bonds (10 × 2): 20 × 464 = 9280 kJ. Total made = 12 880 + 9280 = 22 160 kJ.\n" +
+              "(d) ΔH (for 2 mol butane) = 16 816 − 22 160 = −5344 kJ. Per mole of butane = −5344 / 2 = −2672 kJ mol⁻¹.",
+            markScheme: [
+              "C₄H₁₀ as CH₃–CH₂–CH₂–CH₃: 3 C–C and 10 C–H (1)",
+              "6 C–C (2082) + 20 C–H (8260) for 2 butane (1)",
+              "13 O=O = 6474 kJ (1)",
+              "Total broken = 16 816 kJ (1)",
+              "16 C=O = 12 880 kJ; 20 O–H = 9280 kJ (1)",
+              "Total made = 22 160 kJ (1)",
+              "ΔH (2 mol) = 16 816 − 22 160 = −5344 kJ (1)",
+              "Per mole = −5344 / 2 = −2672 kJ mol⁻¹ (1)",
+              "Negative sign / exothermic (1)",
+            ],
+            commonError:
+              "The equation has 2 moles of butane, so double every bond count in the butane (6 C–C, 20 C–H). Then remember to halve the final ΔH to get the value per mole.",
+            guideRef: "Calculating ΔH from Bond Energies",
+            difficulty: "challenge",
+            hints: [
+              "Draw butane CH₃–CH₂–CH₂–CH₃: 3 C–C and 10 C–H per molecule; double for 2 molecules.",
+              "Reactants: 6 C–C + 20 C–H + 13 O=O.",
+              "Products: 8CO₂ → 16 C=O; 10H₂O → 20 O–H.",
+              "ΔH for 2 mol, then divide by 2 for per mole.",
+            ],
+            strategy: "build a table",
+            solutions: [
+              {
+                label: "Method: full bond-energy table",
+                steps: [
+                  "Broken: 6 C–C (2082) + 20 C–H (8260) + 13 O=O (6474) = 16 816 kJ.",
+                  "Made: 16 C=O (12 880) + 20 O–H (9280) = 22 160 kJ.",
+                  "ΔH (2 mol) = 16 816 − 22 160 = −5344 kJ.",
+                  "Per mole = −5344 ÷ 2 = −2672 kJ mol⁻¹ (exothermic).",
                 ],
               },
             ],
