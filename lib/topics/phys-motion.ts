@@ -606,16 +606,21 @@ At t = 10 s: s_A = s_B = 200 m. Car A catches Car B after 10 s and 200 m.`,
   questionBank: {
     mcqPapers: [
       {
-        id: "phys-motion-bank-mcq-1",
-        title: "Motion — MCQ Paper 1",
-        description: "Twelve multiple-choice questions covering definitions, graph reading and acceleration calculations.",
+        id: "phys-motion-bankmcq-1",
+        title: "Question Bank — MCQ Paper 1",
+        description: "Ten multiple-choice questions covering distance/displacement, speed calculations, acceleration, and graph interpretation.",
         questions: [
           {
-            id: "phys-motion-bank-mcq1-q01",
-            question: "Which of the following is a vector quantity?",
-            options: ["Distance", "Speed", "Time", "Velocity"],
-            answerIndex: 3,
-            explanation: "Velocity is a vector because it has both magnitude and direction. Distance, speed, and time are all scalars.",
+            id: "phys-motion-bm1-01",
+            question: "A jogger runs 600 m north, then 600 m south back to the start. Which statement is correct?",
+            options: [
+              "Distance = 0 m, displacement = 1200 m",
+              "Distance = 1200 m, displacement = 0 m",
+              "Distance = 600 m, displacement = 600 m",
+              "Distance = 0 m, displacement = 0 m",
+            ],
+            answerIndex: 1,
+            explanation: "Distance is the total path length: 600 + 600 = 1200 m. Displacement is the straight-line distance from start to finish — the jogger ends where they started, so displacement = 0 m.",
             difficulty: "warmup",
             guideRef: "Distance, Displacement, Speed and Velocity",
           },

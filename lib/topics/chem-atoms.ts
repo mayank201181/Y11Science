@@ -626,16 +626,16 @@ where X = element symbol, A = mass number (top), Z = proton number (bottom).
   questionBank: {
     mcqPapers: [
       {
-        id: "chem-atoms-bank-mcq-1",
-        title: "Atomic Structure MCQ Paper 1",
-        description: "Protons, neutrons, electrons, isotopes, and electronic configuration.",
+        id: "chem-atoms-bankmcq-1",
+        title: "Question Bank — MCQ Paper 1",
+        description: "Sub-atomic particles, proton/nucleon numbers, and basic isotope identification.",
         questions: [
           {
-            id: "chem-atoms-bank-mcq1-q01",
-            question: "What is the relative charge of an electron?",
-            options: ["+1", "0", "−1", "+½"],
+            id: "chem-atoms-bm1-01",
+            question: "Which sub-atomic particle is found in the nucleus and carries a relative charge of +1?",
+            options: ["Electron", "Neutron", "Proton", "Nucleon"],
             answerIndex: 2,
-            explanation: "Electrons carry a relative charge of −1. Protons are +1, neutrons are 0.",
+            explanation: "Protons are located in the nucleus and have a relative charge of +1 and relative mass of 1. Neutrons are also in the nucleus but are neutral (charge 0). Electrons are outside the nucleus with charge −1.",
             guideRef: "Inside the Atom: Nucleus and Sub-atomic Particles",
             difficulty: "warmup",
           },

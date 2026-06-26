@@ -569,9 +569,9 @@ export const bioEnzymes: Topic = {
   questionBank: {
     mcqPapers: [
       {
-        id: "bio-enzymes-bank-mcq-1",
-        title: "Enzymes MCQ Paper 1",
-        description: "Six multiple-choice questions on enzyme structure, the lock-and-key model, and temperature effects.",
+        id: "bio-enzymes-bankmcq-1",
+        title: "Question Bank — MCQ Paper 1",
+        description: "Ten multiple-choice questions on enzyme structure, the lock-and-key model, specificity, and catalysis basics.",
         questions: [
           {
             id: "bio-enzymes-bank-mcq1-q01",

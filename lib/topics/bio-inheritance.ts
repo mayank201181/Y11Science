@@ -525,210 +525,522 @@ A population of bacteria contains rare individuals with a mutation giving antibi
     ],
   },
 
-  // ── QUESTION BANK ──────────────────────────────────────────────────────────
+  // ── QUESTION BANK ──────────────────────────────────────────────────────────────
   questionBank: {
     mcqPapers: [
       {
-        id: "bio-inheritance-bank-mcq-1",
-        title: "Inheritance & Variation — MCQ Paper 1",
-        description: "12 multiple-choice questions covering DNA structure, cell division, monohybrid genetics and variation.",
+        id: "bio-inheritance-bankmcq-1",
+        title: "Question Bank — MCQ Paper 1",
+        description: "10 multiple-choice questions covering DNA structure, genes, chromosomes and cell division basics.",
         questions: [
           {
-            id: "bio-inheritance-bank-mcq1-q01",
-            question: "Which base pairs are found in the DNA double helix?",
-            options: [
-              "Adenine–Guanine and Cytosine–Thymine",
-              "Adenine–Thymine and Cytosine–Guanine",
-              "Adenine–Cytosine and Thymine–Guanine",
-              "Adenine–Uracil and Cytosine–Guanine"
-            ],
+            id: "bio-inheritance-bm1-01",
+            question: "What is the complementary base pair to adenine in DNA?",
+            options: ["Uracil", "Thymine", "Guanine", "Cytosine"],
             answerIndex: 1,
-            explanation: "In DNA, adenine (A) pairs with thymine (T) and cytosine (C) pairs with guanine (G). Uracil replaces thymine only in RNA, not DNA.",
+            explanation: "In DNA, adenine (A) always pairs with thymine (T) via two hydrogen bonds. Uracil replaces thymine only in RNA. Guanine pairs with cytosine (three hydrogen bonds).",
             guideRef: "DNA, Genes and Chromosomes",
             difficulty: "warmup",
           },
           {
-            id: "bio-inheritance-bank-mcq1-q02",
-            question: "A body cell of an organism contains 36 chromosomes. How many chromosomes would be found in one of its gametes?",
-            options: ["9", "18", "36", "72"],
+            id: "bio-inheritance-bm1-02",
+            question: "Human body cells are diploid with 46 chromosomes. After mitosis, how many chromosomes does each daughter cell contain?",
+            options: ["23", "46", "92", "12"],
             answerIndex: 1,
-            explanation: "Gametes are haploid — they contain half the number of chromosomes found in body cells (diploid). 36 ÷ 2 = 18. 72 would be after replication (DNA duplication), and 9 would be a quarter.",
+            explanation: "Mitosis produces two genetically identical diploid daughter cells. Each daughter cell receives the same number of chromosomes as the parent cell — 46 in humans.",
+            guideRef: "Mitosis and Meiosis",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-inheritance-bm1-03",
+            question: "Which part of a cell contains the chromosomes?",
+            options: ["Cell membrane", "Cytoplasm", "Nucleus", "Mitochondria"],
+            answerIndex: 2,
+            explanation: "Chromosomes are found in the nucleus of eukaryotic cells. The nucleus acts as the control centre of the cell, housing the cell's genetic material (DNA organised into chromosomes).",
             guideRef: "DNA, Genes and Chromosomes",
             difficulty: "warmup",
           },
           {
-            id: "bio-inheritance-bank-mcq1-q03",
-            question: "Which of the following is NOT a reason why meiosis produces genetically different cells?",
+            id: "bio-inheritance-bm1-04",
+            question: "A gene codes for the production of a specific:",
+            options: ["Carbohydrate", "Lipid", "Protein", "Nucleotide"],
+            answerIndex: 2,
+            explanation: "A gene is a specific sequence of DNA bases that codes for the production of a particular protein. The sequence of bases determines the sequence of amino acids assembled at ribosomes to form the protein.",
+            guideRef: "DNA, Genes and Chromosomes",
+            difficulty: "core",
+            hints: ["Think about what the base sequence of DNA is ultimately translated into at the ribosome."],
+          },
+          {
+            id: "bio-inheritance-bm1-05",
+            question: "An organism has 2n = 28. How many chromosomes will a gamete produced by this organism contain?",
+            options: ["28", "56", "14", "7"],
+            answerIndex: 2,
+            explanation: "Gametes are produced by meiosis, which halves the chromosome number (2n → n). If 2n = 28, then n = 28 ÷ 2 = 14 chromosomes in each gamete.",
+            guideRef: "Mitosis and Meiosis",
+            difficulty: "core",
+            hints: ["Meiosis halves the chromosome number from diploid (2n) to haploid (n)."],
+          },
+          {
+            id: "bio-inheritance-bm1-06",
+            question: "Which statement correctly describes the relationship between genes and alleles?",
             options: [
-              "Independent assortment of homologous pairs",
-              "Crossing over between chromatids",
-              "Random fertilisation of gametes",
-              "Separation of sister chromatids"
+              "All genes are alleles",
+              "An allele is a specific version of a gene",
+              "A gene is a type of allele",
+              "Alleles are non-coding sections of DNA"
             ],
-            answerIndex: 3,
-            explanation: "Separation of sister chromatids in meiosis II simply separates identical copies — it does not on its own generate genetic difference. The main sources of genetic variation in meiosis are independent assortment (metaphase I) and crossing over (prophase I). Random fertilisation adds further variation but occurs after meiosis.",
+            answerIndex: 1,
+            explanation: "An allele is a specific version (variant) of a gene. Different alleles of the same gene occupy the same locus on homologous chromosomes but have slightly different base sequences, which can produce different phenotypes.",
+            guideRef: "DNA, Genes and Chromosomes",
+            difficulty: "core",
+            hints: ["Alleles = different versions of a gene at the same chromosomal locus."],
+          },
+          {
+            id: "bio-inheritance-bm1-07",
+            question: "Which molecule carries genetic information from the nucleus to the ribosome?",
+            options: ["DNA", "mRNA", "tRNA", "rRNA"],
+            answerIndex: 1,
+            explanation: "mRNA (messenger RNA) carries the genetic code transcribed from DNA in the nucleus to ribosomes in the cytoplasm, where the code is translated into a protein. DNA remains in the nucleus; tRNA brings amino acids to the ribosome during translation.",
+            guideRef: "DNA, Genes and Chromosomes",
+            difficulty: "core",
+          },
+          {
+            id: "bio-inheritance-bm1-08",
+            question: "A cell in G1 phase has 46 chromosomes. After DNA replication (S phase) but before mitosis, how many DNA molecules does the cell contain?",
+            options: ["23", "46", "92", "184"],
+            answerIndex: 2,
+            explanation: "Each chromosome consists of one DNA molecule. After DNA replication, each chromosome consists of two identical sister chromatids, each of which is one DNA molecule. So 46 chromosomes × 2 chromatids = 92 DNA molecules.",
             guideRef: "Mitosis and Meiosis",
             difficulty: "core",
             hints: [
-              "Identify which steps of meiosis shuffle genetic information.",
-              "Separation of sister chromatids is like a simple copy — what does it actually change?"
+              "Before replication: each chromosome = 1 DNA molecule (46 total).",
+              "After replication: each chromosome = 2 sister chromatids, each a separate DNA molecule.",
+              "46 chromosomes × 2 DNA molecules each = ?"
             ],
-            strategy: "Process of elimination",
           },
           {
-            id: "bio-inheritance-bank-mcq1-q04",
-            question: "A plant is heterozygous for flower colour (R = red, dominant; r = white, recessive). It is crossed with a white-flowered plant. What proportion of offspring will have red flowers?",
-            options: ["All", "3/4", "1/2", "1/4"],
-            answerIndex: 2,
-            explanation: "Cross: Rr (red) × rr (white). Punnett square gives Rr, Rr, rr, rr — two red (Rr) and two white (rr). Probability of red = 2/4 = 1/2 = 50%.",
-            guideRef: "Monohybrid Crosses and Punnett Squares",
-            difficulty: "core",
+            id: "bio-inheritance-bm1-09",
+            question: "A scientist finds a section of DNA with the base sequence: A-T-G-C-C-A. What is the complementary base sequence on the other strand?",
+            options: ["T-A-C-G-G-T", "U-A-C-G-G-U", "A-T-G-C-C-A", "T-A-C-G-T-A"],
+            answerIndex: 0,
+            explanation: "Apply the base-pairing rules: A pairs with T, T pairs with A, G pairs with C, C pairs with G. So A-T-G-C-C-A becomes T-A-C-G-G-T. Uracil (U) only appears in RNA, not DNA — option B is an RNA sequence.",
+            guideRef: "DNA, Genes and Chromosomes",
+            difficulty: "challenge",
             hints: [
-              "Identify the genotypes: heterozygous red = Rr; white = rr.",
-              "Draw the Punnett square with gametes R, r vs r, r.",
-              "Count red offspring (Rr) vs white (rr)."
+              "Apply the rules A↔T and G↔C to each base in turn.",
+              "Remember: U only appears in RNA, not DNA."
             ],
-            strategy: "Punnett square — test cross pattern",
           },
           {
-            id: "bio-inheritance-bank-mcq1-q05",
-            question: "Which statement about mutations is correct?",
+            id: "bio-inheritance-bm1-10",
+            question: "Which of the following sequences correctly shows the levels of organisation from smallest to largest?",
             options: [
-              "Mutations always produce a harmful change in phenotype.",
-              "Mutations are directed changes in DNA caused by environmental pressures.",
-              "Mutations are random changes in the DNA base sequence.",
-              "Mutations only occur in gametes, not in body cells."
+              "Gene → chromosome → allele → nucleus",
+              "Allele → gene → chromosome → nucleus",
+              "Chromosome → gene → allele → nucleus",
+              "Nucleus → chromosome → allele → gene"
             ],
-            answerIndex: 2,
-            explanation: "Mutations are random, spontaneous changes in the base sequence of DNA. They can occur in any cell, are not directed by the environment, and may be neutral, harmful or (rarely) beneficial.",
-            guideRef: "Variation, Mutation and Sources of Genetic Difference",
-            difficulty: "warmup",
-          },
-          {
-            id: "bio-inheritance-bank-mcq1-q06",
-            question: "Which characteristic shows continuous variation?",
-            options: [
-              "Ability to roll tongue",
-              "ABO blood group",
-              "Presence or absence of ear lobes",
-              "Body mass"
-            ],
-            answerIndex: 3,
-            explanation: "Body mass shows a continuous range of values and is influenced by both genes and environment (diet, exercise) — a classic example of continuous variation. Tongue-rolling, blood group and ear-lobe attachment all show discrete categories (discontinuous variation).",
-            guideRef: "Variation, Mutation and Sources of Genetic Difference",
-            difficulty: "warmup",
+            answerIndex: 1,
+            explanation: "An allele is a specific version of a gene (smallest unit here). Genes are sections of chromosomes. Chromosomes are housed within the nucleus (largest structure here). So the correct order is: allele → gene → chromosome → nucleus.",
+            guideRef: "DNA, Genes and Chromosomes",
+            difficulty: "challenge",
+            strategy: "Build the hierarchy of biological organisation from the bottom up.",
           },
         ],
       },
       {
-        id: "bio-inheritance-bank-mcq-2",
-        title: "Inheritance & Variation — MCQ Paper 2",
-        description: "12 multiple-choice questions covering codominance, sex determination, natural selection and selective breeding, plus challenge genetics.",
+        id: "bio-inheritance-bankmcq-2",
+        title: "Question Bank — MCQ Paper 2",
+        description: "10 multiple-choice questions covering mitosis, meiosis, crossing over, independent assortment and genetic variation.",
         questions: [
           {
-            id: "bio-inheritance-bank-mcq2-q01",
-            question: "In snapdragons, a red-flowered plant (C^R C^R) is crossed with a white-flowered plant (C^W C^W). What is the phenotype of the F1 offspring?",
+            id: "bio-inheritance-bm2-01",
+            question: "Which of the following is the correct number of cells produced by meiosis from one parent cell?",
+            options: ["1", "2", "4", "8"],
+            answerIndex: 2,
+            explanation: "Meiosis involves two successive divisions (meiosis I and meiosis II) producing four haploid daughter cells from one diploid parent cell.",
+            guideRef: "Mitosis and Meiosis",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-inheritance-bm2-02",
+            question: "Mitosis is used for which of the following?",
             options: [
-              "All red",
-              "All white",
+              "Production of gametes",
+              "Halving the chromosome number",
+              "Growth and repair of body tissues",
+              "Creating genetically different cells"
+            ],
+            answerIndex: 2,
+            explanation: "Mitosis produces two genetically identical diploid daughter cells and is used for growth, repair and replacement of body cells (somatic cells). Gametes are produced by meiosis, which halves the chromosome number and creates genetic diversity.",
+            guideRef: "Mitosis and Meiosis",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-inheritance-bm2-03",
+            question: "During which stage of meiosis does crossing over occur?",
+            options: ["Metaphase I", "Prophase I", "Anaphase II", "Telophase II"],
+            answerIndex: 1,
+            explanation: "Crossing over occurs during Prophase I of meiosis, when homologous chromosomes pair up (synapsis) and non-sister chromatids exchange segments at points called chiasmata. This creates new allele combinations.",
+            guideRef: "Mitosis and Meiosis",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-inheritance-bm2-04",
+            question: "Independent assortment in meiosis occurs because:",
+            options: [
+              "Chromosomes mutate randomly",
+              "Homologous pairs align randomly at the equator in metaphase I",
+              "Sister chromatids separate independently",
+              "Crossing over always occurs at the same point"
+            ],
+            answerIndex: 1,
+            explanation: "During metaphase I, each pair of homologous chromosomes lines up on the equator independently of every other pair. Which chromosome of each pair goes to which pole is random, generating 2^n possible combinations of maternal and paternal chromosomes in gametes.",
+            guideRef: "Mitosis and Meiosis",
+            difficulty: "core",
+            hints: ["Think about what happens at the equatorial plate during meiosis I — which side does each homolog go to?"],
+          },
+          {
+            id: "bio-inheritance-bm2-05",
+            question: "A cell with 2n = 16 undergoes meiosis. How many chromosomes are in each resulting cell, and are they haploid or diploid?",
+            options: ["16, diploid", "8, haploid", "4, haploid", "8, diploid"],
+            answerIndex: 1,
+            explanation: "Meiosis halves the chromosome number from diploid (2n) to haploid (n). If 2n = 16, then n = 8. The resulting cells are haploid (containing one set of chromosomes).",
+            guideRef: "Mitosis and Meiosis",
+            difficulty: "core",
+          },
+          {
+            id: "bio-inheritance-bm2-06",
+            question: "Which statement correctly distinguishes the daughter cells of mitosis from those of meiosis?",
+            options: [
+              "Mitosis cells are haploid; meiosis cells are diploid",
+              "Mitosis cells are genetically identical; meiosis cells are genetically different",
+              "Mitosis produces 4 cells; meiosis produces 2",
+              "Both produce genetically identical cells"
+            ],
+            answerIndex: 1,
+            explanation: "Mitosis produces two genetically identical diploid cells. Meiosis produces four haploid cells that are genetically different from each other and from the parent cell, due to crossing over and independent assortment.",
+            guideRef: "Mitosis and Meiosis",
+            difficulty: "core",
+          },
+          {
+            id: "bio-inheritance-bm2-07",
+            question: "A mutation occurs in a skin cell of an adult organism. This mutation:",
+            options: [
+              "Will be inherited by the organism's offspring",
+              "Can only be passed on if it occurs in a gamete",
+              "Cannot affect the organism's phenotype",
+              "Will be inherited because it is in a somatic cell"
+            ],
+            answerIndex: 1,
+            explanation: "Mutations in somatic (body) cells such as skin cells are NOT inherited by offspring because skin cells do not give rise to gametes. Only mutations in gametes (or cells that produce gametes) can be passed to the next generation.",
+            guideRef: "Variation, Mutation and Sources of Genetic Difference",
+            difficulty: "core",
+            hints: ["Which cells give rise to the next generation — body cells or gametes?"],
+          },
+          {
+            id: "bio-inheritance-bm2-08",
+            question: "Which of the following increases the rate of mutation?",
+            options: [
+              "Eating a high-protein diet",
+              "Exposure to ionising radiation",
+              "Exercising regularly",
+              "Taking antibiotics"
+            ],
+            answerIndex: 1,
+            explanation: "Ionising radiation (such as X-rays, gamma rays and UV radiation) is a mutagen — it damages DNA and increases the rate at which mutations occur. Diet, exercise and antibiotics do not directly increase mutation rate.",
+            guideRef: "Variation, Mutation and Sources of Genetic Difference",
+            difficulty: "core",
+          },
+          {
+            id: "bio-inheritance-bm2-09",
+            question: "A cell undergoes meiosis. Before meiosis begins, there are 6 pairs of homologous chromosomes. During meiosis I, crossing over occurs at one point on each chromosome pair. How many recombinant chromosomes are produced in total?",
+            options: ["6", "12", "24", "48"],
+            answerIndex: 1,
+            explanation: "Each crossing-over event between a pair of homologous chromosomes produces 2 recombinant chromosomes (one from each homolog that exchanged segments). With 6 pairs, each undergoing one crossover: 6 × 2 = 12 recombinant chromosomes.",
+            guideRef: "Mitosis and Meiosis",
+            difficulty: "challenge",
+            hints: [
+              "Each crossover event involves two chromatids (one from each homolog).",
+              "Both chromatids involved become recombinant.",
+              "6 pairs × 2 recombinant chromosomes per pair = ?"
+            ],
+          },
+          {
+            id: "bio-inheritance-bm2-10",
+            question: "A species has 2n = 46. Due to independent assortment alone (ignoring crossing over), how many genetically different types of gamete are theoretically possible from one individual?",
+            options: ["46", "23", "2^23", "23^2"],
+            answerIndex: 2,
+            explanation: "Independent assortment means each of the 23 homologous chromosome pairs can align in either of two orientations at metaphase I. The total number of possible gamete combinations = 2^23 ≈ 8.4 million.",
+            guideRef: "Mitosis and Meiosis",
+            difficulty: "challenge",
+            strategy: "Think of each chromosome pair as a binary choice (which homolog goes to which pole). With 23 independent choices, the total is 2^23.",
+          },
+        ],
+      },
+      {
+        id: "bio-inheritance-bankmcq-3",
+        title: "Question Bank — MCQ Paper 3",
+        description: "10 multiple-choice questions covering monohybrid crosses, Punnett squares, probability and pedigrees.",
+        questions: [
+          {
+            id: "bio-inheritance-bm3-01",
+            question: "What does the term 'phenotype' mean?",
+            options: [
+              "The alleles an organism carries",
+              "The observable characteristics of an organism",
+              "The set of dominant alleles an organism has",
+              "The number of chromosomes in a cell"
+            ],
+            answerIndex: 1,
+            explanation: "Phenotype refers to the observable characteristics of an organism — what it looks like or how it functions. Genotype refers to the alleles an organism carries. Phenotype results from an interaction between genotype and environment.",
+            guideRef: "Monohybrid Crosses and Punnett Squares",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-inheritance-bm3-02",
+            question: "An organism with genotype Tt is described as:",
+            options: ["Homozygous dominant", "Homozygous recessive", "Heterozygous", "Codominant"],
+            answerIndex: 2,
+            explanation: "An organism with two different alleles for a gene (e.g. Tt) is described as heterozygous. Homozygous means both alleles are the same (TT or tt). Codominant describes a specific relationship between two alleles, not the term for having two different alleles.",
+            guideRef: "Monohybrid Crosses and Punnett Squares",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-inheritance-bm3-03",
+            question: "In a cross between two heterozygous organisms (Aa × Aa), what is the probability of an aa offspring?",
+            options: ["0%", "25%", "50%", "75%"],
+            answerIndex: 1,
+            explanation: "Punnett square for Aa × Aa: offspring are AA (25%), Aa (50%), aa (25%). So the probability of a homozygous recessive (aa) offspring is 1/4 = 25%.",
+            guideRef: "Monohybrid Crosses and Punnett Squares",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-inheritance-bm3-04",
+            question: "A tall pea plant (Tt) is crossed with a short pea plant (tt). What is the expected phenotype ratio?",
+            options: ["All tall", "3 tall : 1 short", "1 tall : 1 short", "1 tall : 3 short"],
+            answerIndex: 2,
+            explanation: "Punnett square for Tt × tt: offspring are Tt, Tt, tt, tt — 2 tall : 2 short = 1 tall : 1 short. This is a test cross (crossing a dominant-phenotype organism with a homozygous recessive).",
+            guideRef: "Monohybrid Crosses and Punnett Squares",
+            difficulty: "core",
+            hints: ["Write out the gametes: T and t from the tall parent; t and t from the short parent.", "Complete the Punnett square and count phenotypes."],
+          },
+          {
+            id: "bio-inheritance-bm3-05",
+            question: "A pedigree chart shows that two unaffected parents have an affected child. The condition is most likely:",
+            options: [
+              "Dominant, autosomal",
+              "Recessive, autosomal",
+              "Sex-linked dominant",
+              "Cannot be determined from this information"
+            ],
+            answerIndex: 1,
+            explanation: "If both parents are unaffected but have an affected child, the condition must be recessive — the parents are carriers (heterozygous) who do not show the phenotype but can pass on the recessive allele. A dominant condition would require at least one parent to be affected.",
+            guideRef: "Monohybrid Crosses and Punnett Squares",
+            difficulty: "core",
+            hints: [
+              "For a dominant condition, where would the allele have to come from?",
+              "Can two unaffected parents both carry a recessive allele without showing it?"
+            ],
+          },
+          {
+            id: "bio-inheritance-bm3-06",
+            question: "Which of the following crosses would produce offspring in a 1:2:1 genotype ratio?",
+            options: ["AA × aa", "Aa × Aa", "Aa × aa", "AA × Aa"],
+            answerIndex: 1,
+            explanation: "Aa × Aa gives: AA (25%), Aa (50%), aa (25%) = 1 AA : 2 Aa : 1 aa. The 1:2:1 genotype ratio is the signature of a heterozygous × heterozygous cross.",
+            guideRef: "Monohybrid Crosses and Punnett Squares",
+            difficulty: "core",
+            strategy: "The 1:2:1 genotype ratio always comes from a heterozygous × heterozygous cross.",
+          },
+          {
+            id: "bio-inheritance-bm3-07",
+            question: "In a test cross, an organism showing the dominant phenotype is crossed with a homozygous recessive organism. If the test cross produces ONLY dominant phenotype offspring (in a large sample), the tested organism is:",
+            options: [
+              "Definitely heterozygous",
+              "Definitely homozygous dominant",
+              "Either heterozygous or homozygous — this cross cannot distinguish them",
+              "Definitely homozygous recessive"
+            ],
+            answerIndex: 1,
+            explanation: "If the tested organism were heterozygous (Aa), crossing with aa would give approximately 50% recessive phenotype offspring. With a large sample showing ALL dominant offspring, this strongly indicates the organism is homozygous dominant (AA), since AA × aa gives only Aa (dominant phenotype).",
+            guideRef: "Monohybrid Crosses and Punnett Squares",
+            difficulty: "core",
+            hints: [
+              "If the organism were Aa: cross with aa gives Aa (dominant) and aa (recessive) in 1:1 ratio.",
+              "If the organism were AA: cross with aa gives only Aa (all dominant).",
+              "Which scenario produces only dominant offspring?"
+            ],
+          },
+          {
+            id: "bio-inheritance-bm3-08",
+            question: "In humans, freckles (F) are dominant over no freckles (f). A man with freckles whose father had no freckles is crossed with a woman with no freckles. What proportion of their children are expected to have freckles?",
+            options: ["0%", "25%", "50%", "100%"],
+            answerIndex: 2,
+            explanation: "The man's father had no freckles (ff), so the man inherited one f allele from his father. Since the man has freckles, his genotype must be Ff. The woman has no freckles = ff. Cross: Ff × ff gives Ff and ff in 1:1 ratio. 50% of children will have freckles.",
+            guideRef: "Monohybrid Crosses and Punnett Squares",
+            difficulty: "core",
+            hints: [
+              "The man's father had no freckles (ff). What allele did the man inherit from his father?",
+              "The man has freckles — so what must his genotype be?",
+              "Now cross his genotype with the woman's genotype (ff)."
+            ],
+          },
+          {
+            id: "bio-inheritance-bm3-09",
+            question: "In a species of mice, black fur (B) is dominant over brown (b), and short tail (S) is dominant over long tail (s). These genes assort independently. Two mice, both BbSs, are crossed. What fraction of offspring are expected to have brown fur and a short tail?",
+            options: ["1/16", "3/16", "9/16", "3/4"],
+            answerIndex: 1,
+            explanation: "Treat each gene independently. From Bb × Bb: P(brown = bb) = 1/4. From Ss × Ss: P(short tail = S_) = 3/4. Combined (independent genes): P(brown AND short) = 1/4 × 3/4 = 3/16.",
+            guideRef: "Monohybrid Crosses and Punnett Squares",
+            difficulty: "challenge",
+            strategy: "Treat each gene independently, then multiply probabilities using the product rule for independent events.",
+          },
+          {
+            id: "bio-inheritance-bm3-10",
+            question: "A plant heterozygous for seed colour (Gg, green dominant over yellow) is self-fertilised. Out of 400 seeds expected, how many would be expected to show the green phenotype?",
+            options: ["100", "200", "300", "400"],
+            answerIndex: 2,
+            explanation: "Gg × Gg gives GG (25%), Gg (50%), gg (25%). Green phenotype = GG + Gg = 75% = 3/4. Expected green seeds = 3/4 × 400 = 300.",
+            guideRef: "Monohybrid Crosses and Punnett Squares",
+            difficulty: "challenge",
+          },
+        ],
+      },
+      {
+        id: "bio-inheritance-bankmcq-4",
+        title: "Question Bank — MCQ Paper 4",
+        description: "10 multiple-choice questions covering codominance, ABO blood groups, sex determination, sex linkage, natural selection, selective breeding and variation.",
+        questions: [
+          {
+            id: "bio-inheritance-bm4-01",
+            question: "Which blood group results from the genotype I^A I^B?",
+            options: ["A", "B", "AB", "O"],
+            answerIndex: 2,
+            explanation: "When both I^A and I^B alleles are present, this is a case of codominance — both alleles are fully expressed. The person produces both A and B antigens on their red blood cells, giving blood group AB.",
+            guideRef: "Codominance, Blood Groups and Sex Determination",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-inheritance-bm4-02",
+            question: "A woman has blood group O. What is her genotype?",
+            options: ["I^A I^A", "I^A i", "I^B i", "ii"],
+            answerIndex: 3,
+            explanation: "Blood group O results from genotype ii (homozygous for the recessive i allele). The i allele does not code for any surface antigen. Only when no I^A or I^B allele is present does the person have blood group O.",
+            guideRef: "Codominance, Blood Groups and Sex Determination",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-inheritance-bm4-03",
+            question: "In humans, which chromosome combination determines that an individual is male?",
+            options: ["XX", "XY", "YY", "X only"],
+            answerIndex: 1,
+            explanation: "Sex in humans is determined by the sex chromosomes. Females have two X chromosomes (XX); males have one X and one Y chromosome (XY). The Y chromosome carries the SRY gene which triggers male development.",
+            guideRef: "Codominance, Blood Groups and Sex Determination",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-inheritance-bm4-04",
+            question: "A man with blood group A (I^A i) and a woman with blood group B (I^B i) have children. Which blood groups are possible in their children?",
+            options: [
+              "A and B only",
+              "A, B, AB and O",
+              "AB only",
+              "O only"
+            ],
+            answerIndex: 1,
+            explanation: "Cross: I^A i × I^B i. Possible genotypes in offspring: I^A I^B (AB), I^A i (A), I^B i (B), ii (O). All four blood groups are possible.",
+            guideRef: "Codominance, Blood Groups and Sex Determination",
+            difficulty: "core",
+            hints: [
+              "List all possible gamete combinations: I^A with I^B, I^A with i, i with I^B, i with i.",
+              "What blood group does each genotype produce?"
+            ],
+          },
+          {
+            id: "bio-inheritance-bm4-05",
+            question: "In snapdragons, C^R C^R = red, C^W C^W = white, C^R C^W = pink. Two pink snapdragons are crossed. What is the expected ratio of flower colours in the offspring?",
+            options: [
               "All pink",
-              "Half red, half white"
+              "1 red : 1 white",
+              "1 red : 2 pink : 1 white",
+              "3 red : 1 white"
             ],
             answerIndex: 2,
-            explanation: "This is codominance. The F1 offspring are all C^R C^W (heterozygous). Because both alleles are fully expressed (neither is dominant), the result is pink flowers — an intermediate that shows both pigments are being produced.",
+            explanation: "Cross: C^R C^W × C^R C^W. Punnett square gives: C^R C^R (red), C^R C^W (pink), C^R C^W (pink), C^W C^W (white). Ratio: 1 red : 2 pink : 1 white.",
             guideRef: "Codominance, Blood Groups and Sex Determination",
-            difficulty: "warmup",
+            difficulty: "core",
+            hints: ["Both parents are C^R C^W. Draw the Punnett square and identify each genotype's phenotype."],
           },
           {
-            id: "bio-inheritance-bank-mcq2-q02",
-            question: "Two parents both have blood group B. Which blood groups could their children possibly have?",
-            options: [
-              "B only",
-              "A or B",
-              "B or O",
-              "A, B, AB or O"
-            ],
+            id: "bio-inheritance-bm4-06",
+            question: "A woman with normal vision whose father was colour blind (X-linked recessive) marries a man with normal vision. What is the probability that their first son is colour blind?",
+            options: ["0%", "25%", "50%", "100%"],
             answerIndex: 2,
-            explanation: "Blood group B can be I^B I^B or I^B i. If both parents are I^B I^B, children are all I^B I^B (group B). If both are I^B i, children can be I^B I^B (B), I^B i (B), or ii (O). I^B I^A (group A) and I^A I^B (group AB) are not possible because neither parent has an I^A allele.",
+            explanation: "The woman's father was colour blind (X^n Y), so she inherited X^n from him. She has normal vision, so her genotype is X^N X^n (carrier). Her husband is X^N Y. Sons receive Y from their father and either X^N or X^n from their mother — 50% chance of X^n Y (colour blind).",
             guideRef: "Codominance, Blood Groups and Sex Determination",
             difficulty: "core",
             hints: [
-              "List the possible genotypes for blood group B.",
-              "Consider the case where both parents are I^B i.",
-              "What children can I^B i × I^B i produce?"
+              "The woman's father was colour blind: what allele did she inherit from him on her X chromosome?",
+              "She has normal vision: what must her other X allele be?",
+              "Sons get Y from their father — what determines whether a son is colour blind?"
             ],
-            strategy: "Consider all possible parental genotypes",
           },
           {
-            id: "bio-inheritance-bank-mcq2-q03",
-            question: "A couple want to know the probability that their next child will be a girl. What is the probability?",
+            id: "bio-inheritance-bm4-07",
+            question: "Which of the following best describes the role of mutation in evolution?",
             options: [
-              "100% — if they already have a boy",
-              "50%",
-              "25%",
-              "It depends on the mother's genotype"
+              "Mutations cause organisms to adapt intentionally to their environment",
+              "Mutations provide the heritable variation on which natural selection acts",
+              "Mutations always produce beneficial changes that drive evolution",
+              "Mutations only affect the next generation if they occur in somatic cells"
             ],
             answerIndex: 1,
-            explanation: "The mother is always XX; the father is XY. Each child independently receives X or Y from the father. The probability of XX (girl) = 1/2 = 50% for every pregnancy, regardless of previous children. The mother's genotype for sex chromosomes is always XX and does not vary.",
-            guideRef: "Codominance, Blood Groups and Sex Determination",
-            difficulty: "warmup",
-          },
-          {
-            id: "bio-inheritance-bank-mcq2-q04",
-            question: "Which feature of natural selection provides the heritable variation on which selection acts?",
-            options: [
-              "Competition for resources",
-              "Overproduction of offspring",
-              "Random mutation",
-              "Survival of the fittest"
-            ],
-            answerIndex: 2,
-            explanation: "Random mutation in DNA creates new alleles — new heritable variants — that can be passed to offspring. Competition, overproduction and differential survival/reproduction are all part of natural selection but do not themselves generate new genetic variation.",
+            explanation: "Mutations create new alleles — new heritable variants. Natural selection then acts on this variation, favouring individuals whose phenotype is better suited to the environment. Mutations are random, not intentional, and most are neutral or harmful. Only mutations in gametes (not somatic cells) are heritable.",
             guideRef: "Natural Selection, Evolution and Selective Breeding",
             difficulty: "core",
-            hints: [
-              "Natural selection can only act on traits that are heritable.",
-              "What is the original source of new alleles?"
-            ],
           },
           {
-            id: "bio-inheritance-bank-mcq2-q05",
-            question: "A farmer selectively breeds dairy cattle to increase milk yield over 20 generations. This is different from natural selection because:",
+            id: "bio-inheritance-bm4-08",
+            question: "Selective breeding differs from natural selection in that:",
             options: [
-              "Selective breeding changes allele frequencies, but natural selection does not.",
-              "Humans, not the environment, choose which individuals reproduce.",
-              "Selective breeding acts faster than natural selection.",
-              "Natural selection only occurs in wild animals."
+              "Selective breeding never changes allele frequencies",
+              "In selective breeding, humans act as the selection pressure",
+              "Natural selection is always faster than selective breeding",
+              "Selective breeding can only occur in plants"
             ],
             answerIndex: 1,
-            explanation: "The key difference is WHO acts as the selection pressure. In selective breeding, humans deliberately choose which individuals reproduce based on desired traits. In natural selection, the environment determines which individuals survive and reproduce. Both change allele frequencies over generations; neither is exclusive to any setting.",
+            explanation: "The key distinction is WHO or WHAT acts as the selection pressure. In selective breeding, humans deliberately choose which individuals reproduce based on desired traits. In natural selection, the environment determines which individuals survive and reproduce.",
             guideRef: "Natural Selection, Evolution and Selective Breeding",
             difficulty: "core",
-            hints: [
-              "In natural selection, what decides which organisms reproduce?",
-              "In selective breeding, who makes that decision?"
-            ],
           },
           {
-            id: "bio-inheritance-bank-mcq2-q06",
-            question: "A woman is a carrier for a sex-linked recessive condition (X^N X^n). Her husband is unaffected (X^N Y). What is the probability that a son will be affected?",
-            options: [
-              "0%",
-              "25%",
-              "50%",
-              "100%"
-            ],
-            answerIndex: 2,
-            explanation: "The mother's gametes: X^N or X^n. The father's gametes: X^N or Y. Sons receive Y from father and X from mother. There is a 1/2 chance the son receives X^n (affected) and 1/2 chance X^N (unaffected). So 50% of sons will be affected. Note: 25% of ALL children (sons and daughters) will be affected, but 50% of sons specifically.",
+            id: "bio-inheritance-bm4-09",
+            question: "A woman who is a carrier for haemophilia (X^H X^h) has children with an unaffected man (X^H Y). What is the probability that a daughter is a carrier?",
+            options: ["25%", "50%", "75%", "100%"],
+            answerIndex: 1,
+            explanation: "Cross: X^H X^h × X^H Y. Daughters receive X^H from their father, plus either X^H or X^h from their mother. Daughters: X^H X^H (normal, not a carrier) or X^H X^h (carrier), in 1:1 ratio. P(daughter is a carrier) = 1/2 = 50%.",
             guideRef: "Codominance, Blood Groups and Sex Determination",
             difficulty: "challenge",
             hints: [
-              "Draw the full Punnett square (X^N X^n mother × X^N Y father).",
-              "Identify all four possible offspring genotypes.",
-              "Select only the sons (those receiving Y from father).",
-              "Of those sons, what fraction received X^n from the mother?"
+              "Draw the Punnett square: X^H X^h × X^H Y.",
+              "Identify only the daughter genotypes (those with two X chromosomes).",
+              "Of the daughters, what fraction are carriers (X^H X^h)?"
             ],
-            strategy: "Draw Punnett square, then filter for sons only",
+          },
+          {
+            id: "bio-inheritance-bm4-10",
+            question: "A population of dark-coloured moths lives in an industrial area where tree bark is darkened by pollution. A rare mutation produces a light-coloured moth. Over 10 generations, the frequency of the light-colour allele decreases from 5% to 0.5%. Which explanation best accounts for this observation?",
+            options: [
+              "The light moths mutated back to dark colour",
+              "Natural selection acted against light moths because they were more visible to predators on dark bark",
+              "Light moths reproduced more slowly due to a genetic defect",
+              "Random mutation eliminated the light allele from the population"
+            ],
+            answerIndex: 1,
+            explanation: "This is industrial melanism. On soot-darkened bark, light-coloured moths are more visible to predatory birds. They are selectively removed from the population. Dark moths are better camouflaged, survive and reproduce more, increasing the dark allele frequency. The light allele decreases in frequency over generations — classic directional natural selection.",
+            guideRef: "Natural Selection, Evolution and Selective Breeding",
+            difficulty: "challenge",
           },
         ],
       },
@@ -736,250 +1048,758 @@ A population of bacteria contains rare individuals with a mutation giving antibi
 
     qaPapers: [
       {
-        id: "bio-inheritance-bank-qa-1",
-        title: "Inheritance & Variation — Structured Paper 1",
-        description: "4 structured questions on DNA, cell division and monohybrid genetics.",
+        id: "bio-inheritance-bankqa-1",
+        title: "Question Bank — Structured Paper 1",
+        description: "10 structured questions on DNA structure, genes, chromosomes, mitosis and related topics.",
         questions: [
           {
-            id: "bio-inheritance-bank-qa1-q01",
-            question: "The diagram shows a section of a DNA molecule.\n(a) Name the type of bond that holds the two strands together. [1 mark]\n(b) State two ways in which DNA in a body cell and DNA in a gamete differ. [2 marks]\n(c) Explain why a mutation in the base sequence of a gene may alter the phenotype of an organism. [2 marks]",
-            marks: 5,
-            modelAnswer: "(a) The two strands of DNA are held together by hydrogen bonds (between complementary base pairs A–T and C–G).\n\n(b) Any two of: The body cell is diploid (two copies of each chromosome) / contains 46 chromosomes, whereas the gamete is haploid (one copy of each chromosome) / contains 23 chromosomes. The body cell contains two alleles for each gene; the gamete contains one. (The total amount of DNA in a gamete is half that of a body cell.)\n\n(c) A gene codes for the production of a specific protein. If the base sequence of the gene changes (mutation), the sequence of amino acids in the protein may change. This could alter the shape or function of the protein, which could change the phenotype (e.g. a non-functional enzyme).",
+            id: "bio-inheritance-bq1-01",
+            question: "State two structural features of the DNA double helix.",
+            marks: 2,
+            modelAnswer: "Two strands wound around each other in a double helix; the strands are held together by hydrogen bonds between complementary base pairs (A pairs with T; C pairs with G).",
             markScheme: [
-              "(a) Hydrogen bonds",
-              "(b) Body cell diploid / 46 chromosomes; gamete haploid / 23 chromosomes",
-              "(b) Body cell has two alleles per gene; gamete has one allele per gene (any second correct difference)",
-              "(c) Gene codes for a protein / sequence of bases determines amino acid sequence",
-              "(c) Mutation changes base sequence → may change protein structure/function → phenotype altered"
+              "Two strands / double-stranded structure",
+              "Hydrogen bonds between complementary base pairs (A–T and C–G)"
             ],
-            commonError: "In (a), students often say 'covalent bonds' or 'peptide bonds' — hydrogen bonds specifically hold the two strands via base pairing. Covalent bonds link nucleotides within each strand (phosphodiester bonds), which is a different question.",
+            guideRef: "DNA, Genes and Chromosomes",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-inheritance-bq1-02",
+            question: "Distinguish between a gene and an allele.",
+            marks: 2,
+            modelAnswer: "A gene is a specific length (sequence) of DNA that codes for the production of a particular protein. An allele is a specific version of a gene — different alleles of the same gene have slightly different base sequences and may produce different forms of the protein.",
+            markScheme: [
+              "Gene = a length/sequence of DNA coding for a specific protein",
+              "Allele = a specific version/variant of a gene / different base sequence at the same locus"
+            ],
+            guideRef: "DNA, Genes and Chromosomes",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-inheritance-bq1-03",
+            question: "Explain why human body cells are described as diploid and gametes as haploid, and explain why this difference is important for sexual reproduction.",
+            marks: 4,
+            modelAnswer: "Body cells are diploid (2n = 46) because they contain two copies of each chromosome — one set inherited from each parent. Gametes (sperm and egg) are haploid (n = 23) because meiosis halves the chromosome number, leaving only one chromosome from each homologous pair. This is essential for sexual reproduction: at fertilisation, a sperm (n = 23) fuses with an egg (n = 23), restoring the diploid number (2n = 46) in the zygote. Without this halving, chromosome number would double every generation.",
+            markScheme: [
+              "Body cells contain two sets/copies of chromosomes (diploid, 2n = 46)",
+              "Gametes contain one set of chromosomes (haploid, n = 23)",
+              "Meiosis halves the chromosome number",
+              "Fertilisation (n + n) restores the diploid number / prevents chromosome number doubling each generation"
+            ],
+            commonError: "Students often say meiosis 'doubles then halves' — meiosis only halves the chromosome number; DNA replication (which doubles DNA content) occurs before meiosis begins.",
+            guideRef: "Mitosis and Meiosis",
+            difficulty: "core",
+          },
+          {
+            id: "bio-inheritance-bq1-04",
+            question: "A student says 'mitosis and meiosis both produce new cells, so they must have the same outcome.' Evaluate this statement, describing TWO ways in which the outcomes differ.",
+            marks: 4,
+            modelAnswer: "The statement is incorrect. First, mitosis produces two daughter cells, whereas meiosis produces four daughter cells. Second, the cells produced by mitosis are genetically identical to each other and to the parent cell (same chromosome number, same alleles), whereas cells produced by meiosis are genetically different from one another and haploid (half the chromosome number). Meiosis introduces genetic variation through crossing over and independent assortment; mitosis does not.",
+            markScheme: [
+              "Mitosis produces 2 cells; meiosis produces 4 cells",
+              "Mitosis produces genetically identical/diploid cells; meiosis produces genetically different/haploid cells",
+              "Meiosis introduces genetic variation (crossing over / independent assortment); mitosis does not"
+            ],
+            commonError: "Stating that meiosis cells are genetically identical — they are not; crossing over and independent assortment ensure each is unique.",
+            guideRef: "Mitosis and Meiosis",
+            difficulty: "core",
+          },
+          {
+            id: "bio-inheritance-bq1-05",
+            question: "Explain what is meant by the term 'mutation' and describe ONE way in which the rate of mutation can be increased.",
+            marks: 3,
+            modelAnswer: "A mutation is a random, spontaneous change in the base sequence of DNA. If a mutation occurs within a gene, it may alter the protein that gene codes for, potentially changing the organism's phenotype. The rate of mutation can be increased by exposure to mutagens, for example ionising radiation (such as X-rays or UV light from the sun), or chemical mutagens (such as carcinogens found in tobacco smoke).",
+            markScheme: [
+              "Mutation = random/spontaneous change in the DNA base sequence",
+              "May alter protein structure/function and therefore phenotype",
+              "Rate increased by a named mutagen: ionising radiation (X-rays/UV/gamma rays) OR chemical mutagen (tobacco smoke/carcinogens)"
+            ],
+            commonError: "Saying mutations are always harmful — the majority are neutral; occasionally they are beneficial. This misconception should be avoided.",
+            guideRef: "Variation, Mutation and Sources of Genetic Difference",
+            difficulty: "core",
+          },
+          {
+            id: "bio-inheritance-bq1-06",
+            question: "A cell with 2n = 8 undergoes mitosis. (a) How many chromosomes will each daughter cell contain? (b) If the same cell underwent meiosis instead, how many chromosomes would each resulting cell contain? (c) State the type of cell that meiosis produces.",
+            marks: 3,
+            modelAnswer: "(a) 8 chromosomes — mitosis produces diploid daughter cells with the same chromosome number as the parent cell (2n = 8). (b) 4 chromosomes — meiosis halves the chromosome number from 2n = 8 to n = 4. (c) Gametes (sex cells — sperm or egg cells).",
+            markScheme: [
+              "(a) 8 chromosomes",
+              "(b) 4 chromosomes",
+              "(c) Gametes / sex cells / sperm or egg cells"
+            ],
+            commonError: "Answering 4 for part (a) — this confuses mitosis with meiosis. Mitosis does NOT halve the chromosome number.",
+            guideRef: "Mitosis and Meiosis",
+            difficulty: "core",
+          },
+          {
+            id: "bio-inheritance-bq1-07",
+            question: "Describe the role of DNA in controlling the characteristics of an organism. Include reference to the terms gene, protein and phenotype in your answer.",
+            marks: 4,
+            modelAnswer: "DNA carries the genetic information of an organism. It is organised into genes — each gene is a specific sequence of DNA bases that codes for the production of a particular protein. The sequence of bases determines the sequence of amino acids assembled at ribosomes, which in turn determines the structure and function of the protein. Because proteins control the structure and chemical reactions within cells (e.g. as enzymes, structural proteins or hormones), they ultimately determine the observable characteristics (phenotype) of the organism.",
+            markScheme: [
+              "DNA contains genes",
+              "A gene is a sequence of bases coding for a specific protein",
+              "Sequence of bases determines the sequence of amino acids / protein structure",
+              "Proteins determine the phenotype / characteristics of the organism"
+            ],
+            commonError: "Saying DNA directly makes proteins — DNA codes for proteins; the actual assembly of amino acids occurs at ribosomes in the cytoplasm.",
             guideRef: "DNA, Genes and Chromosomes",
             difficulty: "core",
-            hints: [
-              "Think about what type of bond is described as 'weak' and involved in base pairing in DNA.",
-              "For (b), compare the chromosome number and allele number.",
-              "For (c), follow the chain: gene → protein → phenotype."
-            ],
           },
           {
-            id: "bio-inheritance-bank-qa1-q02",
-            question: "In tomato plants, round fruit (R) is dominant over pear-shaped fruit (r).\n(a) A plant with round fruit is crossed with a pear-shaped plant. All 48 offspring have round fruit. State the genotypes of both parent plants. [2 marks]\n(b) Two round-fruited plants from part (a) are crossed. Draw a Punnett square and state the expected phenotype ratio and the probability of pear-shaped fruit. [4 marks]\n(c) A student claims: 'If you grow 200 seeds from this cross, exactly 50 will be pear-shaped.' Evaluate this claim. [2 marks]",
-            marks: 8,
-            modelAnswer: "(a) Round parent: RR (homozygous dominant). Pear-shaped parent: rr (homozygous recessive). All offspring being round (Rr) confirms the round parent contributes only R alleles, so must be RR.\n\n(b) Cross: Rr × Rr. Punnett square:\n      R      r\n  R | RR  | Rr |\n  r | Rr  | rr |\n\nGenotype ratio: 1 RR : 2 Rr : 1 rr. Phenotype ratio: 3 round : 1 pear-shaped. Probability of pear-shaped fruit = 1/4 = 25%.\n\n(c) The claim is incorrect (or at best unlikely). The 3:1 ratio is a probability prediction based on random fertilisation. Individual outcomes are random events; the actual number of pear-shaped plants may not be exactly 50. With a larger sample the ratio approaches the expected probability, but exact values cannot be predicted for any one experiment.",
+            id: "bio-inheritance-bq1-08",
+            question: "In cats, the gene for fur colour is located on the X chromosome. The allele for orange fur (X^O) is codominant with the allele for black fur (X^B). Female cats with genotype X^O X^B have tortoiseshell (patchy orange and black) fur. (a) Explain why tortoiseshell cats are almost always female. [3 marks] (b) A tortoiseshell female cat is crossed with an orange male cat. Draw a Punnett square and state the expected ratio of coat colours in female offspring only. [2 marks]",
+            marks: 5,
+            modelAnswer: "(a) Tortoiseshell requires both X^O and X^B alleles to be simultaneously expressed. Males have only one X chromosome (XY genotype), so they can only carry either X^O (orange) or X^B (black) — never both alleles at the same time. Therefore males cannot be tortoiseshell. Females have two X chromosomes (XX) and can be X^O X^B, making the tortoiseshell phenotype possible only in females. (b) Tortoiseshell female: X^O X^B. Orange male: X^O Y. Punnett square: X^O X^O (orange female), X^O X^B (tortoiseshell female), X^O Y (orange male), X^B Y (black male). Female offspring only: 1 X^O X^O (orange) : 1 X^O X^B (tortoiseshell). Ratio of female coat colours = 1 orange : 1 tortoiseshell.",
             markScheme: [
-              "(a) Round parent: RR",
-              "(a) Pear-shaped parent: rr",
-              "(b) Correct gametes on Punnett square (R and r for each parent)",
-              "(b) Four genotypes correctly filled: RR, Rr, Rr, rr",
-              "(b) Phenotype ratio: 3 round : 1 pear-shaped",
-              "(b) Probability of pear-shaped: 1/4 / 25%",
-              "(c) The ratio is a probability/expected value, not a guarantee",
-              "(c) Actual results vary due to random fertilisation / larger samples give closer results"
+              "(a) Tortoiseshell requires both X^O and X^B alleles",
+              "(a) Males are XY and have only one X chromosome / cannot carry both alleles",
+              "(a) Females are XX and can carry both alleles simultaneously",
+              "(b) Punnett square correct with all four genotypes",
+              "(b) Female offspring ratio: 1 orange : 1 tortoiseshell"
             ],
-            commonError: "In (a), students often write Rr for the round parent, not noticing that the question says ALL offspring are round — a Rr parent would produce some rr (pear-shaped) offspring. Always check whether offspring are all one phenotype to diagnose homozygous vs heterozygous parents.",
-            guideRef: "Monohybrid Crosses and Punnett Squares",
-            difficulty: "core",
-            hints: [
-              "For (a): if all offspring are round, the pear-shaped parent (rr) provides only r. For all offspring to show dominant phenotype, the round parent must provide only R — so it must be RR.",
-              "For (b): write out the gametes before drawing the grid.",
-              "For (c): think about whether genetic ratios are certainties or probabilities."
-            ],
-            strategy: "Work backwards from offspring; then Punnett square; then evaluate statistical claims",
-            solutions: [
-              {
-                label: "Logical deduction for parent genotypes",
-                steps: [
-                  "Pear-shaped = rr (homozygous recessive by definition of recessive).",
-                  "All offspring are round → all must have at least one R allele.",
-                  "Each offspring receives r from the pear-shaped parent.",
-                  "For all offspring to be round (R_), the round parent must supply R to every offspring.",
-                  "Only RR can guarantee every gamete carries R.",
-                  "Therefore: round parent = RR."
-                ]
-              }
-            ],
-          },
-          {
-            id: "bio-inheritance-bank-qa1-q03",
-            question: "A couple's pedigree chart shows that the father has sickle-cell anaemia (autosomal recessive, alleles H = normal, h = sickle-cell). The mother is a carrier. Calculate the probability that:\n(a) their first child has sickle-cell anaemia [2 marks]\n(b) their first child is a carrier [2 marks]\n(c) Given that their first child does not have sickle-cell anaemia, what is the probability that this child is a carrier? Show your working. [3 marks]",
-            marks: 7,
-            modelAnswer: "(a) Father has sickle-cell = hh. Mother is a carrier = Hh. Cross: hh × Hh.\nPunnett square:\n    H   h\n h |Hh | hh |\n h |Hh | hh |\n\nOutcomes: 2 Hh (carriers) : 2 hh (affected). Probability of sickle-cell (hh) = 2/4 = 1/2 = 50%.\n\n(b) Probability of carrier (Hh) = 2/4 = 1/2 = 50%.\n\n(c) If the child does not have sickle-cell, it must be Hh (carrier) — since HH is impossible (the father can only provide h). Of the children who do not have sickle-cell anaemia, ALL 2 are carriers (Hh). Probability = 2/2 = 1 = 100%.",
-            markScheme: [
-              "(a) Father genotype hh; mother genotype Hh stated or implied",
-              "(a) Probability of hh (affected) = 1/2 / 50%",
-              "(b) Probability of Hh (carrier) = 1/2 / 50%",
-              "(c) Recognition that HH is impossible (father can only give h)",
-              "(c) Unaffected children are all Hh",
-              "(c) Conditional probability = 2/2 = 1 / 100%"
-            ],
-            commonError: "In (c), many students answer 2/4 = 50% without applying the condition that the child is unaffected. Conditional probability requires restricting to the relevant subset of outcomes.",
-            guideRef: "Monohybrid Crosses and Punnett Squares",
+            commonError: "Forgetting that the question asks for female offspring only — if all offspring are listed the ratio is different.",
+            guideRef: "Codominance, Blood Groups and Sex Determination",
             difficulty: "challenge",
-            hints: [
-              "Write out the father's genotype (affected = hh) and the mother's (carrier = Hh).",
-              "Draw the Punnett square for hh × Hh.",
-              "For (c), list only the children who do NOT have sickle-cell anaemia — what genotypes are they?",
-              "Of those unaffected genotypes, what fraction are carriers? (This is conditional probability.)"
-            ],
-            strategy: "Conditional probability: restrict to the given subset of outcomes",
             solutions: [
               {
-                label: "Punnett square then conditional reasoning",
+                label: "Punnett square for tortoiseshell × orange",
                 steps: [
-                  "hh (father) × Hh (mother): gametes from father always h; gametes from mother: H or h.",
-                  "Punnett square: offspring are Hh or hh, each with probability 1/2.",
-                  "(a) P(hh) = 1/2 = 50%.",
-                  "(b) P(Hh) = 1/2 = 50%.",
-                  "(c) Given child is not affected, possible genotypes = {Hh} only (HH impossible since father only gives h).",
-                  "All unaffected children are Hh → P(carrier | not affected) = 1 = 100%."
+                  "Tortoiseshell female gametes: X^O and X^B.",
+                  "Orange male gametes: X^O and Y.",
+                  "Punnett square: X^O X^O, X^O X^B, X^O Y, X^B Y.",
+                  "Daughters (XX): X^O X^O (orange) and X^O X^B (tortoiseshell) — ratio 1:1.",
+                  "Sons (XY): X^O Y (orange) and X^B Y (black).",
+                  "Female-only ratio: 1 orange : 1 tortoiseshell."
                 ]
               }
             ],
           },
           {
-            id: "bio-inheritance-bank-qa1-q04",
-            question: "Describe and explain how variation within a species leads to evolution by natural selection. Use an example to illustrate your answer. [6 marks]",
+            id: "bio-inheritance-bq1-09",
+            question: "A scientist studies a population of peppered moths (Biston betularia). Before industrialisation, light-coloured moths were common; dark-coloured moths were rare. After industrialisation darkened tree bark with soot, the proportion of dark moths increased dramatically. (a) Explain, using the theory of natural selection, how the proportion of dark moths increased. [4 marks] (b) When clean-air laws were introduced and bark lightened again, the proportion of light moths increased. Explain this observation. [2 marks]",
             marks: 6,
-            modelAnswer: "Within any species, individuals show variation in their characteristics. This variation arises from random mutations (changes in DNA base sequence), which create new alleles, and from the reshuffling of alleles during sexual reproduction (independent assortment and crossing over in meiosis). In any environment, organisms must compete for limited resources such as food, water and mates. Individuals whose characteristics best adapt them to their environment are more likely to survive and reproduce — 'survival of the fittest'. These better-adapted individuals pass on their favourable alleles to offspring. Over many generations, the frequency of favourable alleles increases in the population while unfavourable alleles decrease. This gradual change in allele frequency is evolution.\n\nExample: Antibiotic-resistant bacteria. In a bacterial population, a random mutation produces an allele conferring antibiotic resistance. The antibiotic acts as the selection pressure; non-resistant bacteria are killed. Resistant bacteria survive, reproduce rapidly and pass the resistance allele to daughter cells. The resistance allele increases in frequency; eventually the population may be entirely resistant and the antibiotic ineffective.",
+            modelAnswer: "(a) Within the moth population, random mutations produced a heritable allele for dark colouration. Variation existed in wing colour. Before industrialisation, on pale bark, dark moths were more visible to predators (birds) and were selectively removed — dark colouration was a disadvantage. After industrialisation, soot-darkened bark meant light moths became more visible and dark moths were better camouflaged. Dark moths survived to reproduce more successfully ('survival of the fittest'), passing the dark allele to offspring. Over many generations, the frequency of the dark allele increased and the frequency of the light allele decreased. (b) When bark lightened again, the selection pressure reversed. Dark moths became more visible on pale bark and were selectively removed by predators. Light moths were now better camouflaged and survived and reproduced more successfully. The frequency of the light allele increased again over successive generations.",
             markScheme: [
-              "Variation exists within the population",
-              "Variation arises from mutation / reshuffling in meiosis",
-              "Competition for limited resources / selection pressure named",
-              "Better-adapted individuals survive and reproduce more (survival of the fittest)",
-              "Favourable alleles/characteristics passed to offspring / inherited",
-              "Frequency of favourable allele increases over generations",
-              "Named example used correctly (e.g. antibiotic resistance; specific allele, selection pressure and outcome stated)"
+              "(a) Variation in wing colour existed in the population",
+              "(a) Dark moths more visible on pale bark before industrialisation / light moths camouflaged",
+              "(a) On dark bark after industrialisation, dark moths better camouflaged; light moths more visible to predators",
+              "(a) Dark moths survive and reproduce / pass dark allele to offspring; frequency of dark allele increases",
+              "(b) Selection pressure reversed — dark moths now more visible on pale bark",
+              "(b) Light moths survive and reproduce more; light allele frequency increases"
             ],
-            commonError: "Omitting the mechanism of inheritance — students describe 'stronger organisms survive' but fail to explain how the advantageous characteristic is passed on. The word 'heritable' (or equivalent) is essential.",
+            commonError: "Saying the moths changed colour deliberately in response to pollution — they did not change; natural selection acted on pre-existing heritable variation in the population.",
             guideRef: "Natural Selection, Evolution and Selective Breeding",
-            difficulty: "core",
-            hints: [
-              "Start with: where does variation come from?",
-              "What is the selection pressure in your example?",
-              "Who survives and why?",
-              "How does the allele frequency change over time?"
+            difficulty: "challenge",
+            strategy: "Use the 5-step natural selection framework: variation → selection pressure → survival → reproduction → change in allele frequency.",
+          },
+          {
+            id: "bio-inheritance-bq1-10",
+            question: "A gene has two alleles: A (dominant) and a (recessive). In a population study, 36% of individuals show the recessive phenotype. Assuming Hardy-Weinberg equilibrium: (a) Calculate the frequency of the recessive allele (a). [1 mark] (b) Calculate the frequency of the dominant allele (A). [1 mark] (c) Calculate the expected frequency of heterozygous individuals (Aa) in the population. [2 marks] (d) State ONE assumption of the Hardy-Weinberg principle that, if violated, would cause natural selection to occur. [1 mark]",
+            marks: 5,
+            modelAnswer: "(a) Frequency of aa = 0.36; frequency of allele a = q = √0.36 = 0.6. (b) Frequency of allele A = p = 1 − q = 1 − 0.6 = 0.4. (c) Frequency of Aa (heterozygotes) = 2pq = 2 × 0.4 × 0.6 = 0.48. So 48% of the population are expected to be heterozygous. (d) Any one of: no natural selection (all genotypes survive and reproduce equally); random mating occurs; no mutation; no gene flow / no migration into or out of the population; large population size.",
+            markScheme: [
+              "(a) q = √0.36 = 0.6",
+              "(b) p = 1 − 0.6 = 0.4",
+              "(c) 2pq = 2 × 0.4 × 0.6 = 0.48 / 48%",
+              "(d) Any valid Hardy-Weinberg assumption stated (no selection / random mating / no mutation / no gene flow / large population)"
             ],
-            strategy: "Use the 5-step natural selection framework; back it up with a named example",
+            commonError: "Calculating 2pq as p × q (forgetting the factor of 2). Heterozygous individuals can be Aa in two ways, so the formula is 2pq not pq.",
+            guideRef: "Natural Selection, Evolution and Selective Breeding",
+            difficulty: "challenge",
+            strategy: "Start from the recessive phenotype frequency = q². Take the square root to get q, then use p + q = 1 to find p.",
+            hints: [
+              "Recessive phenotype = aa genotype; frequency of aa = q².",
+              "Take the square root of q² to find q (the allele frequency).",
+              "p + q = 1, so p = 1 − q.",
+              "Heterozygotes = 2pq."
+            ],
           },
         ],
       },
       {
-        id: "bio-inheritance-bank-qa-2",
-        title: "Inheritance & Variation — Structured Paper 2",
-        description: "4 structured questions on codominance, sex linkage, variation and challenge genetics.",
+        id: "bio-inheritance-bankqa-2",
+        title: "Question Bank — Structured Paper 2",
+        description: "10 structured questions on meiosis, crossing over, genetic variation and mutation.",
         questions: [
           {
-            id: "bio-inheritance-bank-qa2-q01",
-            question: "In a species of cattle, coat colour is controlled by codominant alleles: C^R (red) and C^W (white).\n(a) State the coat colour of a heterozygous (C^R C^W) animal. [1 mark]\n(b) A red bull and a roan cow are crossed. Draw a Punnett square and state the expected ratio of coat colours in the offspring. [3 marks]\n(c) Explain why this is an example of codominance rather than incomplete dominance. [2 marks]",
-            marks: 6,
-            modelAnswer: "(a) A heterozygous (C^R C^W) animal has roan colouring — a mixture of red and white hairs (both alleles fully expressed).\n\n(b) Red bull = C^R C^R; roan cow = C^R C^W.\nPunnett square:\n         C^R      C^W\n  C^R | C^R C^R | C^R C^W |\n  C^R | C^R C^R | C^R C^W |\n\nOffspring: 2 C^R C^R (red) : 2 C^R C^W (roan). Ratio: 1 red : 1 roan.\n\n(c) In codominance, both alleles are fully expressed — the roan animal has both red AND white hairs (both proteins/pigments present). In incomplete dominance, the heterozygote would show a true blend (e.g. a uniform pink, not a mix of two colours). The roan phenotype shows both alleles are active simultaneously, which is codominance.",
+            id: "bio-inheritance-bq2-01",
+            question: "State TWO differences between mitosis and meiosis.",
+            marks: 2,
+            modelAnswer: "Any two of: mitosis produces 2 cells / meiosis produces 4 cells; mitosis produces diploid cells / meiosis produces haploid cells; mitosis produces genetically identical cells / meiosis produces genetically different cells; mitosis involves 1 division / meiosis involves 2 divisions.",
             markScheme: [
-              "(a) Roan (accept: mixture of red and white hairs)",
-              "(b) Red bull: C^R C^R; roan cow: C^R C^W (correct genotypes)",
-              "(b) Punnett square: C^R C^R and C^R C^W in correct ratio",
-              "(b) Ratio: 1 red : 1 roan",
-              "(c) Both alleles are fully/simultaneously expressed in heterozygote",
-              "(c) Distinction from incomplete dominance: roan = both colours present (not a blend)"
+              "Mitosis → 2 cells; meiosis → 4 cells",
+              "Mitosis → diploid; meiosis → haploid",
+              "Mitosis → genetically identical; meiosis → genetically different",
+              "(Any two of the above, one mark each)"
             ],
-            commonError: "Confusing codominance with incomplete dominance — codominance produces a phenotype where BOTH parental characteristics are visible (e.g. red AND white hairs together), whereas incomplete dominance produces a truly intermediate phenotype (e.g. all pink).",
-            guideRef: "Codominance, Blood Groups and Sex Determination",
-            difficulty: "core",
-            hints: [
-              "In codominance, each allele produces its own product — both products appear side by side.",
-              "For the Punnett square: C^R C^R × C^R C^W — what gametes does each parent produce?",
-              "For (c): what is the key difference between 'both things present' and 'an intermediate thing'?"
-            ],
-            strategy: "Draw Punnett square; then use definitions to distinguish codominance from incomplete dominance",
+            guideRef: "Mitosis and Meiosis",
+            difficulty: "warmup",
           },
           {
-            id: "bio-inheritance-bank-qa2-q02",
-            question: "Height in humans is an example of continuous variation.\n(a) Explain what is meant by continuous variation and give one other example. [2 marks]\n(b) State two causes of variation in height between individuals. [2 marks]\n(c) Compare continuous and discontinuous variation in terms of: (i) the number of genes involved; (ii) the effect of the environment; (iii) the distribution of values in a population. [3 marks]",
-            marks: 7,
-            modelAnswer: "(a) Continuous variation describes a characteristic that shows a smooth, unbroken range of values with no distinct categories. Another example: hand span, body mass, finger length (any one).\n\n(b) Causes of variation in height: genetic factors (the alleles inherited from parents for growth-related genes) and environmental factors such as nutrition (quality and quantity of food during growth).\n\n(c) (i) Continuous: controlled by many genes (polygenic); discontinuous: usually controlled by one or a few genes.\n(ii) Environment has a significant effect on continuous traits (e.g. nutrition affects height); environment has little or no effect on discontinuous traits (e.g. blood group is not changed by diet).\n(iii) Continuous variation shows a normal distribution (bell curve) when plotted; discontinuous variation shows distinct separate bars/peaks with no values in between.",
+            id: "bio-inheritance-bq2-02",
+            question: "State the meaning of the term 'crossing over' and explain when in cell division it occurs.",
+            marks: 2,
+            modelAnswer: "Crossing over is the exchange of segments between non-sister chromatids of homologous chromosomes. It occurs during prophase I of meiosis, when homologous chromosomes pair up and form bivalents.",
             markScheme: [
-              "(a) Smooth / unbroken range of values / no distinct categories",
-              "(a) Any correct example of continuous variation (other than height)",
-              "(b) Genetic / inherited alleles for height",
-              "(b) Environmental: nutrition / diet / health / exercise",
-              "(c)(i) Continuous = many genes (polygenic); discontinuous = one or few genes",
-              "(c)(ii) Environment significantly affects continuous; little/no effect on discontinuous",
-              "(c)(iii) Continuous: normal distribution / bell curve; discontinuous: separate categories / no intermediate values"
+              "Exchange of segments/portions between non-sister chromatids of homologous chromosomes",
+              "Occurs during prophase I of meiosis"
             ],
-            commonError: "For (b), students often give only genetic or only environmental causes. Height is influenced by both, and the question asks for two causes — specify one of each type.",
+            commonError: "Saying crossing over occurs in mitosis — it only occurs in meiosis (prophase I).",
+            guideRef: "Mitosis and Meiosis",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-inheritance-bq2-03",
+            question: "Explain why meiosis is described as a source of genetic variation. Your answer should refer to TWO processes that occur during meiosis.",
+            marks: 4,
+            modelAnswer: "Meiosis produces genetic variation through two main processes. First, crossing over occurs in prophase I, where segments are exchanged between non-sister chromatids of homologous chromosome pairs. This creates new combinations of alleles on individual chromosomes, producing recombinant chromosomes that did not exist before. Second, independent assortment occurs in metaphase I, where each pair of homologous chromosomes aligns randomly on the equatorial plate. The orientation of one pair is independent of all others. This means gametes receive a random combination of maternal and paternal chromosomes. Together, crossing over and independent assortment ensure each gamete produced is genetically unique.",
+            markScheme: [
+              "Crossing over: exchange of segments between homologous chromatids in prophase I",
+              "Crossing over creates new combinations of alleles on chromosomes",
+              "Independent assortment: random orientation of homologous pairs at metaphase I",
+              "Each gamete receives a random mix of maternal and paternal chromosomes / gametes are genetically unique"
+            ],
+            commonError: "Only naming one process — the question specifies TWO processes. Both crossing over and independent assortment must be described.",
+            guideRef: "Mitosis and Meiosis",
+            difficulty: "core",
+          },
+          {
+            id: "bio-inheritance-bq2-04",
+            question: "A somatic (body) cell mutation occurs in the skin of a mouse. (a) Explain why this mutation will NOT be passed to offspring. [2 marks] (b) Describe TWO features of mutations that mean natural selection can act on them. [2 marks]",
+            marks: 4,
+            modelAnswer: "(a) Somatic (body) cell mutations are not present in gametes. For a mutation to be inherited, it must occur in gametes (sperm or eggs) or in the cells of the reproductive organs that produce gametes. Skin cells do not give rise to gametes, so the mutation in the skin cell cannot be transmitted to offspring. (b) Any two of: mutations are heritable if they occur in gametes — offspring inherit the new allele, providing raw material for selection; mutations alter the phenotype (by changing the protein produced), meaning that natural selection can act on the altered characteristic; mutations are random and create new alleles that may be advantageous, neutral or disadvantageous in the environment.",
+            markScheme: [
+              "(a) Skin/somatic cells do not produce gametes",
+              "(a) Mutation must be in gamete/reproductive cell to be inherited",
+              "(b) Mutations are heritable (if in gametes) / passed to offspring",
+              "(b) Mutations alter phenotype (via protein change) — selection can act on the new phenotype"
+            ],
             guideRef: "Variation, Mutation and Sources of Genetic Difference",
             difficulty: "core",
-            hints: [
-              "Continuous = a range; discontinuous = distinct boxes.",
-              "Think of the word 'polygenic' for the number of genes.",
-              "Consider: can diet change your blood group? Can it change your height?"
-            ],
           },
           {
-            id: "bio-inheritance-bank-qa2-q03",
-            question: "In humans, the allele for normal colour vision (X^N) is dominant over the allele for colour blindness (X^n). Colour blindness is a sex-linked condition.\n(a) A colour-blind man (X^n Y) and a woman with normal vision who is a carrier (X^N X^n) plan to have children. Draw a Punnett square to show the expected genotypes of their children. [3 marks]\n(b) Calculate the probability that:\n(i) a daughter is colour blind [1 mark]\n(ii) a son has normal colour vision [1 mark]\n(c) Explain why colour blindness affects males more often than females. [3 marks]",
-            marks: 8,
-            modelAnswer: "(a) Mother: X^N X^n; father: X^n Y.\nPunnett square:\n           X^N          X^n\n  X^n | X^N X^n    | X^n X^n  |\n  Y   | X^N Y      | X^n Y    |\n\nFour genotypes: X^N X^n (carrier female), X^n X^n (colour-blind female), X^N Y (normal male), X^n Y (colour-blind male).\n\n(b)(i) Daughters are the first two cells: X^N X^n and X^n X^n. Of 2 daughters, 1 is colour blind. P(daughter is colour blind) = 1/2 = 50%.\n\n(b)(ii) Sons are the second two cells: X^N Y and X^n Y. Of 2 sons, 1 has normal vision. P(son has normal vision) = 1/2 = 50%.\n\n(c) Males have only one X chromosome (XY). A male who inherits a single X^n allele will be colour blind, because there is no second X chromosome carrying the dominant X^N allele to mask it. Females (XX) need two copies of X^n to be colour blind — if they have one X^N and one X^n, they are carriers with normal vision. This means the condition is more likely to be expressed in males.",
+            id: "bio-inheritance-bq2-05",
+            question: "Explain the difference between continuous and discontinuous variation and give one cause of each type.",
+            marks: 3,
+            modelAnswer: "Continuous variation describes characteristics that show a smooth, unbroken range of values with no distinct categories (e.g. height, body mass). It is caused by the combined effect of many genes (polygenic inheritance) and environmental factors. Discontinuous variation describes characteristics that fall into distinct, separate categories with no intermediate forms (e.g. ABO blood group, ability to roll tongue). It is caused by the effect of a single gene or a small number of genes, with little or no environmental influence.",
             markScheme: [
-              "(a) Correct gametes listed for both parents (X^N and X^n from mother; X^n and Y from father)",
-              "(a) All four genotypes correctly placed: X^N X^n, X^n X^n, X^N Y, X^n Y",
-              "(a) Genotypes correctly identified (carrier female, affected female, normal male, affected male)",
-              "(b)(i) P(daughter colour blind) = 1/2 / 50%",
-              "(b)(ii) P(son normal vision) = 1/2 / 50%",
-              "(c) Males have only one X chromosome / XY",
-              "(c) Single X^n allele causes colour blindness in males (no second X to mask it)",
-              "(c) Females need two X^n alleles / one X^N makes female a carrier not affected"
+              "Continuous: smooth range of values / no distinct categories; caused by many genes (polygenic) and/or environment",
+              "Discontinuous: separate distinct categories / no intermediate values; caused by one or few genes, little environmental effect",
+              "(One mark for each definition with cause; accept two marks for both definitions)"
             ],
-            commonError: "A common error in (b) is to calculate overall probability of colour blindness (1/4) and use that for daughters or sons, rather than restricting to daughters-only or sons-only as the question requests.",
-            guideRef: "Codominance, Blood Groups and Sex Determination",
-            difficulty: "challenge",
-            hints: [
-              "Write out gametes carefully: the mother gives X^N or X^n; the father gives X^n or Y.",
-              "Draw the Punnett square. Identify which cells are daughters (XX) and which are sons (XY).",
-              "For (b)(i), look only at the daughter cells — of those, how many are X^n X^n?",
-              "For (c), think about what difference there is between XY and XX when only one X^n allele is inherited."
+            commonError: "Giving examples that contradict the definition — blood group is always discontinuous and is never affected by environment.",
+            guideRef: "Variation, Mutation and Sources of Genetic Difference",
+            difficulty: "core",
+          },
+          {
+            id: "bio-inheritance-bq2-06",
+            question: "In Drosophila fruit flies, long wing (L) is dominant over vestigial (short) wing (l). A researcher crosses a long-winged fly with a vestigial-winged fly and obtains 50% long-winged and 50% vestigial-winged offspring. (a) State the genotypes of both parent flies. [2 marks] (b) A second long-winged fly from a different population is crossed with a vestigial-winged fly, and ALL offspring are long-winged. State the genotype of this second long-winged fly and explain your reasoning. [2 marks]",
+            marks: 4,
+            modelAnswer: "(a) Long-winged parent: Ll (heterozygous). Vestigial-winged parent: ll (homozygous recessive). A 1:1 phenotype ratio is produced by a test cross (Ll × ll). (b) The second long-winged fly must be LL (homozygous dominant). If it were Ll, crossing with ll would give some ll (vestigial-winged) offspring (1:1 ratio). Since ALL offspring are long-winged, the fly must supply only L gametes — which is only possible if its genotype is LL.",
+            markScheme: [
+              "(a) Long-winged parent: Ll",
+              "(a) Vestigial-winged parent: ll",
+              "(b) Genotype: LL",
+              "(b) Reasoning: any Ll parent would give some ll (vestigial) offspring; all long-winged offspring → only L gametes possible → must be LL"
             ],
-            strategy: "Draw full Punnett square; then filter by sex; explain in terms of X chromosome number",
+            commonError: "Writing LL for the first long-winged parent in (a) without recognising that the 1:1 ratio indicates a test cross (Ll × ll).",
+            guideRef: "Monohybrid Crosses and Punnett Squares",
+            difficulty: "core",
             solutions: [
               {
-                label: "Punnett square and conditional probability",
+                label: "Deduction from offspring ratios",
                 steps: [
-                  "Mother gametes: X^N, X^n. Father gametes: X^n, Y.",
-                  "Punnett square (2×2): Row 1 (X^n from father): X^N X^n, X^n X^n. Row 2 (Y from father): X^N Y, X^n Y.",
-                  "Daughters = row 1: X^N X^n (carrier, normal) and X^n X^n (colour blind).",
-                  "P(daughter colour blind) = 1 out of 2 daughters = 1/2 = 50%.",
-                  "Sons = row 2: X^N Y (normal) and X^n Y (colour blind).",
-                  "P(son normal) = 1 out of 2 sons = 1/2 = 50%."
+                  "Cross 1: 50% long : 50% vestigial = 1:1 ratio = test cross pattern.",
+                  "Vestigial parent must be ll. Long parent must be Ll (to give 50% ll offspring).",
+                  "Cross 2: all offspring long-winged.",
+                  "If long parent were Ll: Ll × ll → 50% Ll (long) + 50% ll (vestigial). But NO vestigial offspring.",
+                  "Therefore long parent must be LL: LL × ll → all Ll (long-winged)."
                 ]
               }
             ],
           },
           {
-            id: "bio-inheritance-bank-qa2-q04",
-            question: "Farmers in the 19th century used selective breeding to develop a new breed of sheep that produces more wool per year.\n(a) Describe the process of selective breeding the farmers would have used. [3 marks]\n(b) Explain how the frequency of alleles for high wool production would change over many generations of selective breeding. [3 marks]\n(c) A scientist suggests that the same result could eventually be achieved by natural selection if the farmers simply left the sheep to breed randomly. Evaluate this suggestion. [4 marks]",
-            marks: 10,
-            modelAnswer: "(a) The farmers would identify the individual sheep in their flock that produce the most wool. They would select these high-yielding individuals as breeding parents and allow only them to reproduce. The offspring are assessed for wool production, and again only those with the highest yield are chosen as the next generation's parents. This process is repeated over many generations.\n\n(b) Alleles that favour high wool production are carried by the selected breeding individuals. Each generation, these alleles are passed to offspring while alleles for lower wool yield become less common (because animals carrying them are not selected for breeding). Over many generations, the frequency of high-yield alleles increases and the frequency of low-yield alleles decreases in the flock.\n\n(c) The suggestion is unlikely to work as stated. Natural selection requires a selection pressure that favours high wool production in the wild (e.g. colder climate where woolier animals survive better). Without such a pressure, high wool production may not confer any survival advantage — in fact it might be a disadvantage (heavier coat, parasite risk). Allele frequencies would not necessarily change in the direction of more wool. Additionally, natural selection operates much more slowly than selective breeding; random mating means alleles are not concentrated in the way deliberate selection achieves. However, IF the environment provided a genuine selection pressure favouring wool production, then natural selection could theoretically move allele frequencies in a similar direction over a much longer timescale.",
+            id: "bio-inheritance-bq2-07",
+            question: "Explain how a change in a single base pair in DNA can lead to a change in the phenotype of an organism. Your answer should refer to the concept of a protein.",
+            marks: 4,
+            modelAnswer: "A gene contains a specific sequence of DNA base pairs that codes for the production of a particular protein. The sequence of bases determines which amino acids are assembled at ribosomes, and thus the primary structure of the protein. If a single base pair changes (a point mutation), the codon at that position may code for a different amino acid. This can alter the primary structure (amino acid sequence) of the resulting protein, which may change its three-dimensional shape. If the protein is an enzyme, a change in shape can alter or destroy the active site, affecting how it catalyses a reaction — which can change the observable characteristics (phenotype) of the organism.",
             markScheme: [
-              "(a) Identify individuals with the desired characteristic (high wool yield)",
-              "(a) Select those individuals as breeding parents / allow only them to reproduce",
-              "(a) Repeat over many generations / assess offspring and select again",
-              "(b) Selected alleles (for high yield) passed to offspring each generation",
-              "(b) Frequency of high-yield alleles increases over generations",
-              "(b) Alleles for lower yield decrease in frequency as those animals not selected",
-              "(c) Natural selection requires a real selection pressure favouring the trait in the environment",
-              "(c) High wool may not be advantageous (or may be disadvantageous) in wild conditions",
-              "(c) Without selection pressure, allele frequencies would not necessarily change in desired direction",
-              "(c) Natural selection would be much slower / less directed than selective breeding"
+              "Gene base sequence determines amino acid sequence of a protein",
+              "A point mutation changes one codon",
+              "Different amino acid may be incorporated, changing the protein's primary structure",
+              "Changed protein structure alters protein function (e.g. enzyme active site shape)",
+              "Altered protein function changes phenotype"
             ],
-            commonError: "In (c), students often simply say 'natural selection would not work' without explaining why — the key is the absence of an environmental selection pressure that specifically favours high wool production.",
+            commonError: "Stopping at 'the protein is different' without explaining the chain: changed protein structure → changed function → changed phenotype.",
+            guideRef: "DNA, Genes and Chromosomes",
+            difficulty: "core",
+          },
+          {
+            id: "bio-inheritance-bq2-08",
+            question: "In Labrador retrievers, coat colour is controlled by two genes. Gene E: allele E (dominant) allows pigment deposition; allele e (recessive) prevents pigment (giving yellow coat). Gene B: allele B (dominant) = black pigment; allele b (recessive) = chocolate pigment (only expressed when E is present). Two black dogs, both with genotype EeBb, are crossed. (a) What fraction of offspring are expected to have a yellow coat? [2 marks] (b) Of those offspring with a black coat, what fraction are expected to be homozygous dominant at both loci (EEBB)? [3 marks]",
+            marks: 5,
+            modelAnswer: "(a) Yellow coat requires ee (regardless of B locus). From Ee × Ee: P(ee) = 1/4. So 1/4 of all offspring are expected to have yellow coats. (b) Black coat requires E_ B_ (at least one E and at least one B). P(E_) = 3/4; P(B_) = 3/4; P(black) = 9/16. P(EEBB) = P(EE) × P(BB) = 1/4 × 1/4 = 1/16. P(EEBB | black) = (1/16) ÷ (9/16) = 1/9.",
+            markScheme: [
+              "(a) Yellow = ee; P(ee) from Ee × Ee = 1/4",
+              "(b) Black = E_B_; P(black) = 3/4 × 3/4 = 9/16",
+              "(b) P(EEBB) = 1/4 × 1/4 = 1/16",
+              "(b) Conditional probability = (1/16) ÷ (9/16) = 1/9"
+            ],
+            guideRef: "Monohybrid Crosses and Punnett Squares",
+            difficulty: "challenge",
+            solutions: [
+              {
+                label: "Dihybrid cross with conditional probability",
+                steps: [
+                  "Gene E: Ee × Ee → P(EE) = 1/4, P(Ee) = 1/2, P(ee) = 1/4.",
+                  "Gene B: Bb × Bb → P(BB) = 1/4, P(Bb) = 1/2, P(bb) = 1/4.",
+                  "(a) Yellow = ee: P = 1/4.",
+                  "(b) Black = E_B_ = P(E_) × P(B_) = 3/4 × 3/4 = 9/16.",
+                  "P(EEBB) = P(EE) × P(BB) = 1/4 × 1/4 = 1/16.",
+                  "Of black offspring: P(EEBB | black) = (1/16) / (9/16) = 1/9."
+                ]
+              }
+            ],
+          },
+          {
+            id: "bio-inheritance-bq2-09",
+            question: "A pedigree chart shows the following: Generation I: unaffected father (I-1) and unaffected mother (I-2). Generation II: affected son (II-1), unaffected daughter (II-2), unaffected son (II-3). The condition is autosomal recessive (alleles H = normal, dominant; h = affected, recessive). (a) State the genotypes of I-1 and I-2. [2 marks] (b) State the genotype of II-2 if she is a carrier. [1 mark] (c) II-2 marries an unaffected man who is not a carrier. Calculate the probability that their first child will be affected by the condition. [2 marks]",
+            marks: 5,
+            modelAnswer: "(a) Both parents are unaffected but have an affected child (hh). Therefore both must have passed on an h allele to that child: I-1 = Hh and I-2 = Hh. (b) If II-2 is a carrier, her genotype is Hh. (c) II-2 is unaffected and from Hh × Hh cross; unaffected offspring are HH or Hh in ratio 1:2, so P(Hh | unaffected) = 2/3. Her husband is HH (not a carrier). Cross Hh × HH → HH or Hh, both unaffected. Even if II-2 is Hh, her husband can only contribute H alleles. No child can receive two h alleles (hh). P(affected child) = 0%.",
+            markScheme: [
+              "(a) I-1 = Hh; I-2 = Hh (both carriers)",
+              "(b) Hh",
+              "(c) Husband is HH — only provides H alleles",
+              "(c) Child cannot be hh; P(affected) = 0 / 0%"
+            ],
+            commonError: "Not recognising that the husband being HH (not a carrier) means he provides only H alleles — so children can never receive two h alleles and be affected.",
+            guideRef: "Monohybrid Crosses and Punnett Squares",
+            difficulty: "challenge",
+            strategy: "Carefully track what alleles each parent can contribute before calculating probabilities.",
+          },
+          {
+            id: "bio-inheritance-bq2-10",
+            question: "Explain how the following contribute to genetic variation within a population: (a) meiosis [3 marks], (b) mutation [2 marks], (c) sexual reproduction (fertilisation) [1 mark].",
+            marks: 6,
+            modelAnswer: "(a) Meiosis contributes to genetic variation in two ways. Crossing over in prophase I creates new combinations of alleles on chromosomes by exchanging segments between non-sister chromatids of homologous pairs. Independent assortment in metaphase I means each pair of homologous chromosomes aligns randomly, so each gamete receives a different, random combination of maternal and paternal chromosomes. Together, crossing over and independent assortment ensure each gamete is genetically unique. (b) Mutation produces new alleles by randomly changing the base sequence of DNA. Since mutations are heritable if they occur in gametes, they introduce genuinely new genetic variants into the population — variants that did not previously exist. Natural selection can then act on these new alleles. (c) Fertilisation combines gametes from two genetically different individuals, creating new combinations of alleles in the zygote that differ from both parents.",
+            markScheme: [
+              "(a) Crossing over: exchange of segments → new allele combinations on chromosomes",
+              "(a) Independent assortment: random chromosome orientation at metaphase I → unique gametes",
+              "(a) Each gamete genetically unique",
+              "(b) Mutation creates a new allele (new base sequence)",
+              "(b) Heritable if in gamete; introduces new genetic variants to population",
+              "(c) Fertilisation combines two unique gametes; offspring allele combination differs from both parents"
+            ],
+            commonError: "Describing meiosis as simply 'producing haploid cells' without explaining HOW variation is generated — the mechanism (crossing over, independent assortment) must be stated.",
+            guideRef: "Variation, Mutation and Sources of Genetic Difference",
+            difficulty: "challenge",
+          },
+        ],
+      },
+      {
+        id: "bio-inheritance-bankqa-3",
+        title: "Question Bank — Structured Paper 3",
+        description: "10 structured questions on monohybrid crosses, Punnett squares, pedigrees and test crosses.",
+        questions: [
+          {
+            id: "bio-inheritance-bq3-01",
+            question: "Define the terms 'dominant' and 'recessive' as used in genetics.",
+            marks: 2,
+            modelAnswer: "A dominant allele is one that is expressed in the phenotype whenever it is present — even if only one copy is present (in a heterozygote). A recessive allele is one that is only expressed in the phenotype when two copies are present (i.e. the organism is homozygous recessive).",
+            markScheme: [
+              "Dominant: expressed in phenotype when one or two copies present / expressed in heterozygote",
+              "Recessive: only expressed when two copies present / only in homozygous recessive"
+            ],
+            guideRef: "Monohybrid Crosses and Punnett Squares",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-inheritance-bq3-02",
+            question: "In pea plants, yellow seed colour (Y) is dominant over green (y). A plant with genotype Yy is crossed with a plant with genotype yy. List the possible genotypes of offspring and state the phenotype ratio.",
+            marks: 2,
+            modelAnswer: "Gametes from Yy: Y and y. Gametes from yy: y only. Punnett square offspring: Yy and yy in equal numbers. Genotypes: 1 Yy : 1 yy. Phenotype ratio: 1 yellow : 1 green (50% yellow, 50% green).",
+            markScheme: [
+              "Genotypes: Yy and yy (both required)",
+              "Phenotype ratio: 1 yellow : 1 green / 1:1"
+            ],
+            guideRef: "Monohybrid Crosses and Punnett Squares",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-inheritance-bq3-03",
+            question: "In snapdragons, red flowers (R) are dominant over white flowers (r). A red-flowered plant is crossed with a white-flowered plant. All 60 offspring have red flowers. (a) State the genotypes of both parent plants. [2 marks] (b) Two of the red-flowered offspring are crossed with each other. Draw a Punnett square and calculate the expected number of white-flowered plants out of 160 total offspring from this second cross. [2 marks]",
+            marks: 4,
+            modelAnswer: "(a) Red parent: RR (homozygous dominant); white parent: rr (homozygous recessive). All offspring being red (Rr) indicates the red parent supplies only R alleles, so must be RR. (b) The red offspring are Rr. Cross: Rr × Rr. Punnett square: RR (25%), Rr (50%), rr (25%). Phenotype ratio: 3 red : 1 white. Expected white plants = 1/4 × 160 = 40.",
+            markScheme: [
+              "(a) Red parent: RR",
+              "(a) White parent: rr",
+              "(b) Punnett square Rr × Rr correct; ratio 3 red : 1 white",
+              "(b) 1/4 × 160 = 40 white-flowered plants"
+            ],
+            commonError: "Answering 1/2 instead of 1/4 for the white proportion — the 3:1 ratio from Rr × Rr gives 1/4 white, not 1/2.",
+            guideRef: "Monohybrid Crosses and Punnett Squares",
+            difficulty: "core",
+            solutions: [
+              {
+                label: "Punnett square for Rr × Rr",
+                steps: [
+                  "Gametes from each Rr parent: R and r.",
+                  "Punnett square: RR, Rr, Rr, rr.",
+                  "Phenotypes: RR = red, Rr = red, rr = white.",
+                  "Ratio: 3 red : 1 white.",
+                  "Expected white = 1/4 × 160 = 40."
+                ]
+              }
+            ],
+          },
+          {
+            id: "bio-inheritance-bq3-04",
+            question: "Cystic fibrosis is an autosomal recessive condition (alleles: C = unaffected, c = cystic fibrosis). A couple are both carriers for cystic fibrosis. (a) State the genotypes of both parents. [1 mark] (b) Draw a Punnett square and calculate the probability that their first child has cystic fibrosis. [2 marks] (c) The couple already have two unaffected children. A doctor tells them the probability of a third child having cystic fibrosis is still 25%. Explain why this is correct. [2 marks]",
+            marks: 5,
+            modelAnswer: "(a) Both parents are Cc (heterozygous carriers). (b) Cc × Cc: Punnett square gives CC, Cc, Cc, cc. P(cc = affected) = 1/4 = 25%. (c) Each pregnancy is an independent event. The outcome of previous pregnancies does not affect the outcome of future ones. Each time gametes combine at fertilisation, there is always a 1/4 probability of producing a cc (cystic fibrosis) child, regardless of how many children have already been born.",
+            markScheme: [
+              "(a) Both parents: Cc",
+              "(b) Punnett square correct; P(cc) = 1/4 / 25%",
+              "(c) Each pregnancy is an independent event",
+              "(c) Previous outcomes do not change the probability; always 1/4 chance of cc"
+            ],
+            commonError: "Thinking the probability changes after having unaffected children — genetic probabilities are reset for each independent pregnancy.",
+            guideRef: "Monohybrid Crosses and Punnett Squares",
+            difficulty: "core",
+            solutions: [
+              {
+                label: "Punnett square for Cc × Cc",
+                steps: [
+                  "Gametes from each parent: C and c.",
+                  "Punnett square: CC, Cc, Cc, cc.",
+                  "Affected = cc: 1 out of 4 = 25%.",
+                  "Independence: each fertilisation is a separate random event."
+                ]
+              }
+            ],
+          },
+          {
+            id: "bio-inheritance-bq3-05",
+            question: "In Labrador retrievers, black fur (B) is dominant over chocolate (brown) fur (b). A breeder wants to determine whether a black Labrador is homozygous (BB) or heterozygous (Bb). (a) Describe the test cross the breeder could carry out. [2 marks] (b) Explain how the outcomes of the test cross would allow the breeder to determine the Labrador's genotype. [2 marks]",
+            marks: 4,
+            modelAnswer: "(a) The breeder should cross the black Labrador (unknown genotype) with a chocolate (brown) Labrador, which must have genotype bb (homozygous recessive). This cross is known as a test cross. (b) If the black Labrador is BB: all offspring will be Bb (black) — no chocolate offspring will appear. If the black Labrador is Bb: offspring will be Bb (black) and bb (chocolate) in approximately 1:1 ratio. If ANY chocolate (bb) offspring appear, the black Labrador must be Bb. If a large sample of offspring all show black fur, this provides evidence that the black Labrador is BB.",
+            markScheme: [
+              "(a) Cross with a chocolate (bb) / homozygous recessive individual",
+              "(a) Test cross / back cross",
+              "(b) If BB → all offspring black; if Bb → approximately 50% black : 50% chocolate",
+              "(b) Any chocolate offspring → parent is Bb; all black offspring → evidence for BB"
+            ],
+            commonError: "Crossing with another black dog (which could be BB or Bb) rather than with a known homozygous recessive (bb) individual.",
+            guideRef: "Monohybrid Crosses and Punnett Squares",
+            difficulty: "core",
+          },
+          {
+            id: "bio-inheritance-bq3-06",
+            question: "A pedigree shows a family where some members have an autosomal dominant condition (allele D = affected, d = unaffected). Generation I: I-1 (affected) married to I-2 (unaffected). Generation II: II-1 (affected), II-2 (unaffected), II-3 (affected), II-4 (unaffected). (a) State the genotype of I-2. [1 mark] (b) Suggest the genotype of I-1, giving a reason. [2 marks] (c) If II-3 (affected) has children with an unaffected person, calculate the probability that a child is affected. [1 mark]",
+            marks: 4,
+            modelAnswer: "(a) I-2 is unaffected, so genotype is dd (homozygous recessive — must have two recessive alleles to show unaffected phenotype for a dominant condition). (b) I-1 is affected. Since some children are unaffected (dd), I-1 must have passed on a d allele to those children. Therefore I-1 is Dd (heterozygous). If I-1 were DD, all offspring would be Dd and all affected — but some are unaffected. (c) Assuming II-3 is Dd (from a Dd × dd cross): II-3 (Dd) × unaffected partner (dd) → Dd (affected) and dd (unaffected) in 1:1 ratio. P(affected) = 1/2 = 50%.",
+            markScheme: [
+              "(a) dd",
+              "(b) Dd — some children are unaffected; I-1 must contribute d to those children; DD would give all affected",
+              "(c) Dd × dd → 1:1 ratio; P(affected) = 1/2 / 50%"
+            ],
+            commonError: "Saying I-1 is DD without considering that unaffected children (dd) must have received a d allele from I-1.",
+            guideRef: "Monohybrid Crosses and Punnett Squares",
+            difficulty: "core",
+            solutions: [
+              {
+                label: "Punnett square for II-3 × unaffected partner",
+                steps: [
+                  "II-3 is affected, from Dd × dd parents, so II-3 is Dd.",
+                  "Unaffected partner: dd.",
+                  "Cross: Dd × dd → Dd (affected) and dd (unaffected).",
+                  "P(affected) = 1/2 = 50%."
+                ]
+              }
+            ],
+          },
+          {
+            id: "bio-inheritance-bq3-07",
+            question: "Polydactyly (extra fingers) in humans is caused by a dominant allele (P). Two parents, both affected with polydactyly, have an unaffected child. (a) State the genotypes of both parents. [2 marks] (b) Draw a Punnett square and state all possible phenotypes and their expected probabilities. [2 marks] (c) The couple want a child without polydactyly. State the probability and explain whether they should be reassured or concerned. [1 mark]",
+            marks: 5,
+            modelAnswer: "(a) Both parents are affected (have at least one P allele). They have an unaffected child (pp), so each parent must have contributed one p allele to that child — each parent is Pp (heterozygous). (b) Pp × Pp: Punnett square gives PP, Pp, Pp, pp. Phenotypes: polydactyly (PP or Pp) = 3/4 = 75%; unaffected (pp) = 1/4 = 25%. (c) Probability of an unaffected child = 25% (1 in 4). There is a relatively high chance (75%) of any child having polydactyly — this is a significant concern.",
+            markScheme: [
+              "(a) Both parents: Pp (heterozygous) — must pass p to unaffected child",
+              "(b) Punnett square correct; polydactyly 3/4 (75%); unaffected 1/4 (25%)",
+              "(c) 25% / 1 in 4; relatively high risk of polydactyly (75%); concern appropriate"
+            ],
+            commonError: "Making one parent PP because they are affected — ignoring the unaffected child as evidence that both parents must carry a p allele.",
+            guideRef: "Monohybrid Crosses and Punnett Squares",
+            difficulty: "core",
+            solutions: [
+              {
+                label: "Punnett square for Pp × Pp",
+                steps: [
+                  "Both parents Pp (each has affected phenotype and produced pp child).",
+                  "Punnett: PP, Pp, Pp, pp.",
+                  "PP: polydactyly; Pp: polydactyly; pp: unaffected.",
+                  "P(polydactyly) = 3/4; P(unaffected) = 1/4."
+                ]
+              }
+            ],
+          },
+          {
+            id: "bio-inheritance-bq3-08",
+            question: "Explain what is meant by the term 'test cross' and describe how a test cross can be used to determine the genotype of a plant showing a dominant phenotype. Use a named example in your answer.",
+            marks: 4,
+            modelAnswer: "A test cross is a cross between an organism showing the dominant phenotype (which could be homozygous dominant or heterozygous) and an organism that is homozygous recessive for the characteristic being studied. Example using pea plants: round seeds (R) dominant over wrinkled (r). A round-seeded plant could be RR or Rr. To find out, cross it with a wrinkled-seeded plant (rr). If the round plant is RR: all offspring are Rr (all round seeds). If the round plant is Rr: offspring are Rr (round) and rr (wrinkled) in approximately 1:1 ratio. If any wrinkled offspring appear, the original plant must have been Rr. If a large sample all show round seeds, this is evidence for RR.",
+            markScheme: [
+              "Test cross = cross with homozygous recessive individual",
+              "Named example correctly identified (round × wrinkled / any valid dominant × homozygous recessive)",
+              "If all dominant offspring → parent is homozygous dominant (RR)",
+              "If ~50% recessive offspring → parent is heterozygous (Rr)"
+            ],
+            commonError: "Crossing with another dominant-phenotype plant rather than with a known homozygous recessive individual.",
+            guideRef: "Monohybrid Crosses and Punnett Squares",
+            difficulty: "core",
+          },
+          {
+            id: "bio-inheritance-bq3-09",
+            question: "In a species of plant, flower colour is controlled by two independent genes. Gene 1: A (produces pigment, dominant) / a (no pigment, recessive). Gene 2: B (blue pigment modifier, dominant) / b (red pigment modifier, recessive). Flowers with genotype A_B_ are purple; A_bb are red; aaB_ and aabb are white (no pigment). A plant with genotype AaBb is crossed with a plant with genotype Aabb. (a) List all possible genotype classes of offspring and their frequencies. [3 marks] (b) State the phenotypes and their expected proportions. [2 marks] (c) A student claims that 1/8 of offspring will be white. Evaluate this claim. [1 mark]",
+            marks: 6,
+            modelAnswer: "(a) For gene 1: Aa × Aa → P(A_) = 3/4; P(aa) = 1/4. For gene 2: Bb × bb → P(B_) = 1/2; P(bb) = 1/2. All combinations: A_B_ = 3/4 × 1/2 = 3/8; A_bb = 3/4 × 1/2 = 3/8; aaB_ = 1/4 × 1/2 = 1/8; aabb = 1/4 × 1/2 = 1/8. (b) Purple (A_B_) = 3/8; Red (A_bb) = 3/8; White (aaB_ + aabb) = 1/8 + 1/8 = 2/8 = 1/4. (c) The student is incorrect. White requires aa genotype, which occurs with probability 1/4 (not 1/8), combined with any B genotype. Total white = 1/4 = 2/8. The student only counted aabb (1/8) as white, but aaB_ (1/8) is also white — both lack pigment.",
+            markScheme: [
+              "(a) A_B_ = 3/8; A_bb = 3/8; aaB_ = 1/8; aabb = 1/8",
+              "(b) Purple 3/8; Red 3/8; White 1/4 (= 2/8)",
+              "(c) Student is incorrect; aaB_ is also white; total white = 2/8 = 1/4, not 1/8"
+            ],
+            guideRef: "Monohybrid Crosses and Punnett Squares",
+            difficulty: "challenge",
+            solutions: [
+              {
+                label: "Product rule for independent genes",
+                steps: [
+                  "Gene 1: Aa × Aa → P(A_) = 3/4; P(aa) = 1/4.",
+                  "Gene 2: Bb × bb → P(B_) = 1/2; P(bb) = 1/2.",
+                  "A_B_ = 3/4 × 1/2 = 3/8 (purple).",
+                  "A_bb = 3/4 × 1/2 = 3/8 (red).",
+                  "aaB_ = 1/4 × 1/2 = 1/8 (white).",
+                  "aabb = 1/4 × 1/2 = 1/8 (white).",
+                  "Total white = 1/8 + 1/8 = 2/8 = 1/4."
+                ]
+              }
+            ],
+          },
+          {
+            id: "bio-inheritance-bq3-10",
+            question: "A woman (II-2) is unaffected but her brother (II-3) has an X-linked recessive condition (allele X^d). Their father (I-1) is unaffected and their mother (I-2) is an unaffected carrier. (a) State the genotype of I-2. [1 mark] (b) Using a Punnett square, show the expected genotypes of children from I-1 × I-2. [2 marks] (c) II-2 is unaffected. State the probability that she is a carrier. [1 mark] (d) II-2 marries an unaffected man. If II-2 is a carrier, what is the probability that their first child is affected? [1 mark]",
+            marks: 5,
+            modelAnswer: "(a) I-2 is a carrier: X^D X^d. (b) I-1: X^D Y; I-2: X^D X^d. Punnett square gives: X^D X^D (unaffected female), X^D X^d (carrier female), X^D Y (unaffected male), X^d Y (affected male). (c) Unaffected daughters from this cross: X^D X^D or X^D X^d in 1:1 ratio. P(carrier | unaffected daughter) = 1/2 = 50%. (d) If II-2 is X^D X^d and her husband is X^D Y: offspring: X^D X^D, X^D X^d, X^D Y, X^d Y. P(affected = X^d Y) = 1/4 = 25%.",
+            markScheme: [
+              "(a) X^D X^d",
+              "(b) Punnett square: X^D X^D, X^D X^d, X^D Y, X^d Y all correctly placed",
+              "(c) 50% / 1/2",
+              "(d) 25% / 1/4"
+            ],
+            commonError: "In (c), saying 100% carrier because her brother is affected — ignoring the 50% chance she could be X^D X^D (homozygous dominant, not a carrier).",
+            guideRef: "Codominance, Blood Groups and Sex Determination",
+            difficulty: "challenge",
+            solutions: [
+              {
+                label: "Punnett square I-1 × I-2",
+                steps: [
+                  "I-1 gametes: X^D and Y.",
+                  "I-2 gametes: X^D and X^d.",
+                  "Punnett: X^D X^D (normal female), X^D X^d (carrier female), X^D Y (normal male), X^d Y (affected male).",
+                  "Unaffected daughters: X^D X^D and X^D X^d — 50% are carriers.",
+                  "If II-2 is carrier (X^D X^d) × X^D Y husband: X^D X^D, X^D X^d, X^D Y, X^d Y.",
+                  "P(affected = X^d Y) = 1/4 = 25%."
+                ]
+              }
+            ],
+          },
+        ],
+      },
+      {
+        id: "bio-inheritance-bankqa-4",
+        title: "Question Bank — Structured Paper 4",
+        description: "10 structured questions on codominance, ABO blood groups, sex linkage, natural selection, selective breeding and variation.",
+        questions: [
+          {
+            id: "bio-inheritance-bq4-01",
+            question: "State what is meant by codominance and give one example.",
+            marks: 2,
+            modelAnswer: "Codominance is a relationship between two alleles in which both are fully expressed in the phenotype of the heterozygote — neither allele is dominant over the other. Example: ABO blood group system — a person with genotype I^A I^B has blood group AB, expressing both A and B antigens on their red blood cells. Alternative example: roan cattle — genotype C^R C^W produces a coat with both red and white hairs.",
+            markScheme: [
+              "Both alleles fully expressed in the heterozygote / neither allele masks the other",
+              "Correct named example (I^A I^B = blood group AB; or snapdragons C^R C^W = pink; or roan cattle)"
+            ],
+            commonError: "Confusing codominance with incomplete dominance — codominance produces a phenotype where BOTH traits are visible simultaneously (e.g. both A and B antigens), whereas incomplete dominance produces a true blend.",
+            guideRef: "Codominance, Blood Groups and Sex Determination",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-inheritance-bq4-02",
+            question: "State the possible genotypes for a person with blood group A.",
+            marks: 2,
+            modelAnswer: "A person with blood group A could have genotype I^A I^A (homozygous, with two copies of the I^A allele) or I^A i (heterozygous, with one I^A allele and one recessive i allele).",
+            markScheme: [
+              "I^A I^A (homozygous dominant)",
+              "I^A i (heterozygous) — both genotypes required for full marks"
+            ],
+            guideRef: "Codominance, Blood Groups and Sex Determination",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-inheritance-bq4-03",
+            question: "A man with blood group AB and a woman with blood group A (genotype I^A i) have children. (a) Draw a Punnett square and list all possible blood groups of their children. [3 marks] (b) The couple have a child with blood group O. Is this genetically possible? Explain your answer. [1 mark]",
+            marks: 4,
+            modelAnswer: "(a) Man: I^A I^B; Woman: I^A i. Punnett square: I^A I^A (blood group A), I^A i (blood group A), I^A I^B (blood group AB), I^B i (blood group B). Possible blood groups: A, B, AB. (b) Blood group O requires genotype ii. The man (I^A I^B) can only contribute I^A or I^B — he has no i allele. Therefore no child can receive two i alleles, and blood group O is NOT genetically possible for this couple.",
+            markScheme: [
+              "(a) Punnett square correct: I^A I^A, I^A i, I^A I^B, I^B i",
+              "(a) Blood groups listed: A, B, AB",
+              "(b) Not possible; man has no i allele; child cannot be ii"
+            ],
+            commonError: "Forgetting that the AB father can only contribute I^A or I^B — he has no i allele, so blood group O is impossible.",
+            guideRef: "Codominance, Blood Groups and Sex Determination",
+            difficulty: "core",
+            solutions: [
+              {
+                label: "Punnett square I^A I^B × I^A i",
+                steps: [
+                  "Man's gametes: I^A and I^B.",
+                  "Woman's gametes: I^A and i.",
+                  "Punnett: I^A I^A (A), I^A i (A), I^A I^B (AB), I^B i (B).",
+                  "Blood groups possible: A, AB, B.",
+                  "O requires ii — man cannot provide i; therefore O is impossible."
+                ]
+              }
+            ],
+          },
+          {
+            id: "bio-inheritance-bq4-04",
+            question: "In humans, red-green colour blindness is X-linked recessive (X^N = normal vision; X^n = colour blind). A woman with normal vision whose mother was colour blind marries a man with normal vision. (a) State the woman's genotype. [1 mark] (b) Draw a Punnett square to show the expected genotypes of their children. [2 marks] (c) Calculate the probability of: (i) a son with normal vision; (ii) a daughter who is colour blind. [2 marks]",
+            marks: 5,
+            modelAnswer: "(a) The woman's mother was colour blind (X^n X^n), so the woman must have inherited one X^n from her mother. She has normal vision, so her genotype is X^N X^n (carrier). (b) Woman: X^N X^n; Man: X^N Y. Punnett square: X^N X^N (normal female), X^N X^n (carrier female), X^N Y (normal male), X^n Y (colour-blind male). (c)(i) Of sons: X^N Y (normal) or X^n Y (colour blind) — P(son has normal vision) = 1/2 = 50% of sons (or 1/4 = 25% of all children). (ii) Daughters are X^N X^N or X^N X^n — neither is colour blind. P(daughter colour blind) = 0%.",
+            markScheme: [
+              "(a) X^N X^n (carrier)",
+              "(b) Punnett square: X^N X^N, X^N X^n, X^N Y, X^n Y correctly placed",
+              "(c)(i) 50% of sons / 25% of all children (accept either with correct working)",
+              "(c)(ii) 0% — no daughter can be X^n X^n in this cross"
+            ],
+            commonError: "Saying daughters can be colour blind in this cross — impossible because the father is X^N Y and can only give X^N to daughters; daughters will always have at least one X^N allele.",
+            guideRef: "Codominance, Blood Groups and Sex Determination",
+            difficulty: "core",
+            solutions: [
+              {
+                label: "Punnett square X^N X^n × X^N Y",
+                steps: [
+                  "Mother gametes: X^N, X^n. Father gametes: X^N, Y.",
+                  "Punnett: X^N X^N (normal female), X^N X^n (carrier female), X^N Y (normal male), X^n Y (colour-blind male).",
+                  "Sons: X^N Y (normal) and X^n Y (colour blind) — 50% of sons are normal.",
+                  "Daughters: X^N X^N and X^N X^n — 0% are colour blind."
+                ]
+              }
+            ],
+          },
+          {
+            id: "bio-inheritance-bq4-05",
+            question: "Describe the process of natural selection using a named example. Your answer should include: variation, selection pressure, survival and reproduction, and change in allele frequency.",
+            marks: 4,
+            modelAnswer: "Example: antibiotic resistance in bacteria. Variation exists in the bacterial population due to random mutations — some bacteria carry an allele conferring resistance to an antibiotic. The selection pressure is the antibiotic: non-resistant bacteria are killed. Resistant bacteria survive the antibiotic and reproduce rapidly by binary fission, passing the resistance allele to all daughter cells. Over successive generations, the frequency of the resistance allele increases in the population while the frequency of the sensitive allele decreases. The population evolves to become resistant.",
+            markScheme: [
+              "Variation in population stated (e.g. due to mutation)",
+              "Selection pressure named (antibiotic / predation / any correct example)",
+              "Better-adapted individuals survive and reproduce, passing allele to offspring",
+              "Allele frequency of favourable allele increases over generations"
+            ],
+            commonError: "Saying the antibiotic 'causes' the resistance mutation — the antibiotic only selects for resistance that already exists due to prior random mutation.",
+            guideRef: "Natural Selection, Evolution and Selective Breeding",
+            difficulty: "core",
+          },
+          {
+            id: "bio-inheritance-bq4-06",
+            question: "Distinguish between natural selection and selective breeding, giving an example of each.",
+            marks: 4,
+            modelAnswer: "In natural selection, the environment acts as the selection pressure. Individuals with heritable characteristics better suited to their environment survive and reproduce more successfully, passing favourable alleles to offspring. Over many generations, allele frequencies change — this is evolution. Example: antibiotic-resistant bacteria — the antibiotic kills sensitive bacteria; resistant bacteria survive and multiply. In selective breeding, humans act as the selection pressure. Breeders deliberately choose which individuals reproduce based on desired characteristics, repeating this over many generations. Example: selectively breeding wheat for high grain yield — farmers choose the highest-yielding plants as parents each generation. Key difference: in natural selection, the environment selects; in selective breeding, humans select.",
+            markScheme: [
+              "Natural selection: environment selects; heritable variation; favourable alleles increase in frequency; named example",
+              "Selective breeding: humans choose parents; repeated over generations; named example",
+              "Key difference: selection pressure is the environment vs. humans"
+            ],
+            commonError: "Saying selective breeding changes DNA directly — it only changes allele frequencies by controlling which organisms breed.",
+            guideRef: "Natural Selection, Evolution and Selective Breeding",
+            difficulty: "core",
+          },
+          {
+            id: "bio-inheritance-bq4-07",
+            question: "A student investigates variation in leaf length by measuring 30 leaves from an oak tree in full sunlight and 30 from an oak tree in deep shade. (a) Predict whether leaf length would show continuous or discontinuous variation. Explain your prediction. [2 marks] (b) Suggest why leaves from the shaded tree might be larger on average. [2 marks] (c) The student concludes that any differences between the two trees' leaf lengths must be due to the environment. Evaluate this conclusion. [1 mark]",
+            marks: 5,
+            modelAnswer: "(a) Leaf length shows continuous variation — it is a quantitative measurement that can take any value within a range, with no distinct categories. It is influenced by many genes (polygenic) and by environmental factors, producing an approximately normal distribution. (b) Leaves in shade receive less light for photosynthesis. A larger surface area increases the amount of light the leaf can intercept. There may be phenotypic plasticity — the plant adjusts leaf size in response to light availability to maximise photosynthesis. (c) The conclusion is oversimplified. Differences in leaf length could be due to: (1) environmental differences (light, water, temperature) between the two locations; (2) genetic differences between the two trees (they are different individual organisms with different genotypes); or (3) a combination of both. Without using genetically identical plants (clones) in both conditions, it is impossible to attribute differences solely to the environment.",
+            markScheme: [
+              "(a) Continuous; quantitative/smooth range/no distinct categories; polygenic + environmental influence",
+              "(b) More surface area captures more light; phenotypic plasticity / adaptive response to low light",
+              "(c) Could be genetic differences between trees; need identical genotypes (clones) to isolate environmental effect; cannot attribute solely to environment"
+            ],
+            commonError: "Saying leaf length is discontinuous because measurements give discrete numbers — measurements are always discrete; the underlying variation is still continuous.",
+            guideRef: "Variation, Mutation and Sources of Genetic Difference",
+            difficulty: "core",
+          },
+          {
+            id: "bio-inheritance-bq4-08",
+            question: "Haemophilia A is an X-linked recessive condition (alleles: X^H = normal clotting; X^h = haemophilia). A carrier woman has children with an unaffected man. (a) State the genotype of the carrier woman and the unaffected man. [1 mark] (b) Draw a Punnett square. [2 marks] (c) The couple have a son. Calculate the probability that he has haemophilia. [1 mark]",
+            marks: 4,
+            modelAnswer: "(a) Carrier woman: X^H X^h. Unaffected man: X^H Y. (b) Punnett square (X^H X^h × X^H Y): X^H X^H (unaffected female), X^H X^h (carrier female), X^H Y (unaffected male), X^h Y (haemophilia male). (c) Sons: X^H Y (normal) or X^h Y (haemophilia) in 1:1 ratio. P(son has haemophilia) = 1/2 = 50%.",
+            markScheme: [
+              "(a) Carrier woman: X^H X^h; unaffected man: X^H Y",
+              "(b) Punnett square: X^H X^H, X^H X^h, X^H Y, X^h Y all correct",
+              "(c) 1/2 / 50%"
+            ],
+            commonError: "Giving P = 1/4 — this is the probability for all children, not specifically for sons. The question asks about sons only.",
+            guideRef: "Codominance, Blood Groups and Sex Determination",
+            difficulty: "core",
+            solutions: [
+              {
+                label: "Punnett square X^H X^h × X^H Y",
+                steps: [
+                  "Mother gametes: X^H and X^h. Father gametes: X^H and Y.",
+                  "Punnett: X^H X^H (normal female), X^H X^h (carrier female), X^H Y (normal male), X^h Y (haemophilia male).",
+                  "Sons: X^H Y and X^h Y — 50% of sons have haemophilia."
+                ]
+              }
+            ],
+          },
+          {
+            id: "bio-inheritance-bq4-09",
+            question: "A population of bacteria is initially all sensitive to antibiotic X. A single bacterium develops a mutation giving resistance. (a) Explain why this single mutation cannot immediately change the population's allele frequency significantly. [1 mark] (b) Describe what happens to the resistance allele frequency when antibiotic X is applied to the population. [3 marks] (c) After several generations of antibiotic treatment the antibiotic is withdrawn. Suggest, with reasoning, what would happen to the resistance allele frequency if the resistance mutation is 'costly' (i.e. reduces bacterial fitness in the absence of antibiotic). [2 marks]",
+            marks: 6,
+            modelAnswer: "(a) A single resistant bacterium among millions means the resistance allele is at extremely low frequency (approximately 1 in millions). One allele in a huge population has a negligible effect on allele frequency until the bacterium reproduces and the allele spreads. (b) When antibiotic X is applied: the antibiotic acts as a selection pressure. Non-resistant bacteria are killed by the antibiotic. The resistant bacterium survives and reproduces rapidly (binary fission with short generation times). All daughter cells inherit the resistance allele. Over successive generations, the proportion of resistant bacteria increases dramatically until the resistance allele approaches fixation (near 100% frequency). (c) If resistance is costly, resistant bacteria have lower reproductive fitness than sensitive bacteria when no antibiotic is present. Sensitive bacteria (if still present or reintroduced) reproduce faster and outcompete resistant bacteria. The frequency of the resistance allele decreases and the frequency of the sensitivity allele increases over time — natural selection now favours sensitivity in the antibiotic-free environment.",
+            markScheme: [
+              "(a) Single bacterium = resistance allele at extremely low frequency; negligible effect on population frequency",
+              "(b) Antibiotic = selection pressure; sensitive bacteria killed",
+              "(b) Resistant bacteria survive and reproduce; pass allele to offspring",
+              "(b) Resistance allele frequency increases rapidly towards fixation",
+              "(c) Resistance reduces fitness without antibiotic; sensitive bacteria outcompete resistant",
+              "(c) Resistance allele frequency decreases; natural selection now favours sensitivity"
+            ],
+            commonError: "Saying the antibiotic 'causes' the resistance mutation — the antibiotic only selects for pre-existing resistance. The mutation occurred before antibiotic exposure.",
             guideRef: "Natural Selection, Evolution and Selective Breeding",
             difficulty: "challenge",
-            hints: [
-              "For (a): think about the three steps — identify, select, repeat.",
-              "For (b): alleles for a selected trait become more common; those for non-selected traits become less common.",
-              "For (c): ask — what is the selection pressure in nature that would favour more wool? Does it exist?",
-              "Also consider the timescale — how does selective breeding compare to natural selection in speed?"
+            strategy: "Apply the natural selection framework: variation → selection pressure → survival → reproduction → allele frequency change.",
+          },
+          {
+            id: "bio-inheritance-bq4-10",
+            question: "English Bulldogs have been selectively bred to have an extremely flat face (brachycephaly). Modern Bulldogs commonly suffer from breathing difficulties, skin infections and cannot give birth naturally (requiring caesarean section). (a) Explain why selective breeding was able to produce such extreme characteristics over many generations. [2 marks] (b) Discuss the ethical issues raised by this example, considering both benefits and concerns. [3 marks]",
+            marks: 5,
+            modelAnswer: "(a) Breeders repeatedly selected individuals with the flattest faces as breeding parents each generation. Only dogs with the most extreme desired phenotype contributed to the next generation's gene pool. Alleles associated with brachycephaly increased in frequency with each generation of selection, while alleles for a more typical nose length decreased. Over many generations, the allele frequencies shifted so dramatically that extreme brachycephaly became the breed norm. (b) Benefits of selective breeding include producing predictable breeds with specific desired characteristics valued by owners, and economic value of pedigree dogs. However, serious concerns arise: the health and welfare of the dogs is severely compromised — breathing difficulties, overheating, chronic pain, and inability to give birth naturally are significant welfare issues. Selective breeding for appearance has reduced genetic diversity, increasing risk of inherited diseases. Breeders have prioritised human aesthetic preferences over animal welfare. This raises the ethical question of whether humans have a responsibility to avoid breeding practices that cause suffering, even if legal and commercially successful.",
+            markScheme: [
+              "(a) Repeated selection of individuals with flattest face as breeding parents each generation",
+              "(a) Alleles for brachycephaly increased in frequency over many generations / extreme phenotype became norm",
+              "(b) Benefit: produces specific desired traits / predictable breed characteristics",
+              "(b) Concern: serious health and welfare issues for the dogs (breathing / pain / caesarean required)",
+              "(b) Concern: reduced genetic diversity / ethical responsibility to animals stated"
             ],
-            strategy: "Evaluate both sides — when would the suggestion work? When would it not? Justify with scientific reasoning.",
+            commonError: "Only describing the process of selective breeding without evaluating the ethical dimension — the question asks students to 'discuss ethical issues', which requires both benefits and concerns.",
+            guideRef: "Natural Selection, Evolution and Selective Breeding",
+            difficulty: "challenge",
           },
         ],
       },

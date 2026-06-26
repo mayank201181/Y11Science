@@ -562,17 +562,18 @@ Equation: HCl(aq) + NaOH(aq) → NaCl(aq) + H₂O(l)
   },
 
   // ─────────────────────────────────────────────────────────
-  // QUESTION BANK
+  // QUESTION BANK  (4 × 10 MCQ + 4 × 10 QA = 80 questions)
   // ─────────────────────────────────────────────────────────
   questionBank: {
     mcqPapers: [
+      // ── MCQ PAPER 1 ── symbols · balancing · Mᵣ · moles from mass · Avogadro
       {
-        id: "chem-stoichiometry-bank-mcq-1",
-        title: "MCQ Paper 1 — Formulae, Moles and Masses",
-        description: "Six questions covering symbols, Mᵣ, moles, reacting masses and empirical formula.",
+        id: "chem-stoichiometry-bankmcq-1",
+        title: "Question Bank — MCQ Paper 1",
+        description: "Ten MCQs covering chemical symbols, balancing equations, relative formula mass, moles from mass, and the Avogadro constant.",
         questions: [
           {
-            id: "chem-stoichiometry-bank-mcq1-q01",
+            id: "chem-stoichiometry-bm1-01",
             question: "Which of the following correctly balances the equation for the combustion of propane?\nC₃H₈ + ? O₂ → ? CO₂ + ? H₂O",
             options: [
               "C₃H₈ + 4O₂ → 3CO₂ + 4H₂O",

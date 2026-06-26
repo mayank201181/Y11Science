@@ -645,12 +645,12 @@ export const chemEnergetics: Topic = {
   questionBank: {
     mcqPapers: [
       {
-        id: "chem-energetics-bank-mcq-1",
-        title: "Chemical Energetics — MCQ Paper 1",
-        description: "6 multiple-choice questions covering classification, energy diagrams, and concepts.",
+        id: "chem-energetics-bankmcq-1",
+        title: "Question Bank — MCQ Paper 1",
+        description: "10 multiple-choice questions: exo/endothermic classification, temperature evidence, energy level diagrams.",
         questions: [
           {
-            id: "chem-energetics-bank-mcq1-q01",
+            id: "chem-energetics-bm1-01",
             question: "In which reaction is energy released to the surroundings?",
             options: [
               "Thermal decomposition of calcium carbonate",
@@ -665,23 +665,23 @@ export const chemEnergetics: Topic = {
             difficulty: "warmup",
           },
           {
-            id: "chem-energetics-bank-mcq1-q02",
+            id: "chem-energetics-bm1-02",
             question:
-              "A student dissolves ammonium chloride in water. The temperature of the solution drops from 22°C to 16°C. What does this tell us about the reaction?",
+              "A student dissolves ammonium chloride in water. The temperature drops from 22 °C to 16 °C. Which row correctly describes the reaction?",
             options: [
-              "It is exothermic with ΔH negative.",
-              "It is endothermic with ΔH positive.",
-              "It is exothermic with ΔH positive.",
-              "It is endothermic with ΔH negative.",
+              "Exothermic; ΔH negative",
+              "Endothermic; ΔH positive",
+              "Exothermic; ΔH positive",
+              "Endothermic; ΔH negative",
             ],
             answerIndex: 1,
             explanation:
-              "A temperature drop means the solution (surroundings) is losing energy to the dissolving process. The reaction absorbs energy — endothermic — so ΔH is positive.",
+              "A temperature drop means the surroundings lose energy to the process — the reaction is endothermic, so ΔH is positive.",
             guideRef: "Exothermic and Endothermic Reactions",
             difficulty: "warmup",
           },
           {
-            id: "chem-energetics-bank-mcq1-q03",
+            id: "chem-energetics-bm1-03",
             question: "Which statement about bond breaking is correct?",
             options: [
               "Bond breaking is exothermic and releases energy.",
@@ -691,14 +691,30 @@ export const chemEnergetics: Topic = {
             ],
             answerIndex: 1,
             explanation:
-              "Bond breaking is always endothermic — energy must always be supplied to overcome the attractive forces between bonded atoms. This is true for all bonds, weak or strong (strong bonds simply require more energy).",
+              "Bond breaking is always endothermic — energy must always be supplied to overcome the attractive forces between bonded atoms. This is true for all bonds, weak or strong.",
             guideRef: "Bond Breaking and Bond Making",
             difficulty: "warmup",
           },
           {
-            id: "chem-energetics-bank-mcq1-q04",
+            id: "chem-energetics-bm1-04",
             question:
-              "On an energy level diagram, the reactants are at 250 kJ mol⁻¹, the peak (transition state) is at 380 kJ mol⁻¹, and the products are at 180 kJ mol⁻¹. What is the activation energy?",
+              "Which of the following is true of an endothermic reaction?",
+            options: [
+              "The temperature of the surroundings rises and ΔH is negative.",
+              "The temperature of the surroundings falls and ΔH is positive.",
+              "The temperature of the surroundings rises and ΔH is positive.",
+              "The temperature of the surroundings falls and ΔH is negative.",
+            ],
+            answerIndex: 1,
+            explanation:
+              "In an endothermic reaction, energy is absorbed from the surroundings, so the surroundings cool down and ΔH (= H products − H reactants) is positive.",
+            guideRef: "Exothermic and Endothermic Reactions",
+            difficulty: "warmup",
+          },
+          {
+            id: "chem-energetics-bm1-05",
+            question:
+              "On an energy level diagram, the reactants are at 250 kJ mol⁻¹, the peak is at 380 kJ mol⁻¹, and the products are at 180 kJ mol⁻¹. What is the activation energy?",
             options: [
               "70 kJ mol⁻¹",
               "130 kJ mol⁻¹",
@@ -707,18 +723,19 @@ export const chemEnergetics: Topic = {
             ],
             answerIndex: 1,
             explanation:
-              "Ea = peak − reactants = 380 − 250 = 130 kJ mol⁻¹. It is NOT measured from zero. The 70 kJ mol⁻¹ is |ΔH| = 250 − 180; 380 is the absolute peak energy, not Ea.",
+              "Ea = peak − reactants = 380 − 250 = 130 kJ mol⁻¹. It is NOT measured from zero. The 70 kJ mol⁻¹ is |ΔH|; 380 is the absolute peak energy, not Ea.",
             guideRef: "Energy Level Diagrams",
             difficulty: "core",
             hints: [
               "Ea is measured FROM the reactants level TO the top of the peak.",
               "Ea = E(peak) − E(reactants). Use the numbers given.",
+              "ΔH = E(products) − E(reactants) = 180 − 250 = −70 kJ mol⁻¹ — that is a different quantity.",
             ],
           },
           {
-            id: "chem-energetics-bank-mcq1-q05",
+            id: "chem-energetics-bm1-06",
             question:
-              "For the reaction A₂ + B₂ → 2AB, the bond energies are: A–A = 200 kJ mol⁻¹, B–B = 300 kJ mol⁻¹, A–B = 290 kJ mol⁻¹. What is ΔH?",
+              "For the reaction A₂ + B₂ → 2AB, bond energies: A–A = 200 kJ mol⁻¹, B–B = 300 kJ mol⁻¹, A–B = 290 kJ mol⁻¹. What is ΔH?",
             options: [
               "+80 kJ mol⁻¹",
               "−80 kJ mol⁻¹",
@@ -727,20 +744,20 @@ export const chemEnergetics: Topic = {
             ],
             answerIndex: 1,
             explanation:
-              "Bonds broken: 1 × A–A (200) + 1 × B–B (300) = 500 kJ. Bonds made: 2 × A–B (2 × 290 = 580) = 580 kJ. ΔH = 500 − 580 = −80 kJ mol⁻¹. Exothermic.",
+              "Bonds broken: 1 × A–A (200) + 1 × B–B (300) = 500 kJ. Bonds made: 2 × A–B (2 × 290 = 580) kJ. ΔH = 500 − 580 = −80 kJ mol⁻¹. Negative → exothermic.",
             guideRef: "Calculating ΔH from Bond Energies",
             difficulty: "core",
             hints: [
               "Count bonds: 1 A–A broken, 1 B–B broken, 2 A–B formed.",
-              "Total broken = 200 + 300 = 500. Total made = 2 × 290 = 580.",
-              "ΔH = 500 − 580 = −80 kJ mol⁻¹.",
+              "Total broken = 200 + 300 = 500 kJ. Total made = 2 × 290 = 580 kJ.",
+              "ΔH = broken − made = 500 − 580.",
             ],
             strategy: "build a table",
           },
           {
-            id: "chem-energetics-bank-mcq1-q06",
+            id: "chem-energetics-bm1-07",
             question:
-              "A catalyst is added to a reaction. Which of the following correctly describes both effects on the energy level diagram?",
+              "A catalyst is added to a reaction. Which row correctly describes the effect on the energy level diagram?",
             options: [
               "Ea increases; ΔH decreases",
               "Ea decreases; ΔH increases",
@@ -749,20 +766,77 @@ export const chemEnergetics: Topic = {
             ],
             answerIndex: 2,
             explanation:
-              "A catalyst lowers Ea by providing an alternative lower-energy pathway. The energy levels of reactants and products are unchanged, so ΔH is unaffected. A catalyst speeds up the reaction but does not make it more or less exothermic.",
+              "A catalyst provides an alternative lower-energy pathway, lowering Ea. The energy levels of reactants and products are unchanged, so ΔH is unaffected.",
             guideRef: "Energy Level Diagrams",
             difficulty: "core",
             hints: [
-              "A catalyst changes the route — think of a mountain pass — not the start or end altitude.",
-              "ΔH depends only on reactants and products energy levels. A catalyst doesn't change these.",
+              "A catalyst changes the route — not the start or end altitude.",
+              "ΔH depends only on the energy levels of reactants and products.",
+            ],
+          },
+          {
+            id: "chem-energetics-bm1-08",
+            question:
+              "Which process requires a continuous supply of heat to keep going?",
+            options: [
+              "Combustion of magnesium in air",
+              "Neutralisation of sodium hydroxide with hydrochloric acid",
+              "Thermal decomposition of calcium carbonate",
+              "Oxidation of iron (rusting)",
+            ],
+            answerIndex: 2,
+            explanation:
+              "Thermal decomposition is endothermic — it must continually absorb heat to proceed. Remove the heat source and the reaction stops. Combustion, neutralisation, and rusting are all exothermic.",
+            guideRef: "Common Examples and Applications",
+            difficulty: "warmup",
+          },
+          {
+            id: "chem-energetics-bm1-09",
+            question:
+              "Using bond energies: H–H = 436 kJ mol⁻¹, Cl–Cl = 243 kJ mol⁻¹, H–Cl = 432 kJ mol⁻¹. Which expression correctly gives ΔH for H₂(g) + Cl₂(g) → 2HCl(g)?",
+            options: [
+              "ΔH = (436 + 243) − (2 × 432)",
+              "ΔH = (2 × 432) − (436 + 243)",
+              "ΔH = (436 + 243) + (2 × 432)",
+              "ΔH = (436 − 243) − (2 × 432)",
+            ],
+            answerIndex: 0,
+            explanation:
+              "ΔH = Σ(bonds broken) − Σ(bonds formed) = (436 + 243) − (2 × 432) = 679 − 864 = −185 kJ mol⁻¹. Option B has the subtraction reversed; options C and D are incorrect.",
+            guideRef: "Calculating ΔH from Bond Energies",
+            difficulty: "core",
+            hints: [
+              "ΔH = (energy to break bonds) − (energy released making bonds).",
+              "Bonds broken: 1 H–H and 1 Cl–Cl. Bonds made: 2 H–Cl.",
+            ],
+          },
+          {
+            id: "chem-energetics-bm1-10",
+            question:
+              "An energy level diagram shows reactants at 120 kJ mol⁻¹, a peak at 320 kJ mol⁻¹, and products at 200 kJ mol⁻¹. A catalyst lowers the peak to 220 kJ mol⁻¹. What is the catalysed Ea and the ΔH with catalyst?",
+            options: [
+              "Catalysed Ea = 100 kJ mol⁻¹; ΔH = +80 kJ mol⁻¹",
+              "Catalysed Ea = 100 kJ mol⁻¹; ΔH = −80 kJ mol⁻¹",
+              "Catalysed Ea = 220 kJ mol⁻¹; ΔH = +80 kJ mol⁻¹",
+              "Catalysed Ea = 100 kJ mol⁻¹; ΔH = +200 kJ mol⁻¹",
+            ],
+            answerIndex: 0,
+            explanation:
+              "Catalysed Ea = new peak − reactants = 220 − 120 = 100 kJ mol⁻¹. ΔH = products − reactants = 200 − 120 = +80 kJ mol⁻¹ (unchanged by the catalyst — products are still at 200 kJ mol⁻¹).",
+            guideRef: "Energy Level Diagrams",
+            difficulty: "challenge",
+            hints: [
+              "Ea is always measured from the reactants level to the peak — use the new peak (220) and the same reactants level (120).",
+              "ΔH = E(products) − E(reactants). A catalyst does not move the products level.",
+              "Check the sign: products (200) > reactants (120), so ΔH is positive (endothermic).",
             ],
           },
         ],
       },
       {
-        id: "chem-energetics-bank-mcq-2",
-        title: "Chemical Energetics — MCQ Paper 2",
-        description: "6 multiple-choice questions with a higher proportion of calculation and application questions.",
+        id: "chem-energetics-bankmcq-2",
+        title: "Question Bank — MCQ Paper 2",
+        description: "10 multiple-choice questions: bond energy calculations, energy diagrams, catalyst effects.",
         questions: [
           {
             id: "chem-energetics-bank-mcq2-q01",
