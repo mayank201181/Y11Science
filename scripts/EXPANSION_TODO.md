@@ -8,9 +8,10 @@ bio-coordination bio-disease-immunity bio-inheritance bio-transport-plants chem-
 bio-cells bio-enzymes chem-atoms chem-stoichiometry phys-motion
 bio-ecology bio-gas-respiration bio-human-nutrition bio-molecules bio-plant-nutrition bio-reproduction
 bio-transport-animals bio-transport-cell chem-acids-bases chem-analysis chem-bonding chem-electrochemistry
+chem-environment chem-metals chem-organic chem-particles chem-periodic chem-rates
 
 ## REMAINING topics (still on audited 2-paper banks)
-chem-environment chem-metals chem-organic chem-particles chem-periodic chem-rates phys-energy phys-forces phys-magnetism phys-sound-em phys-space phys-thermal phys-waves 
+phys-energy phys-forces phys-magnetism phys-sound-em phys-space phys-thermal phys-waves 
 
 ## REMAINING exams
 lib/exams/biology.ts, lib/exams/chemistry.ts, lib/exams/physics.ts  (expand to 4x25 MCQ + 4x20 QA)
