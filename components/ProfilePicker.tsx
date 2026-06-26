@@ -12,19 +12,27 @@ export function ProfilePicker() {
   const [name, setName] = useState("");
   const [avatar, setAvatar] = useState(AVATARS[0]);
   const [busy, setBusy] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const profiles = account?.profiles || [];
 
   async function save() {
     if (!name.trim()) return;
     setBusy(true);
-    if (editId) await editProfile(editId, name.trim(), avatar);
-    else await addProfile(name.trim(), avatar);
-    setBusy(false);
-    setAdding(false);
-    setEditId(null);
-    setName("");
-    setAvatar(AVATARS[0]);
+    setError(null);
+    try {
+      if (editId) await editProfile(editId, name.trim(), avatar);
+      else await addProfile(name.trim(), avatar);
+      // success: adding a learner jumps straight into the app; editing returns to the grid
+      setAdding(false);
+      setEditId(null);
+      setName("");
+      setAvatar(AVATARS[0]);
+    } catch (e) {
+      setError(e instanceof Error ? e.message : "Could not save. Please try again.");
+    } finally {
+      setBusy(false);
+    }
   }
 
   return (
@@ -50,6 +58,7 @@ export function ProfilePicker() {
                   <button
                     className="text-xs underline text-ink-soft"
                     onClick={() => {
+                      setError(null);
                       setEditId(p.id);
                       setName(p.name);
                       setAvatar(p.avatar);
@@ -71,7 +80,10 @@ export function ProfilePicker() {
             ))}
 
             <button
-              onClick={() => setAdding(true)}
+              onClick={() => {
+                setError(null);
+                setAdding(true);
+              }}
               className="card p-4 flex flex-col items-center justify-center gap-2 border-dashed text-ink-soft hover:text-ink min-h-[8rem]"
             >
               <span className="text-4xl">＋</span>
@@ -104,6 +116,11 @@ export function ProfilePicker() {
                 </button>
               ))}
             </div>
+            {error && (
+              <div className="text-sm rounded-lg px-3 py-2 mb-3 bg-rose-500/15 text-rose-200 border border-rose-500/30">
+                {error}
+              </div>
+            )}
             <div className="flex gap-2">
               <button className="btn btn-primary flex-1" onClick={save} disabled={busy}>
                 {busy ? "Saving…" : "Save"}
@@ -114,6 +131,7 @@ export function ProfilePicker() {
                   setAdding(false);
                   setEditId(null);
                   setName("");
+                  setError(null);
                 }}
               >
                 Cancel

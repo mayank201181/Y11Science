@@ -92,7 +92,8 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
   // ---- bootstrapping ----
   const refreshMe = useCallback(async () => {
     try {
-      const res = await fetch("/api/auth/me", { cache: "no-store" });
+      // cache-buster — some mobile browsers ignore `no-store` for repeated GETs
+      const res = await fetch(`/api/auth/me?t=${Date.now()}`, { cache: "no-store" });
       if (!res.ok) {
         setAccount(null);
         setStatus("anon");
@@ -412,29 +413,44 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
     [account],
   );
 
-  const addProfile = useCallback(
-    async (name: string, avatar: string) => {
-      const res = await fetch("/api/profiles", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, avatar }),
-      });
-      if (res.ok) await refreshMe();
-    },
-    [refreshMe],
-  );
+  const addProfile = useCallback(async (name: string, avatar: string) => {
+    const res = await fetch("/api/profiles", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, avatar }),
+    });
+    if (!res.ok) {
+      const e = await res.json().catch(() => ({}));
+      throw new Error(e.error || "Could not save learner. Please try again.");
+    }
+    // Use the account returned by the server directly (don't rely on a second
+    // fetch, which mobile browsers may serve from cache), then jump straight in.
+    const data = await res.json();
+    const acct = data.account as Account;
+    setAccount(acct);
+    const created = acct.profiles[acct.profiles.length - 1];
+    if (created) {
+      try {
+        localStorage.setItem(LS_PROFILE, created.id);
+      } catch {}
+      setActiveProfile(created);
+      setStatus("loading");
+    }
+  }, []);
 
-  const editProfile = useCallback(
-    async (id: string, name: string, avatar: string) => {
-      const res = await fetch("/api/profiles", {
-        method: "PATCH",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ id, name, avatar }),
-      });
-      if (res.ok) await refreshMe();
-    },
-    [refreshMe],
-  );
+  const editProfile = useCallback(async (id: string, name: string, avatar: string) => {
+    const res = await fetch("/api/profiles", {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ id, name, avatar }),
+    });
+    if (!res.ok) {
+      const e = await res.json().catch(() => ({}));
+      throw new Error(e.error || "Could not update learner.");
+    }
+    const data = await res.json();
+    setAccount(data.account as Account);
+  }, []);
 
   const deleteProfile = useCallback(
     async (id: string) => {
@@ -445,10 +461,14 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
       });
       if (res.ok) {
         if (activeProfile?.id === id) {
-          localStorage.removeItem(LS_PROFILE);
+          try {
+            localStorage.removeItem(LS_PROFILE);
+          } catch {}
           setActiveProfile(null);
         }
-        await refreshMe();
+        const data = await res.json().catch(() => null);
+        if (data?.account) setAccount(data.account as Account);
+        else await refreshMe();
       }
     },
     [refreshMe, activeProfile],
