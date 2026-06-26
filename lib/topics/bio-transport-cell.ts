@@ -557,12 +557,12 @@ export const bioTransportCell: Topic = {
   questionBank: {
     mcqPapers: [
       {
-        id: "bio-transport-cell-bankmcq-1",
-        title: "Question Bank — MCQ Paper 1",
-        description: "10 multiple-choice questions: diffusion fundamentals, osmosis, SA:V ratio, and active transport basics.",
+        id: "bio-transport-cell-bank-mcq-1",
+        title: "MCQ Paper 1 — Movement In & Out of Cells",
+        description: "6 multiple-choice questions covering diffusion, osmosis, and active transport.",
         questions: [
           {
-            id: "bio-transport-cell-bm1-01",
+            id: "bio-transport-cell-bank-mcq1-q01",
             question: "A student drops a crystal of potassium manganate(VII) into still water. Over time the purple colour spreads evenly through the water. Which statement best explains this?",
             options: [
               "The crystal dissolves and then is carried by convection currents",
@@ -576,7 +576,7 @@ export const bioTransportCell: Topic = {
             difficulty: "warmup",
           },
           {
-            id: "bio-transport-cell-bm1-02",
+            id: "bio-transport-cell-bank-mcq1-q02",
             question: "Which change would increase the rate of osmosis across a visking tubing membrane?",
             options: [
               "Decreasing the temperature from 30 °C to 15 °C",

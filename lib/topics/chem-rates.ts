@@ -559,8 +559,8 @@ Unreacted N2 and H2 are recycled back into the reactor, so overall conversion is
   questionBank: {
     mcqPapers: [
       {
-        id: "chem-rates-bankmcq-1",
-        title: "Question Bank — MCQ Paper 1",
+        id: "chem-rates-bank-mcq-1",
+        title: "Rate of Reaction MCQ Paper 1",
         description: "Collision theory, factors affecting rate, and measuring reactions.",
         questions: [
           {

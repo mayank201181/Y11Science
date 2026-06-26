@@ -712,34 +712,46 @@ Both ions are absorbed from soil solution by active transport — an energy-requ
   questionBank: {
     mcqPapers: [
       {
-        id: "bio-plant-nutrition-bankmcq-1",
-        title: "Question Bank — MCQ Paper 1",
+        id: "bio-plant-nutrition-bank-mcq-1",
+        title: "Plant Nutrition MCQ Paper 1",
+        description:
+          "Six multiple-choice questions covering photosynthesis equations, leaf structure, and limiting factors.",
         questions: [
           {
-            id: "bio-plant-nutrition-bm1-01",
-            question: "Which gas is produced as a by-product of photosynthesis?",
-            options: ["Carbon dioxide", "Nitrogen", "Oxygen", "Water vapour"],
-            answerIndex: 2,
+            id: "bio-plant-nutrition-bank-mcq1-q01",
+            question:
+              "What is the role of light energy in photosynthesis?",
+            options: [
+              "It provides the carbon atoms for glucose.",
+              "It is transferred to chemical energy stored in glucose.",
+              "It breaks down glucose to release energy for the plant.",
+              "It replaces the role of chlorophyll in absorbing CO₂.",
+            ],
+            answerIndex: 1,
             explanation:
-              "During photosynthesis, water molecules are split (photolysis) and the oxygen atoms are released as O₂ gas. This is why aquatic plants produce visible bubbles of oxygen when photosynthesising.",
+              "Chlorophyll traps light energy and transfers it to chemical potential energy, which is stored in the bonds of glucose. Light does not provide carbon atoms (CO₂ does), does not break down glucose (respiration does that), and cannot replace chlorophyll.",
             guideRef: "The Photosynthesis Equation",
             difficulty: "warmup",
           },
           {
-            id: "bio-plant-nutrition-bm1-02",
+            id: "bio-plant-nutrition-bank-mcq1-q02",
             question:
-              "Which of the following correctly describes the role of chlorophyll in photosynthesis?",
+              "Which of the following is NOT an adaptation of the palisade mesophyll for photosynthesis?",
             options: [
-              "It provides carbon atoms used to build glucose.",
-              "It absorbs light energy and transfers it to chemical reactions.",
-              "It directly reacts with CO₂ to produce glucose.",
-              "It transports glucose from leaves to roots.",
+              "Cells are closely packed near the upper surface.",
+              "Cells contain many chloroplasts.",
+              "Large air spaces between cells allow gas exchange.",
+              "Column shape allows more cells to be stacked near the top.",
             ],
-            answerIndex: 1,
+            answerIndex: 2,
             explanation:
-              "Chlorophyll is a pigment that absorbs light energy (mainly red and blue wavelengths) and transfers it to the chemical reactions of photosynthesis. It does not provide carbon atoms, directly react with CO₂, or transport glucose.",
-            guideRef: "Uses of Glucose and Role of Chlorophyll",
-            difficulty: "warmup",
+              "Large air spaces are a feature of the SPONGY mesophyll, not the palisade mesophyll. The palisade cells are tightly packed with few air spaces. All other options correctly describe palisade mesophyll adaptations.",
+            guideRef: "Leaf Structure and Adaptations",
+            difficulty: "core",
+            hints: [
+              "Which layer of the leaf has large air spaces?",
+              "Think about the difference between palisade and spongy mesophyll layers.",
+            ],
           },
           {
             id: "bio-plant-nutrition-bank-mcq1-q03",

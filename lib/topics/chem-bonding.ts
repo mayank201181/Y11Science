@@ -642,35 +642,30 @@ For melting/boiling point questions, always state **which forces must be overcom
   questionBank: {
     mcqPapers: [
       {
-        id: "chem-bonding-bankmcq-1",
-        title: "Question Bank — MCQ Paper 1",
-        description: "10 multiple-choice questions on ionic bonding, ionic lattice properties, and simple covalent molecules.",
+        id: "chem-bonding-bank-mcq-1",
+        title: "Chemical Bonding — MCQ Paper 1",
+        description: "12 multiple-choice questions on ionic and covalent bonding, dot-and-cross diagrams, and simple molecular substances.",
         questions: [
           {
-            id: "chem-bonding-bm1-01",
-            question: "Which of the following correctly describes what happens when a sodium atom reacts with a chlorine atom to form NaCl?",
-            options: [
-              "A pair of electrons is shared between Na and Cl",
-              "One electron is transferred from Na to Cl, forming Na⁺ and Cl⁻",
-              "One electron is transferred from Cl to Na, forming Cl⁺ and Na⁻",
-              "Two electrons are shared between Na and Cl",
-            ],
+            id: "chem-bonding-bank-mcq1-q01",
+            question: "When magnesium reacts with oxygen, the magnesium atom loses two electrons. What is the electron configuration of the Mg²⁺ ion formed?",
+            options: ["2,8,2", "2,8", "2,8,8", "2,6"],
             answerIndex: 1,
-            explanation: "Ionic bonding involves electron transfer. Sodium (Group 1) has 1 outer electron it donates to chlorine (Group 7, which needs 1 electron to complete its outer shell). This gives Na⁺ (2,8) and Cl⁻ (2,8,8) — both with noble-gas configurations.",
+            explanation: "Magnesium's electron configuration is 2,8,2. It loses 2 outer electrons to form Mg²⁺ with configuration 2,8 — the same as the noble gas neon. It does not gain the 8-electron outer shell; it loses electrons to reveal the already-full inner shell.",
             difficulty: "warmup",
             guideRef: "Ionic Bonding",
           },
           {
-            id: "chem-bonding-bm1-02",
-            question: "What is the correct formula of aluminium oxide?",
-            options: ["AlO", "Al₂O", "AlO₂", "Al₂O₃"],
-            answerIndex: 3,
-            explanation: "Al forms Al³⁺; O forms O²⁻. To balance charges: 2 × (+3) = +6 and 3 × (−2) = −6. The formula is Al₂O₃. This is found by cross-multiplying the charge magnitudes: Al charge = 3 → 3 O atoms; O charge = 2 → 2 Al atoms.",
+            id: "chem-bonding-bank-mcq1-q02",
+            question: "Which formula correctly represents magnesium chloride?",
+            options: ["MgCl", "Mg₂Cl", "MgCl₂", "Mg₂Cl₃"],
+            answerIndex: 2,
+            explanation: "Mg forms Mg²⁺; Cl forms Cl⁻. To balance charges: one Mg²⁺ requires two Cl⁻ ions. Formula = MgCl₂. MgCl would imply Mg⁺ (not formed); Mg₂Cl would imply Mg⁰·⁵⁺ — impossible.",
             difficulty: "warmup",
             guideRef: "Ionic Bonding",
           },
           {
-            id: "chem-bonding-bm1-03",
+            id: "chem-bonding-bank-mcq1-q03",
             question: "In a dot-and-cross diagram for H₂O, how many lone pairs are shown on the oxygen atom?",
             options: ["0", "1", "2", "3"],
             answerIndex: 2,

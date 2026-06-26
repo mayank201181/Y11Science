@@ -605,12 +605,12 @@ HIV does NOT spread through casual contact (handshakes, hugging, sharing food, i
   questionBank: {
     mcqPapers: [
       {
-        id: "bio-reproduction-bankmcq-1",
-        title: "Question Bank — MCQ Paper 1",
-        description: "Asexual vs sexual reproduction, plant structure and pollination — foundation paper.",
+        id: "bio-reproduction-bank-mcq-1",
+        title: "Reproduction MCQ Paper 1",
+        description: "Asexual/sexual reproduction, plant reproduction, germination.",
         questions: [
           {
-            id: "bio-reproduction-bm1-01",
+            id: "bio-reproduction-bank-mcq1-q01",
             question: "Which of the following is produced by asexual reproduction?",
             options: [
               "Offspring with genetic variation",

@@ -530,12 +530,12 @@ export const physSpace: Topic = {
   questionBank: {
     mcqPapers: [
       {
-        id: "phys-space-bankmcq-1",
-        title: "Question Bank — MCQ Paper 1",
-        description: "30 minutes · 10 questions · Solar System, orbits, gravitational force",
+        id: "phys-space-bank-mcq-1",
+        title: "Space Physics MCQ — Paper 1",
+        description: "18 minutes · 6 questions · Solar System, orbits, stellar life cycles",
         questions: [
           {
-            id: "phys-space-bm1-01",
+            id: "phys-space-bank-mcq1-q01",
             question: "In which region of the Solar System is the asteroid belt found?",
             options: [
               "Between Earth and Mars",

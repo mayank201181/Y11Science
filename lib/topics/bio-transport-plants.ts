@@ -566,13 +566,13 @@ A shoot in still air moves the bubble 20 mm in 5 min. In a breeze it moves 50 mm
   questionBank: {
     mcqPapers: [
       {
-        id: "bio-transport-plants-bankmcq-1",
-        title: "Question Bank — MCQ Paper 1",
-        description: "Xylem and phloem structure, function, and position of vascular tissue in root, stem and leaf.",
+        id: "bio-transport-plants-bank-mcq-1",
+        title: "Transport in Plants — MCQ Paper 1",
+        description: "Xylem, phloem, root uptake and vascular tissue positions. 6 questions.",
         questions: [
           {
-            id: "bio-transport-plants-bm1-01",
-            text: "Which of the following correctly describes the structure of xylem vessels?",
+            id: "bio-transport-plants-bank-mcq1-q01",
+            question: "Which statement about phloem is correct?",
             options: [
               "Phloem is made of dead cells and transports water upward",
               "Phloem transports sucrose and amino acids and can transport in both directions",

@@ -627,18 +627,17 @@ After exercise stops, heart rate returns to resting level as CO₂ levels fall. 
   },
 
   // ─────────────────────────────────────────────────────────────────────────
-  // QUESTION BANK (4 × MCQ papers + 4 × QA papers, 10 questions each)
+  // QUESTION BANK
   // ─────────────────────────────────────────────────────────────────────────
   questionBank: {
     mcqPapers: [
-      // ── MCQ PAPER 1 ──────────────────────────────────────────────────────
       {
-        id: "bio-transport-animals-bankmcq-1",
-        title: "Question Bank — MCQ Paper 1",
-        description: "Ten multiple-choice questions covering the double circulatory system, heart chambers, major vessels, and valve function.",
+        id: "bio-transport-animals-bank-mcq-1",
+        title: "MCQ Paper 1 — Circulation and Heart Structure",
+        description: "Six multiple-choice questions covering the double circulatory system, heart anatomy, valves, and cardiac cycle.",
         questions: [
           {
-            id: "bio-transport-animals-bm1-01",
+            id: "bio-transport-animals-bank-mcq1-q01",
             question: "In the double circulatory system, which chamber of the heart receives oxygenated blood directly from the lungs?",
             options: ["Right atrium", "Right ventricle", "Left atrium", "Left ventricle"],
             answerIndex: 2,

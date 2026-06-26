@@ -577,12 +577,12 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
   questionBank: {
     mcqPapers: [
       {
-        id: "chem-periodic-bankmcq-1",
-        title: "Question Bank — MCQ Paper 1",
-        description: "Arrangement of the periodic table, Group I, and Group VII fundamentals.",
+        id: "chem-periodic-bank-mcq-1",
+        title: "Periodic Table — MCQ Paper 1",
+        description: "Groups, periods, Group I and Group VII trends.",
         questions: [
           {
-            id: "chem-periodic-bm1-01",
+            id: "chem-periodic-bank-mcq1-q01",
             question: "An element has the electron configuration 2,8,1. To which group and period does it belong?",
             options: [
               "Group I, Period 3",

@@ -447,12 +447,12 @@ export const chemAcidsBases: Topic = {
   questionBank: {
     mcqPapers: [
       {
-        id: "chem-acids-bases-bankmcq-1",
-        title: "Question Bank — MCQ Paper 1",
-        description: "Ten multiple-choice questions covering acid/base definitions, pH, indicators, and neutralisation reactions.",
+        id: "chem-acids-bases-bank-mcq-1",
+        title: "MCQ Paper 1 — Acids, Bases & Salts",
+        description: "Six multiple-choice questions covering acid/base definitions, pH, neutralisation, and oxide types.",
         questions: [
           {
-            id: "chem-acids-bases-bm1-01",
+            id: "chem-acids-bases-bank-mcq1-q01",
             question: "Which of the following is the correct ionic equation for the neutralisation of sodium hydroxide with hydrochloric acid?",
             options: [
               "Na⁺(aq) + Cl⁻(aq) → NaCl(aq)",
