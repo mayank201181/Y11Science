@@ -712,525 +712,1765 @@ Both ions are absorbed from soil solution by active transport — an energy-requ
   questionBank: {
     mcqPapers: [
       {
-        id: "bio-plant-nutrition-bank-mcq-1",
-        title: "Plant Nutrition MCQ Paper 1",
+        id: "bio-plant-nutrition-bankmcq-1",
+        title: "Question Bank — MCQ Paper 1",
         description:
-          "Six multiple-choice questions covering photosynthesis equations, leaf structure, and limiting factors.",
+          "Ten multiple-choice questions spanning the photosynthesis equation, uses of glucose, leaf structure, and limiting factors.",
         questions: [
           {
-            id: "bio-plant-nutrition-bank-mcq1-q01",
-            question:
-              "What is the role of light energy in photosynthesis?",
+            id: "bio-plant-nutrition-bm1-01",
+            question: "Which word equation correctly summarises photosynthesis?",
             options: [
-              "It provides the carbon atoms for glucose.",
-              "It is transferred to chemical energy stored in glucose.",
-              "It breaks down glucose to release energy for the plant.",
-              "It replaces the role of chlorophyll in absorbing CO₂.",
+              "glucose + oxygen → carbon dioxide + water",
+              "carbon dioxide + water → glucose + oxygen",
+              "carbon dioxide + oxygen → glucose + water",
+              "glucose + water → carbon dioxide + oxygen",
             ],
             answerIndex: 1,
             explanation:
-              "Chlorophyll traps light energy and transfers it to chemical potential energy, which is stored in the bonds of glucose. Light does not provide carbon atoms (CO₂ does), does not break down glucose (respiration does that), and cannot replace chlorophyll.",
+              "Photosynthesis uses carbon dioxide and water as reactants and produces glucose and oxygen, with light energy absorbed by chlorophyll driving the reaction. Option A is the word equation for aerobic respiration (the reverse process).",
             guideRef: "The Photosynthesis Equation",
             difficulty: "warmup",
           },
           {
-            id: "bio-plant-nutrition-bank-mcq1-q02",
+            id: "bio-plant-nutrition-bm1-02",
             question:
-              "Which of the following is NOT an adaptation of the palisade mesophyll for photosynthesis?",
+              "In the photosynthesis equation, where should 'light energy' and 'chlorophyll' be written?",
             options: [
-              "Cells are closely packed near the upper surface.",
-              "Cells contain many chloroplasts.",
-              "Large air spaces between cells allow gas exchange.",
-              "Column shape allows more cells to be stacked near the top.",
+              "As reactants on the left of the arrow",
+              "As products on the right of the arrow",
+              "Above or below the arrow, as conditions",
+              "They should not appear in the equation at all",
             ],
             answerIndex: 2,
             explanation:
-              "Large air spaces are a feature of the SPONGY mesophyll, not the palisade mesophyll. The palisade cells are tightly packed with few air spaces. All other options correctly describe palisade mesophyll adaptations.",
-            guideRef: "Leaf Structure and Adaptations",
-            difficulty: "core",
-            hints: [
-              "Which layer of the leaf has large air spaces?",
-              "Think about the difference between palisade and spongy mesophyll layers.",
-            ],
-          },
-          {
-            id: "bio-plant-nutrition-bank-mcq1-q03",
-            question:
-              "A graph shows the rate of photosynthesis plotted against temperature. The rate increases from 10 °C to 35 °C, then falls sharply above 40 °C. What best explains the sharp fall above 40 °C?",
-            options: [
-              "CO₂ becomes limiting at high temperatures.",
-              "The enzymes involved in photosynthesis are denatured.",
-              "Chlorophyll absorbs less light at high temperatures.",
-              "Water evaporates too quickly, so the stomata close.",
-            ],
-            answerIndex: 1,
-            explanation:
-              "Above the optimum temperature, the heat energy causes the enzyme molecules to vibrate excessively. The shape of the active site changes permanently (denaturation), and the enzyme can no longer catalyse its reaction. CO₂ does not become limiting simply due to high temperature; chlorophyll absorption is not significantly temperature-dependent; while stomata may close at very high temperatures, the primary cause of the sharp fall is enzyme denaturation.",
-            guideRef: "Limiting Factors of Photosynthesis",
-            difficulty: "core",
-            hints: [
-              "What effect does very high temperature have on enzyme structure?",
-              "The active site changes shape — what is this called?",
-            ],
-          },
-          {
-            id: "bio-plant-nutrition-bank-mcq1-q04",
-            question:
-              "Why is ethanol used in the starch test for leaves?",
-            options: [
-              "It kills the leaf cells to prevent further photosynthesis.",
-              "It decolourises the leaf by dissolving the chlorophyll.",
-              "It reacts with starch to produce a colour change.",
-              "It softens the cell walls so iodine can enter.",
-            ],
-            answerIndex: 1,
-            explanation:
-              "Ethanol dissolves chlorophyll, decolourising the leaf. This is essential so that the iodine colour change (orange to blue-black) can be seen clearly against a pale background. The leaf is killed by boiling water (step 2), not ethanol. Iodine — not ethanol — reacts with starch. The leaf is softened by rinsing in warm water after the ethanol step.",
-            guideRef: "Experiments: Testing for Starch and Controlled Investigations",
+              "Light energy and chlorophyll are conditions needed for the reaction, not substances that are used up or made. They are written above/below the arrow, never as reactants or products.",
+            guideRef: "The Photosynthesis Equation",
             difficulty: "warmup",
           },
           {
-            id: "bio-plant-nutrition-bank-mcq1-q05",
+            id: "bio-plant-nutrition-bm1-03",
             question:
-              "A commercial greenhouse grower maintains a CO₂ concentration of 0.1% inside (normal air is 0.04%). The light and temperature are kept constant and optimal. What effect will the extra CO₂ have on the rate of photosynthesis, and why?",
+              "Which row correctly states the total number of each atom on one side of the balanced equation 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂?",
             options: [
-              "No effect, because light is now the limiting factor.",
-              "Increased rate, because CO₂ is a reactant and was previously limiting.",
-              "Decreased rate, because excess CO₂ inhibits the enzymes.",
-              "Increased rate, because CO₂ provides extra energy for photosynthesis.",
+              "6 carbon, 6 hydrogen, 12 oxygen",
+              "6 carbon, 12 hydrogen, 18 oxygen",
+              "12 carbon, 12 hydrogen, 18 oxygen",
+              "6 carbon, 12 hydrogen, 24 oxygen",
             ],
             answerIndex: 1,
             explanation:
-              "CO₂ is a reactant. At normal atmospheric concentrations (0.04%), CO₂ is often the limiting factor when light and temperature are adequate. Increasing [CO₂] to 0.1% raises the rate because more CO₂ molecules are available to react. CO₂ does not inhibit enzymes at these concentrations and it provides no energy (energy comes from light).",
-            guideRef: "Limiting Factors of Photosynthesis",
+              "On the left: 6 C and 12 O from 6CO₂, plus 12 H and 6 O from 6H₂O — giving 6 C, 12 H, 18 O. The right side has the same totals (glucose 6C 12H 6O + 6O₂ giving 12 O = 18 O). The equation is balanced.",
+            guideRef: "The Photosynthesis Equation",
             difficulty: "core",
             hints: [
-              "Is CO₂ a reactant or a product of photosynthesis?",
-              "If light and temperature are already optimal, which factor is most likely limiting?",
+              "Count each element from the reactants one molecule type at a time.",
+              "6CO₂ gives 6 carbon and 12 oxygen; 6H₂O gives 12 hydrogen and 6 oxygen.",
+              "Add the oxygen contributions: 12 + 6 = 18.",
             ],
           },
           {
-            id: "bio-plant-nutrition-bank-mcq1-q06",
+            id: "bio-plant-nutrition-bm1-04",
             question:
-              "A plant is grown in soil that is severely deficient in nitrate ions. Which of the following best describes the expected symptoms, and their cause?",
+              "Which colours of light are absorbed most strongly by chlorophyll?",
             options: [
-              "Dark green, large leaves — excess chlorophyll is synthesised.",
-              "Stunted growth and yellowing of older leaves — insufficient protein synthesis.",
-              "Yellowing of leaves only — chlorophyll cannot be made.",
-              "Wilting and root death — water cannot be absorbed without nitrate.",
+              "Green and yellow",
+              "Red and blue",
+              "Only green",
+              "All colours equally",
             ],
             answerIndex: 1,
             explanation:
-              "Nitrate ions provide nitrogen for amino acid synthesis. Without amino acids, proteins (including enzymes and structural proteins) cannot be made, so growth is stunted. Nitrogen is mobilised from older leaves to younger growing tips, so older leaves yellow first (chlorosis). Dark green leaves would indicate excess nitrogen, not deficiency. Option C describes magnesium deficiency. Water absorption does not depend on nitrate.",
-            guideRef: "Mineral Nutrition: Nitrate and Magnesium Ions",
+              "Chlorophyll absorbs mainly red and blue wavelengths and reflects green light, which is why leaves appear green. It does not absorb green strongly.",
+            guideRef: "Uses of Glucose and Role of Chlorophyll",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-plant-nutrition-bm1-05",
+            question:
+              "Glucose made in photosynthesis can be converted into starch for storage. Why is starch a suitable storage molecule?",
+            options: [
+              "It is soluble and easily transported in phloem.",
+              "It is insoluble, so it does not affect the water potential of the cell.",
+              "It can diffuse out of the cell quickly when needed.",
+              "It is the molecule broken down directly in respiration.",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Starch is insoluble, so it does not move out of cells and does not draw water in by osmosis — it has no effect on the cell's water potential. Sucrose (not starch) is the soluble transport sugar, and glucose is the respiratory substrate.",
+            guideRef: "Uses of Glucose and Role of Chlorophyll",
             difficulty: "core",
             hints: [
-              "What molecule do nitrate ions contribute to?",
-              "If proteins cannot be made, what biological processes are affected?",
-              "Why do older leaves yellow before younger ones in nitrate deficiency?",
+              "Think about what would happen to water movement if a soluble sugar were stored in large amounts.",
+              "Storage molecules should not dissolve and leave the cell.",
+              "Which property keeps starch from affecting osmosis?",
+            ],
+          },
+          {
+            id: "bio-plant-nutrition-bm1-06",
+            question:
+              "Which use of glucose requires the plant to also absorb nitrate ions from the soil?",
+            options: [
+              "Conversion to cellulose for cell walls",
+              "Conversion to starch for storage",
+              "Production of amino acids for proteins",
+              "Release of energy in respiration",
+            ],
+            answerIndex: 2,
+            explanation:
+              "Amino acids contain nitrogen. The plant combines glucose-derived carbon skeletons with nitrogen from nitrate ions to make amino acids, which are then assembled into proteins. Cellulose, starch and respiration involve only carbon, hydrogen and oxygen.",
+            guideRef: "Uses of Glucose and Role of Chlorophyll",
+            difficulty: "core",
+            hints: [
+              "Which of these products contains the element nitrogen?",
+              "Nitrate ions supply nitrogen atoms.",
+              "Proteins are built from amino acids.",
+            ],
+          },
+          {
+            id: "bio-plant-nutrition-bm1-07",
+            question:
+              "Which feature of palisade mesophyll cells makes them especially efficient at photosynthesis?",
+            options: [
+              "They have large air spaces between them.",
+              "They are column-shaped and packed with chloroplasts near the upper surface.",
+              "They are transparent and contain no chloroplasts.",
+              "They contain guard cells that open and close pores.",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Palisade cells are tall, column-shaped and tightly packed just below the upper epidermis, each holding many chloroplasts so they capture maximum light. Air spaces are a feature of the spongy layer; the epidermis is transparent and chloroplast-free.",
+            guideRef: "Leaf Structure and Adaptations",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-plant-nutrition-bm1-08",
+            question:
+              "What is the main function of the air spaces in the spongy mesophyll layer?",
+            options: [
+              "To store water for the dry season",
+              "To allow rapid diffusion of CO₂ and O₂ throughout the leaf",
+              "To reflect light back up to the palisade cells",
+              "To provide a site for chlorophyll synthesis",
+            ],
+            answerIndex: 1,
+            explanation:
+              "The air spaces give a large surface area of moist cell wall in contact with air and short diffusion paths, so CO₂ reaches the photosynthesising cells quickly and O₂ leaves quickly. They do not store water or make chlorophyll.",
+            guideRef: "Leaf Structure and Adaptations",
+            difficulty: "core",
+            hints: [
+              "Air spaces connect to the stomata.",
+              "Think about how gases move into and around the leaf.",
+              "Which gases must reach every photosynthesising cell?",
+            ],
+          },
+          {
+            id: "bio-plant-nutrition-bm1-09",
+            question:
+              "A greenhouse grower wants to increase crop yield on a bright, warm day when light and temperature are already high. Which change is most likely to increase the rate of photosynthesis further?",
+            options: [
+              "Adding more lamps to increase light intensity",
+              "Increasing the carbon dioxide concentration inside the greenhouse",
+              "Raising the temperature to 50 °C",
+              "Reducing the water supply to the plants",
+            ],
+            answerIndex: 1,
+            explanation:
+              "When light and temperature are already high, CO₂ is the most likely limiting factor, so enriching the air with CO₂ raises the rate. More light will not help once light is no longer limiting; 50 °C would denature enzymes; cutting water harms the plant.",
+            guideRef: "Limiting Factors of Photosynthesis",
+            difficulty: "challenge",
+            hints: [
+              "If light and temperature are already high, which factor is most likely limiting?",
+              "Photosynthesis needs CO₂ as a reactant.",
+              "Adding more of a factor that is NOT limiting will not raise the rate.",
+              "Be careful: very high temperatures denature enzymes.",
+            ],
+            strategy: "identify the limiting factor",
+          },
+          {
+            id: "bio-plant-nutrition-bm1-10",
+            question:
+              "On a graph of rate of photosynthesis against temperature, the rate rises to a peak at about 38 °C and then falls sharply at 50 °C. What best explains the sharp fall?",
+            options: [
+              "The plant runs out of carbon dioxide at high temperature.",
+              "Enzymes controlling photosynthesis are denatured above the optimum.",
+              "Chlorophyll evaporates from the leaf.",
+              "Light becomes the limiting factor at high temperature.",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Photosynthesis is enzyme-controlled. Above the optimum temperature the enzymes' active sites change shape (denature), so they can no longer bind substrates and the rate drops steeply. The fall is not caused by CO₂, chlorophyll loss or light.",
+            guideRef: "Limiting Factors of Photosynthesis",
+            difficulty: "challenge",
+            hints: [
+              "Photosynthesis depends on enzymes.",
+              "What happens to enzymes above their optimum temperature?",
+              "A denatured active site can no longer bind its substrate.",
             ],
           },
         ],
       },
       {
-        id: "bio-plant-nutrition-bank-mcq-2",
-        title: "Plant Nutrition MCQ Paper 2",
+        id: "bio-plant-nutrition-bankmcq-2",
+        title: "Question Bank — MCQ Paper 2",
         description:
-          "Six multiple-choice questions including application, data interpretation, and challenge questions.",
+          "Ten multiple-choice questions on starch testing, controlled experiments, gas exchange, and limiting-factor graphs.",
         questions: [
           {
-            id: "bio-plant-nutrition-bank-mcq2-q01",
+            id: "bio-plant-nutrition-bm2-01",
             question:
-              "A student sets up three identical plants in airtight containers. Container A has normal air; Container B has air enriched with CO₂; Container C has air with all CO₂ removed by NaOH. All containers receive the same light intensity and temperature. After 6 hours, which plant will have produced the most starch?",
+              "Why must a plant be destarched before a starch-test investigation?",
             options: [
-              "Plant A — normal conditions are optimal.",
-              "Plant B — higher CO₂ increases the rate of photosynthesis.",
-              "Plant C — removing CO₂ forces the plant to use stored glucose.",
-              "All three plants produce the same amount of starch.",
+              "To kill the leaf cells before testing",
+              "To remove existing starch so any new starch comes only from the experiment",
+              "To remove the green chlorophyll from the leaf",
+              "To increase the amount of glucose in the leaf",
             ],
             answerIndex: 1,
             explanation:
-              "At normal atmospheric CO₂ (0.04%), CO₂ is often the limiting factor when light and temperature are adequate. Plant B has enriched CO₂, so the rate of photosynthesis is higher, producing more glucose and therefore more starch. Plant C has no CO₂ — it cannot photosynthesize and produces no starch. Plant A is limited by normal CO₂ levels.",
-            guideRef: "Limiting Factors of Photosynthesis",
+              "Destarching (24–48 h in darkness) uses up stored starch, so any starch detected afterwards must have been made during the experiment — giving an unambiguous result. Killing the leaf and removing chlorophyll are later steps; destarching does not add glucose.",
+            guideRef: "Experiments: Testing for Starch and Controlled Investigations",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-plant-nutrition-bm2-02",
+            question:
+              "What colour change shows that starch is present when iodine solution is added to a leaf?",
+            options: [
+              "Orange-brown to blue-black",
+              "Blue-black to colourless",
+              "Green to red",
+              "Colourless to milky white",
+            ],
+            answerIndex: 0,
+            explanation:
+              "Iodine solution is orange-brown and turns blue-black in the presence of starch. An area that stays orange-brown contains no starch.",
+            guideRef: "Experiments: Testing for Starch and Controlled Investigations",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-plant-nutrition-bm2-03",
+            question:
+              "Why is a leaf placed in hot ethanol during the starch test, and why is the ethanol heated in a water bath rather than directly over a flame?",
+            options: [
+              "To soften the leaf; ethanol is heated indirectly because it boils too slowly otherwise",
+              "To remove chlorophyll so the iodine colour is visible; ethanol is heated indirectly because it is flammable",
+              "To add starch to the leaf; ethanol is heated indirectly to save energy",
+              "To kill the leaf; ethanol is heated indirectly so it does not evaporate",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Ethanol dissolves out the green chlorophyll so the iodine colour change can be seen clearly. Because ethanol is highly flammable, it is heated in a water bath, never over a naked flame, to avoid igniting the vapour.",
+            guideRef: "Experiments: Testing for Starch and Controlled Investigations",
             difficulty: "core",
             hints: [
-              "Which plant has the highest [CO₂] available as a reactant?",
-              "What happens to photosynthesis when CO₂ is removed?",
+              "What stops you seeing the iodine colour on a normal green leaf?",
+              "Ethanol removes the green pigment.",
+              "Think about a safety hazard of ethanol near a flame.",
             ],
           },
           {
-            id: "bio-plant-nutrition-bank-mcq2-q02",
+            id: "bio-plant-nutrition-bm2-04",
             question:
-              "Guard cells open the stomatal pore when they become turgid. Which of the following correctly explains how they become turgid?",
+              "A destarched plant has part of one leaf covered with opaque foil and is left in bright light for several hours. After the starch test, which result is expected?",
             options: [
-              "They produce glucose by photosynthesis, increasing the solute concentration, causing water to enter by osmosis.",
-              "They lose potassium ions, decreasing the water potential, so water leaves by osmosis.",
-              "They take up potassium ions, decreasing the water potential, so water enters by osmosis.",
-              "They absorb water directly by active transport from surrounding cells.",
+              "The whole leaf turns blue-black.",
+              "Only the covered part turns blue-black.",
+              "Only the uncovered part turns blue-black.",
+              "The whole leaf stays orange-brown.",
             ],
             answerIndex: 2,
             explanation:
-              "Guard cells take up K⁺ ions (by active transport, using ATP). This lowers the water potential inside the guard cells. Water then moves into the guard cells by osmosis (down the water potential gradient). The cells swell and become turgid, bowing apart to open the pore. Option A is partially correct (photosynthesis does help) but the primary mechanism is K⁺ uptake. Water enters by osmosis, not by active transport.",
-            guideRef: "Leaf Structure and Adaptations",
-            difficulty: "challenge",
+              "Only the uncovered part received light, so only it could photosynthesise and make starch — it turns blue-black. The foil-covered part stayed in the dark, made no starch, and remains orange-brown, proving light is needed.",
+            guideRef: "Experiments: Testing for Starch and Controlled Investigations",
+            difficulty: "core",
             hints: [
-              "What ion do guard cells actively pump in to open stomata?",
-              "How does taking up ions affect the water potential of the guard cell?",
-              "Water moves by osmosis from high to low water potential — which direction does it move?",
-              "What happens to the shape of turgid guard cells?",
+              "Which part of the leaf received light?",
+              "Starch only forms where photosynthesis happened.",
+              "The covered area was effectively kept in the dark.",
             ],
-            strategy: "cause → osmosis consequence → structural change",
           },
           {
-            id: "bio-plant-nutrition-bank-mcq2-q03",
+            id: "bio-plant-nutrition-bm2-05",
             question:
-              "A graph of the rate of photosynthesis vs light intensity shows two curves: Curve X levels off at a higher rate than Curve Y, even though both start at the same point. What single variable could explain why Curve X plateaus higher than Curve Y?",
+              "In an experiment testing whether CO₂ is needed for photosynthesis, why is sodium hydroxide placed in the sealed container with the plant?",
             options: [
-              "Curve X was measured at a lower temperature than Curve Y.",
-              "Curve X was measured with a higher CO₂ concentration than Curve Y.",
-              "Curve X used a plant with fewer chloroplasts than Curve Y.",
-              "Curve X was taken in darkness, while Curve Y was in light.",
+              "To release extra carbon dioxide",
+              "To absorb carbon dioxide from the air",
+              "To kill any bacteria in the container",
+              "To provide nitrate ions for the plant",
             ],
             answerIndex: 1,
             explanation:
-              "A higher plateau on a rate-vs-light graph indicates that another factor was less limiting. If CO₂ concentration is higher in Curve X, then when light stops being limiting, CO₂ is still available — allowing a higher maximum rate. A lower temperature (Option A) would give a LOWER plateau. Fewer chloroplasts would also give a lower rate. Taking measurements in darkness (Option D) makes no sense for a rate-of-photosynthesis graph.",
+              "Sodium hydroxide absorbs carbon dioxide, removing this reactant from the sealed air. If no starch then forms, it shows CO₂ is required for photosynthesis. NaOH does not release CO₂ or supply nitrate.",
+            guideRef: "Experiments: Testing for Starch and Controlled Investigations",
+            difficulty: "core",
+            hints: [
+              "The experiment tests whether CO₂ is needed.",
+              "To test if a reactant is needed, you remove it.",
+              "Sodium hydroxide is a CO₂ absorber.",
+            ],
+          },
+          {
+            id: "bio-plant-nutrition-bm2-06",
+            question:
+              "Which of the following is the best reason for using a variegated (green-and-white) leaf in a photosynthesis investigation?",
+            options: [
+              "It lets the same leaf compare areas with and without chlorophyll.",
+              "It absorbs more light than a fully green leaf.",
+              "It produces more oxygen than a normal leaf.",
+              "It removes the need to destarch the plant.",
+            ],
+            answerIndex: 0,
+            explanation:
+              "A variegated leaf provides a built-in control: the white areas lack chlorophyll while the green areas have it, under otherwise identical conditions. Only the green areas turn blue-black, showing chlorophyll is needed. It does not absorb more light or remove the destarch step.",
+            guideRef: "Experiments: Testing for Starch and Controlled Investigations",
+            difficulty: "core",
+            hints: [
+              "What single variable differs between the white and green areas?",
+              "A good experiment changes one variable while keeping others constant.",
+              "Which area has chlorophyll and which does not?",
+            ],
+          },
+          {
+            id: "bio-plant-nutrition-bm2-07",
+            question:
+              "During the day, by which process and in which direction does carbon dioxide move through the stomata of a brightly lit, photosynthesising leaf?",
+            options: [
+              "Active transport, out of the leaf",
+              "Diffusion, into the leaf",
+              "Osmosis, into the leaf",
+              "Diffusion, out of the leaf",
+            ],
+            answerIndex: 1,
+            explanation:
+              "In bright light photosynthesis uses up CO₂ inside the leaf, lowering its concentration there, so CO₂ diffuses in from the higher concentration in the air. Gas movement is by diffusion, not active transport or osmosis (osmosis is water only).",
+            guideRef: "Leaf Structure and Adaptations",
+            difficulty: "core",
+            hints: [
+              "Photosynthesis consumes CO₂ inside the leaf.",
+              "Gases move down a concentration gradient.",
+              "Which way is the gradient when CO₂ is being used up inside?",
+            ],
+          },
+          {
+            id: "bio-plant-nutrition-bm2-08",
+            question:
+              "What causes guard cells to open the stoma?",
+            options: [
+              "They lose water by osmosis and become flaccid.",
+              "They take in water by osmosis, become turgid, and bow apart.",
+              "They actively pump CO₂ out of the leaf.",
+              "They break down starch to release oxygen.",
+            ],
+            answerIndex: 1,
+            explanation:
+              "When guard cells gain water by osmosis they become turgid; their unevenly thickened walls make them bow outward, opening the pore. Losing water makes them flaccid and closes the stoma.",
+            guideRef: "Leaf Structure and Adaptations",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-plant-nutrition-bm2-09",
+            question:
+              "A student measures photosynthesis as oxygen bubbles per minute from pondweed at increasing light intensity. The rate rises, then becomes constant. She raises the water temperature from 20 °C to 30 °C (CO₂ kept high) and repeats. The constant (plateau) rate is now higher. What does this show?",
+            options: [
+              "Light was still limiting at the plateau in the first run.",
+              "Temperature was limiting at the original plateau.",
+              "CO₂ was limiting at the original plateau.",
+              "Oxygen had become a reactant at the plateau.",
+            ],
+            answerIndex: 1,
+            explanation:
+              "At the first plateau light was no longer limiting (more light did not help). Raising temperature with CO₂ already high lifted the plateau, so temperature was the factor limiting the rate at that plateau. If CO₂ had been limiting, changing temperature alone would not have raised the plateau.",
             guideRef: "Limiting Factors of Photosynthesis",
             difficulty: "challenge",
             hints: [
-              "A higher plateau means less of another factor is limiting — which factor is most likely different?",
-              "What would a lower temperature do to enzyme-controlled reaction rates?",
-              "If CO₂ is higher, can the plant sustain a higher rate before CO₂ becomes limiting?",
-              "Eliminating wrong options: lower temperature → lower plateau; fewer chloroplasts → lower rate throughout.",
+              "A plateau means light is no longer the limiting factor.",
+              "What was changed to lift the plateau?",
+              "If raising temperature raised the rate, temperature must have been limiting.",
+              "CO₂ was deliberately kept high, so it was probably not the bottleneck.",
             ],
-            strategy: "eliminate wrong options, identify the plateau",
+            strategy: "change one variable at a time",
           },
           {
-            id: "bio-plant-nutrition-bank-mcq2-q04",
+            id: "bio-plant-nutrition-bm2-10",
             question:
-              "Which row correctly matches a molecule, its role in the plant, and the mineral ion needed to make it?",
+              "In the pondweed experiment, the volume of gas collected is sometimes preferred to counting bubbles. Which is the best reason?",
             options: [
-              "Chlorophyll — light absorption — NO₃⁻",
-              "Amino acid — protein building block — Mg²⁺",
-              "Chlorophyll — light absorption — Mg²⁺",
-              "Protein — energy storage — NO₃⁻",
+              "Bubbles are always the same size, so counting is more accurate.",
+              "Bubbles vary in size, so measuring gas volume gives a more reliable, quantitative measure.",
+              "Counting bubbles measures CO₂ uptake directly.",
+              "Gas volume measures the rate of respiration instead.",
             ],
-            answerIndex: 2,
+            answerIndex: 1,
             explanation:
-              "Chlorophyll absorbs light energy and contains Mg²⁺ at its centre — this is the correct match. Amino acids require nitrogen (from NO₃⁻, not Mg²⁺). Proteins are structural and functional molecules, not the primary energy store (that role belongs to starch/glucose and fats).",
+              "Bubbles vary in size, so bubble count is only a rough estimate of oxygen produced. Collecting and measuring the volume of gas over a set time gives a more reliable, quantitative measure of the rate. The gas collected is oxygen (a product), not CO₂, and it reflects photosynthesis, not respiration.",
+            guideRef: "Limiting Factors of Photosynthesis",
+            difficulty: "challenge",
+            hints: [
+              "Are all bubbles the same size?",
+              "Think about which method gives a more precise quantity.",
+              "Measuring a volume reduces error from variable bubble size.",
+            ],
+          },
+        ],
+      },
+      {
+        id: "bio-plant-nutrition-bankmcq-3",
+        title: "Question Bank — MCQ Paper 3",
+        description:
+          "Ten multiple-choice questions on mineral nutrition, chlorophyll, leaf adaptations, and the fate of glucose.",
+        questions: [
+          {
+            id: "bio-plant-nutrition-bm3-01",
+            question: "Which mineral ion is needed by plants to make chlorophyll?",
+            options: [
+              "Nitrate ion",
+              "Magnesium ion",
+              "Chloride ion",
+              "Calcium ion",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Magnesium (Mg²⁺) sits at the centre of the chlorophyll molecule, so it is essential for chlorophyll synthesis. Nitrate supplies nitrogen for proteins, not the metal centre of chlorophyll.",
             guideRef: "Mineral Nutrition: Nitrate and Magnesium Ions",
             difficulty: "warmup",
           },
           {
-            id: "bio-plant-nutrition-bank-mcq2-q05",
-            question:
-              "Glucose produced by photosynthesis can be converted to starch for storage. Why is starch a better storage molecule in leaves than glucose?",
+            id: "bio-plant-nutrition-bm3-02",
+            question: "Which mineral ion is needed to make amino acids and proteins?",
             options: [
-              "Starch releases more energy per molecule than glucose when respired.",
-              "Starch is insoluble, so it does not lower the water potential of the cell.",
-              "Starch can be transported in the phloem, unlike glucose.",
-              "Starch is easily converted to amino acids when nitrogen is available.",
+              "Magnesium ion",
+              "Nitrate ion",
+              "Phosphate ion",
+              "Potassium ion",
             ],
             answerIndex: 1,
             explanation:
-              "Starch is insoluble and does not affect the osmotic potential (water potential) of the cell, making it an ideal storage molecule that will not cause unwanted water movements. Glucose is soluble and would lower the water potential, drawing in water by osmosis. Sucrose (not starch) is transported in the phloem. Starch is not directly converted to amino acids — glucose carbon skeletons are, after combining with nitrate-derived nitrogen.",
-            guideRef: "Uses of Glucose and Role of Chlorophyll",
+              "Nitrate ions (NO₃⁻) supply the nitrogen needed to build amino acids, which are joined to form proteins. Magnesium is for chlorophyll.",
+            guideRef: "Mineral Nutrition: Nitrate and Magnesium Ions",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-plant-nutrition-bm3-03",
+            question:
+              "A plant grown without nitrate ions shows stunted growth as well as yellowing leaves. Why does nitrate deficiency cause stunted growth?",
+            options: [
+              "Without nitrate the plant cannot make chlorophyll.",
+              "Without nitrate the plant cannot make enough protein for new cells and enzymes.",
+              "Without nitrate the plant cannot absorb water.",
+              "Without nitrate the plant cannot carry out respiration.",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Nitrate provides nitrogen for amino acids and proteins. Proteins are needed for growth (new cells) and as enzymes, so without nitrate the plant cannot grow properly and becomes stunted. Chlorophyll shortage is the magnesium-deficiency link.",
+            guideRef: "Mineral Nutrition: Nitrate and Magnesium Ions",
             difficulty: "core",
             hints: [
-              "What is the key physical property that differs between starch and glucose?",
-              "Solute molecules lower the water potential — what effect would soluble glucose have on the cell?",
+              "What is nitrate used to build?",
+              "Growth requires making many new proteins.",
+              "Enzymes are also proteins.",
             ],
           },
           {
-            id: "bio-plant-nutrition-bank-mcq2-q06",
+            id: "bio-plant-nutrition-bm3-04",
             question:
-              "A student measures the rate of photosynthesis in a pond plant at 20 °C and then again at 30 °C, keeping light intensity and CO₂ constant. She finds the rate has approximately doubled. She then tests at 45 °C and finds the rate has fallen to near zero. Which explanation best accounts for both observations together?",
+              "By which process do root cells take up mineral ions such as nitrate from a dilute soil solution into the root?",
             options: [
-              "Temperature affects both diffusion rate and enzyme activity, but denaturation is irreversible above ~40 °C.",
-              "At 30 °C, light intensity doubled; at 45 °C, the plant ran out of CO₂.",
-              "Temperature only affects enzyme activity; the fall at 45 °C is due to stomata closing.",
-              "Photosynthesis is not affected by temperature — the observer made a measurement error.",
+              "Diffusion down a concentration gradient",
+              "Osmosis",
+              "Active transport, requiring energy from respiration",
+              "Transpiration",
+            ],
+            answerIndex: 2,
+            explanation:
+              "Soil solution is usually more dilute in these ions than the root cell, so ions are absorbed against the concentration gradient by active transport, which needs energy (ATP) from respiration. Diffusion and osmosis move substances down gradients only.",
+            guideRef: "Mineral Nutrition: Nitrate and Magnesium Ions",
+            difficulty: "core",
+            hints: [
+              "Is the ion concentration higher inside or outside the root cell?",
+              "Moving against a gradient needs energy.",
+              "Where does that energy come from?",
+            ],
+          },
+          {
+            id: "bio-plant-nutrition-bm3-05",
+            question:
+              "Two plants both show yellow leaves. Plant X is also small and stunted; plant Y is a normal height. Which deficiency best fits each plant?",
+            options: [
+              "X: magnesium; Y: nitrate",
+              "X: nitrate; Y: magnesium",
+              "Both: nitrate only",
+              "Both: magnesium only",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Nitrate deficiency causes yellowing AND stunted growth (no proteins for growth) — that matches plant X. Magnesium deficiency mainly causes yellowing (no chlorophyll) without such severe stunting — that matches plant Y.",
+            guideRef: "Mineral Nutrition: Nitrate and Magnesium Ions",
+            difficulty: "core",
+            hints: [
+              "Which deficiency adds stunted growth on top of yellowing?",
+              "Nitrate is needed for proteins and therefore growth.",
+              "Magnesium deficiency mainly affects leaf colour.",
+            ],
+          },
+          {
+            id: "bio-plant-nutrition-bm3-06",
+            question:
+              "Why does a leaf lacking chlorophyll appear yellow (chlorotic) and grow poorly?",
+            options: [
+              "Yellow pigments are made to replace chlorophyll, which speeds up photosynthesis.",
+              "Without chlorophyll less light energy is absorbed, so less glucose is made and growth slows.",
+              "The leaf absorbs more green light, turning yellow and growing faster.",
+              "Chlorophyll loss increases water uptake, drowning the cells.",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Chlorophyll absorbs the light energy that drives photosynthesis. Without it, less light is captured, so the plant makes less glucose and therefore has less energy and material for growth. The yellow colour shows where green chlorophyll is missing.",
+            guideRef: "Uses of Glucose and Role of Chlorophyll",
+            difficulty: "core",
+            hints: [
+              "What does chlorophyll do with light energy?",
+              "Less light captured means less glucose made.",
+              "Less glucose means less energy and material for growth.",
+            ],
+          },
+          {
+            id: "bio-plant-nutrition-bm3-07",
+            question:
+              "Which sugar is glucose converted into for transport away from the leaf in the phloem?",
+            options: ["Starch", "Cellulose", "Sucrose", "Maltose"],
+            answerIndex: 2,
+            explanation:
+              "Glucose is converted to sucrose, a soluble sugar, for transport in the phloem to other parts of the plant. Starch and cellulose are insoluble; cellulose is structural.",
+            guideRef: "Uses of Glucose and Role of Chlorophyll",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-plant-nutrition-bm3-08",
+            question:
+              "The waxy cuticle on the upper surface of a leaf is transparent and waterproof. Why are both of these properties important?",
+            options: [
+              "Transparent lets light reach the palisade cells; waterproof reduces evaporation of water.",
+              "Transparent lets CO₂ in; waterproof keeps oxygen inside.",
+              "Transparent reflects light away; waterproof lets water in.",
+              "Transparent stores starch; waterproof stores lipids.",
             ],
             answerIndex: 0,
             explanation:
-              "From 20–30 °C, increasing temperature increases enzyme kinetic energy and collision frequency, roughly doubling the rate (consistent with the Q10 ≈ 2 rule for enzyme reactions). Above the optimum (~35–40 °C), enzymes are denatured — the active site is permanently distorted, and catalysis ceases. This two-part explanation (faster reactions then irreversible denaturation) accounts for both observations. Light and CO₂ were kept constant, so they cannot explain the changes. Stomata closure alone would not cause the rate to fall to near zero instantly.",
+              "Being transparent lets sunlight pass through to the photosynthesising palisade cells; being waterproof reduces water loss by evaporation from the upper surface. The cuticle is not a gas-exchange or storage surface.",
+            guideRef: "Leaf Structure and Adaptations",
+            difficulty: "core",
+            hints: [
+              "Light must reach the cells below the cuticle.",
+              "Water loss from a sunlit upper surface could be high.",
+              "Match each property to one benefit.",
+            ],
+          },
+          {
+            id: "bio-plant-nutrition-bm3-09",
+            question:
+              "A scientist supplies a plant with carbon dioxide containing the radioactive isotope carbon-14. After photosynthesis, in which molecules would the radioactive carbon most likely be found shortly afterwards?",
+            options: [
+              "Only in oxygen gas",
+              "Only in water",
+              "In glucose and the substances made from it, such as starch and cellulose",
+              "Only in chlorophyll",
+            ],
+            answerIndex: 2,
+            explanation:
+              "The carbon of CO₂ is fixed into glucose, so labelled carbon appears first in glucose and then in molecules made from it (starch, cellulose, sucrose, amino acids). The oxygen released comes from water, not CO₂, so it would not be labelled.",
+            guideRef: "Uses of Glucose and Role of Chlorophyll",
+            difficulty: "challenge",
+            hints: [
+              "Follow the carbon atom: it starts in CO₂.",
+              "Photosynthesis fixes CO₂ carbon into glucose.",
+              "Glucose is then converted into other molecules.",
+              "The released oxygen comes from water, not CO₂.",
+            ],
+            strategy: "follow the atom",
+          },
+          {
+            id: "bio-plant-nutrition-bm3-10",
+            question:
+              "A desert plant has a thick waxy cuticle, few stomata, and most of its stomata sunk in pits on the lower surface. How do these features help it survive?",
+            options: [
+              "They increase water loss to cool the plant.",
+              "They reduce water loss while still allowing some gas exchange for photosynthesis.",
+              "They increase the rate of photosynthesis by letting in more light.",
+              "They allow the plant to absorb mineral ions through the leaf.",
+            ],
+            answerIndex: 1,
+            explanation:
+              "A thick cuticle, fewer stomata, and sunken stomata all cut down water lost by evaporation/transpiration — vital in a dry habitat — while a reduced number of stomata still permits enough CO₂ uptake for photosynthesis. These features limit, not increase, water loss.",
+            guideRef: "Leaf Structure and Adaptations",
+            difficulty: "challenge",
+            hints: [
+              "What is the main challenge in a desert?",
+              "Each feature affects water loss.",
+              "Fewer, sunken stomata trap humid air and reduce evaporation.",
+              "There is a trade-off with letting CO₂ in.",
+            ],
+          },
+        ],
+      },
+      {
+        id: "bio-plant-nutrition-bankmcq-4",
+        title: "Question Bank — MCQ Paper 4",
+        description:
+          "Ten mixed multiple-choice questions drawing together equations, gas exchange, limiting factors, experiments, and mineral nutrition.",
+        questions: [
+          {
+            id: "bio-plant-nutrition-bm4-01",
+            question:
+              "Which gas is released as a product of photosynthesis?",
+            options: ["Carbon dioxide", "Nitrogen", "Oxygen", "Hydrogen"],
+            answerIndex: 2,
+            explanation:
+              "Oxygen is produced in photosynthesis (from the splitting of water) and is released through the stomata. Carbon dioxide is a reactant, not a product.",
+            guideRef: "The Photosynthesis Equation",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-plant-nutrition-bm4-02",
+            question:
+              "Where does the oxygen released during photosynthesis originally come from?",
+            options: [
+              "From the carbon dioxide molecules",
+              "From the water molecules",
+              "From the glucose molecules",
+              "From the chlorophyll",
+            ],
+            answerIndex: 1,
+            explanation:
+              "The oxygen released in photosynthesis comes from the splitting of water molecules. (Tracer experiments using labelled oxygen confirm this.) The carbon of CO₂ goes into glucose, not into the released oxygen.",
+            guideRef: "The Photosynthesis Equation",
+            difficulty: "core",
+            hints: [
+              "Tracer studies tracked the oxygen atoms.",
+              "Two reactants contain oxygen: CO₂ and water.",
+              "The released O₂ comes from the splitting of one of them.",
+            ],
+          },
+          {
+            id: "bio-plant-nutrition-bm4-03",
+            question:
+              "At night, in darkness, what happens to gas exchange in a leaf?",
+            options: [
+              "Only photosynthesis occurs, so CO₂ is taken in.",
+              "Only respiration occurs, so O₂ is taken in and CO₂ released.",
+              "Neither respiration nor photosynthesis occurs.",
+              "Photosynthesis speeds up to store energy for the day.",
+            ],
+            answerIndex: 1,
+            explanation:
+              "In the dark there is no light, so photosynthesis stops, but respiration continues all the time. So the leaf takes in O₂ and releases CO₂, the net gas exchange of respiration.",
+            guideRef: "Leaf Structure and Adaptations",
+            difficulty: "core",
+            hints: [
+              "Photosynthesis needs light.",
+              "Respiration happens day and night.",
+              "Which gases does respiration use and release?",
+            ],
+          },
+          {
+            id: "bio-plant-nutrition-bm4-04",
+            question:
+              "At a certain low light intensity, a leaf shows no net exchange of carbon dioxide with the air. What is happening at this point (the compensation point)?",
+            options: [
+              "Photosynthesis has stopped completely.",
+              "The rate of photosynthesis exactly equals the rate of respiration.",
+              "Respiration has stopped completely.",
+              "The plant is only releasing oxygen.",
+            ],
+            answerIndex: 1,
+            explanation:
+              "At the compensation point the CO₂ used by photosynthesis exactly equals the CO₂ produced by respiration, so there is no net gas exchange with the air. Both processes are still happening; they simply balance.",
             guideRef: "Limiting Factors of Photosynthesis",
             difficulty: "challenge",
             hints: [
-              "What does temperature do to enzyme-controlled reactions below the optimum?",
-              "What happens to the structure of enzymes above their optimum temperature?",
-              "Is denaturation reversible or irreversible?",
-              "Can the near-zero rate at 45 °C be explained by anything other than enzyme denaturation?",
+              "Both photosynthesis and respiration use/produce CO₂.",
+              "No net exchange means two opposite flows cancel out.",
+              "What must be equal for CO₂ flow to be zero?",
             ],
-            strategy: "two-step reasoning: activation then denaturation",
+            strategy: "balance opposing rates",
+          },
+          {
+            id: "bio-plant-nutrition-bm4-05",
+            question:
+              "Which set of conditions would give the highest rate of photosynthesis for a typical crop plant?",
+            options: [
+              "Low light, low CO₂, 10 °C",
+              "High light, high CO₂, 35 °C",
+              "High light, low CO₂, 45 °C",
+              "Low light, high CO₂, 35 °C",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Rate is highest when none of the three factors is limiting and temperature is near the enzyme optimum (~35 °C). High light, high CO₂ and ~35 °C achieves this. 45 °C risks denaturing enzymes, and low light or low CO₂ would limit the rate.",
+            guideRef: "Limiting Factors of Photosynthesis",
+            difficulty: "core",
+            hints: [
+              "All three factors should be plentiful.",
+              "Temperature should be near the optimum, not too high.",
+              "Watch out for 45 °C denaturing enzymes.",
+            ],
+          },
+          {
+            id: "bio-plant-nutrition-bm4-06",
+            question:
+              "In the leaf starch test, why is the leaf first dipped in boiling water?",
+            options: [
+              "To add starch to the leaf",
+              "To kill the cells and stop enzyme reactions, and to soften the cell walls",
+              "To remove the chlorophyll",
+              "To turn the leaf blue-black",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Boiling water kills the leaf (stopping any further enzyme-controlled change to the starch) and softens the cuticle and cell walls so ethanol and iodine can penetrate. Chlorophyll is removed later by ethanol; iodine produces the colour change.",
+            guideRef: "Experiments: Testing for Starch and Controlled Investigations",
+            difficulty: "core",
+            hints: [
+              "What should happen to enzyme activity before testing?",
+              "The leaf also needs to be made more permeable.",
+              "Chlorophyll removal is a separate, later step.",
+            ],
+          },
+          {
+            id: "bio-plant-nutrition-bm4-07",
+            question:
+              "A plant in a sealed bell jar with sodium hydroxide and given light and water shows an orange-brown result in the starch test. Which conclusion is valid?",
+            options: [
+              "Light is not needed for photosynthesis.",
+              "Carbon dioxide is needed for photosynthesis.",
+              "Chlorophyll is not needed for photosynthesis.",
+              "Water is needed for photosynthesis.",
+            ],
+            answerIndex: 1,
+            explanation:
+              "The NaOH removed CO₂, light and water were still supplied, so the only missing factor was CO₂. No starch (orange-brown) therefore shows CO₂ is needed for photosynthesis. The experiment does not test light, water or chlorophyll because those were present/unchanged.",
+            guideRef: "Experiments: Testing for Starch and Controlled Investigations",
+            difficulty: "core",
+            hints: [
+              "Identify which single factor was removed.",
+              "Light and water were still supplied.",
+              "Sodium hydroxide absorbs CO₂.",
+            ],
+          },
+          {
+            id: "bio-plant-nutrition-bm4-08",
+            question:
+              "Which row correctly matches a leaf structure to its function?",
+            options: [
+              "Xylem — transports sucrose away from the leaf",
+              "Phloem — brings water and mineral ions to the leaf",
+              "Xylem — brings water and mineral ions to the leaf",
+              "Stomata — site of most photosynthesis",
+            ],
+            answerIndex: 2,
+            explanation:
+              "Xylem brings water and dissolved mineral ions up from the roots to the leaf. Phloem carries dissolved sucrose away from the leaf. Stomata are pores for gas exchange, not the main photosynthetic site (that is the palisade mesophyll).",
+            guideRef: "Leaf Structure and Adaptations",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-plant-nutrition-bm4-09",
+            question:
+              "A farmer adds a fertiliser containing nitrate and magnesium to soil where crops have pale, yellow leaves and are growing slowly. Why should both ions help?",
+            options: [
+              "Nitrate makes chlorophyll and magnesium makes proteins.",
+              "Nitrate provides nitrogen for proteins (growth) and magnesium is needed to make chlorophyll (green colour).",
+              "Both ions are broken down to release energy.",
+              "Both ions increase water uptake by osmosis.",
+            ],
+            answerIndex: 1,
+            explanation:
+              "Yellow leaves point to a lack of chlorophyll (needs magnesium) and slow growth points to a lack of protein (needs nitrate nitrogen). Supplying both ions corrects both problems. The roles in option A are swapped; the ions are not respired or used for osmosis here.",
+            guideRef: "Mineral Nutrition: Nitrate and Magnesium Ions",
+            difficulty: "core",
+            hints: [
+              "Match each symptom to a missing ion.",
+              "Yellow leaves point to chlorophyll shortage.",
+              "Slow growth points to protein shortage.",
+              "Be careful not to swap the two roles.",
+            ],
+          },
+          {
+            id: "bio-plant-nutrition-bm4-10",
+            question:
+              "Doubling the distance between a lamp and a pondweed plant reduces the light intensity reaching the plant to one quarter. This is because light intensity is:",
+            options: [
+              "directly proportional to distance",
+              "inversely proportional to distance",
+              "inversely proportional to the square of the distance",
+              "independent of distance",
+            ],
+            answerIndex: 2,
+            explanation:
+              "Light obeys the inverse-square law: intensity ∝ 1 / distance². Doubling the distance (×2) reduces intensity by a factor of 2² = 4, i.e. to one quarter. This is why distance must be controlled carefully in light-intensity experiments.",
+            guideRef: "Limiting Factors of Photosynthesis",
+            difficulty: "challenge",
+            hints: [
+              "Light spreads out over a larger area as distance grows.",
+              "Doubling distance gave one quarter intensity — what power of 2 is 4?",
+              "Think of the inverse-square relationship.",
+            ],
+            strategy: "spot the proportionality",
           },
         ],
       },
     ],
     qaPapers: [
       {
-        id: "bio-plant-nutrition-bank-qa-1",
-        title: "Plant Nutrition Structured Questions Paper 1",
+        id: "bio-plant-nutrition-bankqa-1",
+        title: "Question Bank — Structured Paper 1",
         description:
-          "Four structured questions on photosynthesis equations, leaf structure, experiments and mineral nutrition.",
+          "Ten structured questions on the photosynthesis equation, uses of glucose, and the role of chlorophyll.",
         questions: [
           {
-            id: "bio-plant-nutrition-bank-qa1-q01",
+            id: "bio-plant-nutrition-bq1-01",
             question:
-              "Fig. 1 shows a cross-section of a leaf.\n\n(a) State the name of the layer labelled X, which is the tightly packed layer of cells near the upper surface. [1]\n(b) State TWO features of the cells in layer X that adapt them for photosynthesis. [2]\n(c) Explain why the air spaces in the spongy mesophyll increase the rate of photosynthesis. [3]\n(d) A student removes a leaf from the plant, kills it in boiling water, and then places it in hot ethanol. State the purpose of the boiling water step and explain why the ethanol must be heated in a water bath rather than over a direct flame. [2]",
-            marks: 8,
+              "Write the word equation for photosynthesis and state the two conditions needed. [3]",
+            marks: 3,
             modelAnswer:
-              "(a) Palisade mesophyll.\n\n(b) Any two of: cells contain many chloroplasts to absorb light energy; cells are closely packed so many can be positioned near the top surface to receive maximum light; column shape allows light to penetrate deep into the cell; large surface area of each cell for absorption of CO₂.\n\n(c) The air spaces provide a large internal surface area for CO₂ to dissolve into the cell surface. They maintain a steep concentration gradient of CO₂ between the air spaces and the photosynthesising cells. CO₂ diffuses rapidly through air (faster than through liquid), so the air spaces reduce the diffusion distance from the stomata to the mesophyll cells — all three points together significantly increase the rate of CO₂ delivery and therefore photosynthesis.\n\n(d) Boiling water kills the cells / stops enzyme activity / makes the cells permeable (softens the cell walls). Ethanol is highly flammable; heating it directly over a flame could ignite the vapour and cause a fire/explosion; a water bath keeps the temperature controlled and prevents the ethanol from reaching its flash point.",
+              "carbon dioxide + water → glucose + oxygen. The two conditions needed are light energy and chlorophyll (which absorbs the light energy).",
             markScheme: [
-              "(a) palisade mesophyll",
-              "(b) many chloroplasts / packed with chloroplasts",
-              "(b) closely packed near upper surface / column-shaped / large surface area",
-              "(c) large surface area for CO₂ to dissolve into cell surface",
-              "(c) maintains steep CO₂ concentration gradient",
-              "(c) CO₂ diffuses faster through air / reduces diffusion distance",
-              "(d) boiling water kills cells / stops enzyme activity / softens cell walls",
-              "(d) ethanol is flammable / direct flame could ignite ethanol vapour",
+              "carbon dioxide + water (reactants, both required)",
+              "→ glucose + oxygen (products, both required)",
+              "conditions: light energy / light AND chlorophyll",
             ],
             commonError:
-              "Students often write 'the air spaces let the plant breathe' without explaining the concentration gradient or surface area. Examiners want the mechanism: steep gradient → faster diffusion.",
-            guideRef: "Leaf Structure and Adaptations",
+              "Some students put light and chlorophyll on the reactant side. They are conditions, not reactants — they go above/below the arrow.",
+            guideRef: "The Photosynthesis Equation",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-plant-nutrition-bq1-02",
+            question:
+              "Show that the symbol equation 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂ is balanced by counting the atoms of each element on both sides. [4]",
+            marks: 4,
+            modelAnswer:
+              "Left side: 6CO₂ gives 6 carbon and 12 oxygen; 6H₂O gives 12 hydrogen and 6 oxygen. Totals on the left: 6 C, 12 H, 18 O. Right side: C₆H₁₂O₆ gives 6 carbon, 12 hydrogen and 6 oxygen; 6O₂ gives 12 oxygen. Totals on the right: 6 C, 12 H, 18 O. The carbon, hydrogen and oxygen totals are equal on both sides, so the equation is balanced.",
+            markScheme: [
+              "left carbon = 6 and right carbon = 6",
+              "left hydrogen = 12 and right hydrogen = 12",
+              "left oxygen = 18 (12 from CO₂ + 6 from H₂O)",
+              "right oxygen = 18 (6 from glucose + 12 from O₂) / states both sides equal, so balanced",
+            ],
+            commonError:
+              "Forgetting the oxygen inside glucose: glucose contributes 6 oxygen atoms, which must be added to the 12 from O₂ to reach 18.",
+            guideRef: "The Photosynthesis Equation",
             difficulty: "core",
             hints: [
-              "Name the layer first, then think about features that help it absorb light.",
-              "For air spaces: think about Fick's law — what three factors affect diffusion rate?",
-              "For the ethanol question: what property of ethanol makes it dangerous near flames?",
+              "Work out the atom counts for each molecule separately.",
+              "Remember CO₂ has 2 oxygen and H₂O has 1 oxygen.",
+              "Glucose contains 6 oxygen atoms too.",
+              "Add up each element on each side and compare.",
+            ],
+            strategy: "count atoms element by element",
+            solutions: [
+              {
+                label: "Atom-counting table",
+                steps: [
+                  "Left, carbon: 6 (from 6CO₂). Right, carbon: 6 (from C₆H₁₂O₆). Equal.",
+                  "Left, hydrogen: 12 (from 6H₂O). Right, hydrogen: 12 (from C₆H₁₂O₆). Equal.",
+                  "Left, oxygen: 6×2 + 6×1 = 12 + 6 = 18. Right, oxygen: 6 (glucose) + 6×2 (O₂) = 6 + 12 = 18. Equal.",
+                  "All three elements balance, so the equation is correctly balanced.",
+                ],
+              },
             ],
           },
           {
-            id: "bio-plant-nutrition-bank-qa1-q02",
+            id: "bio-plant-nutrition-bq1-03",
             question:
-              "(a) Write the balanced symbol equation for photosynthesis. Include the conditions above the arrow. [3]\n(b) State FOUR different ways in which glucose produced during photosynthesis can be used by a plant. [4]\n(c) Explain why a plant kept only in blue and red light will photosynthesise effectively, but a plant kept only in green light will not. [2]",
-            marks: 9,
+              "Photosynthesis and aerobic respiration are sometimes described as opposite processes. Compare the two by stating the reactants and products of each. [4]",
+            marks: 4,
             modelAnswer:
-              "(a) 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂, with 'light energy' and 'chlorophyll' written above/below the arrow as conditions.\n\n(b) Any four of: used in respiration to release energy; converted to starch for storage; converted to cellulose for cell walls; converted to sucrose for transport in phloem; used to make amino acids (with nitrate ions) and then proteins; used to make fats and oils for storage in seeds.\n\n(c) Chlorophyll absorbs mainly blue and red wavelengths of light. Plants kept in blue and red light can absorb this energy to drive photosynthesis. Green light is mostly reflected by chlorophyll (which is why leaves appear green) and is not absorbed — so plants in green light cannot absorb enough light energy to photosynthesise effectively.",
+              "Photosynthesis: reactants are carbon dioxide and water; products are glucose and oxygen; it requires light energy. Aerobic respiration: reactants are glucose and oxygen; products are carbon dioxide and water; it releases energy. The reactants of one are essentially the products of the other, which is why they are described as opposite (or complementary) processes.",
             markScheme: [
-              "(a) 6CO₂ + 6H₂O (on left) C₆H₁₂O₆ + 6O₂ (on right)",
-              "(a) balanced (correct coefficients throughout)",
-              "(a) light energy / chlorophyll shown as conditions",
-              "(b) respiration / energy release",
-              "(b) starch storage / cellulose / sucrose transport / amino acids/proteins / fats or oils",
-              "(b) any four correct uses (1 mark each, max 4)",
-              "(c) chlorophyll absorbs red and blue light but reflects green light",
-              "(c) green light not absorbed → cannot provide energy → photosynthesis does not proceed",
+              "photosynthesis reactants: carbon dioxide + water",
+              "photosynthesis products: glucose + oxygen",
+              "respiration reactants: glucose + oxygen",
+              "respiration products: carbon dioxide + water / states they are reverse of each other",
             ],
             commonError:
-              "Students often list 'making food' as a use of glucose, which is circular. Examiners want specific molecules or processes: respiration, starch, cellulose, sucrose, amino acids.",
+              "Stating that respiration only happens at night. Respiration occurs all the time in plant cells; photosynthesis only occurs in the light.",
             guideRef: "Uses of Glucose and Role of Chlorophyll",
             difficulty: "core",
             hints: [
-              "Write the equation step by step: reactants (CO₂ and H₂O) → products (glucose and O₂), then balance.",
-              "Think about ALL the different molecules a plant needs to build and maintain itself.",
-              "What colours of light does chlorophyll absorb, and which does it reflect?",
+              "List reactants and products for each process.",
+              "Photosynthesis stores energy; respiration releases it.",
+              "Notice how the products of one match the reactants of the other.",
             ],
           },
           {
-            id: "bio-plant-nutrition-bank-qa1-q03",
+            id: "bio-plant-nutrition-bq1-04",
             question:
-              "A student investigates whether light is needed for photosynthesis. She uses two identical plants that have been destarched.\n\n- Plant A is placed in bright light for 6 hours.\n- Plant B is kept in complete darkness for 6 hours.\n\nAfter 6 hours, a leaf is taken from each plant and tested for starch.\n\n(a) Predict the result of the iodine test for each plant. [2]\n(b) Explain why destarching is an essential step before the investigation. [2]\n(c) State TWO variables that must be kept the same to make this a fair test. [2]\n(d) Suggest why the student uses two identical plants rather than covering half of one leaf with foil. [2]",
-            marks: 8,
+              "List four different uses the plant makes of the glucose produced in photosynthesis. [4]",
+            marks: 4,
             modelAnswer:
-              "(a) Plant A (light): blue-black colour — starch is present. Plant B (darkness): orange-brown colour — no starch present.\n\n(b) If starch was already present from before the investigation, both leaves would test positive for starch even if photosynthesis had not occurred during the 6 hours. Destarching ensures that any starch detected at the end must have been made during the investigation — making the results valid and unambiguous.\n\n(c) Any two of: temperature; water supply / watering; CO₂ concentration; the size/age/species of the plants; duration of the investigation (6 hours for both).\n\n(d) Using two separate plants (rather than half-and-half on one leaf) means that the 'dark' plant is entirely in darkness — there is no possibility of light leaking from the illuminated half. It also avoids any diffusion of sugars from the light half to the dark half through phloem connections within the same leaf, which could confuse results.",
+              "1. Used in respiration to release energy. 2. Converted to starch for storage (insoluble). 3. Converted to cellulose to build cell walls for growth. 4. Converted to sucrose for transport in the phloem. (Other acceptable uses: combined with nitrate to make amino acids/proteins; converted to fats/oils for storage in seeds.)",
             markScheme: [
-              "(a) Plant A: blue-black / starch present",
-              "(a) Plant B: orange-brown / no starch",
-              "(b) ensures any starch detected was made during investigation / not pre-existing",
-              "(b) makes results valid / unambiguous",
-              "(c) any two: temperature; water; CO₂ concentration; light intensity (same for A); duration",
-              "(d) avoids light leaking to dark area / ensures complete darkness for Plant B",
-              "(d) avoids diffusion of sugars between light and dark sections / prevents contamination of results",
+              "respiration / release of energy",
+              "converted to starch for storage",
+              "converted to cellulose for cell walls",
+              "converted to sucrose for transport / used to make amino acids-proteins / made into fats and oils",
             ],
             commonError:
-              "A very common error: students say 'destarching makes the plant hungry so it photosynthesises more.' That is incorrect. Destarching is purely about ensuring a clean baseline for the test, not about stimulating photosynthesis.",
-            guideRef: "Experiments: Testing for Starch and Controlled Investigations",
+              "Writing 'to make energy' — energy is released (or transferred), not made or created.",
+            guideRef: "Uses of Glucose and Role of Chlorophyll",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-plant-nutrition-bq1-05",
+            question:
+              "Explain why glucose is converted to starch for storage rather than being stored as glucose itself. [3]",
+            marks: 3,
+            modelAnswer:
+              "Glucose is soluble, so storing large amounts of it would lower the water potential inside the cell, causing water to enter the cell by osmosis and possibly damaging it. Starch is insoluble, so it has no osmotic effect and does not draw water in. Starch is also compact and can be stored in large quantities, then broken down to glucose when needed.",
+            markScheme: [
+              "glucose is soluble / would affect water potential / cause osmosis problems",
+              "starch is insoluble / no osmotic effect",
+              "starch can be stored compactly / broken back down to glucose when needed",
+            ],
+            commonError:
+              "Saying starch 'has no effect on the cell' — be specific: it has no osmotic effect because it is insoluble.",
+            guideRef: "Uses of Glucose and Role of Chlorophyll",
             difficulty: "core",
             hints: [
-              "Iodine: what colour indicates starch present? What colour indicates starch absent?",
-              "Think about what would happen if you tested for starch without destarching first.",
-              "Fair test = same everything except the one variable being tested. What are you varying here?",
-              "If both halves are on the same leaf, can you guarantee the dark half has had zero light or zero sugars?",
+              "Think about solubility and osmosis.",
+              "A soluble sugar lowers water potential.",
+              "Why does insolubility make starch a better store?",
             ],
           },
           {
-            id: "bio-plant-nutrition-bank-qa1-q04",
+            id: "bio-plant-nutrition-bq1-06",
             question:
-              "A farmer grows tomato plants in a greenhouse. He notices that some plants have small, yellowing leaves and poor growth, while others have yellowing leaves but grow to normal height. He tests the soil and finds low levels of both nitrate and magnesium ions in the affected areas.\n\n(a) Identify which deficiency (nitrate or magnesium) is more likely responsible for the plants with poor growth AND yellowing. Justify your answer. [3]\n(b) Explain, at the molecular level, why magnesium deficiency causes leaves to yellow. [2]\n(c) The farmer adds a fertiliser containing both NO₃⁻ and Mg²⁺. Explain how these ions are absorbed by the plant roots. [2]\n(d) After a month, the farmer observes that the plants receiving fertiliser have dark green, large leaves and high fruit yield. Explain how the nitrate ions contributed to this improvement. [3]",
-            marks: 10,
+              "State what is meant by 'chlorophyll' and describe its role in photosynthesis. [3]",
+            marks: 3,
             modelAnswer:
-              "(a) Nitrate deficiency is responsible for the plants with poor growth AND yellowing. Nitrate ions provide nitrogen for amino acid synthesis. Without amino acids, proteins (including enzymes needed for growth and cell division) cannot be made — so growth is stunted. Yellowing occurs because nitrogen is mobilised from older leaves to growing tips. Magnesium deficiency alone causes yellowing but does not typically cause severely stunted growth because protein synthesis (from other pathways) can continue.\n\n(b) Magnesium ions (Mg²⁺) are the central atom of the chlorophyll molecule. Without magnesium, chlorophyll molecules cannot be synthesised. With less chlorophyll, the leaf absorbs less light and appears yellow/pale (chlorosis) rather than green.\n\n(c) Nitrate and magnesium ions are present at low concentrations in the soil solution but at higher concentrations inside root hair cells. To absorb them against this concentration gradient, root cells use active transport — a process requiring energy (ATP) from cellular respiration.\n\n(d) Nitrate ions are absorbed and provide nitrogen atoms. These are used to make amino acids, which are then joined by peptide bonds to form proteins. Proteins include structural proteins for cell growth, enzymes for all metabolic reactions (including photosynthesis), and transport proteins. More proteins → more cell division → larger leaves → more photosynthesis → more glucose → more growth and fruit production. Without adequate protein (enzyme) supply, even with light and CO₂, photosynthesis cannot proceed at maximum rate.",
+              "Chlorophyll is the green pigment found inside chloroplasts. It absorbs light energy (mainly red and blue wavelengths). It transfers this light energy to drive the reactions that convert carbon dioxide and water into glucose, so the light energy is changed into chemical energy stored in glucose.",
             markScheme: [
-              "(a) nitrate deficiency causes stunted growth AND yellowing",
-              "(a) nitrate needed for amino acid/protein synthesis — without it, no growth",
-              "(a) magnesium deficiency causes yellowing but not severe stunted growth",
-              "(b) Mg²⁺ is central atom of chlorophyll molecule",
-              "(b) without Mg²⁺, chlorophyll cannot be made → leaves appear yellow",
-              "(c) ions at lower concentration in soil than in root cells",
-              "(c) absorbed by active transport using ATP / energy from respiration",
-              "(d) nitrate provides nitrogen for amino acid synthesis",
-              "(d) amino acids assembled into proteins (enzymes, structural proteins)",
-              "(d) more proteins → more growth / faster metabolism / better photosynthesis → more yield",
+              "green pigment found in chloroplasts",
+              "absorbs light energy (mainly red and blue)",
+              "transfers/converts light energy to chemical energy / drives photosynthesis reactions",
             ],
             commonError:
-              "Students confuse 'nitrate ions provide energy' — they do not. Nitrate provides nitrogen, which is used to build amino acids. Energy comes from glucose via respiration.",
-            guideRef: "Mineral Nutrition: Nitrate and Magnesium Ions",
+              "Saying chlorophyll 'makes glucose'. Chlorophyll absorbs and transfers light energy; it does not itself become glucose.",
+            guideRef: "Uses of Glucose and Role of Chlorophyll",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-plant-nutrition-bq1-07",
+            question:
+              "Leaves usually appear green. Explain why, in terms of how chlorophyll interacts with light. [3]",
+            marks: 3,
+            modelAnswer:
+              "Chlorophyll absorbs mainly red and blue wavelengths of light to use in photosynthesis. It does not absorb green light well; instead green light is reflected (and transmitted). The reflected green light enters our eyes, so the leaf appears green.",
+            markScheme: [
+              "chlorophyll absorbs red and blue light",
+              "green light is not absorbed / is reflected (or transmitted)",
+              "reflected green light reaches the eye, so leaf looks green",
+            ],
+            commonError:
+              "Saying the leaf 'absorbs green light to look green' — it is the opposite: green is reflected, which is why we see green.",
+            guideRef: "Uses of Glucose and Role of Chlorophyll",
+            difficulty: "core",
+            hints: [
+              "Which colours does chlorophyll absorb?",
+              "What happens to the colour it does not absorb?",
+              "The colour we see is the reflected light.",
+            ],
+          },
+          {
+            id: "bio-plant-nutrition-bq1-08",
+            question:
+              "A plant makes amino acids and proteins. Describe how the products of photosynthesis and mineral ions from the soil are combined to do this. [3]",
+            marks: 3,
+            modelAnswer:
+              "Glucose made in photosynthesis provides the carbon-containing skeleton. Nitrate ions absorbed from the soil supply nitrogen. The plant combines the glucose (carbon skeleton) with nitrogen from nitrate to make amino acids. The amino acids are then joined together to form proteins.",
+            markScheme: [
+              "glucose provides carbon / carbon skeleton",
+              "nitrate ions supply nitrogen",
+              "combined to form amino acids, which are joined to make proteins",
+            ],
+            commonError:
+              "Forgetting the nitrogen source — amino acids cannot be made from glucose alone; nitrate (nitrogen) is essential.",
+            guideRef: "Uses of Glucose and Role of Chlorophyll",
+            difficulty: "core",
+            hints: [
+              "Amino acids contain an element not found in glucose.",
+              "Where does that element (nitrogen) come from?",
+              "Amino acids join to form what larger molecule?",
+            ],
+          },
+          {
+            id: "bio-plant-nutrition-bq1-09",
+            question:
+              "A scientist supplies a plant with carbon dioxide labelled with radioactive carbon-14, then samples the plant over time. Predict and explain which molecules will become radioactive and in roughly what order. [4]",
+            marks: 4,
+            modelAnswer:
+              "The carbon-14 is part of the CO₂ that is fixed in photosynthesis, so glucose will become radioactive first, because the carbon from CO₂ is built into glucose. Next, molecules made from glucose will become radioactive, for example starch, cellulose and sucrose, as the labelled carbon is converted into these. Later still, amino acids and proteins may contain the labelled carbon. The released oxygen would NOT be radioactive, because that oxygen comes from water, not from CO₂.",
+            markScheme: [
+              "glucose becomes radioactive first (CO₂ carbon fixed into glucose)",
+              "then molecules made from glucose: starch / cellulose / sucrose",
+              "later amino acids / proteins may be labelled",
+              "released oxygen is NOT radioactive (it comes from water)",
+            ],
+            commonError:
+              "Claiming the released oxygen would be radioactive. The oxygen released comes from the splitting of water, so it would not carry the carbon-14 label.",
+            guideRef: "Uses of Glucose and Role of Chlorophyll",
             difficulty: "challenge",
             hints: [
-              "Which deficiency gives BOTH stunted growth AND yellowing? Nitrate or magnesium?",
-              "Mg²⁺ sits at the centre of which pigment molecule?",
-              "Ion concentration is higher inside the root cell than in soil solution — what type of transport overcomes a gradient?",
-              "Trace the chain: NO₃⁻ → nitrogen → amino acids → proteins → enzymes/structure → growth.",
+              "Follow the carbon atom from CO₂.",
+              "CO₂ carbon is fixed into glucose first.",
+              "Glucose is then turned into other molecules.",
+              "Think carefully about the source of the released oxygen.",
             ],
-            strategy: "trace cause-effect chain: ion → molecule → function → symptom",
+            strategy: "follow the atom through the pathway",
+          },
+          {
+            id: "bio-plant-nutrition-bq1-10",
+            question:
+              "Some plants store food as oils in their seeds rather than only as starch. Suggest one advantage of storing energy as oil, and explain how the oil is ultimately derived from photosynthesis. [3]",
+            marks: 3,
+            modelAnswer:
+              "Oils (fats) store more energy per gram than carbohydrates such as starch, so a seed can store a large energy reserve in a small, light mass — useful for dispersal and for fuelling germination. The oil is derived from photosynthesis because glucose made in photosynthesis is converted by the plant into fats and oils (lipids) for storage in the seed.",
+            markScheme: [
+              "oil/fat stores more energy per gram than starch (compact energy store)",
+              "useful for the small seed / for germination / dispersal",
+              "glucose from photosynthesis is converted into fats and oils",
+            ],
+            commonError:
+              "Saying oil is made directly in photosynthesis. The direct product is glucose; the plant then converts glucose into oils.",
+            guideRef: "Uses of Glucose and Role of Chlorophyll",
+            difficulty: "challenge",
+            hints: [
+              "Compare energy stored per gram in fat versus carbohydrate.",
+              "Seeds are small and need a concentrated store.",
+              "Trace the oil back to glucose from photosynthesis.",
+            ],
           },
         ],
       },
       {
-        id: "bio-plant-nutrition-bank-qa-2",
-        title: "Plant Nutrition Structured Questions Paper 2",
+        id: "bio-plant-nutrition-bankqa-2",
+        title: "Question Bank — Structured Paper 2",
         description:
-          "Four structured questions including challenge problems on limiting factors, synoptic links, and experimental design.",
+          "Ten structured questions on leaf structure, adaptations, gas exchange, and stomata.",
         questions: [
           {
-            id: "bio-plant-nutrition-bank-qa2-q01",
+            id: "bio-plant-nutrition-bq2-01",
             question:
-              "Fig. 2 shows a rate-of-photosynthesis graph with three curves: Curve P (measured at 25 °C, 0.04% CO₂), Curve Q (measured at 25 °C, 0.1% CO₂), and Curve R (measured at 35 °C, 0.1% CO₂). All curves are plotted against light intensity.\n\n(a) Explain why Curve Q has a higher plateau than Curve P. [3]\n(b) Curve R has an even higher plateau than Curve Q. Explain why increasing the temperature from 25 °C to 35 °C raises the rate at high light intensities. [3]\n(c) A student claims: 'If you increased the temperature to 50 °C, the rate would be even higher than Curve R.' Evaluate this claim. [3]",
-            marks: 9,
+              "Name, in order from the top surface downwards, the main tissue layers of a dicotyledonous leaf. [4]",
+            marks: 4,
             modelAnswer:
-              "(a) At the plateau of Curve P, light is no longer limiting — CO₂ has become the limiting factor at 0.04%. In Curve Q, CO₂ is 0.1% — more than twice as high. More CO₂ molecules are available as a reactant, so photosynthesis can proceed at a higher rate before CO₂ becomes limiting again. The plateau is set by whichever factor becomes limiting next; with more CO₂, the rate can go higher before CO₂ restricts it.\n\n(b) The reactions of photosynthesis (especially the dark reactions/Calvin cycle) are catalysed by enzymes. At 35 °C, the molecules have more kinetic energy — they move faster and collide with the enzyme active sites more frequently and with more energy. This increases the rate of enzyme-catalysed reactions, raising the overall rate of photosynthesis. The higher plateau shows that temperature, not CO₂, was a secondary limiting factor in Curve Q.\n\n(c) This claim is incorrect. 50 °C is well above the optimum temperature for the enzymes involved in photosynthesis (typically ~35–40 °C). At this temperature, the excess heat energy causes the active sites of the enzymes to change shape permanently — denaturation. Denatured enzymes can no longer catalyse their reactions, so the rate would fall sharply, possibly to near zero. The student has assumed temperature always increases rate, ignoring denaturation.",
+              "From the top: waxy cuticle, then the upper epidermis, then the palisade mesophyll, then the spongy mesophyll, then the lower epidermis (with stomata and guard cells). Vascular bundles (xylem and phloem) run through the mesophyll.",
             markScheme: [
-              "(a) CO₂ is higher in Curve Q (0.1% vs 0.04%)",
-              "(a) more CO₂ available as reactant → rate can rise higher before CO₂ limits",
-              "(a) plateau of P: CO₂ became limiting; Q delays this with more CO₂",
-              "(b) higher temperature → more kinetic energy → more frequent enzyme-substrate collisions",
-              "(b) enzyme-controlled reactions proceed faster / rate increases",
-              "(b) temperature was also a limiting factor in Curve Q",
-              "(c) claim is incorrect — 50 °C exceeds optimum temperature",
-              "(c) enzymes are denatured — active sites permanently change shape",
-              "(c) denatured enzymes cannot catalyse reactions → rate falls / near zero",
+              "waxy cuticle / upper epidermis (top)",
+              "palisade mesophyll below the upper epidermis",
+              "spongy mesophyll below the palisade layer",
+              "lower epidermis with stomata at the bottom",
             ],
             commonError:
-              "For part (c), many students say 'the rate slows down' without explaining denaturation. The exam requires the word 'denature' and the concept that the change to the active site is irreversible.",
-            guideRef: "Limiting Factors of Photosynthesis",
-            difficulty: "challenge",
-            hints: [
-              "Why does Curve Q plateau higher? Think about which factor was limiting at the plateau of Curve P.",
-              "How does temperature affect enzyme-catalysed reaction rates below the optimum?",
-              "What happens to enzyme structure above the optimum temperature? Is this reversible?",
-              "The student's error is assuming the pattern continues — what evidence shows it does not?",
-            ],
-            strategy: "identify the limiting factor at each plateau; apply enzyme theory",
-            solutions: [
-              {
-                label: "Systematic limiting-factor analysis",
-                steps: [
-                  "P plateau: light is no longer limiting. CO₂ at 0.04% is now the bottleneck → plateau set by CO₂.",
-                  "Q has 0.1% CO₂: same light, higher CO₂. Rate can rise higher before CO₂ limits → higher plateau.",
-                  "R is at 35 °C vs 25 °C: enzyme reactions faster → even higher plateau (temperature was a secondary limiter in Q).",
-                  "At 50 °C: exceeds optimum (~35–40 °C) → enzymes denature → active sites distorted → catalysis ceases → rate collapses. Claim is wrong.",
-                ],
-              },
-            ],
+              "Putting the spongy layer above the palisade layer. Palisade is nearer the top (more light); spongy is below it.",
+            guideRef: "Leaf Structure and Adaptations",
+            difficulty: "warmup",
           },
           {
-            id: "bio-plant-nutrition-bank-qa2-q02",
+            id: "bio-plant-nutrition-bq2-02",
             question:
-              "(a) A student claims that the xylem and phloem in a leaf vein serve opposite transport functions. Explain this statement by describing what each tissue transports and in which direction. [4]\n(b) Explain the link between the transport function of the phloem and the products of photosynthesis. [3]",
-            marks: 7,
+              "Explain two ways in which the palisade mesophyll is adapted for efficient photosynthesis. [4]",
+            marks: 4,
             modelAnswer:
-              "(a) Xylem transports water and dissolved mineral ions (such as nitrate and magnesium ions) from the roots upward to the leaf — it delivers the raw materials needed for photosynthesis and other metabolic reactions. Phloem transports dissolved organic molecules — mainly sucrose — away from the leaf (a source) to other parts of the plant such as roots, fruits, and growing tips (sinks). Xylem flow is unidirectional (up); phloem flow can be bidirectional (up or down, depending on sources and sinks).\n\n(b) Glucose produced by photosynthesis cannot be transported efficiently in its current form because it would lower the water potential of cells and affect osmosis. The plant converts glucose to sucrose, which is then loaded into the phloem sieve tubes (companion cells use active transport to load sucrose against a concentration gradient). The sucrose solution travels by mass flow through the phloem from leaves (source) to sites of use or storage (sinks), where sucrose is unloaded and either respired, stored as starch, or used to build other molecules.",
+              "1. Palisade cells contain many chloroplasts, so they can absorb a large amount of light and carry out a high rate of photosynthesis. 2. They are column-shaped (tall and narrow) and tightly packed near the upper surface, so many cells can be positioned close to the light, maximising light absorption and minimising the light that passes through unused.",
             markScheme: [
-              "(a) xylem: water and mineral ions / nitrate and magnesium",
-              "(a) xylem: from roots to leaf / upward",
-              "(a) phloem: dissolved sucrose / organic solutes",
-              "(a) phloem: from leaf to roots / growing tips / fruits (any sink)",
-              "(b) glucose converted to sucrose for transport",
-              "(b) sucrose loaded into phloem by active transport (companion cells)",
-              "(b) transported to sinks for respiration / storage / growth",
+              "many chloroplasts present",
+              "so absorb more light / higher rate of photosynthesis",
+              "column-shaped / tall cells packed near the upper surface",
+              "so positioned to receive maximum light / pack many near the top",
             ],
             commonError:
-              "Students often say phloem transports 'food' or 'glucose' — the correct answer is sucrose. Also, 'xylem carries food' is a common error; xylem carries water and mineral ions.",
+              "Just naming features without saying how each helps photosynthesis. Each adaptation must be linked to a benefit.",
             guideRef: "Leaf Structure and Adaptations",
             difficulty: "core",
             hints: [
-              "Xylem goes in one direction (up from roots). Phloem goes from source to sink. What is the leaf?",
-              "What molecule does the plant make from glucose for transport? Why not transport glucose directly?",
-              "How does sucrose get into the phloem — by diffusion or active transport?",
+              "Think about chloroplast number.",
+              "Think about cell shape and position.",
+              "Link each feature to absorbing more light.",
             ],
+            strategy: "function follows structure",
           },
           {
-            id: "bio-plant-nutrition-bank-qa2-q03",
+            id: "bio-plant-nutrition-bq2-03",
             question:
-              "An experiment is set up to test whether CO₂ is needed for photosynthesis:\n\n- Two plants of the same species are destarched for 48 hours.\n- Plant A is enclosed in a clear polythene bag with a small beaker of NaOH solution inside.\n- Plant B is enclosed in a clear polythene bag with a small beaker of water inside.\n- Both bags are sealed and placed in bright light for 6 hours.\n- A leaf from each plant is then tested for starch.\n\n(a) State the expected iodine test result for each plant. [2]\n(b) Identify ONE variable that is controlled by using clear polythene bags, and explain why this is important. [2]\n(c) Explain the purpose of Plant B in this investigation. [2]\n(d) The student suggests that instead of NaOH, she could use a piece of black card inside the bag for Plant A, to test the same hypothesis. Evaluate this alternative design. [3]",
-            marks: 9,
+              "Describe how the spongy mesophyll is adapted to allow efficient gas exchange in the leaf. [3]",
+            marks: 3,
             modelAnswer:
-              "(a) Plant A (NaOH — no CO₂): orange-brown — no starch. Plant B (water — CO₂ present): blue-black — starch present.\n\n(b) The clear polythene bags allow the same light intensity to reach both plants. Light intensity is a limiting factor for photosynthesis; if one plant received less light, this could be a confounding variable — it would be impossible to conclude whether the difference in starch was due to CO₂ availability or light availability.\n\n(c) Plant B is the control. It has all conditions identical to Plant A except that it has water instead of NaOH — so CO₂ is NOT removed. If Plant B produces starch (blue-black) and Plant A does not, the difference can be attributed to the removal of CO₂ by NaOH. Without a control, there is no baseline to compare the experimental result against.\n\n(d) This alternative is a poor design because it tests a different variable. Black card inside the bag would remove light from the plant (or at least shade it significantly), not CO₂. The hypothesis being tested is whether CO₂ is needed — but the black card design would test whether light is needed. The student would be unable to conclude anything about CO₂ from this design. To test CO₂, the variable changed must be CO₂ availability (which NaOH achieves), not light.",
+              "The spongy mesophyll has many air spaces between its irregularly shaped cells. These air spaces are continuous with the stomata, allowing carbon dioxide to diffuse in and oxygen to diffuse out quickly throughout the leaf. The large, moist surface area of cell walls facing the air spaces increases the rate of gas exchange and keeps diffusion distances short.",
             markScheme: [
-              "(a) Plant A: orange-brown / no starch",
-              "(a) Plant B: blue-black / starch present",
-              "(b) clear bags allow equal light intensity to reach both plants",
-              "(b) light is a limiting factor / controls a confounding variable",
-              "(c) Plant B is the control / provides a baseline comparison",
-              "(c) shows that under identical conditions WITH CO₂, starch is produced",
-              "(d) black card removes light, not CO₂ — different variable",
-              "(d) tests whether light is needed, NOT whether CO₂ is needed",
-              "(d) conclusion about CO₂ cannot be drawn from this design",
+              "air spaces between the cells",
+              "connected to stomata / allow CO₂ in and O₂ out by diffusion",
+              "large (moist) surface area of cell walls / short diffusion distance speeds exchange",
             ],
             commonError:
-              "Part (d): Students often say 'it won't work because it's too dark' — but the real issue is that this tests a different variable entirely (light, not CO₂). The hypothesis being tested changes.",
-            guideRef: "Experiments: Testing for Starch and Controlled Investigations",
+              "Confusing the role of the spongy layer (gas exchange) with the palisade layer (light absorption).",
+            guideRef: "Leaf Structure and Adaptations",
             difficulty: "core",
             hints: [
-              "What does NaOH do to CO₂? What does water do?",
-              "Clear vs opaque: what does 'clear' control for?",
-              "A control has everything the same except the one thing being tested. What is Plant B controlling for?",
-              "The black card changes light, not CO₂. Which hypothesis does this test?",
+              "What lies between the spongy cells?",
+              "How do gases move into and out of the leaf?",
+              "Why does a large moist surface area help?",
             ],
           },
           {
-            id: "bio-plant-nutrition-bank-qa2-q04",
+            id: "bio-plant-nutrition-bq2-04",
             question:
-              "A student grows two batches of cress seedlings hydroponically (in water with dissolved minerals). Batch X receives a complete nutrient solution. Batch Y receives a solution lacking magnesium ions but containing all other minerals including nitrate.\n\n(a) Predict the appearance of Batch Y seedlings compared to Batch X after two weeks, giving reasons for each difference. [4]\n(b) The student argues that Batch Y will photosynthesize more slowly than Batch X. Explain the chain of molecular events that links magnesium deficiency to a reduced rate of photosynthesis. [4]\n(c) The student adds magnesium ions to the Batch Y solution after four weeks. Predict whether the seedlings will fully recover. Justify your answer with reference to reversibility. [3]",
-            marks: 11,
+              "Explain the function of (a) xylem and (b) phloem in a leaf. [4]",
+            marks: 4,
             modelAnswer:
-              "(a) Batch Y seedlings will have yellowing (chlorotic) leaves compared to the healthy green of Batch X. This is because without Mg²⁺, chlorophyll cannot be synthesised — the leaves lack the green pigment. However, Batch Y should be similar in height/growth to Batch X (or only slightly smaller) because nitrate is still available, so amino acids and proteins can still be made, allowing cell division and growth to proceed. Any stunting in Batch Y would be secondary — caused by reduced photosynthesis (less glucose for energy and building materials), not directly by the magnesium deficiency affecting protein synthesis.\n\n(b) 1. Mg²⁺ is the central atom of the chlorophyll molecule — without it, chlorophyll cannot be assembled. 2. With less chlorophyll, fewer photons of red and blue light are absorbed. 3. Less light energy is transferred to the chemical reactions of photosynthesis. 4. Fewer molecules of CO₂ and H₂O are converted to glucose per unit time — so the rate of photosynthesis decreases.\n\n(c) Partial recovery is likely, but full recovery is uncertain. New leaves formed after adding Mg²⁺ will be able to synthesise chlorophyll and will be green and healthy. However, already-yellowed older leaves may not fully recover. In some cases, if the chloroplasts in older leaves are still structurally intact, some chlorophyll can be resynthesised — but if the cells are severely damaged or dead, recovery is impossible. The plant will look healthier overall due to new green growth, but the oldest leaves may remain yellow.",
+              "(a) Xylem brings water and dissolved mineral ions (such as nitrate and magnesium) from the roots up to the leaf. The water is used as a reactant in photosynthesis and to keep cells turgid. (b) Phloem carries dissolved sugars, mainly sucrose, away from the leaf to other parts of the plant, such as growing tips, roots and storage organs.",
             markScheme: [
-              "(a) Batch Y: yellow / chlorotic leaves",
-              "(a) because Mg²⁺ needed for chlorophyll synthesis / without Mg²⁺ no chlorophyll",
-              "(a) Batch Y: similar growth / height to Batch X (nitrate present → proteins made)",
-              "(a) any stunting is secondary (less photosynthesis → less energy)",
-              "(b) Mg²⁺ is central atom of chlorophyll",
-              "(b) without Mg²⁺, chlorophyll cannot be made",
-              "(b) less chlorophyll → less light absorbed",
-              "(b) less light energy available → less CO₂ fixed → reduced rate of photosynthesis",
-              "(c) new leaves will be green / can synthesise chlorophyll with added Mg²⁺",
-              "(c) severely damaged / dead cells in old leaves may not recover",
-              "(c) partial recovery likely; full recovery of oldest leaves uncertain / depends on cell damage",
+              "xylem brings water to the leaf",
+              "xylem also carries dissolved mineral ions",
+              "phloem carries sucrose / dissolved sugars",
+              "phloem transports them away from the leaf to other parts of the plant",
             ],
             commonError:
-              "Students often predict that Batch Y will show stunted growth as prominently as nitrate deficiency — this is incorrect. Stunted growth is the hallmark of NITRATE deficiency (proteins cannot be made). Magnesium deficiency primarily causes chlorosis. Growth continues because nitrate is present.",
-            guideRef: "Mineral Nutrition: Nitrate and Magnesium Ions",
+              "Swapping the two: remember xylem = water up; phloem = food (sucrose) around the plant.",
+            guideRef: "Leaf Structure and Adaptations",
+            difficulty: "core",
+            hints: [
+              "One vessel brings water; the other carries sugar.",
+              "Xylem connects to the roots and water supply.",
+              "Phloem transports the products of photosynthesis.",
+            ],
+          },
+          {
+            id: "bio-plant-nutrition-bq2-05",
+            question:
+              "Describe how guard cells open and close the stomata, and state why this is important for the plant. [4]",
+            marks: 4,
+            modelAnswer:
+              "When guard cells take in water by osmosis they become turgid. Because the inner wall of each guard cell is thicker (less stretchy) than the outer wall, the cells bow outward, opening the stoma. When the guard cells lose water they become flaccid and straighten, closing the stoma. This control is important because it lets the plant open the stomata to allow carbon dioxide in for photosynthesis, while closing them when needed to reduce water loss by transpiration.",
+            markScheme: [
+              "guard cells gain water by osmosis / become turgid to open",
+              "unequal wall thickness causes them to bow apart (open)",
+              "lose water / become flaccid to close the stoma",
+              "controls gas exchange (CO₂ in) while limiting water loss",
+            ],
+            commonError:
+              "Saying the stoma opens when guard cells become flaccid — it is the opposite: turgid guard cells open the pore.",
+            guideRef: "Leaf Structure and Adaptations",
+            difficulty: "core",
+            hints: [
+              "What happens to guard cells when water enters by osmosis?",
+              "Why do they bow outward rather than just swell evenly?",
+              "Link opening/closing to CO₂ supply and water conservation.",
+            ],
+          },
+          {
+            id: "bio-plant-nutrition-bq2-06",
+            question:
+              "Explain why most stomata are found on the lower surface of a leaf rather than the upper surface. [3]",
+            marks: 3,
+            modelAnswer:
+              "The lower surface is shaded from direct sunlight and is cooler than the upper surface. Having stomata there reduces the temperature and so reduces the rate of evaporation of water through the stomata, helping the plant conserve water. The upper surface, which is hotter and more exposed, is instead protected by a thicker waxy cuticle to limit water loss.",
+            markScheme: [
+              "lower surface is cooler / shaded / less exposed to direct sun",
+              "so less evaporation / less water loss through stomata",
+              "conserves water while still allowing gas exchange",
+            ],
+            commonError:
+              "Saying stomata are on the underside 'so gases can escape' without explaining the water-conservation benefit of the cooler position.",
+            guideRef: "Leaf Structure and Adaptations",
+            difficulty: "core",
+            hints: [
+              "Compare temperature of the upper and lower surfaces.",
+              "Higher temperature increases evaporation.",
+              "Why is conserving water an advantage?",
+            ],
+          },
+          {
+            id: "bio-plant-nutrition-bq2-07",
+            question:
+              "State three functions of the waxy cuticle and the upper epidermis together. [3]",
+            marks: 3,
+            modelAnswer:
+              "The waxy cuticle is waterproof, reducing water loss by evaporation. It is transparent, so it lets light pass through to the photosynthetic cells below. The upper epidermis is a protective layer of cells that has no chloroplasts (so it does not block light) and secretes the waxy cuticle; together they protect the inner tissues while letting light reach the palisade cells.",
+            markScheme: [
+              "waterproof / reduces water loss",
+              "transparent / allows light through to palisade cells",
+              "protective layer / upper epidermis has no chloroplasts so does not block light",
+            ],
+            commonError:
+              "Saying the upper epidermis carries out photosynthesis. It has no chloroplasts; its role is protection and being transparent.",
+            guideRef: "Leaf Structure and Adaptations",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-plant-nutrition-bq2-08",
+            question:
+              "Compare the net gas exchange of a leaf in bright sunlight with the net gas exchange of the same leaf in darkness. [4]",
+            marks: 4,
+            modelAnswer:
+              "In bright sunlight the leaf photosynthesises faster than it respires, so overall it takes in carbon dioxide and releases oxygen (net intake of CO₂, net release of O₂). In darkness photosynthesis stops but respiration continues, so the leaf takes in oxygen and releases carbon dioxide (net intake of O₂, net release of CO₂). Respiration occurs at all times; only the balance of the two processes changes.",
+            markScheme: [
+              "in bright light photosynthesis exceeds respiration",
+              "so net CO₂ taken in and net O₂ released",
+              "in darkness only respiration occurs (no photosynthesis)",
+              "so net O₂ taken in and net CO₂ released",
+            ],
+            commonError:
+              "Stating that respiration stops in the light. Respiration continues constantly; in bright light photosynthesis simply outpaces it.",
+            guideRef: "Leaf Structure and Adaptations",
             difficulty: "challenge",
             hints: [
-              "Magnesium is needed for chlorophyll — what colour change does this cause?",
-              "Nitrate IS present in Batch Y. Does this mean proteins can still be made? What does this mean for growth?",
-              "Trace the chain: no Mg²⁺ → no chlorophyll → less light absorbed → less photosynthesis.",
-              "Recovery: can existing damaged leaf cells always recover? What about new leaves?",
+              "Both photosynthesis and respiration happen in the light.",
+              "Which dominates in bright light?",
+              "In darkness, which process stops and which continues?",
+              "State the NET direction of each gas.",
             ],
-            strategy: "trace molecular chain; distinguish primary from secondary effects",
+          },
+          {
+            id: "bio-plant-nutrition-bq2-09",
+            question:
+              "A leaf has a surface area of 30 cm². A student counts an average of 120 stomata per mm² on the lower surface and 10 stomata per mm² on the upper surface. Calculate the approximate total number of stomata on the lower surface of this leaf, showing your working. [3]",
+            marks: 3,
+            modelAnswer:
+              "Convert the leaf area to mm²: 30 cm² × 100 mm² per cm² = 3000 mm². Number of stomata on the lower surface = density × area = 120 stomata per mm² × 3000 mm² = 360 000 stomata. So there are approximately 3.6 × 10⁵ stomata on the lower surface.",
+            markScheme: [
+              "convert 30 cm² to 3000 mm² (×100)",
+              "multiply density × area: 120 × 3000",
+              "= 360 000 stomata / 3.6 × 10⁵ (with correct working)",
+            ],
+            commonError:
+              "Using ×10 instead of ×100 to convert cm² to mm². Remember 1 cm² = 10 mm × 10 mm = 100 mm².",
+            guideRef: "Leaf Structure and Adaptations",
+            difficulty: "challenge",
+            hints: [
+              "First convert the leaf area into mm².",
+              "1 cm = 10 mm, so 1 cm² = 100 mm².",
+              "Multiply the stomatal density by the area in mm².",
+            ],
+            strategy: "convert units before calculating",
             solutions: [
               {
-                label: "Chain-of-events approach",
+                label: "Unit conversion then multiply",
                 steps: [
-                  "Mg²⁺ absent → chlorophyll molecule cannot be assembled (Mg²⁺ is the central ion).",
-                  "Without chlorophyll: leaves cannot absorb red/blue light → less energy captured.",
-                  "Less energy → fewer CO₂ + H₂O molecules converted per second → rate of photosynthesis falls.",
-                  "Less glucose from photosynthesis → less ATP from respiration → less energy for growth → secondary stunting (but primary symptom is chlorosis, not stunting, because nitrate is present).",
+                  "Area: 1 cm² = 10 mm × 10 mm = 100 mm², so 30 cm² = 30 × 100 = 3000 mm².",
+                  "Lower-surface count = density × area = 120 mm⁻² × 3000 mm² = 360 000.",
+                  "Express to a sensible form: 360 000 = 3.6 × 10⁵ stomata.",
+                  "(The upper-surface figure of 10 per mm² is not needed for this part.)",
                 ],
               },
             ],
+          },
+          {
+            id: "bio-plant-nutrition-bq2-10",
+            question:
+              "Suggest and explain three features you would expect to see in the leaves of a plant adapted to a hot, dry desert environment. [3]",
+            marks: 3,
+            modelAnswer:
+              "1. A thick waxy cuticle, to reduce water loss by evaporation from the leaf surface. 2. Fewer stomata, and/or stomata sunk in pits or on the lower surface only, to reduce water lost by transpiration (sunken stomata trap humid air, lowering the gradient for evaporation). 3. A small surface area or rolled leaves (or spines), to reduce the area from which water can evaporate. Each feature reduces water loss while still allowing some gas exchange for photosynthesis.",
+            markScheme: [
+              "thick waxy cuticle to reduce evaporation",
+              "fewer / sunken stomata (or stomata on lower surface) to reduce transpiration",
+              "reduced surface area / rolled leaves / spines to reduce water loss",
+            ],
+            commonError:
+              "Suggesting features that would increase water loss (e.g. many large open stomata). Desert adaptations reduce water loss.",
+            guideRef: "Leaf Structure and Adaptations",
+            difficulty: "challenge",
+            hints: [
+              "The main problem is water loss.",
+              "Think about the cuticle, the stomata, and the leaf shape/area.",
+              "Each adaptation should reduce evaporation/transpiration.",
+            ],
+          },
+        ],
+      },
+      {
+        id: "bio-plant-nutrition-bankqa-3",
+        title: "Question Bank — Structured Paper 3",
+        description:
+          "Ten structured questions on limiting factors, rate graphs, and greenhouse applications.",
+        questions: [
+          {
+            id: "bio-plant-nutrition-bq3-01",
+            question:
+              "Define the term 'limiting factor' and name the three main limiting factors of photosynthesis. [3]",
+            marks: 3,
+            modelAnswer:
+              "A limiting factor is the factor that is in shortest supply and so controls (limits) the rate of a process; increasing any other factor will not raise the rate until the limiting factor is increased. The three main limiting factors of photosynthesis are light intensity, carbon dioxide concentration, and temperature.",
+            markScheme: [
+              "limiting factor = the factor in shortest supply / that controls the rate",
+              "increasing other factors does not raise the rate while it limits",
+              "names all three: light intensity, CO₂ concentration, temperature",
+            ],
+            commonError:
+              "Listing only two factors, or adding 'water' as a fourth main factor (water is rarely the limiting factor in these graphs).",
+            guideRef: "Limiting Factors of Photosynthesis",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-plant-nutrition-bq3-02",
+            question:
+              "A graph shows the rate of photosynthesis rising steeply as light intensity increases from zero, then levelling off to a plateau at higher light intensities. Explain the shape of this graph. [4]",
+            marks: 4,
+            modelAnswer:
+              "At low light intensities, light is the limiting factor: as light intensity increases, more light energy is absorbed by chlorophyll, so the rate of photosynthesis rises steeply. As light intensity continues to increase, the rate eventually levels off (plateau) because light is no longer limiting — another factor, such as carbon dioxide concentration or temperature, has become the limiting factor. Increasing light beyond this point has no further effect on the rate.",
+            markScheme: [
+              "at low light, light intensity is the limiting factor",
+              "more light absorbed → rate increases (rising part)",
+              "plateau = light is no longer limiting",
+              "another factor (CO₂ / temperature) now limits the rate",
+            ],
+            commonError:
+              "Saying the plant is 'full' or 'tired' at the plateau. The plateau means a different factor has become limiting.",
+            guideRef: "Limiting Factors of Photosynthesis",
+            difficulty: "core",
+            hints: [
+              "What limits the rate while the line is rising?",
+              "A flat section means changing that factor no longer helps.",
+              "Name the factor that has become limiting at the plateau.",
+            ],
+            strategy: "identify the limiting factor from the graph",
+          },
+          {
+            id: "bio-plant-nutrition-bq3-03",
+            question:
+              "On the same axes, a second curve is drawn for the same plant but at a higher carbon dioxide concentration. Describe and explain how this second curve differs from the first. [4]",
+            marks: 4,
+            modelAnswer:
+              "At low light intensities the two curves are similar, because light is the limiting factor for both (CO₂ is not yet limiting). At higher light intensities the second curve (higher CO₂) rises to a higher plateau than the first. This is because, with more CO₂ available, CO₂ is no longer the limiting factor as soon, so a higher rate of photosynthesis can be reached before another factor limits it. This confirms that CO₂ was limiting at the first curve's plateau.",
+            markScheme: [
+              "at low light both curves similar (light is limiting for both)",
+              "higher CO₂ curve reaches a higher plateau",
+              "because more CO₂ available / CO₂ no longer limits as soon",
+              "shows CO₂ was the limiting factor at the lower plateau",
+            ],
+            commonError:
+              "Saying the higher-CO₂ curve is steeper at the start. At low light, light limits both, so the initial gradients are essentially the same; the difference shows at the plateau.",
+            guideRef: "Limiting Factors of Photosynthesis",
+            difficulty: "challenge",
+            hints: [
+              "Where light is limiting, does extra CO₂ help?",
+              "Compare the heights of the two plateaus.",
+              "What does a higher plateau tell you about the old limiting factor?",
+            ],
+          },
+          {
+            id: "bio-plant-nutrition-bq3-04",
+            question:
+              "Explain how and why temperature affects the rate of photosynthesis, including what happens at very high temperatures. [4]",
+            marks: 4,
+            modelAnswer:
+              "Photosynthesis involves enzyme-controlled reactions. As temperature increases, molecules have more kinetic energy and collide more often, so the rate of the enzyme-controlled reactions increases. This continues up to the optimum temperature (about 35–40 °C for many plants). Above the optimum, the high temperature denatures the enzymes — the shape of the active site changes so it can no longer bind the substrate — so the rate falls sharply.",
+            markScheme: [
+              "photosynthesis is enzyme-controlled",
+              "higher temperature → more kinetic energy / more frequent collisions → faster rate",
+              "rate rises up to an optimum temperature",
+              "above optimum, enzymes denature (active site changes shape) → rate falls",
+            ],
+            commonError:
+              "Saying enzymes are 'killed' at high temperature. Enzymes are not alive; they are denatured (their shape changes irreversibly).",
+            guideRef: "Limiting Factors of Photosynthesis",
+            difficulty: "core",
+            hints: [
+              "What kind of reactions does photosynthesis depend on?",
+              "How does temperature affect reaction rate up to the optimum?",
+              "What happens to enzymes above the optimum temperature?",
+            ],
+          },
+          {
+            id: "bio-plant-nutrition-bq3-05",
+            question:
+              "Commercial greenhouse growers often add extra carbon dioxide and use heaters and lamps. Explain how each of these three measures can increase crop yield. [3]",
+            marks: 3,
+            modelAnswer:
+              "Adding extra carbon dioxide raises the CO₂ concentration so that CO₂ is less likely to be the limiting factor, allowing a faster rate of photosynthesis. Using heaters keeps the temperature near the enzymes' optimum, so the enzyme-controlled reactions of photosynthesis proceed quickly. Using lamps increases light intensity (especially in winter or at night) so that light is less likely to be limiting. With none of the three factors limiting, photosynthesis is faster, so the plants make more glucose and grow more, increasing yield.",
+            markScheme: [
+              "extra CO₂ so CO₂ not limiting → faster photosynthesis",
+              "heaters keep temperature near optimum for enzymes",
+              "lamps increase light intensity so light not limiting / faster photosynthesis → more glucose → higher yield",
+            ],
+            commonError:
+              "Saying more heat is always better. Temperature must be kept near the optimum; too high denatures enzymes.",
+            guideRef: "Limiting Factors of Photosynthesis",
+            difficulty: "core",
+            hints: [
+              "Link each measure to one limiting factor.",
+              "Each measure removes a possible bottleneck.",
+              "Faster photosynthesis means more glucose for growth.",
+            ],
+          },
+          {
+            id: "bio-plant-nutrition-bq3-06",
+            question:
+              "A student investigates photosynthesis in pondweed by counting oxygen bubbles per minute at different lamp distances. Identify two variables she should keep constant (control), and for each explain why. [4]",
+            marks: 4,
+            modelAnswer:
+              "1. Temperature of the water should be kept constant (e.g. using a water bath or beaker of water as a heat shield), because temperature is itself a limiting factor and a change in temperature would affect the rate, making it impossible to tell whether changes were due to light. 2. Carbon dioxide concentration should be kept constant (e.g. by using the same volume of the same sodium hydrogencarbonate solution), because CO₂ is a reactant and another limiting factor, so changing it would also change the rate. (Other valid controls: same piece/length of pondweed, same lamp/bulb.)",
+            markScheme: [
+              "temperature kept constant",
+              "because temperature is a limiting factor / would otherwise affect the rate",
+              "CO₂ concentration kept constant (same NaHCO₃)",
+              "because CO₂ is a reactant / limiting factor that would affect the rate",
+            ],
+            commonError:
+              "Naming the independent variable (light/distance) or the dependent variable (bubbles) as a control variable.",
+            guideRef: "Limiting Factors of Photosynthesis",
+            difficulty: "core",
+            hints: [
+              "Control variables are the ones you keep the same.",
+              "Do not name the factor you are deliberately changing.",
+              "Think of the other two limiting factors.",
+            ],
+          },
+          {
+            id: "bio-plant-nutrition-bq3-07",
+            question:
+              "In a pondweed experiment the rate of oxygen production was 36 bubbles in 3 minutes at 10 cm from the lamp, and 12 bubbles in 3 minutes at 30 cm. Calculate the rate in bubbles per minute at each distance, and comment on how moving the lamp from 10 cm to 30 cm affected the rate. [4]",
+            marks: 4,
+            modelAnswer:
+              "Rate at 10 cm = 36 bubbles ÷ 3 minutes = 12 bubbles per minute. Rate at 30 cm = 12 bubbles ÷ 3 minutes = 4 bubbles per minute. Moving the lamp from 10 cm to 30 cm reduced the rate from 12 to 4 bubbles per minute, i.e. to one third. This is because moving the lamp three times further away greatly reduces the light intensity reaching the plant (light intensity falls with the square of the distance), and with less light, light became more strongly limiting, so the rate of photosynthesis fell.",
+            markScheme: [
+              "rate at 10 cm = 12 bubbles per minute (36 ÷ 3)",
+              "rate at 30 cm = 4 bubbles per minute (12 ÷ 3)",
+              "rate fell to one third / decreased",
+              "because greater distance lowers light intensity / light more limiting",
+            ],
+            commonError:
+              "Forgetting to divide by the time. The question asks for a rate (per minute), so divide the bubble count by 3.",
+            guideRef: "Limiting Factors of Photosynthesis",
+            difficulty: "challenge",
+            hints: [
+              "Rate = number of bubbles ÷ time in minutes.",
+              "Do this for both distances.",
+              "Compare the two rates as a ratio.",
+              "Link the change to light intensity and distance.",
+            ],
+            strategy: "calculate a rate, then compare",
+            solutions: [
+              {
+                label: "Rate calculation and comparison",
+                steps: [
+                  "At 10 cm: rate = 36 ÷ 3 = 12 bubbles per minute.",
+                  "At 30 cm: rate = 12 ÷ 3 = 4 bubbles per minute.",
+                  "Compare: 4 ÷ 12 = 1/3, so the rate dropped to one third of its value.",
+                  "Explanation: tripling the distance sharply lowers light intensity (intensity ∝ 1/distance²), so light limits the rate more strongly and photosynthesis slows.",
+                ],
+              },
+            ],
+          },
+          {
+            id: "bio-plant-nutrition-bq3-08",
+            question:
+              "Explain why, on a graph of rate of photosynthesis against carbon dioxide concentration, the line rises and then plateaus. [3]",
+            marks: 3,
+            modelAnswer:
+              "At low carbon dioxide concentrations, CO₂ is the limiting factor: increasing it provides more reactant, so the rate of photosynthesis rises. At higher CO₂ concentrations the line plateaus because CO₂ is no longer limiting — another factor, such as light intensity or temperature, has become the limiting factor, so adding more CO₂ does not increase the rate.",
+            markScheme: [
+              "at low CO₂, CO₂ is the limiting factor → rate rises as CO₂ added",
+              "CO₂ is a reactant / provides more raw material",
+              "plateau because another factor (light/temperature) now limits the rate",
+            ],
+            commonError:
+              "Saying CO₂ becomes 'used up' at the plateau. The plateau is because a different factor limits the rate, not because CO₂ runs out.",
+            guideRef: "Limiting Factors of Photosynthesis",
+            difficulty: "core",
+            hints: [
+              "CO₂ is a reactant — why does adding more help at first?",
+              "What does the flat part mean?",
+              "Which other factors could become limiting?",
+            ],
+          },
+          {
+            id: "bio-plant-nutrition-bq3-09",
+            question:
+              "A grower keeps a greenhouse at high light and high CO₂ but does not heat it on a cold night, and finds the crop grows slowly. Use the idea of limiting factors to explain this observation, and suggest how the grower could improve growth. [3]",
+            marks: 3,
+            modelAnswer:
+              "On a cold night the temperature is low, so even though light and CO₂ are plentiful, temperature has become the limiting factor: the enzyme-controlled reactions of photosynthesis are slow at low temperature because molecules have less kinetic energy. So the rate of photosynthesis, and therefore growth, is low. The grower could improve growth by heating the greenhouse to bring the temperature closer to the optimum for the plants' enzymes, so temperature no longer limits the rate.",
+            markScheme: [
+              "low temperature is the limiting factor (despite high light and CO₂)",
+              "enzyme reactions slow at low temperature / less kinetic energy",
+              "suggestion: heat the greenhouse toward the optimum temperature",
+            ],
+            commonError:
+              "Suggesting more light or CO₂ — these are already high and not limiting, so adding more would not help.",
+            guideRef: "Limiting Factors of Photosynthesis",
+            difficulty: "challenge",
+            hints: [
+              "Which factor is low here?",
+              "How does low temperature affect enzyme reactions?",
+              "Suggest a change that fixes the actual limiting factor.",
+            ],
+            strategy: "identify the limiting factor",
+          },
+          {
+            id: "bio-plant-nutrition-bq3-10",
+            question:
+              "Explain why only one factor can be limiting the rate of photosynthesis at any one moment, using the idea of the 'slowest step' in a process. [3]",
+            marks: 3,
+            modelAnswer:
+              "Photosynthesis is a multi-step process, and the overall rate cannot be faster than its slowest step. At any moment, the factor that is in shortest supply controls the rate of that slowest step, so it sets the overall rate — this is the limiting factor. Increasing any other factor cannot speed up the overall process while the slowest step is still controlled by the limiting factor; only when the limiting factor is increased (so a different step becomes slowest) can the rate rise, after which a new factor becomes limiting.",
+            markScheme: [
+              "the overall rate cannot exceed the slowest step",
+              "the factor in shortest supply controls that slowest step / sets the rate",
+              "increasing other factors does not help until the limiting factor is increased",
+            ],
+            commonError:
+              "Thinking two factors can be 'jointly' limiting. At a given instant, one factor sets the slowest step and so the rate.",
+            guideRef: "Limiting Factors of Photosynthesis",
+            difficulty: "challenge",
+            hints: [
+              "Picture an assembly line with one slow station.",
+              "The whole line runs at the speed of its slowest station.",
+              "Speeding up other stations does not help until the slow one is fixed.",
+            ],
+          },
+        ],
+      },
+      {
+        id: "bio-plant-nutrition-bankqa-4",
+        title: "Question Bank — Structured Paper 4",
+        description:
+          "Ten structured questions on starch testing, controlled experiments, and mineral nutrition.",
+        questions: [
+          {
+            id: "bio-plant-nutrition-bq4-01",
+            question:
+              "Describe, in the correct order, the steps used to test a leaf for the presence of starch. [5]",
+            marks: 5,
+            modelAnswer:
+              "1. Destarch the plant first by keeping it in darkness for 24–48 hours (so any starch found later was made during the experiment). 2. Remove the leaf and dip it in boiling water to kill the cells, stop enzyme activity, and soften the cell walls. 3. Place the leaf in hot ethanol (heated in a water bath, not over a naked flame) to dissolve out the green chlorophyll. 4. Rinse the leaf in cold water to soften it and remove ethanol. 5. Spread the leaf out and add iodine solution; a blue-black colour shows starch is present, while orange-brown shows no starch.",
+            markScheme: [
+              "destarch the plant (24–48 h darkness) first",
+              "boil leaf in water to kill cells / soften it",
+              "decolourise in hot ethanol (water bath) to remove chlorophyll",
+              "rinse leaf in (cold) water",
+              "add iodine: blue-black = starch present, orange-brown = none",
+            ],
+            commonError:
+              "Heating ethanol directly with a flame (a fire hazard) or forgetting to destarch first, which would make results unreliable.",
+            guideRef: "Experiments: Testing for Starch and Controlled Investigations",
+            difficulty: "core",
+            hints: [
+              "What must you do to the plant before the test?",
+              "Why kill and soften the leaf first?",
+              "How is chlorophyll removed, and how safely?",
+              "What is the final reagent and its colour change?",
+            ],
+          },
+          {
+            id: "bio-plant-nutrition-bq4-02",
+            question:
+              "A destarched plant has one leaf partly covered with opaque foil and is left in bright light for a day, then tested for starch. Predict the result for the covered and uncovered parts, and state the conclusion. [4]",
+            marks: 4,
+            modelAnswer:
+              "The uncovered part received light, so it could photosynthesise and make starch; it turns blue-black with iodine. The covered part was kept in darkness by the foil, so it could not photosynthesise and made no starch; it stays orange-brown. Since only the part exposed to light made starch, the conclusion is that light is needed for photosynthesis (for starch production).",
+            markScheme: [
+              "uncovered part turns blue-black (starch present)",
+              "covered part stays orange-brown (no starch)",
+              "because covered part had no light / could not photosynthesise",
+              "conclusion: light is needed for photosynthesis",
+            ],
+            commonError:
+              "Forgetting that the plant must be destarched first; otherwise both parts might already contain starch.",
+            guideRef: "Experiments: Testing for Starch and Controlled Investigations",
+            difficulty: "core",
+            hints: [
+              "Which part got light?",
+              "Starch forms only where photosynthesis happened.",
+              "State the iodine colour for each part.",
+              "What variable was being tested?",
+            ],
+          },
+          {
+            id: "bio-plant-nutrition-bq4-03",
+            question:
+              "Describe how you would use a variegated leaf to show that chlorophyll is needed for photosynthesis, and give the expected result. [4]",
+            marks: 4,
+            modelAnswer:
+              "First destarch the plant (keep it in darkness for 24–48 hours). Then leave the variegated leaf in bright light for several hours. Record (or draw) which parts are green and which are white before testing. Test the leaf for starch (boil, decolourise in hot ethanol, rinse, add iodine). The expected result is that only the green parts (which contain chlorophyll) turn blue-black, showing starch is present there, while the white parts (no chlorophyll) stay orange-brown. This shows chlorophyll is needed for photosynthesis.",
+            markScheme: [
+              "destarch the plant first / expose leaf to light",
+              "record which areas are green and which white before testing",
+              "carry out starch test (ethanol decolourise, iodine)",
+              "only green (chlorophyll) areas turn blue-black → chlorophyll needed",
+            ],
+            commonError:
+              "Not recording the green/white pattern before decolourising — once the chlorophyll is removed you can no longer tell which areas were green.",
+            guideRef: "Experiments: Testing for Starch and Controlled Investigations",
+            difficulty: "core",
+            hints: [
+              "What is the controlled difference between leaf areas?",
+              "Why record the colour pattern before the test?",
+              "Which areas should make starch?",
+            ],
+            strategy: "use a built-in control",
+          },
+          {
+            id: "bio-plant-nutrition-bq4-04",
+            question:
+              "Explain how you would set up an experiment to show that carbon dioxide is needed for photosynthesis, including the control, and predict the results. [5]",
+            marks: 5,
+            modelAnswer:
+              "Destarch two similar potted plants by keeping them in the dark for 24–48 hours. Enclose the first plant's leaf (or the whole plant) in a sealed transparent container with a dish of sodium hydroxide solution, which absorbs the carbon dioxide from the air inside. Set up the second plant in the same way but with a dish of water (or sodium hydrogencarbonate) instead of sodium hydroxide — this is the control, which still has CO₂. Place both in bright light for several hours, then test a leaf from each for starch. Prediction: the leaf from the plant without CO₂ (NaOH present) stays orange-brown (no starch), while the control leaf (CO₂ present) turns blue-black (starch present). This shows CO₂ is needed for photosynthesis.",
+            markScheme: [
+              "destarch the plant(s) first",
+              "enclose plant with sodium hydroxide to absorb CO₂",
+              "set up a control with CO₂ present (water / NaHCO₃) treated the same",
+              "expose to light, then starch test both",
+              "NaOH leaf orange-brown (no starch); control blue-black → CO₂ needed",
+            ],
+            commonError:
+              "Omitting the control plant. Without a control with CO₂ present, you cannot be sure the lack of starch was due to removing CO₂.",
+            guideRef: "Experiments: Testing for Starch and Controlled Investigations",
+            difficulty: "challenge",
+            hints: [
+              "Which chemical removes CO₂?",
+              "Why do you also need a control with CO₂ present?",
+              "Both plants must be destarched and given light.",
+              "Predict the iodine result for each.",
+            ],
+            strategy: "design a fair test with a control",
+          },
+          {
+            id: "bio-plant-nutrition-bq4-05",
+            question:
+              "Explain why we test leaves for starch rather than for glucose when investigating photosynthesis. [3]",
+            marks: 3,
+            modelAnswer:
+              "Glucose made in photosynthesis is quickly used (in respiration) or converted to other substances (such as sucrose for transport), so its concentration changes rapidly and it may be present even when little photosynthesis has occurred. Starch is the stored form and builds up in the cells where photosynthesis has taken place, giving a more reliable indicator. There is also a simple, clear test for starch (iodine turns blue-black), making starch easier to detect in a leaf.",
+            markScheme: [
+              "glucose is quickly used / converted to other substances (e.g. sucrose, starch)",
+              "starch is the stored product / accumulates where photosynthesis occurred",
+              "iodine gives a simple clear test for starch (blue-black)",
+            ],
+            commonError:
+              "Saying glucose 'cannot be tested for' — it can (e.g. Benedict's test), but it is less reliable in a leaf because it is rapidly used or converted.",
+            guideRef: "Experiments: Testing for Starch and Controlled Investigations",
+            difficulty: "core",
+            hints: [
+              "What happens to glucose soon after it is made?",
+              "Which molecule accumulates in the leaf?",
+              "Is there a simple test for starch?",
+            ],
+          },
+          {
+            id: "bio-plant-nutrition-bq4-06",
+            question:
+              "State the role of nitrate ions in a plant and describe the symptoms of nitrate ion deficiency. [4]",
+            marks: 4,
+            modelAnswer:
+              "Nitrate ions (NO₃⁻) provide the nitrogen needed to make amino acids, which are joined together to form proteins (including enzymes). Proteins are needed for growth and metabolism. The symptoms of nitrate deficiency are stunted (poor) growth, because the plant cannot make enough protein to build new cells, and yellowing (chlorosis) of the older leaves, as nitrogen is moved from older leaves to the younger, growing tissue.",
+            markScheme: [
+              "nitrate provides nitrogen for amino acids",
+              "amino acids make proteins (for growth / enzymes)",
+              "deficiency symptom: stunted / poor growth",
+              "deficiency symptom: yellowing / chlorosis of (older) leaves",
+            ],
+            commonError:
+              "Saying nitrate is needed to make chlorophyll — that is magnesium. Nitrate is for proteins (and indirectly affects growth).",
+            guideRef: "Mineral Nutrition: Nitrate and Magnesium Ions",
+            difficulty: "core",
+            hints: [
+              "What element does nitrate supply?",
+              "Which molecules need that element?",
+              "Give both the growth and colour symptoms.",
+            ],
+          },
+          {
+            id: "bio-plant-nutrition-bq4-07",
+            question:
+              "State the role of magnesium ions in a plant and describe the symptom of magnesium ion deficiency. [3]",
+            marks: 3,
+            modelAnswer:
+              "Magnesium ions (Mg²⁺) are needed to make chlorophyll — magnesium is the central atom of the chlorophyll molecule. Without enough magnesium, the plant cannot make enough chlorophyll, so the leaves turn yellow (chlorosis). With less chlorophyll the plant also absorbs less light, so it photosynthesises more slowly.",
+            markScheme: [
+              "magnesium needed to make chlorophyll",
+              "deficiency causes yellowing / chlorosis of leaves",
+              "less chlorophyll → less light absorbed / slower photosynthesis",
+            ],
+            commonError:
+              "Mixing up magnesium and nitrate deficiency. Magnesium deficiency mainly causes yellowing (lack of chlorophyll), not severe stunting.",
+            guideRef: "Mineral Nutrition: Nitrate and Magnesium Ions",
+            difficulty: "warmup",
+          },
+          {
+            id: "bio-plant-nutrition-bq4-08",
+            question:
+              "Two plants are grown in water cultures. Plant A lacks nitrate; plant B lacks magnesium. After two weeks, describe how you could tell the two plants apart by their appearance, and explain the difference. [4]",
+            marks: 4,
+            modelAnswer:
+              "Plant A (no nitrate) would be small and stunted as well as having yellowing leaves, because without nitrate it cannot make enough protein for growth, so growth is poor; the yellowing tends to affect older leaves. Plant B (no magnesium) would be a more normal height but with yellow (chlorotic) leaves, because it can still make proteins (nitrate is present) and so grow, but it cannot make chlorophyll without magnesium. So the key difference: severe stunting plus yellowing points to nitrate deficiency (plant A), whereas yellowing without such severe stunting points to magnesium deficiency (plant B).",
+            markScheme: [
+              "plant A (no nitrate): stunted / small growth",
+              "because it cannot make enough protein for growth",
+              "plant B (no magnesium): more normal height but yellow leaves",
+              "because it can still make protein but not chlorophyll",
+            ],
+            commonError:
+              "Saying both look identical because both have yellow leaves — the distinguishing feature is the degree of stunting.",
+            guideRef: "Mineral Nutrition: Nitrate and Magnesium Ions",
+            difficulty: "challenge",
+            hints: [
+              "Both deficiencies cause yellowing — what is different?",
+              "Which deficiency stops the plant making proteins for growth?",
+              "Which deficiency mainly affects leaf colour?",
+            ],
+            strategy: "compare cause to symptom",
+          },
+          {
+            id: "bio-plant-nutrition-bq4-09",
+            question:
+              "Mineral ions such as nitrate are often present in soil at a lower concentration than inside the root cells. Explain how the root absorbs these ions and why this process needs energy. [3]",
+            marks: 3,
+            modelAnswer:
+              "Because the ions are at a lower concentration in the soil than inside the root cells, they must be absorbed against the concentration gradient (from low to high concentration). This is done by active transport, using carrier proteins in the cell membrane. Active transport requires energy in the form of ATP, which is supplied by respiration in the root cells; this is why a good supply of oxygen for respiration improves mineral uptake.",
+            markScheme: [
+              "ions absorbed against the concentration gradient (low → high)",
+              "by active transport (using carrier proteins)",
+              "requires energy (ATP) from respiration",
+            ],
+            commonError:
+              "Saying ions are absorbed by diffusion. Diffusion only moves substances down a gradient; here they move against it, so active transport is required.",
+            guideRef: "Mineral Nutrition: Nitrate and Magnesium Ions",
+            difficulty: "core",
+            hints: [
+              "Compare the ion concentration inside and outside the root.",
+              "Which transport process moves substances against a gradient?",
+              "Where does the energy for it come from?",
+            ],
+          },
+          {
+            id: "bio-plant-nutrition-bq4-10",
+            question:
+              "A gardener notices that a plant has pale, yellow older leaves and is also stunted, while a nearby plant of the same species has only yellow leaves but normal height. Suggest a diagnosis for each plant and describe how the gardener could test these ideas. [4]",
+            marks: 4,
+            modelAnswer:
+              "The first plant (yellow older leaves AND stunted) is most likely suffering from nitrate ion deficiency, because lack of nitrate prevents protein synthesis, causing both poor growth and yellowing. The second plant (yellow leaves but normal height) is most likely magnesium ion deficient, because lack of magnesium prevents chlorophyll synthesis (yellowing) but proteins can still be made so growth is more normal. To test these ideas, the gardener could grow similar plants in water cultures (or add fertilisers) that supply the suspected missing ion: adding nitrate should restore growth and green colour to the first type, and adding magnesium should restore the green colour to the second type. A control plant with a complete set of minerals should be grown for comparison.",
+            markScheme: [
+              "first plant: nitrate deficiency (stunted + yellow)",
+              "second plant: magnesium deficiency (yellow, normal height)",
+              "test by supplying the suspected ion (fertiliser / water culture)",
+              "use a control with complete minerals / see if symptoms are cured",
+            ],
+            commonError:
+              "Giving a diagnosis with no way to test it. A good answer suggests adding the missing ion and using a control for comparison.",
+            guideRef: "Mineral Nutrition: Nitrate and Magnesium Ions",
+            difficulty: "challenge",
+            hints: [
+              "Match each set of symptoms to a deficiency.",
+              "Stunting plus yellowing points to one ion; yellowing alone to the other.",
+              "How could you test by changing the minerals supplied?",
+              "Remember to include a control.",
+            ],
+            strategy: "diagnose then design a test",
           },
         ],
       },
