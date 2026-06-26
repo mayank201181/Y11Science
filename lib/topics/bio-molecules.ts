@@ -556,12 +556,12 @@ The DCPIP test for vitamin C can be made **semi-quantitative**: add fruit juice 
   questionBank: {
     mcqPapers: [
       {
-        id: "bio-molecules-bank-mcq-1",
-        title: "Biological Molecules — MCQ Paper 1",
-        description: "12 multiple-choice questions on chemical composition, macromolecule formation, and water.",
+        id: "bio-molecules-bankmcq-1",
+        title: "Question Bank — MCQ Paper 1",
+        description: "10 multiple-choice questions covering elements in biological molecules, condensation/hydrolysis, and food tests.",
         questions: [
           {
-            id: "bio-molecules-bank-mcq1-q01",
+            id: "bio-molecules-bm1-PLACEHOLDER",
             question: "Which of the following correctly lists the elements found in all amino acids?",
             options: ["C, H, O only", "C, H, O, N", "C, H, N, S", "C, H, O, N, S"],
             answerIndex: 1,

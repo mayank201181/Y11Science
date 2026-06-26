@@ -559,7 +559,7 @@ export const bioTransportCell: Topic = {
       {
         id: "bio-transport-cell-bankmcq-1",
         title: "Question Bank — MCQ Paper 1",
-        description: "10 multiple-choice questions covering diffusion, osmosis, osmosis in plant and animal cells, active transport, and SA:V ratio.",
+        description: "10 multiple-choice questions: diffusion fundamentals, osmosis, SA:V ratio, and active transport basics.",
         questions: [
           {
             id: "bio-transport-cell-bm1-01",
@@ -576,7 +576,7 @@ export const bioTransportCell: Topic = {
             difficulty: "warmup",
           },
           {
-            id: "bio-transport-cell-bank-mcq1-q02",
+            id: "bio-transport-cell-bm1-02",
             question: "Which change would increase the rate of osmosis across a visking tubing membrane?",
             options: [
               "Decreasing the temperature from 30 °C to 15 °C",

@@ -569,7 +569,7 @@ Equation: HCl(aq) + NaOH(aq) → NaCl(aq) + H₂O(l)
       {
         id: "chem-stoichiometry-bankmcq-1",
         title: "Question Bank — MCQ Paper 1",
-        description: "Ten MCQs covering symbols, balancing equations, Mᵣ, moles from mass, and empirical formula.",
+        description: "Ten MCQs covering ionic equations, state symbols, Avogadro number, balancing non-trivial equations, and moles from mass.",
         questions: [
           {
             id: "chem-stoichiometry-bm1-01",
