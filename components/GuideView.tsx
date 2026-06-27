@@ -4,7 +4,6 @@ import { useState } from "react";
 import type { Topic, GuideSection, SvgDiagram } from "@/lib/types";
 import { Markdown } from "./Markdown";
 import { AskAI } from "./AskAI";
-import { Explorable } from "./Explorables";
 import { getExtras } from "@/lib/extras";
 import { useStore } from "@/lib/store";
 
@@ -100,7 +99,13 @@ function Section({ s, topicTitle }: { s: GuideSection; topicTitle: string }) {
   );
 }
 
-export function GuideView({ topic }: { topic: Topic }) {
+export function GuideView({
+  topic,
+  onOpenInteractive,
+}: {
+  topic: Topic;
+  onOpenInteractive?: () => void;
+}) {
   const { markGuideRead, isGuideRead } = useStore();
   const extras = getExtras(topic.id);
   const read = isGuideRead(topic.id);
@@ -118,7 +123,20 @@ export function GuideView({ topic }: { topic: Topic }) {
 
       <p className="text-ink-soft">{topic.intro}</p>
 
-      {extras?.interactive && <Explorable name={extras.interactive} />}
+      {onOpenInteractive && (
+        <button
+          onClick={onOpenInteractive}
+          className="card p-4 w-full text-left border-sky-500/30 hover:-translate-y-0.5 transition flex items-center gap-3"
+        >
+          <span className="text-2xl">🔬</span>
+          <span>
+            <span className="font-bold block">Explore this topic interactively</span>
+            <span className="text-xs text-ink-soft">
+              Open the Interactive tab — change the inputs and watch the science respond.
+            </span>
+          </span>
+        </button>
+      )}
 
       {topic.guide.map((s, i) => (
         <Section key={i} s={s} topicTitle={topic.title} />

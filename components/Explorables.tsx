@@ -200,7 +200,7 @@ function CircuitLab() {
   );
 }
 
-const REGISTRY: Record<string, () => React.ReactElement> = {
+export const EXPLORABLES_BASE: Record<string, () => React.ReactElement> = {
   "ph-slider": PhSlider,
   "photosynthesis-rate": PhotoRate,
   "reaction-rate": ReactionRate,
@@ -208,6 +208,8 @@ const REGISTRY: Record<string, () => React.ReactElement> = {
   "half-life": HalfLife,
   "circuit-lab": CircuitLab,
 };
+
+const REGISTRY = EXPLORABLES_BASE;
 
 export function Explorable({ name }: { name: string }) {
   const Comp = REGISTRY[name];

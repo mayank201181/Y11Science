@@ -10,8 +10,9 @@ import { GuideView } from "@/components/GuideView";
 import { LearnSmartView } from "@/components/Flashcards";
 import { PaperRunner, type QItem } from "@/components/PaperRunner";
 import { ChallengeMode } from "@/components/ChallengeMode";
+import { InteractiveView } from "@/components/InteractiveWidgets";
 
-type Tab = "guide" | "learn" | "quiz" | "bank" | "challenge";
+type Tab = "guide" | "interactive" | "learn" | "quiz" | "bank" | "challenge";
 
 export default function TopicPage() {
   const { id } = useParams<{ id: string }>();
@@ -32,6 +33,7 @@ export default function TopicPage() {
 
   const tabs: { id: Tab; label: string; icon: string }[] = [
     { id: "guide", label: "Guide", icon: "📖" },
+    { id: "interactive", label: "Interactive", icon: "🔬" },
     { id: "learn", label: "Learn", icon: "🃏" },
     { id: "quiz", label: "Quick Quiz", icon: "✏️" },
     { id: "bank", label: "Question Bank", icon: "🏦" },
@@ -79,7 +81,10 @@ export default function TopicPage() {
         ))}
       </div>
 
-      {tab === "guide" && <GuideView topic={topic} />}
+      {tab === "guide" && (
+        <GuideView topic={topic} onOpenInteractive={() => setTab("interactive")} />
+      )}
+      {tab === "interactive" && <InteractiveView topicId={topic.id} />}
       {tab === "learn" && <LearnSmartView learn={topic.learn} />}
 
       {tab === "quiz" &&

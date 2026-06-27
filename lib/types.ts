@@ -111,7 +111,8 @@ export interface TopicExtras {
   didYouKnow?: string[];
   experiments?: Experiment[];
   bonusDiagrams?: SvgDiagram[];
-  interactive?: string; // key into the Explorables registry
+  interactive?: string; // key into the Explorables registry (single widget)
+  interactives?: string[]; // optional: several explorable keys for the Interactive tab
 }
 
 export interface SubjectMeta {
