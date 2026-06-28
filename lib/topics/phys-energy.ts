@@ -23,7 +23,8 @@ export const physEnergy: Topic = {
         "- **Elastic/strain** — energy stored in a stretched or compressed object\n" +
         "- **Nuclear** — energy stored in the nucleus of an atom\n" +
         "- **Internal (thermal)** — total kinetic and potential energy of the particles in a substance\n" +
-        "- **Electrostatic** — energy stored between charged objects\n\n" +
+        "- **Electrostatic** — energy stored between charged objects (charges in an electric field)\n" +
+        "- **Magnetic** — energy stored between magnets, or between a magnet and a magnetic material, in a magnetic field\n\n" +
         "Energy is **transferred** from one store to another by four mechanisms:\n\n" +
         "- **Mechanical work** — a force acting over a distance\n" +
         "- **Electrical working** — charge flowing through a potential difference\n" +
@@ -32,7 +33,7 @@ export const physEnergy: Topic = {
         "When you switch on a torch, chemical energy (battery) is transferred electrically to the bulb, " +
         "which then radiates light energy (waves) and dissipates heat energy (heating).",
       keyPoints: [
-        "There are 7 key energy stores: kinetic, GPE, chemical, elastic, nuclear, internal, electrostatic.",
+        "There are 8 key energy stores: kinetic, GPE, chemical, elastic, nuclear, internal (thermal), electrostatic, magnetic.",
         "Energy is transferred by: mechanical work, electrical working, heating, and waves.",
         "No energy store is ever 'used up' — energy is always transferred, never destroyed.",
         "Dissipation means energy spreads into the surroundings as less useful thermal energy.",
