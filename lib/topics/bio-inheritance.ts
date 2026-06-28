@@ -224,22 +224,71 @@ There are three alleles for the ABO gene: I^A (produces antigen A), I^B (produce
 | I^A I^B | AB (both antigens) |
 | ii | O |
 
+**Sickle-cell anaemia** is a second codominance example. The normal allele Hb^A and the sickle allele Hb^S are codominant: Hb^A Hb^A = normal red blood cells; Hb^S Hb^S = sickle-cell anaemia (all haemoglobin abnormal); Hb^A Hb^S (heterozygous, "sickle-cell trait") makes *both* normal and abnormal haemoglobin — so both alleles are visible in the heterozygote. The Hb^S allele arises from a single gene mutation (see the Variation section).
+
 **Sex determination** in humans:
-Sex is determined by the sex chromosomes. Females are **XX**; males are **XY**. The Y chromosome carries a gene (SRY) that triggers male development. Because fathers can pass either X or Y to offspring, the father determines the sex of the child.
+Sex is determined by the sex chromosomes — the 23rd pair. Females are **XX**; males are **XY**. The Y chromosome carries a gene that triggers male development. The mother (XX) can only put an X into each egg, but the father (XY) puts an X into half his sperm and a Y into the other half. Therefore **the father determines the sex of the child**.
 
 Cross XX (mother) × XY (father): gametes X and X from mother; X and Y from father.
 Punnett square gives XX : XY = 1:1 — 50% female, 50% male.
 
-**Pedigree charts** show inheritance patterns in families. Key rules: circles = females, squares = males, shaded = affected. A recessive condition can skip generations (carried in heterozygotes). If all affected individuals are male, suspect X-linked (sex-linked) inheritance.`,
+**Sex-linked inheritance** — when a gene is carried on a sex chromosome (almost always the X), the pattern of inheritance differs between the sexes. The X chromosome is much larger than the Y, so it carries genes (e.g. for clotting and for colour vision) that have **no matching allele on the Y**.
+
+- A male has only one X, so a single recessive allele on it is expressed — he cannot be a "carrier". This is why X-linked recessive conditions are far more common in males.
+- A female has two X chromosomes, so a recessive allele can be masked by a dominant allele on her other X. A heterozygous female is an unaffected **carrier**.
+
+Two important examples (both **X-linked recessive**):
+- **Red-green colour blindness** — alleles X^N (normal vision) and X^n (colour blind). A colour-blind male is X^n Y; a carrier female is X^N X^n.
+- **Haemophilia** — failure of blood to clot — alleles X^H (normal) and X^h (haemophilia). A carrier mother (X^H X^h) crossed with an unaffected father (X^H Y) gives sons that are X^H Y or X^h Y in a 1:1 ratio — half the sons affected, no daughters affected.
+
+When writing sex-linked genotypes, **always attach the allele to the X** (X^N X^n, X^h Y) — never write the allele on its own, because that loses the information that males have only one copy.
+
+**Pedigree charts** show inheritance patterns in families. Key rules: circles = females, squares = males, shaded = affected; a horizontal line joins a couple, a vertical line drops to their children. To read one: if two *unaffected* parents have an *affected* child, the condition must be **recessive** (the parents are carriers). If the condition appears in every generation, suspect **dominant**. If nearly all affected individuals are male, suspect **X-linked (sex-linked)**.`,
+      diagrams: [
+        {
+          caption: "Reading a pedigree: two unaffected carriers having an affected child",
+          svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Pedigree chart with unaffected parents shown as a circle and square joined by a line, and three children below of whom one is shaded to show an affected recessive individual">
+  <text x="160" y="14" font-size="11" fill="#eef0ff" text-anchor="middle" font-weight="bold">Pedigree: recessive condition</text>
+  <!-- Generation I: parents -->
+  <circle cx="110" cy="50" r="14" fill="none" stroke="#b7bce0" stroke-width="2"/>
+  <rect x="182" y="36" width="28" height="28" fill="none" stroke="#b7bce0" stroke-width="2"/>
+  <line x1="124" y1="50" x2="182" y2="50" stroke="#b7bce0" stroke-width="1.5"/>
+  <text x="110" y="84" font-size="8" fill="#b7bce0" text-anchor="middle">carrier ♀</text>
+  <text x="196" y="84" font-size="8" fill="#b7bce0" text-anchor="middle">carrier ♂</text>
+  <!-- drop line to sibship -->
+  <line x1="153" y1="50" x2="153" y2="110" stroke="#b7bce0" stroke-width="1.5"/>
+  <line x1="80" y1="110" x2="226" y2="110" stroke="#b7bce0" stroke-width="1.5"/>
+  <line x1="80" y1="110" x2="80" y2="124" stroke="#b7bce0" stroke-width="1.5"/>
+  <line x1="153" y1="110" x2="153" y2="124" stroke="#b7bce0" stroke-width="1.5"/>
+  <line x1="226" y1="110" x2="226" y2="124" stroke="#b7bce0" stroke-width="1.5"/>
+  <!-- Generation II: children -->
+  <circle cx="80" cy="138" r="14" fill="none" stroke="#b7bce0" stroke-width="2"/>
+  <rect x="139" y="124" width="28" height="28" fill="#fb7185" stroke="#fb7185" stroke-width="2"/>
+  <circle cx="226" cy="138" r="14" fill="none" stroke="#b7bce0" stroke-width="2"/>
+  <text x="153" y="172" font-size="8" fill="#fb7185" text-anchor="middle">affected ♂</text>
+  <text x="153" y="190" font-size="9" fill="#b7bce0" text-anchor="middle">Shaded = affected. Two unaffected parents + affected child = recessive.</text>
+  <!-- legend -->
+  <circle cx="270" cy="40" r="7" fill="none" stroke="#b7bce0" stroke-width="2"/>
+  <text x="282" y="43" font-size="8" fill="#b7bce0">female</text>
+  <rect x="263" y="55" width="14" height="14" fill="none" stroke="#b7bce0" stroke-width="2"/>
+  <text x="282" y="66" font-size="8" fill="#b7bce0">male</text>
+</svg>`
+        }
+      ],
       keyPoints: [
-        "Codominance: both alleles expressed in heterozygote (e.g. I^A I^B = blood group AB).",
+        "Codominance: both alleles expressed in heterozygote (e.g. I^A I^B = blood group AB; Hb^A Hb^S = sickle-cell trait).",
         "ABO blood group uses three alleles (I^A, I^B, i); I^A and I^B are codominant; both dominant over i.",
-        "Females are XX; males are XY — the father determines the sex of each child.",
-        "The sex ratio is 1:1 (50% male, 50% female) from the XX × XY cross.",
-        "In pedigree charts: circles = female, squares = male; shaded symbols indicate affected individuals."
+        "Females are XX; males are XY — the father determines the sex of each child; the sex ratio is 1:1.",
+        "X-linked recessive conditions (colour blindness, haemophilia) are commoner in males, who have only one X and cannot be carriers.",
+        "A heterozygous female (e.g. X^H X^h) is an unaffected carrier; write sex-linked alleles attached to the X.",
+        "Pedigrees: circles = female, squares = male, shaded = affected; two unaffected parents with an affected child means the allele is recessive."
       ],
       thinkDeeper: "Two parents both have blood group A. Could they have a child with blood group O? Yes — if both parents are heterozygous I^A i, the cross I^A i × I^A i gives a 1/4 chance of ii (group O). This is why blood group cannot rule out paternity on its own, but can rule it in certain cases.",
-      strategies: ["List all possible genotypes before drawing Punnett square", "Check codominance by asking: are both alleles visible in the heterozygote?"],
+      discovery: {
+        problem: "Colour blindness is X-linked recessive. A colour-blind man marries a woman who is not colour blind but whose father was colour blind. What fraction of their SONS would you expect to be colour blind, and could any of their daughters be colour blind?",
+        idea: "The woman's father (X^n Y) must have passed X^n to her, so she is a carrier X^N X^n. The man is X^n Y. Cross X^N X^n × X^n Y. Sons get Y from the father and either X^N or X^n from the mother → half the sons (X^n Y) are colour blind. Daughters get X^n from the father plus X^N or X^n from the mother → X^N X^n (carrier) or X^n X^n (colour blind), so yes — half the daughters are colour blind here, because the father is himself affected and contributes X^n."
+      },
+      strategies: ["List all possible genotypes before drawing Punnett square", "Always attach sex-linked alleles to the X chromosome", "For pedigrees: unaffected parents + affected child = recessive"],
     },
 
     // ── SECTION 5 ──────────────────────────────────────────────────────────────
@@ -256,23 +305,63 @@ Punnett square gives XX : XY = 1:1 — 50% female, 50% male.
 2. **Environmental**: nutrition, sunlight, training, disease, temperature (e.g. identical twins have the same genes but may differ in weight if they eat differently).
 3. **Both**: most characteristics (height is genetic in range, but achieved height depends on nutrition).
 
-A **mutation** is a *random, spontaneous change in the base sequence of DNA*. If it occurs in a gene, it may alter the protein coded for, potentially changing phenotype. Most mutations are neutral; some are harmful; very rarely one is beneficial.
+A **mutation** is a *random, spontaneous change in the genetic material*. Two scales are distinguished:
+- **Gene (point) mutation** — a change in the base sequence of a single gene (e.g. a base swapped, inserted or deleted). This may alter one amino acid in the protein and so change the phenotype. **Sickle-cell anaemia** is the classic example: a single base change in the haemoglobin gene swaps one amino acid, producing the Hb^S allele and abnormally shaped red blood cells.
+- **Chromosomal mutation** — a change involving whole chromosomes or large sections (e.g. an extra chromosome). Having three copies of chromosome 21 instead of two causes Down's syndrome; this usually arises when chromosomes fail to separate properly during meiosis.
 
-Mutation rate can be increased by **mutagens**: ionising radiation (X-rays, UV), certain chemicals (e.g. tobacco carcinogens), some viruses.`,
-      keyPoints: [
-        "Continuous variation: smooth range of values, polygenic, influenced by environment (e.g. height).",
-        "Discontinuous variation: distinct categories, usually one gene, little environmental influence (e.g. blood group).",
-        "Causes of variation: genetic (alleles, meiosis, mutation) and environmental.",
-        "A mutation is a random change in the DNA base sequence; it is the ultimate source of new alleles.",
-        "Mutagens (UV radiation, X-rays, some chemicals) increase the rate of mutation."
+A mutation only matters for evolution and inheritance if it occurs in a **gamete** (or a cell that forms gametes) — only then is it passed to offspring. Mutations in ordinary body (somatic) cells are not inherited. Most mutations are neutral; some are harmful; very rarely one is beneficial, and a beneficial mutation is the ultimate source of the new alleles on which natural selection acts.
+
+Mutations happen naturally at a low rate, but the rate is increased by **mutagens**:
+- **Ionising radiation** — X-rays, gamma rays, ultraviolet (UV) light.
+- **Certain chemicals (carcinogens)** — e.g. the tar in tobacco smoke.
+- Some viruses.
+
+Mutations in body cells that affect genes controlling cell division can lead to uncontrolled division — i.e. **cancer**; this is why mutagens such as UV and tobacco tar are also carcinogens.`,
+      diagrams: [
+        {
+          caption: "Continuous variation (bell curve) vs discontinuous variation (distinct bars)",
+          svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Two graphs: a smooth bell-shaped curve for continuous variation such as height, and a bar chart with separate categories for discontinuous variation such as blood group">
+  <text x="160" y="13" font-size="11" fill="#eef0ff" text-anchor="middle" font-weight="bold">Variation: two patterns</text>
+  <!-- LEFT: continuous bell curve -->
+  <text x="80" y="30" font-size="9" fill="#38bdf8" text-anchor="middle" font-weight="bold">Continuous</text>
+  <line x1="22" y1="150" x2="142" y2="150" stroke="#b7bce0" stroke-width="1.5"/>
+  <line x1="22" y1="150" x2="22" y2="48" stroke="#b7bce0" stroke-width="1.5"/>
+  <path d="M28,148 C55,148 60,70 82,68 C104,70 109,148 136,148" fill="none" stroke="#38bdf8" stroke-width="2.5"/>
+  <text x="82" y="166" font-size="8" fill="#b7bce0" text-anchor="middle">Height (smooth range)</text>
+  <text x="10" y="100" font-size="8" fill="#b7bce0" text-anchor="middle" transform="rotate(-90 10 100)">Frequency</text>
+  <!-- RIGHT: discontinuous bars -->
+  <text x="240" y="30" font-size="9" fill="#fbbf24" text-anchor="middle" font-weight="bold">Discontinuous</text>
+  <line x1="182" y1="150" x2="306" y2="150" stroke="#b7bce0" stroke-width="1.5"/>
+  <line x1="182" y1="150" x2="182" y2="48" stroke="#b7bce0" stroke-width="1.5"/>
+  <rect x="192" y="80" width="20" height="70" fill="#fbbf24" opacity="0.85"/>
+  <rect x="220" y="60" width="20" height="90" fill="#fbbf24" opacity="0.85"/>
+  <rect x="248" y="100" width="20" height="50" fill="#fbbf24" opacity="0.85"/>
+  <rect x="276" y="120" width="20" height="30" fill="#fbbf24" opacity="0.85"/>
+  <text x="202" y="160" font-size="7" fill="#b7bce0" text-anchor="middle">A</text>
+  <text x="230" y="160" font-size="7" fill="#b7bce0" text-anchor="middle">B</text>
+  <text x="258" y="160" font-size="7" fill="#b7bce0" text-anchor="middle">AB</text>
+  <text x="286" y="160" font-size="7" fill="#b7bce0" text-anchor="middle">O</text>
+  <text x="244" y="176" font-size="8" fill="#b7bce0" text-anchor="middle">Blood group (categories)</text>
+</svg>`
+        }
       ],
-      strategies: ["Ask: continuous or discontinuous? → How many genes? Environment matters?", "Mutation = random change in DNA sequence"],
+      keyPoints: [
+        "Continuous variation: smooth range of values, polygenic, influenced by environment (e.g. height) — plotted as a bell-shaped curve.",
+        "Discontinuous variation: distinct categories, usually one or few genes, little environmental influence (e.g. blood group) — plotted as separate bars.",
+        "Causes of variation: genetic (alleles, meiosis, mutation) and environmental.",
+        "A mutation is a random change in the genetic material; it is the ultimate source of new alleles.",
+        "Gene mutation = change to one gene (e.g. sickle cell); chromosomal mutation = change involving whole chromosomes (e.g. Down's syndrome).",
+        "Mutagens — ionising radiation (X-rays, UV), certain chemicals (tobacco tar), some viruses — increase the mutation rate and can cause cancer.",
+        "Only mutations in gametes are inherited; mutations in body cells are not passed on."
+      ],
+      thinkDeeper: "Why is a mutation in a gamete so much more significant for a species than a mutation in a liver cell? A gamete mutation is present in every cell of the resulting offspring and can be passed to future generations, so it can spread through a population and fuel evolution. A liver-cell mutation affects only that individual and dies with them.",
+      strategies: ["Ask: continuous or discontinuous? → How many genes? Environment matters?", "Mutation = random change in the genetic material", "Distinguish gene vs chromosomal mutation by the scale of the change"],
     },
 
     // ── SECTION 6 ──────────────────────────────────────────────────────────────
     {
       heading: "Natural Selection, Evolution and Selective Breeding",
-      body: `**Natural selection** is the mechanism by which evolution occurs. The argument runs:
+      body: `**Natural selection** is the mechanism by which evolution occurs. It was proposed by **Charles Darwin** (and independently by Alfred Russel Wallace) in the 19th century, set out in Darwin's *On the Origin of Species* (1859). **Evolution** is the gradual change in the inherited characteristics of a population over many generations, through changes in allele frequency. The argument runs:
 
 1. **Variation**: individuals in a population show heritable variation (due to mutation and sexual reproduction via meiosis).
 2. **Overproduction**: more offspring are produced than can survive.
@@ -283,6 +372,9 @@ Mutation rate can be increased by **mutagens**: ionising radiation (X-rays, UV),
 
 **Example — antibiotic-resistant bacteria:**
 A population of bacteria contains rare individuals with a mutation giving antibiotic resistance. Antibiotic treatment is a selection pressure: non-resistant bacteria die; resistant bacteria survive and reproduce rapidly (bacteria reproduce quickly). The resistance allele spreads through the population. This is evolution by natural selection — it happens *within* one species and needs no external direction.
+
+**Example — the peppered moth (Biston betularia):**
+Before the Industrial Revolution most peppered moths were pale and speckled, which camouflaged them against pale, lichen-covered tree bark; a rare dark (melanic) form stood out and was eaten by birds. When industrial soot blackened the bark in cities, the situation reversed: the dark moths were now camouflaged and survived to breed, while pale moths were eaten. The dark form became the most common in polluted areas. The environment (predation by birds) selected which colour survived — a textbook case of natural selection observed within human history. As clean-air laws reduced pollution, the pale form recovered, confirming the link.
 
 **Selective breeding (artificial selection):** humans act as the selection pressure. They choose individuals with desirable traits to breed together, repeat over many generations, and gradually shift the population towards the desired phenotype (e.g. high-yield crops, dairy cattle producing more milk, dog breeds). The key difference from natural selection: *humans*, not the environment, choose which individuals reproduce.
 
@@ -301,6 +393,73 @@ A population of bacteria contains rare individuals with a mutation giving antibi
       whyItWorks: "Natural selection requires no 'goal' or direction. It is simply a filtering process: heritable variation + differential survival/reproduction = change in allele frequencies. The environment does not create the variation; it merely selects which variants reproduce. Over millions of years this produces the diversity of life.",
       strategies: ["Use the 5-step natural selection framework for any exam question", "Distinguish: mutation creates variation; selection changes its frequency"],
     },
+
+    // ── SECTION 7 ──────────────────────────────────────────────────────────────
+    {
+      heading: "Genetic Modification and Cloning",
+      body: `Selective breeding moves genes slowly *within* a species. Modern techniques move genes far faster — and even *between* species.
+
+**Genetic modification (genetic engineering)** is changing the genetic material of an organism by inserting a gene from another organism, so the modified organism makes a new, useful protein. The inserted gene is called a **transgene**, and the organism is described as **transgenic** or **genetically modified (GM)**.
+
+The classic example is making **human insulin** from bacteria:
+1. The human insulin gene is **cut out** of human DNA using a **restriction enzyme** (an enzyme that cuts DNA at a specific sequence, leaving "sticky ends").
+2. A bacterial **plasmid** (a small circular loop of DNA) is cut open with the same restriction enzyme, so its ends match.
+3. The insulin gene is joined into the plasmid using the enzyme **DNA ligase**, forming **recombinant DNA**. The plasmid acts as a **vector** that carries the gene into a host cell.
+4. The plasmid is taken up by a **bacterium**. The bacteria are grown in large fermenters; as they multiply they make human insulin, which is harvested and purified.
+
+Other examples: crops modified for **herbicide or pest resistance**, or rice modified to make beta-carotene ("golden rice") to combat vitamin-A deficiency.
+
+**Benefits** of GM include making medicines (insulin) cheaply and in large amounts, higher crop yields, and crops with added nutrients. **Concerns** include possible effects on wild species and ecosystems, transfer of inserted genes to other organisms, and ethical objections to manipulating DNA.
+
+**Cloning** produces genetically identical copies of an organism (a **clone**). Because the offspring come from one parent's cells, clones are genetically identical to that parent — like natural asexual reproduction.
+- In **plants**, taking **cuttings** or growing many small pieces of tissue on agar (**micropropagation / tissue culture**) rapidly produces large numbers of identical, disease-free plants from one good parent.
+- In **animals**, the nucleus of a body cell from the animal to be copied is placed into an egg cell whose own nucleus has been removed (**nuclear transfer**); the embryo is then implanted into a surrogate mother. Dolly the sheep (1996) was the first mammal cloned this way.
+
+The trade-off with all cloning is **low genetic variation**: a clone population shares the same alleles, so a single disease or environmental change could wipe out the whole group.`,
+      diagrams: [
+        {
+          caption: "Genetic engineering: inserting the human insulin gene into a bacterial plasmid",
+          svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Diagram of genetic engineering: a gene cut from human DNA by a restriction enzyme is joined into a cut bacterial plasmid with ligase, then taken up by a bacterium that makes the protein">
+  <text x="160" y="14" font-size="11" fill="#eef0ff" text-anchor="middle" font-weight="bold">Making insulin from bacteria</text>
+  <!-- human DNA with gene -->
+  <line x1="20" y1="50" x2="110" y2="50" stroke="#38bdf8" stroke-width="3"/>
+  <rect x="55" y="44" width="22" height="12" rx="2" fill="#fbbf24"/>
+  <text x="66" y="38" font-size="8" fill="#fbbf24" text-anchor="middle">insulin gene</text>
+  <text x="65" y="72" font-size="8" fill="#b7bce0" text-anchor="middle">human DNA</text>
+  <text x="65" y="84" font-size="7" fill="#b7bce0" text-anchor="middle">(cut by restriction enzyme)</text>
+  <!-- arrow -->
+  <line x1="118" y1="50" x2="150" y2="50" stroke="#b7bce0" stroke-width="1.5" marker-end="url(#ge)"/>
+  <!-- plasmid open -->
+  <circle cx="190" cy="50" r="26" fill="none" stroke="#34d399" stroke-width="3" stroke-dasharray="120 8"/>
+  <rect x="179" y="22" width="22" height="12" rx="2" fill="#fbbf24"/>
+  <text x="190" y="92" font-size="8" fill="#b7bce0" text-anchor="middle">plasmid + gene</text>
+  <text x="190" y="104" font-size="7" fill="#b7bce0" text-anchor="middle">(joined by DNA ligase)</text>
+  <text x="250" y="20" font-size="7" fill="#34d399">recombinant DNA</text>
+  <!-- arrow down -->
+  <line x1="190" y1="118" x2="190" y2="138" stroke="#b7bce0" stroke-width="1.5" marker-end="url(#ge)"/>
+  <!-- bacterium -->
+  <ellipse cx="190" cy="160" rx="30" ry="16" fill="none" stroke="#a78bfa" stroke-width="2.5"/>
+  <circle cx="190" cy="160" r="7" fill="none" stroke="#34d399" stroke-width="2"/>
+  <text x="190" y="190" font-size="8" fill="#b7bce0" text-anchor="middle">bacterium grows + makes insulin</text>
+  <defs>
+    <marker id="ge" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#b7bce0"/>
+    </marker>
+  </defs>
+</svg>`
+        }
+      ],
+      keyPoints: [
+        "Genetic modification = inserting a gene from one organism into another so it makes a useful protein (a GM / transgenic organism).",
+        "Human insulin is made by inserting the human insulin gene into a bacterial plasmid using restriction enzymes and DNA ligase.",
+        "A plasmid acts as a vector; the gene + plasmid is recombinant DNA; bacteria are grown in fermenters to mass-produce the protein.",
+        "Cloning makes genetically identical copies: plant cuttings / tissue culture, and animal nuclear transfer (e.g. Dolly the sheep).",
+        "Clones and GM crops have low genetic variation, so the whole population is vulnerable to the same disease or change.",
+        "GM and cloning have benefits (cheap medicines, high yields) and concerns (ecological and ethical risks)."
+      ],
+      thinkDeeper: "Why use bacteria, rather than another mammal, to manufacture human insulin? Bacteria reproduce extremely fast and cheaply in fermenters, the genetic code is universal (so a human gene works inside a bacterium), and a plasmid is easy to cut, insert a gene into, and put back. One engineered bacterium can become billions of insulin factories in a day.",
+      strategies: ["Compare selective breeding (within species, slow) vs genetic engineering (between species, fast)", "Learn the insulin steps in order: cut gene → cut plasmid → join with ligase → insert into bacterium → grow"],
+    },
   ],
 
   // ── LEARN SMART ────────────────────────────────────────────────────────────
@@ -314,10 +473,14 @@ A population of bacteria contains rare individuals with a mutation giving antibi
       "A Rr × Rr cross gives a 3:1 phenotype ratio; a Rr × rr cross gives a 1:1 ratio.",
       "Codominance: both alleles expressed in heterozygote — e.g. I^A I^B = blood group AB.",
       "Sex determination: females XX, males XY; father determines sex of offspring.",
-      "A mutation is a random change in the base sequence of DNA.",
-      "Natural selection: variation → selection pressure → survival of the fittest → increased allele frequency.",
-      "Antibiotic resistance in bacteria is an example of natural selection occurring rapidly.",
-      "Selective breeding = humans choose parents; differs from natural selection in that humans are the selection pressure."
+      "A mutation is a random change in the genetic material; a gene mutation changes one gene (e.g. sickle cell), a chromosomal mutation changes whole chromosomes (e.g. Down's syndrome).",
+      "Mutagens — ionising radiation (X-rays, UV) and some chemicals (tobacco tar) — increase the mutation rate; only mutations in gametes are inherited.",
+      "Sex-linked recessive conditions (colour blindness, haemophilia) are commoner in males, who have only one X; a heterozygous female (e.g. X^H X^h) is an unaffected carrier.",
+      "In a pedigree, two unaffected parents with an affected child means the condition is recessive; circles = female, squares = male, shaded = affected.",
+      "Natural selection (proposed by Darwin): variation → selection pressure → survival of the fittest → increased allele frequency; evolution = change in allele frequency over generations.",
+      "Antibiotic resistance in bacteria and the peppered moth are examples of natural selection.",
+      "Selective breeding = humans choose parents; differs from natural selection in that humans are the selection pressure.",
+      "Genetic engineering inserts a gene (e.g. human insulin) into a bacterial plasmid using restriction enzymes and DNA ligase; cloning makes genetically identical copies (cuttings, tissue culture, nuclear transfer — e.g. Dolly the sheep)."
     ],
     flashcards: [
       { front: "What is a gene?", back: "A length of DNA that codes for the production of a specific protein." },
@@ -328,10 +491,15 @@ A population of bacteria contains rare individuals with a mutation giving antibi
       { front: "What phenotype ratio results from Tt × Tt?", back: "3 dominant : 1 recessive (e.g. 3 tall : 1 short)." },
       { front: "What is codominance?", back: "Both alleles are fully expressed in the heterozygote — neither dominates the other (e.g. blood group AB = I^A I^B)." },
       { front: "How is sex determined in humans?", back: "By the sex chromosomes: females are XX, males are XY. The father passes either X or Y to determine the child's sex." },
-      { front: "What is a mutation?", back: "A random, spontaneous change in the base sequence of DNA." },
-      { front: "Continuous vs discontinuous variation", back: "Continuous: smooth range, polygenic + environment (e.g. height). Discontinuous: distinct categories, usually one gene (e.g. blood group)." },
-      { front: "What is natural selection?", back: "The process by which individuals with favourable heritable traits survive and reproduce more, increasing the frequency of beneficial alleles." },
+      { front: "What is a mutation?", back: "A random, spontaneous change in the genetic material — either a gene mutation (one gene, e.g. sickle cell) or a chromosomal mutation (whole chromosomes, e.g. Down's syndrome)." },
+      { front: "Name three mutagens.", back: "Ionising radiation (X-rays, gamma rays, UV); certain chemicals/carcinogens (e.g. tobacco tar); some viruses. They raise the mutation rate." },
+      { front: "Why are X-linked recessive conditions commoner in males?", back: "Males have only one X chromosome, so a single recessive allele on it is expressed — they cannot be carriers. Females have two Xs, so a dominant allele can mask the recessive one (carrier)." },
+      { front: "How is human insulin made by genetic engineering?", back: "Cut the insulin gene from human DNA with a restriction enzyme; cut a bacterial plasmid with the same enzyme; join the gene in with DNA ligase (recombinant DNA); insert into bacteria; grow them in fermenters to make insulin." },
+      { front: "What is cloning, and one method?", back: "Producing genetically identical copies of an organism. Methods: plant cuttings/tissue culture; animal nuclear transfer (body-cell nucleus into an empty egg — e.g. Dolly the sheep)." },
+      { front: "Continuous vs discontinuous variation", back: "Continuous: smooth range, polygenic + environment (e.g. height), bell-curve graph. Discontinuous: distinct categories, usually one gene (e.g. blood group), bar-chart graph." },
+      { front: "What is natural selection?", back: "The process by which individuals with favourable heritable traits survive and reproduce more, increasing the frequency of beneficial alleles. Proposed by Darwin." },
       { front: "How does antibiotic resistance arise by natural selection?", back: "Random mutation → resistant variant → antibiotic kills non-resistant bacteria → resistant bacteria survive and reproduce → resistance allele spreads." },
+      { front: "Explain the peppered moth example.", back: "Soot from industry blackened tree bark; dark moths were now camouflaged and survived predation by birds while pale moths were eaten, so the dark form became common in polluted areas — natural selection." },
     ],
     keyTerms: [
       { term: "Allele", definition: "A specific version of a gene; different alleles of the same gene occupy the same position (locus) on homologous chromosomes." },
@@ -346,6 +514,12 @@ A population of bacteria contains rare individuals with a mutation giving antibi
       { term: "Meiosis", definition: "A type of nuclear division that produces four genetically different haploid cells; used to form gametes." },
       { term: "Natural selection", definition: "The process by which organisms with heritable advantageous characteristics survive to reproduce, increasing the frequency of favourable alleles in a population." },
       { term: "Selective breeding", definition: "The process by which humans choose parent organisms with desirable characteristics to breed, artificially directing the change in allele frequencies over generations." },
+      { term: "Sex-linked", definition: "A characteristic controlled by a gene carried on a sex chromosome (usually the X); such conditions affect males and females differently." },
+      { term: "Carrier", definition: "An individual who is heterozygous for a recessive allele and does not show the condition but can pass the allele to offspring." },
+      { term: "Evolution", definition: "The change in the inherited characteristics of a population over many generations through changes in allele frequency, which may result in new species." },
+      { term: "Genetic engineering", definition: "Changing the genetic material of an organism by inserting a gene from another organism so it makes a useful protein (producing a GM / transgenic organism)." },
+      { term: "Plasmid", definition: "A small circular loop of DNA in bacteria, used as a vector to carry a gene into a host cell in genetic engineering." },
+      { term: "Clone", definition: "A genetically identical copy of an organism, produced asexually (e.g. by cuttings, tissue culture or nuclear transfer)." },
     ],
   },
 

@@ -62,9 +62,14 @@ Pollination is carried out by **insect** or **wind** vectors. The two flower typ
 
 **Fertilisation in plants:** After pollination, the pollen grain germinates on the stigma, growing a pollen tube down the style to the ovule. The male nucleus travels down the tube and fuses with the female gamete (egg cell) in the ovule — this is fertilisation. The fertilised egg (zygote) develops into an embryo inside the ovule. The ovule becomes a **seed**; the ovary wall becomes the **fruit**.
 
-**Seed dispersal** spreads seeds away from the parent to reduce competition (wind, animals, water, explosive mechanisms).
+**Seed dispersal** spreads seeds away from the parent so seedlings do not compete with the parent (or each other) for light, water, minerals and space, and so the species can colonise new areas. Fruits and seeds are *adapted* to a method of dispersal:
+- **Wind**: light seeds with wings (sycamore) or parachutes of hairs (dandelion) — large surface area to be carried by air currents.
+- **Animal (carried)**: hooks on the fruit (goosegrass, burdock) catch on fur or feathers.
+- **Animal (eaten)**: succulent, brightly coloured, sweet fruits (blackberry, tomato) are eaten; tough seeds pass out undigested in the animal's faeces, deposited away from the parent with a supply of "fertiliser".
+- **Water**: buoyant, waterproof fruits (coconut) float to new shores.
+- **Self / explosive**: pods dry out and split suddenly, flinging seeds out (pea, gorse).
 
-**Germination** is the resumption of growth by the embryo in the seed. Conditions required: water (activates enzymes, needed for metabolism), oxygen (aerobic respiration for energy), suitable temperature (enzymes work at optimum rate). Light is NOT required for germination itself.`,
+**Germination** is the resumption of growth by the embryo in the seed. Conditions required: **water** (activates enzymes and is the medium for metabolism; makes the seed swell and split the seed coat), **oxygen** (for aerobic respiration to release the energy/ATP the embryo needs for growth) and a **suitable (warm) temperature** (so enzymes work near their optimum rate). Light is NOT required for germination itself — the seed uses its own stored food reserves until the shoot reaches the light and green leaves can photosynthesise.`,
       diagrams: [
         {
           caption: "Labelled cross-section of an insect-pollinated flower",
@@ -163,6 +168,7 @@ Pollination is carried out by **insect** or **wind** vectors. The two flower typ
         "Pollination is pollen transfer to a stigma; fertilisation is gamete fusion inside the ovule.",
         "Pollen tube grows from stigma through style to ovule.",
         "Ovule becomes seed; ovary wall becomes fruit after fertilisation.",
+        "Seeds are dispersed by wind, animals (hooks or eaten), water, or explosive pods — reducing competition and colonising new areas.",
         "Germination requires water, oxygen, and suitable temperature (not necessarily light).",
       ],
       thinkDeeper: "Many plants have mechanisms to prevent self-pollination (e.g. timing — anthers release pollen before the stigma is receptive; or structural separation). Why would natural selection favour cross-pollination despite it being more costly (requiring pollinators or wind)?",
@@ -298,8 +304,8 @@ Key events (approximate days):
 - **Oestrogen** (from ovary): repairs and thickens uterine lining; at high levels feeds back positively to trigger LH surge; inhibits FSH.
 - **Progesterone** (from corpus luteum): maintains thickened uterine lining; inhibits FSH and LH (prevents further ovulation during potential pregnancy).
 
-**The Placenta:**
-The placenta forms from embryonic and maternal tissues embedded in the uterine wall. It is the exchange organ between mother and fetus.
+**The Placenta and umbilical cord:**
+The placenta forms from embryonic and maternal tissues embedded in the uterine wall. It is the exchange organ between mother and fetus. The fetus is connected to the placenta by the **umbilical cord**, which contains blood vessels carrying the fetus's blood to and from the placenta.
 
 Substances exchanged **from mother to fetus** via the placenta: oxygen, glucose, amino acids, water, minerals, vitamins, antibodies (passive immunity).
 
@@ -311,7 +317,11 @@ The placenta has:
 - Rich blood supply on both sides
 - The maternal and fetal blood supplies do NOT mix — exchange is by diffusion/active transport across the placental membranes.
 
-**Amniotic fluid** surrounds the fetus inside the amniotic sac. It cushions the fetus against mechanical shock, maintains a stable temperature, and allows fetal movement.
+**Amniotic fluid** surrounds the fetus inside the amniotic sac (amnion). It cushions the fetus against mechanical shock/knocks, maintains a stable temperature, and allows the fetus to move and develop freely.
+
+**Gestation and antenatal care:** Human pregnancy (gestation) lasts about **40 weeks (9 months)**, during which the fertilised egg develops into a fully formed fetus. A pregnant woman should look after the fetus through **antenatal care**: eating a balanced diet rich in iron (for haemoglobin), calcium (for bones and teeth) and folic acid (reduces the risk of neural-tube/spinal-cord defects), and avoiding alcohol and tobacco smoke, whose chemicals cross the placenta and harm fetal development.
+
+**Birth (labour):** At the end of pregnancy the level of progesterone falls, which (together with the hormone **oxytocin**) triggers labour. The muscular wall of the uterus contracts rhythmically and increasingly strongly; the **cervix dilates** (widens); the amniotic sac breaks ("waters break"); and the contractions push the baby out through the cervix and vagina. After the baby is delivered, the umbilical cord is cut and tied, and the placenta is expelled as the **afterbirth**.
 
 **Secondary sexual characteristics** appear at puberty, triggered by sex hormones:
 - Males (testosterone): deepening voice, facial/body hair, muscle development, pubic hair, testicular/penile growth, sperm production.
@@ -355,7 +365,8 @@ The placenta has:
         "FSH: stimulates follicle and oestrogen production. LH surge triggers ovulation.",
         "Oestrogen: thickens uterine lining. Progesterone: maintains it.",
         "Placenta exchanges oxygen and nutrients to fetus; CO2 and urea from fetus; maternal and fetal blood do not mix.",
-        "Amniotic fluid cushions and protects the fetus.",
+        "Umbilical cord connects the fetus to the placenta; amniotic fluid cushions and protects the fetus.",
+        "Gestation lasts about 40 weeks; at birth progesterone falls, oxytocin and uterine contractions push the baby out as the cervix dilates.",
       ],
       thinkDeeper: "If a woman's progesterone level remains high (e.g. due to pregnancy), the menstrual cycle stops. Explain in terms of hormone feedback why this happens, naming which hormones are inhibited and what consequence this has for the ovaries.",
       discovery: {
@@ -374,6 +385,17 @@ The placenta has:
 - **FSH** (pituitary): follicle-stimulating hormone — matures follicles in ovary, stimulates oestrogen.
 - **LH** (pituitary): luteinising hormone — triggers ovulation and corpus luteum formation.
 
+**Use of hormones in fertility and contraception (Edexcel):**
+Because FSH, LH, oestrogen and progesterone control the menstrual cycle, they can be used artificially to *increase* or *decrease* fertility.
+- **To treat infertility / fertility drugs**: a woman who does not produce enough FSH may be given **FSH (and LH)** as a "fertility drug" to stimulate follicles to mature and trigger ovulation. The same hormones are used in **IVF (in-vitro fertilisation)**: FSH/LH stimulate the ovaries to mature several eggs, which are collected and fertilised by sperm outside the body; one or more resulting embryos are then placed in the uterus.
+- **To reduce fertility (hormonal contraception)**: the **contraceptive pill** contains oestrogen and/or progesterone. High levels inhibit FSH from the pituitary, so no follicle matures, and suppress the LH surge, so **ovulation does not occur** — without an egg, fertilisation cannot happen.
+
+**Methods of contraception (Cambridge):** ways of preventing pregnancy fall into groups:
+- **Natural**: avoiding intercourse near ovulation (rhythm method); abstinence. No artificial aids but less reliable.
+- **Barrier**: condom or diaphragm physically stop sperm reaching the egg. The **condom also reduces the spread of STIs** by blocking exchange of body fluids.
+- **Chemical**: spermicides kill or immobilise sperm; the contraceptive pill, implant or injection use hormones to prevent ovulation (as above).
+- **Surgical (sterilisation)**: cutting and tying the **sperm ducts** (vasectomy) or the **oviducts** so gametes cannot meet — usually permanent.
+
 **Sexually transmitted infections (STIs):**
 
 STIs are infections spread mainly through sexual contact (exchange of body fluids or skin-to-skin contact).
@@ -389,14 +411,22 @@ STIs are infections spread mainly through sexual contact (exchange of body fluid
   - Antiretroviral therapy (ART) — does not cure HIV but suppresses virus to undetectable levels, preventing transmission and progression to AIDS
   - Mother-to-child transmission can be prevented with ART during pregnancy
 
-HIV does NOT spread through casual contact (handshakes, hugging, sharing food, insect bites, toilet seats).`,
+HIV does NOT spread through casual contact (handshakes, hugging, sharing food, insect bites, toilet seats).
+
+Other STIs exist too (e.g. the bacterial infection **gonorrhoea**), but HIV/AIDS is the key example required. The condom is important because it is the only common method of contraception that *also* protects against the spread of STIs.`,
       keyPoints: [
         "Testosterone: male secondary sexual characteristics and sperm production.",
         "Oestrogen and progesterone regulate the menstrual cycle and pregnancy.",
         "FSH and LH are pituitary hormones controlling ovarian function.",
+        "Fertility: FSH/LH given as fertility drugs or in IVF stimulate egg maturation/ovulation.",
+        "Contraception: natural, barrier (condom — also stops STIs), chemical/hormonal (pill stops ovulation), surgical (sterilisation).",
         "HIV destroys T-helper lymphocytes, causing AIDS when immunity fails severely.",
         "HIV transmission: unprotected sex, shared needles, infected blood, mother to child — prevented by condoms, screening, ART.",
       ],
+      discovery: {
+        problem: "The contraceptive pill and a fertility drug can both contain hormones, yet one prevents pregnancy and the other helps cause it. Both act on the ovary. How can hormones produce opposite effects, and which hormone is being supplied in each case?",
+        idea: "It depends on which hormone is given and what it does in the feedback loop. The pill supplies oestrogen/progesterone, whose high levels inhibit FSH from the pituitary — without FSH no follicle matures, so ovulation is blocked. A fertility drug supplies FSH (and LH) directly, overriding the shortage and stimulating follicles to mature and ovulate. So the same gland (ovary) is pushed in opposite directions depending on whether you raise the ovarian hormones (to switch FSH off) or the pituitary hormones (to switch the ovary on).",
+      },
       strategies: ["Know transmission routes to deduce prevention strategies", "Link hormone to target organ and effect"],
     },
   ],
@@ -413,6 +443,10 @@ HIV does NOT spread through casual contact (handshakes, hugging, sharing food, i
       "The placenta exchanges substances between mother and fetus; their blood supplies do not mix.",
       "HIV destroys T-helper lymphocytes, eventually causing AIDS.",
       "Testosterone drives male secondary sexual characteristics; oestrogen drives female.",
+      "Seeds are dispersed by wind, animals (hooks or being eaten), water, or explosive pods to reduce competition.",
+      "Gestation lasts about 40 weeks; at birth a fall in progesterone with oxytocin triggers uterine contractions and the cervix dilates.",
+      "Fertility drugs and IVF use FSH/LH to stimulate egg maturation and ovulation; the contraceptive pill uses oestrogen/progesterone to stop ovulation.",
+      "Contraception methods: natural, barrier (condom also blocks STIs), chemical/hormonal, and surgical (sterilisation).",
     ],
     flashcards: [
       { front: "What is pollination?", back: "The transfer of pollen from an anther to a stigma of the same species." },
@@ -427,6 +461,11 @@ HIV does NOT spread through casual contact (handshakes, hugging, sharing food, i
       { front: "Why does HIV lead to AIDS?", back: "HIV destroys T-helper lymphocytes, crippling the immune system so opportunistic infections become life-threatening." },
       { front: "What is an advantage of sexual over asexual reproduction?", back: "Produces genetic variation, enabling natural selection and adaptation to changing environments." },
       { front: "What sperm adaptation provides energy for swimming?", back: "Many mitochondria in the midpiece provide ATP via aerobic respiration." },
+      { front: "Name four methods of seed dispersal.", back: "Wind (winged/parachute seeds), animal (hooks or being eaten), water (floating fruits), and self/explosive (pods that split)." },
+      { front: "How long is human gestation, and what happens at birth?", back: "About 40 weeks (9 months). At birth progesterone falls and oxytocin causes the uterus wall to contract; the cervix dilates and the baby is pushed out; the placenta is delivered as the afterbirth." },
+      { front: "How are FSH and LH used as fertility treatment?", back: "Given as fertility drugs (or in IVF) to stimulate follicles/eggs to mature and trigger ovulation when a woman does not produce enough FSH herself." },
+      { front: "Which contraceptive method also protects against STIs, and why?", back: "The condom — it is a barrier that stops the exchange of body fluids, blocking infections such as HIV as well as preventing sperm reaching the egg." },
+      { front: "What is the function of the umbilical cord?", back: "It connects the fetus to the placenta and contains blood vessels carrying the fetus's blood to and from the placenta." },
     ],
     keyTerms: [
       { term: "Pollination", definition: "Transfer of pollen from the anther of one flower to the stigma of a flower of the same species." },
@@ -441,6 +480,11 @@ HIV does NOT spread through casual contact (handshakes, hugging, sharing food, i
       { term: "Corpus luteum", definition: "The structure formed from the ruptured follicle after ovulation; secretes progesterone to maintain the uterine lining." },
       { term: "Gamete", definition: "A sex cell (sperm or egg in animals; pollen or egg cell in plants) containing half the normal chromosome number (haploid)." },
       { term: "Secondary sexual characteristics", definition: "Features that appear at puberty under the influence of sex hormones but are not directly involved in reproduction (e.g. facial hair in males, breast development in females)." },
+      { term: "Seed dispersal", definition: "The spreading of seeds away from the parent plant — by wind, animals, water or explosive mechanisms — to reduce competition and colonise new areas." },
+      { term: "Gestation", definition: "The period of development of the fetus inside the uterus, lasting about 40 weeks (9 months) in humans." },
+      { term: "Umbilical cord", definition: "The structure connecting the fetus to the placenta, containing blood vessels that carry the fetus's blood to and from the placenta." },
+      { term: "IVF (in-vitro fertilisation)", definition: "A fertility treatment in which FSH/LH stimulate the ovaries to mature eggs, which are collected and fertilised by sperm outside the body before an embryo is placed in the uterus." },
+      { term: "Contraception", definition: "The deliberate prevention of pregnancy by natural, barrier, chemical/hormonal or surgical methods." },
     ],
   },
 

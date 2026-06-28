@@ -13,7 +13,7 @@ export const bioCoordination: Topic = {
     {
       heading: "The Human Nervous System",
       body:
-        "The nervous system is split into two divisions. The **central nervous system (CNS)** consists of the **brain** and the **spinal cord**; it is the site of coordination and decision-making. The **peripheral nervous system** is the network of nerves that carry signals between the CNS and the rest of the body.\n\nThree types of **neurone** (nerve cell) carry information:\n\n- **Sensory neurones** carry impulses *from* receptors (sense organs, skin) *to* the CNS.\n- **Relay neurones** (interneurones) sit entirely within the CNS, linking sensory and motor pathways.\n- **Motor neurones** carry impulses *from* the CNS *to* effectors (muscles or glands).\n\nAll neurones share the same basic structure: a cell body (with nucleus), **dendrites** that receive incoming signals, and an **axon** that transmits the impulse away. Many axons are wrapped in a **myelin sheath** — a fatty insulating layer that speeds transmission.\n\nReceptors are specialised cells or structures that detect stimuli (e.g. light, pressure, temperature). Effectors are the muscles or glands that produce a response.",
+        "The nervous system is split into two divisions. The **central nervous system (CNS)** consists of the **brain** and the **spinal cord**; it is the site of coordination and decision-making. The **peripheral nervous system** is the network of nerves that carry signals between the CNS and the rest of the body.\n\nThree types of **neurone** (nerve cell) carry information:\n\n- **Sensory neurones** carry impulses *from* receptors (sense organs, skin) *to* the CNS.\n- **Relay neurones** (interneurones) sit entirely within the CNS, linking sensory and motor pathways.\n- **Motor neurones** carry impulses *from* the CNS *to* effectors (muscles or glands).\n\nAll neurones share the same basic structure: a cell body (with nucleus), **dendrites** that receive incoming signals, and an **axon** that transmits the impulse away. Many axons are wrapped in a **myelin sheath** — a fatty insulating layer that speeds transmission.\n\nA **stimulus** is any change in the environment (internal or external) that an organism detects. A **receptor** is a cell (or group of cells) that detects a stimulus and converts it into an electrical impulse. A **sense organ** is a group of receptor cells responding to a specific stimulus. The main human sense organs and their stimuli are:\n\n- **Eyes** — light.\n- **Ears** — sound (and position/balance).\n- **Nose** — chemicals in the air (smell).\n- **Tongue** — chemicals in food and drink (taste).\n- **Skin** — touch, pressure, temperature and pain.\n\n**Effectors** are the muscles (which contract) or glands (which secrete hormones or enzymes) that carry out the response.\n\nResponses can be **voluntary** (conscious, decided by the brain — e.g. picking up a pen) or **involuntary** (automatic, not under conscious control — e.g. a reflex, the heartbeat, peristalsis). Both use the same neurone types; the difference is whether the conscious brain makes the decision.",
       diagrams: [
         {
           caption: "Three types of neurone and their roles in the nervous system",
@@ -26,6 +26,8 @@ export const bioCoordination: Topic = {
         "Relay neurones connect sensory and motor pathways inside the CNS.",
         "Motor neurones carry impulses from the CNS to effectors (muscles/glands).",
         "Myelin sheath insulates the axon and speeds up impulse transmission.",
+        "Sense organs are groups of receptor cells: eyes (light), ears (sound), nose/tongue (chemicals), skin (touch, pressure, temperature, pain).",
+        "Voluntary actions are consciously controlled by the brain; involuntary actions (e.g. reflexes) are automatic.",
       ],
       discovery: {
         problem:
@@ -64,7 +66,7 @@ export const bioCoordination: Topic = {
     {
       heading: "The Eye and Pupil Reflex",
       body:
-        "The **eye** is the receptor organ for light. Key structures:\n\n- **Cornea**: transparent layer at the front; provides most of the refraction (bending) of light.\n- **Iris**: the coloured ring of muscle surrounding the **pupil** (the gap that lets light in).\n- **Lens**: a flexible, transparent structure that fine-tunes focus by changing shape.\n- **Retina**: the light-sensitive layer at the back; contains rod cells (dim light/black-white) and cone cells (colour/bright light).\n- **Optic nerve**: carries impulses from the retina to the brain.\n- **Ciliary muscles** and **suspensory ligaments** control lens shape during accommodation.\n\n**Pupil reflex** (response to light intensity — antagonistic muscles):\n\n| Condition | Circular muscles | Radial muscles | Pupil |\n|-----------|-----------------|----------------|-------|\n| Bright light | Contract | Relax | Constricts (smaller) |\n| Dim light | Relax | Contract | Dilates (larger) |\n\nThis is a reflex — it happens automatically and protects the retina from intense light.\n\n**Accommodation** — focusing on objects at different distances:\n\n- **Near object**: ciliary muscles **contract** → suspensory ligaments go **slack** → lens becomes **fat/more curved** → greater refraction → focused image on retina.\n- **Distant object**: ciliary muscles **relax** → suspensory ligaments go **taut** → lens becomes **thin/flat** → less refraction → focused image on retina.",
+        "The **eye** is the sense organ for light. Key structures:\n\n- **Conjunctiva**: a thin, transparent protective membrane covering the front of the eye; kept moist by tear fluid.\n- **Cornea**: transparent layer at the front; provides most of the refraction (bending) of light.\n- **Sclera**: the tough, white outer layer; protects the eye and maintains its shape (the cornea is the transparent front part of the sclera).\n- **Iris**: the coloured ring of muscle surrounding the **pupil** (the gap that lets light in); it controls how much light enters.\n- **Lens**: a flexible, transparent structure behind the iris that fine-tunes focus by changing shape.\n- **Choroid**: the dark, pigmented layer behind the retina; it is rich in blood vessels (supplying the eye) and absorbs stray light to prevent internal reflection.\n- **Retina**: the light-sensitive layer at the back; contains **rod cells** (dim light, black-and-white vision) and **cone cells** (colour vision, need bright light).\n- **Fovea** (yellow spot): a small pit on the retina directly behind the lens, packed with cones; the region of sharpest, most detailed vision.\n- **Blind spot** (optic disc): the point where the optic nerve leaves the retina; it has no receptor cells, so light landing here is not detected.\n- **Optic nerve**: carries impulses from the retina to the brain, where the image is interpreted.\n- **Ciliary muscles** and **suspensory ligaments** control lens shape during accommodation.\n\n**Pupil reflex** (response to light intensity — antagonistic muscles):\n\n| Condition | Circular muscles | Radial muscles | Pupil |\n|-----------|-----------------|----------------|-------|\n| Bright light | Contract | Relax | Constricts (smaller) |\n| Dim light | Relax | Contract | Dilates (larger) |\n\nThis is a reflex — it happens automatically and protects the retina from intense light.\n\n**Accommodation** — focusing on objects at different distances:\n\n- **Near object**: ciliary muscles **contract** → suspensory ligaments go **slack** → lens becomes **fat/more curved** → greater refraction → focused image on retina.\n- **Distant object**: ciliary muscles **relax** → suspensory ligaments go **taut** → lens becomes **thin/flat** → less refraction → focused image on retina.",
       diagrams: [
         {
           caption: "Cross-section of the human eye with key structures labelled",
@@ -76,7 +78,9 @@ export const bioCoordination: Topic = {
         "Iris has circular and radial muscles — antagonistic pair — to control pupil size.",
         "In bright light pupil constricts; in dim light pupil dilates.",
         "Accommodation: near object → ciliary muscles contract → lens fat; distant object → ciliary muscles relax → lens thin.",
-        "Rod cells detect dim light; cone cells detect colour in bright light.",
+        "Rod cells detect dim light; cone cells detect colour in bright light; cones are concentrated at the fovea (sharpest vision).",
+        "Sclera = tough white protective layer; choroid = dark layer that absorbs stray light and supplies blood; conjunctiva = thin protective front membrane.",
+        "Blind spot (optic disc) = where the optic nerve leaves the eye; it has no receptor cells, so no image forms there.",
       ],
       discovery: {
         problem:
@@ -136,13 +140,14 @@ export const bioCoordination: Topic = {
     {
       heading: "Nervous vs Hormonal Control and Plant Tropisms",
       body:
-        "**Comparison of nervous and hormonal control:**\n\n| Feature | Nervous | Hormonal |\n|---------|---------|----------|\n| Speed | Fast (milliseconds) | Slow (seconds to hours) |\n| Transmission | Electrical impulse along neurones | Chemical in blood |\n| Duration | Short-lived | Long-lasting |\n| Target | Specific effector | All target organs with receptors |\n| Examples | Reflex, muscle contraction | Blood glucose, puberty |\n\n**Plant tropisms** — growth responses to directional stimuli:\n\n- **Phototropism**: growth response to light.\n  - Shoots: positively phototropic (grow *towards* light).\n  - Roots: negatively phototropic (grow *away from* light, though this is less critical).\n- **Gravitropism (geotropism)**: growth response to gravity.\n  - Roots: positively gravitropic (grow *downward*, with gravity).\n  - Shoots: negatively gravitropic (grow *upward*, against gravity).\n\n**The role of auxin:**\n\nAuxin (IAA) is a plant hormone produced at the tip of shoots. It diffuses down the shoot and promotes cell elongation.\n\nIn a shoot lit from one side:\n- Auxin migrates to the *shaded* side.\n- Higher auxin concentration on shaded side → greater cell elongation there.\n- Unequal growth causes the shoot to **bend towards the light** (positive phototropism).\n\nIn roots, auxin has the *opposite* effect at high concentrations — it *inhibits* elongation. So auxin accumulating on the lower side of a horizontal root *inhibits* growth there → root bends downward (positive gravitropism).",
+        "**Comparison of nervous and hormonal control:**\n\n| Feature | Nervous | Hormonal |\n|---------|---------|----------|\n| Speed | Fast (milliseconds) | Slow (seconds to hours) |\n| Transmission | Electrical impulse along neurones | Chemical in blood |\n| Duration | Short-lived | Long-lasting |\n| Target | Specific effector | All target organs with receptors |\n| Examples | Reflex, muscle contraction | Blood glucose, puberty |\n\n**Plant tropisms** — growth responses to directional stimuli:\n\n- **Phototropism**: growth response to light.\n  - Shoots: positively phototropic (grow *towards* light).\n  - Roots: negatively phototropic (grow *away from* light, though this is less critical).\n- **Gravitropism (geotropism)**: growth response to gravity.\n  - Roots: positively gravitropic (grow *downward*, with gravity).\n  - Shoots: negatively gravitropic (grow *upward*, against gravity).\n\n**The role of auxin:**\n\nAuxin (IAA) is a plant hormone produced at the tip of shoots. It diffuses down the shoot and promotes cell elongation.\n\nIn a shoot lit from one side:\n- Auxin migrates to the *shaded* side.\n- Higher auxin concentration on shaded side → greater cell elongation there.\n- Unequal growth causes the shoot to **bend towards the light** (positive phototropism).\n\nIn roots, auxin has the *opposite* effect at high concentrations — it *inhibits* elongation. So auxin accumulating on the lower side of a horizontal root *inhibits* growth there → root bends downward (positive gravitropism).\n\n**Commercial uses of auxins:**\n\n- **Rooting powder**: synthetic auxin applied to the cut end of a stem cutting stimulates the rapid growth of new (adventitious) roots, so the cutting establishes itself as a new plant. This lets growers clone many copies of a desirable plant quickly.\n- **Selective weedkillers (herbicides)** such as 2,4-D: synthetic auxins sprayed at high concentration. Broad-leaved weeds (dicots) are far more sensitive than narrow-leaved crops and grasses (monocots); the weeds are forced into uncontrolled, abnormal growth and die, while the crop/lawn is left largely unharmed.",
       keyPoints: [
         "Nervous: fast, electrical, short-lived, precise target. Hormonal: slow, chemical in blood, long-lasting, widespread.",
         "Phototropism: shoots grow towards light (positive); role of auxin redistribution.",
         "Gravitropism: roots grow downwards with gravity (positive); shoots grow upwards (negative).",
         "Auxin promotes cell elongation in shoots; high auxin inhibits elongation in roots.",
         "Unequal auxin distribution → unequal growth → bending of plant organ.",
+        "Commercial uses of synthetic auxin: rooting powder (promotes roots on cuttings) and selective weedkillers (kill broad-leaved weeds, spare grasses).",
       ],
       discovery: {
         problem:
@@ -166,11 +171,15 @@ export const bioCoordination: Topic = {
       "In bright light, circular iris muscles contract, constricting the pupil; in dim light, radial muscles contract, dilating the pupil.",
       "Accommodation for a near object: ciliary muscles contract, suspensory ligaments slacken, lens becomes fat (more curved).",
       "Insulin lowers blood glucose; glucagon raises blood glucose — both secreted by the pancreas.",
+      "Adrenaline is secreted by the adrenal glands and prepares the body for 'fight or flight' (raises heart rate, blood glucose and breathing rate).",
+      "In Type 1 diabetes the pancreas cannot make insulin, so blood glucose rises dangerously high; it is treated by injecting insulin and monitoring diet.",
       "Negative feedback: the response opposes the initial change and restores the set point.",
       "Vasodilation increases heat loss; vasoconstriction reduces heat loss.",
       "Sweating cools the body by the evaporation of water from the skin surface.",
       "Auxin promotes cell elongation in shoots; accumulates on the shaded side, causing bending towards light.",
       "Positive phototropism: shoots grow towards light. Positive gravitropism: roots grow downwards.",
+      "Synthetic auxins are used commercially as rooting powders (to grow roots on cuttings) and as selective weedkillers (killing broad-leaved weeds but not grasses).",
+      "A sense organ is a group of receptor cells: eyes (light), ears (sound), nose and tongue (chemicals), skin (touch, pressure, temperature, pain).",
     ],
     flashcards: [
       { front: "What are the two main divisions of the human nervous system?", back: "Central nervous system (brain + spinal cord) and peripheral nervous system." },
@@ -180,6 +189,9 @@ export const bioCoordination: Topic = {
       { front: "How does the pupil respond to bright light and why?", back: "Circular muscles of the iris contract → pupil constricts. This reduces light entering the eye, protecting the retina." },
       { front: "What happens to the lens when focusing on a near object?", back: "Ciliary muscles contract, suspensory ligaments slacken, and the lens becomes fat (more curved) to increase refraction." },
       { front: "What does insulin do and what triggers its release?", back: "Insulin lowers blood glucose by stimulating glycogen storage in liver/muscle. Released when blood glucose rises." },
+      { front: "What is adrenaline and what are its main effects?", back: "A hormone from the adrenal glands released in stress ('fight or flight'). It raises heart rate, raises blood glucose, increases breathing rate and diverts blood to the muscles." },
+      { front: "What goes wrong in Type 1 diabetes and how is it treated?", back: "The pancreas cannot produce insulin, so blood glucose rises dangerously high. It is treated by injecting insulin and controlling the diet/monitoring blood glucose." },
+      { front: "Give two commercial uses of synthetic auxins.", back: "Rooting powder (promotes root growth on cuttings) and selective weedkillers (kill broad-leaved weeds while sparing narrow-leaved grasses)." },
       { front: "What is negative feedback?", back: "A control mechanism where the response opposes the change that triggered it, restoring conditions to the set point." },
       { front: "How does sweating cool the body?", back: "Water in sweat evaporates from the skin, absorbing latent heat from the body and lowering skin temperature." },
       { front: "What is auxin and what does it do in shoots?", back: "Auxin (IAA) is a plant hormone produced at the shoot tip. It promotes cell elongation; it accumulates on the shaded side, causing the shoot to bend towards light." },
@@ -188,6 +200,10 @@ export const bioCoordination: Topic = {
     ],
     keyTerms: [
       { term: "CNS", definition: "Central nervous system; consists of the brain and spinal cord; the site of coordination." },
+      { term: "Stimulus", definition: "A change in the internal or external environment that is detected by a receptor." },
+      { term: "Receptor", definition: "A cell (or group of cells) that detects a stimulus and converts it into an electrical impulse." },
+      { term: "Effector", definition: "A muscle (which contracts) or gland (which secretes) that carries out a response." },
+      { term: "Sense organ", definition: "A group of receptor cells that responds to a specific stimulus, e.g. the eye responds to light." },
       { term: "Sensory neurone", definition: "A nerve cell that carries impulses from receptors to the CNS." },
       { term: "Motor neurone", definition: "A nerve cell that carries impulses from the CNS to effectors (muscles/glands)." },
       { term: "Synapse", definition: "A junction between two neurones across which neurotransmitter molecules diffuse to transmit the impulse." },
@@ -198,7 +214,11 @@ export const bioCoordination: Topic = {
       { term: "Negative feedback", definition: "A control mechanism in which a deviation from the set point triggers a corrective response that opposes the change." },
       { term: "Homeostasis", definition: "The maintenance of a constant internal environment within the body despite external changes." },
       { term: "Vasodilation", definition: "Widening of blood vessels near the skin surface to increase heat loss to the environment." },
+      { term: "Vasoconstriction", definition: "Narrowing of blood vessels near the skin surface to reduce heat loss to the environment." },
+      { term: "Adrenaline", definition: "A hormone secreted by the adrenal glands in response to stress that prepares the body for 'fight or flight' (raises heart rate, blood glucose, breathing rate)." },
+      { term: "Diabetes", definition: "A condition in which blood glucose cannot be properly controlled: Type 1 (pancreas cannot make insulin) or Type 2 (cells become resistant to insulin)." },
       { term: "Auxin", definition: "A plant hormone (IAA) produced at shoot tips that promotes cell elongation; its unequal distribution causes tropistic bending." },
+      { term: "Tropism", definition: "A directional growth response of a plant to a stimulus, where the direction of growth depends on the direction of the stimulus." },
       { term: "Phototropism", definition: "The growth of a plant in response to light; shoots are positively phototropic (grow towards light)." },
       { term: "Gravitropism", definition: "The growth of a plant in response to gravity; roots are positively gravitropic (grow downwards)." },
     ],

@@ -163,8 +163,9 @@ export const bioEcology: Topic = {
 
     // ── SECTION 4 ────────────────────────────────────────────────────────────
     {
-      heading: "The Carbon Cycle & The Nitrogen Cycle",
+      heading: "The Carbon, Nitrogen & Water Cycles",
       body:
+        "Energy flows *through* an ecosystem and is then lost, but **matter is recycled**. Atoms of carbon and nitrogen, and molecules of water, pass repeatedly between living organisms (the biotic part) and the air, water and soil (the abiotic part). You must know three cycles.\n\n" +
         "**The Carbon Cycle**\n\n" +
         "Carbon is the backbone of all organic molecules. It moves between the atmosphere (as CO₂), living organisms, and the ground.\n\n" +
         "- **Photosynthesis**: producers absorb CO₂ and water, using light energy to make glucose. CO₂ is removed from the atmosphere.\n" +
@@ -178,8 +179,16 @@ export const bioEcology: Topic = {
         "- **Nitrification**: nitrifying bacteria convert NH₄⁺ → nitrite → nitrate (NO₃⁻). Plants absorb nitrate.\n" +
         "- **Assimilation**: plants use nitrate to make amino acids and proteins; animals eat plants and assimilate nitrogen into their own proteins.\n" +
         "- **Decomposition/Ammonification**: decomposers break down dead organic matter and excretory products → ammonium ions.\n" +
-        "- **Denitrification**: denitrifying bacteria in waterlogged soil convert nitrate → N₂, returning nitrogen to the air.\n\n" +
-        "Lightning can also fix nitrogen — it provides energy to combine N₂ and O₂ forming oxides of nitrogen that dissolve in rain.",
+        "- **Denitrification**: denitrifying bacteria in waterlogged (anaerobic) soil convert nitrate → N₂, returning nitrogen to the air. This *reduces* soil fertility.\n\n" +
+        "**Lightning** can also fix nitrogen — it provides enough energy to combine N₂ and O₂ into oxides of nitrogen, which dissolve in rain and reach the soil as nitrate.\n\n" +
+        "Remember the four groups of bacteria: **nitrogen-fixing** (N₂ → ammonium), **nitrifying** (ammonium → nitrate), **denitrifying** (nitrate → N₂), and **decomposers / putrefying** bacteria (dead matter → ammonium). Only nitrogen-fixing and decomposer bacteria *increase* the supply of usable nitrogen to plants; denitrifying bacteria remove it.\n\n" +
+        "**The Water Cycle**\n\n" +
+        "Water continually cycles between the seas, the air, the land and living organisms:\n\n" +
+        "- **Evaporation**: heat from the Sun turns liquid water in oceans, lakes and rivers into water vapour. **Transpiration** from plant leaves adds further water vapour to the air.\n" +
+        "- **Condensation**: as moist air rises and cools, water vapour condenses into tiny droplets, forming **clouds**.\n" +
+        "- **Precipitation**: droplets join, grow heavy and fall as rain, snow or hail.\n" +
+        "- **Run-off and percolation**: water flows over land into rivers (run-off) or soaks down into the soil and rock (percolation), feeding **groundwater** that drains back to the sea.\n\n" +
+        "Plants take up soil water through roots; some is used in photosynthesis but most is lost again by transpiration — so plants are an important link in the cycle. This is why clearing forests (deforestation) reduces transpiration and can lower local rainfall.",
       diagrams: [
         {
           caption: "The carbon cycle: pathways between atmosphere, living organisms and fossil fuels",
@@ -250,13 +259,52 @@ export const bioEcology: Topic = {
   </defs>
 </svg>`,
         },
+        {
+          caption: "The water cycle: evaporation and transpiration, condensation, precipitation",
+          svg: `<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Water cycle diagram showing evaporation, transpiration, condensation into clouds, precipitation and run-off back to the sea">
+  <rect width="320" height="200" fill="#0f172a"/>
+  <!-- sea -->
+  <rect x="0" y="160" width="180" height="40" fill="#164e63"/>
+  <text x="80" y="184" text-anchor="middle" font-size="10" fill="#eef0ff" font-family="sans-serif">Sea / lake</text>
+  <!-- land + tree -->
+  <rect x="180" y="170" width="140" height="30" fill="#3b2a0a"/>
+  <rect x="244" y="150" width="6" height="22" fill="#7c4a12"/>
+  <circle cx="247" cy="146" r="14" fill="#166534" stroke="#34d399" stroke-width="1.5"/>
+  <text x="247" y="192" text-anchor="middle" font-size="9" fill="#eef0ff" font-family="sans-serif">land</text>
+  <!-- cloud -->
+  <ellipse cx="160" cy="46" rx="52" ry="20" fill="#475569" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="160" y="50" text-anchor="middle" font-size="10" fill="#eef0ff" font-family="sans-serif">Cloud</text>
+  <!-- evaporation arrow -->
+  <line x1="70" y1="158" x2="120" y2="64" stroke="#38bdf8" stroke-width="1.5" marker-end="url(#wa)"/>
+  <text x="62" y="120" font-size="8" fill="#38bdf8" font-family="sans-serif">evaporation</text>
+  <!-- transpiration arrow -->
+  <line x1="247" y1="132" x2="200" y2="60" stroke="#34d399" stroke-width="1.5" marker-end="url(#wb)"/>
+  <text x="232" y="110" font-size="8" fill="#34d399" font-family="sans-serif">transpiration</text>
+  <!-- condensation label -->
+  <text x="160" y="20" text-anchor="middle" font-size="8" fill="#cbd5e1" font-family="sans-serif">vapour rises, cools, condenses</text>
+  <!-- precipitation -->
+  <line x1="140" y1="66" x2="120" y2="150" stroke="#7dd3fc" stroke-width="1" stroke-dasharray="2 3" marker-end="url(#wc)"/>
+  <line x1="170" y1="66" x2="180" y2="150" stroke="#7dd3fc" stroke-width="1" stroke-dasharray="2 3" marker-end="url(#wc)"/>
+  <text x="120" y="100" font-size="8" fill="#7dd3fc" font-family="sans-serif">precipitation</text>
+  <!-- run-off -->
+  <line x1="210" y1="172" x2="170" y2="172" stroke="#b7bce0" stroke-width="1.5" marker-end="url(#wd)"/>
+  <text x="184" y="166" font-size="8" fill="#b7bce0" font-family="sans-serif">run-off</text>
+  <defs>
+    <marker id="wa" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="#38bdf8"/></marker>
+    <marker id="wb" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="#34d399"/></marker>
+    <marker id="wc" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="#7dd3fc"/></marker>
+    <marker id="wd" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="#b7bce0"/></marker>
+  </defs>
+</svg>`,
+        },
       ],
       keyPoints: [
-        "Photosynthesis removes CO₂ from the atmosphere; respiration and combustion return it.",
+        "Photosynthesis removes CO₂ from the atmosphere; respiration, combustion and decomposition return it.",
         "Decomposers (bacteria and fungi) release CO₂ by respiring dead organic matter.",
         "Fossil fuels are stores of ancient carbon; combustion releases this rapidly.",
-        "In the nitrogen cycle, bacteria are essential at every stage: fixation, nitrification, denitrification.",
+        "Nitrogen cycle bacteria: nitrogen-fixing (N₂ → ammonium), nitrifying (ammonium → nitrate), denitrifying (nitrate → N₂), and decomposers (dead matter → ammonium).",
         "Plants absorb nitrate (NO₃⁻) ions from the soil to make amino acids and proteins.",
+        "Water cycle: evaporation + transpiration → condensation (clouds) → precipitation → run-off/percolation back to the sea.",
       ],
       thinkDeeper:
         "Why does waterlogged soil favour denitrification and reduce soil fertility? Think about what anaerobic conditions do to the denitrifying bacteria population.",
@@ -264,6 +312,118 @@ export const bioEcology: Topic = {
         "Matter (carbon, nitrogen) is conserved — it is continually recycled between biotic and abiotic components. " +
         "Energy, by contrast, is not recycled: it enters as sunlight and leaves as heat. " +
         "This is why ecosystems need a continuous energy input but only a finite, recycling supply of nutrients.",
+    },
+
+    // ── SECTION 4b: POPULATION SIZE & GROWTH ─────────────────────────────────
+    {
+      heading: "Population Size & Growth",
+      body:
+        "A **population** is all the individuals of one species in an area. Its size is set by a balance: it rises when **births + immigration** exceed **deaths + emigration**, and falls when the reverse is true.\n\n" +
+        "**Factors that affect population size**\n\n" +
+        "- **Food / nutrient supply**: more food allows faster growth and more survival; shortage causes deaths and slows growth.\n" +
+        "- **Predation**: predators kill prey, limiting prey numbers; prey numbers in turn limit predator numbers (they oscillate, slightly out of step).\n" +
+        "- **Disease**: spreads fastest in dense populations and kills more individuals as the population grows.\n" +
+        "- **Competition**: members of the same species (intraspecific) and of different species (interspecific) compete for food, water, light, space and mates. The more crowded the population, the more intense the competition.\n\n" +
+        "These factors become more limiting as a population grows larger — they are **density-dependent**. Abiotic factors such as temperature, drought or flood are **density-independent**.\n\n" +
+        "**The sigmoid (S-shaped) growth curve**\n\n" +
+        "When a few organisms colonise a new area with plentiful resources, the population grows in a characteristic S-shape with three phases:\n\n" +
+        "1. **Lag phase**: numbers grow slowly. Organisms are few, and adjusting to the new conditions before reproducing.\n" +
+        "2. **Log (exponential) phase**: numbers grow rapidly. Resources are abundant, there is little competition or disease, so the growth rate accelerates.\n" +
+        "3. **Stationary phase (plateau)**: growth levels off. The population reaches the **carrying capacity** — the maximum size the environment can support. Limiting factors (food shortage, competition, predation, disease, build-up of waste) now make the **death rate equal the birth rate**.\n\n" +
+        "(A real population may then enter a **death phase** if resources run out or toxic waste accumulates, e.g. in a closed culture of microorganisms.)",
+      diagrams: [
+        {
+          caption: "Sigmoid population growth curve: lag, log (exponential) and stationary phases",
+          svg: `<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sigmoid population growth curve showing lag phase, log exponential phase and stationary phase at carrying capacity">
+  <rect width="320" height="200" fill="#0f172a"/>
+  <!-- axes -->
+  <line x1="40" y1="170" x2="300" y2="170" stroke="#b7bce0" stroke-width="1.5"/>
+  <line x1="40" y1="170" x2="40" y2="20" stroke="#b7bce0" stroke-width="1.5"/>
+  <text x="170" y="192" text-anchor="middle" font-size="9" fill="#b7bce0" font-family="sans-serif">Time</text>
+  <text x="14" y="95" text-anchor="middle" font-size="9" fill="#b7bce0" font-family="sans-serif" transform="rotate(-90 14 95)">Population size</text>
+  <!-- carrying capacity line -->
+  <line x1="40" y1="50" x2="300" y2="50" stroke="#fbbf24" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="250" y="44" font-size="8" fill="#fbbf24" font-family="sans-serif">carrying capacity</text>
+  <!-- S curve -->
+  <path d="M40,168 C90,166 95,160 120,140 C150,116 170,70 210,56 C250,50 280,50 300,50" fill="none" stroke="#34d399" stroke-width="2"/>
+  <!-- phase labels -->
+  <text x="70" y="150" text-anchor="middle" font-size="8" fill="#38bdf8" font-family="sans-serif">lag</text>
+  <text x="150" y="120" text-anchor="middle" font-size="8" fill="#a78bfa" font-family="sans-serif">log</text>
+  <text x="255" y="68" text-anchor="middle" font-size="8" fill="#34d399" font-family="sans-serif">stationary</text>
+</svg>`,
+        },
+      ],
+      keyPoints: [
+        "Population size = balance of births + immigration against deaths + emigration.",
+        "Limiting factors: food supply, predation, disease, and competition (intra- and interspecific).",
+        "Sigmoid curve has three phases: lag (slow start), log (rapid exponential growth), stationary (plateau).",
+        "Carrying capacity = the maximum population the environment can support; here birth rate = death rate.",
+        "At the plateau, density-dependent factors (food shortage, competition, disease) limit further growth.",
+      ],
+      discovery: {
+        problem:
+          "Yeast cells are added to a flask of sugar solution and counted each hour. The count rises slowly, then very fast, then levels off — and finally falls. " +
+          "Can you name each phase and explain what limits the population at the plateau?",
+        idea:
+          "Lag (cells adjusting), log (abundant sugar, exponential growth), stationary (sugar runs low / ethanol waste builds up, so birth rate = death rate at carrying capacity), then death phase (sugar exhausted, toxic ethanol).",
+      },
+      strategies: ["Name the phase, then give its cause", "Separate density-dependent from density-independent factors"],
+    },
+
+    // ── SECTION 4c: SAMPLING ─────────────────────────────────────────────────
+    {
+      heading: "Sampling: Quadrats & Transects",
+      body:
+        "You usually cannot count every organism in a habitat, so you **sample** a representative part and scale up. Sampling must be **random** (to avoid bias) and use a **large enough sample** (to be reliable).\n\n" +
+        "**The quadrat** is a square frame (often 0.5 m × 0.5 m = 0.25 m²) used to sample non-motile organisms such as plants.\n\n" +
+        "**Method — estimating population size with quadrats**\n\n" +
+        "1. Mark out the total area and measure it (length × width).\n" +
+        "2. Generate **random** coordinates (e.g. using random numbers) so quadrat positions are not chosen by eye — this avoids bias.\n" +
+        "3. Place the quadrat at each coordinate and count the number of the chosen species inside it (or estimate **percentage cover** for species hard to count, like grass).\n" +
+        "4. Repeat for many quadrats and find the **mean number per quadrat**.\n" +
+        "5. **Estimate the total** = mean number per quadrat × (total area ÷ area of one quadrat).\n\n" +
+        "*Worked example*: mean = 6 daisies per 0.25 m² quadrat; field = 200 m². Number of quadrats that fit = 200 ÷ 0.25 = 800. Estimated total = 6 × 800 = **4800 daisies**.\n\n" +
+        "**Transects** are used to study how a species' **distribution changes across an environmental gradient** (e.g. up a beach, from a path into a field). A line (the transect) is laid out, and a quadrat is placed at regular intervals (a **belt transect**) or organisms touching the line are recorded (a **line transect**). Plotting the data shows how abundance changes with an abiotic factor such as light, moisture or salinity.\n\n" +
+        "**Reliability**: take more samples and calculate a mean; ensure positions are truly random for population estimates; use the same size quadrat throughout.",
+      diagrams: [
+        {
+          caption: "Belt transect: quadrats placed at intervals along a line up a rocky shore",
+          svg: `<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Belt transect diagram showing a tape measure running up a shore with quadrats placed at regular intervals">
+  <rect width="320" height="200" fill="#0f172a"/>
+  <!-- gradient ground from sea (left) to land (right) -->
+  <rect x="0" y="120" width="320" height="80" fill="#164e63"/>
+  <rect x="120" y="110" width="200" height="90" fill="#3b2a0a"/>
+  <text x="40" y="160" text-anchor="middle" font-size="9" fill="#eef0ff" font-family="sans-serif">sea</text>
+  <text x="280" y="160" text-anchor="middle" font-size="9" fill="#eef0ff" font-family="sans-serif">land</text>
+  <!-- transect line -->
+  <line x1="20" y1="100" x2="300" y2="100" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="160" y="32" text-anchor="middle" font-size="9" fill="#fbbf24" font-family="sans-serif">transect line (tape measure)</text>
+  <!-- quadrats at intervals -->
+  <rect x="40" y="86" width="26" height="26" fill="none" stroke="#34d399" stroke-width="1.5"/>
+  <rect x="120" y="86" width="26" height="26" fill="none" stroke="#34d399" stroke-width="1.5"/>
+  <rect x="200" y="86" width="26" height="26" fill="none" stroke="#34d399" stroke-width="1.5"/>
+  <rect x="270" y="86" width="26" height="26" fill="none" stroke="#34d399" stroke-width="1.5"/>
+  <text x="160" y="190" text-anchor="middle" font-size="8" fill="#b7bce0" font-family="sans-serif">A quadrat is sampled at each marked interval to show how species change along the gradient</text>
+</svg>`,
+        },
+      ],
+      keyPoints: [
+        "Sample because counting every organism is impractical; sampling must be random and large enough.",
+        "Quadrat = a square frame used to count plants or slow-moving animals, or to estimate percentage cover.",
+        "Estimate total = mean number per quadrat × (total area ÷ quadrat area).",
+        "Use random coordinates to avoid bias when estimating population size.",
+        "Use a transect (with quadrats at intervals) to study distribution across an environmental gradient.",
+      ],
+      discovery: {
+        problem:
+          "You count an average of 4 plantains in a 0.25 m² quadrat across a 50 m × 30 m field. " +
+          "Estimate the total number of plantains in the field.",
+        idea:
+          "Total area = 50 × 30 = 1500 m². Quadrats that fit = 1500 ÷ 0.25 = 6000. Estimate = 4 × 6000 = 24 000 plantains.",
+      },
+      strategies: ["Random for abundance, transect for distribution", "Scale up: mean per quadrat × (area ÷ quadrat area)"],
+      whyItWorks:
+        "A mean of several random quadrats estimates the true density because random placement makes the sample representative — every part of the habitat has an equal chance of being sampled, so dense and sparse patches are included in proportion. Multiplying density by total area scales this estimate to the whole habitat.",
     },
 
     // ── SECTION 5 ────────────────────────────────────────────────────────────
@@ -366,12 +526,17 @@ export const bioEcology: Topic = {
       heading: "Conservation, Biotechnology & Genetic Modification",
       body:
         "**Conservation and Sustainable Resource Use**\n\n" +
-        "Conservation aims to protect biodiversity and maintain ecosystem services for future generations. Approaches include:\n\n" +
-        "- Nature reserves and protected areas.\n" +
-        "- Captive breeding programmes for endangered species.\n" +
-        "- Sustainable fishing (e.g. catch quotas, mesh-size regulations).\n" +
-        "- Reforestation.\n" +
-        "- Reducing pollution and carbon emissions.\n\n" +
+        "A **sustainable resource** is one that is produced as rapidly as it is removed, so it does not run out. **Sustainable development** means using resources to meet the needs of people today **without compromising the ability of future generations** to meet their own needs. Conservation also protects biodiversity, gene pools and ecosystem services. General approaches include nature reserves and protected areas, captive breeding and re-introduction of endangered species, seed banks, monitoring/protecting habitats, education, and reducing pollution and carbon emissions.\n\n" +
+        "**Sustainable fishing** prevents fish stocks from collapsing (overfishing leaves too few breeding adults). Methods:\n\n" +
+        "- **Quotas**: legal limits on the mass of fish that may be caught.\n" +
+        "- **Net (mesh) size limits**: larger mesh lets young, immature fish escape so they can breed.\n" +
+        "- **Closed seasons / protected areas**: no fishing during breeding seasons or in nurseries.\n" +
+        "- **Fish farming (aquaculture)** to reduce pressure on wild stocks.\n\n" +
+        "**Sustainable forestry** keeps forests as a renewable resource:\n\n" +
+        "- **Replanting** (one or more new trees planted for each one felled) and **rotation** so re-growth keeps pace with felling.\n" +
+        "- **Selective cutting / coppicing** rather than clear-felling, protecting habitats and soil.\n" +
+        "- Setting aside **protected areas** and limiting the size of any cleared patch.\n\n" +
+        "**Recycling** conserves resources and reduces pollution: recycling paper saves trees and energy; recycling metals (e.g. aluminium, copper) and glass saves limited ores and the large energy cost of extraction; composting and sewage treatment return nutrients safely. Recycling also reduces landfill and the energy used to make new materials.\n\n" +
         "**Biotechnology — Traditional Uses**\n\n" +
         "- **Bread/yoghurt**: yeast ferments sugars → CO₂ (causes bread to rise) and ethanol.\n" +
         "- **Alcoholic fermentation**: yeast converts glucose → ethanol + CO₂ (anaerobic).\n" +
@@ -390,6 +555,8 @@ export const bioEcology: Topic = {
         "GM insulin: human insulin gene inserted into E. coli plasmid; bacteria grown in fermenter.",
         "GM crops can increase yield and resistance but raise biodiversity and ethical concerns.",
         "Sustainable use means meeting current needs without compromising future generations' ability to meet theirs.",
+        "Sustainable fishing uses quotas, larger mesh sizes and closed seasons; sustainable forestry uses replanting and selective cutting.",
+        "Recycling paper, metals and glass conserves limited resources and saves the energy of extraction.",
       ],
       strategies: ["Name the enzyme, organism, and product", "Balance benefits vs. risks for evaluation questions"],
     },
@@ -408,6 +575,12 @@ export const bioEcology: Topic = {
       "Eutrophication: fertiliser run-off → algal bloom → light blocked → plants die → bacterial decomposition → O₂ used up → fish die.",
       "Burning fossil fuels and deforestation increase atmospheric CO₂, enhancing the greenhouse effect.",
       "GM insulin is produced by inserting the human insulin gene into E. coli bacteria using a plasmid vector.",
+      "The water cycle: evaporation and transpiration add vapour to the air, which condenses into clouds and falls as precipitation.",
+      "Population growth follows a sigmoid (S-shaped) curve: lag, log (exponential), then stationary phase at the carrying capacity.",
+      "Carrying capacity is the maximum population an environment can support; there the birth rate equals the death rate.",
+      "Population size is limited by food supply, predation, disease and competition.",
+      "Population size is estimated with quadrats: mean number per quadrat × (total area ÷ quadrat area).",
+      "Sustainable resource use (fishing quotas, mesh-size limits, replanting forests, recycling) meets current needs without depleting resources for the future.",
     ],
     flashcards: [
       { front: "What is a population?", back: "All individuals of one species living in a particular area at a particular time." },
@@ -422,6 +595,14 @@ export const bioEcology: Topic = {
       { front: "How is human insulin produced using GM bacteria?", back: "The human insulin gene is inserted into an E. coli plasmid using restriction and ligase enzymes; bacteria grown in fermenters produce and secrete insulin." },
       { front: "What is the enhanced greenhouse effect?", back: "Human activities increasing concentrations of greenhouse gases (CO₂, CH₄), causing more infrared radiation to be absorbed and re-radiated, warming the Earth above natural levels." },
       { front: "What enzyme do biological washing powders contain to remove protein stains?", back: "Proteases (plus lipases for fats and amylases for starch)." },
+      { front: "Name the two processes that add water vapour to the air in the water cycle.", back: "Evaporation (from seas, lakes, rivers) and transpiration (from plant leaves)." },
+      { front: "What are the three phases of a sigmoid population growth curve?", back: "Lag phase (slow start), log/exponential phase (rapid growth), stationary phase (plateau at carrying capacity)." },
+      { front: "What is carrying capacity?", back: "The maximum population size an environment can support; here birth rate equals death rate." },
+      { front: "Name four factors that limit population size.", back: "Food supply, predation, disease, and competition (for food, space, water, mates)." },
+      { front: "How do you estimate a plant population using quadrats?", back: "Place quadrats at random positions, find the mean number per quadrat, then multiply by (total area ÷ quadrat area)." },
+      { front: "Why must quadrat positions be chosen randomly?", back: "To avoid bias, so the sample is representative of the whole habitat." },
+      { front: "What is a transect used for?", back: "Studying how the distribution of a species changes across an environmental gradient (e.g. up a shore)." },
+      { front: "Give two methods of sustainable fishing.", back: "Catch quotas and larger net (mesh) sizes (also closed seasons and protected areas) so enough fish survive to breed." },
     ],
     keyTerms: [
       { term: "Ecosystem", definition: "All the organisms living in an area together with the abiotic environment they interact with." },
@@ -436,6 +617,11 @@ export const bioEcology: Topic = {
       { term: "Fermenter", definition: "A large, controlled vessel used to grow microorganisms in optimum conditions for the production of useful products." },
       { term: "Biomass", definition: "The dry mass of living material at a given trophic level, measured in g/m² or kg/m²." },
       { term: "Sustainable resource use", definition: "Using resources at a rate that allows natural replenishment, meeting current needs without preventing future generations from meeting theirs." },
+      { term: "Niche", definition: "The role of an organism in its ecosystem — what it eats, where it lives and how it interacts with other organisms; no two species can occupy exactly the same niche." },
+      { term: "Carrying capacity", definition: "The maximum population size that a particular environment can support, where birth rate equals death rate." },
+      { term: "Quadrat", definition: "A square frame of known area placed (usually at random) to sample the number or percentage cover of organisms in a habitat." },
+      { term: "Transect", definition: "A line across a habitat along which organisms are sampled at intervals to study how distribution changes along an environmental gradient." },
+      { term: "Transpiration", definition: "The loss of water vapour from plant leaves, which adds water to the air as part of the water cycle." },
     ],
   },
 

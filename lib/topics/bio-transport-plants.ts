@@ -156,6 +156,14 @@ Phloem is composed of living **sieve tube elements** connected end-to-end throug
       heading: "Root Hair Cells and Water and Ion Uptake",
       body: `Water and mineral ions enter the plant through the **root hair cells** — extensions of epidermal cells that enormously increase the root's surface area.
 
+**Adaptations of a root hair cell**
+- A long, thin **projection** (the "hair") that gives a very **large surface area** in contact with soil water — more area for absorption
+- A **thin cell wall and cell-surface membrane**, giving a short diffusion distance for water and ions
+- **No waxy cuticle**, unlike leaf epidermis, so water can enter freely
+- A **large permanent vacuole** containing cell sap with dissolved solutes, keeping the water potential lower than the soil so water enters by osmosis
+- Many **mitochondria** to release the ATP (by aerobic respiration) needed for **active transport** of mineral ions
+- A **partially permeable** cell-surface membrane that allows osmosis and contains the carrier proteins for active transport
+
 **Water uptake — osmosis**
 Water enters root hair cells by osmosis because the cell sap has a lower water potential (higher solute concentration) than the dilute soil water. Water then moves across the root cortex from cell to cell by osmosis (symplast or apoplast pathways) down a water potential gradient into the xylem.
 
@@ -327,6 +335,76 @@ A shoot in still air moves the bubble 20 mm in 5 min. In a breeze it moves 50 mm
       ],
       strategies: ["Unit analysis", "Control variables", "Calculate rate = change / time"],
     },
+
+    {
+      heading: "Transpiration vs Translocation — Don't Confuse Them",
+      body: `These two words sound alike and both involve transport in plants, but they describe completely different processes in different tissues. Examiners frequently set questions that test whether you can keep them apart.
+
+**Transpiration**
+- Movement of **water** (and dissolved mineral ions)
+- Occurs in the **xylem** (dead, hollow, lignified vessels)
+- Always **upward only** — from roots to leaves
+- A **passive** process — driven by evaporation of water from the leaves; no energy from the plant is needed
+- Loses water vapour to the atmosphere through the **stomata**
+
+**Translocation**
+- Movement of dissolved **organic solutes** — mainly **sucrose** and **amino acids**
+- Occurs in the **phloem** (living sieve tube elements with companion cells)
+- Can move in **both directions** — upward and downward
+- Movement is from a **source** (where the solute is made or stored, e.g. a photosynthesising leaf) to a **sink** (where it is used or stored, e.g. a growing root tip, fruit or storage organ)
+- Requires **energy (ATP)** for active loading of sucrose into the phloem — it is an active process
+
+A quick test: if a question is about *water* moving *up* in *dead* tubes, it is transpiration (xylem). If it is about *sugar* moving in *either* direction in *living* tubes, it is translocation (phloem).
+
+Note that the same plant carries out both at once: water travels up the xylem in the transpiration stream while sucrose travels through the neighbouring phloem in translocation.`,
+      diagrams: [
+        {
+          caption: "Side-by-side comparison: water up the xylem (transpiration) vs sucrose source-to-sink in the phloem (translocation)",
+          svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Comparison diagram: xylem on the left carries water upward only; phloem on the right carries sucrose both up and down between source and sink">
+  <rect width="320" height="200" fill="#0f172a"/>
+  <!-- titles -->
+  <text x="85" y="18" text-anchor="middle" fill="#38bdf8" font-size="11" font-weight="bold">Transpiration</text>
+  <text x="85" y="30" text-anchor="middle" fill="#94a3b8" font-size="8">water in xylem (up only)</text>
+  <text x="235" y="18" text-anchor="middle" fill="#34d399" font-size="11" font-weight="bold">Translocation</text>
+  <text x="235" y="30" text-anchor="middle" fill="#94a3b8" font-size="8">sucrose in phloem (both ways)</text>
+  <!-- divider -->
+  <line x1="160" y1="40" x2="160" y2="190" stroke="#475569" stroke-width="1" stroke-dasharray="3,3"/>
+  <!-- xylem column -->
+  <rect x="70" y="45" width="30" height="140" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" rx="3"/>
+  <text x="85" y="120" text-anchor="middle" fill="#38bdf8" font-size="9" transform="rotate(-90 85 120)">Xylem (dead)</text>
+  <!-- single upward arrow -->
+  <line x1="120" y1="180" x2="120" y2="55" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#up)"/>
+  <text x="128" y="115" fill="#38bdf8" font-size="8">water up</text>
+  <!-- phloem column -->
+  <rect x="220" y="45" width="30" height="140" fill="#1e293b" stroke="#34d399" stroke-width="1.5" rx="3"/>
+  <text x="235" y="120" text-anchor="middle" fill="#34d399" font-size="9" transform="rotate(-90 235 120)">Phloem (living)</text>
+  <!-- source/sink labels -->
+  <text x="270" y="52" fill="#34d399" font-size="8">Source (leaf)</text>
+  <text x="270" y="184" fill="#34d399" font-size="8">Sink (root)</text>
+  <!-- bidirectional arrows -->
+  <line x1="268" y1="60" x2="268" y2="120" stroke="#34d399" stroke-width="2" marker-end="url(#dn)"/>
+  <line x1="278" y1="175" x2="278" y2="115" stroke="#34d399" stroke-width="2" marker-end="url(#upg)"/>
+  <defs>
+    <marker id="up" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M0,7 L3.5,0 L7,7 Z" fill="#38bdf8"/></marker>
+    <marker id="dn" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M0,0 L3.5,7 L7,0 Z" fill="#34d399"/></marker>
+    <marker id="upg" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M0,7 L3.5,0 L7,7 Z" fill="#34d399"/></marker>
+  </defs>
+</svg>`,
+        },
+      ],
+      keyPoints: [
+        "Transpiration moves water UP the xylem (dead tubes); translocation moves sucrose and amino acids in the phloem (living tubes) BOTH ways.",
+        "Transpiration is passive (driven by evaporation); translocation requires energy (ATP) for active loading.",
+        "Translocation goes from source (where made/stored) to sink (where used/stored).",
+        "Both happen at the same time in the same vascular bundle.",
+        "Keyword cue: water + up + dead = transpiration; sugar + either way + living = translocation.",
+      ],
+      discovery: {
+        problem: "A ring of bark (which contains the phloem but not the xylem) is cut away all the way around a tree trunk — a practice called 'ring-barking'. The leaves above the ring stay healthy and green for weeks, but the tissue just above the ring swells while the roots below eventually starve and the tree dies. Which transport system was cut, and why do the leaves survive but the roots die?",
+        idea: "Ring-barking removes the phloem (translocation) but leaves the xylem (transpiration) intact. Water still travels up the xylem to the leaves, so they stay green and keep photosynthesising. But sugars made in the leaves can no longer travel down the phloem to the roots, so sucrose builds up above the cut (causing the swelling) and the roots, starved of sugar, eventually die.",
+      },
+      strategies: ["Compare and contrast", "Eliminate by keyword"],
+    },
   ],
 
   learn: {
@@ -343,6 +421,9 @@ A shoot in still air moves the bubble 20 mm in 5 min. In a breeze it moves 50 mm
       "Wilting occurs when transpiration exceeds water uptake; guard cells become flaccid and stomata close.",
       "A potometer measures water uptake rate; the shoot must be connected airtight and cut underwater.",
       "Cohesion of water molecules allows tension from evaporating leaves to pull the water column up the xylem.",
+      "Transpiration (water, xylem, up only, passive) is different from translocation (sucrose and amino acids, phloem, both directions, requires energy).",
+      "Translocation moves organic solutes from a source (where made or stored) to a sink (where used or stored).",
+      "Root hair cells are adapted by a long thin projection (large surface area), thin wall (short diffusion distance) and many mitochondria for active transport.",
     ],
     flashcards: [
       { front: "What does xylem transport?", back: "Water and dissolved mineral ions, from roots to leaves (upward only)." },
@@ -357,11 +438,15 @@ A shoot in still air moves the bubble 20 mm in 5 min. In a breeze it moves 50 mm
       { front: "In a dicot root cross-section, where is the xylem?", back: "In the centre, forming a star shape (2–6 arms); phloem is in the spaces between the arms." },
       { front: "What property of water allows the transpiration stream to work?", back: "Cohesion — hydrogen bonds hold water molecules together so tension from evaporating leaves is transmitted down the continuous water column." },
       { front: "What is translocation?", back: "The transport of dissolved organic solutes (sucrose and amino acids) through the phloem, from sources (e.g. leaves) to sinks (e.g. roots, growing tips, fruits)." },
+      { front: "Give three differences between transpiration and translocation.", back: "Transpiration: water (+ minerals), in xylem, upward only, passive. Translocation: sucrose and amino acids, in phloem, both directions, requires energy (ATP)." },
+      { front: "List three adaptations of a root hair cell.", back: "Long thin projection giving a large surface area; thin cell wall/membrane for a short diffusion distance; many mitochondria to supply ATP for active transport of mineral ions (also: large vacuole, no waxy cuticle)." },
     ],
     keyTerms: [
       { term: "Xylem", definition: "Vascular tissue made of dead, hollow, lignified vessels that transports water and mineral ions from roots to leaves." },
       { term: "Phloem", definition: "Vascular tissue made of living sieve tube elements that transports sucrose and amino acids (translocation) both up and down the plant." },
       { term: "Translocation", definition: "The transport of dissolved organic solutes (sucrose, amino acids) through phloem from source to sink." },
+      { term: "Source (in translocation)", definition: "A region of a plant where sucrose or amino acids are made or released into the phloem, e.g. a photosynthesising leaf or a storage organ exporting sugar." },
+      { term: "Sink (in translocation)", definition: "A region of a plant where sucrose or amino acids are delivered to be used or stored, e.g. a growing root tip, a developing fruit, or a storage organ." },
       { term: "Transpiration", definition: "The loss of water vapour from the aerial parts of a plant, mainly through stomata, by evaporation and diffusion." },
       { term: "Transpiration stream", definition: "The continuous flow of water from root hair cells, through the xylem, to mesophyll cells and out through stomata, driven by evaporation at the leaf surface." },
       { term: "Cohesion", definition: "The attraction between water molecules due to hydrogen bonding, allowing water columns in xylem to be pulled up without breaking." },

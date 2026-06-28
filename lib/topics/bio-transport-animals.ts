@@ -232,7 +232,14 @@ Because the blood returns to the heart between the two circuits, the left ventri
 - Walls are just ONE cell thick (single layer of endothelium) — minimises diffusion distance.
 - Very large total surface area across all capillary networks.
 - Narrow lumen forces red blood cells to pass in single file, slowing them and maximising exchange time.
-- Permeable to water, glucose, amino acids, O₂, CO₂ — allowing exchange with tissue fluid.`,
+- Permeable to water, glucose, amino acids, O₂, CO₂ — allowing exchange with tissue fluid.
+- Walls have tiny gaps (pores) between adjacent cells, allowing plasma to leak out and form tissue fluid that bathes the cells.
+
+**The order of vessels in a circuit:** As an artery enters an organ it branches into narrower, thinner **arterioles**, which divide into networks of **capillaries**. Capillaries rejoin into wider **venules**, which merge to form a **vein** leaving the organ. The full sequence is:
+
+artery → arteriole → capillary → venule → vein
+
+Arterioles have a ring of muscle in their walls that can contract or relax to control how much blood flows into each capillary bed — this is how blood is redirected around the body (for example, away from the gut and towards the leg muscles during exercise).`,
       discovery: {
         problem:
           "Imagine two vessels: vessel X has a wall 1 mm thick with a narrow lumen; vessel Y has a wall 0.02 mm thick (one cell) with a lumen barely wider than a red blood cell. Before reading further, predict which carries blood under high pressure from the heart, and which is the site of exchange with tissues. What clues did you use?",
@@ -252,6 +259,8 @@ Because the blood returns to the heart between the two circuits, the left ventri
         "Capillaries: one-cell-thick wall, tiny lumen — site of exchange between blood and tissues.",
         "Elastic arteries stretch during systole and recoil during diastole, maintaining steady pressure.",
         "Venous return aided by valves and surrounding skeletal muscle contractions.",
+        "Vessel sequence in an organ: artery → arteriole → capillary → venule → vein.",
+        "Arterioles have muscular walls that adjust blood flow into capillary beds (e.g. diverting blood to muscles in exercise).",
       ],
       diagrams: [
         {
@@ -289,6 +298,76 @@ Because the blood returns to the heart between the two circuits, the left ventri
       ],
     },
 
+    // ── SECTION 4b ─────────────────────────────────────────────────────────
+    {
+      heading: "Tissue Fluid and Exchange",
+      body: `Blood cells and most plasma proteins are too large to leave the capillaries, so how do substances actually reach the body cells? The answer is **tissue fluid** (also called interstitial fluid) — the watery liquid that bathes every cell.
+
+**How tissue fluid forms:**
+- At the **arterial end** of a capillary, the blood is still at relatively high pressure (from the heart). This pressure forces water and small dissolved molecules (glucose, amino acids, ions, O₂) out through the tiny gaps in the capillary wall. This process is called **pressure filtration** (ultrafiltration).
+- Red blood cells, platelets and large plasma proteins are too big to pass through the gaps, so they stay inside the capillary.
+- The fluid that leaks out is **tissue fluid**. It is essentially plasma without the cells and large proteins.
+
+**Exchange with cells:**
+- Tissue fluid surrounds the body cells, so substances no longer have to diffuse from inside a vessel.
+- O₂ and glucose **diffuse from the tissue fluid into the cells** (which are using them up in respiration).
+- CO₂ and other wastes **diffuse out of the cells into the tissue fluid**, then into the blood.
+
+**Where tissue fluid goes:**
+- At the **venous end** of the capillary, blood pressure has dropped. Much of the tissue fluid is drawn back into the blood (the remaining plasma proteins make the blood more concentrated, so water re-enters by osmosis).
+- The remainder drains into blind-ended **lymph vessels** as **lymph**, which is eventually returned to the blood near the heart. This drainage prevents fluid building up (swelling/oedema).
+
+So tissue fluid is the vital "middle-man" between blood and cells: blood delivers materials to the capillaries, tissue fluid carries them the final short distance to the cells, and exchange happens by diffusion across the very short remaining distance.`,
+      discovery: {
+        problem:
+          "Capillary walls keep red blood cells and large proteins inside the vessel, yet glucose and oxygen still reach a muscle cell that is not touching any capillary. How does a substance get from inside a capillary to a cell sitting a short distance away?",
+        idea:
+          "High blood pressure at the arterial end of the capillary forces water and small solutes out through gaps in the wall, forming tissue fluid. This fluid bathes the cells, so glucose and O₂ only have to diffuse a tiny distance from the fluid into the cell. Wastes diffuse the other way. Tissue fluid is the bridge between blood and cells.",
+      },
+      whyItWorks:
+        "Two opposing forces act across the capillary wall. Hydrostatic (blood) pressure pushes fluid OUT; the osmotic pull of the plasma proteins (which stay behind) draws water back IN. At the arterial end the high hydrostatic pressure wins, so fluid leaves; at the venous end hydrostatic pressure has fallen below the osmotic pull, so most fluid returns. The small excess is drained by the lymphatic system.",
+      keyPoints: [
+        "Tissue fluid is formed when blood pressure forces water and small solutes (glucose, ions, O₂) out of capillaries; cells and large proteins stay behind.",
+        "Tissue fluid surrounds body cells and is the medium through which exchange actually occurs.",
+        "O₂ and glucose diffuse from tissue fluid into cells; CO₂ and wastes diffuse from cells into tissue fluid.",
+        "Most tissue fluid returns to the blood at the venous end of the capillary; excess drains into lymph vessels as lymph.",
+        "Tissue fluid is essentially plasma minus blood cells and large plasma proteins.",
+      ],
+      diagrams: [
+        {
+          caption: "Formation and return of tissue fluid across a capillary bed",
+          svg: `<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram of a capillary showing tissue fluid leaving at the arterial end and returning at the venous end">
+  <!-- Capillary tube -->
+  <rect x="40" y="80" width="240" height="34" rx="6" fill="#7f1d1d" stroke="#fb7185" stroke-width="2"/>
+  <text x="50" y="74" font-size="8" fill="#fb7185">arterial end (high pressure)</text>
+  <text x="200" y="74" font-size="8" fill="#93c5fd">venous end (low pressure)</text>
+  <!-- direction of blood flow -->
+  <line x1="46" y1="97" x2="274" y2="97" stroke="#fbbf24" stroke-width="1.5" marker-end="url(#flow)"/>
+  <!-- fluid leaving (arterial) -->
+  <line x1="80" y1="114" x2="80" y2="150" stroke="#34d399" stroke-width="2" marker-end="url(#flow)"/>
+  <line x1="110" y1="114" x2="110" y2="150" stroke="#34d399" stroke-width="2" marker-end="url(#flow)"/>
+  <text x="60" y="165" font-size="7" fill="#34d399">fluid forced out</text>
+  <!-- fluid returning (venous) -->
+  <line x1="220" y1="150" x2="220" y2="116" stroke="#38bdf8" stroke-width="2" marker-end="url(#flow)"/>
+  <line x1="250" y1="150" x2="250" y2="116" stroke="#38bdf8" stroke-width="2" marker-end="url(#flow)"/>
+  <text x="206" y="165" font-size="7" fill="#38bdf8">most returns</text>
+  <!-- body cells in tissue fluid -->
+  <circle cx="150" cy="160" r="12" fill="#a78bfa" fill-opacity="0.5" stroke="#a78bfa" stroke-width="1"/>
+  <circle cx="180" cy="172" r="10" fill="#a78bfa" fill-opacity="0.5" stroke="#a78bfa" stroke-width="1"/>
+  <text x="150" y="195" text-anchor="middle" font-size="8" fill="#a78bfa">body cells in tissue fluid</text>
+  <!-- lymph drain -->
+  <line x1="285" y1="150" x2="300" y2="140" stroke="#eef0ff" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <text x="288" y="135" font-size="7" fill="#eef0ff">to lymph</text>
+  <defs>
+    <marker id="flow" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#cbd5e1"/>
+    </marker>
+  </defs>
+</svg>`,
+        },
+      ],
+    },
+
     // ── SECTION 5 ──────────────────────────────────────────────────────────
     {
       heading: "Blood Components and Functions",
@@ -312,7 +391,15 @@ Because the blood returns to the heart between the two circuits, the left ventri
 
 **Platelets (thrombocytes):**
 - Tiny cell fragments (no nucleus).
-- Clump together at a wound and release chemicals that trigger the clotting cascade: fibrinogen → fibrin threads → mesh trapping red blood cells → clot (scab) forms to prevent further blood loss and entry of pathogens.`,
+- Clump together at a wound and release chemicals that trigger the clotting cascade.
+
+**Blood clotting — the sequence:**
+1. When a blood vessel is cut, **platelets** stick to the damaged wall and to each other, forming a temporary plug.
+2. Platelets and damaged tissue release **clotting factors** (e.g. thromboplastin). With the help of calcium ions and vitamin K, these catalyse the conversion of the soluble plasma protein **fibrinogen** into insoluble **fibrin**.
+3. Fibrin forms a mesh of threads across the wound that traps red blood cells and platelets, forming a **clot**.
+4. The clot dries to form a **scab**.
+
+**Why clotting matters:** it (a) prevents excessive blood loss, (b) stops pathogens entering through the wound, and (c) provides a scaffold under which new skin can grow. A clot forming inside an undamaged vessel (a **thrombosis**) is dangerous — if it blocks a coronary artery it causes a heart attack.`,
       thinkDeeper:
         "Haemoglobin carries O₂ cooperatively — the first O₂ binding makes subsequent bindings easier (sigmoidal dissociation curve). At the low O₂ partial pressure of actively respiring muscles, oxyhaemoglobin unloads O₂ rapidly. How might this cooperativity be advantageous compared to a simple linear binding relationship?",
       keyPoints: [
@@ -320,6 +407,8 @@ Because the blood returns to the heart between the two circuits, the left ventri
         "Red blood cells: no nucleus, biconcave, packed with haemoglobin — carry O₂ as oxyhaemoglobin.",
         "Phagocytes engulf pathogens (non-specific); lymphocytes produce antibodies (specific).",
         "Platelets initiate clotting: fibrinogen → fibrin mesh → scab.",
+        "Clotting needs platelets, clotting factors, calcium ions and vitamin K; fibrin traps red blood cells.",
+        "Clotting prevents blood loss and stops pathogens entering; a clot in an intact vessel (thrombosis) is dangerous.",
         "CO₂ is mainly transported dissolved in plasma as hydrogencarbonate ions (HCO₃⁻).",
       ],
     },
@@ -329,6 +418,10 @@ Because the blood returns to the heart between the two circuits, the left ventri
       heading: "Coronary Heart Disease and Exercise",
       body: `**Coronary heart disease (CHD)** occurs when the coronary arteries (which supply the heart muscle) become narrowed by the build-up of **atherosclerotic plaques** (deposits of fatty material, mainly cholesterol and dead cells) inside the arterial wall. This reduces blood flow to the heart muscle (myocardium), reducing oxygen and glucose supply.
 
+**Two outcomes:**
+- **Angina** — when the heart works harder (e.g. during exercise), the narrowed arteries cannot deliver enough oxygenated blood, so the myocardium becomes short of oxygen (ischaemia). This causes chest pain that eases with rest.
+- **Heart attack (myocardial infarction)** — if a plaque ruptures, a blood clot can form and completely block a coronary artery. The region of heart muscle beyond the blockage is starved of oxygen and respires anaerobically, then dies. This can stop the heart pumping effectively.
+
 **Risk factors for CHD:**
 - **Diet high in saturated fat and cholesterol** — raises blood LDL cholesterol levels, promoting plaque formation.
 - **Smoking** — nicotine raises blood pressure; carbon monoxide binds haemoglobin, reducing O₂ carrying capacity; chemicals damage arterial walls, encouraging plaque formation.
@@ -336,27 +429,36 @@ Because the blood returns to the heart between the two circuits, the left ventri
 - **Stress** — raises blood pressure and heart rate chronically; stress hormones promote plaque instability.
 - **Genetic factors / family history** — inherited tendency towards high cholesterol or hypertension.
 
-**Prevention of CHD:**
+**Prevention of CHD (reducing the risk):**
 - Diet: reduce saturated fats, increase unsaturated fats, fruit, vegetables, dietary fibre.
 - Stop smoking.
 - Regular aerobic exercise (30 min, 5 days/week) strengthens the heart, lowers resting blood pressure.
-- Medication (e.g. statins to lower cholesterol, antihypertensives).
+- Maintain a healthy body mass and reduce alcohol intake.
+- Medication (e.g. statins to lower blood cholesterol, antihypertensives to lower blood pressure).
+
+**Treatment of CHD (once arteries are already narrowed):**
+- **Stents** — a tiny wire-mesh tube is threaded into the narrowed coronary artery and expanded (often by a small balloon, "angioplasty") to hold the artery open and restore blood flow. Less invasive, quick recovery, but plaques may re-form.
+- **Coronary (heart) bypass surgery** — a healthy blood vessel (e.g. taken from the leg or chest) is grafted to carry blood around the blocked section of coronary artery. Effective for severe or multiple blockages but is major surgery with a long recovery.
+- **Drugs** — aspirin (reduces clotting) and statins (lower cholesterol) reduce the chance of a clot or further plaque growth.
 
 **Effect of physical activity on heart rate:**
-During exercise, muscles respire faster, producing more CO₂ and consuming more O₂. Receptors detect CO₂ increase; the nervous system signals the SAN to increase heart rate. Heart rate rises to deliver more O₂ and remove CO₂ faster.
+During exercise, muscles respire faster, producing more CO₂ and consuming more O₂. Chemoreceptors (in the aorta and carotid arteries) detect the rise in CO₂; the brain sends impulses along nerves to the SAN, telling it to fire faster. In addition, the hormone **adrenaline**, released from the adrenal glands when you exercise or feel stressed/excited, travels in the blood and increases the heart rate. The faster heart rate (and increased stroke volume) raises **cardiac output** (cardiac output = heart rate × stroke volume), delivering more O₂ and glucose to muscles and removing CO₂ faster.
 
-After exercise stops, heart rate returns to resting level as CO₂ levels fall. Fit individuals have a lower resting heart rate (stronger heart pumps more blood per beat — higher stroke volume) and recover more quickly after exercise.`,
+After exercise stops, CO₂ levels fall and adrenaline is broken down, so the SAN slows and heart rate returns to its resting level. Fit individuals have a lower resting heart rate (a stronger heart pumps more blood per beat — higher stroke volume) and recover more quickly after exercise.`,
       strategies: [
         "Link the risk factor to the mechanism: smoking → CO reduces O₂ capacity AND damages walls → plaques form.",
         "Data questions: check axes carefully — heart rate vs time usually shows a lag after exercise starts and a gradual recovery.",
-        "For 'explain why heart rate increases during exercise' always mention CO₂, receptors, and the SAN.",
+        "For 'explain why heart rate increases during exercise' mention CO₂, chemoreceptors, the SAN, AND adrenaline for full marks.",
+        "Distinguish prevention (reduce risk before disease) from treatment (stents/bypass once arteries are blocked) — exam questions often ask for one specifically.",
       ],
       keyPoints: [
         "CHD is caused by narrowing of coronary arteries by fatty plaques (atherosclerosis), reducing O₂ supply to heart muscle.",
+        "Narrowed arteries cause angina (chest pain on exertion); a clot blocking an artery causes a heart attack (myocardial infarction).",
         "Risk factors: high saturated fat diet, smoking, lack of exercise, stress, genetic predisposition.",
-        "Exercise prevention: strengthens cardiac muscle, lowers resting heart rate, reduces blood pressure.",
-        "During exercise: CO₂ rise detected → SAN stimulated → heart rate increases.",
-        "Fitter individuals have lower resting heart rate and faster recovery after exercise.",
+        "Prevention: healthy diet, no smoking, regular exercise, healthy body mass; statins lower cholesterol.",
+        "Treatment of blocked arteries: stents (hold the artery open) and coronary bypass surgery (graft a vessel around the blockage).",
+        "During exercise: CO₂ rise detected by chemoreceptors AND adrenaline released → SAN stimulated → heart rate increases.",
+        "Cardiac output = heart rate × stroke volume; fitter individuals have lower resting heart rate and faster recovery.",
       ],
       diagrams: [
         {
@@ -417,6 +519,13 @@ After exercise stops, heart rate returns to resting level as CO₂ levels fall. 
       "During exercise, rising CO₂ levels stimulate the SAN, increasing heart rate.",
       "Capillary walls are one cell thick, minimising diffusion distance for exchange of gases and nutrients.",
       "Veins have valves and a wide lumen; arteries have thick elastic walls and a narrow lumen.",
+      "Vessel order in an organ: artery → arteriole → capillary → venule → vein.",
+      "Tissue fluid forms when blood pressure forces water and small solutes out of capillaries; it bathes cells and is where exchange happens.",
+      "Most tissue fluid returns to the blood; the excess drains into lymph vessels as lymph.",
+      "Blood clots when platelets and clotting factors convert soluble fibrinogen into insoluble fibrin, trapping red blood cells.",
+      "Angina is chest pain from too little O₂ reaching heart muscle; a heart attack is a coronary artery blocked by a clot.",
+      "CHD treatments include stents (hold the artery open) and coronary bypass surgery (graft a vessel around the blockage).",
+      "Adrenaline (a hormone) as well as nervous signals increases heart rate during exercise and stress.",
     ],
     flashcards: [
       { front: "What is the advantage of a double circulatory system over a single one?", back: "Blood is re-pressurised by the left ventricle between the pulmonary and systemic circuits, maintaining high pressure in the systemic circuit and enabling faster delivery of O₂ to organs." },
@@ -431,6 +540,14 @@ After exercise stops, heart rate returns to resting level as CO₂ levels fall. 
       { front: "How does exercise affect heart rate, and what is the mechanism?", back: "Exercise increases CO₂ production. Chemoreceptors detect rising CO₂. The nervous system stimulates the SAN to fire faster, increasing heart rate to deliver more O₂ and remove CO₂." },
       { front: "What is the route of blood through the heart from body to lungs and back?", back: "Vena cava → right atrium → (tricuspid valve) → right ventricle → (semilunar valve) → pulmonary artery → lungs → pulmonary vein → left atrium → (bicuspid valve) → left ventricle → (semilunar valve) → aorta." },
       { front: "Give two structural features of red blood cells and explain how each aids function.", back: "1. Biconcave shape — increases surface area for O₂ diffusion. 2. No nucleus — maximises space for haemoglobin, increasing O₂ carrying capacity." },
+      { front: "What is tissue fluid and how is it formed?", back: "Tissue fluid is the liquid that bathes body cells. It forms when the high blood pressure at the arterial end of a capillary forces water and small solutes (glucose, O₂, ions) out through gaps in the capillary wall. Cells and large proteins stay in the blood. It is essentially plasma without cells and large proteins." },
+      { front: "How does a substance get from the blood to a body cell?", back: "Blood delivers it to the capillary; pressure filtration forces it into the tissue fluid surrounding the cells; it then diffuses the short final distance from the tissue fluid into the cell. Wastes diffuse the opposite way." },
+      { front: "What happens to tissue fluid after exchange?", back: "Most is drawn back into the blood at the venous end of the capillary (where pressure is low and osmosis pulls water back). The excess drains into lymph vessels as lymph and is returned to the blood near the heart, preventing swelling." },
+      { front: "Describe the steps of blood clotting.", back: "Platelets stick to the damaged vessel and clump together. Platelets and damaged tissue release clotting factors that (with calcium ions and vitamin K) convert soluble fibrinogen into insoluble fibrin. Fibrin forms a mesh that traps red blood cells, making a clot that dries into a scab." },
+      { front: "List the vessels blood passes through, in order, as it flows through an organ.", back: "Artery → arteriole → capillary → venule → vein. Arterioles have muscular walls that control how much blood enters each capillary bed." },
+      { front: "What is the difference between angina and a heart attack?", back: "Angina is chest pain when narrowed coronary arteries cannot supply enough oxygenated blood to the working heart muscle (relieved by rest). A heart attack (myocardial infarction) is when a clot completely blocks a coronary artery, so a region of heart muscle dies from lack of oxygen." },
+      { front: "Compare stents and coronary bypass surgery as treatments for CHD.", back: "A stent is a mesh tube widened inside the narrowed coronary artery to hold it open — minimally invasive, quick recovery, but plaques may re-form. A bypass grafts a healthy vessel around the blocked section — used for severe/multiple blockages, very effective but major surgery with a long recovery." },
+      { front: "Apart from CO₂ and nerves, what else raises heart rate during exercise?", back: "The hormone adrenaline, released from the adrenal glands during exercise or stress, travels in the blood and increases heart rate (and stroke volume), raising cardiac output." },
     ],
     keyTerms: [
       { term: "Double circulatory system", definition: "A circulatory system with two separate circuits — pulmonary (heart-lungs) and systemic (heart-body) — both driven by the same heart." },
@@ -445,6 +562,17 @@ After exercise stops, heart rate returns to resting level as CO₂ levels fall. 
       { term: "Coronary arteries", definition: "Arteries that branch from the aorta and supply the heart muscle (myocardium) with oxygenated blood and glucose." },
       { term: "Stroke volume", definition: "The volume of blood pumped by the left ventricle in one contraction (typically 70 mL at rest in an adult)." },
       { term: "Sino-atrial node (SAN)", definition: "The heart's natural pacemaker, located in the right atrium wall, which initiates each heartbeat by generating electrical impulses." },
+      { term: "Tissue fluid", definition: "The watery fluid that bathes body cells, formed when blood pressure forces water and small solutes out of capillaries; the medium through which cells exchange substances with the blood." },
+      { term: "Lymph", definition: "The excess tissue fluid that drains into lymph vessels and is eventually returned to the blood near the heart." },
+      { term: "Arteriole", definition: "A small branch of an artery, with a muscular wall that can constrict or dilate to control blood flow into a capillary bed." },
+      { term: "Fibrinogen", definition: "A soluble plasma protein that is converted into insoluble fibrin threads during blood clotting." },
+      { term: "Fibrin", definition: "The insoluble protein that forms a mesh of threads trapping red blood cells to make a blood clot." },
+      { term: "Angina", definition: "Chest pain caused when narrowed coronary arteries cannot supply enough oxygenated blood to the heart muscle, especially during exertion." },
+      { term: "Heart attack (myocardial infarction)", definition: "Death of an area of heart muscle when a clot completely blocks a coronary artery, cutting off its oxygen supply." },
+      { term: "Stent", definition: "A wire-mesh tube inserted and expanded inside a narrowed coronary artery to hold it open and restore blood flow." },
+      { term: "Coronary bypass surgery", definition: "An operation in which a healthy blood vessel is grafted to carry blood around a blocked section of coronary artery." },
+      { term: "Adrenaline", definition: "A hormone released from the adrenal glands during exercise or stress that increases heart rate and stroke volume." },
+      { term: "Cardiac output", definition: "The volume of blood pumped by the heart per minute; cardiac output = heart rate × stroke volume." },
     ],
   },
 
