@@ -414,7 +414,7 @@ export const chemElectrochemistry: Topic = {
       "Aluminium is extracted by electrolysing Al₂O₃ dissolved in molten cryolite; the carbon anodes burn away (C + O₂ → CO₂) and are replaced regularly.",
       "Electrolysis of concentrated brine (chlor-alkali process) gives chlorine (water treatment, bleach, PVC), hydrogen (ammonia, margarine), and sodium hydroxide (soap, paper).",
       "Gas tests: hydrogen 'pops' a lit splint, oxygen relights a glowing splint, chlorine bleaches damp litmus paper.",
-      "The hydrogen–oxygen fuel cell (Cambridge only) produces electricity with water as its only product.",
+      "The hydrogen–oxygen fuel cell (beyond Edexcel core) produces electricity with water as its only product.",
     ],
     flashcards: [
       { front: "What is an electrolyte?", back: "An ionic compound that is molten or dissolved in water, allowing its ions to move freely and carry a current." },

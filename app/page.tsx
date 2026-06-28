@@ -20,7 +20,7 @@ export default function Home() {
           <p className="text-ink-soft">Hi {activeProfile?.name} 👋</p>
           <h1 className="text-3xl sm:text-4xl font-black mt-1">Year 11 Science Lab</h1>
           <p className="text-ink-soft mt-2 max-w-xl">
-            Cambridge IGCSE Biology, Chemistry &amp; Physics — illustrated guides, {totalQ}+ practice
+            Edexcel IGCSE Biology, Chemistry &amp; Physics — illustrated guides, {totalQ}+ practice
             questions, full mock exams, and Professor Photon to help you think it through.
           </p>
 

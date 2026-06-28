@@ -390,7 +390,7 @@ Because FSH, LH, oestrogen and progesterone control the menstrual cycle, they ca
 - **To treat infertility / fertility drugs**: a woman who does not produce enough FSH may be given **FSH (and LH)** as a "fertility drug" to stimulate follicles to mature and trigger ovulation. The same hormones are used in **IVF (in-vitro fertilisation)**: FSH/LH stimulate the ovaries to mature several eggs, which are collected and fertilised by sperm outside the body; one or more resulting embryos are then placed in the uterus.
 - **To reduce fertility (hormonal contraception)**: the **contraceptive pill** contains oestrogen and/or progesterone. High levels inhibit FSH from the pituitary, so no follicle matures, and suppress the LH surge, so **ovulation does not occur** — without an egg, fertilisation cannot happen.
 
-**Methods of contraception (Cambridge):** ways of preventing pregnancy fall into groups:
+**Methods of contraception:** ways of preventing pregnancy fall into groups:
 - **Natural**: avoiding intercourse near ovulation (rhythm method); abstinence. No artificial aids but less reliable.
 - **Barrier**: condom or diaphragm physically stop sperm reaching the egg. The **condom also reduces the spread of STIs** by blocking exchange of body fluids.
 - **Chemical**: spermicides kill or immobilise sperm; the contraceptive pill, implant or injection use hormones to prevent ovulation (as above).

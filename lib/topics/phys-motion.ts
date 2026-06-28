@@ -81,7 +81,7 @@ where u = initial velocity, v = final velocity, t = time taken.
 
 Units: m/s² (metres per second squared).
 
-**Deceleration** is simply negative acceleration — the object is slowing down (velocity and acceleration point in opposite directions). Cambridge IGCSE accepts "deceleration = x m/s²" or "acceleration = −x m/s²" as equivalent.
+**Deceleration** is simply negative acceleration — the object is slowing down (velocity and acceleration point in opposite directions). IGCSE examiners accept "deceleration = x m/s²" or "acceleration = −x m/s²" as equivalent.
 
 **Worked example 1.** A car accelerates from rest to 20 m/s in 8 s.
 - a = (20 − 0) / 8 = **2.5 m/s²**
@@ -334,7 +334,7 @@ Drop a steel ball from rest through a measured height **h** and time the fall **
       heading: "Free Fall and Terminal Velocity",
       body: `**Free fall** occurs when the only force acting on an object is gravity (no air resistance). All objects in free fall near Earth's surface accelerate downward at the same rate regardless of mass.
 
-**Acceleration of free fall g ≈ 9.8 m/s²** (Cambridge IGCSE also accepts 10 m/s² — state which value you use). It can be measured by timing a ball dropped from rest through a known height h and using g = 2h / t² (see "Measuring Speed, Acceleration and g").
+**Acceleration of free fall g ≈ 9.8 m/s²** (Edexcel 4PH1 typically uses 10 m/s² — state which value you use). It can be measured by timing a ball dropped from rest through a known height h and using g = 2h / t² (see "Measuring Speed, Acceleration and g").
 
 Because free fall is motion with constant acceleration, the SUVAT equations apply with a = g: for a dropped object (u = 0) the fall is v = gt, s = ½gt², and v² = 2gs. For objects thrown upward, take a sign convention (e.g. up positive, so a = −g) and at the highest point v = 0.
 

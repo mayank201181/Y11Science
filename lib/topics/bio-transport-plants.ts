@@ -6,7 +6,7 @@ export const bioTransportPlants: Topic = {
   subject: "biology",
   icon: "🌳",
   blurb: "Xylem, phloem, transpiration and translocation — how plants move water, minerals and sugars.",
-  intro: "Plants cannot pump blood around a body, yet they manage to lift water dozens of metres against gravity and deliver sugars to every living cell. They do this with two specialised pipe systems — xylem and phloem — powered by nothing more than evaporation at the leaf surface. Understanding how these systems work, and how environmental conditions control water loss, is central to Cambridge IGCSE Biology 0610 Extended.",
+  intro: "Plants cannot pump blood around a body, yet they manage to lift water dozens of metres against gravity and deliver sugars to every living cell. They do this with two specialised pipe systems — xylem and phloem — powered by nothing more than evaporation at the leaf surface. Understanding how these systems work, and how environmental conditions control water loss, is central to Edexcel IGCSE Biology (4BI1).",
 
   guide: [
     {

@@ -113,7 +113,7 @@ export const physEnergy: Topic = {
         "Ek = ½mv² (kinetic energy, joules); ΔGPE = mgΔh (gravitational PE, joules).",
         "W = Fd (work done = force × distance in direction of force, joules).",
         "When KE ↔ GPE (no friction): Ek gained = GPE lost (or vice versa).",
-        "g = 10 N/kg is used throughout IGCSE 0625 calculations.",
+        "g = 10 N/kg is used throughout IGCSE physics calculations.",
       ],
       discovery: {
         problem:

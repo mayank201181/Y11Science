@@ -7,21 +7,21 @@ export const SUBJECTS: SubjectMeta[] = [
     title: "Biology",
     icon: "🧬",
     color: "emerald",
-    blurb: "Cells to ecosystems — Cambridge IGCSE 0610.",
+    blurb: "Cells to ecosystems — Edexcel IGCSE 4BI1.",
   },
   {
     id: "chemistry",
     title: "Chemistry",
     icon: "⚗️",
     color: "violet",
-    blurb: "Atoms to organic reactions — Cambridge IGCSE 0620.",
+    blurb: "Atoms to organic reactions — Edexcel IGCSE 4CH1.",
   },
   {
     id: "physics",
     title: "Physics",
     icon: "🧲",
     color: "sky",
-    blurb: "Forces to the cosmos — Cambridge IGCSE 0625.",
+    blurb: "Forces to the cosmos — Edexcel IGCSE 4PH1.",
   },
 ];
 

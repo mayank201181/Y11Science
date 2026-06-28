@@ -217,7 +217,7 @@ All these effects are explained by the frequency and force of particle collision
         "Increasing temperature increases gas volume (at constant pressure) because the gas must expand to maintain pressure.",
         "Increasing pressure decreases gas volume (at constant temperature) — particles are forced closer together.",
         "All gas behaviour is explained by the frequency and force of particle collisions with the container walls.",
-        "At IGCSE, these relationships are qualitative (no calculations with PV = nRT required for Extended 0620).",
+        "At IGCSE, these relationships are qualitative (no calculations with PV = nRT required at IGCSE).",
       ],
       strategies: ["particle collision model", "cause-and-effect reasoning"],
       whyItWorks: "Gas pressure arises because particles constantly bombard the container walls. Any factor that increases collision frequency or collision force (temperature) or reduces the area/volume over which those forces act (compression) will increase the measured pressure.",

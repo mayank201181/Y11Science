@@ -13,7 +13,7 @@ const appFont = Nunito({
 export const metadata: Metadata = {
   title: "Science Lab — IGCSE Year 11",
   description:
-    "Interactive Cambridge IGCSE Biology, Chemistry & Physics study guide and question bank for Year 11.",
+    "Interactive Edexcel IGCSE Biology, Chemistry & Physics study guide and question bank for Year 11.",
   manifest: "/manifest.webmanifest",
   appleWebApp: {
     capable: true,

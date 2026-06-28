@@ -362,7 +362,7 @@ export const bioEnzymes: Topic = {
       heading: "Uses of Enzymes",
       body:
         "Because enzymes are fast, specific, and work in mild conditions (low temperature, no harsh chemicals), they are used widely in the home and in industry. " +
-        "This topic is examined in detail on Cambridge 0610 and rewards a few concrete examples.\n\n" +
+        "This topic is examined in detail and rewards a few concrete examples.\n\n" +
         "**Biological washing powders (detergents):**\n" +
         "- Contain **proteases** to digest protein stains (blood, egg, grass) and **lipases** to digest fat and grease stains.\n" +
         "- The enzymes break large, insoluble stain molecules into small, soluble products that wash away easily.\n" +

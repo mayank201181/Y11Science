@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "Science Lab — IGCSE Year 11",
     short_name: "Science Lab",
     description:
-      "Cambridge IGCSE Biology, Chemistry & Physics study guide and question bank for Year 11.",
+      "Edexcel IGCSE Biology, Chemistry & Physics study guide and question bank for Year 11.",
     start_url: "/",
     display: "standalone",
     background_color: "#0f1226",

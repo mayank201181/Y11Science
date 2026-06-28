@@ -6,7 +6,7 @@ export const chemEnvironment: Topic = {
   subject: "chemistry",
   icon: "🌫️",
   blurb: "Test for water purity, air composition, pollutants, greenhouse gases, and eutrophication.",
-  intro: "From the quality of drinking water to the composition of the atmosphere and the gases driving climate change, environmental chemistry shapes the world we live in. This topic equips you to test for water, explain why clean dry air is mostly nitrogen, identify the sources and effects of key pollutants, and critically evaluate strategies to protect our environment — essential knowledge for Cambridge IGCSE 0620 Extended.",
+  intro: "From the quality of drinking water to the composition of the atmosphere and the gases driving climate change, environmental chemistry shapes the world we live in. This topic equips you to test for water, explain why clean dry air is mostly nitrogen, identify the sources and effects of key pollutants, and critically evaluate strategies to protect our environment — essential knowledge for Edexcel IGCSE Chemistry (4CH1).",
 
   guide: [
     {

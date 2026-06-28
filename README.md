@@ -1,7 +1,7 @@
-# 🔬 Year 11 Science Lab — Cambridge IGCSE
+# 🔬 Year 11 Science Lab — Edexcel IGCSE
 
-An interactive study guide & question bank for **Cambridge IGCSE Biology (0610), Chemistry (0620)
-and Physics (0625)** — three separate sciences, Extended tier. Built for a Year 11 student at
+An interactive study guide & question bank for **Edexcel IGCSE Biology (4BI1), Chemistry (4CH1)
+and Physics (4PH1)** — three separate sciences, Extended tier. Built for a Year 11 student at
 Tanglin Trust School.
 
 **Live:** https://y11science.vercel.app
