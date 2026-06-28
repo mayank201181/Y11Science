@@ -6,7 +6,7 @@ export const chemAnalysis: Topic = {
   subject: "chemistry",
   icon: "🔎",
   blurb: "Separation techniques, purity tests, ion identification, gas tests and paper chromatography.",
-  intro: "Every measurement in chemistry depends on working with pure substances and reliable tests. In this topic you will master the separation techniques used to purify mixtures, learn how purity is assessed by sharp melting and boiling points, and build a systematic toolkit of chemical tests to identify cations, anions and gases — exactly the skills Cambridge IGCSE 0620 Extended examiners probe in Paper 6 (Alternative to Practical) and beyond.",
+  intro: "Every measurement in chemistry depends on working with pure substances and reliable tests. In this topic you will master the separation techniques used to purify mixtures, learn how purity is assessed by sharp melting and boiling points, and build a systematic toolkit of chemical tests to identify cations, anions and gases. These are exactly the skills Edexcel International GCSE 4CH1 (which places strong emphasis on separation and purification) and Cambridge IGCSE 0620 Extended examiners probe — in written papers and in the practical-skills paper (Edexcel Paper 2 / Cambridge Paper 6, Alternative to Practical).",
 
   // ─────────────────────────────────────────────────────────────────────────────
   // GUIDE
@@ -295,13 +295,17 @@ The solubility in ammonia is a useful extra test to distinguish the three.
 | Oxygen (O₂) | Hold a glowing splint at the mouth of the tube | Glowing splint relights |
 | Carbon dioxide (CO₂) | Bubble through limewater [Ca(OH)₂(aq)] | Limewater turns milky (white ppt of CaCO₃) |
 | Ammonia (NH₃) | Hold damp red litmus paper near the mouth | Damp red litmus turns blue |
-| Chlorine (Cl₂) | Hold damp litmus paper near the mouth | Damp litmus bleached/turns white |
+| Chlorine (Cl₂) | Hold damp litmus paper near the mouth | Damp (blue) litmus bleached/turns white (may flash red first) |
+| Sulfur dioxide (SO₂) | Hold damp acidified potassium manganate(VII) paper near the mouth | Purple manganate(VII) decolourised (turns colourless) |
+
+**Note on the gas set.** Edexcel 4CH1 examines the five core gases above the SO₂ line (H₂, O₂, CO₂, NH₃, Cl₂). **Sulfur dioxide (SO₂)** is the extra gas you need for Cambridge 0620 Extended — it is a colourless, choking acidic gas that turns damp acidified potassium manganate(VII) from purple to colourless (it acts as a reducing agent). It also turns damp blue litmus red because it is acidic.
 
 **Additional details:**
 - If limewater is exposed to excess CO₂, the milky precipitate redissolves (forming soluble Ca(HCO₃)₂) — useful to know for longer experiments.
-- Chlorine has a distinctive sharp, choking smell (state this in a description question).
-- Ammonia also has a sharp smell and is the only common alkaline gas; it turns universal indicator paper blue.
+- Chlorine has a distinctive sharp, choking smell (state this in a description question). It first turns blue litmus red (it is acidic), then bleaches it white — but in the exam "bleaches damp litmus" is the accepted answer.
+- Ammonia also has a sharp smell and is the only common alkaline gas; it turns universal indicator paper blue. It is also the only common gas that produces white smoke (NH₄Cl) when a glass rod dipped in concentrated hydrochloric acid is held near it.
 - Hydrogen burns with a 'squeaky pop' because hydrogen ignites rapidly — the pop is from the small explosion as it reacts with oxygen in the tube.
+- Water vapour can be confirmed in a gas using blue cobalt(II) chloride paper (turns pink) or white anhydrous copper(II) sulfate (turns blue).
 
 **Equation reminders:**
 - CO₂ + Ca(OH)₂ → CaCO₃↓ + H₂O  (milky)
@@ -313,9 +317,59 @@ The solubility in ammonia is a useful extra test to distinguish the three.
         "CO2: limewater → milky (white precipitate of CaCO3).",
         "NH3: damp red litmus → blue.",
         "Cl2: damp litmus → bleached/white.",
+        "SO2 (Cambridge extension): damp acidified potassium manganate(VII) → purple to colourless.",
       ],
-      whyItWorks: "Each gas test is based on a specific chemical reaction. The squeaky pop with H2 is a rapid combustion releasing energy. O2 relights a splint by sustaining combustion. CO2 reacts with Ca(OH)2 to form insoluble CaCO3. NH3 dissolves in water on the litmus to form NH4⁺ + OH⁻, making it alkaline. Cl2 reacts with water to form HClO (hypochlorous acid), a powerful oxidising bleach that destroys the dye in litmus paper.",
+      whyItWorks: "Each gas test is based on a specific chemical reaction. The squeaky pop with H2 is a rapid combustion releasing energy. O2 relights a splint by sustaining combustion. CO2 reacts with Ca(OH)2 to form insoluble CaCO3. NH3 dissolves in water on the litmus to form NH4⁺ + OH⁻, making it alkaline. Cl2 reacts with water to form HClO (hypochlorous acid), a powerful oxidising bleach that destroys the dye in litmus paper. SO2 is a reducing agent: it reduces the purple manganate(VII) ion (oxidation state +7) to the almost colourless manganese(II) ion, so the colour is discharged.",
       strategies: ["State both the test AND the observation — half-marks are common for incomplete answers", "Order of testing: smell (if safe), then litmus, then specific tests"],
+    },
+
+    // ── SECTION 7 ──────────────────────────────────────────────────────────────
+    {
+      heading: "Instrumental Methods of Analysis",
+      body: `The "wet" chemical tests in this topic are cheap and work in any school lab, but modern analysis usually relies on **instrumental methods** — machines that detect and measure substances electronically. You are not expected to know how the machines work in detail, but you ARE expected to know **why instrumental methods are used in preference to test-tube methods**.
+
+**Advantages of instrumental methods over chemical (test-tube) tests:**
+- **More sensitive** — they detect very small amounts of a substance (down to trace levels) that a chemical test would miss.
+- **More accurate (and reliable)** — results are read electronically rather than judged by eye, removing human error in matching a colour.
+- **Faster** — many samples can be analysed quickly, often automatically.
+- **Need only a tiny sample** — useful in forensic, medical and environmental work where little material is available.
+
+**Examples you may meet (names only at IGCSE):**
+- **Mass spectrometry** — identifies elements and isotopes and measures relative atomic/molecular mass; it is how the isotopic composition of an element is found.
+- **Atomic absorption / emission spectroscopy** — identifies and measures metal ions (a precise, instrumental version of the flame test).
+- **Infrared (IR) spectroscopy** and **chromatography linked to detectors (e.g. GC, HPLC)** — separate and identify the components of a mixture.
+
+**The trade-off:** instrumental methods are very powerful but the equipment is expensive, large and needs trained operators — which is why simple chemical tests are still taught and used for quick, routine identification.`,
+      diagrams: [
+        {
+          caption: "Why instrumental methods are chosen — four key advantages over test-tube tests",
+          svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Diagram listing four advantages of instrumental analysis: sensitive, accurate, fast, small sample">
+  <rect x="10" y="10" width="300" height="180" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <text x="160" y="34" font-size="13" fill="#e2e8f0" font-family="sans-serif" text-anchor="middle">Instrumental methods are...</text>
+  <rect x="26" y="48" width="128" height="58" rx="6" fill="#0f172a" stroke="#34d399" stroke-width="1.5"/>
+  <text x="90" y="72" font-size="11" fill="#34d399" font-family="sans-serif" text-anchor="middle">More sensitive</text>
+  <text x="90" y="90" font-size="9" fill="#b7bce0" font-family="sans-serif" text-anchor="middle">detect trace amounts</text>
+  <rect x="166" y="48" width="128" height="58" rx="6" fill="#0f172a" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="230" y="72" font-size="11" fill="#fbbf24" font-family="sans-serif" text-anchor="middle">More accurate</text>
+  <text x="230" y="90" font-size="9" fill="#b7bce0" font-family="sans-serif" text-anchor="middle">no colour-matching error</text>
+  <rect x="26" y="116" width="128" height="58" rx="6" fill="#0f172a" stroke="#fb7185" stroke-width="1.5"/>
+  <text x="90" y="140" font-size="11" fill="#fb7185" font-family="sans-serif" text-anchor="middle">Faster</text>
+  <text x="90" y="158" font-size="9" fill="#b7bce0" font-family="sans-serif" text-anchor="middle">many samples quickly</text>
+  <rect x="166" y="116" width="128" height="58" rx="6" fill="#0f172a" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="230" y="140" font-size="11" fill="#a78bfa" font-family="sans-serif" text-anchor="middle">Tiny sample</text>
+  <text x="230" y="158" font-size="9" fill="#b7bce0" font-family="sans-serif" text-anchor="middle">good for forensics</text>
+</svg>`,
+        },
+      ],
+      keyPoints: [
+        "Instrumental methods are more sensitive, more accurate, faster, and need only a small sample.",
+        "Results are read electronically, removing human error in judging a colour.",
+        "Mass spectrometry identifies isotopes and measures relative atomic/molecular mass.",
+        "Drawbacks: equipment is expensive, large and needs trained operators.",
+        "Simple chemical tests are still used for quick, cheap, routine identification.",
+      ],
+      thinkDeeper: "A flame test tells you copper is present from a blue-green colour judged by eye; an atomic emission spectrometer measures the exact wavelengths of light emitted and their intensity, so it can both identify the metal AND state precisely how much is present, even in a trace sample. The instrument is doing the same physics as the flame test — electrons dropping back to lower energy levels and emitting light — but measuring it quantitatively instead of by eye.",
+      strategies: ["For 'why use instrumental methods' questions, give a comparison word: more sensitive / more accurate / faster / smaller sample", "Name a method only if asked — mass spectrometry is the safest example to quote"],
     },
   ],
 
@@ -336,6 +390,9 @@ The solubility in ammonia is a useful extra test to distinguish the three.
       "Sulfate test: acidify with HCl then add Ba²⁺ → white precipitate (BaSO4).",
       "Halide tests: acidify with HNO3 then AgNO3 → Cl⁻ white, Br⁻ cream, I⁻ yellow precipitate.",
       "Gas tests: H2 squeaky pop; O2 relights splint; CO2 milky limewater; NH3 red litmus → blue; Cl2 bleaches litmus.",
+      "SO2 (Cambridge extension) decolourises damp acidified potassium manganate(VII) from purple to colourless.",
+      "Test for water: anhydrous (white) copper(II) sulfate turns blue, or blue cobalt(II) chloride paper turns pink.",
+      "Instrumental methods (e.g. mass spectrometry) are more sensitive, more accurate, faster and need only a small sample than chemical tests.",
     ],
     flashcards: [
       { front: "What observation confirms a pure substance at its melting point?", back: "It melts sharply at a single fixed temperature; no broadening of the melting range." },
@@ -350,6 +407,9 @@ The solubility in ammonia is a useful extra test to distinguish the three.
       { front: "What gas is produced when a carbonate is added to acid?", back: "Carbon dioxide (CO2); confirmed by turning limewater milky." },
       { front: "What gas turns damp red litmus paper blue?", back: "Ammonia (NH3)." },
       { front: "What is a locating agent in paper chromatography?", back: "A reagent used to reveal colourless spots, e.g. ninhydrin (gives purple with amino acids) or UV lamp (spots appear dark under UV)." },
+      { front: "How do you test for water, and prove it is PURE water?", back: "Presence of water: anhydrous white copper(II) sulfate turns blue, OR blue cobalt(II) chloride paper turns pink. Purity: a sharp boiling point of exactly 100 °C (or freezing point 0 °C) at standard pressure — an impurity would raise the boiling point." },
+      { front: "Test for sulfur dioxide gas (Cambridge extension)?", back: "Hold damp acidified potassium manganate(VII) paper in the gas — the purple colour is decolourised (turns colourless), because SO2 is a reducing agent." },
+      { front: "Give four reasons instrumental methods are preferred over chemical tests.", back: "They are more sensitive (detect trace amounts), more accurate (no human colour-matching error), faster, and need only a very small sample. Drawback: equipment is expensive and needs trained operators." },
     ],
     keyTerms: [
       { term: "Pure substance", definition: "A substance containing only one type of particle (element or compound), characterised by a sharp, fixed melting and boiling point." },
@@ -364,6 +424,9 @@ The solubility in ammonia is a useful extra test to distinguish the three.
       { term: "Precipitate", definition: "An insoluble solid formed when two solutions are mixed; used in ion identification tests." },
       { term: "Limewater", definition: "Aqueous calcium hydroxide, Ca(OH)2(aq); turns milky (white precipitate of CaCO3) in the presence of carbon dioxide gas." },
       { term: "Amphoteric hydroxide", definition: "A metal hydroxide (e.g. Al(OH)3, Zn(OH)2) that dissolves in both excess acid and excess alkali, unlike basic hydroxides such as Ca(OH)2." },
+      { term: "Instrumental method", definition: "An analytical method using a machine (e.g. mass spectrometry, spectroscopy) to identify and measure substances electronically; more sensitive, accurate and faster than chemical tests and needs only a small sample." },
+      { term: "Mass spectrometry", definition: "An instrumental method that identifies isotopes and measures relative atomic or molecular mass; used to determine the isotopic composition of an element." },
+      { term: "Reducing agent (in gas tests)", definition: "A species that donates electrons and is itself oxidised; sulfur dioxide acts as one, decolourising purple acidified potassium manganate(VII)." },
     ],
   },
 

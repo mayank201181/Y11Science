@@ -406,6 +406,225 @@ When fertilisers are applied in excess or washed from fields by rain (leaching/r
       whyItWorks: "Nitrogen is the limiting nutrient in most freshwater ecosystems — a small addition causes large growth responses in algae. Phosphorus is often limiting in lakes. Once the bloom dies, it represents an enormous organic input to the decomposer community. Decomposition is an aerobic process (aerobic respiration: organic matter + O₂ → CO₂ + H₂O), so oxygen demand spikes and dissolved O₂ rapidly approaches zero.",
       strategies: ["Sequence cause-and-effect chain", "Identify the limiting step"],
     },
+
+    {
+      heading: "Combustion, Incomplete Combustion, and the Oxygen-Fraction Experiment",
+      body: `Most air pollution begins with **combustion** — burning a fuel in oxygen. Getting the chemistry of combustion right explains where CO, CO₂, soot, and SO₂ all come from.
+
+**Complete combustion** (plenty of oxygen) oxidises every carbon atom fully to CO₂ and every hydrogen atom to water. For a hydrocarbon fuel such as methane:
+CH₄ + 2O₂ → CO₂ + 2H₂O
+Complete combustion releases the most energy and produces only CO₂ and H₂O (plus SO₂ if the fuel contains sulfur).
+
+**Incomplete combustion** (limited oxygen) cannot fully oxidise the carbon. Two extra products appear:
+- **Carbon monoxide (CO)** — carbon only partly oxidised: 2CH₄ + 3O₂ → 2CO + 4H₂O.
+- **Soot / particulate carbon (C)** — carbon not oxidised at all (the yellow, sooty flame of a poorly-adjusted Bunsen burner or a diesel engine).
+
+Incomplete combustion also releases **less energy** per mole of fuel than complete combustion, and the CO produced is toxic — so a well-ventilated, oxygen-rich burn is both safer and more efficient.
+
+**Finding the percentage of oxygen in air (Edexcel experiment):** Air is pushed back and forth over **heated copper** until no further change. Copper reacts with oxygen only:
+2Cu + O₂ → 2CuO (black copper(II) oxide)
+The oxygen is used up, so the trapped gas volume shrinks. Starting from 100 cm³, the volume falls to about 79 cm³ — showing oxygen is about **21%** of air. A similar result comes from rusting damp iron wool in a sealed tube of air, or from burning phosphorus over water: the water level rises by about one-fifth as the oxygen is consumed.`,
+      diagrams: [
+        {
+          caption: "Heated-copper experiment to measure the percentage of oxygen in air",
+          svg: `<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram of the heated copper experiment: air is passed over heated copper which removes oxygen, the gas volume falls from 100 to about 79 cubic centimetres showing oxygen is about 21 percent of air">
+  <rect width="320" height="200" fill="#0f172a"/>
+  <text x="160" y="18" text-anchor="middle" font-size="11" fill="#38bdf8" font-weight="bold">2Cu + O2 -&gt; 2CuO</text>
+  <!-- Left syringe (start) -->
+  <rect x="20" y="60" width="80" height="26" rx="4" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
+  <rect x="20" y="60" width="80" height="26" rx="4" fill="#38bdf8" opacity="0.35"/>
+  <text x="60" y="77" text-anchor="middle" font-size="10" fill="#eef0ff">100 cm3 air</text>
+  <text x="60" y="52" text-anchor="middle" font-size="9" fill="#b7bce0">Start</text>
+  <!-- Tube with copper -->
+  <rect x="110" y="64" width="100" height="18" rx="3" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
+  <rect x="140" y="66" width="40" height="14" rx="2" fill="#b45309"/>
+  <text x="160" y="77" text-anchor="middle" font-size="8" fill="#fde68a">Cu (heated)</text>
+  <!-- Flame -->
+  <polygon points="155,96 160,82 165,96" fill="#fbbf24"/>
+  <polygon points="157,96 160,88 163,96" fill="#fb7185"/>
+  <!-- Right syringe (end) -->
+  <rect x="220" y="60" width="80" height="26" rx="4" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
+  <rect x="220" y="60" width="63" height="26" rx="4" fill="#34d399" opacity="0.35"/>
+  <text x="252" y="77" text-anchor="middle" font-size="10" fill="#eef0ff">79 cm3 gas</text>
+  <text x="262" y="52" text-anchor="middle" font-size="9" fill="#b7bce0">End</text>
+  <!-- Arrows -->
+  <line x1="100" y1="73" x2="110" y2="73" stroke="#94a3b8" stroke-width="1.5"/>
+  <polygon points="110,73 102,69 102,77" fill="#94a3b8"/>
+  <line x1="210" y1="73" x2="220" y2="73" stroke="#94a3b8" stroke-width="1.5"/>
+  <polygon points="220,73 212,69 212,77" fill="#94a3b8"/>
+  <!-- Result box -->
+  <rect x="40" y="120" width="240" height="60" rx="8" fill="#1e293b" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="160" y="142" text-anchor="middle" font-size="10" fill="#a78bfa" font-weight="bold">Oxygen used up by the copper</text>
+  <text x="160" y="160" text-anchor="middle" font-size="10" fill="#34d399">Volume falls 100 -&gt; 79 cm3</text>
+  <text x="160" y="174" text-anchor="middle" font-size="10" fill="#eef0ff">So oxygen is about 21% of air</text>
+</svg>`,
+        },
+      ],
+      keyPoints: [
+        "Complete combustion (plenty of O₂) gives CO₂ + H₂O and releases the most energy: CH₄ + 2O₂ → CO₂ + 2H₂O.",
+        "Incomplete combustion (limited O₂) gives toxic CO and/or soot (carbon) and releases less energy.",
+        "Sulfur impurities in the fuel burn to SO₂ regardless of how complete the combustion is.",
+        "Heated copper removes oxygen (2Cu + O₂ → 2CuO), shrinking the air volume from 100 to ~79 cm³.",
+        "Rusting iron wool or burning phosphorus over water gives the same ~21% oxygen result.",
+      ],
+      discovery: {
+        problem: "A gas heater burns with a clean blue flame when first serviced, but months later the flame is yellow and sooty and a CO alarm sounds. What has changed chemically, and why is the yellow flame both less efficient AND more dangerous?",
+        idea: "A blocked air inlet has reduced the oxygen supply, switching complete combustion to incomplete combustion. Carbon is now only partly oxidised, producing soot (the yellow glow) and carbon monoxide (the alarm). Less of the fuel's energy is released because the carbon is not fully oxidised to CO₂, and the CO is toxic — so the same fuel now wastes energy and threatens life.",
+      },
+      whyItWorks: "Burning fuel in copper experiment: copper is more reactive than the gases it sits in except for oxygen, so only O₂ is removed. Because gases at the same temperature and pressure occupy volumes in proportion to their amounts (Avogadro), the fractional drop in volume equals the fraction of the air that was oxygen — about one-fifth.",
+      strategies: ["Track the oxygen supply", "Read volume change as composition"],
+    },
+
+    {
+      heading: "The Carbon Cycle",
+      body: `Carbon is constantly moved between the atmosphere, living things, the oceans, and rocks/fuels. The **carbon cycle** keeps atmospheric CO₂ roughly balanced — until human activity tips it.
+
+**Processes that REMOVE CO₂ from the air:**
+- **Photosynthesis:** green plants absorb CO₂ to build glucose.
+  Word equation: carbon dioxide + water → glucose + oxygen (in light, using chlorophyll).
+  Symbol equation: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂.
+- **Dissolving in the oceans:** CO₂ is slightly soluble and dissolves into seawater, where it can form carbonates.
+
+**Processes that ADD CO₂ to the air:**
+- **Respiration** (in plants, animals, and microbes): glucose + oxygen → carbon dioxide + water (C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O).
+- **Combustion** of carbon-containing fuels (wood, coal, oil, natural gas) — including in vehicles and power stations.
+- **Decomposition** of dead organisms by microorganisms (a form of respiration).
+- **Thermal decomposition of carbonates**, e.g. heating limestone in a kiln: CaCO₃ → CaO + CO₂.
+
+**Carbon stores (reservoirs):** the atmosphere (CO₂), living biomass (glucose, proteins, etc.), the oceans (dissolved CO₂ and carbonate ions), and rocks/fossil fuels (limestone CaCO₃, coal, oil, gas).
+
+**Why the balance matters:** for millennia, photosynthesis (removal) and respiration + natural combustion (addition) were roughly balanced, holding atmospheric CO₂ near 0.04%. Burning fossil fuels releases carbon locked away for millions of years much faster than photosynthesis and the oceans can remove it, while deforestation cuts the rate of removal. The net result is a rising CO₂ concentration — the chemical driver of the enhanced greenhouse effect.`,
+      diagrams: [
+        {
+          caption: "The carbon cycle: photosynthesis removes CO₂; respiration, combustion, and decomposition return it",
+          svg: `<svg viewBox="0 0 320 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram of the carbon cycle showing atmospheric carbon dioxide removed by photosynthesis into plants and animals, and returned by respiration, combustion of fuels, and decomposition">
+  <rect width="320" height="210" fill="#0f172a"/>
+  <!-- Atmosphere box -->
+  <rect x="90" y="10" width="140" height="34" rx="8" fill="#1e3a5f" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="160" y="31" text-anchor="middle" font-size="11" fill="#bae6fd" font-weight="bold">Atmospheric CO2</text>
+  <!-- Plants box -->
+  <rect x="20" y="120" width="110" height="40" rx="8" fill="#14532d" stroke="#34d399" stroke-width="1.5"/>
+  <text x="75" y="138" text-anchor="middle" font-size="10" fill="#bbf7d0">Plants</text>
+  <text x="75" y="152" text-anchor="middle" font-size="8" fill="#86efac">(glucose, biomass)</text>
+  <!-- Animals box -->
+  <rect x="190" y="120" width="110" height="40" rx="8" fill="#7c2d12" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="245" y="138" text-anchor="middle" font-size="10" fill="#fed7aa">Animals</text>
+  <text x="245" y="152" text-anchor="middle" font-size="8" fill="#fdba74">(eat plants)</text>
+  <!-- Fuels box -->
+  <rect x="105" y="175" width="110" height="28" rx="8" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="160" y="193" text-anchor="middle" font-size="9" fill="#e2e8f0">Fossil fuels / dead matter</text>
+  <!-- Photosynthesis arrow (down into plants) -->
+  <line x1="110" y1="44" x2="80" y2="118" stroke="#34d399" stroke-width="2"/>
+  <polygon points="80,118 76,106 86,110" fill="#34d399"/>
+  <text x="60" y="86" font-size="8" fill="#34d399">photosynthesis</text>
+  <text x="64" y="96" font-size="8" fill="#34d399">(removes CO2)</text>
+  <!-- Respiration arrow (plants up) -->
+  <line x1="100" y1="120" x2="120" y2="46" stroke="#fbbf24" stroke-width="2" stroke-dasharray="4,2"/>
+  <polygon points="120,46 112,52 122,56" fill="#fbbf24"/>
+  <text x="128" y="92" font-size="8" fill="#fbbf24">respiration</text>
+  <!-- Respiration arrow (animals up) -->
+  <line x1="232" y1="120" x2="205" y2="46" stroke="#fbbf24" stroke-width="2" stroke-dasharray="4,2"/>
+  <polygon points="205,46 205,58 214,50" fill="#fbbf24"/>
+  <text x="214" y="92" font-size="8" fill="#fbbf24">respiration</text>
+  <!-- Plants eaten by animals -->
+  <line x1="130" y1="140" x2="190" y2="140" stroke="#94a3b8" stroke-width="1.5"/>
+  <polygon points="190,140 180,136 180,144" fill="#94a3b8"/>
+  <text x="160" y="135" text-anchor="middle" font-size="7" fill="#cbd5e1">feeding</text>
+  <!-- Combustion arrow (fuels up to atmosphere) -->
+  <line x1="170" y1="175" x2="165" y2="46" stroke="#fb7185" stroke-width="2"/>
+  <polygon points="165,46 160,57 170,57" fill="#fb7185"/>
+  <text x="172" y="120" font-size="8" fill="#fb7185">combustion /</text>
+  <text x="172" y="130" font-size="8" fill="#fb7185">decomposition</text>
+</svg>`,
+        },
+      ],
+      keyPoints: [
+        "Photosynthesis removes CO₂: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂; the oceans also absorb some CO₂.",
+        "Respiration, combustion, and decomposition all return CO₂ to the atmosphere.",
+        "Carbon is stored in the air, living biomass, the oceans, and rocks/fossil fuels.",
+        "Naturally, removal and addition are balanced, keeping CO₂ near 0.04%.",
+        "Burning fossil fuels and deforestation unbalance the cycle, raising atmospheric CO₂.",
+      ],
+      discovery: {
+        problem: "Coal, oil, and gas are called 'fossil fuels' and burning them raises CO₂ far faster than planting trees can lower it. Using the carbon cycle, explain why removing carbon by photosynthesis cannot keep pace with the carbon we release by combustion.",
+        idea: "Fossil fuels store carbon that photosynthesis removed from the air over millions of years. Combustion releases all of that carbon in decades, an enormous addition over a very short time. Photosynthesis works at a fixed, much slower rate (and deforestation reduces it further), so the removal side of the cycle cannot match the sudden, huge release — CO₂ accumulates in the atmosphere.",
+      },
+      whyItWorks: "The carbon cycle is a balance of opposing chemical processes. Photosynthesis and respiration are near-exact reverses of each other (6CO₂ + 6H₂O ⇌ C₆H₁₂O₆ + 6O₂), so in an undisturbed ecosystem the carbon taken in roughly equals the carbon given out. Combustion of fossil carbon adds a one-way flux that the photosynthesis–respiration loop never had to absorb, so the atmospheric store grows.",
+      strategies: ["Sort each process as a source or a sink", "Compare the rates, not just the directions"],
+    },
+
+    {
+      heading: "Rusting of Iron and Its Prevention",
+      body: `**Rusting** is the corrosion of iron (and steel). It is a slow oxidation reaction that produces **hydrated iron(III) oxide**, the orange-brown flaky solid we call rust. Unlike the protective oxide layer on aluminium, rust flakes off and exposes fresh metal, so iron keeps corroding until it is eaten away.
+
+**Two things are required — and BOTH must be present:**
+- **Water** (or water vapour), and
+- **Oxygen** (from the air).
+
+This is proved with three test tubes: a nail in tap water and air rusts; a nail in **boiled** water (oxygen removed) sealed under a layer of oil does **not** rust; a nail in dry air over a **drying agent** (e.g. anhydrous calcium chloride) does **not** rust. Removing either water or oxygen stops rusting. Note: **salt (and acid) speed up rusting** but are not needed for it — coastal and gritted-road conditions corrode cars faster.
+
+**Word equation:** iron + oxygen + water → hydrated iron(III) oxide.
+
+**Methods of prevention:**
+
+*Barrier methods* keep oxygen and water away from the metal surface, but fail if scratched:
+- Painting (cars, railings, bridges).
+- Oiling or greasing (moving parts, tools).
+- Coating with plastic (garden chairs, dish racks).
+- **Electroplating** with a less reactive metal (e.g. chromium or tin) for a shiny, durable barrier — tin-plated steel "tin cans" rust quickly once scratched, because tin is less reactive than iron.
+
+*Sacrificial protection* uses a **more reactive metal** in contact with the iron. The reactive metal is oxidised in preference to the iron, protecting it **even if the surface is scratched**:
+- **Galvanising** — coating iron/steel with **zinc**. This works in TWO ways: the zinc is a barrier AND, being more reactive than iron, it gives sacrificial protection if the coating is broken.
+- **Sacrificial blocks** of zinc or magnesium bolted to ship hulls and underground pipelines; the blocks corrode and are replaced periodically.
+
+*Alloying:* mixing iron with chromium and nickel makes **stainless steel**, which does not rust — used for cutlery and surgical tools (more expensive, so reserved for where rusting must be avoided).`,
+      diagrams: [
+        {
+          caption: "The three-test-tube experiment proving rusting needs both water and oxygen",
+          svg: `<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three test tube experiment: tube A nail in water and air rusts, tube B nail in boiled water sealed with oil does not rust, tube C nail in dry air over a drying agent does not rust, showing both water and oxygen are needed">
+  <rect width="320" height="200" fill="#0f172a"/>
+  <text x="160" y="16" text-anchor="middle" font-size="10" fill="#38bdf8" font-weight="bold">Rusting needs BOTH water and oxygen</text>
+  <!-- Tube A -->
+  <rect x="30" y="40" width="44" height="120" rx="0" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
+  <rect x="30" y="90" width="44" height="70" fill="#38bdf8" opacity="0.3"/>
+  <line x1="46" y1="100" x2="58" y2="150" stroke="#b45309" stroke-width="3"/>
+  <text x="52" y="178" text-anchor="middle" font-size="9" fill="#eef0ff" font-weight="bold">A</text>
+  <text x="52" y="192" text-anchor="middle" font-size="7" fill="#fb7185">RUSTS</text>
+  <text x="52" y="34" text-anchor="middle" font-size="7" fill="#b7bce0">water + air</text>
+  <!-- Tube B -->
+  <rect x="138" y="40" width="44" height="120" rx="0" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
+  <rect x="138" y="80" width="44" height="80" fill="#38bdf8" opacity="0.3"/>
+  <rect x="138" y="80" width="44" height="10" fill="#fbbf24" opacity="0.6"/>
+  <line x1="154" y1="100" x2="166" y2="150" stroke="#94a3b8" stroke-width="3"/>
+  <text x="160" y="178" text-anchor="middle" font-size="9" fill="#eef0ff" font-weight="bold">B</text>
+  <text x="160" y="192" text-anchor="middle" font-size="7" fill="#34d399">no rust</text>
+  <text x="160" y="34" text-anchor="middle" font-size="7" fill="#b7bce0">boiled water+oil</text>
+  <!-- Tube C -->
+  <rect x="246" y="40" width="44" height="120" rx="0" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
+  <rect x="246" y="138" width="44" height="22" fill="#a78bfa" opacity="0.4"/>
+  <line x1="262" y1="70" x2="274" y2="120" stroke="#94a3b8" stroke-width="3"/>
+  <text x="268" y="178" text-anchor="middle" font-size="9" fill="#eef0ff" font-weight="bold">C</text>
+  <text x="268" y="192" text-anchor="middle" font-size="7" fill="#34d399">no rust</text>
+  <text x="268" y="34" text-anchor="middle" font-size="7" fill="#b7bce0">dry air</text>
+  <text x="268" y="133" text-anchor="middle" font-size="6" fill="#c4b5fd">drying agent</text>
+</svg>`,
+        },
+      ],
+      keyPoints: [
+        "Rust is hydrated iron(III) oxide; rusting is the oxidation of iron and it flakes off, so corrosion continues.",
+        "BOTH water and oxygen are needed for rusting; remove either and rusting stops. Salt/acid speed it up.",
+        "Barrier methods (paint, oil, plastic, electroplating) keep out water and oxygen but fail if scratched.",
+        "Sacrificial protection uses a more reactive metal (zinc, magnesium) that corrodes instead of the iron.",
+        "Galvanising (zinc coating) gives both barrier and sacrificial protection; stainless steel resists rust by alloying.",
+      ],
+      discovery: {
+        problem: "Two identical steel water tanks each have a block of metal bolted inside. Tank 1 has a block of copper; tank 2 has a block of zinc. After a year, the steel in tank 1 has rusted badly but the steel in tank 2 is untouched (the zinc block has shrunk). Explain the difference using reactivity.",
+        idea: "Zinc is MORE reactive than iron, so it is oxidised in preference to the steel — sacrificial protection — and is itself eaten away (hence it shrank), saving the tank. Copper is LESS reactive than iron, so it offers no sacrificial protection; worse, the iron becomes the more reactive metal in contact and corrodes faster. Only a metal above iron in the reactivity series protects it sacrificially.",
+      },
+      whyItWorks: "Rusting is an electrochemical (redox) process: iron loses electrons (Fe → Fe²⁺ then Fe³⁺) while oxygen and water are reduced. A more reactive metal like zinc loses electrons more readily, so it supplies the electrons instead, keeping the iron reduced (protected). A barrier simply denies the reaction its reactants (oxygen and water), which is why a scratch — letting them back in — defeats it.",
+      strategies: ["Identify which essential factor a method removes", "Use the reactivity series to pick a sacrificial metal"],
+      thinkDeeper: "Aluminium is more reactive than iron, yet aluminium objects do not corrode away. Why? Aluminium forms a thin, tough, unreactive oxide layer (Al₂O₃) that sticks to the surface and seals the metal — it is self-protecting. Rust, by contrast, is flaky and porous and does not protect the iron beneath, which is why iron keeps rusting while aluminium does not.",
+    },
   ],
 
   learn: {
@@ -422,6 +641,12 @@ When fertilisers are applied in excess or washed from fields by rain (leaching/r
       "Eutrophication results from excess nitrogen/phosphorus in waterways, leading to algal blooms, oxygen depletion, and death of aquatic life.",
       "Acid rain forms when SO₂ or NOₓ dissolve in rainwater to form H₂SO₄ or HNO₃.",
       "Dissolved impurities raise the boiling point and lower the melting point of water.",
+      "Complete combustion (plenty of O₂) gives CO₂ + H₂O; incomplete combustion (limited O₂) gives toxic CO and/or soot.",
+      "Heated copper removes oxygen from air (2Cu + O₂ → 2CuO), shrinking the volume from 100 to about 79 cm³ — oxygen is ~21%.",
+      "In the carbon cycle, photosynthesis (6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂) removes CO₂, while respiration, combustion, and decomposition return it.",
+      "Rusting needs BOTH water and oxygen; it forms hydrated iron(III) oxide. Salt and acid speed it up but are not required.",
+      "Iron is protected from rusting by barrier methods (paint, oil, plastic, electroplating) and by sacrificial protection (a more reactive metal such as zinc or magnesium).",
+      "Galvanising (a zinc coating) protects iron both as a barrier and sacrificially, even if scratched.",
     ],
     flashcards: [
       { front: "What colour change does anhydrous CuSO₄ undergo in the presence of water?", back: "White → blue (forms blue hydrated CuSO₄·5H₂O)" },
@@ -436,6 +661,14 @@ When fertilisers are applied in excess or washed from fields by rain (leaching/r
       { front: "Why is N₂ not a greenhouse gas but CO₂ is?", back: "N₂ is diatomic and lacks IR-active vibrational modes; CO₂ has bending/stretching vibrations that absorb infrared radiation." },
       { front: "Describe the sequence of events in eutrophication.", back: "Excess nitrates/phosphates → algal bloom → blocked sunlight → submerged plants die → aerobic decomposition by bacteria → oxygen depletion → fish/invertebrates die." },
       { front: "What effect does acid rain have on limestone buildings?", back: "CaCO₃ + H₂SO₄ → CaSO₄ + H₂O + CO₂; the limestone dissolves and the structure is damaged." },
+      { front: "Give the equation for the complete combustion of methane.", back: "CH₄ + 2O₂ → CO₂ + 2H₂O. Complete combustion (plenty of oxygen) releases the most energy." },
+      { front: "What two extra products can incomplete combustion of a hydrocarbon give, and why?", back: "Carbon monoxide (CO) and soot (carbon). There is too little oxygen to oxidise all the carbon to CO₂; it also releases less energy." },
+      { front: "How is the percentage of oxygen in air found using copper?", back: "Air is passed over heated copper: 2Cu + O₂ → 2CuO. Oxygen is removed, so the volume falls from 100 to about 79 cm³ — oxygen is ~21%." },
+      { front: "Which process in the carbon cycle REMOVES CO₂ from the air? Give the equation.", back: "Photosynthesis: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂ (in light, using chlorophyll)." },
+      { front: "Name three processes that ADD CO₂ to the atmosphere.", back: "Respiration, combustion (of fuels), and decomposition of dead matter. (Also thermal decomposition of carbonates.)" },
+      { front: "What two substances are needed for iron to rust, and what is rust?", back: "Water AND oxygen are both needed. Rust is hydrated iron(III) oxide. Salt/acid speed rusting up but are not essential." },
+      { front: "What is the difference between barrier protection and sacrificial protection?", back: "Barrier methods (paint, oil, plastic) keep out water and oxygen but fail if scratched. Sacrificial protection uses a more reactive metal (zinc, magnesium) that corrodes instead of the iron, even if scratched." },
+      { front: "How does galvanising protect iron in TWO ways?", back: "The zinc coating is a physical barrier; and because zinc is more reactive than iron, it gives sacrificial protection (corrodes first) even if the coating is scratched." },
     ],
     keyTerms: [
       { term: "Anhydrous", definition: "Without water; describes a substance from which water has been removed (e.g. anhydrous CuSO₄ is white)." },
@@ -450,6 +683,12 @@ When fertilisers are applied in excess or washed from fields by rain (leaching/r
       { term: "Particulates (PM2.5)", definition: "Fine solid or liquid particles suspended in air from combustion; particles smaller than 2.5 µm penetrate deep into the lungs and cause respiratory and cardiovascular disease." },
       { term: "Leaching", definition: "The process by which water dissolves and carries substances (e.g. nitrate ions from fertilisers) through soil into groundwater or waterways." },
       { term: "Flue-gas desulfurisation (FGD)", definition: "A technology used at power stations to remove SO₂ from exhaust gases (e.g. by reacting with calcium oxide) before they are released, reducing acid rain." },
+      { term: "Complete combustion", definition: "Burning a fuel in plenty of oxygen so that carbon is fully oxidised to CO₂ and hydrogen to water; releases the most energy. For methane: CH₄ + 2O₂ → CO₂ + 2H₂O." },
+      { term: "Incomplete combustion", definition: "Burning a fuel in a limited supply of oxygen, producing carbon monoxide (CO) and/or soot (carbon) as well as less energy." },
+      { term: "Carbon cycle", definition: "The continual movement of carbon between the atmosphere, living organisms, oceans, and rocks/fuels; CO₂ is removed by photosynthesis and returned by respiration, combustion, and decomposition." },
+      { term: "Rusting", definition: "The corrosion (oxidation) of iron in the presence of BOTH water and oxygen to form hydrated iron(III) oxide (rust). Salt and acid speed it up." },
+      { term: "Sacrificial protection", definition: "Preventing rust by attaching a more reactive metal (e.g. zinc or magnesium) to iron; the reactive metal is oxidised in preference to the iron, protecting it even if scratched." },
+      { term: "Galvanising", definition: "Coating iron or steel with zinc. The zinc acts as a barrier and, being more reactive than iron, also gives sacrificial protection." },
     ],
   },
 

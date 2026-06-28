@@ -6,7 +6,7 @@ export const chemOrganic: Topic = {
   subject: "chemistry",
   icon: "🛢️",
   blurb: "Hydrocarbons, crude oil fractions, alkanes, alkenes, alcohols, carboxylic acids and polymers.",
-  intro: "Organic chemistry is the study of carbon compounds — a vast family that includes fuels, plastics, medicines and food. We start with crude oil, a mixture of hydrocarbons separated by fractional distillation, and then explore four homologous series: alkanes, alkenes, alcohols and carboxylic acids. Understanding how structure determines reactivity is the key thread running through the whole topic.",
+  intro: "Organic chemistry is the study of carbon compounds — a vast family that includes fuels, plastics, medicines and food. We start with crude oil, a mixture of hydrocarbons separated by fractional distillation, and then explore four homologous series: alkanes, alkenes, alcohols and carboxylic acids, plus the esters and polymers built from them. Along the way you will learn to name compounds, draw displayed formulae, recognise structural isomers, and — the key thread of the whole topic — see how a molecule's structure (its functional group and bonding) determines how it reacts.",
 
   guide: [
     {
@@ -187,6 +187,93 @@ Alkanes are **fairly unreactive** under normal conditions because C–H and C–
       whyItWorks: "The saturation of alkanes (all single bonds) means there are no available pi electrons for electrophiles to attack. Reactions therefore require UV-generated radicals (highly reactive species with unpaired electrons) to abstract H atoms and initiate substitution.",
     },
     {
+      heading: "Naming, Formulae and Structural Isomerism",
+      body: `Every organic name is built from a **stem** (how many carbons) plus a **suffix** (the functional group / series).
+
+**Carbon-number stems:** meth- (1), eth- (2), prop- (3), but- (4), pent- (5), hex- (6).
+
+**Suffixes for each series:**
+
+| Series | Suffix | Example |
+|--------|--------|---------|
+| Alkane | -ane | propane, C₃H₈ |
+| Alkene | -ene | propene, C₃H₆ |
+| Alcohol | -ol | propanol, C₃H₇OH |
+| Carboxylic acid | -oic acid | propanoic acid, C₂H₅COOH |
+
+For alkenes and alcohols with four or more carbons, a **number** shows where the functional group is: but-1-ene has the C=C between carbons 1 and 2; but-2-ene has it between carbons 2 and 3.
+
+**Types of formula** (using ethanol as the example):
+
+- **Molecular formula** — just the atom count: C₂H₆O
+- **Structural formula** — shows how atoms are grouped: CH₃CH₂OH
+- **Displayed formula** — shows *every* atom and *every* bond as a line:
+
+H₃C–CH₂–O–H drawn out with all C–H bonds shown.
+
+**Structural isomerism:**
+**Isomers** are compounds with the **same molecular formula but a different structural (displayed) formula** — the atoms are joined together in a different order. Isomers therefore have different names and can have different physical and chemical properties.
+
+The classic IGCSE example is **C₄H₁₀**, which has two isomers:
+
+- **Butane** — an unbranched chain: CH₃–CH₂–CH₂–CH₃
+- **2-methylpropane** (methylpropane) — a branched chain: a three-carbon chain with a CH₃ branch on the middle carbon.
+
+Both are C₄H₁₀ (saturated alkanes), but the branched isomer is more compact, so it has weaker dispersion forces and a slightly **lower boiling point** than straight-chain butane. Other isomer pairs you may meet: but-1-ene and but-2-ene (position of the C=C), and propan-1-ol and propan-2-ol (position of the –OH).`,
+      diagrams: [
+        {
+          caption: "Two structural isomers of C₄H₁₀: butane (straight chain) and 2-methylpropane (branched)",
+          svg: `<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The two structural isomers of C4H10: butane drawn as a straight chain of four carbons, and 2-methylpropane drawn as a three-carbon chain with a methyl branch on the central carbon">
+  <text x="10" y="16" fill="#fbbf24" font-size="10" font-family="sans-serif" font-weight="bold">Both are C4H10 - same formula, different structure</text>
+
+  <!-- Butane: straight chain -->
+  <text x="10" y="48" fill="#b7bce0" font-size="9" font-family="sans-serif" font-weight="bold">Butane (straight chain)</text>
+  <circle cx="40" cy="75" r="9" fill="#38bdf8"/>
+  <text x="36" y="79" fill="#0f172a" font-size="9" font-family="sans-serif" font-weight="bold">C</text>
+  <line x1="49" y1="75" x2="71" y2="75" stroke="#eef0ff" stroke-width="1.5"/>
+  <circle cx="80" cy="75" r="9" fill="#38bdf8"/>
+  <text x="76" y="79" fill="#0f172a" font-size="9" font-family="sans-serif" font-weight="bold">C</text>
+  <line x1="89" y1="75" x2="111" y2="75" stroke="#eef0ff" stroke-width="1.5"/>
+  <circle cx="120" cy="75" r="9" fill="#38bdf8"/>
+  <text x="116" y="79" fill="#0f172a" font-size="9" font-family="sans-serif" font-weight="bold">C</text>
+  <line x1="129" y1="75" x2="151" y2="75" stroke="#eef0ff" stroke-width="1.5"/>
+  <circle cx="160" cy="75" r="9" fill="#38bdf8"/>
+  <text x="156" y="79" fill="#0f172a" font-size="9" font-family="sans-serif" font-weight="bold">C</text>
+  <text x="28" y="100" fill="#34d399" font-size="8" font-family="sans-serif">(H atoms fill every spare bond)</text>
+
+  <!-- 2-methylpropane: branched -->
+  <text x="10" y="130" fill="#b7bce0" font-size="9" font-family="sans-serif" font-weight="bold">2-methylpropane (branched)</text>
+  <circle cx="60" cy="160" r="9" fill="#38bdf8"/>
+  <text x="56" y="164" fill="#0f172a" font-size="9" font-family="sans-serif" font-weight="bold">C</text>
+  <line x1="69" y1="160" x2="91" y2="160" stroke="#eef0ff" stroke-width="1.5"/>
+  <circle cx="100" cy="160" r="9" fill="#38bdf8"/>
+  <text x="96" y="164" fill="#0f172a" font-size="9" font-family="sans-serif" font-weight="bold">C</text>
+  <line x1="109" y1="160" x2="131" y2="160" stroke="#eef0ff" stroke-width="1.5"/>
+  <circle cx="140" cy="160" r="9" fill="#38bdf8"/>
+  <text x="136" y="164" fill="#0f172a" font-size="9" font-family="sans-serif" font-weight="bold">C</text>
+  <!-- branch up from middle carbon -->
+  <line x1="100" y1="151" x2="100" y2="133" stroke="#eef0ff" stroke-width="1.5"/>
+  <circle cx="100" cy="124" r="9" fill="#38bdf8"/>
+  <text x="96" y="128" fill="#0f172a" font-size="9" font-family="sans-serif" font-weight="bold">C</text>
+  <text x="150" y="164" fill="#34d399" font-size="8" font-family="sans-serif">CH3 branch on the</text>
+  <text x="150" y="175" fill="#34d399" font-size="8" font-family="sans-serif">central carbon</text>
+</svg>`,
+        },
+      ],
+      keyPoints: [
+        "Names = stem (carbon count: meth, eth, prop, but…) + suffix (-ane, -ene, -ol, -oic acid).",
+        "Molecular formula = atom count; displayed formula = every atom and bond drawn out.",
+        "Structural isomers: same molecular formula but different structural/displayed formula (different arrangement of atoms).",
+        "C₄H₁₀ has two isomers: butane (straight chain) and 2-methylpropane (branched).",
+        "Branched isomers have weaker dispersion forces, so a lower boiling point than the straight-chain isomer.",
+      ],
+      discovery: {
+        problem: "Two colourless gases both have the molecular formula C₄H₁₀ and both are saturated alkanes, yet one boils at −0.5 °C and the other at −12 °C. How can the same formula give two different substances?",
+        idea: "The atoms are connected in a different order — they are structural isomers. One is a straight chain (butane); the other has a branch (2-methylpropane). The branched molecule is more compact, so its molecules cannot pack as closely and the dispersion forces between them are weaker — giving the lower boiling point.",
+      },
+      strategies: ["To find isomers: keep the atom count fixed, then redraw the carbon skeleton with a branch or move the functional group.", "Always check an isomer has the correct number of bonds: each C needs 4 bonds, each H needs 1."],
+    },
+    {
       heading: "Alkenes, Cracking and Addition Reactions",
       body: `**Alkenes** are **unsaturated** hydrocarbons containing at least one **C=C double bond**. General formula: **CₙH₂ₙ**.
 
@@ -270,6 +357,10 @@ Ethanol burns cleanly and is used as a **fuel** (e.g. in Brazil mixed with petro
 
 The most important example for IGCSE is **ethanoic acid** (CH₃COOH) — the acid in vinegar.
 
+**Making ethanoic acid by oxidising ethanol:**
+Ethanol is **oxidised** to ethanoic acid, either by warming with an oxidising agent such as acidified potassium manganate(VII) (purple → colourless), or slowly by oxygen and bacteria in the air. This is why a bottle of wine or beer left open turns **sour** — the ethanol is oxidised to ethanoic acid.
+CH₃CH₂OH + 2[O] → CH₃COOH + H₂O
+
 Ethanoic acid is a **weak acid**: it partially ionises in water.
 CH₃COOH ⇌ CH₃COO⁻ + H⁺
 
@@ -280,17 +371,26 @@ As an acid, ethanoic acid undergoes typical acid reactions:
 - **With carbonates:** 2CH₃COOH + Na₂CO₃ → 2CH₃COONa + H₂O + CO₂
 - **With alcohols (esterification):** CH₃COOH + C₂H₅OH ⇌ CH₃COOC₂H₅ + H₂O (ethyl ethanoate — a sweet-smelling ester)
 
-The esterification reaction requires a **concentrated H₂SO₄ catalyst** and gentle heat. It is reversible.
+**Esters:**
+An **ester** forms when a **carboxylic acid reacts with an alcohol**, with a **concentrated sulfuric acid (H₂SO₄) catalyst** and gentle warming. Water is also produced, and the reaction is **reversible**. Esters contain the **ester linkage –COO–** (a C=O next to a C–O–C) and many have sweet, fruity smells.
+
+acid + alcohol ⇌ ester + water
+CH₃COOH + C₂H₅OH ⇌ CH₃COOC₂H₅ + H₂O
+
+**Naming an ester:** the name has two parts — the **alkyl** part comes from the **alcohol** (ethanol → ethyl) and is written first; the **-anoate** part comes from the **acid** (ethanoic acid → ethanoate) and is written second. So ethanol + ethanoic acid → **ethyl ethanoate**; methanol + propanoic acid → methyl propanoate.
+
+**Uses of esters:** flavourings and perfumes (because of their pleasant smells), and as solvents.
 
 Ethanoic acid has a sharp, vinegar-like smell. It has a higher boiling point than ethanol (with similar molar mass) because –COOH forms strong hydrogen bonds.`,
       keyPoints: [
         "Carboxylic acids contain –COOH; ethanoic acid CH₃COOH is the IGCSE example.",
+        "Ethanoic acid is made by oxidising ethanol (oxidising agent, or air/bacteria — souring of wine).",
         "Weak acid — partially ionises in water (CH₃COOH ⇌ CH₃COO⁻ + H⁺).",
         "Reacts with metals, bases, carbonates (typical acid reactions) and with alcohols to form esters.",
-        "Esterification is reversible and requires an acid catalyst (conc. H₂SO₄).",
-        "Ethanoic acid is used as vinegar and in manufacturing esters for food flavourings.",
+        "Esterification (acid + alcohol ⇌ ester + water) is reversible and needs a conc. H₂SO₄ catalyst.",
+        "Ester naming: alkyl part (from alcohol) + -anoate part (from acid), e.g. ethyl ethanoate; esters are used as flavourings, perfumes and solvents.",
       ],
-      strategies: ["Use the acid-reaction templates: acid + metal → salt + H₂; acid + base → salt + water; acid + carbonate → salt + water + CO₂."],
+      strategies: ["Use the acid-reaction templates: acid + metal → salt + H₂; acid + base → salt + water; acid + carbonate → salt + water + CO₂.", "Name an ester as (alcohol stem + -yl) then (acid stem + -anoate)."],
     },
     {
       heading: "Addition Polymerisation and Plastics",
@@ -311,6 +411,18 @@ Repeat unit: –(CH₂–CH(CH₃))ₙ–
 - **Poly(chloroethene) / PVC**: from chloroethene (CH₂=CHCl)
 - **Poly(tetrafluoroethene) / PTFE**: from tetrafluoroethene (CF₂=CF₂)
 - **Poly(styrene)**: from phenylethene (styrene, C₆H₅–CH=CH₂)
+
+**Condensation polymerisation (a contrast):**
+Not all polymers are made by addition. In **condensation polymerisation**, monomers join together and a **small molecule (usually water) is eliminated** at each link. This requires monomers with **two reactive functional groups** each (rather than a C=C double bond).
+
+- **Nylon** (a polyamide) is made from a **diamine** and a **dicarboxylic acid**; a –CO–NH– (amide) link forms and water is lost at each join.
+- **PET / Terylene** (a polyester) is made from a **diol** and a **dicarboxylic acid**; an ester link forms and water is lost.
+
+| | Addition | Condensation |
+|--|--|--|
+| Monomer | one type, with C=C | two functional groups each (often two monomers) |
+| By-product | none | a small molecule (usually water) |
+| Examples | poly(ethene), PVC, PTFE | nylon, PET / Terylene |
 
 **Properties and problems of plastics:**
 - Strong, lightweight, flexible, waterproof, chemically inert — excellent for packaging, construction, etc.
@@ -389,6 +501,7 @@ Repeat unit: –(CH₂–CH(CH₃))ₙ–
         "Addition polymerisation: unsaturated monomers (with C=C) join to form a long-chain polymer; no other product formed.",
         "Poly(ethene): monomer = ethene (CH₂=CH₂); repeat unit = –CH₂CH₂–.",
         "To identify the monomer from the polymer: insert a C=C in the repeat unit.",
+        "Condensation polymerisation (nylon, PET): two functional groups per monomer; a small molecule (usually water) is lost at each link.",
         "Most addition polymers are non-biodegradable — a major environmental problem.",
         "Disposal options: landfill, incineration (energy recovery), recycling; each has advantages and disadvantages.",
       ],
@@ -412,7 +525,10 @@ Repeat unit: –(CH₂–CH(CH₃))ₙ–
       "Ethanol made by fermentation (glucose + yeast, ~35 °C) or hydration of ethene (H₃PO₄, ~300 °C).",
       "Addition polymerisation: n(CH₂=CH₂) → –(CH₂CH₂)ₙ–; no by-product; polymer is non-biodegradable.",
       "Ethanoic acid (CH₃COOH) is a weak acid; reacts with metals, bases, carbonates, and alcohols (esterification).",
+      "Ethanoic acid is made by oxidising ethanol (oxidising agent or air/bacteria); esters form from acid + alcohol and are named alkyl …anoate.",
       "Homologous series: same general formula, same functional group, gradual change in physical properties.",
+      "Structural isomers have the same molecular formula but different displayed formulae, e.g. butane and 2-methylpropane (both C₄H₁₀).",
+      "Condensation polymerisation (nylon, PET) joins monomers with two functional groups, losing a small molecule (water); addition polymerisation forms no by-product.",
     ],
     flashcards: [
       { front: "General formula of alkanes", back: "CₙH₂ₙ₊₂ (e.g. methane CH₄, ethane C₂H₆)" },
@@ -427,6 +543,11 @@ Repeat unit: –(CH₂–CH(CH₃))ₙ–
       { front: "Repeat unit of poly(ethene)", back: "–(CH₂–CH₂)ₙ– drawn with square brackets and subscript n" },
       { front: "Why are most plastics an environmental problem?", back: "Non-biodegradable — persist for centuries in landfill or oceans, harming wildlife" },
       { front: "What is the functional group of carboxylic acids?", back: "–COOH (carboxyl group)" },
+      { front: "What are structural isomers?", back: "Compounds with the same molecular formula but a different structural/displayed formula (atoms joined in a different order)" },
+      { front: "Two structural isomers of C₄H₁₀", back: "Butane (straight chain CH₃CH₂CH₂CH₃) and 2-methylpropane (branched)" },
+      { front: "How is ethanoic acid made from ethanol?", back: "Oxidation of ethanol — by an oxidising agent (e.g. acidified KMnO₄) or by air/bacteria (souring of wine)" },
+      { front: "How is an ester formed and named?", back: "Carboxylic acid + alcohol ⇌ ester + water (conc. H₂SO₄ catalyst); named alkyl part (from alcohol) + -anoate part (from acid), e.g. ethyl ethanoate" },
+      { front: "Difference between addition and condensation polymerisation", back: "Addition: C=C monomers join, no by-product. Condensation: monomers with two functional groups join, losing a small molecule (usually water), e.g. nylon, PET" },
     ],
     keyTerms: [
       { term: "Hydrocarbon", definition: "A compound containing carbon and hydrogen only." },
@@ -441,6 +562,11 @@ Repeat unit: –(CH₂–CH(CH₃))ₙ–
       { term: "Fermentation", definition: "The anaerobic breakdown of glucose by yeast (enzyme zymase) to form ethanol and carbon dioxide." },
       { term: "Hydration", definition: "An addition reaction in which water (steam) adds across a C=C double bond; used to manufacture ethanol from ethene." },
       { term: "Esterification", definition: "The reversible reaction between a carboxylic acid and an alcohol (with acid catalyst) to form an ester and water." },
+      { term: "Structural isomers", definition: "Compounds that have the same molecular formula but a different structural (displayed) formula — the atoms are joined together in a different order." },
+      { term: "Displayed formula", definition: "A structural formula that shows every atom and every bond in a molecule drawn out as lines." },
+      { term: "Ester", definition: "An organic compound containing the –COO– linkage, formed when a carboxylic acid reacts with an alcohol; many have sweet, fruity smells." },
+      { term: "Condensation polymerisation", definition: "A reaction in which monomers (each with two functional groups) join to form a polymer, eliminating a small molecule such as water at each link; e.g. nylon and PET." },
+      { term: "Oxidation of ethanol", definition: "The conversion of ethanol to ethanoic acid using an oxidising agent or by air/bacteria, as when wine turns sour." },
     ],
   },
 

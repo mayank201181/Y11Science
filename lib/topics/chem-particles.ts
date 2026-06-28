@@ -94,6 +94,12 @@ export const chemParticles: Topic = {
 - **Evaporation**: liquid → gas at the surface only, at *any* temperature below the boiling point.
 - **Condensation**: gas → liquid (releases energy; the reverse of boiling/evaporation).
 - **Sublimation**: solid → gas directly, without passing through the liquid state (e.g. iodine, dry ice / solid CO₂).
+- **Deposition** (sometimes called desublimation): gas → solid directly, without passing through the liquid state — the reverse of sublimation (e.g. iodine vapour re-forming shiny crystals on a cool surface; frost forming directly from water vapour).
+
+**Endothermic and exothermic changes of state**
+The six changes split neatly by their energy direction:
+- *Energy absorbed (endothermic)*: melting, boiling, evaporation and sublimation — forces between particles are broken or weakened, so energy must be put **in**.
+- *Energy released (exothermic)*: freezing, condensation and deposition — forces between particles re-form, so energy is given **out** to the surroundings.
 
 **Energy and changes of state**
 During a change of state, energy is used to **break or weaken the forces between particles** (intermolecular forces), *not* to raise the temperature. This is why temperature stays constant during melting and boiling even though energy is being supplied. The energy supplied during melting is called the **latent heat of fusion**; during boiling it is the **latent heat of vaporisation**.
@@ -107,7 +113,8 @@ During a change of state, energy is used to **break or weaken the forces between
         "Melting point and freezing point of a pure substance are the same temperature.",
         "Boiling occurs throughout the liquid at a fixed temperature; evaporation occurs only at the surface at any temperature.",
         "Evaporation causes cooling because the higher-energy particles escape, leaving behind lower-energy (cooler) particles.",
-        "Sublimation is solid → gas directly (e.g. iodine, dry ice).",
+        "Sublimation is solid → gas directly (e.g. iodine, dry ice); deposition is the reverse, gas → solid directly.",
+        "Melting, boiling, evaporation and sublimation are endothermic (absorb energy); freezing, condensation and deposition are exothermic (release energy).",
       ],
       thinkDeeper: "Sweating cools the body because the water on skin surface evaporates. The fastest water molecules escape, taking away energy — this is exactly kinetic particle theory in action. Can you explain why blowing on wet skin makes you feel colder?",
       whyItWorks: "Forces between particles (intermolecular forces) store potential energy. Breaking those forces requires energy input — which is why latent heat is absorbed on melting and boiling. Forming those forces releases that same energy — which is why condensation and freezing are exothermic.",
@@ -236,7 +243,12 @@ A long glass tube has a pad of cotton wool soaked in concentrated aqueous ammoni
 
 NH₃(g) + HCl(g) → NH₄Cl(s)
 
-A **white ring of ammonium chloride** (NH₄Cl) forms inside the tube. Because NH₃ molecules are lighter (Mr = 17) than HCl molecules (Mr = 36.5), NH₃ diffuses faster and travels further before the two gases meet. The white ring therefore forms **closer to the HCl end**.`,
+A **white ring of ammonium chloride** (NH₄Cl) forms inside the tube. Because NH₃ molecules are lighter (Mr = 17) than HCl molecules (Mr = 36.5), NH₃ diffuses faster and travels further before the two gases meet. The white ring therefore forms **closer to the HCl end**.
+
+**Brownian motion**
+Under a microscope, tiny visible specks suspended in a fluid — smoke particles in air, or pollen grains in water — are seen to move in a continuous, random, jerky path. This is **Brownian motion**. The visible specks are far too big to be molecules; instead they are being constantly bombarded on all sides by the much smaller, fast-moving, *invisible* molecules of the surrounding gas or liquid. Because the bombardment is uneven and random from moment to moment, the speck is knocked first one way and then another.
+
+Brownian motion is powerful evidence for kinetic particle theory because it shows that the surrounding molecules must be (i) very small, (ii) moving fast, and (iii) in constant random motion — exactly what the model assumes. It complements diffusion as direct evidence that particles move on their own.`,
       diagrams: [
         {
           caption: "Ammonia-HCl tube experiment — white ring forms nearer the HCl end",
@@ -285,6 +297,7 @@ A **white ring of ammonium chloride** (NH₄Cl) forms inside the tube. Because N
         "Higher temperature increases the rate of diffusion.",
         "In the NH₃/HCl tube, the white ring of NH₄Cl forms nearer the HCl end because NH₃ (Mr 17) diffuses faster than HCl (Mr 36.5).",
         "Diffusion in liquids is much slower than in gases because particles are closer and have more collisions.",
+        "Brownian motion (random jiggling of smoke/pollen specks) is evidence that the surrounding molecules are small, fast and in constant random motion.",
       ],
       thinkDeeper: "Graham's law states that the rate of diffusion is inversely proportional to the square root of the molar mass: rate ∝ 1/√Mr. Using this, the ratio of diffusion speeds of NH₃ to HCl is √36.5/√17 ≈ 1.47. So NH₃ travels about 1.5× as far before they meet — which is consistent with where the ring actually appears. Can you use this to predict where the ring would form in a 60 cm tube?",
       discovery: {
@@ -293,6 +306,38 @@ A **white ring of ammonium chloride** (NH₄Cl) forms inside the tube. Because N
       },
       strategies: ["Mr comparison", "relative speed reasoning", "gradient direction"],
       whyItWorks: "At a given temperature, all gas molecules have the same average kinetic energy (½mv² = constant). So lighter molecules (smaller m) must have larger average speed v. Faster molecules spread through space more quickly, giving a higher rate of diffusion. This is the molecular-level basis of Graham's law.",
+    },
+    {
+      heading: "Dissolving and Solutions",
+      body: `When a soluble solid is added to a liquid, it can **dissolve** to form a **solution**. The vocabulary matters in the exam:
+
+- **Solute**: the substance that dissolves (e.g. the salt or sugar).
+- **Solvent**: the liquid it dissolves in (e.g. water).
+- **Solution**: the uniform mixture formed (solute + solvent).
+- **Soluble**: a substance that *will* dissolve in a particular solvent. **Insoluble**: one that will not.
+- **Aqueous solution**: a solution in which the solvent is water (state symbol *(aq)*).
+
+**What happens to the particles?**
+The solute particles separate from one another and spread out, mixing evenly among the solvent particles by random motion. The solution that forms looks the same throughout — you cannot see the solute, but it has *not* disappeared. **Mass is conserved**: the mass of the solution equals the mass of solute plus the mass of solvent. A solution is transparent (you can see through it), although it may be coloured.
+
+**Saturation**
+There is a limit to how much solute a given amount of solvent can dissolve at a particular temperature. A **saturated solution** is one that contains as much dissolved solute as it can hold at that temperature — any extra solute simply stays undissolved. Raising the temperature usually lets the solvent dissolve *more* solute, which is why a hot drink dissolves sugar more readily than a cold one.
+
+**Why dissolving is not a change of state**
+Dissolving is a *physical change*: no new substance is made, and the solute can usually be recovered by evaporating off the solvent. It is mixing at the particle level, driven by the same random motion that causes diffusion.`,
+      keyPoints: [
+        "Solute dissolves in a solvent to form a solution; a water solvent gives an aqueous (aq) solution.",
+        "Dissolving spreads solute particles evenly among solvent particles by random motion — the solute is not destroyed.",
+        "Mass is conserved: mass of solution = mass of solute + mass of solvent.",
+        "A saturated solution holds the maximum solute it can at a given temperature; higher temperature usually dissolves more.",
+        "Dissolving is a physical change — the solute can be recovered by evaporating the solvent.",
+      ],
+      discovery: {
+        problem: "10 g of salt is stirred into 100 g of water until it all disappears and the liquid looks clear. A student says 'the salt has been destroyed, so the solution must weigh less than 110 g.' Are they right?",
+        idea: "No. The salt particles have only spread out and mixed evenly among the water particles — they are still there, just too small and too dispersed to see. Mass is conserved, so the solution weighs 110 g. Evaporating the water would leave the 10 g of salt behind.",
+      },
+      strategies: ["conservation of mass", "particle mixing reasoning"],
+      whyItWorks: "Dissolving works because random particle motion lets solute and solvent particles intermingle, while attractions between solute and solvent particles make the mixed arrangement stable. Because no bonds within the solute are permanently changed into a new substance, the process is physical and reversible by evaporation.",
     },
   ],
 
@@ -304,7 +349,11 @@ A **white ring of ammonium chloride** (NH₄Cl) forms inside the tube. Because N
       "During a change of state, temperature stays constant because energy breaks intermolecular forces rather than raising kinetic energy.",
       "The boiling plateau on a heating curve is longer than the melting plateau because more energy is needed to fully separate particles.",
       "Evaporation cools the liquid because the fastest particles escape, lowering the average kinetic energy of those remaining.",
-      "Sublimation is the direct change from solid to gas (e.g. iodine, dry ice).",
+      "Sublimation is the direct change from solid to gas (e.g. iodine, dry ice); deposition is the reverse, gas to solid directly.",
+      "Melting, boiling, evaporation and sublimation absorb energy (endothermic); freezing, condensation and deposition release energy (exothermic).",
+      "Brownian motion — the random jerky movement of visible smoke or pollen specks — is caused by collisions with fast-moving invisible molecules, evidence for kinetic theory.",
+      "Dissolving spreads solute particles evenly among solvent particles by random motion; mass is conserved (solution = solute + solvent) and the solute can be recovered by evaporation.",
+      "A saturated solution holds the maximum solute it can at a given temperature; higher temperature usually dissolves more.",
       "Diffusion is the net movement of particles from high to low concentration due to random particle motion.",
       "In the NH₃/HCl tube experiment, the white ring of NH₄Cl forms nearer the HCl end because NH₃ (Mr 17) diffuses faster than HCl (Mr 36.5).",
       "Rate of diffusion increases with temperature and decreases with increasing relative molecular mass.",
@@ -316,6 +365,12 @@ A **white ring of ammonium chloride** (NH₄Cl) forms inside the tube. Because N
       { front: "What is the difference between boiling and evaporation?", back: "Boiling occurs throughout the liquid at a fixed temperature (boiling point); evaporation occurs only at the surface at any temperature below the boiling point." },
       { front: "Why does evaporation cause cooling?", back: "The highest-energy particles escape from the surface, so the average kinetic energy (and therefore temperature) of the remaining liquid falls." },
       { front: "What is sublimation?", back: "The direct change of state from solid to gas without passing through the liquid state (e.g. iodine, dry ice)." },
+      { front: "What is deposition?", back: "The direct change of state from gas to solid without passing through the liquid state — the reverse of sublimation (e.g. frost forming from water vapour)." },
+      { front: "Which changes of state are endothermic and which are exothermic?", back: "Endothermic (absorb energy): melting, boiling, evaporation, sublimation. Exothermic (release energy): freezing, condensation, deposition." },
+      { front: "What causes Brownian motion?", back: "Visible particles (smoke/pollen) are knocked about by collisions with the much smaller, fast-moving, invisible molecules of the surrounding fluid, which hit them randomly from all sides." },
+      { front: "Define solute, solvent and solution.", back: "Solute = the substance that dissolves; solvent = the liquid it dissolves in; solution = the uniform mixture of solute dissolved in solvent." },
+      { front: "When salt dissolves in water, what happens to its mass?", back: "Mass is conserved — the salt particles spread out among the water particles but are not destroyed, so mass of solution = mass of solute + mass of solvent." },
+      { front: "What is a saturated solution?", back: "A solution that contains as much dissolved solute as it can hold at that temperature; any extra solute stays undissolved. Heating usually lets more dissolve." },
       { front: "On a heating curve, why is the boiling plateau longer than the melting plateau?", back: "More energy (latent heat of vaporisation) is needed to fully separate particles from liquid to gas than to partially free them from the solid lattice during melting (latent heat of fusion)." },
       { front: "What is diffusion?", back: "The net movement of particles from a region of higher concentration to a region of lower concentration, as a result of their random motion, down a concentration gradient." },
       { front: "Why does NH₃ travel further than HCl in the gas-tube experiment?", back: "NH₃ has a lower relative molecular mass (Mr = 17) than HCl (Mr = 36.5), so NH₃ molecules move faster at the same temperature and diffuse at a greater rate." },
@@ -330,6 +385,12 @@ A **white ring of ammonium chloride** (NH₄Cl) forms inside the tube. Because N
       { term: "Boiling point", definition: "The temperature at which a pure liquid changes to a gas throughout the bulk liquid at a given pressure." },
       { term: "Evaporation", definition: "The change of state from liquid to gas at the surface of a liquid, at temperatures below the boiling point." },
       { term: "Sublimation", definition: "The direct change of state from solid to gas without passing through the liquid state." },
+      { term: "Deposition", definition: "The direct change of state from gas to solid without passing through the liquid state; the reverse of sublimation." },
+      { term: "Brownian motion", definition: "The random, jerky movement of small visible particles (e.g. smoke or pollen) suspended in a fluid, caused by collisions with fast-moving invisible fluid molecules; evidence for kinetic particle theory." },
+      { term: "Solute", definition: "The substance (often a solid) that dissolves in a solvent to form a solution." },
+      { term: "Solvent", definition: "The liquid in which a solute dissolves (e.g. water in an aqueous solution)." },
+      { term: "Solution", definition: "The uniform mixture formed when a solute dissolves in a solvent; transparent and the same throughout." },
+      { term: "Saturated solution", definition: "A solution that contains the maximum amount of dissolved solute it can hold at a given temperature." },
       { term: "Latent heat", definition: "The energy absorbed or released during a change of state at constant temperature; used to break or form intermolecular forces." },
       { term: "Concentration gradient", definition: "The difference in concentration of a substance between two regions; particles diffuse from high to low concentration." },
       { term: "Relative molecular mass (Mr)", definition: "The mass of one molecule of a substance relative to 1/12 the mass of a carbon-12 atom; determines how fast molecules move at a given temperature." },

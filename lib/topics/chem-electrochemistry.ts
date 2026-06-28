@@ -99,8 +99,15 @@ export const chemElectrochemistry: Topic = {
         "- Ions: Al3+ and O2-\n" +
         "- Cathode: Al3+ + 3e- → Al (liquid aluminium)\n" +
         "- Anode: 2O2- → O₂ + 4e- (oxygen gas)\n\n" +
-        "In the industrial extraction of aluminium, molten cryolite (Na₃AlF₆) is used as a solvent to lower the melting point of Al₂O₃ from ~2050 °C to ~950 °C, making the process economically viable.\n\n" +
-        "**Inert vs active electrodes:** Carbon (graphite) electrodes are **inert** — they do not react with the electrolyte or products. However, in aluminium extraction the oxygen produced reacts with the carbon anodes, forming CO₂ and gradually burning them away, so they must be replaced regularly.",
+        "**Industrial extraction of aluminium (a full IGCSE case study):**\n\n" +
+        "- Aluminium is too reactive to be extracted by reduction with carbon, so **electrolysis** must be used.\n" +
+        "- The ore is purified to **aluminium oxide (Al₂O₃)**, which has a very high melting point (~2050 °C). Melting it on its own would use far too much energy.\n" +
+        "- Instead the Al₂O₃ is **dissolved in molten cryolite (Na₃AlF₆)**. This lowers the operating temperature to about 950 °C and produces a conducting liquid, saving energy and money.\n" +
+        "- Both electrodes are made of **carbon (graphite)**. The cell is lined with carbon, which acts as the cathode; carbon blocks dipped in from above are the anodes.\n" +
+        "- **Cathode:** Al3+ + 3e- → Al. Molten aluminium forms and sinks to the bottom of the cell, where it is tapped off.\n" +
+        "- **Anode:** 2O2- → O₂ + 4e-. Oxygen gas is released.\n\n" +
+        "**Why the anodes must be replaced regularly:** at the high operating temperature the oxygen produced reacts with the hot carbon anodes, burning them away as carbon dioxide: **C + O₂ → CO₂**. The anodes gradually get smaller and must be replaced periodically — a major running cost. (The CO₂ released is also an environmental drawback of the process.)\n\n" +
+        "**Inert vs active electrodes:** Carbon (graphite) electrodes are normally **inert** — they do not react with the electrolyte or products. In aluminium extraction they behave as inert electrodes for the electrolysis itself, but the very hot oxygen still attacks them, which is why they are slowly consumed.",
       diagrams: [
         {
           caption: "Electrolysis of molten lead(II) bromide",
@@ -154,7 +161,8 @@ export const chemElectrochemistry: Topic = {
         "Metal ion (cation) always discharged at cathode; non-metal ion (anion) at anode.",
         "Half-equations: include electrons (e-) and balance both charge and atoms.",
         "Carbon (graphite) electrodes are inert and do not contribute ions to the electrolyte.",
-        "Industrial extraction of aluminium uses electrolysis of molten Al₂O₃ dissolved in cryolite.",
+        "Industrial extraction of aluminium uses electrolysis of molten Al₂O₃ dissolved in cryolite (lowers temperature to ~950 °C, saving energy).",
+        "The carbon anodes burn away (C + O₂ → CO₂) and must be replaced regularly.",
       ],
       whyItWorks:
         "In the pure molten salt there are no competing ions. Every cation arriving at the cathode must be that compound's metal ion, so prediction is unambiguous. The anion half-equation requires careful electron balancing: for Br-, two bromide ions each donate one electron to give Br₂ — a single shared electron pair in the diatomic molecule. Ensuring the total electrons lost at the anode equal total electrons gained at the cathode is how we check the overall equation.",
@@ -171,6 +179,7 @@ export const chemElectrochemistry: Topic = {
         "**At the anode (oxidation, loses electrons) with inert electrodes:**\n\n" +
         "1. If the solution contains a **concentrated halide** (Cl-, Br-, I-), that **halogen** is evolved (e.g. 2Cl- → Cl₂ + 2e-).\n" +
         "2. In all other cases (including dilute halide), **oxygen** is evolved from the discharge of hydroxide ions: 4OH- → O₂ + 2H₂O + 4e-.\n\n" +
+        "**Cathode reactivity reference:** the discharge order follows the reactivity series. Ions of metals *above* hydrogen (K, Na, Ca, Mg, Al, Zn, Fe...) stay in solution and **H₂** is given off; ions of metals *below* hydrogen (Cu, Ag, Au) are **discharged as the metal**. (Memory cue: the more reactive the metal, the more it 'prefers' to stay as an ion.)\n\n" +
         "**Rule of thumb for concentration:** Dilute NaCl → O₂ at anode. Concentrated NaCl → Cl₂ at anode. The extra chloride ions outcompete hydroxide at high concentration.\n\n" +
         "**Active (non-inert) electrodes:** If the anode is made of the same metal as the cation in solution (e.g. copper anode in copper sulfate solution), the anode **dissolves** instead of another ion being oxidised: Cu → Cu2+ + 2e-. This is used in electroplating and copper purification.",
       diagrams: [
@@ -252,8 +261,11 @@ export const chemElectrochemistry: Topic = {
         "Ions: Na+, Cl-, H+, OH-\n\n" +
         "- Cathode: Na+ is more reactive than H, so **H₂** is evolved (2H+ + 2e- → H₂)\n" +
         "- Anode (concentrated): Cl- is a halide in high concentration, so **Cl₂** is evolved (2Cl- → Cl₂ + 2e-)\n" +
-        "- Remaining solution becomes enriched in Na+ and OH- → sodium hydroxide (NaOH) solution\n" +
-        "- Industrial importance: chlorine (PVC, bleach), hydrogen (fuel), sodium hydroxide (soap, paper)\n\n" +
+        "- As H+ is removed at the cathode and Cl- at the anode, the solution is left enriched in Na+ and OH- → it becomes **sodium hydroxide (NaOH) solution**\n" +
+        "- This is the industrial **chlor-alkali process**, giving three valuable products:\n" +
+        "  - **Chlorine (Cl₂):** sterilising/treating water in swimming pools and drinking water; making bleach; making hydrochloric acid; manufacturing PVC plastic.\n" +
+        "  - **Hydrogen (H₂):** making ammonia (Haber process); making margarine (hydrogenation); as a fuel.\n" +
+        "  - **Sodium hydroxide (NaOH):** making soap and detergents; purifying bauxite (aluminium ore); making paper; controlling pH.\n\n" +
         "**Example 3: Copper(II) sulfate with carbon (inert) electrodes**\n\n" +
         "Ions: Cu2+, SO₄2-, H+, OH-\n\n" +
         "- Cathode: Cu2+ is less reactive than H, so **copper metal** is deposited (Cu2+ + 2e- → Cu)\n" +
@@ -263,13 +275,18 @@ export const chemElectrochemistry: Topic = {
         "- Cathode: Cu2+ + 2e- → Cu (copper deposited, cathode grows)\n" +
         "- Anode: Cu → Cu2+ + 2e- (copper anode dissolves)\n" +
         "- The [Cu2+] in solution stays **constant** — ions removed at cathode are replaced from anode.\n" +
-        "- This is used in **electroplating** and **copper purification**.",
+        "- This is used in **electroplating** and **copper purification**.\n\n" +
+        "**Testing the gases at the electrodes (observations):**\n\n" +
+        "- **Hydrogen (H₂):** colourless bubbles; a lit splint gives a **squeaky 'pop'**.\n" +
+        "- **Oxygen (O₂):** colourless bubbles; relights a **glowing splint**.\n" +
+        "- **Chlorine (Cl₂):** pale yellow-green gas with a sharp, choking smell; **bleaches damp litmus/indicator paper** (turns it white, often red first).",
       keyPoints: [
         "Dilute H₂SO₄: H₂ at cathode, O₂ at anode — net decomposition of water.",
-        "Concentrated brine: H₂ at cathode, Cl₂ at anode, NaOH in solution (chlor-alkali process).",
+        "Concentrated brine: H₂ at cathode, Cl₂ at anode, NaOH in solution (chlor-alkali process). Uses: Cl₂ (water treatment, bleach, PVC), H₂ (ammonia, margarine, fuel), NaOH (soap, paper).",
         "CuSO₄ with carbon electrodes: copper deposited at cathode, O₂ at anode.",
         "CuSO₄ with copper electrodes: cathode grows, anode dissolves, [Cu2+] stays constant.",
         "The blue colour of CuSO₄ solution fades with inert electrodes but stays constant with copper electrodes.",
+        "Gas tests: H₂ pops a lit splint; O₂ relights a glowing splint; Cl₂ bleaches damp litmus paper.",
       ],
       strategies: [
         "Write out all ions before deciding products",
@@ -325,10 +342,10 @@ export const chemElectrochemistry: Topic = {
         "- Impure anode dissolves: Cu → Cu2+ + 2e- (impurities fall as 'anode sludge')\n" +
         "- Pure cathode grows: Cu2+ + 2e- → Cu\n" +
         "- Result: pure copper transfers from anode to cathode. Precious metals (Ag, Au, Pt) collect in the sludge.\n\n" +
-        "**Hydrogen–oxygen fuel cell:** A fuel cell converts chemical energy directly to electrical energy without burning.\n\n" +
-        "- H₂ is oxidised at the anode: H₂ + 2OH- → 2H₂O + 2e- (alkaline) OR H₂ → 2H+ + 2e- (acidic)\n" +
-        "- O₂ is reduced at the cathode: O₂ + 2H₂O + 4e- → 4OH- (alkaline)\n" +
-        "- Overall: 2H₂ + O₂ → 2H₂O\n\n" +
+        "**Hydrogen–oxygen fuel cell** *(Cambridge 0620 only — not required for Edexcel 4CH1, but excellent stretch):* A fuel cell converts the chemical energy of a fuel directly to electrical energy without burning it. Hydrogen and oxygen are supplied continuously to two porous electrodes separated by an electrolyte (acidic or alkaline solution, or a polymer membrane).\n\n" +
+        "- H₂ is oxidised at the **negative electrode (anode)**: H₂ + 2OH- → 2H₂O + 2e- (alkaline) OR H₂ → 2H+ + 2e- (acidic)\n" +
+        "- O₂ is reduced at the **positive electrode (cathode)**: O₂ + 2H₂O + 4e- → 4OH- (alkaline) OR O₂ + 4H+ + 4e- → 2H₂O (acidic)\n" +
+        "- **Overall (either electrolyte): 2H₂ + O₂ → 2H₂O**\n\n" +
         "**Advantages of fuel cell:** Higher efficiency than combustion (~60% vs ~25%); only product is water (no CO₂); no moving parts; continuous operation as long as fuels are supplied.\n\n" +
         "**Disadvantages:** H₂ is flammable and difficult to store/transport; H₂ production currently often uses fossil fuels; expensive platinum catalysts needed; infrastructure not yet widespread.",
       diagrams: [
@@ -394,7 +411,10 @@ export const chemElectrochemistry: Topic = {
       "An active (same-metal) anode dissolves during electrolysis, keeping [cation] constant.",
       "Electrolysis of molten lead(II) bromide gives lead at cathode and bromine at anode.",
       "Electrolysis of dilute H₂SO₄ produces H₂ at cathode and O₂ at anode (net decomposition of water).",
-      "The hydrogen–oxygen fuel cell produces electricity and water as its only product.",
+      "Aluminium is extracted by electrolysing Al₂O₃ dissolved in molten cryolite; the carbon anodes burn away (C + O₂ → CO₂) and are replaced regularly.",
+      "Electrolysis of concentrated brine (chlor-alkali process) gives chlorine (water treatment, bleach, PVC), hydrogen (ammonia, margarine), and sodium hydroxide (soap, paper).",
+      "Gas tests: hydrogen 'pops' a lit splint, oxygen relights a glowing splint, chlorine bleaches damp litmus paper.",
+      "The hydrogen–oxygen fuel cell (Cambridge only) produces electricity with water as its only product.",
     ],
     flashcards: [
       { front: "What is an electrolyte?", back: "An ionic compound that is molten or dissolved in water, allowing its ions to move freely and carry a current." },
@@ -407,6 +427,11 @@ export const chemElectrochemistry: Topic = {
       { front: "In copper purification, what happens to the anode and why does [Cu2+] stay constant?", back: "The impure copper anode dissolves: Cu → Cu2+ + 2e-. The Cu2+ lost at the cathode is replaced by Cu2+ from the dissolving anode." },
       { front: "State one advantage and one disadvantage of the hydrogen–oxygen fuel cell.", back: "Advantage: only product is water (no CO₂/pollutants). Disadvantage: hydrogen is difficult to store and transport safely, and the cell requires expensive platinum catalysts." },
       { front: "What is OIL RIG?", back: "Oxidation Is Loss (of electrons); Reduction Is Gain (of electrons). A mnemonic for electrode processes." },
+      { front: "Why is aluminium extracted by electrolysis rather than reduction with carbon?", back: "Aluminium is more reactive than carbon, so carbon cannot reduce aluminium oxide. Electrolysis of molten Al₂O₃ (in cryolite) is used instead." },
+      { front: "Why is cryolite used in the extraction of aluminium?", back: "Al₂O₃ melts at ~2050 °C. Dissolving it in molten cryolite (Na₃AlF₆) gives a conducting mixture that melts at ~950 °C, lowering the temperature and saving energy/money." },
+      { front: "Why must the carbon anodes in aluminium extraction be replaced regularly?", back: "The hot oxygen produced at the anode reacts with the carbon: C + O₂ → CO₂. The anodes burn away and gradually get smaller, so they must be replaced." },
+      { front: "State the three products of the chlor-alkali process and one use of each.", back: "Chlorine (water treatment / bleach / PVC), hydrogen (making ammonia / margarine / fuel), and sodium hydroxide (soap / paper / pH control)." },
+      { front: "How do you test for chlorine gas at the anode?", back: "Chlorine is a pale yellow-green gas with a choking smell; it bleaches damp blue litmus paper white (often turning it red first)." },
     ],
     keyTerms: [
       { term: "Electrolysis", definition: "The decomposition of an ionic compound (molten or aqueous) by passing a direct electric current through it." },
@@ -421,6 +446,10 @@ export const chemElectrochemistry: Topic = {
       { term: "Fuel cell", definition: "An electrochemical cell that converts the chemical energy of a fuel (H₂) and oxidant (O₂) directly into electrical energy, producing water as the only product." },
       { term: "Reduction", definition: "The gain of electrons by an ion or atom; occurs at the cathode in electrolysis." },
       { term: "Oxidation", definition: "The loss of electrons by an ion or atom; occurs at the anode in electrolysis." },
+      { term: "Cryolite", definition: "Sodium hexafluoroaluminate (Na₃AlF₆), used as a molten solvent for aluminium oxide so that aluminium can be extracted at ~950 °C instead of ~2050 °C." },
+      { term: "Chlor-alkali process", definition: "The industrial electrolysis of concentrated sodium chloride solution (brine) to make chlorine, hydrogen and sodium hydroxide." },
+      { term: "Anode sludge", definition: "The insoluble residue (containing precious metals such as silver, gold and platinum) that collects below the impure anode during the purification of copper." },
+      { term: "Selective (preferential) discharge", definition: "When ions compete at an electrode in aqueous solution, the rule deciding which ion is discharged — by metal/hydrogen reactivity at the cathode, and by halide concentration vs hydroxide at the anode." },
     ],
   },
 

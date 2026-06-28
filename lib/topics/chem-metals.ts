@@ -89,23 +89,31 @@ export const chemMetals: Topic = {
 **Order (most to least reactive):**
 Potassium (K) > Sodium (Na) > Calcium (Ca) > Magnesium (Mg) > Aluminium (Al) > **(Carbon)** > Zinc (Zn) > Iron (Fe) > **(Hydrogen)** > Copper (Cu) > Silver (Ag) > Gold (Au)
 
-**Reactions with cold water and steam:**
-- K, Na, Ca react vigorously with cold water: e.g. 2Na(s) + 2H₂O(l) → 2NaOH(aq) + H₂(g)
-- Mg reacts slowly with cold water but vigorously with steam: Mg(s) + H₂O(g) → MgO(s) + H₂(g)
-- Zn and Fe react only with steam (not cold water): e.g. 3Fe(s) + 4H₂O(g) → Fe₃O₄(s) + 4H₂(g)
-- Cu, Ag, Au do not react with water or steam.
+**Reactions with cold water and steam** (with cold water the products are a metal hydroxide + hydrogen; with steam they are a metal oxide + hydrogen):
+- K, Na, Ca react with cold water to give a hydroxide and hydrogen:
+  - 2K(s) + 2H₂O(l) → 2KOH(aq) + H₂(g) — most violent; the hydrogen often ignites with a lilac flame.
+  - 2Na(s) + 2H₂O(l) → 2NaOH(aq) + H₂(g) — floats, fizzes, melts into a ball and skates across the surface.
+  - Ca(s) + 2H₂O(l) → Ca(OH)₂(aq) + H₂(g) — steady stream of bubbles; the solution turns milky.
+- Mg reacts very slowly with cold water but vigorously with steam: Mg(s) + H₂O(g) → MgO(s) + H₂(g)
+- Zn and Fe react with steam only (not cold water): e.g. 3Fe(s) + 4H₂O(g) ⇌ Fe₃O₄(s) + 4H₂(g) (reversible)
+- Cu, Ag, Au do not react with water or steam at all.
 
-**Reactions with dilute acids (e.g. dilute H₂SO₄ or HCl):**
+**Reactions with dilute acids (e.g. dilute H₂SO₄ or HCl) — metal + acid → salt + hydrogen:**
 - Metals above hydrogen in the series displace hydrogen gas from dilute acids.
-- e.g. Zn(s) + H₂SO₄(aq) → ZnSO₄(aq) + H₂(g)
+- e.g. Zn(s) + H₂SO₄(aq) → ZnSO₄(aq) + H₂(g); Mg(s) + 2HCl(aq) → MgCl₂(aq) + H₂(g); Fe(s) + 2HCl(aq) → FeCl₂(aq) + H₂(g)
+- The higher up the series, the faster the fizzing and the larger the temperature rise (Mg fizzes faster than Zn, which fizzes faster than Fe).
 - Metals below hydrogen (Cu, Ag, Au) do NOT react with dilute acids.
-- K and Na react too violently (dangerously) to be safely tested with dilute acids.
+- K, Na and Ca react too violently (dangerously) to be tested safely with dilute acids.
 
-**Reactions with oxygen:**
-- Most metals react with oxygen on heating to form metal oxides: e.g. 4Fe(s) + 3O₂(g) → 2Fe₂O₃(s) (slow, rust); 2Mg(s) + O₂(g) → 2MgO(s) (bright flame)
-- Gold and platinum do not tarnish because they do not react with oxygen.
+**Reactions with oxygen — metal + oxygen → metal oxide:**
+- Most metals react with oxygen on heating to form metal oxides:
+  - 2Mg(s) + O₂(g) → 2MgO(s) (brilliant white flame, white ash)
+  - 4Na(s) + O₂(g) → 2Na₂O(s)
+  - 2Cu(s) + O₂(g) → 2CuO(s) (copper turns black on heating but does not burst into flame)
+  - 4Fe(s) + 3O₂(g) → 2Fe₂O₃(s) (slow oxidation — the basis of rusting)
+- Gold and platinum do not tarnish because they do not react with oxygen even when strongly heated.
 
-The more reactive the metal, the more vigorously it reacts and the more stable its compounds are.`,
+The more reactive the metal, the more vigorously it reacts and the more stable (harder to break down) its compounds are — which is exactly why the most reactive metals are the hardest to extract from their ores.`,
       keyPoints: [
         "Order (most reactive first): K, Na, Ca, Mg, Al, (C), Zn, Fe, (H), Cu, Ag, Au.",
         "K, Na, Ca react with cold water; Mg with steam; Zn and Fe with steam only.",
@@ -115,9 +123,9 @@ The more reactive the metal, the more vigorously it reacts and the more stable i
       ],
       discovery: {
         problem:
-          "Three unknown metals X, Y and Z are tested: X fizzes slowly in dilute HCl; Y does not react with dilute HCl but burns brightly in oxygen; Z reacts vigorously with cold water. Using only these observations, arrange X, Y, Z in order of decreasing reactivity and suggest which known metals they might be.",
+          "Three unknown metals X, Y and Z are tested. X fizzes slowly in dilute HCl but does not react with cold water. Y does not react with cold water, steam OR dilute HCl, but slowly turns black when heated in air. Z reacts vigorously with cold water, giving off a gas that pops. Arrange X, Y, Z in order of decreasing reactivity and suggest which known metals they might be.",
         idea:
-          "Z must be above Ca in the series (reacts with cold water) — possibly Na or K. X reacts with acid but not water — positioned between Mg and H, likely Zn or Fe. Y does not react with acid but burns in oxygen — this is a contradiction unless Y is a non-metal (like Mg burning very brightly is actually very reactive) — re-read: Y does not react with dilute HCl, suggesting Y is below H, e.g. copper. But copper does not burn brightly in oxygen... So Y could be Mg which burns brilliantly in oxygen AND reacts with steam (not cold water). Order: Z (most reactive) > X > Y (least), mapping to ~ Na > Fe > Cu (adjusting for the clue about oxygen).",
+          "Take each metal to its slot in the series. Z reacts with COLD water, so it sits at the very top, above Ca (it behaves like Na or K). X reacts with dilute acid but NOT cold water, so it lies between Mg and H — it displaces hydrogen from the acid but is not reactive enough for cold water (it behaves like Zn or Fe). Y reacts with neither water nor acid, so it is below hydrogen; the fact that it still forms an oxide when heated in air (turning black) points to copper (2Cu + O₂ → 2CuO), not the totally inert Au. So the order of decreasing reactivity is Z > X > Y, for example Na > Fe > Cu. The key move: each test (cold water → acid → heating in air) probes a different band of the series, so the three observations together pin each metal down.",
       },
       whyItWorks:
         "Reactivity reflects how readily a metal atom loses electrons to form a positive ion (oxidation). Metals with low ionisation energies and large atomic radii (like K and Na) lose electrons easily, making them highly reactive. Gold, with its filled d-subshell and relativistic contraction, holds electrons very tightly — hence it is inert.",
@@ -202,9 +210,12 @@ Zinc is above copper in the reactivity series, so zinc displaces copper from cop
 Aluminium (more reactive) displaces iron (less reactive) from iron(III) oxide, releasing enormous heat.
 
 **Why displacement works — an ionic view:**
-Zn → Zn²⁺ + 2e⁻ (oxidation)
-Cu²⁺ + 2e⁻ → Cu (reduction)
-The more reactive metal is the better reducing agent — it more readily loses electrons to reduce the metal ion in solution.
+The sulfate ions (SO₄²⁻) are spectator ions — they appear unchanged on both sides, so we can cancel them to leave the **ionic equation**:
+Zn(s) + Cu²⁺(aq) → Zn²⁺(aq) + Cu(s)
+Splitting this into half-equations shows the electron transfer:
+- Zn → Zn²⁺ + 2e⁻ (oxidation — zinc loses electrons)
+- Cu²⁺ + 2e⁻ → Cu (reduction — copper ions gain electrons)
+The more reactive metal is the better reducing agent — it more readily loses (donates) electrons, reducing the less reactive metal ion. This is a redox reaction: oxidation and reduction always happen together (OIL RIG — Oxidation Is Loss, Reduction Is Gain of electrons).
 
 **Link to extraction:**
 Carbon and hydrogen are included in the reactivity series as reference points because they can also act as reducing agents. If a metal is below carbon in the series, it can be extracted from its ore by reduction with carbon (or carbon monoxide) — a cheap, industrial process. If the metal is above carbon, this method fails (the metal oxide is too stable), and more energetic methods (electrolysis) are needed.`,
@@ -343,6 +354,13 @@ In a pure metal, layers of same-sized ions can slide easily over one another (th
 - Malleable and ductile → plumbing pipes.
 - Does not react with water → water pipes, roofing.
 
+*Iron and steel:*
+- Pure iron is soft and rusts easily, so it is almost always converted into steel (an alloy of iron + carbon) which is much harder and stronger.
+- Strong and cheap → girders and reinforcing bars in buildings and bridges, car bodies, ships, railway lines.
+- Mild steel (low carbon, ~0.25%) is easily shaped → car body panels, nails, wire.
+- High-carbon steel (up to ~1.5%) is very hard but brittle → cutting tools, chisels, drill bits.
+- Iron is magnetic → cores of electromagnets and transformers.
+
 **Recycling of metals:**
 Recycling metals uses far less energy than extracting them from ores. For aluminium, recycling uses ~5% of the energy of electrolysis. Benefits: conserves finite ore reserves, reduces CO₂ emissions, reduces landfill, and reduces energy costs. Steel is the most widely recycled metal in the world (collected using magnets, since iron is magnetic).`,
       keyPoints: [
@@ -425,7 +443,8 @@ Recycling metals uses far less energy than extracting them from ores. For alumin
   learn: {
     keyFacts: [
       "Reactivity series order (most to least): K, Na, Ca, Mg, Al, (C), Zn, Fe, (H), Cu, Ag, Au.",
-      "K, Na, Ca react with cold water; Mg reacts with steam but not cold water.",
+      "K, Na, Ca react with cold water (metal + water → metal hydroxide + hydrogen, e.g. Ca + 2H₂O → Ca(OH)₂ + H₂); Mg reacts only with steam (giving the oxide MgO).",
+      "Metal + dilute acid → salt + hydrogen (only for metals above H); metal + oxygen → metal oxide.",
       "Rusting requires BOTH water AND oxygen — removing either prevents rusting.",
       "Aluminium is extracted by electrolysis of molten Al₂O₃ dissolved in cryolite.",
       "Iron is extracted by reduction with CO in the blast furnace: Fe₂O₃ + 3CO → 2Fe + 3CO₂.",
@@ -445,6 +464,9 @@ Recycling metals uses far less energy than extracting them from ores. For alumin
       { front: "What is sacrificial protection and give an example?", back: "Attaching a more reactive metal (e.g. zinc or magnesium) to iron so it corrodes preferentially, protecting the iron. Example: zinc blocks on a ship's hull." },
       { front: "Give two properties of aluminium that make it suitable for aircraft frames.", back: "Low density (lightweight) and resistant to corrosion (due to protective Al₂O₃ layer)." },
       { front: "What is displacement in chemistry?", back: "A more reactive metal pushes out a less reactive metal from its compound. E.g. Zn + CuSO₄ → ZnSO₄ + Cu." },
+      { front: "Write the ionic equation for zinc displacing copper from copper sulfate solution.", back: "Zn(s) + Cu²⁺(aq) → Zn²⁺(aq) + Cu(s). The SO₄²⁻ ions are spectator ions and cancel." },
+      { front: "Why is pure iron usually turned into steel before use?", back: "Pure iron is soft and rusts easily; adding carbon (forming steel) distorts the lattice, making it much harder and stronger." },
+      { front: "Give one barrier method and one sacrificial method of preventing rust.", back: "Barrier: painting/oiling/plastic-coating/tin-plating. Sacrificial: attaching a more reactive metal such as zinc or magnesium that corrodes instead of the iron." },
       { front: "What is the role of limestone in the blast furnace?", back: "CaCO₃ decomposes to CaO, which reacts with acidic silica impurities (SiO₂) to form slag (CaSiO₃), removing them from the iron." },
       { front: "Name the electrode reactions in aluminium electrolysis.", back: "Cathode: Al³⁺ + 3e⁻ → Al. Anode: 2O²⁻ → O₂ + 4e⁻." },
       { front: "Why does copper not react with dilute hydrochloric acid?", back: "Copper is below hydrogen in the reactivity series, so it cannot displace hydrogen from the acid." },

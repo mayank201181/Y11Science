@@ -154,7 +154,11 @@ The solution formed is alkaline (pH > 7) because MOH is a strong alkali.
 
 **Reactivity increases down the group**: Li reacts steadily; Na reacts vigorously (fizzes, moves on surface); K reacts very vigorously, igniting the hydrogen with a lilac flame.
 
-**Physical observations**: Li — slow fizzing, stays solid; Na — faster fizzing, melts to a ball; K — very fast, purple/lilac flame, may explode.`,
+**Physical observations**: Li — slow fizzing, stays solid; Na — faster fizzing, melts to a ball; K — very fast, purple/lilac flame, may explode.
+
+**Other physical properties**: Group I metals are so soft they can be cut with a knife, revealing a shiny surface that quickly tarnishes in air. They have **low densities** — Li, Na and K are all less dense than water, which is why they float during the reaction.
+
+**Reaction with oxygen and storage**: Because they are so reactive, Group I metals also react readily with oxygen in the air, forming a layer of metal oxide (for example 4 Na + O₂ → 2 Na₂O). To stop them reacting with oxygen and water vapour in the air, alkali metals are **stored under oil**. They also react vigorously with chlorine to form ionic chlorides (for example 2 Na + Cl₂ → 2 NaCl).`,
       diagrams: [
         {
           caption: "Reactivity trend down Group I: outer electron becomes easier to lose",
@@ -201,7 +205,9 @@ The solution formed is alkaline (pH > 7) because MOH is a strong alkali.
         "All react with water to form a metal hydroxide and hydrogen gas.",
         "Reactivity increases down the group: K > Na > Li.",
         "The outer electron is further from the nucleus down the group (more shells), so it is shielded more and lost more easily.",
-        "The hydroxide solution formed is strongly alkaline."
+        "The hydroxide solution formed is strongly alkaline.",
+        "Group I metals are soft (cut with a knife) and have low densities (Li, Na, K float on water).",
+        "They are stored under oil because they react readily with oxygen and water vapour in the air."
       ],
       discovery: {
         problem: "Caesium (Cs) is below potassium in Group I. Predict what happens when a small piece of Cs is placed in water, and explain your prediction using electron configuration.",
@@ -231,7 +237,13 @@ The orange-brown colour of bromine appearing confirms the displacement. Ionic eq
 
 Cl₂(aq) + 2 Br⁻(aq) → 2 Cl⁻(aq) + Br₂(aq)
 
-This is a **redox** reaction: Cl₂ is reduced (gains electrons); Br⁻ is oxidised (loses electrons). Bromine does NOT displace chloride (Cl⁻), because Br₂ is less reactive than Cl₂.`,
+This is a **redox** reaction: Cl₂ is reduced (gains electrons); Br⁻ is oxidised (loses electrons). Bromine does NOT displace chloride (Cl⁻), because Br₂ is less reactive than Cl₂.
+
+**Hydrogen halides**: Halogens react with hydrogen to form **hydrogen halides** — covalent gases such as hydrogen chloride (HCl):
+
+H₂(g) + Cl₂(g) → 2 HCl(g)
+
+The more reactive the halogen, the more readily it reacts with hydrogen: chlorine reacts quickly (explosively in sunlight), whereas iodine reacts only slowly and reversibly. When a hydrogen halide dissolves in water it **ionises** to release H⁺ ions, so the solution is **acidic** — for example HCl gas dissolves to form hydrochloric acid (HCl → H⁺ + Cl⁻). (In a non-aqueous solvent such as methylbenzene, hydrogen chloride does not ionise and the solution is not acidic, showing that water is needed for the H⁺ ions to form.)`,
       diagrams: [
         {
           caption: "Halogen displacement reactions: colour changes in test tubes",
@@ -274,7 +286,9 @@ This is a **redox** reaction: Cl₂ is reduced (gains electrons); Br⁻ is oxidi
         "At room temperature: Cl₂ is a gas, Br₂ is a liquid, I₂ is a solid.",
         "Reactivity decreases down Group VII (Cl > Br > I > …).",
         "A more reactive halogen displaces a less reactive one from its salt solution.",
-        "Reactivity decreases because the incoming electron is added to a shell further from the nucleus (more shielding), making electron gain harder."
+        "Reactivity decreases because the incoming electron is added to a shell further from the nucleus (more shielding), making electron gain harder.",
+        "Halogens react with hydrogen to form hydrogen halides (e.g. H₂ + Cl₂ → 2HCl), which dissolve in water to give acidic solutions.",
+        "The more reactive the halogen, the more readily it combines with hydrogen (Cl₂ fast/explosive, I₂ slow and reversible)."
       ],
       discovery: {
         problem: "You have three unlabelled test tubes of potassium halide solutions (KCl, KBr, KI) and a bottle of bromine water. Describe how you could use bromine water to identify which tubes contain KBr and KI, and explain the reasoning.",
@@ -367,7 +381,9 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
       "Group I alkali metals react with water to form metal hydroxide + hydrogen; reactivity increases down the group.",
       "Group VII halogens: Cl₂ (gas), Br₂ (liquid), I₂ (solid); reactivity decreases down the group.",
       "A more reactive halogen displaces a less reactive halogen from a solution of its salt.",
-      "Group 0 noble gases have full outer shells and are chemically inert.",
+      "Halogens react with hydrogen to form hydrogen halides (e.g. HCl), which dissolve in water to form acidic solutions.",
+      "Group I metals are soft, low-density, and stored under oil because they react with oxygen and water vapour in air.",
+      "Group 0 noble gases have full outer shells, are monatomic, and are chemically inert.",
       "Transition elements have high melting points, variable oxidation states, coloured compounds, and catalytic activity.",
       "Reactivity of Group I increases down the group because the outer electron is further from the nucleus and more shielded.",
       "Reactivity of Group VII decreases down the group because the incoming electron is added to a shell further from the nucleus.",
@@ -382,6 +398,8 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
       { front: "State the colours/states of Cl₂, Br₂, and I₂ at room temperature.", back: "Cl₂: pale yellow-green gas; Br₂: red-brown liquid; I₂: grey-black solid." },
       { front: "Why does reactivity decrease down Group VII?", back: "More shells → incoming electron added further from nucleus, more shielded → less easily gained → less reactive." },
       { front: "What is a halogen displacement reaction?", back: "A more reactive halogen displaces a less reactive halogen from a solution of its salt. E.g. Cl₂ + 2KBr → 2KCl + Br₂." },
+      { front: "What forms when a halogen reacts with hydrogen, and what is seen when it dissolves in water?", back: "A hydrogen halide forms (e.g. H₂ + Cl₂ → 2HCl). Dissolved in water it ionises to release H⁺ ions, giving an acidic solution (e.g. hydrochloric acid)." },
+      { front: "Why are Group I metals stored under oil?", back: "They are very reactive and would otherwise react with oxygen and water vapour in the air; oil keeps air and moisture away from the metal." },
       { front: "Why are noble gases unreactive?", back: "They have full outer electron shells and therefore no tendency to gain, lose, or share electrons." },
       { front: "Give three uses of noble gases and state which gas is used for each.", back: "He: balloons, airships, cooling magnets; Ne: electric discharge tubes (neon signs); Ar: filling light bulbs, welding." },
       { front: "List four characteristic properties of transition elements.", back: "1. High melting points and high density. 2. Variable oxidation states. 3. Coloured compounds. 4. Catalytic activity." },
@@ -394,6 +412,7 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
       { term: "Alkali metals", definition: "Group I metals (Li, Na, K etc.) that react with water to form strongly alkaline hydroxide solutions and hydrogen gas." },
       { term: "Halogen", definition: "A Group VII non-metal element (F, Cl, Br, I, At) with 7 outer electrons; they gain one electron to form halide ions (X⁻)." },
       { term: "Displacement reaction (halogens)", definition: "A reaction in which a more reactive halogen displaces a less reactive halide ion from its salt solution." },
+      { term: "Hydrogen halide", definition: "A covalent compound of hydrogen and a halogen (e.g. HCl, HBr, HI) formed when a halogen reacts with hydrogen; it dissolves in water to give an acidic solution." },
       { term: "Noble gas", definition: "A Group 0/18 element (He, Ne, Ar, Kr, Xe, Rn) with a full outer shell; chemically inert under ordinary conditions." },
       { term: "Transition element", definition: "An element in the d-block of the periodic table (e.g. Fe, Cu, Cr, Mn) that typically shows variable oxidation states, coloured compounds, and catalytic activity." },
       { term: "Variable oxidation state", definition: "The ability of an element (especially transition metals) to form ions with more than one charge, e.g. Fe²⁺ and Fe³⁺." },
