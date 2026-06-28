@@ -140,7 +140,7 @@ A control flask with inspired (atmospheric) air bubbled through it should show l
 
 **Testing for water vapour:** breathe onto a cold mirror — condensation (misting) proves water vapour in exhaled air.
 
-**Effect of exercise:** after exercise, both the **rate** (breaths per minute) and **depth** (tidal volume — volume per breath) increase. More CO₂ is produced by working muscles; dissolved CO₂ lowers blood pH; chemoreceptors in the brain detect this and signal the breathing muscles to work harder and faster. This increases O₂ supply and removes excess CO₂.`,
+**Effect of exercise:** during and after exercise, both the **breathing rate** (breaths per minute) and **depth** (tidal volume — volume per breath) increase. The **heart rate** also rises. More CO₂ is produced by working muscles; dissolved CO₂ lowers blood pH; chemoreceptors in the brain detect this and signal the breathing muscles to work harder and faster, and the heart to beat faster. Faster, deeper breathing increases O₂ uptake and removes excess CO₂ at the lungs; the faster heart rate then delivers that O₂ (and glucose) to the muscles and carries CO₂ away more quickly. After exercise stops, breathing and heart rate stay high until the **oxygen debt** is repaid and blood conditions return to normal.`,
       keyPoints: [
         "Expired air has more CO₂ (~4%), less O₂ (~16%), more water vapour, and is warmer than inspired air.",
         "Nitrogen % is unchanged — it is physiologically inert.",
@@ -228,6 +228,88 @@ This process, called **fermentation**, is exploited commercially:
       },
       strategies: ["Draw a two-column comparison table: aerobic vs anaerobic.", "Balance the fermentation equation — 1 glucose → 2 ethanol + 2 CO₂."],
     },
+
+    {
+      heading: "Gas Exchange in Plants & the Link to Photosynthesis",
+      body: `Plants respire **all the time**, just like animals — every living cell needs ATP day and night. But in the light, plants **also photosynthesise**, and the two processes use and produce opposite gases:
+
+| Process | Uses | Produces |
+|---|---|---|
+| Respiration | oxygen (O₂) | carbon dioxide (CO₂) |
+| Photosynthesis | carbon dioxide (CO₂) | oxygen (O₂) |
+
+**Where gas exchange happens:** Gases diffuse in and out of a leaf through tiny pores called **stomata** (singular: stoma), found mainly on the **lower epidermis**. Each stoma is bounded by two **guard cells** that open or close the pore. Inside the leaf, the air spaces of the **spongy mesophyll** give a large, moist surface area for diffusion — the same adaptations as the alveolus (large surface area, thin walls, moist, short diffusion distance). The waxy **cuticle** is almost impermeable, so very little gas crosses it.
+
+**Net exchange depends on light intensity** — it is always the *balance* between the two opposing processes:
+
+- **In the dark (or at night):** photosynthesis stops; only respiration occurs. The leaf has a **net uptake of O₂** and a **net release of CO₂** — like an animal.
+- **In bright light:** photosynthesis is much faster than respiration. The leaf has a **net uptake of CO₂** and a **net release of O₂**.
+- **At the compensation point** (dim light): the rate of photosynthesis exactly equals the rate of respiration. The CO₂ made by respiration is all used by photosynthesis, so there is **no net gas exchange** with the air.
+
+> **Common trap:** never write "plants respire at night and photosynthesise in the day." Respiration is continuous; it is the *net* exchange that flips, because photosynthesis only happens in the light.
+
+**The hydrogencarbonate-indicator practical:**
+Hydrogencarbonate indicator changes colour with dissolved CO₂ — **purple** at low CO₂ (more alkaline), **orange-red** at atmospheric CO₂, and **yellow** at high CO₂ (more acidic, because CO₂ forms a weak acid in water). Seal pondweed in tubes with the indicator at different light levels:
+
+- **Bright light** → indicator turns **purple** (net CO₂ removed by photosynthesis).
+- **Darkness** (foil-wrapped) → indicator turns **yellow** (net CO₂ released by respiration).
+- **Dim light at the compensation point** → indicator stays **orange-red** (no net change).
+
+A tube with no plant acts as a control, showing the colour change is caused by the plant. This practical (and the bubble-counting pondweed practical, where O₂ bubbles are counted in bright light) directly demonstrates the gas-exchange balance.`,
+      diagrams: [
+        {
+          caption: "Net leaf gas exchange in the dark, at the compensation point, and in bright light",
+          svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Three leaf diagrams comparing net gas exchange in darkness, at the compensation point, and in bright light"><rect width="320" height="200" fill="#0f172a"/><text x="8" y="20" fill="#94a3b8" font-size="11" font-family="sans-serif" font-weight="bold">DARK</text><ellipse cx="55" cy="90" rx="38" ry="52" fill="#14532d" stroke="#34d399" stroke-width="1.5"/><line x1="20" y1="80" x2="6" y2="78" stroke="#34d399" stroke-width="1.5" marker-end="url(#gin)"/><text x="2" y="70" fill="#34d399" font-size="8" font-family="sans-serif">O2 in</text><line x1="6" y1="105" x2="20" y2="103" stroke="#fbbf24" stroke-width="1.5" marker-end="url(#gout)"/><text x="0" y="120" fill="#fbbf24" font-size="8" font-family="sans-serif">CO2 out</text><text x="22" y="160" fill="#b7bce0" font-size="7" font-family="sans-serif">respiration only</text><text x="110" y="20" fill="#94a3b8" font-size="10" font-family="sans-serif" font-weight="bold">COMP. POINT</text><ellipse cx="160" cy="90" rx="38" ry="52" fill="#1e3a2f" stroke="#a3a3a3" stroke-width="1.5"/><line x1="125" y1="90" x2="113" y2="90" stroke="#a3a3a3" stroke-width="1.5"/><text x="118" y="82" fill="#a3a3a3" font-size="8" font-family="sans-serif">no net</text><text x="135" y="160" fill="#b7bce0" font-size="7" font-family="sans-serif">PS rate = resp rate</text><text x="222" y="20" fill="#fde047" font-size="11" font-family="sans-serif" font-weight="bold">BRIGHT</text><ellipse cx="262" cy="90" rx="38" ry="52" fill="#166534" stroke="#4ade80" stroke-width="1.5"/><line x1="227" y1="80" x2="215" y2="78" stroke="#fbbf24" stroke-width="1.5" marker-end="url(#gout2)"/><text x="208" y="70" fill="#fbbf24" font-size="8" font-family="sans-serif">CO2 in</text><line x1="215" y1="105" x2="227" y2="103" stroke="#34d399" stroke-width="1.5" marker-end="url(#gin2)"/><text x="206" y="120" fill="#34d399" font-size="8" font-family="sans-serif">O2 out</text><text x="226" y="160" fill="#b7bce0" font-size="7" font-family="sans-serif">PS &gt; respiration</text><defs><marker id="gin" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#34d399"/></marker><marker id="gout" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#fbbf24"/></marker><marker id="gin2" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#34d399"/></marker><marker id="gout2" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#fbbf24"/></marker></defs></svg>',
+        },
+      ],
+      keyPoints: [
+        "Plants respire continuously; in the light they ALSO photosynthesise — net exchange is the balance of the two.",
+        "Gases diffuse through stomata (mainly lower epidermis), controlled by guard cells; spongy mesophyll gives a large moist surface.",
+        "Dark: net O₂ in, net CO₂ out (respiration only). Bright light: net CO₂ in, net O₂ out (photosynthesis > respiration).",
+        "Compensation point: photosynthesis rate = respiration rate → no net gas exchange.",
+        "Hydrogencarbonate indicator: purple = low CO₂ (bright light), yellow = high CO₂ (dark), orange-red = no net change.",
+      ],
+      discovery: {
+        problem: "A sealed tube of pondweed in hydrogencarbonate indicator is left in dim light and the indicator does not change colour at all over two hours. Has the pondweed stopped respiring? What does the unchanged colour actually tell you?",
+        idea: "No — respiration never stops. An unchanged colour means there is no NET change in CO₂: the rate of photosynthesis exactly equals the rate of respiration, so all the CO₂ released by respiration is immediately used by photosynthesis. This is the compensation point. The key insight is that gas-exchange experiments measure the net difference between two opposing processes, not either one alone.",
+      },
+      strategies: ["Always answer plant gas-exchange questions in terms of NET exchange = photosynthesis vs respiration.", "Match indicator colours to CO₂ level: purple = low, yellow = high."],
+      thinkDeeper: "A leaf and the alveolus both have a large, thin, moist surface for gas exchange — yet a leaf needs no blood supply or ventilation muscles. Why can a leaf rely on simple diffusion through air spaces while a large active animal cannot?",
+    },
+
+    {
+      heading: "The Effects of Smoking",
+      body: `Tobacco smoke contains thousands of chemicals. Four are essential to know for the exam, each with a specific harmful effect:
+
+| Component | Effect on the body |
+|---|---|
+| **Tar** | A sticky brown chemical that coats the airways. It **paralyses and destroys cilia**, stops mucus being cleared (→ smoker's cough, chest infections), and contains **carcinogens** that cause **lung cancer**. |
+| **Nicotine** | The **addictive** drug in tobacco. It is a stimulant that **raises heart rate and blood pressure** and makes blood vessels narrower (vasoconstriction), increasing the risk of heart disease and blood clots. |
+| **Carbon monoxide (CO)** | A toxic gas that binds **irreversibly** to haemoglobin (forming **carboxyhaemoglobin**), so the blood carries **less oxygen**. The heart must work harder; in pregnancy this can deprive the fetus of oxygen, leading to low birth weight. |
+| **Particulates / smoke** | Irritate the airway lining, increasing mucus production and inflammation. |
+
+**Why smokers get more chest infections:** Tar **paralyses and destroys the cilia** on the ciliated epithelial cells. Mucus (and the trapped dust and bacteria) is no longer swept up to the throat, so it collects in the airways. Smokers cough to try to clear it ("smoker's cough"). The trapped bacteria multiply and reach the lungs, causing frequent infections such as **bronchitis** (inflammation of the bronchi).
+
+**Emphysema** is the long-term destruction of the alveolar walls. Coughing and inflammation break down the delicate walls, so many small alveoli merge into a few large air sacs. Using **Fick's Law**, this drastically **reduces the total surface area** for gas exchange, so far less oxygen can diffuse into the blood. Sufferers become **breathless even at rest** and cannot exercise. Together, chronic bronchitis and emphysema are known as **COPD** (chronic obstructive pulmonary disease).
+
+**Other linked diseases:** the carcinogens in tar cause **lung cancer**; nicotine and carbon monoxide together raise the risk of **coronary heart disease**, **strokes**, and **atherosclerosis** (fatty deposits narrowing arteries).`,
+      diagrams: [
+        {
+          caption: "Healthy alveoli (many small sacs) vs emphysema (few large sacs) — surface area is lost",
+          svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Comparison of healthy lung tissue with many small alveoli against an emphysema lung with few large air spaces showing reduced surface area"><rect width="320" height="200" fill="#0f172a"/><line x1="160" y1="10" x2="160" y2="190" stroke="#334155" stroke-width="1" stroke-dasharray="5,4"/><text x="22" y="26" fill="#4ade80" font-size="11" font-family="sans-serif" font-weight="bold">HEALTHY</text><circle cx="45" cy="70" r="16" fill="#1e3a5f" stroke="#38bdf8" stroke-width="1.2"/><circle cx="80" cy="62" r="16" fill="#1e3a5f" stroke="#38bdf8" stroke-width="1.2"/><circle cx="115" cy="72" r="16" fill="#1e3a5f" stroke="#38bdf8" stroke-width="1.2"/><circle cx="55" cy="105" r="16" fill="#1e3a5f" stroke="#38bdf8" stroke-width="1.2"/><circle cx="92" cy="100" r="16" fill="#1e3a5f" stroke="#38bdf8" stroke-width="1.2"/><circle cx="125" cy="108" r="16" fill="#1e3a5f" stroke="#38bdf8" stroke-width="1.2"/><circle cx="70" cy="138" r="16" fill="#1e3a5f" stroke="#38bdf8" stroke-width="1.2"/><circle cx="108" cy="140" r="16" fill="#1e3a5f" stroke="#38bdf8" stroke-width="1.2"/><text x="20" y="172" fill="#b7bce0" font-size="8" font-family="sans-serif">many small alveoli</text><text x="22" y="183" fill="#34d399" font-size="8" font-family="sans-serif">LARGE surface area</text><text x="185" y="26" fill="#fb7185" font-size="11" font-family="sans-serif" font-weight="bold">EMPHYSEMA</text><ellipse cx="210" cy="80" rx="34" ry="28" fill="#3f1d1d" stroke="#fb7185" stroke-width="1.2"/><ellipse cx="270" cy="100" rx="30" ry="26" fill="#3f1d1d" stroke="#fb7185" stroke-width="1.2"/><ellipse cx="225" cy="135" rx="36" ry="26" fill="#3f1d1d" stroke="#fb7185" stroke-width="1.2"/><text x="180" y="172" fill="#b7bce0" font-size="8" font-family="sans-serif">few large air spaces</text><text x="182" y="183" fill="#fb7185" font-size="8" font-family="sans-serif">SMALL surface area</text></svg>',
+        },
+      ],
+      keyPoints: [
+        "Tar: paralyses/destroys cilia (→ mucus build-up, smoker's cough, infections) and contains carcinogens → lung cancer.",
+        "Nicotine: addictive stimulant; raises heart rate and blood pressure; narrows blood vessels → heart disease risk.",
+        "Carbon monoxide: binds irreversibly to haemoglobin (carboxyhaemoglobin) → blood carries less oxygen.",
+        "Emphysema: alveolar walls destroyed → small alveoli merge → reduced surface area (Fick's Law) → breathless at rest.",
+        "Smoking causes bronchitis, emphysema (together COPD), lung cancer, and coronary heart disease.",
+      ],
+      thinkDeeper: "Carbon monoxide binds to haemoglobin about 200 times more strongly than oxygen does, and the binding is effectively irreversible. Using this, explain why a heavy smoker may feel breathless during exercise even though their lungs take in plenty of oxygen.",
+      whyItWorks: "Each harm traces back to a structure you already know: tar disables the mucociliary escalator (so pathogens stay), carcinogens mutate cell DNA (so cells divide uncontrollably → cancer), CO occupies haemoglobin's oxygen-binding sites (so less O₂ is transported), and alveolar destruction cuts the surface area term in Fick's Law (so diffusion slows). Knowing the normal structure makes every disease effect predictable.",
+      strategies: ["For 'effects of smoking' questions, name the specific component AND its specific effect — not just 'it is bad for you'.", "Link emphysema to Fick's Law: lost surface area → slower diffusion → breathlessness."],
+    },
   ],
 
   learn: {
@@ -243,7 +325,15 @@ This process, called **fermentation**, is exploited commercially:
       "Aerobic respiration: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O; occurs in mitochondria; high energy yield.",
       "Human anaerobic respiration: glucose → lactic acid; occurs in cytoplasm; causes oxygen debt.",
       "Yeast fermentation: C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂; used in brewing and baking.",
-      "Exercise increases both rate AND depth of breathing due to rising blood CO₂ detected by chemoreceptors.",
+      "Exercise increases both rate AND depth of breathing (and heart rate) due to rising blood CO₂ detected by chemoreceptors.",
+      "Plants respire continuously; in light they also photosynthesise — net gas exchange is the BALANCE of the two.",
+      "Leaf gas exchange is through stomata (mainly lower epidermis), controlled by guard cells.",
+      "Bright light: leaf has net CO₂ uptake and net O₂ release; dark: net O₂ uptake and net CO₂ release.",
+      "Compensation point: photosynthesis rate = respiration rate, so there is no net gas exchange.",
+      "Hydrogencarbonate indicator: purple = low CO₂, orange-red = atmospheric CO₂, yellow = high CO₂.",
+      "Tar destroys cilia (→ mucus build-up, infections) and contains carcinogens that cause lung cancer.",
+      "Nicotine is the addictive stimulant; carbon monoxide binds to haemoglobin so blood carries less oxygen.",
+      "Emphysema destroys alveolar walls, cutting surface area (Fick's Law) → breathlessness; with bronchitis it forms COPD.",
     ],
     flashcards: [
       { front: "What is the function of goblet cells in the trachea?", back: "They secrete mucus that traps dust, bacteria, and other particles, preventing them from reaching the alveoli." },
@@ -258,6 +348,13 @@ This process, called **fermentation**, is exploited commercially:
       { front: "Why does breathing rate increase during exercise?", back: "Muscles produce more CO₂, lowering blood pH; chemoreceptors in the brain detect this and signal breathing muscles to increase rate and depth of breathing." },
       { front: "What chemical test confirms CO₂ in expired air?", back: "Limewater (calcium hydroxide solution) turns milky/cloudy as insoluble calcium carbonate (CaCO₃) forms: Ca(OH)₂ + CO₂ → CaCO₃ + H₂O." },
       { front: "Why does aerobic respiration release more energy than anaerobic?", back: "Aerobic respiration completely oxidises glucose to CO₂ and H₂O, breaking all C–H bonds and passing electrons through the full electron transport chain. Anaerobic only partially breaks down glucose, leaving energy locked in lactic acid or ethanol." },
+      { front: "Through which structures do gases enter and leave a leaf, and what controls them?", back: "Through stomata (small pores, mainly on the lower epidermis), opened and closed by guard cells." },
+      { front: "Describe the NET gas exchange of a leaf in bright light and in darkness.", back: "Bright light: photosynthesis > respiration, so net CO₂ uptake and net O₂ release. Darkness: only respiration, so net O₂ uptake and net CO₂ release." },
+      { front: "What is the compensation point?", back: "The light intensity at which the rate of photosynthesis exactly equals the rate of respiration, so there is no net gas exchange with the air." },
+      { front: "What colours does hydrogencarbonate indicator show at low, atmospheric, and high CO₂?", back: "Purple at low CO₂ (alkaline), orange-red at atmospheric CO₂, and yellow at high CO₂ (acidic, because CO₂ forms a weak acid)." },
+      { front: "What are the four key harmful components of cigarette smoke and one effect of each?", back: "Tar (destroys cilia / carcinogen → cancer); nicotine (addictive stimulant, raises heart rate/blood pressure); carbon monoxide (binds haemoglobin → less O₂ carried); particulates (irritate airways, more mucus)." },
+      { front: "Why does carbon monoxide in smoke reduce oxygen delivery?", back: "It binds irreversibly to haemoglobin, forming carboxyhaemoglobin, so that haemoglobin can no longer carry oxygen — the blood carries less oxygen to the tissues." },
+      { front: "What is emphysema and how does it reduce gas exchange?", back: "Long-term destruction of the alveolar walls, so many small alveoli merge into a few large air spaces. This greatly reduces the surface area for diffusion (Fick's Law), so less oxygen is absorbed and the person becomes breathless even at rest." },
     ],
     keyTerms: [
       { term: "Alveolus", definition: "Tiny air sac at the end of bronchioles in the lungs; the site of gas exchange between air and blood." },
@@ -272,6 +369,14 @@ This process, called **fermentation**, is exploited commercially:
       { term: "Concentration gradient", definition: "The difference in concentration of a substance across a distance; steeper gradients drive faster diffusion." },
       { term: "Intercostal muscles", definition: "Muscles between the ribs; external intercostals raise ribs during inspiration, internal intercostals lower ribs during forced expiration." },
       { term: "Limewater", definition: "Calcium hydroxide solution (Ca(OH)₂aq) used to test for CO₂; turns milky/cloudy when CO₂ is present." },
+      { term: "Stoma (plural stomata)", definition: "A pore in the leaf surface, mainly on the lower epidermis, through which gases diffuse in and out; opened and closed by guard cells." },
+      { term: "Guard cell", definition: "One of a pair of cells surrounding a stoma that change shape to open or close the pore, controlling gas exchange and water loss." },
+      { term: "Compensation point", definition: "The light intensity at which a plant's rate of photosynthesis exactly equals its rate of respiration, giving no net gas exchange." },
+      { term: "Hydrogencarbonate indicator", definition: "A solution that shows the CO₂ concentration by colour: purple at low CO₂, orange-red at atmospheric CO₂, and yellow at high CO₂." },
+      { term: "Tar", definition: "A sticky carcinogenic component of cigarette smoke that paralyses and destroys cilia and is linked to lung cancer." },
+      { term: "Nicotine", definition: "The addictive stimulant drug in tobacco; it raises heart rate and blood pressure and narrows blood vessels." },
+      { term: "Carbon monoxide", definition: "A toxic gas in cigarette smoke that binds irreversibly to haemoglobin (forming carboxyhaemoglobin), reducing the blood's oxygen-carrying capacity." },
+      { term: "Emphysema", definition: "A lung disease in which alveolar walls are destroyed, reducing the surface area for gas exchange and causing breathlessness; part of COPD." },
     ],
   },
 

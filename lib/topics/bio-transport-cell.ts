@@ -90,6 +90,7 @@ export const bioTransportCell: Topic = {
         "- Water moves from *high* water potential (more dilute / less solute) to *low* water potential (more concentrated / more solute).\n" +
         "- A solution with a higher solute concentration has a *lower* water potential.\n" +
         "- The driving force is the water potential *gradient* across the membrane.\n\n" +
+        "**Why osmosis matters in living things:** Osmosis is how water enters and leaves all cells. Root hair cells absorb water from the soil by osmosis (soil water has a higher water potential than the cell sap), water is reabsorbed from the gut and kidney filtrate, and the water balance of every cell depends on the water potential of its surroundings.\n\n" +
         "**Classic experiment:** Visking (dialysis) tubing filled with concentrated sucrose solution, sealed, and placed in distilled water. Water enters the tubing by osmosis (water potential outside is higher), causing the tubing to swell and the fluid level in a glass tube attached to it to rise.",
       diagrams: [
         {
@@ -238,7 +239,8 @@ export const bioTransportCell: Topic = {
         "- Can be stopped by respiratory inhibitors (e.g. cyanide, lack of oxygen).\n\n" +
         "**Examples:**\n\n" +
         "- **Root hair cells absorbing mineral ions:** Soil water often has a lower concentration of ions (e.g. nitrate, potassium) than the cytoplasm. Ions must be absorbed against the gradient using active transport, so the plant can accumulate the minerals it needs for protein synthesis and other functions.\n" +
-        "- **Glucose absorption in the small intestine:** After digestion, glucose concentration in the gut lumen may fall below the concentration in epithelial cells. Active transport allows continued absorption against the gradient, ensuring efficient recovery of all available glucose.\n\n" +
+        "- **Glucose absorption in the small intestine:** After digestion, glucose concentration in the gut lumen may fall below the concentration in epithelial cells lining the villi. Active transport allows continued absorption against the gradient, ensuring efficient recovery of all available glucose into the blood.\n" +
+        "- **Glucose reabsorption in the kidney:** When blood is filtered in the kidney, useful glucose passes into the nephron tubule. As filtrate flows along the tubule its glucose concentration falls below that in the surrounding tubule cells, so the remaining glucose is reabsorbed back into the blood by active transport. This is why the urine of a healthy person normally contains no glucose.\n\n" +
         "**Comparison summary:**\n\n" +
         "- Diffusion: passive, down gradient, no energy, no carrier protein required (though channel proteins can help).\n" +
         "- Osmosis: passive, down water potential gradient, no energy.\n" +
@@ -248,6 +250,7 @@ export const bioTransportCell: Topic = {
         "It requires energy from cellular respiration (ATP) and specific carrier proteins in the membrane.",
         "Root hair cells use active transport to absorb mineral ions (e.g. nitrate, potassium) from the soil.",
         "Gut epithelial cells use active transport to absorb glucose from the intestinal lumen into the blood.",
+        "Kidney tubule cells use active transport to reabsorb glucose from the filtrate back into the blood, so healthy urine contains no glucose.",
         "Active transport is stopped when respiration is inhibited (e.g. by cyanide or anaerobic conditions).",
       ],
       discovery: {
@@ -344,7 +347,7 @@ export const bioTransportCell: Topic = {
       { front: "What happens to an animal cell in a hypotonic solution?", back: "Water enters by osmosis. The cell swells and may burst — haemolysis (for red blood cells)." },
       { front: "What happens to an animal cell in a hypertonic solution?", back: "Water leaves by osmosis. The cell shrinks and becomes wrinkled — crenation." },
       { front: "Define active transport", back: "The movement of molecules or ions across a membrane against the concentration gradient, requiring energy from respiration (ATP) and carrier proteins." },
-      { front: "Two biological examples of active transport", back: "1. Mineral ion (e.g. nitrate) uptake by root hair cells from soil water. 2. Glucose absorption by gut epithelial cells from the intestinal lumen." },
+      { front: "Three biological examples of active transport", back: "1. Mineral ion (e.g. nitrate) uptake by root hair cells from soil water. 2. Glucose absorption by gut epithelial cells from the intestinal lumen. 3. Glucose reabsorption from the filtrate by kidney tubule cells (so healthy urine has no glucose)." },
       { front: "SA:V ratio formula for a cube of side l", back: "SA = 6l²; V = l³; SA:V = 6/l. As l increases, SA:V decreases." },
       { front: "Why do large organisms need specialised exchange surfaces?", back: "Their SA:V ratio is too low for diffusion alone to supply all cells quickly enough. Alveoli, villi, and gills maximise surface area and minimise diffusion distance." },
     ],

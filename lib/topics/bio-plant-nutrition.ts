@@ -213,7 +213,11 @@ Chlorophyll is a green pigment found in **chloroplasts**, which are most abundan
 **Interpreting rate graphs:**
 - A rising section means the named factor is limiting — changing it changes the rate.
 - A plateau means a different factor has become limiting — increasing the named factor no longer helps.
-- Multiple plateau heights at different CO₂ levels confirm CO₂ is still limiting even when light is high.`,
+- Multiple plateau heights at different CO₂ levels confirm CO₂ is still limiting even when light is high.
+
+**Light intensity and distance — the inverse-square law:** in practicals (such as counting oxygen bubbles from pondweed at different distances from a lamp), light intensity is *not* proportional to distance. It is proportional to **1/distance²**, so doubling the distance reduces the intensity to one quarter. Always describe such results in terms of *intensity*, not raw distance.
+
+**The temperature graph has a different shape from the light and CO₂ graphs.** Light intensity and CO₂ concentration each give a line that rises and then **levels off into a plateau**. Temperature instead gives a curve that rises to a **peak at the optimum** (about 35–40 °C) and then **falls sharply** as the enzymes denature — the active site changes shape and can no longer bind the substrate. This rise-then-fall shape is the tell-tale sign that a graph is plotting temperature.`,
       discovery: {
         problem:
           "A student increases light intensity on a plant in a sealed container with a fixed amount of CO₂. She notices the rate of photosynthesis rises then levels off. She then doubles the CO₂ concentration. The rate rises again, then plateaus at a higher value. What does this tell her about limiting factors, and what should she vary next?",
@@ -260,6 +264,31 @@ Chlorophyll is a green pigment found in **chloroplasts**, which are most abundan
   <text x="55" y="145" font-size="9" fill="#fbbf24" font-family="sans-serif">light</text>
   <text x="52" y="155" font-size="9" fill="#fbbf24" font-family="sans-serif">limiting</text>
   <text x="280" y="185" font-size="9" fill="#b7bce0" font-family="sans-serif" text-anchor="end">--></text>
+</svg>`,
+        },
+        {
+          caption: "Rate of photosynthesis vs temperature — rises to an optimum, then falls as enzymes denature",
+          svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Graph showing rate of photosynthesis rising to an optimum temperature then falling sharply as enzymes denature">
+  <rect width="320" height="200" fill="#0f172a"/>
+  <!-- Axes -->
+  <line x1="40" y1="170" x2="290" y2="170" stroke="#b7bce0" stroke-width="1.5"/>
+  <line x1="40" y1="170" x2="40" y2="20" stroke="#b7bce0" stroke-width="1.5"/>
+  <!-- Axis labels -->
+  <text x="165" y="190" text-anchor="middle" font-size="11" fill="#b7bce0" font-family="sans-serif">Temperature / °C</text>
+  <text x="12" y="100" text-anchor="middle" font-size="10" fill="#b7bce0" font-family="sans-serif" transform="rotate(-90,12,100)">Rate of photosynthesis</text>
+  <!-- Curve: rise to optimum then sharp fall -->
+  <path d="M40,165 Q110,150 170,55 Q185,40 200,45 Q215,52 245,160" stroke="#34d399" stroke-width="2" fill="none"/>
+  <!-- optimum marker -->
+  <line x1="190" y1="42" x2="190" y2="170" stroke="#fbbf24" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="190" y="184" text-anchor="middle" font-size="9" fill="#fbbf24" font-family="sans-serif">optimum ~35-40</text>
+  <!-- rising-section label -->
+  <text x="78" y="120" font-size="9" fill="#38bdf8" font-family="sans-serif">rate rises:</text>
+  <text x="70" y="131" font-size="9" fill="#38bdf8" font-family="sans-serif">more kinetic</text>
+  <text x="70" y="142" font-size="9" fill="#38bdf8" font-family="sans-serif">energy</text>
+  <!-- falling-section label -->
+  <text x="226" y="95" font-size="9" fill="#fb7185" font-family="sans-serif">rate falls:</text>
+  <text x="222" y="106" font-size="9" fill="#fb7185" font-family="sans-serif">enzymes</text>
+  <text x="222" y="117" font-size="9" fill="#fb7185" font-family="sans-serif">denatured</text>
 </svg>`,
         },
       ],
@@ -375,6 +404,8 @@ Both ions are absorbed from soil solution by active transport — an energy-requ
       "Air spaces in the spongy mesophyll allow rapid diffusion of CO₂ and O₂.",
       "The three limiting factors of photosynthesis are light intensity, CO₂ concentration, and temperature.",
       "A plateau on a rate-vs-light-intensity graph signals that a different factor is limiting.",
+      "Temperature graphs rise to an optimum (~35–40 °C) then fall sharply as enzymes denature — unlike light/CO₂ graphs, which plateau.",
+      "Light intensity is proportional to 1/distance² — doubling the distance from a lamp quarters the intensity.",
       "Ethanol (heated in a water bath) decolourises a leaf; iodine then tests for starch.",
       "Destarch a plant (24–48 h darkness) before any starch-testing investigation.",
       "Nitrate ions are needed for amino acid and protein synthesis.",
@@ -405,6 +436,14 @@ Both ions are absorbed from soil solution by active transport — an energy-requ
       {
         front: "Why does the rate of photosynthesis plateau even when light intensity keeps increasing?",
         back: "Another factor (CO₂ concentration or temperature) has become limiting — it is now the bottleneck.",
+      },
+      {
+        front: "How does the shape of a temperature graph differ from a light-intensity graph for photosynthesis?",
+        back: "Light intensity rises then plateaus. Temperature rises to an optimum (~35–40 °C) then falls sharply, because above the optimum the enzymes denature.",
+      },
+      {
+        front: "In a pondweed practical, why is doubling the distance from the lamp not the same as halving the light?",
+        back: "Light intensity ∝ 1/distance², so doubling the distance reduces the intensity to one quarter, not one half.",
       },
       {
         front: "Describe the starch test procedure for a leaf.",

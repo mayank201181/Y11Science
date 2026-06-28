@@ -259,6 +259,71 @@ export const bioEnzymes: Topic = {
 
     // ── Section 5 ──────────────────────────────────────────────────────────────
     {
+      heading: "Effect of Substrate Concentration",
+      body:
+        "Substrate concentration is the third factor you must be able to explain. Unlike temperature and pH, increasing substrate concentration **never denatures** the enzyme — it only changes how busy the active sites are, so this graph rises and then levels off, but it never falls.\n\n" +
+        "When rate is plotted against substrate concentration, the curve has **two distinct phases**:\n\n" +
+        "**Phase 1 — rising (low substrate concentration):**\n" +
+        "- At low concentration there are many more free active sites than substrate molecules.\n" +
+        "- Adding more substrate gives more frequent successful collisions with active sites, so more enzyme–substrate complexes form each second.\n" +
+        "- The rate increases — at very low concentrations it is roughly **directly proportional** to substrate concentration.\n\n" +
+        "**Phase 2 — plateau (high substrate concentration):**\n" +
+        "- Eventually every active site is occupied and working as fast as it can — the enzyme is **saturated**.\n" +
+        "- Adding still more substrate makes no difference, because there are no free active sites for the extra substrate to bind to.\n" +
+        "- The rate levels off and stays constant. The reaction is now limited by the **enzyme concentration** (the number of active sites), not by substrate.\n\n" +
+        "*Useful comparison:* if you instead increased the **enzyme** concentration with substrate in excess, the rate would keep rising, because more active sites mean more reactions can happen at the same time.",
+      diagrams: [
+        {
+          caption: "Rate of reaction vs substrate concentration — rising phase then plateau (saturation)",
+          svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Graph of rate of reaction versus substrate concentration showing a steep initial rise that levels off into a horizontal plateau when all active sites are saturated">' +
+            // Axes
+            '<line x1="40" y1="170" x2="300" y2="170" stroke="#b7bce0" stroke-width="2"/>' +
+            '<line x1="40" y1="170" x2="40" y2="20" stroke="#b7bce0" stroke-width="2"/>' +
+            // Axis labels
+            '<text x="170" y="192" text-anchor="middle" font-size="11" fill="#b7bce0">Substrate concentration</text>' +
+            '<text x="12" y="100" text-anchor="middle" font-size="10" fill="#b7bce0" transform="rotate(-90 12 100)">Rate of reaction</text>' +
+            // Curve: steep rise then plateau
+            '<path d="M40,168 C72,118 102,55 150,42 C200,33 250,32 295,32" fill="none" stroke="#38bdf8" stroke-width="2.5"/>' +
+            // Plateau guide line
+            '<line x1="150" y1="40" x2="295" y2="32" stroke="#fbbf24" stroke-width="1" stroke-dasharray="4,3"/>' +
+            // Rising phase label
+            '<text x="66" y="96" font-size="9" fill="#34d399">Rising:</text>' +
+            '<text x="66" y="107" font-size="9" fill="#34d399">free active</text>' +
+            '<text x="66" y="118" font-size="9" fill="#34d399">sites spare</text>' +
+            // Plateau label
+            '<text x="196" y="58" font-size="9" fill="#fb7185">Plateau: active</text>' +
+            '<text x="196" y="69" font-size="9" fill="#fb7185">sites saturated</text>' +
+            '<text x="196" y="80" font-size="9" fill="#fb7185">enzyme is limiting</text>' +
+            '</svg>',
+        },
+      ],
+      keyPoints: [
+        "Increasing substrate concentration does NOT denature the enzyme — the curve never falls.",
+        "Rising phase: more substrate → more enzyme–substrate complexes form → rate increases.",
+        "At very low substrate concentration, rate is roughly proportional to substrate concentration.",
+        "Plateau: all active sites are occupied (saturated), so extra substrate has no free sites to bind.",
+        "On the plateau the rate is limited by enzyme concentration (number of active sites), not substrate.",
+      ],
+      discovery: {
+        problem:
+          "A student keeps the amount of catalase fixed and steadily adds more and more hydrogen peroxide, measuring the rate each time. " +
+          "At first the rate climbs quickly, but past a certain concentration the rate stops increasing no matter how much more H₂O₂ she adds. Why does the rate stop rising?",
+        idea:
+          "Once every active site is occupied and working flat out, the enzyme is **saturated**. Extra substrate molecules cannot speed things up because there are no free active sites for them to bind to. " +
+          "The only way to raise the rate now would be to add more enzyme — that is, more active sites.",
+      },
+      whyItWorks:
+        "Picture active sites as supermarket tills and substrate molecules as shoppers. " +
+        "When most tills are empty, sending in more shoppers means more get served per minute — the rate rises. " +
+        "Once every till has a shopper plus a queue, sending in even more shoppers changes nothing: throughput is capped by the number of tills (enzyme molecules), not by how many shoppers are waiting.",
+      strategies: ["Describe the two phases separately", "Name 'saturation' to explain the plateau", "Distinguish substrate-limited from enzyme-limited"],
+      thinkDeeper:
+        "Compare the three rate graphs side by side: temperature gives a bell curve (denaturation makes it fall), pH gives a bell curve (denaturation makes it fall), but substrate concentration gives a rise-then-plateau that never falls. " +
+        "If your substrate-concentration curve falls at high values, something has gone wrong in your reasoning — substrate does not denature the enzyme.",
+    },
+
+    // ── Section 6 ──────────────────────────────────────────────────────────────
+    {
       heading: "Investigating Enzyme Activity",
       body:
         "IGCSE biology includes practical investigations of enzyme activity. Two classic experiments are frequently examined:\n\n" +
@@ -292,7 +357,49 @@ export const bioEnzymes: Topic = {
         "This gives a clear, observable endpoint that does not require expensive equipment.",
     },
 
-    // ── Section 6 ──────────────────────────────────────────────────────────────
+    // ── Section 7 ──────────────────────────────────────────────────────────────
+    {
+      heading: "Uses of Enzymes",
+      body:
+        "Because enzymes are fast, specific, and work in mild conditions (low temperature, no harsh chemicals), they are used widely in the home and in industry. " +
+        "This topic is examined in detail on Cambridge 0610 and rewards a few concrete examples.\n\n" +
+        "**Biological washing powders (detergents):**\n" +
+        "- Contain **proteases** to digest protein stains (blood, egg, grass) and **lipases** to digest fat and grease stains.\n" +
+        "- The enzymes break large, insoluble stain molecules into small, soluble products that wash away easily.\n" +
+        "- They work effectively at **lower temperatures** than ordinary powders, saving energy and money and protecting delicate fabrics.\n" +
+        "- *Limitations:* they are denatured by very hot washes, so the water must not be too hot; some people are allergic to the enzymes; they are less effective in very hard water.\n\n" +
+        "**Food and industry:**\n" +
+        "- **Pectinase** breaks down pectin in fruit cells to release more juice and produce clearer fruit juice — increasing the yield.\n" +
+        "- **Lactase** breaks down lactose into glucose and galactose to make **lactose-free milk** for people who are lactose intolerant.\n" +
+        "- **Carbohydrases / amylases** convert starch into sugar syrup (for example in the food and brewing industries).\n" +
+        "- **Isomerase** converts glucose into the much sweeter **fructose**, so less is needed in slimming/diet foods.\n" +
+        "- **Proteases** are used to pre-digest protein in baby foods, making them easier for infants to absorb.\n\n" +
+        "The common theme: an enzyme does a useful chemical job quickly and specifically, at low temperature and without the energy cost or hazards of strong acids, alkalis, or high heat.",
+      keyPoints: [
+        "Biological washing powders contain proteases (protein stains) and lipases (fat/grease stains).",
+        "They break large insoluble stain molecules into small soluble ones that wash out, and work at lower temperatures (saving energy).",
+        "Drawbacks: denatured by very hot washes; can cause allergies in some people.",
+        "Pectinase increases fruit-juice yield and clarity; lactase makes lactose-free milk.",
+        "Isomerase converts glucose to sweeter fructose; proteases pre-digest protein in baby food.",
+      ],
+      discovery: {
+        problem:
+          "Two identical shirts each have a dried blood stain. One is washed with ordinary washing powder, the other with a biological washing powder — both at a cool 30 °C. " +
+          "The biological powder removes the stain far better. What is in the biological powder that the ordinary powder lacks, and why does the low temperature matter?",
+        idea:
+          "The biological powder contains **protease** enzymes. Blood is rich in protein, and the protease digests it into small soluble fragments that rinse away. " +
+          "A cool 30 °C wash works well because it is below the enzyme's denaturation temperature — a very hot wash would denature the protease and stop it working.",
+      },
+      whyItWorks:
+        "Enzymes give industry catalysis without the cost: a strong alkali could also break down a protein stain, but it would damage fabric and skin and need careful handling. " +
+        "A specific protease targets only the protein, works in mild conditions, and is needed only in tiny amounts because it is reused — so the process is cheaper, safer, and gentler.",
+      strategies: ["Match the enzyme to the molecule it digests", "Always give an advantage AND a limitation", "Link 'low temperature' to energy saving and to avoiding denaturation"],
+      thinkDeeper:
+        "Many industrial enzymes are now **immobilised** — fixed onto an inert support such as alginate beads — so the product flows past them and the enzyme is not lost with the product. " +
+        "This lets the same enzyme be reused for a long time and keeps the product enzyme-free, which is why lactase columns can continuously turn milk into lactose-free milk.",
+    },
+
+    // ── Section 8 ──────────────────────────────────────────────────────────────
     {
       heading: "Common Misconceptions and Exam Technique",
       body:
@@ -337,6 +444,10 @@ export const bioEnzymes: Topic = {
       "Iodine turns blue-black with starch; used to measure when amylase has fully digested starch.",
       "Catalase catalyses 2H₂O₂ → 2H₂O + O₂; oxygen volume collected measures its activity.",
       "Q₁₀ ≈ 2 for many enzymes below their optimum: rate roughly doubles per 10 °C rise.",
+      "Enzymes work by lowering the activation energy — the minimum energy needed for the reaction to occur.",
+      "Substrate concentration: rate rises then plateaus when active sites are saturated; it never falls (no denaturation).",
+      "Biological washing powders contain proteases (protein stains) and lipases (fat stains) and work at lower temperatures.",
+      "Industrial uses: pectinase (fruit juice yield/clarity), lactase (lactose-free milk), isomerase (glucose → fructose).",
     ],
     flashcards: [
       { front: "What is an enzyme?", back: "A biological catalyst — a protein molecule that speeds up a chemical reaction without being used up." },
@@ -351,6 +462,12 @@ export const bioEnzymes: Topic = {
       { front: "How is the iodine test used to investigate amylase activity?", back: "Iodine turns blue-black in the presence of starch; when amylase has completely digested all starch, the iodine remains orange-brown. Time taken = measure of enzyme activity." },
       { front: "What does catalase do, and how is its activity measured?", back: "Catalase breaks down hydrogen peroxide: 2H₂O₂ → 2H₂O + O₂. Activity is measured as volume of O₂ produced per unit time." },
       { front: "What is Q₁₀ for a typical enzyme below its optimum?", back: "Q₁₀ ≈ 2, meaning the rate approximately doubles for every 10 °C rise in temperature." },
+      { front: "What is activation energy, and how do enzymes affect it?", back: "Activation energy is the minimum energy needed for reactants to react. Enzymes lower the activation energy, so the reaction proceeds faster." },
+      { front: "What happens to the rate as substrate concentration increases?", back: "The rate rises at first (more enzyme–substrate complexes form), then plateaus once all active sites are saturated. It never falls — substrate does not denature the enzyme." },
+      { front: "Why does the rate plateau at high substrate concentration?", back: "Every active site is occupied (the enzyme is saturated), so adding more substrate has no free sites to bind to; the rate is now limited by enzyme concentration." },
+      { front: "What enzymes are in biological washing powders and why?", back: "Proteases digest protein stains (blood, egg) and lipases digest fat/grease stains, breaking them into small soluble products. They also work at lower temperatures, saving energy." },
+      { front: "Give one advantage and one disadvantage of biological washing powders.", back: "Advantage: remove protein/fat stains effectively at lower (energy-saving) temperatures. Disadvantage: denatured by very hot washes / can cause allergies in some people." },
+      { front: "State two industrial uses of enzymes.", back: "Pectinase to increase fruit-juice yield and clarity; lactase to make lactose-free milk; isomerase to convert glucose into sweeter fructose (any two)." },
     ],
     keyTerms: [
       { term: "Enzyme", definition: "A protein molecule that acts as a biological catalyst, speeding up chemical reactions without being used up." },
@@ -364,6 +481,12 @@ export const bioEnzymes: Topic = {
       { term: "Optimum pH", definition: "The pH at which an enzyme's rate of reaction is at its maximum." },
       { term: "Catalyst", definition: "A substance that increases the rate of a chemical reaction without being used up in the reaction." },
       { term: "Q₁₀", definition: "The ratio of reaction rate at temperature T+10 °C to rate at temperature T; for many enzymes below the optimum, Q₁₀ ≈ 2." },
+      { term: "Activation energy", definition: "The minimum energy that reactant molecules must have for a reaction to occur. Enzymes speed up reactions by lowering the activation energy." },
+      { term: "Saturation", definition: "The state at high substrate concentration where every active site is occupied, so the rate cannot increase further by adding more substrate." },
+      { term: "Biological washing powder", definition: "A detergent containing enzymes such as proteases and lipases that digest protein and fat stains into soluble products, working effectively at lower temperatures." },
+      { term: "Pectinase", definition: "An enzyme that breaks down pectin in plant cell walls, used to increase the yield and clarity of fruit juice." },
+      { term: "Lactase", definition: "An enzyme that breaks down lactose into glucose and galactose, used to produce lactose-free milk." },
+      { term: "Immobilised enzyme", definition: "An enzyme fixed onto an inert support so it is not lost with the product and can be reused — for example lactase used to make lactose-free milk." },
     ],
   },
 

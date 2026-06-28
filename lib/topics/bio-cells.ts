@@ -237,13 +237,23 @@ The formula triangle is: Image size (top) | Actual size × Magnification (bottom
 
 Actual size = Image size / Magnification = 24 mm / 400 = 0.06 mm = 60 µm.
 
-**Scale bars:** Exam questions often give a scale bar instead of a stated magnification. Measure the scale bar length on the image (in mm), note the real length it represents (e.g. 10 µm), then calculate magnification from these two values.`,
+**Scale bars:** Exam questions often give a scale bar instead of a stated magnification. Measure the scale bar length on the image (in mm), note the real length it represents (e.g. 10 µm), then calculate magnification from these two values.
+
+**Total magnification of a microscope:** When using a compound light microscope, the total magnification is the product of the two lenses:
+
+**Total magnification = magnification of eyepiece lens × magnification of objective lens**
+
+For example, a ×10 eyepiece used with a ×40 objective gives a total magnification of ×400. The common objective lenses (×4, ×10, ×40) combined with a ×10 eyepiece therefore give ×40, ×100 and ×400.
+
+**Magnification is NOT resolution.** Magnification is how many times larger the image appears. *Resolution* is the smallest distance between two points that can still be seen as separate. A light microscope has limited resolution (about 200 nm) because it uses visible light; magnifying beyond this point just gives a bigger, blurry image ("empty magnification"). Electron microscopes use electron beams of much shorter wavelength, giving far higher resolution and revealing tiny structures such as ribosomes and the internal detail of mitochondria — that is why a 25 nm ribosome can never be seen with a light microscope.`,
       keyPoints: [
         "Magnification = Image size ÷ Actual size (both in same units).",
-        "1 mm = 1000 µm; convert before calculating.",
+        "1 mm = 1000 µm and 1 µm = 1000 nm; convert before calculating.",
         "Scale bars let you calculate magnification without it being stated.",
         "Image size and actual size must always be in the same unit.",
-        "Rearrange the formula: Actual size = Image size ÷ Magnification."
+        "Rearrange the formula: Actual size = Image size ÷ Magnification.",
+        "Total magnification = eyepiece lens × objective lens (e.g. ×10 × ×40 = ×400).",
+        "Resolution (level of detail) is limited by wavelength — not the same as magnification."
       ],
       discovery: {
         problem: "A photograph shows a bacterium that is 15 mm long. The actual bacterium is 3 µm long. Before reading on, try to calculate the magnification. Watch your units!",
@@ -252,6 +262,103 @@ Actual size = Image size / Magnification = 24 mm / 400 = 0.06 mm = 60 µm.
       whyItWorks: "Magnification is a pure (unitless) ratio, so it only works correctly when numerator and denominator carry the same unit. Writing out unit labels and cancelling them is the safest strategy to avoid errors in multi-step problems.",
       strategies: ["Unit analysis — always write and cancel units", "Formula triangle for magnification"],
       thinkDeeper: "A light microscope can magnify up to about ×1500. An electron microscope can reach ×500 000. Why can't a light microscope reveal ribosomes (~25 nm diameter)? Think about the wavelength of visible light (~400–700 nm) and the concept of resolution."
+    },
+
+    {
+      heading: "Using a Light Microscope",
+      body: `A **light (optical) microscope** uses glass lenses and a beam of light to magnify a thin specimen. You must be able to describe how to set one up and use it safely.
+
+**Main parts:**
+- **Eyepiece lens** — the lens you look through (commonly ×10).
+- **Objective lenses** — mounted on a rotating turret (commonly ×4, ×10, ×40); the one selected sits closest to the slide.
+- **Stage** — the platform where the slide is clipped in place; it has a hole to let light through.
+- **Light source / mirror** — illuminates the specimen from below.
+- **Coarse and fine focusing knobs** — move the stage (or lens tube) up and down to bring the image into focus.
+
+**How to prepare a temporary slide:**
+1. Place a thin specimen (e.g. a single layer of onion epidermis or cheek cells) on a clean glass slide.
+2. Add a drop of **stain** (e.g. iodine for plant cells, methylene blue for animal cells) — stains add contrast so structures such as the nucleus become visible.
+3. Lower a **coverslip** gently at an angle using a mounted needle, to avoid trapping air bubbles which would obscure the view.
+
+**How to focus:**
+1. Start with the **lowest-power objective** (×4) — this gives the widest field of view and is easiest to find the specimen with.
+2. Using the **coarse focus**, move the stage and objective close together while watching from the side (so you do not crack the slide), then look down the eyepiece and turn the coarse focus to move them apart until the image is roughly sharp.
+3. Switch to a higher-power objective and use only the **fine focus** to sharpen the image.
+
+**Making a biological drawing:** use a sharp pencil, draw clear unbroken lines (no shading or sketchy lines), draw what you actually see (not a textbook version), use as much of the space as possible, and add a title, the magnification, and label lines drawn with a ruler that do not cross.`,
+      diagrams: [
+        {
+          caption: "Light microscope — key parts",
+          svg: `<svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram of a light microscope showing eyepiece, objective lenses, stage, focusing knob and light source">
+  <!-- base -->
+  <rect x="70" y="190" width="160" height="16" rx="6" fill="#1e2a3a" stroke="#38bdf8" stroke-width="2"/>
+  <!-- arm -->
+  <path d="M120 195 Q95 150 110 70" fill="none" stroke="#38bdf8" stroke-width="3"/>
+  <!-- eyepiece -->
+  <rect x="100" y="20" width="22" height="30" rx="4" fill="#2d1f4a" stroke="#a78bfa" stroke-width="2"/>
+  <text x="126" y="32" font-size="8" fill="#a78bfa" font-family="sans-serif">Eyepiece (×10)</text>
+  <!-- body tube -->
+  <rect x="104" y="50" width="14" height="35" fill="#1e2a3a" stroke="#38bdf8" stroke-width="1.5"/>
+  <!-- objective turret -->
+  <ellipse cx="111" cy="92" rx="20" ry="8" fill="#1a2e20" stroke="#34d399" stroke-width="1.8"/>
+  <rect x="105" y="96" width="6" height="14" fill="#34d399"/>
+  <rect x="114" y="95" width="6" height="11" fill="#34d399"/>
+  <text x="135" y="96" font-size="8" fill="#34d399" font-family="sans-serif">Objective lenses</text>
+  <!-- stage -->
+  <rect x="80" y="120" width="80" height="10" fill="#1e2a3a" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="163" y="128" font-size="8" fill="#38bdf8" font-family="sans-serif">Stage + slide</text>
+  <!-- focus knob -->
+  <circle cx="90" cy="150" r="11" fill="#1e2a3a" stroke="#fbbf24" stroke-width="2"/>
+  <text x="40" y="153" font-size="8" fill="#fbbf24" font-family="sans-serif">Focus</text>
+  <!-- light source -->
+  <circle cx="120" cy="172" r="8" fill="#fde68a" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="135" y="176" font-size="8" fill="#fbbf24" font-family="sans-serif">Light source</text>
+</svg>`
+        }
+      ],
+      keyPoints: [
+        "Stains (iodine, methylene blue) add contrast so organelles like the nucleus show up.",
+        "Lower the coverslip at an angle to avoid trapping air bubbles.",
+        "Always begin focusing with the lowest-power objective, using coarse focus first.",
+        "Use the fine focus only on high power, watching from the side to protect the slide.",
+        "A good biological drawing uses sharp pencil lines, a title, ruled labels and the magnification."
+      ],
+      discovery: {
+        problem: "A student puts a slide on the stage, swings the ×40 objective into place and racks the stage right up using the coarse focus while looking down the eyepiece — and hears a crack. What two mistakes did they make?",
+        idea: "They started on high power (×40) instead of low power, and they moved the stage and objective TOWARDS each other while looking down the eyepiece. The correct method is to start on low power and, when racking the objective close to the slide, watch from the side so you can see them almost touching — then focus by moving them apart."
+      },
+      strategies: ["Low power first, then build up", "Watch from the side when racking close to the slide"],
+      whyItWorks: "Starting on low power gives the widest field of view, making the specimen far easier to locate; only once it is centred and focused do you move to higher power, where the field is narrower and the working distance to the slide is tiny."
+    },
+
+    {
+      heading: "Stem Cells and Differentiation",
+      body: `Most cells in a multicellular organism are **specialised** — but they all started as unspecialised cells. A **stem cell** is an unspecialised cell that can:
+- **divide repeatedly** by mitosis, and
+- **differentiate** — become specialised into different cell types.
+
+**Differentiation** is the process by which an unspecialised cell develops the structure and features needed to carry out a specific function. During differentiation, particular genes are switched on (and others off), so the cell makes the specific proteins it needs. In animals, most cells differentiate at an early stage and lose the ability to change; cell division is then mainly for growth and repair/replacement.
+
+**Types of stem cell (animals):**
+- **Embryonic stem cells** — found in early embryos. They can differentiate into *any* type of cell, so they are very versatile.
+- **Adult (tissue) stem cells** — found in some adult tissues such as **bone marrow**. They are more limited: for example, bone marrow stem cells can form different types of blood cell.
+
+**Stem cells in plants:** plants keep unspecialised, dividing stem cells throughout life in regions called **meristems** (e.g. at the tips of roots and shoots). This is why plant cuttings can grow into whole new plants.
+
+**Uses of stem cells (medicine):** stem cells can in principle be used to replace damaged or diseased cells — for example, producing new blood cells in a **bone marrow transplant** to treat leukaemia, or being researched to treat conditions such as diabetes and paralysis (spinal injury). Therapeutic use raises ethical issues, particularly around the source of embryonic stem cells.`,
+      keyPoints: [
+        "A stem cell is an unspecialised cell that can divide and differentiate.",
+        "Differentiation = a cell developing the features to carry out a specific function (genes switched on/off).",
+        "Embryonic stem cells can become any cell type; adult stem cells (e.g. bone marrow) are more limited.",
+        "Plant stem cells stay active for life in meristems at root and shoot tips.",
+        "Medical uses include bone marrow transplants and potential treatments for diabetes and paralysis."
+      ],
+      discovery: {
+        problem: "Every cell in your body contains the same complete set of genes, yet a nerve cell looks nothing like a red blood cell. How can identical instructions produce such different cells?",
+        idea: "Through differentiation: different genes are switched on in different cells. A cell only makes the proteins coded by its active genes, so each cell type builds the structures it needs and ignores the rest — same instruction book, different pages read."
+      },
+      thinkDeeper: "Embryonic stem cells can become any cell type, which makes them medically powerful but ethically controversial. Why might adult stem cells be preferred in some treatments even though they are less versatile? Consider where they come from and the issue of rejection.",
+      strategies: ["Link 'stem cell' to two abilities: divide + differentiate", "Compare embryonic (any cell) vs adult (limited)"]
     }
   ],
 
@@ -266,7 +373,15 @@ Actual size = Image size / Magnification = 24 mm / 400 = 0.06 mm = 60 µm.
       "Red blood cells are biconcave and anucleate — maximising haemoglobin content.",
       "Xylem vessels are dead, hollow, lignified tubes for water transport.",
       "The levels of organisation: organelle → cell → tissue → organ → organ system → organism.",
-      "Mitochondria are the site of aerobic respiration (ATP production)."
+      "Mitochondria are the site of aerobic respiration (ATP production).",
+      "Eukaryotic cells (animal, plant, fungal) have a nucleus; prokaryotic cells (bacteria) do not.",
+      "A bacterial cell wall is made of murein (peptidoglycan), not cellulose.",
+      "Total magnification of a microscope = eyepiece lens × objective lens.",
+      "Resolution is the smallest distance two points can be apart and still look separate — it is limited by wavelength, not magnification.",
+      "A stem cell is unspecialised and can divide and then differentiate into specialised cells (Edexcel).",
+      "Differentiation = a cell developing the features needed for a specific function, by switching genes on or off.",
+      "Stains such as iodine and methylene blue add contrast so cell structures become visible under the microscope.",
+      "1 µm = 1000 nm; a typical animal/plant cell is tens of micrometres across, a bacterium only a few micrometres."
     ],
     flashcards: [
       { front: "What is the function of the nucleus?", back: "Controls cell activities; contains chromosomes (DNA) which carry genetic information for protein synthesis." },
@@ -280,7 +395,18 @@ Actual size = Image size / Magnification = 24 mm / 400 = 0.06 mm = 60 µm.
       { front: "What organelle is the site of protein synthesis?", back: "Ribosome — found free in cytoplasm or on rough endoplasmic reticulum." },
       { front: "Put in order: organ system, cell, tissue, organelle, organism, organ.", back: "Organelle → cell → tissue → organ → organ system → organism." },
       { front: "How does a root hair cell maximise water absorption?", back: "Long hair-like extension greatly increases surface area for osmosis; thin cell wall for easy water entry." },
-      { front: "Why does a sperm cell have many mitochondria in its midpiece?", back: "Aerobic respiration provides ATP to power the flagellum for swimming to the egg." }
+      { front: "Why does a sperm cell have many mitochondria in its midpiece?", back: "Aerobic respiration provides ATP to power the flagellum for swimming to the egg." },
+      { front: "What is the function of the cytoplasm?", back: "A jelly-like fluid that fills the cell; the site of many chemical reactions and where organelles are held." },
+      { front: "What is a bacterial cell wall made of?", back: "Murein (peptidoglycan) — not cellulose. Cellulose is the material of plant cell walls." },
+      { front: "How do you calculate the total magnification of a light microscope?", back: "Total magnification = magnification of the eyepiece lens × magnification of the objective lens (e.g. ×10 × ×40 = ×400)." },
+      { front: "What is the difference between magnification and resolution?", back: "Magnification = how many times larger the image appears. Resolution = the smallest distance between two points that can still be seen as separate." },
+      { front: "What is a stem cell?", back: "An unspecialised cell that can divide repeatedly and differentiate into different specialised cell types." },
+      { front: "What is differentiation?", back: "The process by which an unspecialised cell develops the structure and features needed to carry out a specific function (genes switched on/off)." },
+      { front: "Compare embryonic and adult stem cells.", back: "Embryonic stem cells can become any cell type; adult stem cells (e.g. in bone marrow) are more limited in what they can form." },
+      { front: "Where are stem cells found in plants?", back: "In meristems — regions of active cell division at the tips of roots and shoots." },
+      { front: "Why start focusing a microscope on the lowest-power objective?", back: "It gives the widest field of view, making the specimen much easier to find and centre before switching to higher power." },
+      { front: "Why add a stain when preparing a slide?", back: "Stains (e.g. iodine, methylene blue) add contrast so structures such as the nucleus become visible." },
+      { front: "Name the adaptations of a palisade mesophyll cell.", back: "Tall column shape and many chloroplasts near the top of the leaf to absorb the maximum amount of light for photosynthesis." }
     ],
     keyTerms: [
       { term: "Nucleus", definition: "A membrane-bound organelle containing chromosomes (DNA); controls cell activities and protein synthesis." },
@@ -294,7 +420,18 @@ Actual size = Image size / Magnification = 24 mm / 400 = 0.06 mm = 60 µm.
       { term: "Plasmid", definition: "Small circular DNA molecule in bacteria, separate from the main chromosome; often carries antibiotic-resistance genes." },
       { term: "Magnification", definition: "The ratio of image size to actual size; magnification = image size ÷ actual size (same units)." },
       { term: "Tissue", definition: "A group of similar cells working together to perform a specific function." },
-      { term: "Organ", definition: "A structure composed of two or more different tissue types working together to perform a function." }
+      { term: "Organ", definition: "A structure composed of two or more different tissue types working together to perform a function." },
+      { term: "Cytoplasm", definition: "The jelly-like fluid filling a cell where many chemical reactions occur and organelles are suspended." },
+      { term: "Cell wall (bacterial)", definition: "Rigid outer layer of a bacterial cell made of murein (peptidoglycan), not cellulose." },
+      { term: "Flagellum", definition: "A long whip-like structure on some cells (e.g. bacteria, sperm) that rotates or beats to move the cell." },
+      { term: "Eukaryote", definition: "An organism whose cells have a membrane-bound nucleus and membrane-bound organelles (animals, plants, fungi, protists)." },
+      { term: "Resolution", definition: "The smallest distance between two points that can still be seen as separate; limited by the wavelength used, not by magnification." },
+      { term: "Total magnification", definition: "For a compound microscope, the eyepiece lens magnification multiplied by the objective lens magnification." },
+      { term: "Stem cell", definition: "An unspecialised cell able to divide repeatedly and differentiate into specialised cell types (e.g. embryonic and adult stem cells)." },
+      { term: "Differentiation", definition: "The process by which an unspecialised cell becomes specialised for a particular function as specific genes are switched on or off." },
+      { term: "Meristem", definition: "A region of plant tissue (e.g. at root and shoot tips) containing actively dividing, unspecialised cells — the plant's stem cells." },
+      { term: "Organ system", definition: "A group of organs that work together to carry out a particular function (e.g. the circulatory system)." },
+      { term: "Specialised cell", definition: "A cell whose structure is adapted to carry out a specific function efficiently (e.g. red blood cell, root hair cell)." }
     ]
   },
 

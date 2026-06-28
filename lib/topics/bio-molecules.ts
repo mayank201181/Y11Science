@@ -6,7 +6,7 @@ export const bioMolecules: Topic = {
   subject: "biology",
   icon: "🧪",
   blurb: "Carbohydrates, proteins, fats, water and food tests — the chemical building blocks of life.",
-  intro: "Every living cell is built from a small set of chemical molecules: carbohydrates for energy and structure, proteins for catalysis and support, lipids for membranes and insulation, and water as the universal solvent. Understanding how small subunits join into giant polymers — and how we detect each class in the lab — is a cornerstone of IGCSE Biology and underpins all of cell biology, nutrition, and disease.",
+  intro: "Every living cell is built from a small set of chemical molecules: carbohydrates for energy and structure, proteins for catalysis and support, lipids for membranes and insulation, DNA to carry genetic information, and water as the universal solvent. Understanding how small subunits join into giant polymers — and how we detect each class in the lab with food tests — is a cornerstone of IGCSE Biology and underpins all of cell biology, nutrition, genetics, and disease.",
 
   guide: [
     {
@@ -40,9 +40,12 @@ A useful memory trick: "CHON" covers everything in proteins, and carbohydrates /
       body: `Large biological molecules (polymers) are built by joining many small subunits (monomers) together. This process is called **condensation** (or dehydration synthesis): a water molecule is released each time two subunits join. The reverse — breaking a polymer into monomers by adding water — is **hydrolysis**.
 
 **Carbohydrates**
-- Monomer: **glucose** (a simple sugar, C₆H₁₂O₆).
-- Two glucose units join → **maltose** (a disaccharide).
-- Many glucose units join → **starch** (energy store in plants), **glycogen** (energy store in animals and liver), or **cellulose** (structural, in plant cell walls).
+Carbohydrates are classified by size:
+- **Monosaccharides** (single simple sugars): **glucose**, **fructose**, and **galactose** — all have the formula C₆H₁₂O₆. These are the monomers.
+- **Disaccharides** (two monosaccharides joined by one glycosidic bond): **maltose** (glucose + glucose), **sucrose** (glucose + fructose, the sugar transported in plants and used in table sugar), and **lactose** (glucose + galactose, the sugar in milk).
+- **Polysaccharides** (many monosaccharides joined): **starch** (energy store in plants), **glycogen** (energy store in animals, stored in liver and muscle), and **cellulose** (structural, in plant cell walls).
+
+Glucose is the monomer of starch, glycogen, and cellulose. Two glucose units join → **maltose** (a disaccharide); many glucose units join → a polysaccharide.
 
 Starch and glycogen are **branched or coiled** so they are compact and insoluble — ideal for storage. Cellulose forms long, straight chains that pack into strong fibres — ideal for structure.
 
@@ -169,6 +172,84 @@ Starch and glycogen are **branched or coiled** so they are compact and insoluble
     },
 
     {
+      heading: "DNA — The Molecule of Inheritance",
+      body: `DNA (deoxyribonucleic acid) is the molecule that carries genetic information. Like proteins and polysaccharides, it is a **polymer** built from small repeating subunits called **nucleotides**.
+
+**The subunit: a nucleotide**
+Each nucleotide is made of three parts joined together: a **sugar** (deoxyribose), a **phosphate** group, and one of four **bases**. The four bases are **adenine (A)**, **thymine (T)**, **cytosine (C)**, and **guanine (G)**. Because DNA contains nitrogen-rich bases, it contains the elements C, H, O, N, and P (phosphorus).
+
+**The shape: a double helix**
+A DNA molecule is made of **two strands** wound around each other into a spiral — the famous **double helix**. The sugar and phosphate groups form the two "backbones" (like the sides of a twisted ladder), and the bases point inwards to form the "rungs".
+
+**Complementary base pairing**
+The two strands are held together by bonds between the bases, which pair in a fixed, complementary way:
+- **A always pairs with T** (adenine–thymine).
+- **C always pairs with G** (cytosine–guanine).
+
+This is called **complementary base pairing**. It means that if you know the sequence of bases on one strand, you can always work out the sequence on the other. For example, a strand reading A–C–G–T pairs with T–G–C–A.
+
+**Why it matters**
+The order of the bases along a strand is a code — a **gene** is a length of DNA that codes for a specific protein (by specifying the order of amino acids). Complementary base pairing also explains how DNA can be **copied** accurately: the two strands separate, and each acts as a template for building a new partner strand, so two identical DNA molecules are formed.
+
+(Note: DNA uses the base thymine (T). RNA, a related molecule, uses **uracil (U)** instead of thymine — a common trap in exam questions.)`,
+      keyPoints: [
+        "DNA is a polymer of nucleotides; each nucleotide = sugar + phosphate + base.",
+        "DNA contains the elements C, H, O, N and P (phosphorus).",
+        "DNA is a double helix: two strands twisted together, with sugar-phosphate backbones and bases as the rungs.",
+        "Complementary base pairing: A pairs with T, and C pairs with G.",
+        "The base sequence is a code; a gene is a length of DNA that codes for one protein.",
+        "DNA uses thymine (T); RNA uses uracil (U) instead.",
+      ],
+      diagrams: [
+        {
+          caption: "DNA double helix: two strands held together by complementary base pairs A-T and C-G.",
+          svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-label="DNA double helix showing complementary base pairing of adenine with thymine and cytosine with guanine">
+  <rect width="320" height="220" fill="#0f172a"/>
+  <text x="160" y="20" text-anchor="middle" font-size="13" fill="#eef0ff" font-family="sans-serif" font-weight="bold">DNA: Complementary Base Pairing</text>
+  <!-- Backbones -->
+  <line x1="90" y1="34" x2="90" y2="190" stroke="#fbbf24" stroke-width="3"/>
+  <line x1="230" y1="34" x2="230" y2="190" stroke="#fbbf24" stroke-width="3"/>
+  <text x="70" y="205" text-anchor="middle" font-size="9" fill="#fbbf24" font-family="sans-serif">sugar-phosphate</text>
+  <text x="250" y="205" text-anchor="middle" font-size="9" fill="#fbbf24" font-family="sans-serif">sugar-phosphate</text>
+  <!-- Rung 1: A-T -->
+  <rect x="90" y="44" width="55" height="18" fill="#38bdf8"/>
+  <rect x="175" y="44" width="55" height="18" fill="#fb7185"/>
+  <text x="117" y="57" text-anchor="middle" font-size="11" fill="#0f172a" font-family="sans-serif" font-weight="bold">A</text>
+  <text x="202" y="57" text-anchor="middle" font-size="11" fill="#0f172a" font-family="sans-serif" font-weight="bold">T</text>
+  <!-- Rung 2: C-G -->
+  <rect x="90" y="74" width="55" height="18" fill="#34d399"/>
+  <rect x="175" y="74" width="55" height="18" fill="#a78bfa"/>
+  <text x="117" y="87" text-anchor="middle" font-size="11" fill="#0f172a" font-family="sans-serif" font-weight="bold">C</text>
+  <text x="202" y="87" text-anchor="middle" font-size="11" fill="#0f172a" font-family="sans-serif" font-weight="bold">G</text>
+  <!-- Rung 3: T-A -->
+  <rect x="90" y="104" width="55" height="18" fill="#fb7185"/>
+  <rect x="175" y="104" width="55" height="18" fill="#38bdf8"/>
+  <text x="117" y="117" text-anchor="middle" font-size="11" fill="#0f172a" font-family="sans-serif" font-weight="bold">T</text>
+  <text x="202" y="117" text-anchor="middle" font-size="11" fill="#0f172a" font-family="sans-serif" font-weight="bold">A</text>
+  <!-- Rung 4: G-C -->
+  <rect x="90" y="134" width="55" height="18" fill="#a78bfa"/>
+  <rect x="175" y="134" width="55" height="18" fill="#34d399"/>
+  <text x="117" y="147" text-anchor="middle" font-size="11" fill="#0f172a" font-family="sans-serif" font-weight="bold">G</text>
+  <text x="202" y="147" text-anchor="middle" font-size="11" fill="#0f172a" font-family="sans-serif" font-weight="bold">C</text>
+  <!-- Rung 5: A-T -->
+  <rect x="90" y="164" width="55" height="18" fill="#38bdf8"/>
+  <rect x="175" y="164" width="55" height="18" fill="#fb7185"/>
+  <text x="117" y="177" text-anchor="middle" font-size="11" fill="#0f172a" font-family="sans-serif" font-weight="bold">A</text>
+  <text x="202" y="177" text-anchor="middle" font-size="11" fill="#0f172a" font-family="sans-serif" font-weight="bold">T</text>
+  <text x="160" y="35" text-anchor="middle" font-size="9" fill="#b7bce0" font-family="sans-serif">A-T and C-G only</text>
+</svg>`,
+        },
+      ],
+      discovery: {
+        problem: "In any sample of DNA, scientists found that the amount of adenine always equalled the amount of thymine, and the amount of cytosine always equalled the amount of guanine — no matter which organism the DNA came from. What could explain this exact 1:1 matching?",
+        idea: "Because the bases pair in a fixed, complementary way — A always bonds to T, and C always bonds to G — every adenine on one strand must have a thymine opposite it, and every cytosine must have a guanine opposite it. So the totals of A and T are forced to be equal, as are C and G. This pairing rule (discovered by Watson, Crick, Franklin and Wilkins) is the key to how DNA stores and copies information.",
+      },
+      whyItWorks: "Complementary base pairing works because each base has a shape and bonding pattern that fits only its partner: A and T form two hydrogen bonds together, while C and G form three. A simply cannot bond stably with C or G. This 'shape-fit' is why the pairing is always A-T and C-G, and why each strand can act as a perfect template to rebuild the other when DNA is copied.",
+      thinkDeeper: "If one strand of a DNA molecule is 30% adenine, what percentage of the WHOLE double-stranded molecule is guanine? (Hint: work out thymine first, then what's left for C and G, then split it.)",
+      strategies: ["For any base-pairing question, write the partner under each base using A-T and C-G, one base at a time."],
+    },
+
+    {
       heading: "Food Tests",
       body: `Food tests are qualitative chemical tests that identify which class of biological molecule is present in a food sample. Each test has a specific **reagent**, **procedure**, and **positive result** (colour change).
 
@@ -183,6 +264,7 @@ Add Benedict's solution (blue) to the sample and **heat in a water bath** at ~80
 - Positive result: **brick-red / orange / yellow** precipitate (colour depends on sugar concentration).
 - Negative: stays blue.
 - Reducing sugars (glucose, maltose, fructose, galactose) donate electrons to Cu²⁺ in Benedict's reagent, reducing it to Cu⁺ (copper(I) oxide, Cu₂O), which is the brick-red precipitate.
+- **Semi-quantitative use**: the final colour depends on how much reducing sugar is present. As concentration rises, the colour passes through the sequence **blue → green → yellow → orange → brick-red**. A green result therefore means a *low* reducing-sugar concentration, while brick-red means a *high* concentration. This lets you rank samples by sugar content (an approximate, not exact, measure).
 - Note: sucrose is a **non-reducing** sugar — it must be hydrolysed to glucose + fructose first (boil with dilute HCl, cool, neutralise with sodium hydrogencarbonate, then apply Benedict's).
 
 **3. Protein — Biuret test**
@@ -354,6 +436,10 @@ The DCPIP test for vitamin C can be made **semi-quantitative**: add fruit juice 
       "Cellulose (beta glycosidic bonds) forms straight chains for cell wall structure; starch (alpha bonds) coils for energy storage.",
       "Water's polarity gives it high specific heat capacity, high latent heat of vaporisation, and cohesion.",
       "Glycogen (animal energy store) is more branched than starch (plant energy store) for faster glucose release.",
+      "Carbohydrates are classified as monosaccharides (glucose, fructose, galactose), disaccharides (maltose, sucrose, lactose), and polysaccharides (starch, glycogen, cellulose).",
+      "DNA is a double helix of two strands; it is a polymer of nucleotides (sugar + phosphate + base) and contains C, H, O, N, P.",
+      "DNA bases pair complementarily: A with T, and C with G; a gene is a length of DNA coding for one protein.",
+      "Benedict's test is semi-quantitative: colour runs blue → green → yellow → orange → brick-red as reducing-sugar concentration increases.",
     ],
     flashcards: [
       { front: "What elements are found in carbohydrates?", back: "Carbon (C), Hydrogen (H), Oxygen (O) — in the ratio (CH₂O)ₙ." },
@@ -368,6 +454,12 @@ The DCPIP test for vitamin C can be made **semi-quantitative**: add fruit juice 
       { front: "Positive result: vitamin C + DCPIP?", back: "DCPIP is decolourised (blue → colourless)." },
       { front: "Why is cellulose not digestible by humans but starch is?", back: "Cellulose has beta glycosidic bonds; humans lack cellulase to break them. Starch has alpha bonds, broken by amylase." },
       { front: "Why does glycogen suit animals as an energy store better than starch?", back: "Glycogen is more branched, so glucose can be released more rapidly from many free ends when energy demand is high." },
+      { front: "What are the three size-classes of carbohydrate? Give an example of each.", back: "Monosaccharides (e.g. glucose, fructose), disaccharides (e.g. maltose, sucrose, lactose), and polysaccharides (e.g. starch, glycogen, cellulose)." },
+      { front: "What is the basic subunit of DNA, and what three parts make it up?", back: "A nucleotide, made of a sugar (deoxyribose), a phosphate group, and a base (A, T, C, or G)." },
+      { front: "What is the overall shape of a DNA molecule?", back: "A double helix — two strands twisted around each other, with sugar-phosphate backbones and bases as the rungs." },
+      { front: "State the DNA base-pairing rules.", back: "Adenine pairs with thymine (A-T); cytosine pairs with guanine (C-G)." },
+      { front: "Which base does RNA use in place of thymine?", back: "Uracil (U). DNA uses T; RNA uses U." },
+      { front: "What is the colour sequence of Benedict's test as reducing-sugar concentration increases?", back: "Blue → green → yellow → orange → brick-red." },
     ],
     keyTerms: [
       { term: "Carbohydrate", definition: "An organic molecule containing C, H, and O in the ratio (CH₂O)ₙ; includes sugars, starch, glycogen, and cellulose." },
@@ -382,6 +474,13 @@ The DCPIP test for vitamin C can be made **semi-quantitative**: add fruit juice 
       { term: "Benedict's test", definition: "A food test using blue Benedict's solution that turns brick-red on heating in the presence of a reducing sugar." },
       { term: "Biuret test", definition: "A food test that turns purple/violet in the presence of protein, due to Cu²⁺ ions coordinating with peptide bonds in alkaline conditions." },
       { term: "Ethanol emulsion test", definition: "A food test for lipids: fat dissolves in ethanol, then forms a cloudy white emulsion when the ethanol solution is poured into water." },
+      { term: "Monosaccharide", definition: "A single (simple) sugar unit, the monomer of carbohydrates — e.g. glucose, fructose, galactose (all C₆H₁₂O₆)." },
+      { term: "Disaccharide", definition: "A sugar made of two monosaccharides joined by a glycosidic bond — e.g. maltose, sucrose (a non-reducing sugar), lactose." },
+      { term: "Polysaccharide", definition: "A carbohydrate polymer of many monosaccharides — e.g. starch, glycogen, and cellulose (all polymers of glucose)." },
+      { term: "DNA", definition: "Deoxyribonucleic acid; a double-helix polymer of nucleotides that carries genetic information. Contains C, H, O, N, P." },
+      { term: "Nucleotide", definition: "The monomer of DNA, made of a sugar (deoxyribose), a phosphate group, and one of four bases (A, T, C, G)." },
+      { term: "Complementary base pairing", definition: "The fixed pairing of DNA bases: adenine with thymine (A-T) and cytosine with guanine (C-G), holding the two strands together." },
+      { term: "Gene", definition: "A length of DNA that codes for a specific protein by specifying the sequence of its amino acids." },
     ],
   },
 

@@ -135,17 +135,21 @@ export const bioHumanNutrition: Topic = {
    - *Rectum*: stores faeces.
 6. **Anus** — faeces expelled by egestion (defaecation).
 
-**Accessory organs:**
-- **Liver**: produces bile (stored in gall bladder), regulates blood glucose, processes absorbed amino acids.
-- **Pancreas**: produces pancreatic juice containing amylase, lipase, and proteases; secretes sodium hydrogencarbonate to neutralise acid chyme in the duodenum.
+**Accessory organs** (food does NOT pass through these — they deliver secretions into the gut):
+- **Liver**: produces bile continuously; it is also a major site of assimilation (see *The Liver and Assimilation*).
+- **Gall bladder**: stores and concentrates the bile, releasing it into the duodenum through the bile duct when fatty food arrives.
+- **Pancreas**: produces pancreatic juice containing amylase, lipase, and proteases; it also secretes sodium hydrogencarbonate (an alkali) that neutralises the acidic chyme entering the duodenum, giving the pancreatic enzymes their optimal slightly-alkaline pH.
 
-The five key processes are: **ingestion** (taking in food), **digestion** (mechanical and chemical breakdown), **absorption** (nutrients entering blood/lymph), **assimilation** (nutrients used by cells), and **egestion** (elimination of undigested matter).`,
+The five key processes are: **ingestion** (taking food into the body through the mouth), **digestion** (the mechanical and chemical breakdown of large, insoluble molecules into small, soluble ones), **absorption** (the movement of digested food molecules and water through the wall of the gut into the blood or lymph), **assimilation** (the movement of digested food molecules into the cells of the body, where they are used — becoming part of the cells), and **egestion** (the removal of undigested food — mainly fibre — as faeces through the anus).
+
+**Egestion is NOT excretion.** Faeces are mostly food that was never absorbed into cells and never took part in metabolism, so they are not a metabolic waste product. Excretion is the removal of the waste products *made by the body's own chemical reactions* (e.g. carbon dioxide from respiration, urea from the liver). Faeces also contain dead cells shed from the gut lining, bile pigments and bacteria, but the bulk — undigested fibre — has simply passed straight through.`,
       keyPoints: [
         "The order is: mouth → oesophagus → stomach → duodenum → ileum → colon → rectum → anus.",
         "Peristalsis — wave-like muscular contractions — propels food along the gut.",
-        "The liver produces bile; the pancreas produces amylase, lipase, and proteases.",
+        "The liver produces bile (stored in the gall bladder); the pancreas produces amylase, lipase and proteases plus alkaline sodium hydrogencarbonate.",
         "The five digestive processes are ingestion, digestion, absorption, assimilation, egestion.",
-        "The stomach secretes HCl (kills bacteria; activates pepsin) and pepsin (protein digestion).",
+        "Egestion (removing undigested fibre as faeces) is NOT excretion — faeces are not a metabolic waste product.",
+        "The stomach secretes HCl (kills bacteria; provides pH ≈ 2 for pepsin) and pepsin; mucus protects the stomach lining from being digested.",
       ],
       diagrams: [
         {
@@ -413,6 +417,92 @@ Bacteria in the mouth (especially *Streptococcus mutans*) feed on sugars and pro
         "For any absorption question, think: 'How does this feature increase surface area, reduce diffusion distance, or maintain the concentration gradient?'",
       ],
     },
+
+    // ── Section 7 ─────────────────────────────────────────────────────────────
+    {
+      heading: "The Liver and Assimilation",
+      body: `Blood leaving the small intestine does not flow straight back to the heart. Instead the **hepatic portal vein** carries all the freshly absorbed glucose and amino acids first to the **liver**, the body's chemical-processing factory. This is where most **assimilation** of the absorbed food begins.
+
+**Assimilation** is the movement of digested food molecules into cells, where they are built into the cell's own substances or used in respiration — for example, glucose used to release energy, amino acids built into new proteins, and fats used to make cell membranes.
+
+**Roles of the liver in handling absorbed food:**
+
+1. **Regulation of blood glucose.** When glucose arrives in excess after a meal, the liver removes it from the blood and stores it as **glycogen** (helped by the hormone insulin). When blood glucose falls between meals, glycogen is broken back down to glucose and released. This keeps the blood glucose concentration roughly constant — an example of homeostasis.
+
+2. **Deamination of excess amino acids.** Amino acids cannot be stored. Any surplus is broken down in the liver by **deamination**: the nitrogen-containing amino group is removed and converted into **urea**, which passes in the blood to the kidneys and is excreted in urine. The remaining carbon-containing part can be respired for energy or converted to fat/glycogen.
+
+3. **Making proteins from absorbed amino acids** — for example, plasma proteins such as fibrinogen (for blood clotting) and albumin.
+
+4. **Storage** of iron (from broken-down red blood cells), vitamin A and vitamin D.
+
+5. **Breakdown of old red blood cells.** The liver destroys worn-out red blood cells; the iron is saved and the pigment becomes part of **bile**, linking the liver back to digestion.
+
+6. **Detoxification** — for example, breaking down alcohol and other toxins so they cannot harm the body.
+
+So the liver sits at the crossroads of digestion and metabolism: it receives the absorbed food first, decides what is stored, what is converted, and what is broken down, and only then is the "processed" blood released to the rest of the body.`,
+      keyPoints: [
+        "The hepatic portal vein delivers absorbed glucose and amino acids from the small intestine to the liver first.",
+        "Assimilation = absorbed molecules entering cells and being used / built into the cell (e.g. glucose respired, amino acids made into proteins).",
+        "The liver regulates blood glucose by storing excess glucose as glycogen and releasing it when needed.",
+        "Excess amino acids are deaminated in the liver: the amino group becomes urea (excreted by the kidneys); the rest is respired or stored.",
+        "The liver also stores iron and vitamins A and D, breaks down old red blood cells, and detoxifies substances such as alcohol.",
+      ],
+      diagrams: [
+        {
+          caption: "The liver as the first stop for absorbed food",
+          svg: `<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Flow diagram showing absorbed glucose and amino acids travelling from the small intestine via the hepatic portal vein to the liver, then to the rest of the body, with deamination producing urea">
+  <rect width="320" height="200" fill="#0f172a" rx="8"/>
+  <text x="160" y="18" fill="#eef0ff" font-size="11" font-weight="bold" text-anchor="middle" font-family="sans-serif">Absorbed Food Goes to the Liver First</text>
+
+  <!-- small intestine -->
+  <rect x="14" y="80" width="74" height="40" rx="6" fill="#1e3a5f" stroke="#34d399" stroke-width="1.5"/>
+  <text x="51" y="98" fill="#34d399" font-size="8" text-anchor="middle" font-family="sans-serif">Small</text>
+  <text x="51" y="109" fill="#34d399" font-size="8" text-anchor="middle" font-family="sans-serif">intestine</text>
+
+  <!-- hepatic portal vein arrow -->
+  <line x1="88" y1="100" x2="124" y2="100" stroke="#fb7185" stroke-width="2" marker-end="url(#arrL)"/>
+  <text x="106" y="92" fill="#fb7185" font-size="7" text-anchor="middle" font-family="sans-serif">hepatic</text>
+  <text x="106" y="116" fill="#fb7185" font-size="7" text-anchor="middle" font-family="sans-serif">portal vein</text>
+
+  <!-- liver -->
+  <rect x="126" y="70" width="86" height="60" rx="8" fill="#1e3a5f" stroke="#fbbf24" stroke-width="2"/>
+  <text x="169" y="86" fill="#fbbf24" font-size="9" font-weight="bold" text-anchor="middle" font-family="sans-serif">LIVER</text>
+  <text x="169" y="100" fill="#b7bce0" font-size="7" text-anchor="middle" font-family="sans-serif">glucose to glycogen</text>
+  <text x="169" y="111" fill="#b7bce0" font-size="7" text-anchor="middle" font-family="sans-serif">deaminate amino acids</text>
+  <text x="169" y="122" fill="#b7bce0" font-size="7" text-anchor="middle" font-family="sans-serif">store Fe, vit A and D</text>
+
+  <!-- to body -->
+  <line x1="212" y1="100" x2="248" y2="100" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrL)"/>
+  <rect x="250" y="82" width="60" height="36" rx="6" fill="#1e3a5f" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="280" y="104" fill="#38bdf8" font-size="8" text-anchor="middle" font-family="sans-serif">Rest of body</text>
+
+  <!-- urea out -->
+  <line x1="169" y1="130" x2="169" y2="162" stroke="#a78bfa" stroke-width="2" marker-end="url(#arrL)"/>
+  <text x="200" y="152" fill="#a78bfa" font-size="8" text-anchor="middle" font-family="sans-serif">urea to kidneys</text>
+
+  <defs>
+    <marker id="arrL" markerWidth="7" markerHeight="7" refX="4" refY="3.5" orient="auto">
+      <path d="M0,0 L7,3.5 L0,7 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+</svg>`,
+        },
+      ],
+      discovery: {
+        problem:
+          "You eat a huge plate of pasta. Your blood glucose should rocket — yet a blood test an hour later shows it has barely risen above normal. Where did all that glucose go, and what stopped a dangerous spike?",
+        idea:
+          "The hepatic portal vein takes the absorbed glucose to the liver before it reaches the general circulation. The liver mops up the excess and locks it away as insoluble glycogen, releasing it again only when blood glucose later falls. The liver acts as a buffer that smooths out the peaks and troughs of feeding.",
+      },
+      whyItWorks:
+        "Glycogen is a large, branched, insoluble polymer of glucose. Because it is insoluble it does not affect the water potential of the cell and can be stored in bulk; because it is highly branched, enzymes can rapidly add or remove glucose units from many ends at once — so the liver can store or release glucose quickly, exactly what homeostatic control of blood glucose demands.",
+      strategies: [
+        "If a question mentions the hepatic portal vein, link it to the liver and assimilation, not just absorption.",
+        "Spot the difference: deamination happens in the LIVER, but the urea it makes is EXCRETED by the KIDNEYS.",
+      ],
+      thinkDeeper:
+        "Why is excess protein not simply stored like glucose or fat? The amino group makes amino acids toxic to accumulate, and there is no safe nitrogen-storage polymer in animals. So surplus protein must be deaminated, the nitrogen excreted as urea, and only the carbon skeleton kept — which is why a very high-protein diet makes the liver and kidneys work harder.",
+    },
   ],
 
   // ─────────────────────────────────────────────────────────────────────────────
@@ -429,6 +519,9 @@ Bacteria in the mouth (especially *Streptococcus mutans*) feed on sugars and pro
       "Villi and microvilli in the ileum provide a large surface area (~200 m²) for absorption.",
       "Glucose and amino acids are absorbed into blood capillaries; fatty acids and glycerol enter lacteals (lymph).",
       "The colon absorbs water from undigested material to form faeces.",
+      "The hepatic portal vein carries absorbed glucose and amino acids to the liver, the main site of assimilation.",
+      "The liver stores excess glucose as glycogen (blood-glucose control) and deaminates excess amino acids, forming urea that the kidneys excrete.",
+      "Egestion (removing undigested fibre as faeces) is not excretion, because faeces are not made by the body's own metabolism.",
       "Energy requirements are affected by age, activity level, pregnancy, body size, and sex.",
     ],
     flashcards: [
@@ -444,6 +537,10 @@ Bacteria in the mouth (especially *Streptococcus mutans*) feed on sugars and pro
       { front: "Why does the stomach produce HCl?", back: "To kill bacteria in food; to provide the low pH (≈2) that is optimal for pepsin activity." },
       { front: "How do villi adapt the small intestine for absorption?", back: "Large surface area, single layer of epithelial cells (short diffusion distance), rich blood capillary network, central lacteal." },
       { front: "What happens to fatty acids and glycerol inside villus epithelial cells?", back: "They are resynthesised into triglycerides, packaged as chylomicrons, and enter the lacteal (lymph vessel)." },
+      { front: "Which blood vessel carries absorbed nutrients from the gut, and where to?", back: "The hepatic portal vein, carrying glucose and amino acids from the small intestine to the liver." },
+      { front: "How does the liver control blood glucose?", back: "It stores excess glucose as glycogen and breaks glycogen back down to glucose when blood glucose falls." },
+      { front: "What is deamination, and where does it happen?", back: "The removal of the amino group from excess amino acids in the liver, forming urea (excreted by the kidneys)." },
+      { front: "Why is egestion not the same as excretion?", back: "Egested faeces are undigested food that never entered the body's cells or metabolism; excretion removes wastes made by the body's own reactions (e.g. urea, CO2)." },
     ],
     keyTerms: [
       { term: "Balanced diet", definition: "A diet containing all seven nutrient classes in the correct proportions to maintain health." },
@@ -459,6 +556,10 @@ Bacteria in the mouth (especially *Streptococcus mutans*) feed on sugars and pro
       { term: "Lacteal", definition: "A lymph vessel inside a villus that absorbs fatty acids and glycerol (as chylomicrons)." },
       { term: "Scurvy", definition: "A deficiency disease caused by lack of vitamin C; symptoms include bleeding gums and poor wound healing." },
       { term: "Rickets", definition: "A deficiency disease in children caused by lack of vitamin D; results in soft, deformed bones." },
+      { term: "Hepatic portal vein", definition: "The blood vessel that carries absorbed glucose and amino acids from the small intestine directly to the liver." },
+      { term: "Deamination", definition: "The removal of the nitrogen-containing amino group from excess amino acids in the liver, producing urea." },
+      { term: "Glycogen", definition: "An insoluble, branched store of glucose made in the liver and muscles when blood glucose is high." },
+      { term: "Bile", definition: "An alkaline secretion made by the liver and stored in the gall bladder; it emulsifies fats and neutralises stomach acid in the duodenum (it is not an enzyme)." },
     ],
   },
 
