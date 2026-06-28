@@ -7,7 +7,7 @@ export const chemAtoms: Topic = {
   icon: "⚛️",
   blurb: "Protons, neutrons, electrons, isotopes, electron shells, and relative atomic mass.",
   intro:
-    "Every substance in the universe is built from atoms — but what is inside an atom? In this topic you will discover the charged particles that make up the nucleus, see how electrons arrange themselves in shells, and learn how atoms of the same element can differ. Mastering atomic structure unlocks the rest of IGCSE Chemistry: it explains the Periodic Table, bonding, and reactivity.",
+    "Every substance in the universe is built from atoms — but what is inside an atom? In this topic you will discover the charged particles that make up the nucleus, see how electrons arrange themselves in shells, and learn how atoms of the same element can differ. You will also learn to classify matter as elements, compounds or mixtures. Mastering atomic structure unlocks the rest of IGCSE Chemistry: it explains the Periodic Table, bonding, and reactivity.",
 
   // ─────────────────────────────────────────────────────────────────────────────
   // GUIDE
@@ -193,7 +193,9 @@ Ar = (35 × 75 + 37 × 25) ÷ 100 = (2625 + 925) ÷ 100 = 3550 ÷ 100 = **35.5**
 
 This matches the value on the Periodic Table.
 
-**Key point:** Ar is almost never a whole number when an element has more than one naturally occurring isotope, because it is a weighted average. When Ar is close to a whole number it usually means one isotope dominates.`,
+**Key point:** Ar is almost never a whole number when an element has more than one naturally occurring isotope, because it is a weighted average. When Ar is close to a whole number it usually means one isotope dominates.
+
+**The same scale extends to compounds:** the **relative formula mass** (or **relative molecular mass**) **Mr** is found by adding up the Ar values of all the atoms in the formula — for example Mr(H₂O) = (2 × 1) + 16 = 18. Both Ar and Mr are measured on the same carbon-12 scale and have no units. You will use Mr in detail in the Stoichiometry topic.`,
 
       keyPoints: [
         "Ar is a weighted mean mass relative to 1/12 the mass of carbon-12.",
@@ -383,6 +385,92 @@ where X = element symbol, A = mass number (top), Z = proton number (bottom).
         "Charge is the final adjustment — always applied to electrons, never to protons or neutrons.",
       ],
     },
+
+    // ── SECTION 7 ─────────────────────────────────────────────────────────────
+    {
+      heading: "Elements, Compounds and Mixtures",
+      body: `Atoms are the building blocks of three different kinds of substance. Telling them apart is a core skill that underpins the whole of chemistry.
+
+**Element** — a substance made of only **one type of atom** (atoms with the same proton number). An element cannot be broken down into anything simpler by chemical means. There are about 118 known elements, each with its own symbol (e.g. Fe, O, Na). Some elements exist as single atoms (e.g. the noble gas helium, He) while others exist as **molecules** of joined atoms of the *same* element — for example oxygen exists as O₂ and sulphur as S₈. These are still elements because every atom is the same type.
+
+**Compound** — a substance made of **two or more different elements chemically combined** (bonded) in a **fixed ratio**. A compound has completely different properties from the elements it is made from. For example, water (H₂O) is a compound of hydrogen and oxygen — two gases — yet water is a liquid. Sodium chloride (NaCl) is made from sodium (a reactive metal) and chlorine (a poisonous green gas), but the compound is a harmless white salt. Because the elements are chemically bonded, a compound can only be separated into its elements by a **chemical reaction** (e.g. electrolysis or thermal decomposition), not by physical methods.
+
+**Mixture** — **two or more substances** (elements and/or compounds) that are simply **mixed together but NOT chemically combined**. The components keep their own properties and can be present in **any proportion**. Because there are no chemical bonds between the different substances, a mixture can be separated by **physical methods** such as filtration, distillation, crystallisation or chromatography. Examples: air (a mixture of N₂, O₂, CO₂ and noble gases), sea water (salt dissolved in water), and steel or brass (mixtures of metals called *alloys*).
+
+**Element vs compound vs mixture — the key contrasts:**
+- A *compound* has a **fixed** composition; a *mixture* has a **variable** composition.
+- A *compound's* parts are **chemically bonded** and joined by a reaction; a *mixture's* parts are **not bonded** and are just physically mixed.
+- A *compound* has **new properties** different from its elements; a *mixture* keeps the **properties of its components**.
+- A *compound* needs a **chemical reaction** to separate; a *mixture* can be separated by **physical means**.`,
+
+      diagrams: [
+        {
+          caption: "Particle pictures: element (one type of atom), compound (fixed ratio of bonded atoms), and mixture (different particles not bonded)",
+          svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Particle diagrams comparing an element, a compound and a mixture">
+  <rect width="320" height="200" fill="#0f172a"/>
+  <!-- panel boxes -->
+  <rect x="10" y="34" width="90" height="120" fill="#1a2744" stroke="#38bdf8" stroke-width="1.5" rx="6"/>
+  <rect x="115" y="34" width="90" height="120" fill="#1a2744" stroke="#38bdf8" stroke-width="1.5" rx="6"/>
+  <rect x="220" y="34" width="90" height="120" fill="#1a2744" stroke="#38bdf8" stroke-width="1.5" rx="6"/>
+  <!-- titles -->
+  <text x="55" y="24" text-anchor="middle" font-size="12" fill="#38bdf8" font-family="sans-serif" font-weight="bold">Element</text>
+  <text x="160" y="24" text-anchor="middle" font-size="12" fill="#38bdf8" font-family="sans-serif" font-weight="bold">Compound</text>
+  <text x="265" y="24" text-anchor="middle" font-size="12" fill="#38bdf8" font-family="sans-serif" font-weight="bold">Mixture</text>
+  <!-- element: all same atoms -->
+  <circle cx="35" cy="60" r="9" fill="#34d399"/>
+  <circle cx="70" cy="75" r="9" fill="#34d399"/>
+  <circle cx="40" cy="100" r="9" fill="#34d399"/>
+  <circle cx="78" cy="115" r="9" fill="#34d399"/>
+  <circle cx="55" cy="135" r="9" fill="#34d399"/>
+  <!-- compound: bonded pairs same ratio -->
+  <line x1="140" y1="62" x2="162" y2="62" stroke="#94a3b8" stroke-width="3"/>
+  <circle cx="140" cy="62" r="9" fill="#34d399"/>
+  <circle cx="162" cy="62" r="7" fill="#fb7185"/>
+  <line x1="150" y1="100" x2="172" y2="100" stroke="#94a3b8" stroke-width="3"/>
+  <circle cx="150" cy="100" r="9" fill="#34d399"/>
+  <circle cx="172" cy="100" r="7" fill="#fb7185"/>
+  <line x1="135" y1="135" x2="157" y2="135" stroke="#94a3b8" stroke-width="3"/>
+  <circle cx="135" cy="135" r="9" fill="#34d399"/>
+  <circle cx="157" cy="135" r="7" fill="#fb7185"/>
+  <!-- mixture: different particles, not bonded -->
+  <circle cx="245" cy="60" r="9" fill="#34d399"/>
+  <circle cx="285" cy="72" r="7" fill="#fbbf24"/>
+  <line x1="244" y1="100" x2="266" y2="100" stroke="#94a3b8" stroke-width="3"/>
+  <circle cx="244" cy="100" r="9" fill="#34d399"/>
+  <circle cx="266" cy="100" r="7" fill="#fb7185"/>
+  <circle cx="290" cy="118" r="7" fill="#fbbf24"/>
+  <circle cx="240" cy="135" r="9" fill="#34d399"/>
+  <circle cx="278" cy="140" r="7" fill="#fb7185"/>
+  <!-- caption -->
+  <text x="160" y="178" text-anchor="middle" font-size="9" fill="#b7bce0" font-family="sans-serif">Same colour = same element. Lines = chemical bonds.</text>
+  <text x="160" y="192" text-anchor="middle" font-size="9" fill="#b7bce0" font-family="sans-serif">Mixtures have no bonds between different substances.</text>
+</svg>`,
+        },
+      ],
+
+      keyPoints: [
+        "Element: only one type of atom; cannot be broken down chemically (e.g. Fe, O₂, He).",
+        "Compound: two or more elements chemically bonded in a fixed ratio, with new properties (e.g. H₂O, NaCl).",
+        "Mixture: two or more substances mixed but NOT chemically bonded, in any proportion (e.g. air, sea water, alloys).",
+        "A compound needs a chemical reaction to separate; a mixture can be separated by physical methods.",
+        "An element or compound made of joined atoms forms a molecule; a molecule of an element contains only one type of atom (e.g. O₂).",
+      ],
+
+      discovery: {
+        problem:
+          "Iron filings and powdered sulphur are stirred together in a dish — you can still pick the iron out with a magnet. The same two are then heated strongly and form a grey solid that a magnet no longer attracts. What kind of substance is each, and what has changed?",
+        idea:
+          "Before heating you have a MIXTURE of iron and sulphur — no bonds, so the iron keeps its magnetism and can be separated physically. After heating, a chemical reaction forms the COMPOUND iron(II) sulphide (FeS); the elements are now chemically bonded in a fixed ratio and the product has new properties (not magnetic), so it can no longer be separated by a magnet.",
+      },
+
+      whyItWorks:
+        "The difference between a mixture and a compound comes down to chemical bonds. In a mixture the particles of each substance are merely intermingled, so each keeps its own identity and properties and can be sorted out using a physical difference (magnetism, solubility, boiling point). Forming a compound rearranges the outer electrons to make new bonds — this is a chemical change that releases or absorbs energy, fixes the ratio of atoms, and produces a substance with its own distinct properties.",
+
+      strategies: [
+        "Ask two questions: (1) Is there more than one type of atom? (2) Are the different parts chemically bonded? Element = one type of atom; Compound = bonded; Mixture = not bonded.",
+        "Fixed ratio and new properties ⇒ compound. Variable proportions and original properties kept ⇒ mixture.",
+      ],
+    },
   ],
 
   // ─────────────────────────────────────────────────────────────────────────────
@@ -400,6 +488,9 @@ where X = element symbol, A = mass number (top), Z = proton number (bottom).
       "Ar = Σ(isotopic mass × % abundance) ÷ 100.",
       "Shell capacities: shell 1 = 2, shell 2 = 8, shell 3 = 8 (for Z ≤ 20).",
       "Group number = outer-shell electron count (Groups 1–7).",
+      "Element = one type of atom; compound = elements chemically bonded in a fixed ratio; mixture = substances mixed but not bonded.",
+      "A compound is separated by a chemical reaction; a mixture is separated by physical methods.",
+      "Ar is measured on the carbon-12 scale: 1 unit = 1/12 the mass of a carbon-12 atom.",
     ],
 
     flashcards: [
@@ -415,6 +506,11 @@ where X = element symbol, A = mass number (top), Z = proton number (bottom).
       { front: "How many electrons does an O²⁻ ion have?", back: "10 electrons. Oxygen (Z = 8) gains 2 electrons: 8 + 2 = 10." },
       { front: "What does the group number tell you about an element?", back: "The number of outer-shell (valence) electrons, which determines the element's typical ionic charge and chemical behaviour." },
       { front: "Chlorine has two isotopes: ³⁵Cl (75%) and ³⁷Cl (25%). What is Ar?", back: "Ar = (35×75 + 37×25) ÷ 100 = 35.5" },
+      { front: "Define an element.", back: "A substance made of only one type of atom (atoms with the same proton number); it cannot be broken down into anything simpler by chemical means. E.g. Fe, O₂, He." },
+      { front: "Define a compound.", back: "A substance made of two or more different elements chemically bonded together in a fixed ratio, with properties different from its elements. E.g. H₂O, NaCl. Separated only by chemical reaction." },
+      { front: "Define a mixture.", back: "Two or more substances mixed but NOT chemically bonded, present in any proportion; each keeps its own properties and they can be separated by physical methods. E.g. air, sea water, alloys." },
+      { front: "How does a compound differ from a mixture?", back: "A compound's elements are chemically bonded in a fixed ratio with new properties and need a chemical reaction to separate; a mixture's substances are not bonded, have variable proportions, keep their own properties, and are separated physically." },
+      { front: "Is O₂ an element or a compound?", back: "An element — it is a molecule made of only one type of atom (oxygen). A molecule of an element contains only one kind of atom; a molecule of a compound contains more than one." },
     ],
 
     keyTerms: [
@@ -430,6 +526,11 @@ where X = element symbol, A = mass number (top), Z = proton number (bottom).
       { term: "Cation", definition: "A positively charged ion formed when an atom loses one or more electrons." },
       { term: "Anion", definition: "A negatively charged ion formed when an atom gains one or more electrons." },
       { term: "Nucleon", definition: "Any particle in the nucleus — a collective term for protons and neutrons." },
+      { term: "Element", definition: "A substance made of only one type of atom (atoms with the same proton number); it cannot be broken down into simpler substances by chemical means." },
+      { term: "Compound", definition: "A substance made of two or more different elements chemically bonded together in a fixed ratio; it has different properties from the elements it contains." },
+      { term: "Mixture", definition: "Two or more substances (elements and/or compounds) mixed together but not chemically bonded; they can be present in any proportion and separated by physical methods." },
+      { term: "Molecule", definition: "A group of two or more atoms chemically bonded together. A molecule of an element (e.g. O₂) contains only one type of atom; a molecule of a compound (e.g. H₂O) contains different types." },
+      { term: "Alloy", definition: "A mixture of a metal with one or more other elements (usually metals), e.g. steel or brass." },
     ],
   },
 

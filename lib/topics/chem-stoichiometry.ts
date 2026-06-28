@@ -135,9 +135,24 @@ Mass of H₂O = 4 × 18 = 72 g
 
 % yield = (actual yield / theoretical yield) × 100 %
 
+**Worked example (% yield):** 8.0 g of CaCO₃ is heated. Theoretically this gives 0.080 mol CaO (Mᵣ = 56), i.e. 0.080 × 56 = 4.48 g. In practice only 3.92 g of CaO is collected.
+% yield = (3.92 / 4.48) × 100 = 87.5 %.
+(Always find the *theoretical* yield by the moles road-map first, then divide the actual into it.)
+
 **Percentage purity** describes an impure sample:
 
-% purity = (mass of pure substance / total mass of sample) × 100 %`,
+% purity = (mass of pure substance / total mass of sample) × 100 %
+
+**Worked example (% purity):** A 5.00 g sample of impure CaCO₃ is reacted with excess acid and releases 0.0400 mol CO₂. Since CaCO₃:CO₂ = 1:1, n(CaCO₃) = 0.0400 mol, so mass of pure CaCO₃ = 0.0400 × 100 = 4.00 g.
+% purity = (4.00 / 5.00) × 100 = 80.0 %.
+(The trick: use a measured product to work *back* to the mass of the pure reactant, then compare with the total sample mass.)
+
+**Percentage composition by mass** tells you the fraction of a compound's mass that is due to one element:
+
+% of element = (number of atoms × Aᵣ) / Mᵣ × 100 %
+
+**Worked example (% composition):** Find the % by mass of nitrogen in ammonium nitrate, NH₄NO₃ (Mᵣ = 80). There are 2 N atoms, mass = 2 × 14 = 28.
+% N = (28 / 80) × 100 = 35.0 %. (This is how fertiliser "N content" is quoted.)`,
       diagrams: [
         {
           caption: "Stoichiometry road-map: mass → moles → ratio → moles → mass",
@@ -183,6 +198,8 @@ Mass of H₂O = 4 × 18 = 72 g
         "Apply the mole ratio from the balanced equation.",
         "The limiting reactant is whichever gives the smaller moles/coefficient value.",
         "% yield = (actual/theoretical) × 100; always ≤ 100%.",
+        "% purity = (mass of pure / total sample mass) × 100; work back from a measured product.",
+        "% of element by mass = (atoms × Aᵣ)/Mᵣ × 100.",
       ],
       thinkDeeper:
         "Why is % yield almost never 100%? Reasons include: reversible reactions not going to completion, side reactions producing different products, mechanical losses during transfer and purification, and impure reagents reacting differently.",
@@ -209,7 +226,14 @@ Mass of H₂O = 4 × 18 = 72 g
 - If Mᵣ = 180, then n = 180/30 = 6
 - Molecular formula = C₆H₁₂O₆ (glucose)
 
-**From combustion data:** burning a hydrocarbon and measuring masses of CO₂ and H₂O produced gives the moles of C and H; subtract from total mass to find O if present.`,
+**From combustion data:** burning a hydrocarbon and measuring masses of CO₂ and H₂O produced gives the moles of C and H; subtract from total mass to find O if present.
+
+**Water of crystallisation (hydrated salts):** A hydrated salt contains water locked into its crystal structure, written as salt·xH₂O (e.g. CuSO₄·5H₂O). The value of x is found by an empirical-formula method using moles of the anhydrous salt and moles of water.
+
+**Worked example (water of crystallisation):** 6.25 g of hydrated copper(II) sulfate, CuSO₄·xH₂O, is heated until all water is driven off, leaving 4.00 g of white anhydrous CuSO₄ (Mᵣ = 160; Mᵣ H₂O = 18).
+- Mass of water lost = 6.25 − 4.00 = 2.25 g
+- n(CuSO₄) = 4.00/160 = 0.0250 mol; n(H₂O) = 2.25/18 = 0.125 mol
+- Ratio CuSO₄ : H₂O = 0.0250 : 0.125 = 1 : 5, so x = 5 and the formula is CuSO₄·5H₂O.`,
       discovery: {
         problem:
           "An oxide of copper contains 79.9% Cu and 20.1% O. What is its empirical formula? (Aᵣ: Cu = 64, O = 16). Try it before reading the idea.",
@@ -222,6 +246,7 @@ Mass of H₂O = 4 × 18 = 72 g
         "Steps: % → divide by Aᵣ → divide by smallest → round to integers.",
         "If result ends in .5, multiply all by 2 to clear the fraction.",
         "Combustion analysis: moles C = moles CO₂; moles H = 2 × moles H₂O.",
+        "Water of crystallisation: x = n(H₂O)/n(anhydrous salt), an empirical-formula ratio.",
       ],
       strategies: ["Tabulate elements in columns: %, ÷Aᵣ, ratio", "Check: do atom counts add up to 100% mass?"],
     },
@@ -243,6 +268,13 @@ CaCO₃(s) → CaO(s) + CO₂(g)
 n(CaCO₃) = 10/100 = 0.1 mol → n(CO₂) = 0.1 mol
 V(CO₂) = 0.1 × 24 = 2.4 dm³
 
+**Reacting gas volumes (Avogadro's law shortcut):** Because equal volumes of gases contain equal moles at the same T and P, for gases only you can use the mole ratio *directly as a volume ratio* — no need to convert to moles at all.
+
+**Example:** What volume of oxygen reacts with 50 cm³ of methane, and what volume of CO₂ forms (all at r.t.p.)?
+CH₄(g) + 2O₂(g) → CO₂(g) + 2H₂O(l)
+Volume ratio CH₄ : O₂ : CO₂ = 1 : 2 : 1.
+So 50 cm³ CH₄ needs 50 × 2 = 100 cm³ O₂ and produces 50 cm³ CO₂. (The water is liquid at r.t.p., so it is not counted as a gas volume.)
+
 **Note on units:** 1 dm³ = 1 litre = 1000 cm³. Always check whether the question gives volume in dm³ or cm³ and convert if needed.
 
 **At STP (0 °C, 1 atm)** the molar volume is 22.4 dm³/mol — but IGCSE uses r.t.p. = 24 dm³/mol.`,
@@ -252,6 +284,7 @@ V(CO₂) = 0.1 × 24 = 2.4 dm³
         "1 dm³ = 1000 cm³; n = V(cm³)/24 000.",
         "Applies to ALL ideal gases equally at the same T and P.",
         "Combine with mole-ratio steps for reaction volume calculations.",
+        "Avogadro's law: for gas-only reactions the mole ratio is also the volume ratio (skip moles).",
       ],
       strategies: ["Convert cm³ to dm³ first (÷1000)", "Draw the road-map: add a 'volume' box alongside the mass box"],
     },
@@ -266,6 +299,11 @@ Two common units:
 - **g/dm³**: c(g/dm³) = c(mol/dm³) × M
 
 **Converting between units:** multiply mol/dm³ by molar mass to get g/dm³; divide g/dm³ by molar mass to get mol/dm³.
+
+**Worked example (units conversion):** A solution of NaOH (M = 40 g/mol) has concentration 0.250 mol/dm³.
+In g/dm³: 0.250 × 40 = 10.0 g/dm³.
+Reverse check: 10.0 g/dm³ ÷ 40 = 0.250 mol/dm³. ✓
+**Making a solution:** to find the mass to dissolve, first get moles needed: n = c × V. For 500 cm³ (0.500 dm³) of 0.250 mol/dm³ NaOH, n = 0.250 × 0.500 = 0.125 mol, so mass = 0.125 × 40 = 5.0 g.
 
 **Titration** is a technique for finding the unknown concentration of one solution by reacting it with a standard solution of known concentration, using an indicator (or pH meter) to find the **equivalence point** (the exact point of neutralisation or complete reaction).
 
@@ -346,6 +384,10 @@ Equation: HCl(aq) + NaOH(aq) → NaCl(aq) + H₂O(l)
       "State symbols: (s) solid, (l) liquid, (g) gas, (aq) aqueous solution.",
       "The limiting reactant runs out first and determines maximum product; found by dividing moles by coefficient.",
       "Titration concordant results must agree within 0.10 cm³; discard rough titre from mean.",
+      "% of an element by mass = (number of atoms × Aᵣ) / Mᵣ × 100%.",
+      "Convert concentrations: c(g/dm³) = c(mol/dm³) × M; c(mol/dm³) = c(g/dm³) / M.",
+      "Avogadro's law: equal volumes of gases (same T, P) have equal moles, so the mole ratio = volume ratio for gases.",
+      "Water of crystallisation x in salt·xH₂O = n(water)/n(anhydrous salt) (from mass lost on heating).",
     ],
     flashcards: [
       { front: "What is the Avogadro constant?", back: "6.02 × 10²³ mol⁻¹ — the number of particles in one mole of any substance." },
@@ -360,6 +402,10 @@ Equation: HCl(aq) + NaOH(aq) → NaCl(aq) + H₂O(l)
       { front: "What is a net ionic equation?", back: "An equation showing only the ions/species that change — spectator ions (unchanged on both sides) are removed." },
       { front: "Steps to find empirical formula from %", back: "1. Divide % by Aᵣ. 2. Divide all by smallest. 3. Round to integers (×2 if ending in .5)." },
       { front: "Why does % yield never exceed 100%?", back: "Mass is conserved; you cannot produce more product than the reactants allow. Losses (side reactions, incomplete reaction, mechanical) reduce yield further." },
+      { front: "How do you find % of an element by mass in a compound?", back: "% = (number of atoms × Aᵣ) / Mᵣ × 100. e.g. N in NH₄NO₃: (28/80)×100 = 35%." },
+      { front: "How do you convert mol/dm³ to g/dm³?", back: "Multiply by the molar mass M: c(g/dm³) = c(mol/dm³) × M." },
+      { front: "State Avogadro's law and its use for volumes.", back: "Equal volumes of gases at the same temperature and pressure contain equal numbers of molecules — so for gas-only reactions the mole ratio equals the volume ratio." },
+      { front: "How do you find x in a hydrated salt salt·xH₂O?", back: "Heat to drive off water. x = n(H₂O lost) / n(anhydrous salt) — an empirical-formula ratio." },
     ],
     keyTerms: [
       { term: "Mole (mol)", definition: "The SI unit of amount of substance; one mole contains 6.02 × 10²³ particles." },
@@ -375,6 +421,10 @@ Equation: HCl(aq) + NaOH(aq) → NaCl(aq) + H₂O(l)
       { term: "Concentration (mol/dm³)", definition: "Amount of solute (in moles) per unit volume of solution (in dm³); also called molarity." },
       { term: "Titration", definition: "A technique for finding an unknown concentration by reacting a measured volume of solution against a standard solution of known concentration." },
       { term: "Equivalence point", definition: "The point in a titration at which the moles of titrant added exactly neutralise (or completely react with) the analyte." },
+      { term: "Concentration (g/dm³)", definition: "Mass of solute (in grams) per cubic decimetre of solution; equals concentration in mol/dm³ multiplied by the molar mass." },
+      { term: "Avogadro's law", definition: "Equal volumes of gases at the same temperature and pressure contain equal numbers of molecules (and therefore equal numbers of moles)." },
+      { term: "Water of crystallisation", definition: "Water molecules built into the crystal structure of a hydrated salt, shown as salt·xH₂O; driven off by heating to leave the anhydrous salt." },
+      { term: "Molar gas volume", definition: "The volume occupied by one mole of any gas; 24 dm³/mol at r.t.p. (25 °C, 1 atm)." },
     ],
   },
 

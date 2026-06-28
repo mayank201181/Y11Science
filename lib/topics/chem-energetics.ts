@@ -11,7 +11,9 @@ export const chemEnergetics: Topic = {
     "underpins everything from burning fuels to making food. In this topic you will classify " +
     "reactions as exothermic or endothermic, read and draw energy level diagrams showing activation " +
     "energy and enthalpy change, and calculate ΔH from bond energies using the principle that " +
-    "breaking bonds absorbs energy and forming bonds releases it.",
+    "breaking bonds absorbs energy and forming bonds releases it. You will also measure energy " +
+    "changes experimentally by calorimetry, using q = mcΔT to find the energy transferred and " +
+    "hence ΔH per mole of a fuel or reactant.",
 
   // ─────────────────────────── GUIDE ───────────────────────────
   guide: [
@@ -158,6 +160,33 @@ export const chemEnergetics: Topic = {
             '<polygon points="258,76 254,86 262,86" fill="#a78bfa"/>' +
             '<line x1="253" y1="130" x2="263" y2="130" stroke="#a78bfa" stroke-width="1"/>' +
             '<text x="266" y="108" font-size="9" fill="#a78bfa" font-family="sans-serif">DH +ve</text>' +
+            '</svg>',
+        },
+        {
+          caption: "Effect of a catalyst: lower peak (lower Ea), same reactants, products and ΔH",
+          svg:
+            '<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Exothermic reaction profile with two curves: the catalysed pathway has a lower peak than the uncatalysed pathway, while reactants, products and delta H are unchanged">' +
+            // axes
+            '<line x1="30" y1="10" x2="30" y2="180" stroke="#b7bce0" stroke-width="1.5"/>' +
+            '<line x1="30" y1="180" x2="300" y2="180" stroke="#b7bce0" stroke-width="1.5"/>' +
+            '<text x="12" y="100" font-size="10" fill="#b7bce0" font-family="sans-serif" transform="rotate(-90,12,100)">Energy</text>' +
+            '<text x="160" y="197" text-anchor="middle" font-size="10" fill="#b7bce0" font-family="sans-serif">Reaction pathway</text>' +
+            // uncatalysed curve: reactants y=80, high peak y=30, products y=140
+            '<path d="M45,80 C80,80 90,30 130,30 C170,30 175,140 210,140 L270,140" fill="none" stroke="#fb7185" stroke-width="2.5"/>' +
+            // catalysed curve: same reactants/products, lower peak y=60
+            '<path d="M45,80 C80,80 95,60 130,60 C165,60 175,140 210,140 L270,140" fill="none" stroke="#34d399" stroke-width="2.5" stroke-dasharray="5,3"/>' +
+            // reactants / products lines
+            '<line x1="40" y1="80" x2="70" y2="80" stroke="#eef0ff" stroke-width="2"/>' +
+            '<text x="40" y="74" font-size="9" fill="#eef0ff" font-family="sans-serif">Reactants</text>' +
+            '<line x1="210" y1="140" x2="270" y2="140" stroke="#eef0ff" stroke-width="2"/>' +
+            '<text x="222" y="156" font-size="9" fill="#eef0ff" font-family="sans-serif">Products</text>' +
+            // labels for the two peaks
+            '<text x="118" y="24" font-size="9" fill="#fb7185" font-family="sans-serif">without catalyst (higher Ea)</text>' +
+            '<text x="150" y="54" font-size="9" fill="#34d399" font-family="sans-serif">with catalyst (lower Ea)</text>' +
+            // DeltaH unchanged arrow
+            '<line x1="285" y1="80" x2="285" y2="138" stroke="#a78bfa" stroke-width="1.5"/>' +
+            '<polygon points="285,140 281,130 289,130" fill="#a78bfa"/>' +
+            '<text x="292" y="113" font-size="9" fill="#a78bfa" font-family="sans-serif" transform="rotate(90,292,113)">DH same</text>' +
             '</svg>',
         },
       ],
@@ -334,6 +363,118 @@ export const chemEnergetics: Topic = {
 
     // ── Section 6 ──────────────────────────────────────────────
     {
+      heading: "Calorimetry: Measuring Energy Changes (q = mcΔT)",
+      body:
+        "**Calorimetry** is the experimental measurement of the energy released or absorbed in a " +
+        "reaction. You do not measure energy directly — you measure a **temperature change** of a " +
+        "known mass of water (or solution) and calculate the energy from it.\n\n" +
+        "**The key relationship:**\n\n" +
+        "**q = m × c × ΔT**\n\n" +
+        "where\n" +
+        "- **q** = energy transferred, in joules (J)\n" +
+        "- **m** = mass of the water/solution being heated or cooled, in grams (g)\n" +
+        "- **c** = specific heat capacity of water = **4.2 J/g/°C** (also written 4.2 J g⁻¹ °C⁻¹)\n" +
+        "- **ΔT** = change in temperature of the water/solution, in °C\n\n" +
+        "(For dilute aqueous solutions we assume the same density and specific heat capacity as " +
+        "water: 1 cm³ of solution has a mass of 1 g, and c = 4.2 J/g/°C.)\n\n" +
+        "**Two common experiments:**\n" +
+        "- **Combustion of a fuel** (burning experiment): a known mass of fuel in a spirit burner is " +
+        "burned to heat a known mass of water in a metal can (calorimeter). Measure the start and end " +
+        "temperatures of the water and the mass of fuel burned.\n" +
+        "- **Reaction in solution** (e.g. neutralisation, displacement, dissolving): mix the reactants " +
+        "in an insulated cup (e.g. a polystyrene cup with a lid) and record the maximum or minimum " +
+        "temperature reached.\n\n" +
+        "**Finding ΔH per mole** (the molar enthalpy change you quote in kJ mol⁻¹):\n" +
+        "1. Calculate the energy transferred: q = m × c × ΔT (in J), then divide by 1000 to get kJ.\n" +
+        "2. Calculate the number of moles of the fuel (or limiting reactant): moles = mass ÷ Mr.\n" +
+        "3. ΔH = energy (kJ) ÷ moles, in **kJ mol⁻¹**.\n" +
+        "4. Add the correct **sign**: temperature rise → exothermic → ΔH negative; " +
+        "temperature fall → endothermic → ΔH positive.\n\n" +
+        "**Worked example — combustion of ethanol:**\n" +
+        "Burning 1.0 g of ethanol (Mr = 46) raises the temperature of 100 g of water by 18 °C.\n" +
+        "- Energy to water: q = m c ΔT = 100 × 4.2 × 18 = 7560 J = 7.56 kJ\n" +
+        "- Moles of ethanol: 1.0 ÷ 46 = 0.0217 mol\n" +
+        "- ΔH = 7.56 ÷ 0.0217 = 349 kJ mol⁻¹ ≈ **−349 kJ mol⁻¹** (negative: combustion is exothermic)\n\n" +
+        "**Worked example — neutralisation:**\n" +
+        "Mixing 50 cm³ of 1.0 mol/dm³ HCl with 50 cm³ of 1.0 mol/dm³ NaOH gives a 6.8 °C rise.\n" +
+        "- Total volume = 100 cm³, so mass of solution m = 100 g.\n" +
+        "- q = 100 × 4.2 × 6.8 = 2856 J = 2.856 kJ\n" +
+        "- Moles of water formed = moles of acid = 0.050 mol (1.0 mol/dm³ × 0.050 dm³)\n" +
+        "- ΔH = 2.856 ÷ 0.050 = 57.1 kJ mol⁻¹ ≈ **−57 kJ mol⁻¹** (exothermic)\n\n" +
+        "**Sources of error** make the experimental ΔH numerically smaller (less energy measured) " +
+        "than data-book values:\n" +
+        "- **Heat loss to the surroundings** — to the air, the apparatus (the can, thermometer) and, in " +
+        "burner experiments, heat carried away in the rising hot gases. This is the biggest error.\n" +
+        "- **Incomplete combustion** of the fuel (soot/carbon shows not all the fuel burned fully).\n" +
+        "- **Evaporation of the fuel** from the wick between weighings.\n" +
+        "- Assuming the solution has exactly the density and specific heat capacity of pure water.\n" +
+        "- Not all the heat from the flame reaches the water.\n\n" +
+        "**Reducing the errors:** insulate the calorimeter / use a lid, shield the apparatus from " +
+        "draughts, keep the flame close to the can, and stir the solution so the temperature is even.",
+      diagrams: [
+        {
+          caption: "Calorimetry: burning a fuel to heat water and the q = mcΔT calculation",
+          svg:
+            '<svg viewBox="0 0 320 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Calorimetry apparatus: a spirit burner heating a metal can of water with a thermometer, and the energy equation q equals m c delta T">' +
+            // thermometer
+            '<line x1="120" y1="10" x2="120" y2="70" stroke="#b7bce0" stroke-width="2"/>' +
+            '<circle cx="120" cy="74" r="5" fill="#fb7185"/>' +
+            '<text x="130" y="22" font-size="9" fill="#b7bce0" font-family="sans-serif">thermometer</text>' +
+            // can of water
+            '<rect x="90" y="60" width="80" height="55" rx="4" fill="none" stroke="#b7bce0" stroke-width="2"/>' +
+            '<rect x="95" y="80" width="70" height="32" rx="2" fill="#38bdf830"/>' +
+            '<text x="130" y="100" text-anchor="middle" font-size="9" fill="#38bdf8" font-family="sans-serif">water (mass m)</text>' +
+            // flame
+            '<polygon points="130,150 122,128 130,118 138,128" fill="#fbbf24"/>' +
+            '<polygon points="130,148 125,134 130,126 135,134" fill="#fb7185"/>' +
+            // spirit burner
+            '<rect x="110" y="150" width="40" height="28" rx="3" fill="none" stroke="#fb7185" stroke-width="2"/>' +
+            '<text x="130" y="194" text-anchor="middle" font-size="9" fill="#fb7185" font-family="sans-serif">fuel burner</text>' +
+            // equation block
+            '<text x="240" y="70" text-anchor="middle" font-size="13" fill="#a78bfa" font-family="sans-serif" font-weight="bold">q = m c DeltaT</text>' +
+            '<text x="240" y="92" text-anchor="middle" font-size="9" fill="#eef0ff" font-family="sans-serif">c(water) = 4.2 J/g/C</text>' +
+            '<text x="240" y="116" text-anchor="middle" font-size="9" fill="#b7bce0" font-family="sans-serif">100 x 4.2 x 18</text>' +
+            '<text x="240" y="132" text-anchor="middle" font-size="10" fill="#34d399" font-family="sans-serif">= 7560 J = 7.56 kJ</text>' +
+            '<text x="240" y="156" text-anchor="middle" font-size="9" fill="#b7bce0" font-family="sans-serif">DeltaH = 7.56 / moles</text>' +
+            '<text x="240" y="172" text-anchor="middle" font-size="9" fill="#b7bce0" font-family="sans-serif">(in kJ per mol)</text>' +
+            '</svg>',
+        },
+      ],
+      keyPoints: [
+        "Energy transferred is calculated, not measured directly: q = m × c × ΔT (in joules).",
+        "m is the mass of WATER/solution heated (not the mass of fuel); c = 4.2 J/g/°C; ΔT is the temperature change.",
+        "For dilute solutions, assume 1 cm³ = 1 g and use c = 4.2 J/g/°C.",
+        "ΔH per mole = energy (kJ) ÷ moles of fuel or limiting reactant, giving kJ mol⁻¹.",
+        "Always add the sign: temperature rise → exothermic → ΔH negative; temperature fall → endothermic → ΔH positive.",
+        "Main source of error is heat loss to the surroundings/apparatus, which makes the measured energy too small.",
+        "Reduce errors by insulating, using a lid, shielding from draughts, keeping the flame close, and stirring.",
+      ],
+      discovery: {
+        problem:
+          "Burning 0.50 g of methanol (Mr = 32) raises the temperature of 150 g of water by 9.0 °C. " +
+          "Using c = 4.2 J/g/°C, can you work out the energy released per mole of methanol? Then say " +
+          "whether the real (data-book) value would be larger or smaller than your answer, and why.",
+        idea:
+          "q = m c ΔT = 150 × 4.2 × 9.0 = 5670 J = 5.67 kJ. Moles of methanol = 0.50 ÷ 32 = 0.0156 mol. " +
+          "ΔH = 5.67 ÷ 0.0156 = 363 kJ mol⁻¹, so ΔH ≈ −363 kJ mol⁻¹ (exothermic). The true value is " +
+          "larger in magnitude because heat is lost to the surroundings and apparatus and combustion " +
+          "may be incomplete, so the experiment under-measures the energy actually released.",
+      },
+      strategies: [
+        "write down the quantities first — label m, c and ΔT before substituting into q = mcΔT",
+        "keep units straight — q comes out in J; divide by 1000 for kJ before dividing by moles",
+        "sanity check sign — decide exo/endo from the temperature change, then attach the sign to ΔH",
+      ],
+      whyItWorks:
+        "The energy released by the reaction is transferred to the water as heat. The water's " +
+        "temperature rise depends on how much water there is (m), how hard it is to warm (c) and " +
+        "how big the rise is (ΔT) — that is exactly q = mcΔT. If no heat escaped, all the reaction's " +
+        "energy would appear in the water, so q would equal the energy released. In reality some heat " +
+        "leaks away, which is why the measured ΔH is always smaller in magnitude than the true value.",
+    },
+
+    // ── Section 7 ──────────────────────────────────────────────
+    {
       heading: "Common Examples and Applications",
       body:
         "Knowing specific real-world examples helps you answer 'give an example of…' questions " +
@@ -372,6 +513,9 @@ export const chemEnergetics: Topic = {
       "Bond energies are always positive values (kJ mol⁻¹) as they refer to the energy to break one mole of a bond.",
       "Thermal decomposition is endothermic — it requires continuous heat input to proceed.",
       "The sign of ΔH can be determined from a temperature change: ΔT positive → exothermic; ΔT negative → endothermic.",
+      "In calorimetry, the energy transferred is calculated using q = m × c × ΔT, where c (water) = 4.2 J/g/°C and m is the mass of water/solution.",
+      "ΔH per mole = energy in kJ ÷ number of moles of fuel or limiting reactant, in kJ mol⁻¹, with the sign set by the temperature change.",
+      "The main source of error in calorimetry is heat loss to the surroundings/apparatus, which makes the measured energy (and ΔH magnitude) too small.",
     ],
     flashcards: [
       { front: "What is an exothermic reaction?", back: "A reaction that releases energy to the surroundings, causing a temperature rise. ΔH is negative." },
@@ -386,6 +530,11 @@ export const chemEnergetics: Topic = {
       { front: "If the temperature of the surroundings falls during a reaction, what does this tell you?", back: "The reaction is endothermic — it is absorbing energy from the surroundings." },
       { front: "What are the units of bond energy?", back: "kJ mol⁻¹ (kilojoules per mole of bonds)." },
       { front: "In an exothermic energy level diagram, where do products sit relative to reactants?", back: "Products sit at a lower energy level than reactants. ΔH is negative." },
+      { front: "What equation links energy transferred to temperature change?", back: "q = m × c × ΔT, where q is energy (J), m is mass of water/solution (g), c = 4.2 J/g/°C for water, and ΔT is the temperature change (°C)." },
+      { front: "In q = mcΔT, which mass do you use for a combustion (burning) experiment?", back: "The mass of the WATER being heated — not the mass of fuel burned." },
+      { front: "How do you calculate ΔH per mole of fuel from a calorimetry experiment?", back: "ΔH = energy (in kJ) ÷ number of moles of fuel. Find moles from mass ÷ Mr, then attach the sign (rise → negative)." },
+      { front: "Why is an experimental combustion ΔH smaller in magnitude than the data-book value?", back: "Heat is lost to the surroundings and apparatus, and combustion may be incomplete, so less energy is measured." },
+      { front: "Name two ways to reduce heat loss in a calorimetry experiment.", back: "Insulate the container / use a lid, shield from draughts, keep the flame close to the can, and stir the solution (any two)." },
     ],
     keyTerms: [
       { term: "Exothermic reaction", definition: "A reaction in which energy is transferred to the surroundings, causing the temperature of the surroundings to rise. ΔH is negative." },
@@ -399,6 +548,10 @@ export const chemEnergetics: Topic = {
       { term: "Thermal decomposition", definition: "A reaction in which a compound breaks down into simpler substances when heated; it is endothermic and requires continuous heat input." },
       { term: "Combustion", definition: "An exothermic reaction in which a fuel reacts with oxygen, releasing energy as heat and light." },
       { term: "Neutralisation", definition: "An exothermic reaction between an acid and a base producing a salt and water; the temperature of the solution rises." },
+      { term: "Calorimetry", definition: "The experimental measurement of the energy released or absorbed in a reaction by recording the temperature change of a known mass of water or solution." },
+      { term: "Specific heat capacity (c)", definition: "The energy needed to raise the temperature of 1 g of a substance by 1 °C; for water c = 4.2 J/g/°C. Used in q = m × c × ΔT." },
+      { term: "q = mcΔT", definition: "The relationship used to calculate the energy (q, in J) transferred to or from water/solution: mass (m) × specific heat capacity (c) × temperature change (ΔT)." },
+      { term: "Calorimeter", definition: "The apparatus (e.g. a metal can of water, or an insulated polystyrene cup) in which the temperature change of a reaction is measured." },
     ],
   },
 

@@ -168,15 +168,19 @@ After transfer each ion has a full outer shell — the same electron configurati
       heading: "Covalent Bonding & Simple Molecules",
       body: `Covalent bonding occurs between **non-metal atoms** that **share pairs of electrons**. Each shared pair is a covalent bond. Sharing allows both atoms to achieve a full outer shell without fully gaining or losing electrons.
 
-**Key examples and their dot-and-cross diagrams:**
+A **single bond** is one shared pair (2 electrons); a **double bond** is two shared pairs (4 electrons); a **triple bond** is three shared pairs (6 electrons). Hydrogen only ever needs **2** electrons for a full shell; every other atom here aims for **8** (a noble-gas octet). When drawing a dot-and-cross diagram, show only the **outer-shell** electrons, use **dots** for one atom and **crosses** for the other, and put each shared pair in the **overlap** between the two atoms.
 
-- **H₂**: one shared pair (single bond) between two hydrogen atoms — each gets a full shell of 2.
-- **Cl₂**: one shared pair; each Cl also has three lone pairs.
-- **H₂O**: oxygen forms two single bonds with H; oxygen has two lone pairs.
-- **NH₃**: nitrogen forms three single bonds with H; nitrogen has one lone pair.
-- **CH₄**: carbon forms four single bonds with H (no lone pairs on carbon).
-- **CO₂**: carbon forms two double bonds with each oxygen (each bond = 2 shared pairs).
-- **N₂**: triple bond (3 shared pairs) between the two nitrogen atoms — very strong.
+**The required worked examples (learn to draw every one):**
+
+- **H₂**: one shared pair (single bond) between two hydrogen atoms — each H reaches its full shell of 2. No lone pairs.
+- **Cl₂**: one shared pair between the two Cl atoms (single bond); each Cl also keeps **three lone pairs**, giving each chlorine 8 outer electrons.
+- **HCl** (hydrogen chloride): one shared pair between H and Cl (single bond). Hydrogen reaches 2; chlorine reaches 8 (the shared pair plus three lone pairs of its own).
+- **H₂O**: oxygen forms **two** single bonds (one to each H); oxygen keeps **two lone pairs**. Bent molecule.
+- **NH₃**: nitrogen forms **three** single bonds (one to each H); nitrogen keeps **one lone pair**.
+- **CH₄**: carbon forms **four** single bonds (one to each H); carbon has **no lone pairs**. Tetrahedral.
+- **O₂**: a **double bond** (two shared pairs) between the two oxygen atoms; each O also keeps two lone pairs.
+- **CO₂**: carbon forms a **double bond** to each oxygen (O=C=O); each oxygen keeps two lone pairs. Linear molecule.
+- **N₂**: a **triple bond** (three shared pairs) between the two nitrogen atoms — a very strong, short bond, which is why nitrogen gas is so unreactive. Each N keeps one lone pair.
 
 **Simple molecular substances** consist of small, discrete molecules. Within each molecule the covalent bonds are strong, but the **intermolecular forces** (attractions between molecules) are weak.
 
@@ -184,6 +188,92 @@ After transfer each ion has a full outer shell — the same electron configurati
 - **Do not conduct electricity** — no free ions or delocalised electrons.
 - Many are gases or liquids at room temperature.`,
       diagrams: [
+        {
+          caption: "Single bonds: H₂ (one shared pair), Cl₂ (one shared pair + 3 lone pairs each) and HCl (H shares with Cl)",
+          svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Dot-and-cross diagrams for hydrogen, chlorine and hydrogen chloride molecules">
+  <!-- H2 -->
+  <text x="10" y="16" font-size="11" fill="#b7bce0" font-family="sans-serif">H2</text>
+  <circle cx="40" cy="55" r="16" fill="none" stroke="#fbbf24" stroke-width="1.4"/>
+  <circle cx="78" cy="55" r="16" fill="none" stroke="#34d399" stroke-width="1.4"/>
+  <text x="34" y="40" font-size="9" fill="#fbbf24" font-family="sans-serif">H</text>
+  <text x="74" y="40" font-size="9" fill="#34d399" font-family="sans-serif">H</text>
+  <!-- shared pair in overlap: one dot + one cross -->
+  <circle cx="55" cy="55" r="2.6" fill="#fbbf24"/>
+  <text x="60" y="59" font-size="11" fill="#34d399" font-family="sans-serif">x</text>
+  <text x="20" y="85" font-size="8" fill="#b7bce0" font-family="sans-serif">1 shared pair (single bond)</text>
+
+  <!-- Cl2 -->
+  <text x="140" y="16" font-size="11" fill="#b7bce0" font-family="sans-serif">Cl2</text>
+  <circle cx="175" cy="55" r="20" fill="none" stroke="#a78bfa" stroke-width="1.4"/>
+  <circle cx="225" cy="55" r="20" fill="none" stroke="#fb7185" stroke-width="1.4"/>
+  <text x="162" y="40" font-size="9" fill="#a78bfa" font-family="sans-serif">Cl</text>
+  <text x="231" y="40" font-size="9" fill="#fb7185" font-family="sans-serif">Cl</text>
+  <!-- shared pair -->
+  <circle cx="194" cy="55" r="2.4" fill="#a78bfa"/>
+  <text x="200" y="59" font-size="10" fill="#fb7185" font-family="sans-serif">x</text>
+  <!-- left Cl 3 lone pairs (dots) -->
+  <circle cx="160" cy="42" r="2" fill="#a78bfa"/><circle cx="167" cy="38" r="2" fill="#a78bfa"/>
+  <circle cx="156" cy="55" r="2" fill="#a78bfa"/><circle cx="156" cy="62" r="2" fill="#a78bfa"/>
+  <circle cx="160" cy="69" r="2" fill="#a78bfa"/><circle cx="167" cy="72" r="2" fill="#a78bfa"/>
+  <!-- right Cl 3 lone pairs (crosses) -->
+  <text x="231" y="42" font-size="8" fill="#fb7185" font-family="sans-serif">x</text><text x="238" y="46" font-size="8" fill="#fb7185" font-family="sans-serif">x</text>
+  <text x="242" y="58" font-size="8" fill="#fb7185" font-family="sans-serif">x</text><text x="242" y="66" font-size="8" fill="#fb7185" font-family="sans-serif">x</text>
+  <text x="231" y="74" font-size="8" fill="#fb7185" font-family="sans-serif">x</text><text x="238" y="70" font-size="8" fill="#fb7185" font-family="sans-serif">x</text>
+  <text x="150" y="90" font-size="8" fill="#b7bce0" font-family="sans-serif">1 shared pair + 3 lone pairs on each Cl</text>
+
+  <!-- HCl -->
+  <text x="10" y="125" font-size="11" fill="#b7bce0" font-family="sans-serif">HCl</text>
+  <circle cx="60" cy="155" r="16" fill="none" stroke="#fbbf24" stroke-width="1.4"/>
+  <circle cx="110" cy="155" r="20" fill="none" stroke="#a78bfa" stroke-width="1.4"/>
+  <text x="54" y="140" font-size="9" fill="#fbbf24" font-family="sans-serif">H</text>
+  <text x="116" y="140" font-size="9" fill="#a78bfa" font-family="sans-serif">Cl</text>
+  <!-- shared pair (dot from H + cross from Cl) -->
+  <circle cx="82" cy="155" r="2.6" fill="#fbbf24"/>
+  <text x="88" y="159" font-size="10" fill="#a78bfa" font-family="sans-serif">x</text>
+  <!-- Cl 3 lone pairs (crosses) -->
+  <text x="116" y="142" font-size="8" fill="#a78bfa" font-family="sans-serif">x</text><text x="123" y="146" font-size="8" fill="#a78bfa" font-family="sans-serif">x</text>
+  <text x="127" y="158" font-size="8" fill="#a78bfa" font-family="sans-serif">x</text><text x="127" y="166" font-size="8" fill="#a78bfa" font-family="sans-serif">x</text>
+  <text x="116" y="174" font-size="8" fill="#a78bfa" font-family="sans-serif">x</text><text x="123" y="170" font-size="8" fill="#a78bfa" font-family="sans-serif">x</text>
+  <text x="20" y="188" font-size="8" fill="#b7bce0" font-family="sans-serif">H reaches 2; Cl reaches 8 (share + 3 lone pairs)</text>
+</svg>`,
+        },
+        {
+          caption: "Multiple bonds: O₂ (double bond, two shared pairs) and N₂ (triple bond, three shared pairs)",
+          svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Dot-and-cross diagrams for oxygen molecule double bond and nitrogen molecule triple bond">
+  <!-- O2 -->
+  <text x="10" y="16" font-size="11" fill="#b7bce0" font-family="sans-serif">O2 (double bond)</text>
+  <circle cx="70" cy="80" r="24" fill="none" stroke="#fb7185" stroke-width="1.5"/>
+  <circle cx="135" cy="80" r="24" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="58" y="60" font-size="10" fill="#fb7185" font-family="sans-serif">O</text>
+  <text x="140" y="60" font-size="10" fill="#38bdf8" font-family="sans-serif">O</text>
+  <!-- two shared pairs in overlap -->
+  <circle cx="98" cy="73" r="2.6" fill="#fb7185"/><text x="104" y="77" font-size="10" fill="#38bdf8" font-family="sans-serif">x</text>
+  <circle cx="98" cy="89" r="2.6" fill="#fb7185"/><text x="104" y="93" font-size="10" fill="#38bdf8" font-family="sans-serif">x</text>
+  <!-- left O 2 lone pairs (dots) -->
+  <circle cx="54" cy="68" r="2.2" fill="#fb7185"/><circle cx="54" cy="76" r="2.2" fill="#fb7185"/>
+  <circle cx="54" cy="88" r="2.2" fill="#fb7185"/><circle cx="54" cy="96" r="2.2" fill="#fb7185"/>
+  <!-- right O 2 lone pairs (crosses) -->
+  <text x="148" y="72" font-size="8" fill="#38bdf8" font-family="sans-serif">x</text><text x="148" y="82" font-size="8" fill="#38bdf8" font-family="sans-serif">x</text>
+  <text x="148" y="92" font-size="8" fill="#38bdf8" font-family="sans-serif">x</text><text x="148" y="102" font-size="8" fill="#38bdf8" font-family="sans-serif">x</text>
+  <text x="20" y="125" font-size="8" fill="#b7bce0" font-family="sans-serif">2 shared pairs = double bond</text>
+
+  <!-- N2 -->
+  <text x="180" y="16" font-size="11" fill="#b7bce0" font-family="sans-serif">N2 (triple bond)</text>
+  <circle cx="230" cy="80" r="24" fill="none" stroke="#34d399" stroke-width="1.5"/>
+  <circle cx="295" cy="80" r="24" fill="none" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="218" y="60" font-size="10" fill="#34d399" font-family="sans-serif">N</text>
+  <text x="300" y="60" font-size="10" fill="#a78bfa" font-family="sans-serif">N</text>
+  <!-- three shared pairs -->
+  <circle cx="258" cy="68" r="2.4" fill="#34d399"/><text x="263" y="72" font-size="9" fill="#a78bfa" font-family="sans-serif">x</text>
+  <circle cx="258" cy="80" r="2.4" fill="#34d399"/><text x="263" y="84" font-size="9" fill="#a78bfa" font-family="sans-serif">x</text>
+  <circle cx="258" cy="92" r="2.4" fill="#34d399"/><text x="263" y="96" font-size="9" fill="#a78bfa" font-family="sans-serif">x</text>
+  <!-- left N 1 lone pair (dots) -->
+  <circle cx="214" cy="76" r="2.2" fill="#34d399"/><circle cx="214" cy="84" r="2.2" fill="#34d399"/>
+  <!-- right N 1 lone pair (crosses) -->
+  <text x="308" y="78" font-size="8" fill="#a78bfa" font-family="sans-serif">x</text><text x="308" y="88" font-size="8" fill="#a78bfa" font-family="sans-serif">x</text>
+  <text x="180" y="125" font-size="8" fill="#b7bce0" font-family="sans-serif">3 shared pairs = triple bond, 1 lone pair each</text>
+</svg>`,
+        },
         {
           caption: "Dot-and-cross diagrams: H₂O (water), NH₃ (ammonia) and CO₂ (carbon dioxide)",
           svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Dot-and-cross diagrams for water, ammonia and carbon dioxide">
@@ -260,6 +350,9 @@ After transfer each ion has a full outer shell — the same electron configurati
       keyPoints: [
         "Covalent bonds form between non-metal atoms by sharing one or more pairs of electrons.",
         "Each shared pair is one covalent bond; double or triple bonds involve 2 or 3 shared pairs.",
+        "Hydrogen only needs 2 outer electrons; all other atoms here aim for an octet of 8.",
+        "Required dot-and-cross molecules: H₂, Cl₂, HCl, H₂O, NH₃, CH₄, O₂, CO₂ and N₂ — practise drawing each.",
+        "In a dot-and-cross diagram show only outer-shell electrons, use dots for one atom and crosses for the other, and place each shared pair in the overlap.",
         "Simple molecular substances have weak intermolecular forces, giving low melting/boiling points.",
         "Simple molecular substances do not conduct electricity — no free ions or electrons.",
         "Lone pairs are non-bonding electron pairs shown in dot-and-cross diagrams but do not form bonds.",
@@ -421,6 +514,8 @@ For melting/boiling point questions, always state **which forces must be overcom
       "Metals conduct because delocalised electrons are free to move through the lattice.",
       "Graphite is soft because weak forces exist between layers, allowing them to slide.",
       "N₂ has a triple bond (3 shared pairs) — the strongest and shortest diatomic covalent bond.",
+      "O₂ has a double bond (2 shared pairs); H₂, Cl₂ and HCl each have a single bond (1 shared pair).",
+      "In a dot-and-cross diagram only outer electrons are shown; dots for one atom, crosses for the other, shared pairs in the overlap.",
     ],
     flashcards: [
       { front: "What is ionic bonding?", back: "Transfer of electrons from a metal atom to a non-metal atom, forming oppositely charged ions held by strong electrostatic attraction." },
@@ -435,6 +530,8 @@ For melting/boiling point questions, always state **which forces must be overcom
       { front: "Why are metals malleable?", back: "Layers of positive ions can slide over each other without breaking bonds, because the delocalised electron sea simply reforms around new positions." },
       { front: "How many bonds does carbon form in diamond?", back: "4 (four single covalent bonds in a tetrahedral arrangement to four neighbouring carbon atoms)." },
       { front: "What type of bond is found in N₂?", back: "A triple covalent bond — three shared pairs of electrons between the two nitrogen atoms." },
+      { front: "Describe the bonding in an HCl molecule.", back: "One shared pair (a single covalent bond) between H and Cl. Hydrogen reaches a full shell of 2; chlorine reaches 8 using the shared pair plus three lone pairs of its own." },
+      { front: "How many shared pairs are in the bond in O₂?", back: "Two — O₂ has a double bond (two shared pairs of electrons), and each oxygen also has two lone pairs." },
     ],
     keyTerms: [
       { term: "Ionic bonding", definition: "The electrostatic attraction between oppositely charged ions formed by electron transfer from a metal to a non-metal." },

@@ -89,9 +89,11 @@ A rise of ~10 °C roughly doubles the rate for many reactions.
 For solid reactants, only particles at the surface can collide with the other reactant. Smaller particles (e.g. powder vs. lump) have a **greater surface area to volume ratio**, exposing more particles to collisions → higher collision frequency → faster rate.
 
 **5. Catalysts**
-A catalyst provides an **alternative reaction pathway with a lower activation energy**. More collisions now have sufficient energy, so the proportion of effective collisions increases. The catalyst is **not consumed** in the reaction — it is chemically unchanged overall.
+A catalyst provides an **alternative reaction pathway with a lower activation energy**. More collisions now have sufficient energy, so the proportion of effective collisions increases. The catalyst is **not consumed** in the reaction — it is chemically unchanged overall, so a tiny mass can convert a large quantity of reactant and the same catalyst can be reused.
 
-Note: a catalyst does *not* increase the collision frequency; it lowers the energy threshold.`,
+Note: a catalyst does *not* increase the collision frequency; it lowers the energy threshold. A catalyst is also usually **specific** — a given catalyst speeds up a particular reaction (e.g. iron in the Haber process, platinum/rhodium in a catalytic converter, manganese(IV) oxide for the decomposition of hydrogen peroxide).
+
+**Enzymes** are **biological catalysts** — large protein molecules that catalyse the reactions in living things (and in industry, e.g. fermentation, biological washing powders). Like all catalysts they lower the activation energy and are not used up. Because they are proteins, enzymes work best within a narrow range of temperature and pH: too hot (above roughly 40–45 °C) and the enzyme is **denatured** — its shape changes permanently and it stops working, so the rate falls sharply rather than continuing to rise.`,
       diagrams: [
         {
           caption: "Particle diagrams comparing low and high concentration solutions showing collision frequency",
@@ -144,7 +146,8 @@ Note: a catalyst does *not* increase the collision frequency; it lowers the ener
         "Higher temperature → particles have more kinetic energy → greater proportion exceed Ea → faster rate.",
         "Smaller particle size → greater surface area → more particles exposed → more frequent collisions.",
         "A catalyst provides an alternative pathway with lower Ea; it is not consumed in the reaction.",
-        "Catalysts increase the proportion of successful collisions, NOT the collision frequency."
+        "Catalysts increase the proportion of successful collisions, NOT the collision frequency.",
+        "Catalysts are usually specific to a reaction; enzymes are biological catalysts that are denatured by high temperature."
       ],
       strategies: ["Identify which variable changes, then explain using collision frequency OR collision energy OR both."],
       thinkDeeper: "Why does temperature have such a large effect compared with, say, doubling the concentration? Doubling concentration doubles the collision frequency — a factor of 2. But raising temperature by 10 °C shifts the Maxwell-Boltzmann distribution so the fraction of molecules exceeding Ea can increase by much more than a factor of 2, especially when Ea is high. This exponential sensitivity is captured mathematically by the Arrhenius equation, which you will meet in A Level chemistry.",
@@ -155,16 +158,20 @@ Note: a catalyst does *not* increase the collision frequency; it lowers the ener
       heading: "Measuring Rate & Interpreting Rate Graphs",
       body: `Rate of reaction can be defined as: **change in quantity of reactant or product per unit time**.
 
-Common experimental methods:
-- **Volume of gas collected** (e.g. CaCO3 + HCl → CO2 captured in a gas syringe). Plot volume vs. time.
-- **Loss of mass** (e.g. CaCO3 + HCl on a balance; CO2 escapes). Plot mass vs. time.
-- **Time for a precipitate** (e.g. sodium thiosulfate + HCl → S precipitate obscures a cross drawn below the flask). Record time for cross to disappear; rate ∝ 1/time.
-- **Colour change / colorimetry** for reactions involving coloured species.
+Common experimental methods — choose one that detects a change you can measure continuously:
+- **Volume of gas collected** (e.g. CaCO3 + HCl → CO2 captured in a **gas syringe**, or gas collected over water in an inverted measuring cylinder). Plot volume vs. time. Best when a gas is produced.
+- **Loss of mass** (e.g. CaCO3 + HCl on a top-pan **balance**; CO2 escapes so the flask gets lighter). Plot mass lost vs. time. Not suitable when the gas is very light, e.g. H2, as the mass change is too small to measure reliably.
+- **Time for a precipitate to obscure a mark — the 'disappearing cross'** (e.g. sodium thiosulfate + HCl → sulfur precipitate clouds the solution and hides a cross drawn under the flask). Record the time for the cross to disappear; **rate ∝ 1/time**. This gives one rate value per run, not a continuous curve.
+- **Colour change / colorimetry** for reactions where a coloured species appears or fades. A **colorimeter** passes light through the mixture and measures how much is absorbed; the absorbance changes as the reaction proceeds, giving an objective, continuous measurement.
+
+**Mean rate vs. rate at an instant:**
+- **Mean (average) rate** over a period = (change in quantity) ÷ (time taken) — e.g. total volume of gas ÷ total time.
+- **Rate at a particular moment** = the **gradient of a tangent** drawn to the curve at that point (gradient = change in y ÷ change in x of the tangent).
 
 **Reading a volume-vs-time graph:**
 - The **gradient (slope)** at any point = rate at that moment.
 - Steepest gradient = fastest rate (at the start of the reaction).
-- As reactants are consumed, the curve flattens → rate decreases.
+- As reactants are consumed, their concentration falls, so collisions become less frequent and the curve flattens → rate decreases.
 - The curve becomes **horizontal** when the reaction is complete (limiting reactant used up).
 - The **final volume** (plateau) depends on the quantity of reactant, NOT the rate.
 
@@ -210,7 +217,9 @@ Common experimental methods:
         "Gradient of a volume-vs-time graph = rate at that moment; steeper = faster.",
         "The final plateau volume depends on the amount of reactant, NOT the rate.",
         "Rate decreases over time as reactant concentration falls.",
-        "Rate ∝ 1/time is used when the 'disappearing cross' method is employed."
+        "Rate ∝ 1/time is used when the 'disappearing cross' method is employed.",
+        "Mean rate = change in quantity ÷ time; instantaneous rate = gradient of a tangent to the curve.",
+        "Choose the method to match the change: gas syringe/mass loss for gases, colorimetry for colour changes."
       ],
       discovery: {
         problem: "Two experiments use marble chips (CaCO3) with hydrochloric acid. Experiment A uses 2 g of large chips with 50 cm³ of 1 mol/dm³ HCl. Experiment B uses 2 g of powdered CaCO3 with 50 cm³ of 1 mol/dm³ HCl. Sketch what the volume-of-CO2-vs-time graphs would look like for both experiments on the same axes. What is the same and what is different?",
@@ -231,6 +240,20 @@ NH4Cl(s) ⇌ NH3(g) + HCl(g)
 
 When heated, it decomposes; on cooling, the gases recombine.
 
+**Two reversible reactions you must know (they are also chemical tests for water):**
+
+*Hydrated copper(II) sulfate:*
+CuSO4·5H2O(s) ⇌ CuSO4(s) + 5H2O(l)
+(blue, hydrated) ⇌ (white, anhydrous) + water
+Heating drives off the water (blue → white, endothermic forward direction). Adding water to white anhydrous copper(II) sulfate turns it blue again and releases heat (exothermic reverse). The colour change blue → white → blue shows the reaction is reversible.
+
+*Cobalt(II) chloride:*
+CoCl2·6H2O(s) ⇌ CoCl2(s) + 6H2O(l)
+(pink, hydrated) ⇌ (blue, anhydrous) + water
+Heating turns moist pink cobalt chloride paper blue; adding water turns it pink again. A return to pink is the standard test for the presence of water.
+
+These examples illustrate two general rules: the forward and reverse directions have **opposite energy changes** (if one is exothermic the other is endothermic, with the same magnitude), and a reversible reaction is recognised by a change that can be **undone** by reversing the conditions.
+
 **Dynamic equilibrium** is established in a **closed system** (no substances can enter or leave) when:
 - The rate of the **forward reaction** equals the rate of the **reverse reaction**.
 - The concentrations of all reactants and products remain **constant** (but not necessarily equal).
@@ -245,7 +268,9 @@ Key points about equilibrium:
         "Dynamic equilibrium: forward rate = reverse rate; concentrations are constant but not zero.",
         "Equilibrium can only be established in a closed system.",
         "At equilibrium both reactions are still happening — it is not static.",
-        "The position of equilibrium describes the relative amounts of reactants and products."
+        "The position of equilibrium describes the relative amounts of reactants and products.",
+        "Hydrated CuSO4 (blue) ⇌ anhydrous CuSO4 (white) + water; the forward and reverse directions have opposite energy changes.",
+        "Adding water to anhydrous copper(II) sulfate (turns blue) or cobalt(II) chloride (turns pink) is a test for water."
       ],
       whyItWorks: "As a reversible reaction proceeds forward, the concentration of reactants decreases (slowing the forward rate) while the concentration of products increases (speeding the reverse rate). Eventually the two rates become equal — equilibrium. This is a self-correcting, dynamic balance, not a frozen state."
     },
@@ -309,13 +334,22 @@ Sources of raw materials:
 
 *Catalyst*: Iron catalyst speeds up both reactions equally, reaching equilibrium faster without changing the yield. Economically vital — without it, the rate at 450 °C would still be too slow.
 
-Unreacted N2 and H2 are recycled back into the reactor, so overall conversion is efficient despite the low single-pass yield.`,
+Unreacted N2 and H2 are recycled back into the reactor, so overall conversion is efficient despite the low single-pass yield. The **ammonia is removed** as it forms (cooled and liquefied), which keeps pulling the equilibrium to the right.
+
+**A second industrial equilibrium — the Contact process (Cambridge 0620; useful context for Edexcel):**
+The Contact process makes sulfuric acid. Its key reversible step is:
+**2SO2(g) + O2(g) ⇌ 2SO3(g)     ΔH negative (exothermic)**
+- Conditions: about **450 °C**, **1–2 atm** (only slightly above atmospheric), **vanadium(V) oxide (V2O5)** catalyst.
+- The same rate-vs-yield logic applies for temperature (450 °C is a compromise) and moles of gas for pressure (3 moles → 2 moles, so higher pressure favours SO3). Because the yield is already very high (~98%) at low pressure, expensive high-pressure equipment is not needed.
+- The SO3 is then converted to sulfuric acid (H2SO4).`,
       keyPoints: [
         "N2(g) + 3H2(g) ⇌ 2NH3(g); ΔH = −92 kJ/mol (exothermic).",
         "Conditions: ~450 °C, ~200 atm, iron catalyst.",
         "Higher pressure increases yield (4 → 2 moles of gas), but is costly and dangerous.",
         "Lower temperature increases yield (exothermic forward reaction) but slows the rate; 450 °C is the compromise.",
-        "Iron catalyst speeds equilibrium attainment without changing equilibrium position; unreacted gases are recycled."
+        "Iron catalyst speeds equilibrium attainment without changing equilibrium position; unreacted gases are recycled.",
+        "Removing the ammonia as it forms (by liquefying it) keeps the equilibrium shifting toward products.",
+        "Contact process: 2SO2 + O2 ⇌ 2SO3, ~450 °C, ~1–2 atm, V2O5 catalyst, for making sulfuric acid."
       ],
       strategies: [
         "Balance the equation first; count gas moles on each side.",
@@ -342,7 +376,13 @@ Unreacted N2 and H2 are recycled back into the reactor, so overall conversion is
       "In the Haber process: N2 + 3H2 ⇌ 2NH3; conditions ~450 °C, ~200 atm, iron catalyst.",
       "Higher pressure in the Haber process favours ammonia (4 moles gas → 2 moles gas).",
       "The 450 °C temperature is a compromise between yield (Le Chatelier favours lower T) and rate.",
-      "Unreacted N2 and H2 are recycled in the Haber process to maximise efficiency."
+      "Unreacted N2 and H2 are recycled in the Haber process to maximise efficiency, and the ammonia is removed by liquefying it.",
+      "Enzymes are biological catalysts; they lower Ea, are not used up, but are denatured by high temperature.",
+      "Mean rate = change in quantity ÷ time; the rate at an instant is the gradient of a tangent to the curve.",
+      "Methods to follow a rate: gas syringe / collection over water, loss of mass on a balance, the 'disappearing cross' (rate ∝ 1/time), and colorimetry for colour changes.",
+      "Hydrated copper(II) sulfate (blue) ⇌ anhydrous copper(II) sulfate (white) + water is reversible; adding water turns it blue again (a test for water).",
+      "Adding water to anhydrous cobalt(II) chloride turns it from blue to pink — another test for water.",
+      "Contact process: 2SO2 + O2 ⇌ 2SO3 at ~450 °C, ~1–2 atm, with a vanadium(V) oxide (V2O5) catalyst, to make sulfuric acid."
     ],
     flashcards: [
       { front: "What is activation energy?", back: "The minimum energy required for a collision between reactant particles to result in a reaction." },
@@ -356,7 +396,13 @@ Unreacted N2 and H2 are recycled back into the reactor, so overall conversion is
       { front: "Give the balanced equation for the Haber process.", back: "N2(g) + 3H2(g) ⇌ 2NH3(g)   ΔH = −92 kJ/mol" },
       { front: "Why is 450 °C used in the Haber process rather than a lower temperature?", back: "Lower temperature gives higher yield (Le Chatelier — exothermic forward reaction) but the rate would be too slow to be economical. 450 °C is a compromise between yield and rate." },
       { front: "Why does the 'disappearing cross' method give rate ∝ 1/time?", back: "The time measured is inversely proportional to the rate — a faster reaction produces the precipitate sooner, giving a smaller t, hence rate ∝ 1/t." },
-      { front: "Why must equilibrium be established in a closed system?", back: "In an open system, products escape and cannot drive the reverse reaction, so equilibrium is never established." }
+      { front: "Why must equilibrium be established in a closed system?", back: "In an open system, products escape and cannot drive the reverse reaction, so equilibrium is never established." },
+      { front: "What is an enzyme, and what happens to it at high temperature?", back: "An enzyme is a biological catalyst (a protein) that lowers activation energy and is not used up. Above about 40–45 °C it is denatured — its shape changes permanently and it stops working, so the rate falls." },
+      { front: "How do you find the rate of reaction at a particular instant from a curve?", back: "Draw a tangent to the curve at that point and calculate its gradient (change in y ÷ change in x). The mean rate instead uses the total change in quantity ÷ total time." },
+      { front: "How does a colorimeter follow the rate of a reaction?", back: "It passes light through the mixture and measures how much is absorbed (absorbance). As a coloured species forms or fades, the absorbance changes, giving a continuous, objective measurement over time." },
+      { front: "What colour changes show that hydrated copper(II) sulfate is involved in a reversible reaction?", back: "Heating blue hydrated CuSO4·5H2O drives off water to leave white anhydrous CuSO4; adding water turns it blue again and releases heat. Blue → white → blue shows it is reversible." },
+      { front: "What are the conditions for the Contact process?", back: "About 450 °C, 1–2 atm pressure, and a vanadium(V) oxide (V2O5) catalyst for 2SO2 + O2 ⇌ 2SO3, used to manufacture sulfuric acid." },
+      { front: "Besides recycling the gases, how else is yield improved in the Haber process?", back: "The ammonia is cooled and liquefied, so it is removed as it forms. Continually removing the product keeps shifting the equilibrium toward the right (more ammonia)." }
     ],
     keyTerms: [
       { term: "Activation energy (Ea)", definition: "The minimum energy that colliding particles must possess for a reaction to occur." },
@@ -370,7 +416,12 @@ Unreacted N2 and H2 are recycled back into the reactor, so overall conversion is
       { term: "Haber process", definition: "The industrial manufacture of ammonia by the reversible reaction N2 + 3H2 ⇌ 2NH3, using conditions of ~450 °C, ~200 atm and an iron catalyst." },
       { term: "Surface area", definition: "The total area of solid reactant exposed to the other reactant; greater surface area increases collision frequency and rate." },
       { term: "Closed system", definition: "A system in which no matter (reactants or products) can enter or leave, allowing equilibrium to be established." },
-      { term: "Endothermic reaction", definition: "A reaction that absorbs energy from the surroundings; the enthalpy change ΔH is positive." }
+      { term: "Endothermic reaction", definition: "A reaction that absorbs energy from the surroundings; the enthalpy change ΔH is positive." },
+      { term: "Enzyme", definition: "A biological catalyst — a protein that speeds up a reaction in living things by lowering the activation energy; it is not used up but is denatured by high temperature or extremes of pH." },
+      { term: "Mean rate of reaction", definition: "The change in the amount of reactant or product divided by the total time taken; on a curve, the rate at an instant is the gradient of a tangent at that point." },
+      { term: "Colorimeter", definition: "An instrument that measures how much light a coloured solution absorbs; used to follow the rate of reactions in which a coloured species appears or fades." },
+      { term: "Contact process", definition: "The industrial manufacture of sulfuric acid, whose key reversible step is 2SO2 + O2 ⇌ 2SO3 at about 450 °C, 1–2 atm and a vanadium(V) oxide catalyst." },
+      { term: "Denaturation", definition: "The permanent change in the shape of an enzyme (or other protein) caused by high temperature or extremes of pH, which stops it working as a catalyst." }
     ]
   },
 

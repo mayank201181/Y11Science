@@ -53,13 +53,18 @@ export const chemAcidsBases: Topic = {
         "**Litmus**: turns red in acids (pH < 7), blue in alkalis (pH > 7), purple/violet at neutral. It is a single-colour-change indicator useful for identifying acid or alkali.\n\n" +
         "**Universal indicator** gives a continuous range of colours: red/orange (pH 1–3), yellow (pH 4–6), green (pH 7), blue-green/blue (pH 8–10), purple/violet (pH 11–14). It can estimate the actual pH value, not just acid/alkali.\n\n" +
         "**Methyl orange**: red in acids (pH < 3.1), orange at endpoint (~pH 4), yellow in alkalis (pH > 4.4). Used for strong acid–weak alkali titrations.\n\n" +
-        "**Thymolphthalein**: colourless in acids, blue in alkalis (colour change at pH 9.3–10.5). Used for strong alkali–weak acid titrations.\n\n" +
+        "**Phenolphthalein**: colourless in acids and at neutral, pink/magenta in alkalis (colour change around pH 8.3–10). This is the standard titration indicator you must remember — it gives a sharp, easy-to-see colourless↔pink endpoint and is used for strong acid–strong alkali and weak acid–strong alkali titrations.\n\n" +
+        "**Thymolphthalein** (less common): colourless in acids, blue in alkalis (colour change at pH 9.3–10.5).\n\n" +
+        "Quick summary of the single-colour-change indicators:\n" +
+        "- Litmus — red in acid / purple at neutral / blue in alkali.\n" +
+        "- Methyl orange — red in acid / orange near neutral / yellow in alkali.\n" +
+        "- Phenolphthalein — colourless in acid and at neutral / pink in alkali.\n\n" +
         "**pH meters** give precise numerical readings and are used instead of indicators when an exact value is needed.",
 
       diagrams: [
         {
           caption: "The pH scale with universal indicator colours and example substances",
-          svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="pH scale showing colours from pH 0 to 14 with example substances">\n  <!-- Background -->\n  <rect width="320" height="200" fill="#0f172a" rx="8"/>\n  <!-- Scale bar segments -->\n  <!-- pH 0-1 deep red -->\n  <rect x="10" y="40" width="20" height="28" fill="#b91c1c" rx="2"/>\n  <!-- pH 2 red -->\n  <rect x="30" y="40" width="20" height="28" fill="#dc2626" rx="2"/>\n  <!-- pH 3 orange-red -->\n  <rect x="50" y="40" width="20" height="28" fill="#ea580c" rx="2"/>\n  <!-- pH 4 orange -->\n  <rect x="70" y="40" width="20" height="28" fill="#f97316" rx="2"/>\n  <!-- pH 5 yellow-orange -->\n  <rect x="90" y="40" width="20" height="28" fill="#eab308" rx="2"/>\n  <!-- pH 6 yellow -->\n  <rect x="110" y="40" width="20" height="28" fill="#facc15" rx="2"/>\n  <!-- pH 7 green -->\n  <rect x="130" y="40" width="20" height="28" fill="#22c55e" rx="2"/>\n  <!-- pH 8 blue-green -->\n  <rect x="150" y="40" width="20" height="28" fill="#10b981" rx="2"/>\n  <!-- pH 9 teal -->\n  <rect x="170" y="40" width="20" height="28" fill="#0ea5e9" rx="2"/>\n  <!-- pH 10 blue -->\n  <rect x="190" y="40" width="20" height="28" fill="#3b82f6" rx="2"/>\n  <!-- pH 11 blue -->\n  <rect x="210" y="40" width="20" height="28" fill="#6366f1" rx="2"/>\n  <!-- pH 12 indigo -->\n  <rect x="230" y="40" width="20" height="28" fill="#7c3aed" rx="2"/>\n  <!-- pH 13 violet -->\n  <rect x="250" y="40" width="20" height="28" fill="#9333ea" rx="2"/>\n  <!-- pH 14 deep violet -->\n  <rect x="270" y="40" width="20" height="28" fill="#6b21a8" rx="2"/>\n  <!-- pH numbers -->\n  <text x="20" y="85" font-size="7" fill="#b7bce0" text-anchor="middle" font-family="sans-serif">0</text>\n  <text x="40" y="85" font-size="7" fill="#b7bce0" text-anchor="middle" font-family="sans-serif">2</text>\n  <text x="60" y="85" font-size="7" fill="#b7bce0" text-anchor="middle" font-family="sans-serif">3</text>\n  <text x="80" y="85" font-size="7" fill="#b7bce0" text-anchor="middle" font-family="sans-serif">4</text>\n  <text x="100" y="85" font-size="7" fill="#b7bce0" text-anchor="middle" font-family="sans-serif">5</text>\n  <text x="120" y="85" font-size="7" fill="#b7bce0" text-anchor="middle" font-family="sans-serif">6</text>\n  <text x="140" y="85" font-size="7" fill="#b7bce0" text-anchor="middle" font-family="sans-serif">7</text>\n  <text x="160" y="85" font-size="7" fill="#b7bce0" text-anchor="middle" font-family="sans-serif">8</text>\n  <text x="180" y="85" font-size="7" fill="#b7bce0" text-anchor="middle" font-family="sans-serif">9</text>\n  <text x="200" y="85" font-size="7" fill="#b7bce0" text-anchor="middle" font-family="sans-serif">10</text>\n  <text x="220" y="85" font-size="7" fill="#b7bce0" text-anchor="middle" font-family="sans-serif">11</text>\n  <text x="240" y="85" font-size="7" fill="#b7bce0" text-anchor="middle" font-family="sans-serif">12</text>\n  <text x="260" y="85" font-size="7" fill="#b7bce0" text-anchor="middle" font-family="sans-serif">13</text>\n  <text x="280" y="85" font-size="7" fill="#b7bce0" text-anchor="middle" font-family="sans-serif">14</text>\n  <!-- Zone labels -->\n  <text x="70" y="25" font-size="9" fill="#fb7185" text-anchor="middle" font-family="sans-serif" font-weight="bold">ACIDIC</text>\n  <text x="140" y="25" font-size="9" fill="#34d399" text-anchor="middle" font-family="sans-serif" font-weight="bold">NEUTRAL</text>\n  <text x="220" y="25" font-size="9" fill="#38bdf8" text-anchor="middle" font-family="sans-serif" font-weight="bold">ALKALINE</text>\n  <!-- Example substances -->\n  <text x="20" y="105" font-size="7.5" fill="#eef0ff" text-anchor="middle" font-family="sans-serif">HCl</text>\n  <text x="80" y="105" font-size="7.5" fill="#eef0ff" text-anchor="middle" font-family="sans-serif">lemon</text>\n  <text x="120" y="105" font-size="7.5" fill="#eef0ff" text-anchor="middle" font-family="sans-serif">rain</text>\n  <text x="140" y="105" font-size="7.5" fill="#eef0ff" text-anchor="middle" font-family="sans-serif">water</text>\n  <text x="165" y="105" font-size="7.5" fill="#eef0ff" text-anchor="middle" font-family="sans-serif">blood</text>\n  <text x="215" y="105" font-size="7.5" fill="#eef0ff" text-anchor="middle" font-family="sans-serif">NH3(aq)</text>\n  <text x="265" y="105" font-size="7.5" fill="#eef0ff" text-anchor="middle" font-family="sans-serif">NaOH</text>\n  <!-- Arrows for ACIDIC / ALKALINE -->\n  <line x1="20" y1="30" x2="125" y2="30" stroke="#fb7185" stroke-width="1" marker-end="url(#arr)"/>\n  <line x1="260" y1="30" x2="155" y2="30" stroke="#38bdf8" stroke-width="1"/>\n  <!-- Indicator summary -->\n  <text x="10" y="130" font-size="8" fill="#fbbf24" font-family="sans-serif" font-weight="bold">Litmus:</text>\n  <text x="55" y="130" font-size="8" fill="#fb7185" font-family="sans-serif">red (acid)</text>\n  <text x="115" y="130" font-size="8" fill="#b7bce0" font-family="sans-serif">purple (neutral)</text>\n  <text x="210" y="130" font-size="8" fill="#38bdf8" font-family="sans-serif">blue (alkali)</text>\n  <text x="10" y="148" font-size="8" fill="#fbbf24" font-family="sans-serif" font-weight="bold">Methyl orange:</text>\n  <text x="90" y="148" font-size="8" fill="#fb7185" font-family="sans-serif">red (pH &lt;3)</text>\n  <text x="150" y="148" font-size="8" fill="#fbbf24" font-family="sans-serif">orange(~4)</text>\n  <text x="210" y="148" font-size="8" fill="#fbbf24" font-family="sans-serif">yellow (&gt;4.4)</text>\n  <text x="10" y="166" font-size="8" fill="#fbbf24" font-family="sans-serif" font-weight="bold">Thymolphthalein:</text>\n  <text x="103" y="166" font-size="8" fill="#b7bce0" font-family="sans-serif">colourless (&lt;9)</text>\n  <text x="200" y="166" font-size="8" fill="#38bdf8" font-family="sans-serif">blue (&gt;10)</text>\n  <text x="10" y="184" font-size="8" fill="#fbbf24" font-family="sans-serif" font-weight="bold">UI:</text>\n  <text x="30" y="184" font-size="8" fill="#fb7185" font-family="sans-serif">red-orange(1-3)</text>\n  <text x="115" y="184" font-size="8" fill="#34d399" font-family="sans-serif">green(7)</text>\n  <text x="165" y="184" font-size="8" fill="#38bdf8" font-family="sans-serif">blue(8-10)</text>\n  <text x="230" y="184" font-size="8" fill="#a78bfa" font-family="sans-serif">purple(11-14)</text>\n</svg>',
+          svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="pH scale showing colours from pH 0 to 14 with example substances">\n  <!-- Background -->\n  <rect width="320" height="200" fill="#0f172a" rx="8"/>\n  <!-- Scale bar segments -->\n  <!-- pH 0-1 deep red -->\n  <rect x="10" y="40" width="20" height="28" fill="#b91c1c" rx="2"/>\n  <!-- pH 2 red -->\n  <rect x="30" y="40" width="20" height="28" fill="#dc2626" rx="2"/>\n  <!-- pH 3 orange-red -->\n  <rect x="50" y="40" width="20" height="28" fill="#ea580c" rx="2"/>\n  <!-- pH 4 orange -->\n  <rect x="70" y="40" width="20" height="28" fill="#f97316" rx="2"/>\n  <!-- pH 5 yellow-orange -->\n  <rect x="90" y="40" width="20" height="28" fill="#eab308" rx="2"/>\n  <!-- pH 6 yellow -->\n  <rect x="110" y="40" width="20" height="28" fill="#facc15" rx="2"/>\n  <!-- pH 7 green -->\n  <rect x="130" y="40" width="20" height="28" fill="#22c55e" rx="2"/>\n  <!-- pH 8 blue-green -->\n  <rect x="150" y="40" width="20" height="28" fill="#10b981" rx="2"/>\n  <!-- pH 9 teal -->\n  <rect x="170" y="40" width="20" height="28" fill="#0ea5e9" rx="2"/>\n  <!-- pH 10 blue -->\n  <rect x="190" y="40" width="20" height="28" fill="#3b82f6" rx="2"/>\n  <!-- pH 11 blue -->\n  <rect x="210" y="40" width="20" height="28" fill="#6366f1" rx="2"/>\n  <!-- pH 12 indigo -->\n  <rect x="230" y="40" width="20" height="28" fill="#7c3aed" rx="2"/>\n  <!-- pH 13 violet -->\n  <rect x="250" y="40" width="20" height="28" fill="#9333ea" rx="2"/>\n  <!-- pH 14 deep violet -->\n  <rect x="270" y="40" width="20" height="28" fill="#6b21a8" rx="2"/>\n  <!-- pH numbers -->\n  <text x="20" y="85" font-size="7" fill="#b7bce0" text-anchor="middle" font-family="sans-serif">0</text>\n  <text x="40" y="85" font-size="7" fill="#b7bce0" text-anchor="middle" font-family="sans-serif">2</text>\n  <text x="60" y="85" font-size="7" fill="#b7bce0" text-anchor="middle" font-family="sans-serif">3</text>\n  <text x="80" y="85" font-size="7" fill="#b7bce0" text-anchor="middle" font-family="sans-serif">4</text>\n  <text x="100" y="85" font-size="7" fill="#b7bce0" text-anchor="middle" font-family="sans-serif">5</text>\n  <text x="120" y="85" font-size="7" fill="#b7bce0" text-anchor="middle" font-family="sans-serif">6</text>\n  <text x="140" y="85" font-size="7" fill="#b7bce0" text-anchor="middle" font-family="sans-serif">7</text>\n  <text x="160" y="85" font-size="7" fill="#b7bce0" text-anchor="middle" font-family="sans-serif">8</text>\n  <text x="180" y="85" font-size="7" fill="#b7bce0" text-anchor="middle" font-family="sans-serif">9</text>\n  <text x="200" y="85" font-size="7" fill="#b7bce0" text-anchor="middle" font-family="sans-serif">10</text>\n  <text x="220" y="85" font-size="7" fill="#b7bce0" text-anchor="middle" font-family="sans-serif">11</text>\n  <text x="240" y="85" font-size="7" fill="#b7bce0" text-anchor="middle" font-family="sans-serif">12</text>\n  <text x="260" y="85" font-size="7" fill="#b7bce0" text-anchor="middle" font-family="sans-serif">13</text>\n  <text x="280" y="85" font-size="7" fill="#b7bce0" text-anchor="middle" font-family="sans-serif">14</text>\n  <!-- Zone labels -->\n  <text x="70" y="25" font-size="9" fill="#fb7185" text-anchor="middle" font-family="sans-serif" font-weight="bold">ACIDIC</text>\n  <text x="140" y="25" font-size="9" fill="#34d399" text-anchor="middle" font-family="sans-serif" font-weight="bold">NEUTRAL</text>\n  <text x="220" y="25" font-size="9" fill="#38bdf8" text-anchor="middle" font-family="sans-serif" font-weight="bold">ALKALINE</text>\n  <!-- Example substances -->\n  <text x="20" y="105" font-size="7.5" fill="#eef0ff" text-anchor="middle" font-family="sans-serif">HCl</text>\n  <text x="80" y="105" font-size="7.5" fill="#eef0ff" text-anchor="middle" font-family="sans-serif">lemon</text>\n  <text x="120" y="105" font-size="7.5" fill="#eef0ff" text-anchor="middle" font-family="sans-serif">rain</text>\n  <text x="140" y="105" font-size="7.5" fill="#eef0ff" text-anchor="middle" font-family="sans-serif">water</text>\n  <text x="165" y="105" font-size="7.5" fill="#eef0ff" text-anchor="middle" font-family="sans-serif">blood</text>\n  <text x="215" y="105" font-size="7.5" fill="#eef0ff" text-anchor="middle" font-family="sans-serif">NH3(aq)</text>\n  <text x="265" y="105" font-size="7.5" fill="#eef0ff" text-anchor="middle" font-family="sans-serif">NaOH</text>\n  <!-- Arrows for ACIDIC / ALKALINE -->\n  <line x1="20" y1="30" x2="125" y2="30" stroke="#fb7185" stroke-width="1" marker-end="url(#arr)"/>\n  <line x1="260" y1="30" x2="155" y2="30" stroke="#38bdf8" stroke-width="1"/>\n  <!-- Indicator summary -->\n  <text x="10" y="130" font-size="8" fill="#fbbf24" font-family="sans-serif" font-weight="bold">Litmus:</text>\n  <text x="55" y="130" font-size="8" fill="#fb7185" font-family="sans-serif">red (acid)</text>\n  <text x="115" y="130" font-size="8" fill="#b7bce0" font-family="sans-serif">purple (neutral)</text>\n  <text x="210" y="130" font-size="8" fill="#38bdf8" font-family="sans-serif">blue (alkali)</text>\n  <text x="10" y="148" font-size="8" fill="#fbbf24" font-family="sans-serif" font-weight="bold">Methyl orange:</text>\n  <text x="90" y="148" font-size="8" fill="#fb7185" font-family="sans-serif">red (pH &lt;3)</text>\n  <text x="150" y="148" font-size="8" fill="#fbbf24" font-family="sans-serif">orange(~4)</text>\n  <text x="210" y="148" font-size="8" fill="#fbbf24" font-family="sans-serif">yellow (&gt;4.4)</text>\n  <text x="10" y="166" font-size="8" fill="#fbbf24" font-family="sans-serif" font-weight="bold">Phenolphthalein:</text>\n  <text x="100" y="166" font-size="8" fill="#b7bce0" font-family="sans-serif">colourless (acid)</text>\n  <text x="200" y="166" font-size="8" fill="#f472b6" font-family="sans-serif">pink (alkali)</text>\n  <text x="10" y="184" font-size="8" fill="#fbbf24" font-family="sans-serif" font-weight="bold">UI:</text>\n  <text x="30" y="184" font-size="8" fill="#fb7185" font-family="sans-serif">red-orange(1-3)</text>\n  <text x="115" y="184" font-size="8" fill="#34d399" font-family="sans-serif">green(7)</text>\n  <text x="165" y="184" font-size="8" fill="#38bdf8" font-family="sans-serif">blue(8-10)</text>\n  <text x="230" y="184" font-size="8" fill="#a78bfa" font-family="sans-serif">purple(11-14)</text>\n</svg>',
         },
       ],
 
@@ -68,7 +73,8 @@ export const chemAcidsBases: Topic = {
         "Each pH unit = tenfold change in H⁺ concentration (logarithmic scale).",
         "Litmus: red in acid, blue in alkali — good for acid/alkali identification only.",
         "Universal indicator gives a spectrum of colours allowing pH estimation.",
-        "Methyl orange and thymolphthalein are sharp-endpoint indicators used in titrations.",
+        "Phenolphthalein: colourless in acid/neutral, pink in alkali — the key titration indicator.",
+        "Methyl orange (red→yellow) and phenolphthalein (colourless→pink) give sharp endpoints for titrations.",
       ],
 
       thinkDeeper:
@@ -116,7 +122,7 @@ export const chemAcidsBases: Topic = {
     {
       heading: "Reactions of Acids",
       body:
-        "Acids react in predictable patterns. You must know these four reaction types with word equations and balanced symbol equations.\n\n" +
+        "Acids react in predictable patterns. You must know these reaction types with word equations and balanced symbol equations.\n\n" +
         "**1. Acid + Metal → Salt + Hydrogen**\n" +
         "Reactive metals (above copper in the reactivity series) displace hydrogen from acids.\n" +
         "Zn(s) + H₂SO₄(aq) → ZnSO₄(aq) + H₂(g)\n" +
@@ -130,7 +136,12 @@ export const chemAcidsBases: Topic = {
         "Na₂CO₃(s) + 2HCl(aq) → 2NaCl(aq) + H₂O(l) + CO₂(g)\n" +
         "CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g)\n" +
         "Test for CO₂: bubble gas through limewater (Ca(OH)₂(aq)) — turns milky/cloudy.\n\n" +
-        "**Naming salts**: the salt name = metal name (from base/metal/carbonate) + acid anion.\n" +
+        "**4. Acid + Ammonia → Ammonium Salt**\n" +
+        "Ammonia is a base; it neutralises acids to form an ammonium salt (and no other product — ammonia supplies its own NH₄⁺). These reactions are important industrially for making nitrogen fertilisers.\n" +
+        "NH₃(aq) + HCl(aq) → NH₄Cl(aq)\n" +
+        "2NH₃(aq) + H₂SO₄(aq) → (NH₄)₂SO₄(aq)  [ammonium sulfate fertiliser]\n" +
+        "NH₃(aq) + HNO₃(aq) → NH₄NO₃(aq)  [ammonium nitrate fertiliser]\n\n" +
+        "**Naming salts**: the salt name = metal (or ammonium) name (from base/metal/carbonate/ammonia) + acid anion.\n" +
         "- HCl → chloride\n" +
         "- H₂SO₄ → sulfate\n" +
         "- HNO₃ → nitrate\n" +
@@ -140,7 +151,8 @@ export const chemAcidsBases: Topic = {
         "Acid + metal → salt + hydrogen (only reactive metals; test with lit splint — squeaky pop).",
         "Acid + base/alkali → salt + water; ionic equation: H⁺ + OH⁻ → H₂O.",
         "Acid + carbonate → salt + water + CO₂ (test CO₂ with limewater — turns milky).",
-        "Salt name = metal/base cation + acid anion (chloride, sulfate, nitrate, phosphate).",
+        "Acid + ammonia → ammonium salt only (e.g. NH₃ + HNO₃ → NH₄NO₃, a fertiliser).",
+        "Salt name = metal/ammonium cation + acid anion (chloride, sulfate, nitrate, phosphate).",
         "Balance equations by ensuring atom counts match on both sides; check charge balance in ionic equations.",
       ],
 
@@ -234,6 +246,43 @@ export const chemAcidsBases: Topic = {
 
       strategies: ["Match salt preparation method to solubility of salt AND solubility of base", "Precipitation = two soluble solutions → one insoluble product"],
     },
+
+    // ── Section 7 ──────────────────────────────────────
+    {
+      heading: "Water of Crystallisation: Hydrated and Anhydrous Salts",
+      body:
+        "Many salts crystallise with a fixed number of water molecules locked into their crystal structure. This is called the **water of crystallisation**, and a salt containing it is described as **hydrated**. A salt with no water of crystallisation is **anhydrous**.\n\n" +
+        "The water is written after a raised dot in the formula. For example:\n" +
+        "- Hydrated copper(II) sulfate: CuSO₄·5H₂O (blue crystals).\n" +
+        "- Hydrated sodium carbonate (washing soda): Na₂CO₃·10H₂O.\n" +
+        "- Hydrated magnesium sulfate (Epsom salts): MgSO₄·7H₂O.\n\n" +
+        "**Heating drives the water off** (a reversible change). Heating blue hydrated copper(II) sulfate produces white anhydrous copper(II) sulfate and steam:\n" +
+        "CuSO₄·5H₂O(s) ⇌ CuSO₄(s) + 5H₂O(l)\n" +
+        "(blue, hydrated) ⇌ (white, anhydrous) + water\n\n" +
+        "Adding water back to the white anhydrous solid turns it blue again and releases heat — this colour change (white → blue) is the **chemical test for water**. (Anhydrous cobalt(II) chloride, which goes blue → pink with water, is the other water test.)\n\n" +
+        "This is why, when preparing hydrated salt crystals, you must **not** evaporate the solution to complete dryness or heat the crystals too strongly: doing so removes the water of crystallisation and you lose the proper crystal form. Crystals are dried gently between filter papers or in a warm (low-temperature) oven.\n\n" +
+        "The formula of a hydrated salt can be found by experiment: weigh the hydrated salt, heat it strongly to constant mass to drive off all the water, then weigh the anhydrous salt. The mass loss is the mass of water, and from the moles of water and moles of anhydrous salt you find the ratio (the value of x in salt·xH₂O).",
+
+      keyPoints: [
+        "Water of crystallisation = fixed water molecules built into a crystal; such salts are hydrated.",
+        "Anhydrous = no water of crystallisation; written without the ·xH₂O part.",
+        "CuSO₄·5H₂O is blue; anhydrous CuSO₄ is white — heating drives water off (reversible).",
+        "White anhydrous CuSO₄ turning blue is the chemical test for water (cobalt chloride: blue→pink).",
+        "When crystallising hydrated salts, do not evaporate to dryness or you remove the water of crystallisation.",
+      ],
+
+      discovery: {
+        problem:
+          "A student heats 2.50 g of blue hydrated copper(II) sulfate crystals strongly until the solid turns completely white, and is left with 1.60 g. The white solid weighs less — but no copper or sulfate has been lost. Where did the missing 0.90 g go, and what does this tell you about the original crystals?",
+        idea:
+          "The missing 0.90 g escaped as water vapour — it was the water of crystallisation held inside the crystal lattice. The blue crystals were hydrated (CuSO₄·5H₂O); driving off the water leaves white anhydrous CuSO₄. Working with moles: 0.90 g water ÷ 18 = 0.050 mol H₂O, and 1.60 g CuSO₄ ÷ 160 = 0.010 mol CuSO₄, a ratio of 5:1 — confirming the formula CuSO₄·5H₂O.",
+      },
+
+      thinkDeeper:
+        "Why is anhydrous copper(II) sulfate white but the hydrate blue? The colour of transition-metal compounds depends on how ligands (here, the surrounding water molecules) split the energy of the copper ion's d-orbitals. Remove the water and the d-orbital splitting that absorbs orange light disappears, so the solid no longer looks blue. Re-add water and the blue returns — colour is a direct visual signal of the bonding environment around the metal ion.",
+
+      strategies: ["Mass lost on heating = mass of water of crystallisation", "Use moles to find the ratio x in salt·xH₂O"],
+    },
   ],
 
   // ─────────────────────── LEARN SMART ───────────────────────
@@ -249,6 +298,9 @@ export const chemAcidsBases: Topic = {
       "Insoluble salts are made by precipitation (mixing two solutions containing the required ions).",
       "Solubility: all nitrates soluble; most carbonates and hydroxides insoluble (except Na⁺, K⁺, NH₄⁺ salts).",
       "Cl₂ gas bleaches damp blue litmus; NH₃ turns damp red litmus blue.",
+      "Phenolphthalein: colourless in acid/neutral, pink in alkali. Methyl orange: red→orange→yellow (acid→alkali).",
+      "Acid + ammonia → ammonium salt only (e.g. NH₃ + HNO₃ → NH₄NO₃), used to make fertilisers.",
+      "Water of crystallisation: CuSO₄·5H₂O is blue (hydrated); anhydrous CuSO₄ is white. White→blue tests for water.",
     ],
 
     flashcards: [
@@ -263,7 +315,10 @@ export const chemAcidsBases: Topic = {
       { front: "Which salts are always soluble?", back: "All nitrates; all sodium, potassium, and ammonium salts." },
       { front: "What is the test for CO₂?", back: "Bubble the gas through limewater (Ca(OH)₂(aq)); turns milky/cloudy if CO₂ is present." },
       { front: "Why must indicator be omitted in the second titration run?", back: "To avoid contaminating the pure salt product with coloured indicator dye." },
-      { front: "What colour does thymolphthalein turn in an alkali?", back: "Blue (colourless in acid, blue above pH 9.3)." },
+      { front: "What colour is phenolphthalein in acid and in alkali?", back: "Colourless in acid (and at neutral), pink/magenta in alkali. It is the standard titration indicator." },
+      { front: "What is formed when an acid reacts with ammonia?", back: "An ammonium salt only (no water or gas). E.g. NH₃ + HNO₃ → NH₄NO₃; 2NH₃ + H₂SO₄ → (NH₄)₂SO₄ — both fertilisers." },
+      { front: "What is water of crystallisation?", back: "Water molecules built into a salt's crystal structure. A salt with it is hydrated (e.g. CuSO₄·5H₂O, blue); without it is anhydrous (CuSO₄, white)." },
+      { front: "What is the chemical test for water using copper(II) sulfate?", back: "Add the liquid to white anhydrous CuSO₄: it turns blue if water is present (the reaction is exothermic)." },
     ],
 
     keyTerms: [
@@ -279,6 +334,9 @@ export const chemAcidsBases: Topic = {
       { term: "Universal indicator", definition: "A mixture of indicators that gives a continuous colour change across the pH range, allowing estimation of pH." },
       { term: "pH scale", definition: "A scale from 0 to 14 measuring acidity/alkalinity; pH = −log₁₀[H⁺]; each unit represents a tenfold change in H⁺ concentration." },
       { term: "Titration", definition: "A quantitative technique for finding the volume of one solution that exactly reacts with a known volume of another; used to prepare salts from soluble acids and alkalis." },
+      { term: "Indicator", definition: "A substance that changes colour according to pH. Litmus (red/blue), methyl orange (red/yellow), and phenolphthalein (colourless/pink) show acid vs alkali; universal indicator shows a spectrum." },
+      { term: "Water of crystallisation", definition: "A fixed number of water molecules chemically built into the crystal lattice of a salt; a salt containing it is hydrated (e.g. CuSO₄·5H₂O), and one without it is anhydrous." },
+      { term: "Hydrated / Anhydrous", definition: "Hydrated means containing water of crystallisation (CuSO₄·5H₂O, blue); anhydrous means none is present (CuSO₄, white). Heating removes the water; adding water reverses it." },
     ],
   },
 
