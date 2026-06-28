@@ -143,7 +143,21 @@ where p is in Pa and V is in m³ (or any consistent unit pair such as kPa and cm
 
 p₁V₁ = p₂V₂
 (2.0 × 10⁵)(0.30) = p₂ × 0.10
-p₂ = 6.0 × 10⁴ / 0.10 = **6.0 × 10⁵ Pa**`,
+p₂ = 6.0 × 10⁴ / 0.10 = **6.0 × 10⁵ Pa**
+
+**Pressure and temperature (constant volume — Edexcel):** For a fixed mass of gas in a rigid container, the pressure is directly proportional to the *kelvin* (absolute) temperature. Doubling the kelvin temperature doubles the pressure:
+
+> **p₁ / T₁ = p₂ / T₂**, with T always in **kelvin**
+
+You **must** convert to kelvin first (K = °C + 273); the relationship does not work in °C because Celsius has an arbitrary zero. This follows from the kinetic model: raising the temperature raises the average kinetic energy and hence the average speed of the molecules, so they strike the walls both more often and harder, and the pressure rises in proportion to the absolute temperature.
+
+**Absolute zero (−273 °C, 0 K)** is the temperature at which the particles have the minimum possible kinetic energy — molecular motion is at a minimum and the gas would exert zero pressure. It is the lowest temperature theoretically possible and is the zero of the kelvin scale.
+
+**Worked example (pressure–temperature):** A sealed rigid can of gas is at a pressure of 1.0 × 10⁵ Pa at 27 °C. It is heated to 327 °C. Find the new pressure.
+
+Convert: T₁ = 27 + 273 = 300 K; T₂ = 327 + 273 = 600 K
+p₁ / T₁ = p₂ / T₂
+p₂ = p₁ × T₂ / T₁ = (1.0 × 10⁵) × 600 / 300 = **2.0 × 10⁵ Pa**`,
       diagrams: [
         {
           caption: "Boyle's Law: p–V graph shows inverse relationship at constant temperature",
@@ -176,10 +190,80 @@ p₂ = 6.0 × 10⁴ / 0.10 = **6.0 × 10⁵ Pa**`,
         "Pressure increases if temperature rises (at constant volume) — faster, more frequent collisions.",
         "Pressure increases if volume decreases (at constant temperature) — more collisions per unit time.",
         "Boyle's Law: pV = constant at constant temperature for a fixed mass of gas.",
-        "Apply Boyle's Law as p₁V₁ = p₂V₂; check units are consistent."
+        "Apply Boyle's Law as p₁V₁ = p₂V₂; check units are consistent.",
+        "At constant volume, pressure is proportional to kelvin temperature: p₁/T₁ = p₂/T₂.",
+        "Always convert temperatures to kelvin (K = °C + 273) for pressure–temperature calculations.",
+        "Absolute zero = −273 °C = 0 K: minimum particle kinetic energy, zero gas pressure."
       ],
       whyItWorks: "For an ideal gas at constant temperature, the average kinetic energy of each molecule is fixed. Halving the volume halves the mean free path between wall collisions, so each molecule hits the walls twice as often. With twice the collision rate, pressure doubles — hence p is inversely proportional to V.",
       strategies: ["identify what is constant", "set up ratio equation", "unit check before substituting"]
+    },
+
+    {
+      heading: "Temperature, Thermometers and Thermometric Properties",
+      body: `To measure temperature we need a physical property that changes **steadily and reproducibly** with temperature. Such a property is called a **thermometric property**. Common examples are:
+
+- the **volume of a liquid** (mercury or coloured alcohol in a glass thermometer);
+- the **resistance of a wire** or a **thermistor** (used in digital and electronic thermometers);
+- the **e.m.f. of a thermocouple** (two different metals joined — produces a voltage that depends on the temperature of the junction; ideal for very high temperatures such as furnaces);
+- the **pressure or volume of a fixed mass of gas** (gas thermometer).
+
+**Calibration using fixed points.** A thermometer is given a scale by marking two reproducible temperatures called **fixed points**:
+- the **lower fixed point** (ice point) — the temperature of pure melting ice, defined as **0 °C**;
+- the **upper fixed point** (steam point) — the temperature of steam above water boiling at standard atmospheric pressure, defined as **100 °C**.
+
+The interval between them is divided into 100 equal degrees to give the Celsius scale. To find an unknown temperature, you compare the thermometric property at that temperature with its values at the two fixed points.
+
+**Choosing a thermometer.** Liquid-in-glass thermometers differ in their:
+- **Range** — the span from lowest to highest temperature they can read (alcohol works to about −115 °C; mercury reads up to about 350 °C);
+- **Sensitivity** — how large a change in the property (e.g. how far the liquid moves) occurs per degree. A narrower bore or a larger bulb gives greater sensitivity;
+- **Linearity** — how evenly the property changes with temperature, so equal degrees correspond to equal spacings on the scale;
+- **Responsiveness** — how quickly it reaches the temperature being measured.
+
+A **thermistor** has a resistance that falls sharply as temperature rises, making it very sensitive over a useful range and easy to connect to electronic circuits and data loggers.`,
+      diagrams: [
+        {
+          caption: "A liquid-in-glass thermometer calibrated between the two fixed points",
+          svg: `<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Liquid-in-glass thermometer showing the ice point at zero degrees and steam point at one hundred degrees Celsius">
+  <rect width="320" height="200" fill="#0f172a"/>
+  <text x="160" y="16" text-anchor="middle" fill="#eef0ff" font-size="12" font-family="sans-serif" font-weight="bold">Calibrating a thermometer</text>
+  <!-- thermometer stem -->
+  <rect x="150" y="28" width="20" height="130" rx="6" fill="#1e293b" stroke="#b7bce0" stroke-width="1.5"/>
+  <!-- bulb -->
+  <circle cx="160" cy="168" r="16" fill="#fb7185" stroke="#b7bce0" stroke-width="1.5"/>
+  <!-- liquid column -->
+  <rect x="156" y="90" width="8" height="78" fill="#fb7185"/>
+  <!-- steam point mark -->
+  <line x1="130" y1="40" x2="150" y2="40" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="124" y="44" text-anchor="end" fill="#38bdf8" font-size="10" font-family="sans-serif">100 C</text>
+  <text x="175" y="44" fill="#b7bce0" font-size="8" font-family="sans-serif">steam point (upper)</text>
+  <!-- ice point mark -->
+  <line x1="130" y1="146" x2="150" y2="146" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="124" y="150" text-anchor="end" fill="#38bdf8" font-size="10" font-family="sans-serif">0 C</text>
+  <text x="175" y="150" fill="#b7bce0" font-size="8" font-family="sans-serif">ice point (lower)</text>
+  <!-- equal divisions -->
+  <line x1="138" y1="67" x2="150" y2="67" stroke="#b7bce0" stroke-width="0.8"/>
+  <line x1="138" y1="93" x2="150" y2="93" stroke="#b7bce0" stroke-width="0.8"/>
+  <line x1="138" y1="120" x2="150" y2="120" stroke="#b7bce0" stroke-width="0.8"/>
+  <text x="250" y="100" text-anchor="middle" fill="#fbbf24" font-size="9" font-family="sans-serif">100 equal</text>
+  <text x="250" y="113" text-anchor="middle" fill="#fbbf24" font-size="9" font-family="sans-serif">divisions</text>
+</svg>`
+        }
+      ],
+      keyPoints: [
+        "A thermometric property is a physical property that varies steadily with temperature.",
+        "Examples: volume of a liquid, resistance of a thermistor, e.m.f. of a thermocouple, gas pressure.",
+        "Lower fixed point (ice point) = 0 °C; upper fixed point (steam point) = 100 °C.",
+        "Calibration marks the two fixed points and divides the interval into equal degrees.",
+        "Thermometers are compared by range, sensitivity, linearity and responsiveness.",
+        "Thermocouples suit very high temperatures; thermistors suit sensitive electronic measurement."
+      ],
+      discovery: {
+        problem: "You are given an unmarked capillary tube of alcohol that rises with temperature, but no scale. Using only melting ice and boiling water, how could you turn it into a working Celsius thermometer?",
+        idea: "Mark the liquid level in pure melting ice as 0 °C (lower fixed point) and the level in steam above boiling water as 100 °C (upper fixed point). Divide the distance between the two marks into 100 equal parts. Any other temperature is then read off by comparing the liquid level against this calibrated scale."
+      },
+      whyItWorks: "A property is only useful for a thermometer if it changes in a single-valued, repeatable way with temperature. If the change were not reproducible, the same reading could correspond to different temperatures; if it were not reasonably linear, the scale divisions would be uneven and harder to read accurately.",
+      strategies: ["identify the thermometric property", "use two fixed points to set a scale", "match thermometer choice to the measurement need"]
     },
 
     {
@@ -192,28 +276,86 @@ where E = energy transferred (J), m = mass (kg), c = specific heat capacity (J k
 
 Water has a very high specific heat capacity (4200 J kg⁻¹ K⁻¹), which is why it is used as a coolant in car engines and why coastal climates are mild.
 
+**Measuring the specific heat capacity of a metal block (experiment).** Take a metal block of known mass m with two holes drilled in it — one for an electric **immersion heater**, one for a thermometer. Insulate the block (e.g. wrap in cloth) to reduce energy loss. Record the start temperature, switch on the heater for a measured time t, and read the highest temperature reached (ΔT). The electrical energy supplied is E = power × time = P × t (or E = VIt from the voltmeter and ammeter readings). Then:
+
+> **c = E / (mΔT) = Pt / (mΔT)**
+
+The result is slightly too high because some thermal energy is lost to the surroundings, meaning the real ΔT for the energy supplied would be larger; good insulation reduces this error.
+
 **Changes of state** occur at constant temperature because the energy supplied changes the potential energy of the particles (breaks or forms intermolecular bonds) rather than their kinetic energy:
 
 - **Melting**: solid → liquid at the melting point. Energy breaks the regular lattice bonds.
 - **Boiling**: liquid → gas at the boiling point. Energy overcomes all intermolecular attractions to separate particles fully.
 - **Evaporation** differs from boiling: it occurs at **any temperature** at the surface of a liquid when some molecules have enough kinetic energy to escape. The fastest molecules escape first, lowering the average kinetic energy of those remaining — the liquid **cools**.
 
+**Factors that increase the rate of evaporation:**
+- a **higher temperature** (more molecules have enough energy to escape);
+- a **larger surface area** (more molecules are at the surface);
+- a **draught / moving air** over the surface (carries escaping molecules away so fewer return);
+- a **lower humidity** (drier air can take up more vapour);
+- a more **volatile liquid** (weaker intermolecular forces, lower boiling point).
+
 **Specific latent heat (L)** is the energy required to change the state of 1 kg of a substance without changing its temperature.
 
 > **E = mL**
 
-- Specific latent heat of **fusion** (L_f): solid ↔ liquid
-- Specific latent heat of **vaporisation** (L_v): liquid ↔ gas
+- Specific latent heat of **fusion** (L_f): solid ↔ liquid (melting/freezing)
+- Specific latent heat of **vaporisation** (L_v): liquid ↔ gas (boiling/condensing)
 
-**Worked example:** How much energy is needed to melt 0.50 kg of ice? (L_f of water = 3.34 × 10⁵ J/kg)
+For water, L_f ≈ 3.34 × 10⁵ J/kg and L_v ≈ 2.26 × 10⁶ J/kg — vaporisation needs far more energy because every bond between molecules must be broken to separate them completely.
 
-E = mL = 0.50 × 3.34 × 10⁵ = **1.67 × 10⁵ J**`,
+**Measuring latent heat (experiment).** To find the specific latent heat of vaporisation, supply known electrical energy with an immersion heater to boiling water and measure the mass m of water boiled away (e.g. on a balance) in time t; then L_v = Pt / m. For the latent heat of fusion, use a heater to melt ice and measure the mass melted, comparing with a control to allow for melting caused by the room.
+
+**Worked example (fusion):** How much energy is needed to melt 0.50 kg of ice at 0 °C? (L_f of water = 3.34 × 10⁵ J/kg)
+
+E = mL = 0.50 × 3.34 × 10⁵ = **1.67 × 10⁵ J**
+
+**Worked example (combined):** How much energy turns 0.20 kg of ice at 0 °C into water at 20 °C? (L_f = 3.34 × 10⁵ J/kg, c_water = 4200 J kg⁻¹ K⁻¹)
+
+Step 1 — melt the ice: E₁ = mL = 0.20 × 3.34 × 10⁵ = 6.68 × 10⁴ J
+Step 2 — warm the water: E₂ = mcΔT = 0.20 × 4200 × 20 = 1.68 × 10⁴ J
+Total E = E₁ + E₂ = **8.36 × 10⁴ J**
+
+**Heating and cooling curves.** If you heat a solid steadily and plot temperature against time, the graph has **sloping** parts (where temperature rises and E = mcΔT applies) separated by **flat plateaus** (where temperature stays constant during melting and boiling). On a plateau the energy supplied is doing latent-heat work (E = mL) — breaking bonds, not raising temperature. A cooling curve is the mirror image: plateaus appear where the substance condenses and freezes, releasing latent heat.`,
+      diagrams: [
+        {
+          caption: "Heating curve: plateaus at the melting and boiling points show latent heat",
+          svg: `<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Heating curve of temperature against time, with flat plateaus at the melting point and the boiling point where latent heat is absorbed">
+  <rect width="320" height="200" fill="#0f172a"/>
+  <text x="160" y="14" text-anchor="middle" fill="#eef0ff" font-size="12" font-family="sans-serif" font-weight="bold">Heating curve of a pure substance</text>
+  <!-- Axes -->
+  <line x1="42" y1="24" x2="42" y2="170" stroke="#b7bce0" stroke-width="1.5"/>
+  <line x1="42" y1="170" x2="306" y2="170" stroke="#b7bce0" stroke-width="1.5"/>
+  <text x="20" y="100" fill="#b7bce0" font-size="10" font-family="sans-serif" transform="rotate(-90 20 100)">Temperature</text>
+  <text x="174" y="192" text-anchor="middle" fill="#b7bce0" font-size="10" font-family="sans-serif">Time (energy supplied at constant rate)</text>
+  <!-- Curve: solid warming, melt plateau, liquid warming, boil plateau, gas warming -->
+  <polyline points="42,150 80,120 140,120 190,72 250,72 300,40" fill="none" stroke="#fbbf24" stroke-width="2.5"/>
+  <!-- plateau dashed guide lines -->
+  <line x1="42" y1="120" x2="80" y2="120" stroke="#34d399" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="42" y1="72" x2="190" y2="72" stroke="#fb7185" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="38" y="123" text-anchor="end" fill="#34d399" font-size="8" font-family="sans-serif">m.p.</text>
+  <text x="38" y="75" text-anchor="end" fill="#fb7185" font-size="8" font-family="sans-serif">b.p.</text>
+  <!-- region labels -->
+  <text x="60" y="165" text-anchor="middle" fill="#b7bce0" font-size="7" font-family="sans-serif">solid</text>
+  <text x="110" y="113" text-anchor="middle" fill="#34d399" font-size="7" font-family="sans-serif">melting</text>
+  <text x="165" y="100" text-anchor="middle" fill="#b7bce0" font-size="7" font-family="sans-serif">liquid</text>
+  <text x="220" y="65" text-anchor="middle" fill="#fb7185" font-size="7" font-family="sans-serif">boiling</text>
+  <text x="285" y="33" text-anchor="middle" fill="#b7bce0" font-size="7" font-family="sans-serif">gas</text>
+  <!-- plateau annotation -->
+  <text x="110" y="135" text-anchor="middle" fill="#34d399" font-size="7" font-family="sans-serif">E = mL (latent heat)</text>
+  <text x="160" y="62" text-anchor="middle" fill="#fb7185" font-size="7" font-family="sans-serif">flat: E = mL</text>
+</svg>`
+        }
+      ],
       keyPoints: [
         "E = mcΔT; specific heat capacity c has units J kg⁻¹ K⁻¹.",
+        "Measure c with an insulated block, immersion heater and thermometer: c = Pt / (mΔT).",
         "During a change of state, temperature is constant — energy changes potential energy, not kinetic energy.",
+        "Heating/cooling curves are flat (plateau) during melting and boiling — that flat part is latent heat.",
         "Melting: solid → liquid; boiling: liquid → gas (at the boiling point only).",
         "Evaporation occurs at any temperature at the liquid surface; it causes cooling.",
-        "E = mL for latent heat; distinguish fusion (melting) from vaporisation (boiling)."
+        "Evaporation is faster with higher temperature, larger surface area, draught and low humidity.",
+        "E = mL for latent heat; L_v of water (2.26 × 10⁶ J/kg) is far larger than L_f (3.34 × 10⁵ J/kg)."
       ],
       discovery: {
         problem: "You heat 1 kg of water and 1 kg of sand side by side under identical lamps. After 10 minutes the sand is scalding but the water is barely warm. Both received the same energy. How can that be?",
@@ -397,11 +539,15 @@ All objects emit thermal radiation. The rate of emission depends on:
       "Brownian motion is direct experimental evidence for the kinetic particle model.",
       "Temperature measures average kinetic energy of particles; internal energy is the total KE + PE of all particles.",
       "Boyle's Law: pV = constant for a fixed mass of gas at constant temperature (p₁V₁ = p₂V₂).",
-      "Specific heat capacity c is energy per kg per degree: E = mcΔT.",
+      "At constant volume, gas pressure is proportional to kelvin temperature: p₁/T₁ = p₂/T₂.",
+      "Absolute zero is −273 °C = 0 K: the lowest possible temperature, where particle KE and gas pressure are minimal.",
+      "A thermometric property (e.g. liquid volume, thermistor resistance, thermocouple e.m.f.) varies steadily with temperature.",
+      "Thermometers are calibrated using two fixed points: ice point (0 °C) and steam point (100 °C).",
+      "Specific heat capacity c is energy per kg per degree: E = mcΔT; measure it with c = Pt / (mΔT).",
       "Water has a high specific heat capacity: c = 4200 J kg⁻¹ K⁻¹.",
-      "During melting and boiling, temperature stays constant — energy goes to increasing potential energy.",
-      "Specific latent heat: E = mL; latent heat of fusion for water is 3.34 × 10⁵ J/kg.",
-      "Evaporation occurs at any temperature at the liquid surface and causes cooling.",
+      "During melting and boiling, temperature stays constant — energy goes to increasing potential energy (flat plateaus on a heating curve).",
+      "Specific latent heat: E = mL; L_f of water is 3.34 × 10⁵ J/kg and L_v is 2.26 × 10⁶ J/kg.",
+      "Evaporation occurs at any temperature at the liquid surface and causes cooling; it is faster with higher temperature, larger surface area, draught and low humidity.",
       "Metals conduct heat well because free electrons carry energy rapidly through the lattice.",
       "Convection only occurs in fluids (liquids and gases), driven by density differences.",
       "Dull black surfaces are the best emitters and absorbers of infrared radiation."
@@ -409,6 +555,13 @@ All objects emit thermal radiation. The rate of emission depends on:
     flashcards: [
       { front: "What is Brownian motion?", back: "The random, jittery movement of visible particles (e.g. smoke) caused by unequal bombardment by invisible, rapidly-moving surrounding molecules." },
       { front: "State Boyle's Law in words.", back: "For a fixed mass of gas at constant temperature, the pressure is inversely proportional to the volume (pV = constant)." },
+      { front: "How does the pressure of a fixed mass of gas at constant volume depend on temperature?", back: "Pressure is directly proportional to the kelvin (absolute) temperature: p₁/T₁ = p₂/T₂. Temperatures must be in kelvin (K = °C + 273)." },
+      { front: "What is absolute zero?", back: "−273 °C, or 0 K — the lowest possible temperature, at which particles have their minimum kinetic energy and a gas would exert zero pressure. It is the zero of the kelvin scale." },
+      { front: "What is a thermometric property? Give examples.", back: "A physical property that varies steadily and reproducibly with temperature, used to measure it. Examples: volume of a liquid, resistance of a thermistor, e.m.f. of a thermocouple, pressure of a gas." },
+      { front: "What are the two fixed points used to calibrate a thermometer?", back: "The ice point (pure melting ice) = 0 °C and the steam point (steam above water boiling at standard pressure) = 100 °C." },
+      { front: "How would you measure the specific heat capacity of a metal block?", back: "Heat the insulated block with an immersion heater for a measured time, recording electrical energy E = Pt and the temperature rise ΔT. Then c = Pt / (mΔT)." },
+      { front: "What does a flat plateau on a heating curve represent?", back: "A change of state (melting or boiling). Temperature is constant because the energy supplied is latent heat (E = mL), breaking bonds rather than raising kinetic energy." },
+      { front: "List factors that increase the rate of evaporation.", back: "Higher temperature, larger surface area, a draught (moving air), lower humidity, and a more volatile liquid." },
       { front: "What is specific heat capacity?", back: "The energy required to raise the temperature of 1 kg of a substance by 1 K (or 1 °C). Units: J kg⁻¹ K⁻¹. Formula: E = mcΔT." },
       { front: "Why does a liquid cool when it evaporates?", back: "The highest-energy molecules escape from the surface. This lowers the average kinetic energy of the remaining molecules, so the temperature of the liquid falls." },
       { front: "What is specific latent heat?", back: "The energy required to change the state of 1 kg of a substance without changing its temperature. E = mL." },
@@ -429,6 +582,10 @@ All objects emit thermal radiation. The rate of emission depends on:
       { term: "Latent heat of fusion", definition: "The energy required to change 1 kg of a solid to a liquid (or vice versa) at its melting point without changing temperature." },
       { term: "Latent heat of vaporisation", definition: "The energy required to change 1 kg of a liquid to a gas (or vice versa) at its boiling point without changing temperature." },
       { term: "Boyle's Law", definition: "For a fixed mass of gas at constant temperature, the pressure is inversely proportional to the volume: pV = constant." },
+      { term: "Absolute zero", definition: "The lowest possible temperature, −273 °C or 0 K, at which particles have the minimum possible kinetic energy and a gas would exert zero pressure; the zero of the kelvin scale." },
+      { term: "Kelvin (absolute) temperature", definition: "Temperature measured from absolute zero. T(K) = T(°C) + 273. Gas pressure (at constant volume) and gas volume (at constant pressure) are proportional to the kelvin temperature." },
+      { term: "Thermometric property", definition: "A physical property (such as the volume of a liquid, the resistance of a thermistor, or the e.m.f. of a thermocouple) that varies steadily and reproducibly with temperature, allowing temperature to be measured." },
+      { term: "Fixed points", definition: "Reproducible reference temperatures used to calibrate a thermometer: the ice point (melting ice, 0 °C) and the steam point (steam from boiling water at standard pressure, 100 °C)." },
       { term: "Thermal conduction", definition: "Transfer of thermal energy through a material by particle-to-particle interaction (vibration) and, in metals, by free electron movement, without bulk movement of the material." },
       { term: "Thermal convection", definition: "Transfer of thermal energy through a fluid by the bulk movement of that fluid, driven by density differences caused by temperature differences." },
       { term: "Thermal radiation", definition: "Transfer of thermal energy by infrared electromagnetic waves, which requires no medium and can travel through a vacuum." },

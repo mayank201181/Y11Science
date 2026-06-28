@@ -60,7 +60,7 @@ export const physNuclear: Topic = {
     {
       heading: "Types of Nuclear Radiation",
       body:
-        "Unstable nuclei emit **ionising radiation** as they decay towards stability. There are three main types:\n\n**Alpha (α) radiation**\n- Nature: a helium nucleus — 2 protons + 2 neutrons (⁴₂He)\n- Charge: +2\n- Relative mass: 4\n- Range in air: a few centimetres\n- Stopped by: a sheet of **paper** (or a few cm of air)\n- Ionising ability: **very high** (strips electrons from many atoms per unit path)\n- Deflection in fields: deflected (positive) — same direction as protons\n\n**Beta (β) radiation**\n- Nature: a fast-moving **electron** emitted from the nucleus when a neutron converts to a proton\n- Charge: −1\n- Relative mass: ~1/2000 (negligible)\n- Range in air: up to about 1 m\n- Stopped by: a few mm of **aluminium** (or similar metal)\n- Ionising ability: **moderate**\n- Deflection in fields: deflected (negative) — opposite direction to alpha\n\n**Gamma (γ) radiation**\n- Nature: **electromagnetic wave** (very high frequency/short wavelength photon)\n- Charge: 0\n- Relative mass: 0\n- Range in air: effectively unlimited (intensity follows inverse-square law)\n- Stopped by: several cm of **lead** or several metres of **concrete**\n- Ionising ability: **low**\n- Not deflected by electric or magnetic fields (no charge)\n\n**Background radiation** is the low-level ionising radiation present everywhere from natural and artificial sources:\n- **Radon gas** (from rocks/soil) — largest contributor in most countries (~50%)\n- **Rocks and building materials** (e.g., granite) — contain uranium, thorium\n- **Cosmic rays** — high-energy particles from space; higher at altitude/in aircraft\n- **Food and drink** — small amounts of potassium-40 and carbon-14\n- **Medical** — X-rays and radiotherapy (artificial source)\n- **Nuclear power/weapons fallout** — very small fraction",
+        "Unstable nuclei emit **ionising radiation** as they decay towards stability. There are three main types:\n\n**Alpha (α) radiation**\n- Nature: a helium nucleus — 2 protons + 2 neutrons (⁴₂He)\n- Charge: +2\n- Relative mass: 4\n- Range in air: a few centimetres\n- Stopped by: a sheet of **paper** (or a few cm of air)\n- Ionising ability: **very high** (strips electrons from many atoms per unit path)\n- Deflection in fields: deflected (positive) — same direction as protons\n\n**Beta (β) radiation**\n- Nature: a fast-moving **electron** emitted from the nucleus when a neutron converts to a proton\n- Charge: −1\n- Relative mass: ~1/2000 (negligible)\n- Range in air: up to about 1 m\n- Stopped by: a few mm of **aluminium** (or similar metal)\n- Ionising ability: **moderate**\n- Deflection in fields: deflected (negative) — opposite direction to alpha\n\n**Gamma (γ) radiation**\n- Nature: **electromagnetic wave** (very high frequency/short wavelength photon)\n- Charge: 0\n- Relative mass: 0\n- Range in air: effectively unlimited (intensity follows inverse-square law)\n- Stopped by: several cm of **lead** or several metres of **concrete**\n- Ionising ability: **low**\n- Not deflected by electric or magnetic fields (no charge)\n\n**Background radiation** is the low-level ionising radiation present everywhere from natural and artificial sources:\n- **Radon gas** (from rocks/soil) — largest contributor in most countries (~50%); a radioactive gas that seeps from the ground and collects in buildings\n- **Rocks and building materials** (e.g., granite) — contain uranium, thorium and their decay products\n- **Cosmic rays** — high-energy particles from space; higher at altitude/in aircraft\n- **Food and drink** — small amounts of potassium-40 and carbon-14 taken in by all living things\n- **Medical** — X-rays and radiotherapy (the largest artificial source)\n- **Nuclear power/weapons fallout** — a very small fraction\n\nMost background radiation is **natural** (radon, rocks, cosmic rays, food); only a small part is **artificial** (mainly medical). When measuring a source you must first record the **background count rate** with no source present, then **subtract** it from every reading to obtain the **corrected count rate** — the count due to the source alone.\n\n**Detecting radiation:**\n\n- **Geiger–Müller (GM) tube** connected to a counter or ratemeter. Radiation entering the tube ionises the low-pressure gas inside; the freed charges trigger a brief pulse of current that the counter registers as a 'count'. The **count rate** (counts per second or per minute) measures how much radiation is arriving. A GM tube is the standard way to measure activity in IGCSE experiments.\n- **Photographic film** darkens (fogs) when exposed to ionising radiation. The amount of darkening indicates the dose received, so film is used in the **film badges** worn by radiation workers to monitor their cumulative exposure.\n- A **cloud chamber** or **spark counter** can also reveal the tracks of ionising particles.\n\n**Activity** is the number of nuclear decays per second, measured in **becquerel (Bq)**, where 1 Bq = 1 decay per second. In the lab we usually measure the related **count rate** on a GM tube; like activity, the count rate halves every half-life.",
       diagrams: [
         {
           caption: "Penetrating power of alpha, beta and gamma radiation through different materials",
@@ -75,12 +75,17 @@ export const physNuclear: Topic = {
         "Alpha: helium nucleus (+2), stopped by paper, very high ionisation — most dangerous if ingested.",
         "Beta: fast electron (−1), stopped by aluminium, moderate ionisation.",
         "Gamma: EM wave (0 charge), only reduced by lead/concrete, low ionisation but high penetration.",
-        "Only charged particles (alpha, beta) are deflected by electric and magnetic fields.",
-        "Background radiation comes mainly from radon gas, rocks, cosmic rays, food, and medical sources.",
+        "Only charged particles (alpha, beta) are deflected by electric and magnetic fields; alpha and beta bend in opposite directions because their charges have opposite signs.",
+        "Background radiation comes mainly from natural sources (radon gas, rocks, cosmic rays, food) with a smaller artificial contribution (mainly medical).",
+        "Radiation is detected with a Geiger–Müller tube (gives a count rate) or photographic film (used in workers' film badges).",
+        "Always subtract the background count rate to get the corrected count rate due to the source alone.",
+        "Activity (decays per second) is measured in becquerel (Bq); 1 Bq = 1 decay per second.",
       ],
       strategies: [
-        "Charge tells you deflection direction: alpha (+) deflects one way, beta (−) deflects opposite, gamma (0) goes straight.",
+        "Charge tells you deflection direction: in the same field, alpha (+) deflects one way, beta (−) deflects the opposite way, gamma (0) goes straight.",
+        "Beta deflects far MORE than alpha in the same field: beta has a much smaller mass, so the same-size force produces a much bigger deflection.",
         "Memory hook for penetrating power: P-A-L — Paper stops alpha, Aluminium stops beta, Lead reduces gamma.",
+        "Identify an unknown source by absorption: if paper stops it → alpha; if aluminium stops it → beta; if it passes through aluminium → gamma.",
       ],
       thinkDeeper:
         "Alpha radiation is the most ionising yet the least penetrating — these facts are connected. Because alpha particles cause so many ionisations per millimetre, they lose energy quickly, so their range is short. Inside the body, however, this makes them the most damaging type — all their energy is deposited in a tiny region of tissue.",
@@ -113,7 +118,7 @@ export const physNuclear: Topic = {
     {
       heading: "Half-Life",
       body:
-        "The **half-life (t½)** of a radioactive isotope is the **time taken for half of the nuclei** in a sample to decay (equivalently, the time for the count rate or activity to fall to half its initial value).\n\nKey features:\n- Half-life is **constant** for a given isotope — it does not depend on sample size, temperature or chemical form.\n- Half-lives range enormously: from microseconds (e.g., ²¹²Po, 0.3 µs) to billions of years (e.g., ²³⁸U, 4.5 × 10⁹ yr).\n\n**Calculations from the fraction remaining:**\n\nAfter each half-life, the number (or count rate) halves:\n\n| Number of half-lives (n) | Fraction remaining |\n|---|---|\n| 0 | 1 |\n| 1 | 1/2 |\n| 2 | 1/4 |\n| 3 | 1/8 |\n| n | 1/2ⁿ |\n\n**Worked example 1:** A sample has an initial count rate of 800 counts/min. The half-life is 5 years. What is the count rate after 15 years?\n- Number of half-lives = 15 ÷ 5 = 3\n- Count rate = 800 × (1/2)³ = 800 × 1/8 = **100 counts/min**\n\n**Worked example 2:** The count rate falls from 640 to 80 counts/min. How many half-lives have elapsed?\n- Ratio = 640/80 = 8 = 2³, so **n = 3 half-lives**.\n\n**Reading half-life from a decay graph:**\nPlot count rate (y-axis) against time (x-axis). Start at any count rate C₀. Find the time t₁ when count rate = C₀/2. The half-life t½ = t₁ − t₀. For reliability, repeat from a second starting point and average.",
+        "The **half-life (t½)** of a radioactive isotope is the **time taken for half of the nuclei** in a sample to decay (equivalently, the time for the count rate or activity to fall to half its initial value).\n\nKey features:\n- Half-life is **constant** for a given isotope — it does not depend on sample size, temperature or chemical form.\n- Half-lives range enormously: from microseconds (e.g., ²¹²Po, 0.3 µs) to billions of years (e.g., ²³⁸U, 4.5 × 10⁹ yr).\n\n**Calculations from the fraction remaining:**\n\nAfter each half-life, the number (or count rate) halves:\n\n| Number of half-lives (n) | Fraction remaining |\n|---|---|\n| 0 | 1 |\n| 1 | 1/2 |\n| 2 | 1/4 |\n| 3 | 1/8 |\n| n | 1/2ⁿ |\n\n**Worked example 1:** A sample has an initial count rate of 800 counts/min. The half-life is 5 years. What is the count rate after 15 years?\n- Number of half-lives = 15 ÷ 5 = 3\n- Count rate = 800 × (1/2)³ = 800 × 1/8 = **100 counts/min**\n\n**Worked example 2:** The count rate falls from 640 to 80 counts/min. How many half-lives have elapsed?\n- Ratio = 640/80 = 8 = 2³, so **n = 3 half-lives**.\n\n**Worked example 3 (graph reading):** A decay curve passes through 1000 counts/min at t = 0 and 500 counts/min at t = 6 hours.\n- The count rate has halved once, so 6 hours = one half-life → t½ = **6 hours**.\n- Always check a second pair (e.g. 500 → 250 should also take 6 hours) to confirm.\n\n**Reading half-life from a decay graph:**\nPlot **corrected** count rate (background already subtracted) on the y-axis against time on the x-axis. Start at any count rate C₀ and find the time t₁ when the count rate has fallen to C₀/2. The half-life t½ = t₁ − t₀. For reliability, repeat from a second starting point and average — because decay is random, real data points scatter, so a best-fit smooth curve is drawn before reading values off it.",
       diagrams: [
         {
           caption: "Radioactive decay curve — count rate halves every half-life",
@@ -139,13 +144,18 @@ export const physNuclear: Topic = {
     {
       heading: "Uses, Dangers and Safety of Radioactivity",
       body:
-        "**Uses of radioactivity:**\n\n- **Medical tracers:** A gamma-emitting isotope (e.g., technetium-99m) is injected. Because it passes through tissue, a gamma camera outside the body can image organ function. The isotope must have a short half-life (hours) so radiation dose is minimised.\n- **Cancer treatment (radiotherapy):** A focused beam of gamma radiation (or beta emitters placed near the tumour) kills cancerous cells. Healthy tissue is protected by rotating the beam or directing it precisely.\n- **Sterilisation of medical equipment:** Gamma radiation kills bacteria and viruses without heating fragile instruments.\n- **Smoke detectors:** A small amount of americium-241 (alpha emitter) ionises air between two electrodes, creating a small current. Smoke particles disrupt the current, triggering the alarm. Alpha is used because it is safely absorbed by the detector casing and does not escape.\n- **Carbon dating:** Living organisms absorb carbon-14 (¹⁴C, t½ ≈ 5 700 yr) through food and respiration. On death, uptake stops and ¹⁴C decays. Measuring the remaining ¹⁴C/¹²C ratio gives the age. Reliable up to ≈50 000 years.\n- **Rock dating (potassium-argon, uranium-lead):** Very long half-life isotopes (e.g., ²³⁸U, t½ = 4.5 × 10⁹ yr) allow the age of rocks to be determined over geological timescales.\n- **Thickness monitoring in industry:** Beta emitters are placed on one side of a metal sheet; detectors on the other. If count rate drops, the sheet is too thick; if it rises, too thin. The production line adjusts automatically.\n\n**Dangers of ionising radiation:**\n- Radiation can **ionise atoms in living cells**, damaging DNA.\n- At high doses: **radiation sickness**, cell death, organ failure, increased cancer risk.\n- **Alpha** is most dangerous if the source is **inside the body** (inhaled radon or ingested); **gamma** is most penetrating and dangerous externally.\n- Long-term low-dose exposure increases the **risk of cancer** and genetic mutation.\n\n**Safety precautions:**\n- Keep sources in **lead-lined containers** when not in use.\n- Use **long-handled tongs** (never hold sources directly).\n- **Minimise time** of exposure; **maximise distance** from source (intensity ∝ 1/d²).\n- Wear **film badges** or dosimeters to monitor cumulative dose.\n- Radioactive waste must be safely **stored or buried** in approved facilities.\n\n**Nuclear fission:** A heavy nucleus (e.g., ²³⁵U) absorbs a neutron and splits into two smaller nuclei plus several neutrons and a large release of energy. The released neutrons can trigger further fissions — a **chain reaction**. Controlled fission in a **nuclear reactor** generates electricity; uncontrolled fission is the basis of a nuclear bomb.\n\n**Nuclear fusion in stars:** In the cores of stars, hydrogen nuclei (protons) fuse to form helium nuclei, releasing enormous energy (E = mc²). Fusion requires extremely high temperatures (>10⁷ K) to overcome the electrostatic repulsion between nuclei.",
+        "**Uses of radioactivity:**\n\n- **Medical tracers:** A gamma-emitting isotope (e.g., technetium-99m) is injected. Because it passes through tissue, a gamma camera outside the body can image organ function. The isotope must have a short half-life (hours) so radiation dose is minimised.\n- **Cancer treatment (radiotherapy):** A focused beam of gamma radiation (or beta emitters placed near the tumour) kills cancerous cells. Healthy tissue is protected by rotating the beam or directing it precisely.\n- **Sterilisation of medical equipment:** Gamma radiation kills bacteria and viruses without heating fragile instruments.\n- **Smoke detectors:** A small amount of americium-241 (alpha emitter) ionises air between two electrodes, creating a small current. Smoke particles disrupt the current, triggering the alarm. Alpha is used because it is safely absorbed by the detector casing and does not escape.\n- **Carbon dating:** Living organisms absorb carbon-14 (¹⁴C, t½ ≈ 5 700 yr) through food and respiration. On death, uptake stops and ¹⁴C decays. Measuring the remaining ¹⁴C/¹²C ratio gives the age. Reliable up to ≈50 000 years.\n- **Rock dating (potassium-argon, uranium-lead):** Very long half-life isotopes (e.g., ²³⁸U, t½ = 4.5 × 10⁹ yr) allow the age of rocks to be determined over geological timescales.\n- **Thickness monitoring in industry:** Beta emitters are placed on one side of a metal sheet; detectors on the other. If count rate drops, the sheet is too thick; if it rises, too thin. The production line adjusts automatically.\n\n**Dangers of ionising radiation:**\n- Radiation can **ionise atoms in living cells**, damaging DNA.\n- At high doses: **radiation sickness**, cell death, organ failure, increased cancer risk.\n- **Alpha** is most dangerous if the source is **inside the body** (inhaled radon or ingested); **gamma** is most penetrating and dangerous externally.\n- Long-term low-dose exposure increases the **risk of cancer** and genetic mutation.\n\n**Safety precautions:**\n- Keep sources in **lead-lined containers** when not in use.\n- Use **long-handled tongs** (never hold sources directly).\n- **Minimise time** of exposure; **maximise distance** from source (intensity ∝ 1/d²).\n- Wear **film badges** or dosimeters to monitor cumulative dose.\n- Radioactive waste must be safely **stored or buried** in approved facilities.\n\n**Nuclear fission:** A heavy nucleus (e.g., ²³⁵U) absorbs a slow neutron, becomes unstable and **splits** into two smaller 'daughter' nuclei, releasing **2 or 3 fast neutrons** and a large amount of energy. A typical equation is:\n\n`²³⁵₉₂U + ¹₀n → ¹⁴¹₅₆Ba + ⁹²₃₆Kr + 3 ¹₀n`\n\n(Check: A: 235 + 1 = 141 + 92 + 3 ✓; Z: 92 + 0 = 56 + 36 + 0 ✓.) The energy released comes from the loss of mass (E = mc²) and appears as kinetic energy of the fragments, which heats the reactor.\n\n**Chain reaction:** each released neutron can be absorbed by another ²³⁵U nucleus, causing further fissions. If on average more than one neutron from each fission goes on to cause another, the reaction grows rapidly. A **nuclear bomb** uses an uncontrolled chain reaction.\n\n**Nuclear reactor outline (controlled fission):**\n- **Fuel rods** of enriched uranium-235 (or plutonium-239) undergo fission.\n- A **moderator** (e.g. water or graphite) **slows** the fast neutrons so they are more readily absorbed and keep the chain reaction going.\n- **Control rods** (e.g. boron or cadmium) **absorb** surplus neutrons; lowering them slows the reaction, raising them speeds it up — keeping the rate steady (about one neutron per fission continuing).\n- A **coolant** carries away the heat, which boils water to steam; the steam turns a **turbine** and **generator** to produce electricity.\n- Thick **concrete shielding** absorbs the escaping radiation to protect workers.\n\n**Nuclear fusion in stars:** In the cores of stars, light nuclei **join** to form a heavier nucleus, releasing enormous energy (E = mc²). In the Sun, hydrogen nuclei fuse in stages to form helium; a representative fusion reaction is:\n\n`²₁H + ³₁H → ⁴₂He + ¹₀n`\n\n(deuterium + tritium → helium-4 + a neutron). Fusion requires **extremely high temperatures (>10⁷ K)** and pressures so the positively charged nuclei move fast enough to overcome their electrostatic repulsion and get close enough to fuse. Fusion (light nuclei joining) and fission (heavy nuclei splitting) both release energy because the products have **less mass** than the starting nuclei; the 'lost' mass becomes energy via E = mc².",
       keyPoints: [
         "Gamma emitters (short t½) are used as medical tracers; beta emitters and gamma for radiotherapy.",
         "Alpha emitters in smoke detectors are safe because alpha cannot penetrate the casing.",
         "Carbon-14 dating works because its t½ (5 700 yr) matches human/archaeological timescales.",
-        "Safety: lead containers, tongs, maximise distance, minimise time, wear dosimeters.",
-        "Fission splits heavy nuclei; fusion joins light nuclei — both release energy from E = mc².",
+        "Safety: lead containers, tongs, maximise distance, minimise time, wear film badges/dosimeters; store and dispose of waste in shielded approved sites.",
+        "Fission splits heavy nuclei (releasing 2–3 neutrons that sustain a chain reaction); fusion joins light nuclei in stars — both release energy from E = mc².",
+        "In a reactor: moderator slows neutrons, control rods absorb neutrons (controlling the rate), coolant carries heat to boil water and drive a turbine.",
+      ],
+      strategies: [
+        "Match the use to the radiation: gamma for tracers/sterilisation (penetrates out / through), beta for thickness control (partly absorbed by the sheet), alpha for smoke detectors (very short range, stays inside).",
+        "Match the half-life to the job: short t½ for medical tracers (low dose), very long t½ for dating rocks.",
       ],
       thinkDeeper:
         "Why must a medical tracer have a short half-life but not too short? If t½ is too long, the patient receives an unnecessarily high cumulative dose. If t½ is too short, the isotope decays before imaging is complete. Technetium-99m (t½ = 6 hours) is ideal: it lasts long enough for a scan session but decays to near-zero within a day.",
@@ -163,8 +173,14 @@ export const physNuclear: Topic = {
       "After n half-lives, fraction remaining = (1/2)ⁿ.",
       "Alpha decay: A − 4, Z − 2. Beta decay: A unchanged, Z + 1.",
       "Radioactive decay is random and spontaneous — unaffected by external conditions.",
-      "Background radiation sources: radon gas, rocks, cosmic rays, food, medical procedures.",
+      "Background radiation sources: radon gas, rocks, cosmic rays, food (natural), medical procedures (artificial).",
       "Carbon-14 has t½ ≈ 5 700 years — used to date organic remains up to ≈50 000 years old.",
+      "Radiation is detected with a Geiger–Müller tube (count rate) or photographic film (film badges).",
+      "Subtract the background count rate to get the corrected count rate due to the source alone.",
+      "Activity is measured in becquerel (Bq); 1 Bq = 1 decay per second.",
+      "Fission: ²³⁵U + a neutron splits into two smaller nuclei + 2–3 neutrons + energy → chain reaction.",
+      "In a reactor the moderator slows neutrons, control rods absorb neutrons, and coolant removes the heat.",
+      "Fusion in stars: light nuclei (e.g. hydrogen) join to form helium, releasing energy via E = mc².",
     ],
     flashcards: [
       {
@@ -215,6 +231,34 @@ export const physNuclear: Topic = {
         front: "State two safety precautions when handling radioactive sources.",
         back: "Use long-handled tongs (never handle directly); keep sources in lead-lined containers when not in use; maximise distance; minimise exposure time.",
       },
+      {
+        front: "How is the count rate from a source measured, and what must be corrected for?",
+        back: "Use a Geiger–Müller (GM) tube with a counter. First measure the background count rate with no source, then subtract it from each reading to get the corrected count rate due to the source.",
+      },
+      {
+        front: "Name a detector that uses photographic film and say where it is used.",
+        back: "Photographic film fogs (darkens) when exposed to ionising radiation; it is used in film badges worn by radiation workers to monitor their cumulative dose.",
+      },
+      {
+        front: "What is activity and in what unit is it measured?",
+        back: "Activity is the number of nuclear decays per second, measured in becquerel (Bq); 1 Bq = 1 decay per second.",
+      },
+      {
+        front: "Describe nuclear fission of uranium-235.",
+        back: "A ²³⁵U nucleus absorbs a neutron, becomes unstable and splits into two smaller nuclei, releasing 2–3 neutrons and a large amount of energy. The neutrons can cause further fissions — a chain reaction.",
+      },
+      {
+        front: "What do the moderator and control rods do in a nuclear reactor?",
+        back: "The moderator slows down the fast neutrons so they can cause more fissions; the control rods absorb surplus neutrons to control (steady or stop) the chain reaction.",
+      },
+      {
+        front: "What is nuclear fusion and where does it occur naturally?",
+        back: "Fusion is the joining of two light nuclei to form a heavier nucleus, releasing energy (E = mc²). It occurs in the cores of stars, e.g. hydrogen fusing to helium in the Sun, and needs very high temperature and pressure.",
+      },
+      {
+        front: "Why does fission/fusion release energy?",
+        back: "The products have slightly less total mass than the starting nuclei. This lost mass is converted into energy according to E = mc².",
+      },
     ],
     keyTerms: [
       {
@@ -260,6 +304,22 @@ export const physNuclear: Topic = {
       {
         term: "Nuclear fusion",
         definition: "The joining of two light nuclei (e.g. hydrogen isotopes) at very high temperature to form a heavier nucleus with a large release of energy; the energy source of stars.",
+      },
+      {
+        term: "Activity",
+        definition: "The number of nuclear decays occurring per second in a source, measured in becquerel (Bq); 1 Bq = 1 decay per second.",
+      },
+      {
+        term: "Count rate",
+        definition: "The number of counts registered per second (or per minute) by a detector such as a Geiger–Müller tube; the corrected count rate has the background count subtracted.",
+      },
+      {
+        term: "Geiger–Müller (GM) tube",
+        definition: "A detector in which ionising radiation ionises a gas, producing a pulse of current that is registered as a count; used to measure count rate.",
+      },
+      {
+        term: "Chain reaction",
+        definition: "A self-sustaining process in which neutrons released by one fission go on to cause further fissions in other nuclei; controlled in a reactor, uncontrolled in a nuclear bomb.",
       },
     ],
   },

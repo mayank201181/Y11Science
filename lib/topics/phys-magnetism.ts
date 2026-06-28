@@ -92,7 +92,22 @@ Around a **bar magnet** the field lines form closed loops, curving from the N po
 
 **Permanent magnets** are made from magnetically hard materials (steel, alnico, neodymium alloys). They maintain their magnetism without an external field.
 
+**Magnetising a material** (making a permanent magnet from steel) can be done by:
+- **Stroking** repeatedly in one direction with one pole of a permanent magnet (this aligns the domains).
+- Placing it inside a **solenoid** carrying a large direct current (single-stroke magnetising).
+
+**Demagnetising a magnet** (jumbling the domains back to random) can be done by:
+- **Heating** it strongly (above its Curie temperature the thermal vibration destroys the alignment).
+- **Hammering** or dropping it repeatedly (the jolts knock the domains out of alignment).
+- Placing it inside a **solenoid carrying alternating current** and slowly withdrawing it (the steadily decreasing a.c. field leaves the domains randomly oriented).
+
+**The magnetic effect of a current.** A current-carrying conductor produces its own magnetic field — this is the basis of every electromagnet.
+- Around a **long straight wire** the field lines are **concentric circles** in planes at right angles to the wire, closer together (stronger) near the wire. The **right-hand grip rule** gives their direction: grip the wire with the right hand so the **thumb points along the conventional current**; the **curled fingers** then show the direction the field circulates.
+- A flat **circular coil** concentrates the field through its centre.
+
 **Electromagnets** are produced by passing a direct current through a solenoid (a coil of wire). The magnetic field of a solenoid closely resembles that of a bar magnet: field lines emerge from one end (N) and enter the other (S), with a nearly uniform field inside the coil.
+
+To find **which end of a solenoid is the N pole**, use the **end rule** (a right-hand grip rule for the coil): look at one end of the coil — if the conventional current flows **a**nticlockwise (trace the arrows of an **N**) it is a **N**orth pole; if it flows **clock**wise (trace an **S**) it is a **S**outh pole. Equivalently, grip the coil with the right hand so the curled fingers follow the current around the turns; the thumb then points out of the **N** pole.
 
 The strength of an electromagnet can be increased by:
 - Increasing the **current** in the coil.
@@ -138,15 +153,41 @@ The strength of an electromagnet can be increased by:
   <text x="160" y="178" text-anchor="middle" font-size="10" fill="#b7bce0">Current direction determines which end is N pole</text>
 </svg>`,
         },
+        {
+          caption: "Field around a long straight current-carrying wire — concentric circles (right-hand grip rule)",
+          svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Concentric circular magnetic field lines around a straight current-carrying wire, current flowing out of the page">
+  <!-- wire cross-section (current out of page) -->
+  <circle cx="160" cy="100" r="10" fill="none" stroke="#fbbf24" stroke-width="2"/>
+  <circle cx="160" cy="100" r="3" fill="#fbbf24"/>
+  <text x="160" y="76" text-anchor="middle" font-size="10" fill="#fbbf24">current out of page</text>
+  <!-- concentric field circles -->
+  <circle cx="160" cy="100" r="28" fill="none" stroke="#34d399" stroke-width="1.5"/>
+  <circle cx="160" cy="100" r="48" fill="none" stroke="#34d399" stroke-width="1.5"/>
+  <circle cx="160" cy="100" r="68" fill="none" stroke="#34d399" stroke-width="1.5"/>
+  <!-- direction arrows (anticlockwise for current out of page) -->
+  <polygon points="188,100 180,94 180,106" fill="#34d399" transform="rotate(-90,188,100)"/>
+  <polygon points="208,100 200,94 200,106" fill="#34d399" transform="rotate(-90,208,100)"/>
+  <polygon points="228,100 220,94 220,106" fill="#34d399" transform="rotate(-90,228,100)"/>
+  <text x="160" y="190" text-anchor="middle" font-size="10" fill="#b7bce0">Field circles the wire; lines are denser (stronger) near the wire</text>
+</svg>`,
+        },
       ],
       keyPoints: [
         "Soft iron loses magnetism easily (temporary); steel retains it (permanent).",
+        "Around a straight wire the field is concentric circles; the right-hand grip rule (thumb = current, fingers = field) gives its direction.",
+        "Solenoid end rule: anticlockwise current = N pole, clockwise current = S pole.",
+        "Magnetise steel by stroking or with a d.c. solenoid; demagnetise by heating, hammering, or withdrawing from an a.c. solenoid.",
         "Electromagnet strength increases with greater current, more turns, or a soft-iron core.",
         "The solenoid's field pattern is identical to that of a bar magnet.",
         "Relay: uses a small current to switch a larger current via electromagnetic attraction.",
         "Scrapyard crane: switching off the current releases the load — not possible with a permanent magnet.",
       ],
-      strategies: ["Compare and contrast permanent vs temporary magnets using concrete examples.", "Use the right-hand grip rule: thumb along N-pole direction, fingers curl in direction of conventional current."],
+      strategies: [
+        "Compare and contrast permanent vs temporary magnets using concrete examples.",
+        "Straight wire: right-hand grip rule — thumb along the conventional current, curled fingers give the circular field direction.",
+        "Solenoid: use the end rule — anticlockwise current (as you look at the end) = N pole, clockwise = S pole.",
+        "For an electromagnet device (bell, relay, breaker), always trace the 'make-and-break' cycle: current on → magnet attracts armature → action → contact breaks → spring resets → repeat.",
+      ],
       whyItWorks:
         "A soft-iron core dramatically amplifies the solenoid's field because the iron's magnetic domains align with the applied field, adding their own strong field to that of the coil. The relative permeability of soft iron can be several thousand times that of air — the core 'concentrates' the field lines. When the current stops, the domains quickly return to random orientations (low coercivity), so the magnetism disappears.",
     },
@@ -197,6 +238,34 @@ Without the commutator, the coil would oscillate back and forth instead of spinn
   <circle cx="160" cy="120" r="5" fill="#eef0ff"/>
   <!-- reminder label -->
   <text x="160" y="195" text-anchor="middle" font-size="10" fill="#b7bce0">Three fingers mutually perpendicular</text>
+</svg>`,
+        },
+        {
+          caption: "Simple d.c. motor — coil in a field, fed through a split-ring commutator and brushes",
+          svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Simple direct current motor showing the magnet poles, current-carrying coil, split-ring commutator and carbon brushes">
+  <!-- magnet poles -->
+  <rect x="20" y="60" width="34" height="80" rx="4" fill="#38bdf8" opacity="0.85"/>
+  <rect x="266" y="60" width="34" height="80" rx="4" fill="#fb7185" opacity="0.85"/>
+  <text x="37" y="105" text-anchor="middle" font-size="14" font-weight="bold" fill="#eef0ff">N</text>
+  <text x="283" y="105" text-anchor="middle" font-size="14" font-weight="bold" fill="#eef0ff">S</text>
+  <!-- field lines left to right -->
+  <line x1="56" y1="80" x2="264" y2="80" stroke="#34d399" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="56" y1="120" x2="264" y2="120" stroke="#34d399" stroke-width="1" stroke-dasharray="4,3"/>
+  <!-- coil (rectangle) -->
+  <rect x="120" y="70" width="80" height="60" rx="3" fill="none" stroke="#fbbf24" stroke-width="3"/>
+  <!-- force arrows on coil sides -->
+  <polygon points="120,62 114,74 126,74" fill="#eef0ff"/>
+  <polygon points="200,138 194,126 206,126" fill="#eef0ff"/>
+  <text x="108" y="60" font-size="9" fill="#eef0ff">F up</text>
+  <text x="206" y="148" font-size="9" fill="#eef0ff">F down</text>
+  <!-- commutator (split ring) -->
+  <path d="M150,150 a10,10 0 0,1 20,0" fill="none" stroke="#a78bfa" stroke-width="3"/>
+  <path d="M150,158 a10,10 0 0,0 20,0" fill="none" stroke="#a78bfa" stroke-width="3"/>
+  <text x="160" y="178" text-anchor="middle" font-size="9" fill="#a78bfa">split-ring commutator</text>
+  <!-- brushes -->
+  <line x1="145" y1="150" x2="135" y2="160" stroke="#b7bce0" stroke-width="3"/>
+  <line x1="175" y1="150" x2="185" y2="160" stroke="#b7bce0" stroke-width="3"/>
+  <text x="120" y="192" font-size="9" fill="#b7bce0">brushes + d.c. supply</text>
 </svg>`,
         },
       ],
@@ -284,15 +353,20 @@ For a 100% efficient (ideal) transformer, no energy is lost, so:
 
 In a step-up transformer the voltage rises but the current falls by the same ratio (and vice versa for a step-down).
 
-**Why transformers require a.c.:**
-A steady d.c. current produces a constant (not changing) magnetic flux — no change in flux means no induced e.m.f. in the secondary. An alternating current produces a continuously changing flux, inducing a continuously alternating e.m.f. in the secondary.
+**Why transformers require a.c. — and why mains electricity is a.c.:**
+A steady d.c. current produces a constant (not changing) magnetic flux — no change in flux means no induced e.m.f. in the secondary. An alternating current produces a continuously changing flux, inducing a continuously alternating e.m.f. in the secondary. This is the key reason **mains electricity is generated and distributed as a.c.**: only a.c. can be stepped up and down by transformers, which is essential for efficient transmission. (Mains frequency is 50 Hz in the UK/Singapore.)
 
 **The National Grid and high-voltage transmission:**
-Electrical power is transmitted from power stations to consumers via the National Grid. Power loss in cables is given by P_loss = I² R, where R is the cable resistance.
+Electrical power is transmitted from power stations to consumers via the National Grid. The chain of transformers and the power-loss reasoning are:
+1. The power station generates at a moderate voltage (e.g. 25 kV).
+2. A **step-up transformer** raises the voltage to very high values (132 kV–400 kV) for the transmission cables.
+3. **Step-down transformers** at substations reduce the voltage in stages for local distribution.
+4. A final step-down transformer brings it to a safe supply voltage (230 V) for homes and factories.
 
-- Step-up transformers near the power station raise the voltage (to 132 kV–400 kV) and thereby **reduce the current** for the same power (P = VI).
-- Lower current → much less power wasted as heat in the cables (P_loss ∝ I²).
-- Step-down transformers near homes and factories reduce the voltage to safe levels (230 V in Singapore/UK).
+The power lost as heat in the transmission cables is given by **P_loss = I²R**, where R is the cable resistance.
+- For a fixed power P = VI, raising the voltage V **reduces the current I** in the same ratio.
+- Because the loss depends on the **square** of the current (P_loss ∝ I²), even a modest reduction in current gives a very large reduction in wasted power. Halving the current cuts the heating loss to a quarter.
+- This is why power is transmitted at high voltage / low current, then stepped down to safe levels at the point of use.
 
 **Example:** Transmitting 1 MW at 1000 V through 10 Ω of cable: I = 1 000 000 / 1000 = 1000 A; P_loss = 1000² × 10 = 10 MW — more than the actual power! Stepping up to 100 000 V: I = 10 A; P_loss = 10² × 10 = 1000 W. The saving is dramatic.`,
       diagrams: [
@@ -363,16 +437,24 @@ Electrical power is transmitted from power stations to consumers via the Nationa
     keyFacts: [
       "Like magnetic poles repel; unlike poles attract.",
       "Magnetic field lines run from N to S outside a magnet, never cross, and are denser where the field is stronger.",
+      "Between unlike poles the field is roughly uniform (parallel lines); between like poles the lines bow out and there is a neutral point where the field is zero.",
       "Soft iron is a temporary magnet (loses magnetism easily); steel is a permanent magnet.",
+      "Magnetise steel by stroking with one pole or with a d.c. solenoid; demagnetise by heating, hammering, or withdrawing it from an a.c. solenoid.",
+      "Induced magnetism makes the end nearest the magnet the opposite (attracting) pole.",
+      "The field around a straight wire is concentric circles; the right-hand grip rule (thumb = current, fingers = field) gives its direction.",
+      "Solenoid end rule: viewed end-on, anticlockwise current = N pole, clockwise current = S pole.",
       "Electromagnet strength increases with more current, more turns, or a soft-iron core.",
-      "Motor effect force: F = BIL (maximum when conductor is perpendicular to field).",
+      "Motor effect force: F = BIL (maximum when conductor is perpendicular to field; zero when parallel).",
       "Fleming's Left-Hand Rule: First finger = Field; seCond finger = Current; thuMb = Motion.",
       "The split-ring commutator in a d.c. motor reverses the current every half-turn to maintain continuous rotation.",
+      "A d.c. motor's torque is maximum when the coil's plane is parallel to the field, and zero at the dead-centre (plane perpendicular to field).",
       "An e.m.f. is induced whenever the magnetic flux through a conductor changes.",
       "Lenz's Law: the induced current opposes the change producing it.",
+      "Fleming's Right-Hand Rule gives the direction of the induced current for a moving conductor.",
       "The a.c. generator uses slip rings (not a commutator), so the output is alternating.",
+      "Transformers work only with a.c. — this is why mains electricity is a.c. (so it can be transformed).",
       "Transformer turns ratio: Vp/Vs = Np/Ns; ideal power: VpIp = VsIs.",
-      "High-voltage transmission reduces current → reduces power loss P = I²R in cables.",
+      "High-voltage transmission reduces current → reduces power loss P = I²R in cables (loss ∝ I²).",
     ],
     flashcards: [
       { front: "What is Fleming's Left-Hand Rule used for?", back: "Finding the direction of the force (motor effect) on a current-carrying conductor in a magnetic field. First finger = Field; seCond = Current; thuMb = Motion." },
@@ -387,10 +469,23 @@ Electrical power is transmitted from power stations to consumers via the Nationa
       { front: "Why is electrical power transmitted at high voltage?", back: "High voltage → low current for the same power (P = VI). Lower current → much less power wasted as heat in the cables (P_loss = I²R)." },
       { front: "What are slip rings used for in a generator?", back: "They allow the rotating coil to maintain electrical contact with the external circuit, enabling the alternating current to flow out without being rectified." },
       { front: "State two ways to increase the induced e.m.f. in a generator.", back: "Increase the speed of rotation; increase the magnetic flux density; increase the number of turns on the coil." },
+      { front: "What shape is the magnetic field around a long straight current-carrying wire, and how do you find its direction?", back: "Concentric circles in planes at right angles to the wire (denser near the wire). Direction: right-hand grip rule — thumb points along the conventional current, curled fingers give the field direction." },
+      { front: "How do you tell which end of a solenoid is the north pole?", back: "The end rule: look end-on — if the current flows anticlockwise (traces an N) that end is North; clockwise (traces an S) is South. Or grip with the right hand, fingers following the current; the thumb points out of the N pole." },
+      { front: "Give three ways to demagnetise a magnet.", back: "Heat it strongly (above its Curie temperature); hammer or drop it repeatedly; place it in a solenoid carrying alternating current and slowly withdraw it. All jumble the domains back to random alignment." },
+      { front: "How can you magnetise a piece of steel?", back: "Stroke it repeatedly in one direction with one pole of a permanent magnet, or place it inside a solenoid carrying a large direct current. Both align the magnetic domains." },
+      { front: "In a d.c. motor, when is the turning effect (torque) greatest and when is it zero?", back: "Greatest when the plane of the coil is parallel to the field (sides cutting straight across the field); zero at the dead-centre position, when the plane of the coil is perpendicular to the field." },
+      { front: "Why is mains electricity supplied as a.c. rather than d.c.?", back: "Only alternating current produces the continually changing flux that transformers need, so a.c. can be stepped up for efficient transmission and stepped down for safe use; d.c. cannot be transformed." },
+      { front: "What is Fleming's Right-Hand Rule used for?", back: "Finding the direction of the induced current (e.m.f.) when a conductor moves in a magnetic field (the generator/dynamo rule). First finger = Field; seCond = induced Current; thuMb = Motion." },
     ],
     keyTerms: [
       { term: "Magnetic field", definition: "A region in which a magnetic material or current-carrying conductor experiences a force; represented by field lines from N to S." },
-      { term: "Induced magnetism", definition: "Temporary magnetism produced in a magnetic material when it is placed in an external magnetic field." },
+      { term: "Magnetic flux density (B)", definition: "A measure of the strength of a magnetic field, measured in tesla (T); it appears in the motor-effect equation F = BIL." },
+      { term: "Solenoid", definition: "A long coil of wire that produces a magnetic field like a bar magnet's when a current flows; the basis of an electromagnet." },
+      { term: "Right-hand grip rule", definition: "A rule for the field of a current: thumb points along the conventional current, the curled fingers show the direction the magnetic field circles the wire (or the current in a solenoid)." },
+      { term: "Neutral point", definition: "A point in a magnetic field where the fields from different sources cancel, so the resultant field is zero (e.g. between two like poles)." },
+      { term: "Induced magnetism", definition: "Temporary magnetism produced in a magnetic material when it is placed in an external magnetic field; the near end becomes the opposite (attracting) pole." },
+      { term: "Demagnetising", definition: "Removing a material's magnetism by jumbling its domains — done by heating, hammering, or withdrawing it from a solenoid carrying alternating current." },
+      { term: "Fleming's Right-Hand Rule", definition: "The generator/dynamo rule: with the thumb (Motion), first finger (Field) and second finger (induced Current) mutually perpendicular, it gives the direction of the current induced in a moving conductor." },
       { term: "Permanent magnet", definition: "A magnet made from a magnetically hard material (e.g. steel) that retains its magnetism after the magnetising field is removed." },
       { term: "Electromagnet", definition: "A solenoid (often with a soft-iron core) that acts as a magnet only when a current flows through the coil." },
       { term: "Motor effect", definition: "The force experienced by a current-carrying conductor in a magnetic field, direction given by Fleming's Left-Hand Rule; F = BIL." },

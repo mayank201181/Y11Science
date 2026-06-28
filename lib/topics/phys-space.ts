@@ -17,8 +17,12 @@ export const physSpace: Topic = {
         "The **Sun** sits at the centre. The eight planets, in order of increasing distance, are:\n" +
         "- Mercury, Venus, Earth, Mars *(rocky, inner planets)*\n" +
         "- Jupiter, Saturn, Uranus, Neptune *(gas/ice giants, outer planets)*\n\n" +
-        "Between Mars and Jupiter lies the **asteroid belt**, a region of rocky debris left over from the Solar System's formation. Beyond Neptune lies the outer Solar System, home to dwarf planets and the source of many **comets**.\n\n" +
-        "**Moons** are natural satellites that orbit planets; Earth has one, while Jupiter and Saturn each have dozens. **Comets** are icy bodies with highly elliptical orbits that take them far from the Sun, then swing in close — growing a bright tail of gas and dust when heated by the Sun.",
+        "Between Mars and Jupiter lies the **asteroid belt**, a region of rocky debris left over from the Solar System's formation. Beyond Neptune lies the outer Solar System, home to dwarf planets (such as Pluto) and the source of many **comets**.\n\n" +
+        "**Relative features of the planets — the trends moving outward from the Sun:**\n" +
+        "- The four **inner planets** (Mercury–Mars) are small, rocky and dense; the four **outer planets** (Jupiter–Neptune) are large, gaseous/icy and far less dense.\n" +
+        "- **Distance from the Sun** increases, so the **orbital period (the planet's 'year') increases** and the **orbital speed decreases** (Neptune's year is ~165 Earth years; Mercury's is just 88 days).\n" +
+        "- **Surface temperature generally falls** with distance, because the intensity of the Sun's radiation decreases (Venus is an exception — its thick atmosphere traps heat).\n\n" +
+        "**Moons** are natural satellites that orbit planets; Earth has one, while Jupiter and Saturn each have dozens. **Asteroids** are small rocky bodies, most in the asteroid belt. **Comets** are icy bodies ('dirty snowballs') with highly **elliptical (eccentric)** orbits that take them far beyond the planets, then swing in close to the Sun. When heated near the Sun, a comet releases gas and dust that form a bright **tail** — and the tail always points **away from the Sun** (pushed by radiation and the solar wind), so the comet's tail trails behind it on the way in but leads it on the way out. Because gravity is much stronger close to the Sun, a comet moves **fastest at perihelion** (nearest the Sun) and **slowest at aphelion** (farthest away).",
       diagrams: [
         {
           caption: "The Solar System — planets in order from the Sun (not to scale)",
@@ -62,9 +66,12 @@ export const physSpace: Topic = {
       keyPoints: [
         "The Solar System formed by accretion from a rotating nebula ~4.6 billion years ago.",
         "Eight planets orbit the Sun in order: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune.",
-        "The asteroid belt lies between Mars and Jupiter.",
-        "Comets have highly elliptical orbits; they are fastest when closest to the Sun.",
-        "Moons are natural satellites of planets; they are held in orbit by gravitational attraction.",
+        "Inner planets are small, rocky and dense; outer planets are large, gaseous/icy and less dense.",
+        "Moving outward: orbital period increases, orbital speed decreases, and surface temperature generally falls.",
+        "The asteroid belt (rocky debris) lies between Mars and Jupiter.",
+        "Comets have highly elliptical (eccentric) orbits; they are fastest at perihelion and slowest at aphelion.",
+        "A comet's tail always points away from the Sun, whichever way the comet is travelling.",
+        "Moons are natural satellites of planets, held in orbit by gravitational attraction.",
       ],
       discovery: {
         problem:
@@ -251,7 +258,8 @@ export const physSpace: Topic = {
         "- Diameter of the Milky Way: ~100 000 ly\n" +
         "- Distance to Andromeda Galaxy: ~2.5 million ly\n" +
         "- Diameter of the observable Universe: ~93 billion ly\n\n" +
-        "The light-year is used rather than metres because the numbers in metres are too large to be useful. When we observe a galaxy 100 million light-years away, we are seeing it as it was 100 million years ago — we are looking back in time.",
+        "The light-year is used rather than metres because the numbers in metres are too large to be useful. When we observe a galaxy 100 million light-years away, we are seeing it as it was 100 million years ago — we are looking back in time.\n\n" +
+        "**Where the value comes from:** light travels at c = 3.0 × 10⁸ m/s. In one year there are about 3.15 × 10⁷ s, so 1 ly = c × t = (3.0 × 10⁸) × (3.15 × 10⁷) ≈ 9.5 × 10¹⁵ m. The Sun is just one of hundreds of billions of stars in the Milky Way, which is itself just one of around two trillion galaxies — a sense of scale worth holding onto.",
       diagrams: [
         {
           caption: "Scale of the Universe — from the Solar System to the observable Universe",
@@ -291,6 +299,13 @@ export const physSpace: Topic = {
         "The observable Universe contains an estimated 2 trillion galaxies.",
         "Observing distant objects means looking back in time, because light takes time to travel.",
       ],
+      discovery: {
+        problem:
+          "Why do astronomers measure cosmic distances in light-years instead of metres? And roughly how many metres is one light-year?",
+        idea:
+          "In metres the numbers are unmanageably huge (the nearest star is ~4 × 10¹⁶ m away). A light-year packages this neatly: distance = speed × time = c × (1 year). With c = 3.0 × 10⁸ m/s and 1 year ≈ 3.15 × 10⁷ s, one light-year ≈ 9.5 × 10¹⁵ m. Using light-years also makes the 'looking back in time' idea obvious: a galaxy 100 million ly away is seen as it was 100 million years ago.",
+      },
+      strategies: ["To convert light-years to metres, use distance = c × time with time in seconds (1 year ≈ 3.15 × 10⁷ s)."],
     },
 
     {
@@ -298,18 +313,50 @@ export const physSpace: Topic = {
       body:
         "**Evidence for expansion — redshift:** When a light source moves away from an observer, its wavelength is stretched to longer (redder) values — this is the **Doppler effect** applied to light, called **redshift**. Measurements of light from distant galaxies show that their spectral lines are all shifted toward longer wavelengths, meaning they are all moving **away from us**. The more distant the galaxy, the **greater the redshift** and the **faster it is receding**.\n\n" +
         "This pattern — every galaxy receding, with recession speed proportional to distance — is exactly what you would expect if the entire **Universe is expanding**. There is no special 'centre'; an ant on an expanding balloon sees every other point moving away from it.\n\n" +
-        "**The Big Bang theory:** If the Universe is expanding, running time backwards implies that everything was once concentrated in an extremely hot, dense state. The **Big Bang** is the name for this beginning, approximately **13.8 billion years ago**. The expansion has been continuing ever since.\n\n" +
-        "**Cosmic microwave background radiation (CMB):** An additional piece of evidence (beyond IGCSE but worth knowing) is the faint microwave radiation detected uniformly from all directions — the afterglow of the Big Bang.\n\n" +
-        "Key evidence for the Big Bang:\n" +
-        "- **Redshift of light from distant galaxies** — all galaxies moving away.\n" +
-        "- **More distant galaxies recede faster** — consistent with uniform expansion.\n" +
-        "- (CMB — background microwave radiation detected from all directions.)",
+        "**The Big Bang theory:** If the Universe is expanding, running time backwards implies that everything was once concentrated in an extremely hot, dense state. The **Big Bang** is the name for this beginning, approximately **13.8 billion years ago**. Space itself has been expanding ever since — it is space stretching that carries the galaxies apart, not the galaxies flying through pre-existing space.\n\n" +
+        "**Cosmic microwave background radiation (CMBR) — the second key piece of evidence:** Shortly after the Big Bang the whole Universe was filled with very high-energy (short-wavelength) electromagnetic radiation. As the Universe expanded, this radiation was stretched to much longer wavelengths and cooled. Today it is detected as faint **microwave** radiation arriving almost **uniformly from every direction** in the sky — the cooled 'afterglow' of the hot early Universe. The Big Bang theory *predicted* the CMBR before it was found (detected by Penzias and Wilson in 1965), which is why its discovery is such powerful support for the theory. No rival theory (such as the older steady-state model) explains it as naturally.\n\n" +
+        "**The two pieces of evidence together:**\n" +
+        "- **Redshift of light from distant galaxies** — all galaxies are moving away, and more distant galaxies recede faster → the Universe is expanding.\n" +
+        "- **Cosmic microwave background radiation** — microwaves from all directions, the stretched, cooled remnant of radiation from a hot, dense early Universe.\n\n" +
+        "*Note on the two syllabuses:* Edexcel 4PH1 focuses on redshift as the main evidence for an expanding Universe and the Big Bang; Cambridge 0625 additionally requires the CMBR (and the idea that it has been redshifted to the microwave region). Both are included here so nothing is missed.",
+      diagrams: [
+        {
+          caption: "Redshift — spectral lines from a distant galaxy are shifted toward the red (longer-wavelength) end compared with a laboratory source",
+          svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Diagram comparing a laboratory spectrum with the redshifted spectrum of a distant galaxy, showing dark lines moved toward the red end">' +
+            '<rect width="320" height="200" fill="#0f172a"/>' +
+            '<text x="160" y="20" text-anchor="middle" font-size="9" fill="#eef0ff" font-family="sans-serif" font-weight="bold">Redshift of a galaxy spectrum</text>' +
+            // Lab spectrum bar (violet -> red gradient)
+            '<defs><linearGradient id="spec" x1="0" y1="0" x2="1" y2="0">' +
+            '<stop offset="0" stop-color="#7c3aed"/><stop offset="0.3" stop-color="#38bdf8"/><stop offset="0.6" stop-color="#34d399"/><stop offset="0.8" stop-color="#fbbf24"/><stop offset="1" stop-color="#ef4444"/>' +
+            '</linearGradient>' +
+            '<marker id="rsArr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#fb7185"/></marker></defs>' +
+            // Laboratory source
+            '<text x="10" y="46" font-size="7.5" fill="#b7bce0" font-family="sans-serif">Laboratory source (at rest)</text>' +
+            '<rect x="40" y="52" width="240" height="22" fill="url(#spec)"/>' +
+            '<rect x="95" y="52" width="2.5" height="22" fill="#0f172a"/>' +
+            '<rect x="150" y="52" width="2.5" height="22" fill="#0f172a"/>' +
+            '<text x="42" y="84" font-size="6.5" fill="#94a3b8" font-family="sans-serif">blue</text>' +
+            '<text x="262" y="84" font-size="6.5" fill="#94a3b8" font-family="sans-serif">red</text>' +
+            // Distant galaxy
+            '<text x="10" y="116" font-size="7.5" fill="#b7bce0" font-family="sans-serif">Distant galaxy (receding)</text>' +
+            '<rect x="40" y="122" width="240" height="22" fill="url(#spec)"/>' +
+            '<rect x="135" y="122" width="2.5" height="22" fill="#0f172a"/>' +
+            '<rect x="190" y="122" width="2.5" height="22" fill="#0f172a"/>' +
+            // Shift arrows showing lines moved toward red
+            '<line x1="97" y1="100" x2="136" y2="118" stroke="#fb7185" stroke-width="1.2" stroke-dasharray="3,2" marker-end="url(#rsArr)"/>' +
+            '<line x1="152" y1="100" x2="191" y2="118" stroke="#fb7185" stroke-width="1.2" stroke-dasharray="3,2" marker-end="url(#rsArr)"/>' +
+            '<text x="160" y="166" text-anchor="middle" font-size="7.5" fill="#fb7185" font-family="sans-serif">lines shifted toward the red end &#8594; longer wavelength &#8594; moving away</text>' +
+            '<text x="160" y="184" text-anchor="middle" font-size="7" fill="#94a3b8" font-family="sans-serif">More distant galaxies show a bigger shift, so they recede faster.</text>' +
+            '</svg>',
+        },
+      ],
       keyPoints: [
         "Redshift: light from galaxies is shifted to longer wavelengths because the galaxies are moving away.",
         "More distant galaxies show greater redshift and recede faster — the Universe is expanding.",
         "Running expansion backward implies the Universe began as a hot, dense point — the Big Bang (~13.8 billion years ago).",
-        "Redshift is evidence for the expanding Universe and supports the Big Bang theory.",
-        "The Doppler effect explains why a receding source emits longer-wavelength (redshifted) light.",
+        "Redshift is the main evidence for the expanding Universe and supports the Big Bang theory.",
+        "The cosmic microwave background radiation (CMBR) is the second key evidence: microwaves from all directions, the cooled, stretched afterglow of the hot early Universe.",
+        "The CMBR was predicted by the Big Bang theory before it was detected, which makes it strong supporting evidence.",
       ],
       strategies: ["Distinguish redshift (moving away / longer wavelength) from blueshift (moving toward / shorter wavelength).", "Link evidence → conclusion: redshift → expansion → Big Bang."],
       whyItWorks:
@@ -322,13 +369,15 @@ export const physSpace: Topic = {
       "The eight planets in order from the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune.",
       "Orbital speed formula: v = 2πr / T (v in m/s, r in m, T in s).",
       "Gravitational attraction provides the centripetal force for all orbits.",
-      "Planets farther from the Sun move slower and have longer orbital periods.",
+      "Planets farther from the Sun move slower and have longer orbital periods, and are generally colder.",
+      "Comets have eccentric orbits, move fastest at perihelion, and their tails always point away from the Sun.",
       "The Sun is powered by nuclear fusion: hydrogen → helium, releasing energy.",
       "Star life cycle (Sun-like): nebula → protostar → main sequence → red giant → white dwarf.",
       "Star life cycle (massive): nebula → protostar → main sequence → red supergiant → supernova → neutron star or black hole.",
       "A light-year is the distance light travels in one year ≈ 9.46 × 10¹⁵ m.",
       "Redshift of light from distant galaxies is evidence that the Universe is expanding.",
       "More distant galaxies recede faster — consistent with the Big Bang theory.",
+      "The cosmic microwave background radiation (CMBR) — microwaves from all directions — is the second key piece of evidence for the Big Bang.",
     ],
     flashcards: [
       { front: "What force provides the centripetal force for planetary orbits?", back: "Gravitational attraction between the planet and the Sun." },
@@ -341,11 +390,19 @@ export const physSpace: Topic = {
       { front: "What is redshift?", back: "The increase in wavelength (shift toward red end of the spectrum) of light from a source moving away from the observer." },
       { front: "What does the redshift of distant galaxies tell us about the Universe?", back: "The Universe is expanding — all galaxies are moving away from us, with more distant ones receding faster." },
       { front: "What is the Big Bang theory?", back: "The theory that the Universe began ~13.8 billion years ago as an extremely hot, dense point and has been expanding ever since." },
+      { front: "What is the cosmic microwave background radiation (CMBR)?", back: "Faint microwave radiation detected uniformly from all directions — the stretched, cooled remnant of high-energy radiation from the hot early Universe. It is a key piece of evidence for the Big Bang." },
+      { front: "Why is the CMBR strong evidence for the Big Bang?", back: "The Big Bang theory predicted it before it was found: a hot early Universe would leave radiation that, after expansion stretched its wavelength, would now be detected as cool microwaves from every direction — exactly as observed." },
       { front: "What is a nebula?", back: "A cloud of gas and dust in space; the starting point for star formation." },
+      { front: "Why does a comet speed up as it nears the Sun?", back: "The Sun's gravity is stronger when the comet is closer, doing work on it: gravitational potential energy is converted to kinetic energy, so it moves fastest at perihelion (closest) and slowest at aphelion (farthest)." },
+      { front: "Which way does a comet's tail point?", back: "Always away from the Sun, because the tail is pushed outward by radiation and the solar wind — regardless of the comet's direction of travel." },
+      { front: "How do orbital period and surface temperature change for planets farther from the Sun?", back: "The orbital period (year) gets longer and the orbital speed slower; surface temperature generally falls because the Sun's radiation is less intense farther out." },
       { front: "Name the stages in the life cycle of a massive star after the main sequence.", back: "Red supergiant → supernova → neutron star or black hole." },
     ],
     keyTerms: [
       { term: "Accretion", definition: "The gradual accumulation of material (gas and dust) under gravity to form larger bodies such as planets and stars." },
+      { term: "Comet", definition: "A small icy body with a highly elliptical (eccentric) orbit; it grows a tail of gas and dust that always points away from the Sun, and moves fastest at perihelion and slowest at aphelion." },
+      { term: "Natural satellite (moon)", definition: "A natural body, such as a moon, held in orbit around a planet by gravitational attraction." },
+      { term: "Asteroid", definition: "A small rocky body orbiting the Sun, most found in the asteroid belt between Mars and Jupiter." },
       { term: "Centripetal force", definition: "The resultant force directed toward the centre of a circular orbit; provided by gravity for planets and satellites." },
       { term: "Orbital period (T)", definition: "The time taken for one complete orbit; measured in seconds (or other time units)." },
       { term: "Orbital radius (r)", definition: "The distance from the orbiting body to the centre of the body it orbits." },
@@ -358,6 +415,7 @@ export const physSpace: Topic = {
       { term: "Light-year (ly)", definition: "A unit of astronomical distance equal to the distance light travels in one year: ≈ 9.46 × 10¹⁵ m." },
       { term: "Redshift", definition: "The observed increase in wavelength of electromagnetic radiation from a source moving away from the observer." },
       { term: "Big Bang theory", definition: "The scientific theory that the Universe originated ~13.8 billion years ago from an extremely hot, dense state and has been expanding ever since." },
+      { term: "Cosmic microwave background radiation (CMBR)", definition: "Faint microwave radiation arriving uniformly from all directions in space; the cooled, wavelength-stretched afterglow of the hot early Universe and a key piece of evidence for the Big Bang." },
       { term: "Galaxy", definition: "A large collection of billions of stars, gas, and dust held together by gravity; the Milky Way is our galaxy." },
     ],
   },
