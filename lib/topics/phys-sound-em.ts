@@ -165,6 +165,76 @@ The audible range narrows with age — adults typically lose the upper end first
     },
 
     {
+      heading: "Oscilloscope Traces: Comparing Pitch and Loudness",
+      body: `A **cathode-ray oscilloscope (CRO)** displays a sound wave as a waveform on a screen, letting us *see* the difference between sounds. A microphone converts the sound into a varying voltage, and the oscilloscope plots that voltage (vertical axis) against time (horizontal axis).
+
+Although a sound wave is **longitudinal**, the oscilloscope draws it as a **transverse-looking wave** — this is just a graph of pressure (or microphone voltage) against time, not a picture of the particles moving.
+
+Two control settings let you read the trace:
+
+- The **time-base** sets how much time each horizontal square (division) represents — it controls the horizontal scale.
+- The **gain (y-gain)** sets how much voltage each vertical square represents — it controls the vertical scale.
+
+**Reading pitch from a trace (with the same settings):**
+
+- **Higher pitch → higher frequency → waves are closer together** (more cycles fit across the screen; each cycle is narrower).
+- **Lower pitch → lower frequency → waves are more spread out** (fewer cycles, each cycle is wider).
+
+**Reading loudness from a trace (with the same settings):**
+
+- **Louder → larger amplitude → taller peaks and deeper troughs.**
+- **Quieter → smaller amplitude → shorter peaks.**
+
+Frequency and amplitude are independent, so any combination is possible: a sound can be high-pitched and quiet (close-together, short waves) or low-pitched and loud (spread-out, tall waves).
+
+**Worked example — finding frequency from a trace:** If the time-base is set to 2 ms per division and one complete wave occupies 4 divisions, then the period is T = 4 × 2 = 8 ms = 0.008 s, so the frequency is f = 1 / T = 1 / 0.008 = 125 Hz.`,
+      diagrams: [
+        {
+          caption: "Four oscilloscope traces compared (same time-base and gain settings)",
+          svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 260" role="img" aria-label="Four oscilloscope traces comparing pitch and loudness: low quiet, low loud, high quiet, high loud">
+  <rect width="320" height="260" fill="#0f172a"/>
+  <text x="160" y="16" text-anchor="middle" font-size="11" fill="#b7bce0" font-family="sans-serif" font-weight="bold">Oscilloscope Traces (same settings)</text>
+  <!-- Trace 1: low pitch, quiet -->
+  <rect x="14" y="28" width="130" height="80" fill="#111c33" stroke="#334155" stroke-width="1"/>
+  <line x1="14" y1="68" x2="144" y2="68" stroke="#334155" stroke-width="0.7" stroke-dasharray="3,3"/>
+  <path d="M14,68 Q34,52 54,68 T94,68 T134,68" fill="none" stroke="#34d399" stroke-width="2"/>
+  <text x="79" y="103" text-anchor="middle" font-size="8.5" fill="#9ca3af" font-family="sans-serif">low pitch, quiet</text>
+  <!-- Trace 2: low pitch, loud -->
+  <rect x="176" y="28" width="130" height="80" fill="#111c33" stroke="#334155" stroke-width="1"/>
+  <line x1="176" y1="68" x2="306" y2="68" stroke="#334155" stroke-width="0.7" stroke-dasharray="3,3"/>
+  <path d="M176,68 Q196,38 216,68 T256,68 T296,68" fill="none" stroke="#38bdf8" stroke-width="2"/>
+  <text x="241" y="103" text-anchor="middle" font-size="8.5" fill="#9ca3af" font-family="sans-serif">low pitch, loud</text>
+  <!-- Trace 3: high pitch, quiet -->
+  <rect x="14" y="150" width="130" height="80" fill="#111c33" stroke="#334155" stroke-width="1"/>
+  <line x1="14" y1="190" x2="144" y2="190" stroke="#334155" stroke-width="0.7" stroke-dasharray="3,3"/>
+  <path d="M14,190 Q24,178 34,190 T54,190 T74,190 T94,190 T114,190 T134,190" fill="none" stroke="#fbbf24" stroke-width="2"/>
+  <text x="79" y="225" text-anchor="middle" font-size="8.5" fill="#9ca3af" font-family="sans-serif">high pitch, quiet</text>
+  <!-- Trace 4: high pitch, loud -->
+  <rect x="176" y="150" width="130" height="80" fill="#111c33" stroke="#334155" stroke-width="1"/>
+  <line x1="176" y1="190" x2="306" y2="190" stroke="#334155" stroke-width="0.7" stroke-dasharray="3,3"/>
+  <path d="M176,190 Q186,165 196,190 T216,190 T236,190 T256,190 T276,190 T296,190" fill="none" stroke="#fb7185" stroke-width="2"/>
+  <text x="241" y="225" text-anchor="middle" font-size="8.5" fill="#9ca3af" font-family="sans-serif">high pitch, loud</text>
+  <!-- axes note -->
+  <text x="160" y="248" text-anchor="middle" font-size="8" fill="#b7bce0" font-family="sans-serif">vertical = amplitude (loudness); spacing = frequency (pitch)</text>
+</svg>`,
+        },
+      ],
+      keyPoints: [
+        "An oscilloscope plots a microphone's voltage (vertical) against time (horizontal), showing the sound as a waveform.",
+        "Closer-together waves = higher frequency = higher pitch (compared at the same time-base).",
+        "Taller waves = larger amplitude = louder sound (compared at the same gain).",
+        "Frequency (pitch) and amplitude (loudness) can be read independently from the trace.",
+        "Period T can be read off the trace and used in f = 1 / T to find the frequency.",
+      ],
+      discovery: {
+        problem: "Two traces are shown on the same oscilloscope settings. Trace A has waves twice as close together as Trace B, but Trace B's peaks are twice as tall. Which sound is higher-pitched, and which is louder?",
+        idea: "Closer-together waves mean a higher frequency, so Trace A is the higher-pitched sound. Taller peaks mean a larger amplitude, so Trace B is the louder sound. Pitch and loudness are independent, so the higher-pitched sound here is also the quieter one.",
+      },
+      whyItWorks: "The horizontal axis is time, so the horizontal width of one cycle is the period T. A higher-frequency sound completes more cycles per second, so each cycle takes less time and appears narrower — the waves look bunched up. The vertical axis tracks pressure/voltage, which grows with the wave's amplitude, so a louder (higher-energy) sound reaches further from the centre line.",
+      strategies: ["Horizontal spacing → pitch; vertical height → loudness", "Read period off the trace, then f = 1 / T", "Compare traces only when settings are the same"],
+    },
+
+    {
       heading: "Ultrasound and Its Uses",
       body: `**Ultrasound** means sound with a frequency above 20 kHz — beyond the human hearing limit. It is produced by electrically vibrating piezoelectric crystals.
 
@@ -385,6 +455,7 @@ An **echo** is a reflected sound that is heard separately from the original soun
       "Depth from sonar echo: depth = (v × t) / 2.",
       "Wave equation v = f × λ applies to all waves.",
       "Visible light ROYGBIV: red lowest frequency, violet highest frequency within visible.",
+      "On an oscilloscope trace: closer-together waves = higher pitch; taller waves = louder (compared at the same settings).",
     ],
     flashcards: [
       { front: "What type of wave is sound?", back: "Longitudinal — particle vibrations are parallel to the direction of wave travel." },
@@ -403,6 +474,8 @@ An **echo** is a reflected sound that is heard separately from the original soun
       { front: "What are the uses of X-rays?", back: "Medical imaging (bones/dense tissue), airport security scanning." },
       { front: "Why is ultrasound preferred over X-rays for pre-natal scans?", back: "Ultrasound is non-ionising, so it does not damage the DNA of the developing foetus." },
       { front: "Write the formula used for sonar depth calculation.", back: "depth = (v × t) / 2, where v is the speed of sound in water and t is the round-trip time." },
+      { front: "On an oscilloscope, how do you tell which of two sounds (same settings) has the higher pitch?", back: "The higher-pitched sound has the higher frequency, so its waves are closer together (more cycles across the screen, each cycle narrower)." },
+      { front: "On an oscilloscope, how do you tell which of two sounds (same settings) is louder?", back: "The louder sound has the larger amplitude, so its trace has taller peaks and deeper troughs (greater height from the centre line)." },
     ],
     keyTerms: [
       { term: "Longitudinal wave", definition: "A wave in which the particle vibrations are parallel to the direction of energy transfer." },
@@ -417,6 +490,8 @@ An **echo** is a reflected sound that is heard separately from the original soun
       { term: "Ionising radiation", definition: "Radiation with sufficient energy to remove electrons from atoms, potentially damaging DNA (UV, X-rays, gamma rays)." },
       { term: "Speed of light (c)", definition: "The speed at which all electromagnetic waves travel in a vacuum: c ≈ 3 × 10^8 m/s." },
       { term: "Sonar", definition: "Sound Navigation And Ranging — a technique that uses timed ultrasound echoes to measure distances underwater." },
+      { term: "Oscilloscope (CRO)", definition: "An instrument that displays how a voltage (e.g. from a microphone) varies with time, drawing a sound as a waveform so pitch (wave spacing) and loudness (wave height) can be compared." },
+      { term: "Pitch", definition: "How high or low a sound seems; determined by frequency — a higher frequency gives a higher pitch." },
     ],
   },
 

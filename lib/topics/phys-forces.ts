@@ -6,18 +6,28 @@ export const physForces: Topic = {
   subject: "physics",
   icon: "🧱",
   blurb: "Newton's laws, mass & weight, moments, pressure and momentum — the mechanics core of IGCSE Physics.",
-  intro: "Forces govern everything from a falling apple to a crashing car: they change shape, speed, and direction. In this topic you will master Newton's three laws, the turning effect of forces, pressure in fluids, and the conservation of momentum — all calculation-heavy areas that carry major marks in Paper 4 (Extended).",
+  intro: "Forces govern everything from a falling apple to a crashing car: they change shape, speed, and direction. In this topic you will master Newton's three laws, the turning effect of forces, pressure in fluids, circular motion, stopping distances, and the conservation of momentum (including F = Δp/Δt) — all calculation-heavy areas that carry major marks in Paper 4 (Extended).",
 
   guide: [
     {
       heading: "What Is a Force?",
       body: `A **force** is a push or a pull. Forces can change an object's **shape**, its **speed**, or its **direction of motion** — and often all three at once.
 
-Forces are vectors: they have both **magnitude** (size, in newtons, N) and **direction**. When more than one force acts on an object, you find the **resultant force** — the single force that has the same effect as all the forces combined.
+**Types of force.** Forces are grouped by whether the objects need to touch:
+- **Contact forces** require physical contact: friction, air resistance / drag, tension (in ropes/springs), the normal (reaction) contact force, and upthrust.
+- **Non-contact (field) forces** act at a distance through a field: the **gravitational** force (weight), the **electrostatic** force between charges, and the **magnetic** force between magnets/currents.
+
+Forces are **vectors**: they have both **magnitude** (size, in newtons, N) and **direction**. (Mass, by contrast, is a scalar.) When more than one force acts on an object, you find the **resultant force** — the single force that has the same effect as all the forces combined.
 
 - If forces act along the **same line**, simply add (same direction) or subtract (opposite directions).
 - A resultant of **zero** means the forces are *balanced*; the object's motion does not change.
 - A non-zero resultant means the forces are *unbalanced*; the object accelerates.
+
+**Combining forces at right angles.** Two perpendicular forces can be combined either by a scale drawing (draw them tip-to-tail and measure the diagonal) or by calculation. The magnitude of the resultant follows from Pythagoras, and its direction from trigonometry:
+
+*resultant = √(F₁² + F₂²)*
+
+*Example:* a force of 3 N east and 4 N north give a resultant of √(3² + 4²) = √25 = **5 N**, pointing at an angle of tan⁻¹(4/3) ≈ 53° north of east.
 
 **Free-body diagrams** show all forces on an object as arrows from a point, labelled with their magnitudes and directions. Always draw these before attempting any Newton's-law problem.`,
       diagrams: [
@@ -48,7 +58,9 @@ Forces are vectors: they have both **magnitude** (size, in newtons, N) and **dir
       ],
       keyPoints: [
         "A force is a vector — magnitude (N) and direction both matter.",
+        "Contact forces need touching (friction, drag, tension, normal); non-contact/field forces act at a distance (gravity, electrostatic, magnetic).",
         "Resultant force = vector sum of all forces on an object.",
+        "Two perpendicular forces combine to a resultant of magnitude √(F₁² + F₂²).",
         "Balanced forces (resultant = 0 N) do not change the state of motion.",
         "Always draw a labelled free-body diagram before applying Newton's laws.",
         "Forces can change shape, speed, or direction — sometimes all three.",
@@ -267,18 +279,27 @@ This applies to all collisions and explosions. It is a consequence of Newton's t
 - **Elastic:** kinetic energy is conserved (e.g. billiard balls — approximately).
 - **Inelastic:** kinetic energy is NOT conserved (most real collisions; some KE → heat/sound).
 
-**Impulse:** The change in momentum equals the impulse = F × Δt. Spreading an impact over a longer time reduces the force (e.g. crumple zones, airbags).
+**Force as the rate of change of momentum.** Newton's second law in its most general form says the resultant force equals how fast momentum changes:
 
-**Worked example:** A 2 kg trolley moving at 4 m/s (right) collides with a stationary 3 kg trolley. They stick together. Find the velocity after:
+*F = Δp / Δt = (mv − mu) / t*
+
+This is the form Edexcel expects. It reduces to F = ma when the mass is constant (since Δ(mv)/Δt = m·Δv/Δt = ma).
+
+*Worked example:* A 0.40 kg ball hits a wall at 6 m/s and rebounds at 4 m/s in the opposite direction; the contact lasts 0.05 s. Taking "towards the wall" as positive: Δp = m(v − u) = 0.40 × (−4 − 6) = −4.0 kg m/s. Force on the ball = Δp/Δt = −4.0/0.05 = **−80 N** (i.e. 80 N away from the wall).
+
+**Impulse:** impulse = F × Δt = change in momentum (Δp). Rearranging F = Δp/Δt shows that, for a given change in momentum, **spreading the impact over a longer time reduces the force**. This is the physics behind car **safety features**: crumple zones, **air bags** and **seat belts** all increase the time Δt over which a passenger's momentum is brought to zero, so the force on the passenger — and the risk of injury — is reduced. Cushioned packaging and crash mats work the same way.
+
+**Worked example (collision):** A 2 kg trolley moving at 4 m/s (right) collides with a stationary 3 kg trolley. They stick together. Find the velocity after:
 - Total momentum before = 2 × 4 + 3 × 0 = 8 kg m/s
 - Total mass after = 5 kg
 - v = 8/5 = **1.6 m/s (right)**`,
       keyPoints: [
         "p = mv; momentum is a vector, in kg m/s.",
+        "Resultant force = rate of change of momentum: F = Δp/Δt = (mv − mu)/t.",
         "Conservation of momentum: total momentum is constant in a closed system.",
         "Elastic collision: KE conserved. Inelastic: KE not conserved.",
         "Impulse = F × Δt = change in momentum (Δp).",
-        "Crumple zones increase Δt, reducing the force in a collision.",
+        "Crumple zones, air bags and seat belts increase Δt, reducing the force in a collision.",
       ],
       discovery: {
         problem: "A 1 kg ball moving at 6 m/s hits a stationary 2 kg ball. After the collision the 1 kg ball moves at 2 m/s in the same direction. What is the velocity of the 2 kg ball? Is momentum conserved?",
@@ -286,6 +307,90 @@ This applies to all collisions and explosions. It is a consequence of Newton's t
       },
       whyItWorks: "Conservation of momentum is a direct consequence of Newton's third law. In a collision, body A pushes body B with force F for time Δt; by N3L, B pushes A with −F for the same Δt. So Δp_A = −Δp_B, meaning total Δp = 0. Momentum cannot be created or destroyed.",
       strategies: ["define a positive direction before substituting values", "write p_before = p_after and solve algebraically", "check units: kg × m/s = kg m/s"],
+    },
+
+    {
+      heading: "Forces in Circular Motion",
+      body: `An object moving in a **circle at constant speed** is *not* moving at constant velocity — its **direction** is changing all the time, so its velocity is changing. A changing velocity means the object is **accelerating**, and by Newton's second law an acceleration needs a **resultant force**.
+
+For circular motion this resultant force always points **towards the centre** of the circle. It is called the **centripetal force**. (It is not a new kind of force — it is *provided by* an ordinary force such as gravity, tension, friction or a normal contact force.)
+
+**Examples of the centripetal force:**
+- A car turning a corner: provided by **friction** between the tyres and the road.
+- A ball whirled on a string: provided by the **tension** in the string.
+- A planet or satellite orbiting: provided by **gravity**.
+
+**What changes the force needed?** For a given mass moving in a circle, the centripetal force needed is **larger** when:
+- the **speed** is greater (the force needed rises sharply with speed),
+- the **radius** of the circle is **smaller** (a tighter turn), or
+- the **mass** is greater.
+
+If the available force is too small (e.g. not enough tyre grip on an icy bend), the object cannot follow the circle and flies off in a straight line (a tangent), exactly as Newton's first law predicts when the resultant force is removed.`,
+      diagrams: [
+        {
+          caption: "Circular motion: velocity is along the tangent; the centripetal force (and acceleration) points to the centre",
+          svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="An object on a circular path with the velocity arrow along the tangent and the centripetal force arrow pointing inward to the centre">
+  <circle cx="160" cy="100" r="70" fill="none" stroke="#b7bce0" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <circle cx="160" cy="100" r="3" fill="#a78bfa"/>
+  <text x="160" y="118" text-anchor="middle" fill="#a78bfa" font-size="10" font-family="sans-serif">centre</text>
+  <!-- Object on the circle at top -->
+  <circle cx="160" cy="30" r="8" fill="#38bdf8"/>
+  <!-- Centripetal force toward centre (downward) -->
+  <line x1="160" y1="40" x2="160" y2="90" stroke="#fb7185" stroke-width="2.5" marker-end="url(#arrc)"/>
+  <text x="166" y="68" fill="#fb7185" font-size="10" font-family="sans-serif">F (to centre)</text>
+  <!-- Velocity along the tangent (to the right) -->
+  <line x1="170" y1="30" x2="245" y2="30" stroke="#34d399" stroke-width="2.5" marker-end="url(#arrc)"/>
+  <text x="200" y="22" fill="#34d399" font-size="10" font-family="sans-serif">v (tangent)</text>
+  <defs>
+    <marker id="arrc" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#b7bce0"/>
+    </marker>
+  </defs>
+</svg>`,
+        },
+      ],
+      keyPoints: [
+        "Constant-speed circular motion is accelerated motion because the direction (and so velocity) changes.",
+        "The resultant force is the centripetal force and always points to the centre of the circle.",
+        "It is provided by an ordinary force: gravity, tension, friction or a normal contact force.",
+        "The force needed increases with greater speed, greater mass, or a smaller radius.",
+        "Remove the force and the object continues in a straight line (tangent) — Newton's first law.",
+      ],
+      discovery: {
+        problem: "A car drives around a roundabout at a steady 10 m/s. A passenger says 'we're going at constant speed, so there's no resultant force.' Why are they wrong?",
+        idea: "Speed is constant but the direction keeps changing, so the velocity changes — the car is accelerating towards the centre. That acceleration needs a resultant (centripetal) force, supplied by friction between the tyres and the road.",
+      },
+      thinkDeeper: "Why do you feel pushed outward on a fast bend? There is no real outward force — your body simply tries to continue in a straight line (inertia), while the door or seat pushes you inward to make you follow the curve. The 'outward push' you feel is the seat's inward force, not a force on the seat.",
+      strategies: ["constant speed in a circle still means accelerating — always look for the inward force", "name the real force that supplies the centripetal force"],
+    },
+
+    {
+      heading: "Stopping Distance (Thinking + Braking)",
+      body: `When a driver has to stop, the total **stopping distance** has two parts:
+
+*stopping distance = thinking distance + braking distance*
+
+- **Thinking distance** is how far the vehicle travels during the driver's **reaction time**, before the brakes are applied. The car moves at constant speed during this time.
+- **Braking distance** is how far the vehicle travels while the **braking force** decelerates it to rest.
+
+**Factors that increase the thinking distance:** higher speed; a longer reaction time caused by **tiredness, alcohol, drugs, or distractions** (e.g. using a phone).
+
+**Factors that increase the braking distance:** higher speed; a smaller braking force or less grip — caused by **worn brakes or tyres**, and **wet, icy or oily (poor) road conditions**; and a greater mass.
+
+**The effect of speed.** The braking distance depends on the *square* of the speed. During braking the kinetic energy ½mv² is transferred (mostly to heat in the brakes) by the work done by the braking force, F × d. Setting F·d = ½mv² shows that for a given braking force the braking distance d ∝ v². So **doubling the speed roughly quadruples the braking distance** — a key road-safety point. (The brakes also get very hot as this energy is dissipated.)`,
+      keyPoints: [
+        "Stopping distance = thinking distance + braking distance.",
+        "Thinking distance = speed × reaction time (car moves at constant speed).",
+        "Thinking distance increases with tiredness, alcohol, drugs and distractions.",
+        "Braking distance increases with worn tyres/brakes, wet or icy roads, and greater mass.",
+        "Braking distance ∝ (speed)², because F·d = ½mv² — doubling the speed quadruples it.",
+      ],
+      discovery: {
+        problem: "A car's braking distance at 10 m/s is 6 m. Estimate its braking distance at 20 m/s, assuming the same braking force.",
+        idea: "Braking distance ∝ v² (from F·d = ½mv²). Doubling the speed multiplies v² by 4, so the braking distance ≈ 4 × 6 = 24 m. Thinking distance, by contrast, only doubles.",
+      },
+      whyItWorks: "The work done by the braking force removes the kinetic energy: F·d = ½mv². For a fixed force F, the distance d is proportional to v². This is the same energy argument as the v² = u² + 2as kinematics result and explains why small speed increases cause large jumps in braking distance.",
+      strategies: ["split every stopping problem into thinking + braking parts", "use d ∝ v² to scale braking distances", "thinking distance scales with v (linear), braking distance with v² (quadratic)"],
     },
   ],
 
@@ -299,8 +404,13 @@ This applies to all collisions and explosions. It is a consequence of Newton's t
       "Moment = force × perpendicular distance from pivot (N m); CW moments = ACW moments at equilibrium.",
       "Pressure p = F/A (Pa); pressure in a liquid p = ρgh.",
       "Momentum p = mv (kg m/s); total momentum is conserved in a closed system.",
-      "Impulse = F × Δt = change in momentum.",
+      "Resultant force = rate of change of momentum: F = Δp/Δt = (mv − mu)/t.",
+      "Impulse = F × Δt = change in momentum; longer impact time → smaller force (crumple zones, air bags, seat belts).",
       "Terminal velocity: drag equals driving force, so resultant = 0 and a = 0.",
+      "Contact forces need touching; non-contact (field) forces — gravitational, electrostatic, magnetic — act at a distance.",
+      "Two perpendicular forces give a resultant of magnitude √(F₁² + F₂²).",
+      "Circular motion at constant speed needs a centripetal (resultant) force directed to the centre.",
+      "Stopping distance = thinking distance + braking distance; braking distance ∝ (speed)².",
     ],
     flashcards: [
       { front: "State Newton's First Law.", back: "An object remains at rest or in uniform motion in a straight line unless acted upon by a resultant force." },
@@ -315,6 +425,12 @@ This applies to all collisions and explosions. It is a consequence of Newton's t
       { front: "State the conservation of momentum.", back: "In a closed system (no external resultant force), the total momentum before an event equals the total momentum after." },
       { front: "What is terminal velocity?", back: "The constant velocity reached when the driving force (or weight) exactly equals the opposing drag/air resistance, giving zero resultant force and zero acceleration." },
       { front: "What is impulse?", back: "Impulse = F × Δt = change in momentum (Δp). Unit: N s or kg m/s." },
+      { front: "Write Newton's second law in terms of momentum.", back: "F = Δp/Δt = (mv − mu)/t — the resultant force equals the rate of change of momentum. It reduces to F = ma when mass is constant." },
+      { front: "How do crumple zones, air bags and seat belts reduce injury?", back: "They increase the time Δt over which a passenger's momentum changes. Since F = Δp/Δt, a longer time gives a smaller force on the passenger." },
+      { front: "Name a contact force and a non-contact force.", back: "Contact (e.g. friction, tension, normal force, drag); non-contact / field force (e.g. gravitational, electrostatic, magnetic)." },
+      { front: "How do you find the resultant of two perpendicular forces?", back: "Use Pythagoras: resultant = √(F₁² + F₂²); the direction is found from trigonometry (or by a scale drawing)." },
+      { front: "What provides the centripetal force in circular motion?", back: "An ordinary force directed to the centre: gravity (orbits), tension (a ball on a string), or friction (a car cornering). The object accelerates towards the centre even at constant speed." },
+      { front: "What are the two parts of stopping distance?", back: "Thinking distance (travelled during the driver's reaction time) + braking distance (travelled while decelerating). Braking distance is proportional to (speed)²." },
     ],
     keyTerms: [
       { term: "Resultant force", definition: "The single force that has the same effect as all the individual forces acting on an object; the vector sum of all forces." },
@@ -332,6 +448,12 @@ This applies to all collisions and explosions. It is a consequence of Newton's t
       { term: "Momentum", definition: "The product of mass and velocity: p = mv. A vector quantity measured in kg m/s." },
       { term: "Conservation of momentum", definition: "In a closed system, the total momentum before an event equals the total momentum after." },
       { term: "Impulse", definition: "The product of force and the time for which it acts: impulse = FΔt = Δp. Unit: N s." },
+      { term: "Contact force", definition: "A force that requires the objects to be touching, e.g. friction, tension, the normal contact force, drag and upthrust." },
+      { term: "Non-contact (field) force", definition: "A force that acts at a distance through a field without contact: the gravitational, electrostatic and magnetic forces." },
+      { term: "Centripetal force", definition: "The resultant force that keeps an object moving in a circle, always directed towards the centre; provided by gravity, tension, friction or a normal force." },
+      { term: "Thinking distance", definition: "The distance a vehicle travels during the driver's reaction time, before the brakes are applied = speed × reaction time." },
+      { term: "Braking distance", definition: "The distance a vehicle travels while the braking force decelerates it to rest; proportional to the square of the speed." },
+      { term: "Stopping distance", definition: "The total distance to stop a vehicle = thinking distance + braking distance." },
     ],
   },
 

@@ -135,6 +135,47 @@ To find the image in a plane mirror by ray construction:
 1. Draw two rays from the object hitting the mirror.
 2. Apply the law of reflection to find each reflected ray.
 3. Extend reflected rays *behind* the mirror with dashed lines — where they meet is the virtual image.`,
+      diagrams: [
+        {
+          caption: "Plane mirror: object and its virtual image, equal distances either side; reflected rays traced back (dashed) to locate the image",
+          svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Plane mirror diagram showing an object in front and its virtual image the same distance behind, with two reflected rays traced back as dashed lines">
+  <rect width="320" height="200" fill="#0f172a"/>
+  <!-- mirror (vertical) at x=170, with hatching on the back -->
+  <line x1="170" y1="20" x2="170" y2="180" stroke="#94a3b8" stroke-width="3"/>
+  <line x1="170" y1="30" x2="182" y2="20" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="170" y1="60" x2="182" y2="50" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="170" y1="90" x2="182" y2="80" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="170" y1="120" x2="182" y2="110" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="170" y1="150" x2="182" y2="140" stroke="#94a3b8" stroke-width="1"/>
+  <text x="150" y="16" font-size="9" fill="#94a3b8" font-family="sans-serif">Mirror</text>
+  <!-- object arrow (in front, left) at x=90 -->
+  <line x1="90" y1="130" x2="90" y2="80" stroke="#34d399" stroke-width="2"/>
+  <polygon points="90,80 85,92 95,92" fill="#34d399"/>
+  <text x="64" y="78" font-size="10" fill="#34d399" font-family="sans-serif">Object</text>
+  <!-- image arrow (behind, right) at x=250, dashed -->
+  <line x1="250" y1="130" x2="250" y2="80" stroke="#fb7185" stroke-width="2" stroke-dasharray="4 3"/>
+  <polygon points="250,80 245,92 255,92" fill="#fb7185"/>
+  <text x="224" y="78" font-size="10" fill="#fb7185" font-family="sans-serif">Image</text>
+  <text x="206" y="170" font-size="9" fill="#fb7185" font-family="sans-serif">(virtual, same size)</text>
+  <!-- equal-distance markers -->
+  <line x1="90" y1="160" x2="170" y2="160" stroke="#64748b" stroke-width="1" stroke-dasharray="2 2"/>
+  <line x1="170" y1="160" x2="250" y2="160" stroke="#64748b" stroke-width="1" stroke-dasharray="2 2"/>
+  <text x="118" y="174" font-size="9" fill="#64748b" font-family="sans-serif">d</text>
+  <text x="206" y="174" font-size="9" fill="#64748b" font-family="sans-serif">d</text>
+  <!-- two real rays from top of object to mirror, then reflected to eye -->
+  <line x1="90" y1="80" x2="170" y2="70" stroke="#fbbf24" stroke-width="1.5"/>
+  <line x1="170" y1="70" x2="120" y2="40" stroke="#fbbf24" stroke-width="1.5"/>
+  <line x1="90" y1="80" x2="170" y2="105" stroke="#fbbf24" stroke-width="1.5"/>
+  <line x1="170" y1="105" x2="120" y2="150" stroke="#fbbf24" stroke-width="1.5"/>
+  <!-- dashed continuations of reflected rays back to image top -->
+  <line x1="170" y1="70" x2="250" y2="80" stroke="#fbbf24" stroke-width="1" stroke-dasharray="4 3"/>
+  <line x1="170" y1="105" x2="250" y2="80" stroke="#fbbf24" stroke-width="1" stroke-dasharray="4 3"/>
+  <!-- eye -->
+  <circle cx="118" cy="46" r="5" fill="none" stroke="#b7bce0" stroke-width="1.2"/>
+  <text x="100" y="38" font-size="9" fill="#b7bce0" font-family="sans-serif">Eye</text>
+</svg>`,
+        },
+      ],
       keyPoints: [
         "Angles of incidence and reflection are measured from the normal, not the surface.",
         "Law of reflection: i = r (angle of incidence equals angle of reflection).",
@@ -167,7 +208,20 @@ n = sin 40° / sin 25° = 0.6428 / 0.4226 = **1.52** (typical glass)
 
 n = c / v   (where c = speed of light in vacuum = 3.0 × 10⁸ m/s, v = speed in medium)
 
-So a medium with n = 1.5 has light speed = 3.0 × 10⁸ / 1.5 = 2.0 × 10⁸ m/s.`,
+So a medium with n = 1.5 has light speed = 3.0 × 10⁸ / 1.5 = 2.0 × 10⁸ m/s.
+
+**Wavelength inside a medium:** since frequency is unchanged and v = fλ, the wavelength shrinks by the same factor as the speed: λ_medium = λ_vacuum / n. (Red light of 600 nm in air becomes 400 nm inside glass of n = 1.5.)
+
+**Apparent depth (a refraction effect):** because light from the bottom of a pool or a glass block bends *away* from the normal as it leaves the water/glass, an object viewed from above appears **shallower** than it really is. For viewing straight down, real depth / apparent depth ≈ n. This is why a swimming pool always looks less deep than it is, and why a coin under a glass block seems to rise. (Edexcel treats this qualitatively; you are not required to use the formula.)
+
+**Required practical — investigating refraction through a rectangular glass block (Edexcel):**
+1. Place the glass block on a sheet of paper and draw round it to record its **outline**.
+2. Shine a single ray from a **ray box** (or use two **optical pins** to define the ray) onto one long face at an angle. Mark the incoming ray with crosses.
+3. Mark where the ray emerges, remove the block, and join the dots to draw the ray *inside* and *outside* the block.
+4. At the entry point, draw the **normal** (perpendicular to the surface). Measure the angle of incidence i and the angle of refraction r **from the normal** with a protractor.
+5. Repeat for several values of i (e.g. 20°, 30°, 40°, 50°).
+6. Calculate n = sin i / sin r for each, then average — or plot sin i (y-axis) against sin r (x-axis): a straight line through the origin confirms Snell's law and its **gradient = n**.
+- *Precautions:* use a sharp pencil and a thin ray, mark points precisely, and keep your eye directly over the pins to avoid parallax.`,
       diagrams: [
         {
           caption: "Refraction at an air-glass boundary: incident, normal, refracted ray, and angles labelled",
@@ -214,7 +268,9 @@ So a medium with n = 1.5 has light speed = 3.0 × 10⁸ / 1.5 = 2.0 × 10⁸ m/s
         "Into denser medium: slows, bends toward normal (angle r less than i).",
         "Into less dense medium: speeds up, bends away from normal (angle r greater than i).",
         "Snell's law: n = sin i / sin r (angles measured from the normal).",
-        "Speed in medium: v = c/n; wavelength changes on crossing boundary but frequency stays constant.",
+        "Speed in medium: v = c/n; wavelength changes on crossing boundary but frequency stays constant (λ_medium = λ_vacuum / n).",
+        "Apparent depth: objects under water/glass look shallower because light bends away from the normal on leaving.",
+        "Required practical: trace the ray through a glass block, measure i and r from the normal, and find n = sin i / sin r (or gradient of sin i vs sin r).",
       ],
       discovery: {
         problem: "Place a straight straw in a glass of water. It appears to bend at the water surface. Draw a sketch showing the path of light from the submerged part of the straw to your eye. Why does the straw appear to bend?",
@@ -253,6 +309,69 @@ For glass (n = 1.5): sin c = 1/1.5 = 0.667, so c = 41.8° ≈ 42°.
     },
 
     {
+      heading: "Diffraction",
+      body: `**Diffraction** is the spreading out of waves as they pass **through a gap** or **around the edge of an obstacle**. It is a property of all waves — water, sound, light — and is the key evidence that something behaves as a wave.
+
+After passing a gap, the straight wavefronts become **curved at the edges**; with a very narrow gap they become almost semicircular, as if the gap were a new point source.
+
+**How much a wave diffracts depends on the size of the gap compared with the wavelength:**
+- Gap **much wider** than the wavelength → the wave passes almost straight through; only the edges spread slightly.
+- Gap **about the same size** as the wavelength → maximum spreading; the waves fan out strongly.
+- Gap **much narrower** than the wavelength → the wave still spreads, but very little energy gets through.
+
+So to get **more** diffraction you make the **gap narrower** and/or the **wavelength longer** (lower frequency).
+
+**Everyday consequences:**
+- You can hear someone around a corner before you see them: sound (wavelength ~1 m) diffracts around door-sized gaps, but light (wavelength ~5 × 10⁻⁷ m) does not.
+- Long-wavelength radio waves diffract over hills and into valleys far better than short-wavelength TV signals.
+- Diffraction is usually demonstrated in a **ripple tank**, where water waves pass through an adjustable gap between two barriers.`,
+      diagrams: [
+        {
+          caption: "Plane wavefronts diffracting through a narrow gap — strong spreading when gap is comparable to the wavelength",
+          svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Plane wavefronts approaching a narrow gap in a barrier and spreading out in curved wavefronts on the far side">
+  <rect width="320" height="200" fill="#0f172a"/>
+  <!-- incoming plane wavefronts (vertical lines) -->
+  <line x1="20" y1="20" x2="20" y2="180" stroke="#38bdf8" stroke-width="2"/>
+  <line x1="45" y1="20" x2="45" y2="180" stroke="#38bdf8" stroke-width="2"/>
+  <line x1="70" y1="20" x2="70" y2="180" stroke="#38bdf8" stroke-width="2"/>
+  <line x1="95" y1="20" x2="95" y2="180" stroke="#38bdf8" stroke-width="2"/>
+  <text x="18" y="14" font-size="9" fill="#38bdf8" font-family="sans-serif">Plane wavefronts</text>
+  <!-- barrier with gap at centre (y=90 to 110) -->
+  <rect x="150" y="20" width="8" height="70" fill="#94a3b8"/>
+  <rect x="150" y="110" width="8" height="70" fill="#94a3b8"/>
+  <text x="120" y="16" font-size="9" fill="#94a3b8" font-family="sans-serif">Barrier with gap</text>
+  <!-- curved wavefronts spreading from the gap (semicircles centred on gap ~154,100) -->
+  <path d="M158,75 A30,30 0 0,1 158,125" stroke="#34d399" stroke-width="2" fill="none"/>
+  <path d="M158,55 A55,55 0 0,1 158,145" stroke="#34d399" stroke-width="2" fill="none"/>
+  <path d="M158,35 A82,82 0 0,1 158,165" stroke="#34d399" stroke-width="2" fill="none"/>
+  <text x="210" y="100" font-size="9" fill="#34d399" font-family="sans-serif">Spreading (diffracted)</text>
+  <text x="210" y="113" font-size="9" fill="#34d399" font-family="sans-serif">wavefronts</text>
+  <!-- direction arrow -->
+  <line x1="110" y1="100" x2="145" y2="100" stroke="#b7bce0" stroke-width="1.5" marker-end="url(#difarr)"/>
+  <defs>
+    <marker id="difarr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#b7bce0"/>
+    </marker>
+  </defs>
+</svg>`,
+        },
+      ],
+      keyPoints: [
+        "Diffraction = the spreading of waves through a gap or round an obstacle.",
+        "All waves diffract; it is evidence of wave behaviour.",
+        "Most diffraction occurs when the gap is about the same size as the wavelength.",
+        "More diffraction: narrower gap and/or longer wavelength (lower frequency).",
+        "Sound diffracts round everyday gaps; visible light's tiny wavelength means it barely diffracts.",
+      ],
+      discovery: {
+        problem: "You can hear music from a room down the hall through an open door long before you can see the speakers. Yet light from the same room does not bend round the doorway to reach your eyes. Both are waves — why does one bend round the corner and the other does not?",
+        idea: "Diffraction is strongest when the gap is comparable to the wavelength. A doorway is roughly 1 m wide — similar to the wavelength of speech (~1 m) — so sound spreads out through it and round the corner. Light has a wavelength of only about 5 × 10⁻⁷ m, billions of times smaller than the door, so it passes essentially straight through with negligible spreading and travels in straight lines.",
+      },
+      strategies: ["compare gap width with wavelength", "use a ripple tank to model the effect"],
+      thinkDeeper: "Diffraction sets a fundamental limit on the smallest detail any optical instrument can resolve: you cannot image features much smaller than the wavelength of the light used. This is why electron microscopes (using electrons with far shorter wavelengths than light) can see individual atoms, while ordinary light microscopes cannot.",
+    },
+
+    {
       heading: "Converging Lenses, Ray Diagrams, and Dispersion",
       body: `**Converging (convex) lens:** a lens that is thicker at the centre than the edges. It refracts parallel rays so that they converge at the **principal focus (F)**.
 
@@ -277,7 +396,17 @@ Virtual images cannot be formed on a screen; they are seen by looking through th
 
 magnification = image height / object height = image distance / object distance
 
-(No unit — it is a ratio.)
+(No unit — it is a ratio. Magnification > 1 means enlarged, < 1 means diminished.)
+
+**Worked example:** An object 2.0 cm tall is 30 cm from a lens; the real image forms 15 cm away. Magnification = image distance / object distance = 15/30 = 0.5, so image height = 0.5 × 2.0 = **1.0 cm** (diminished, inverted).
+
+**Uses of converging lenses:**
+- **Magnifying glass** — object inside F gives an enlarged virtual image.
+- **Camera / the eye** — distant object (beyond 2F) gives a small, real, inverted image on the sensor/retina.
+- **Projector** — object (slide) between F and 2F gives a large, real, inverted image on a screen; the slide is inserted upside down so the projected image appears the right way up.
+- **Spectacles for long sight (hyperopia)** — a converging lens brings the focus forward onto the retina.
+
+**Lens power:** a lens with a shorter focal length bends light more strongly and is described as more *powerful*. Power P = 1 / f, measured in dioptres (D) when f is in metres.
 
 **Dispersion by a prism:**
 White light is a mixture of all visible wavelengths (colours). When it enters a glass prism, each colour travels at a slightly different speed in the glass, so each is refracted by a slightly different amount. Violet light is refracted most, red light least. The result is a visible **spectrum**: red, orange, yellow, green, blue, indigo, violet (ROYGBIV). Dispersion occurs because n varies with wavelength — shorter wavelengths (violet) have a higher refractive index in glass.`,
@@ -334,6 +463,8 @@ White light is a mixture of all visible wavelengths (colours). When it enters a 
         "Three standard rays: parallel→through F; through centre→undeviated; through F→parallel.",
         "Object beyond F: real, inverted image on opposite side of lens.",
         "Object inside F: virtual, upright, magnified image on same side as object (magnifying glass).",
+        "Magnification = image height/object height = image distance/object distance; image height = magnification × object height.",
+        "Uses: magnifying glass, camera/eye, projector, long-sight spectacles; power P = 1/f in dioptres.",
         "Dispersion: white light splits into a spectrum because n varies with wavelength (violet refracted most).",
       ],
       thinkDeeper: "A converging lens with a shorter focal length is more powerful (higher power in dioptres, P = 1/f). Spectacle lenses for long-sighted (hyperopic) people are converging; they bring the focal point forward onto the retina. The camera in your phone contains several lens elements to correct for chromatic aberration — the dispersion effect that would otherwise make images blurry with colour fringes.",
@@ -354,7 +485,12 @@ White light is a mixture of all visible wavelengths (colours). When it enters a 
       "Critical angle formula: n = 1/sin c; total internal reflection occurs when i > c.",
       "Converging lens: object beyond F gives real, inverted image; object inside F gives virtual, upright, magnified image.",
       "Magnification = image height / object height = image distance / object distance.",
+      "Lens uses: magnifying glass, camera/eye, projector, long-sight spectacles; power P = 1/f (dioptres).",
       "Dispersion: violet refracted most, red least; n is higher for shorter wavelengths in glass.",
+      "Diffraction: waves spread through a gap or round an obstacle; greatest when the gap ≈ the wavelength.",
+      "More diffraction comes from a narrower gap and/or a longer wavelength.",
+      "Refraction practical: trace a ray through a glass block, measure i and r from the normal, find n = sin i / sin r.",
+      "Wavelength in a medium shrinks: λ_medium = λ_vacuum / n (frequency unchanged).",
     ],
     flashcards: [
       { front: "What is a transverse wave? Give two examples.", back: "Oscillation perpendicular to direction of energy transfer. Examples: light (and all EM waves), waves on a string, water surface waves." },
@@ -371,6 +507,11 @@ White light is a mixture of all visible wavelengths (colours). When it enters a 
       { front: "When does a converging lens act as a magnifying glass?", back: "When the object is placed between the lens and the principal focus (inside F). The image is virtual, upright, and magnified." },
       { front: "Why does a prism disperse white light into a spectrum?", back: "Different colours (wavelengths) travel at slightly different speeds in glass, so each is refracted by a different amount. Violet is refracted most, red least." },
       { front: "What is amplitude and how does it relate to energy?", back: "Amplitude is the maximum displacement of a particle from equilibrium. Energy carried by a wave is proportional to the square of amplitude (E ∝ A²)." },
+      { front: "What is diffraction, and when is it greatest?", back: "The spreading of waves as they pass through a gap or around an obstacle. It is greatest when the gap is about the same size as the wavelength; a narrower gap and/or longer wavelength increase it." },
+      { front: "How would you measure the refractive index of a glass block?", back: "Trace a ray through the block, draw the normal, measure the angles of incidence i and refraction r from the normal for several angles, then calculate n = sin i / sin r (or take the gradient of a sin i vs sin r graph)." },
+      { front: "State two uses of a converging lens other than a magnifying glass.", back: "Camera/eye (real, diminished, inverted image of a distant object) and a projector (real, magnified, inverted image of a near slide). Also corrects long sight (hyperopia)." },
+      { front: "How does the wavelength of light change when it enters glass?", back: "Frequency stays constant, but the wave slows, so the wavelength shrinks: λ_glass = λ_air / n. The colour is unchanged because colour depends on frequency." },
+      { front: "Why does a swimming pool look shallower than it is?", back: "Light from the bottom bends away from the normal as it leaves the water, so the apparent depth is less than the real depth (real depth / apparent depth ≈ n)." },
     ],
     keyTerms: [
       { term: "Transverse wave", definition: "A wave in which the oscillation of particles is perpendicular to the direction of energy transfer." },
@@ -389,6 +530,10 @@ White light is a mixture of all visible wavelengths (colours). When it enters a 
       { term: "Virtual image", definition: "An image from which rays appear to diverge but do not actually pass through; cannot be projected onto a screen." },
       { term: "Magnification", definition: "The ratio of image height to object height (= image distance / object distance). A dimensionless number." },
       { term: "Dispersion", definition: "The separation of white light into its component colours by a prism, because different wavelengths have different refractive indices in the medium." },
+      { term: "Diffraction", definition: "The spreading out of waves as they pass through a gap or around the edge of an obstacle; greatest when the gap is comparable to the wavelength." },
+      { term: "Lens power", definition: "A measure of how strongly a lens converges light, P = 1/f (in dioptres when the focal length f is in metres); a shorter focal length means a more powerful lens." },
+      { term: "Apparent depth", definition: "The reduced depth at which a submerged object appears when viewed from above, caused by refraction as light leaves the denser medium (real depth / apparent depth ≈ n)." },
+      { term: "Optical centre", definition: "The central point of a lens through which a ray passes without being deviated." },
     ],
   },
 

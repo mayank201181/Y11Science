@@ -21,10 +21,25 @@ When two insulators are rubbed together, **electrons** (not protons — protons 
 
 **Electric fields** exist in the space around any charged object. A small positive test charge placed in the field experiences a force. Field lines point from positive to negative; closer lines indicate a stronger field.
 
-Practical examples include:
+**Induction (attracting neutral objects):** a charged object can attract a small *neutral* object (e.g. tiny pieces of paper). The charge on the rod pushes like charges in the paper to the far side and pulls unlike charges to the near side. Because the attracting (near) charges are slightly closer than the repelling (far) charges, the net force is attraction.
+
+**USES of static electricity:**
+- **Inkjet printer:** tiny ink droplets are given a charge, then deflected by charged plates so each droplet lands at the correct spot on the paper.
+- **Photocopier:** a charged drum is exposed to an image; charged toner powder sticks only to the charged regions of the drum, then transfers to the paper and is fixed by heat.
+- **Electrostatic spray painting / powder coating:** paint droplets are charged so they repel each other (giving an even spread) and are attracted to the oppositely charged metal object — even reaching the back ("wrap-around"), which reduces waste.
+- **Smoke / dust precipitators** in chimneys: charged plates attract charged smoke particles, cleaning the exhaust gases.
+
+**DANGERS of static electricity:**
+- **Refuelling aircraft and tankers:** friction between the flowing fuel and the pipe builds up charge. A spark could ignite the fuel vapour and cause an explosion. The risk is reduced by **earthing (bonding)** — a conducting wire links the tanker to the aircraft/ground so charge flows safely away.
+- **Sensitive electronic components** can be damaged by a sudden electrostatic discharge.
+- **Lightning** — a large discharge between a charged cloud and the ground; buildings are protected by earthed metal lightning conductors.
+
+**Reducing the risk:** connect a conductor to **earth** (earthing). Charge then flows to or from the ground, preventing a dangerous build-up. Anti-static sprays, conductive flooring and humid (damp) air also let charge leak away gradually.
+
+Other everyday examples:
 - A plastic rod rubbed with a cloth becoming charged by friction.
-- Dust particles attracted to a charged television screen.
-- Lightning — a discharge between a cloud and the ground due to charge build-up.`,
+- Dust particles attracted to a charged television or computer screen.
+- A small shock on touching a metal door handle after walking across a carpet — you become charged and then discharge through the handle.`,
       diagrams: [
         {
           caption: "Electric field between two oppositely charged parallel plates (field lines from + to −)",
@@ -57,7 +72,10 @@ Practical examples include:
         "Charging by friction: object gaining electrons becomes negative; object losing electrons becomes positive.",
         "Like charges repel; unlike charges attract.",
         "Electric field lines point from positive to negative and are closer where the field is stronger.",
-        "A charged object can attract small neutral objects by inducing charge separation (induction)."
+        "A charged object can attract small neutral objects by inducing charge separation (induction).",
+        "Uses: inkjet printers, photocopiers, electrostatic spray painting, smoke precipitators.",
+        "Dangers: sparks when refuelling (fuel vapour explosion), damage to electronics, lightning.",
+        "Earthing (a conducting path to ground) lets charge flow away safely and reduces the risk."
       ],
       discovery: {
         problem: "A polythene rod is rubbed with a woollen cloth. The rod becomes negatively charged. Explain why, in terms of electron transfer, and state what charge the cloth acquires.",
@@ -158,6 +176,61 @@ V ∝ I, or equivalently V = IR (constant R)
       thinkDeeper: "The filament lamp's I–V curve is symmetric about the origin (same shape for negative V) because the tungsten filament heats identically regardless of current direction. Why does this symmetry NOT hold for a diode?",
       whyItWorks: "Resistance arises because electrons collide with the lattice of positive ions as they drift through a conductor. A longer wire means more collisions; a wider wire provides more parallel paths. At higher temperatures the ions vibrate more vigorously, causing more frequent collisions and increasing resistance — this is why the lamp's resistance rises as it glows.",
       strategies: ["Sketch the I–V graph shape first before calculating", "Check: does R stay constant? If yes, Ohm's law applies"]
+    },
+
+    {
+      heading: "Sensors: LDRs and Thermistors",
+      body: `Two special resistors change their resistance in response to their surroundings. They are used as **input sensors** in control circuits.
+
+**Light-dependent resistor (LDR):**
+- In **bright** light its resistance is **low** (a few hundred ohms).
+- In the **dark** its resistance is **high** (millions of ohms).
+- So: more light → lower resistance.
+
+**Thermistor** (the common "negative temperature coefficient" type used at IGCSE):
+- When **hot**, its resistance is **low**.
+- When **cold**, its resistance is **high**.
+- So: higher temperature → lower resistance.
+
+**Using a sensor in a potential divider:** a sensor is connected in series with a fixed resistor across a supply. The supply voltage is shared between the two in proportion to their resistances. As the sensor's resistance changes, the share of voltage across each part changes, and this changing output voltage can switch a circuit on or off.
+
+For two resistors R₁ and R₂ in series across a supply V_s, the p.d. across R₂ is:
+
+V_out = V_s × R₂ / (R₁ + R₂)
+
+**Worked example:** A thermistor (R = 2000 Ω when cold) is in series with a 1000 Ω fixed resistor across a 6 V supply, with V_out taken across the fixed resistor.
+- V_out = 6 × 1000 / (2000 + 1000) = 6 × 1000/3000 = 2 V (cold)
+- When warm, the thermistor falls to, say, 500 Ω: V_out = 6 × 1000 / (500 + 1000) = 4 V.
+- So as it heats up, V_out rises — this rising voltage can trigger a cooling fan.
+
+**Applications:** LDRs switch on street lights / security lights at dusk; thermistors act as temperature sensors in thermostats, fire alarms, ovens and car engines.`,
+      diagrams: [
+        {
+          caption: "Resistance versus light (LDR) and resistance versus temperature (thermistor): both fall as the stimulus increases",
+          svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Two falling curves showing LDR resistance decreasing with light intensity and thermistor resistance decreasing with temperature">
+  <line x1="50" y1="170" x2="300" y2="170" stroke="#b7bce0" stroke-width="1.5"/>
+  <line x1="50" y1="20"  x2="50"  y2="170" stroke="#b7bce0" stroke-width="1.5"/>
+  <text x="38"  y="18"  fill="#b7bce0" font-size="11" font-family="sans-serif">R</text>
+  <text x="250" y="186" fill="#b7bce0" font-size="10" font-family="sans-serif">light / temperature</text>
+  <path d="M60,35 Q110,150 290,165" fill="none" stroke="#fbbf24" stroke-width="2.4"/>
+  <text x="120" y="60" fill="#fbbf24" font-size="10" font-family="sans-serif">LDR: R falls as light increases</text>
+  <text x="120" y="78" fill="#34d399" font-size="10" font-family="sans-serif">Thermistor: R falls as temperature rises</text>
+</svg>`
+        }
+      ],
+      keyPoints: [
+        "LDR: resistance is LOW in bright light and HIGH in the dark.",
+        "Thermistor (ntc): resistance is LOW when hot and HIGH when cold.",
+        "Both are non-ohmic — resistance depends on conditions, not just V and I.",
+        "In a potential divider, V_out = V_s × R₂ / (R₁ + R₂); a changing sensor resistance changes V_out.",
+        "Uses: LDRs in light-activated switches (street lights); thermistors in thermostats and fire alarms."
+      ],
+      discovery: {
+        problem: "An LDR (R = 200 Ω in light, 20 000 Ω in dark) is in series with a 1000 Ω resistor across a 9 V supply. V_out is taken across the LDR. Does V_out rise or fall as it gets dark?",
+        idea: "Light: V_out = 9 × 200/(200+1000) = 1.5 V. Dark: V_out = 9 × 20000/(20000+1000) ≈ 8.6 V. As it gets dark the LDR's resistance dominates, so V_out RISES — this can switch a lamp on."
+      },
+      whyItWorks: "In an LDR, light gives electrons enough energy to break free and carry current, so more light means more free charge carriers and lower resistance. In an ntc thermistor, heating frees more charge carriers in the semiconductor, again lowering resistance — the opposite trend to an ordinary metal wire, whose resistance rises with temperature.",
+      strategies: ["State the resistance trend first (low/high), then feed it into the potential-divider formula", "Check the limiting cases (very bright/very dark, very hot/very cold)"]
     },
 
     {
@@ -301,8 +374,13 @@ A 2 kW electric kettle runs for 5 minutes. Electricity costs $0.28 per kWh.
     },
 
     {
-      heading: "Electrical Safety",
-      body: `Mains electricity in most countries (230 V AC in the UK/Singapore) is lethal. Several safety features are used:
+      heading: "Mains Electricity & Safety",
+      body: `**Direct current (d.c.) vs alternating current (a.c.):**
+- **Direct current (d.c.)** flows in **one direction only**. The current is steady and the supply has a fixed positive and negative terminal. Cells and batteries provide d.c.
+- **Alternating current (a.c.)** repeatedly **reverses direction**, many times per second. On a graph it is a wave that goes positive then negative. Generators and the mains supply provide a.c.
+- The UK/Singapore mains is about **230 V a.c. at a frequency of 50 Hz** (it reverses 50 times each second). Mains supplies are a.c. because a.c. voltages are easy to step up and down with transformers for efficient transmission.
+
+**Mains electricity** (230 V a.c. in the UK/Singapore) is lethal, so several safety features are used.
 
 **Three-pin plug wiring (UK standard):**
 - **Live (brown):** carries the alternating voltage (~230 V).
@@ -317,14 +395,60 @@ A 2 kW electric kettle runs for 5 minutes. Electricity costs $0.28 per kWh.
 
 **Double insulation:** an appliance with two layers of insulation around live parts does not need an earth wire (e.g. a hair dryer or electric drill with a plastic case — Class II). Indicated by the double-square symbol.
 
-**Residual current device (RCD):** detects tiny imbalances between live and neutral currents (caused by current leaking through a person) and cuts off the supply in milliseconds — far faster than a fuse.`,
+**Residual current device (RCD):** detects tiny imbalances between live and neutral currents (caused by current leaking through a person) and cuts off the supply in milliseconds — far faster than a fuse.
+
+**Why the fuse goes in the LIVE wire:** so that when it blows, the appliance is cut off from the dangerous live (230 V) supply. If the fuse were in the neutral wire, the appliance would still be connected to the live wire and could give a shock even when "off". For the same reason the switch is also placed in the live wire.`,
+      diagrams: [
+        {
+          caption: "Direct current (steady, one direction) compared with alternating current (a wave that reverses direction)",
+          svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Graph comparing direct current as a flat horizontal line and alternating current as a sine wave crossing the time axis">
+  <line x1="40" y1="60" x2="300" y2="60" stroke="#b7bce0" stroke-width="1.2"/>
+  <text x="6" y="40" fill="#b7bce0" font-size="10" font-family="sans-serif">I / V</text>
+  <line x1="40" y1="40" x2="300" y2="40" stroke="#38bdf8" stroke-width="2.4"/>
+  <text x="250" y="34" fill="#38bdf8" font-size="10" font-family="sans-serif">d.c. (steady)</text>
+  <line x1="40" y1="150" x2="300" y2="150" stroke="#b7bce0" stroke-width="1.2"/>
+  <text x="150" y="195" fill="#b7bce0" font-size="10" font-family="sans-serif">time</text>
+  <path d="M40,150 Q70,110 100,150 Q130,190 160,150 Q190,110 220,150 Q250,190 280,150" fill="none" stroke="#fbbf24" stroke-width="2.4"/>
+  <text x="225" y="120" fill="#fbbf24" font-size="10" font-family="sans-serif">a.c. (reverses)</text>
+</svg>`
+        },
+        {
+          caption: "Three-pin plug: live (brown) with fuse, neutral (blue), earth (green/yellow) to the larger top pin",
+          svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-label="Wiring of a three-pin plug showing the earth pin at top connected by green and yellow wire, the live pin with a fuse connected by brown wire, and the neutral pin connected by blue wire">
+  <rect x="60" y="20" width="200" height="180" rx="14" fill="none" stroke="#b7bce0" stroke-width="2"/>
+  <!-- Earth pin (top) -->
+  <rect x="150" y="2" width="20" height="30" rx="3" fill="#34d399"/>
+  <text x="200" y="22" fill="#34d399" font-size="10" font-family="sans-serif">Earth (green/yellow)</text>
+  <line x1="160" y1="32" x2="160" y2="90" stroke="#34d399" stroke-width="2.5"/>
+  <!-- Live pin (bottom right) with fuse -->
+  <rect x="210" y="190" width="20" height="28" rx="3" fill="#a16207"/>
+  <text x="232" y="208" fill="#a16207" font-size="10" font-family="sans-serif">Live (brown)</text>
+  <line x1="220" y1="190" x2="220" y2="150" stroke="#a16207" stroke-width="2.5"/>
+  <rect x="208" y="120" width="24" height="30" rx="3" fill="none" stroke="#fbbf24" stroke-width="2"/>
+  <text x="236" y="138" fill="#fbbf24" font-size="9" font-family="sans-serif">Fuse</text>
+  <line x1="220" y1="120" x2="220" y2="95" stroke="#a16207" stroke-width="2.5"/>
+  <line x1="220" y1="95" x2="160" y2="95" stroke="#a16207" stroke-width="2.5"/>
+  <!-- Neutral pin (bottom left) -->
+  <rect x="90" y="190" width="20" height="28" rx="3" fill="#38bdf8"/>
+  <text x="40" y="208" fill="#38bdf8" font-size="10" font-family="sans-serif">Neutral (blue)</text>
+  <line x1="100" y1="190" x2="100" y2="105" stroke="#38bdf8" stroke-width="2.5"/>
+  <line x1="100" y1="105" x2="160" y2="105" stroke="#38bdf8" stroke-width="2.5"/>
+  <!-- Cable grip -->
+  <rect x="135" y="100" width="50" height="14" rx="4" fill="#475569"/>
+  <text x="160" y="135" fill="#b7bce0" font-size="9" font-family="sans-serif" text-anchor="middle">cable grip</text>
+</svg>`
+        }
+      ],
       keyPoints: [
+        "d.c. flows in one direction (cells/batteries); a.c. repeatedly reverses direction (mains, generators).",
+        "UK/Singapore mains: ~230 V a.c. at 50 Hz.",
         "Live wire (brown): 230 V alternating; neutral (blue): ~0 V; earth (green/yellow): safety path to ground.",
-        "Fuse: melts in the live wire if current is too high, breaking the circuit permanently until replaced.",
+        "Fuse: melts in the LIVE wire if current is too high, breaking the circuit permanently until replaced.",
         "Circuit breaker: trips electromagnetically; can be reset; protects entire circuits.",
         "Earth wire protects metal-cased appliances; if live touches the case, current surges → fuse blows.",
         "Double-insulated appliances (Class II) need no earth wire as plastic cases cannot become live."
-      ]
+      ],
+      thinkDeeper: "A fuse blows only after a fault has already passed a dangerous current for a short time. An RCD trips on a tiny current imbalance (≈30 mA). Why is an RCD much better at protecting a *person* from electrocution than a fuse is?"
     }
   ],
 
@@ -339,7 +463,12 @@ A 2 kW electric kettle runs for 5 minutes. Electricity costs $0.28 per kWh.
       "Parallel circuit: 1/R_T = 1/R₁ + 1/R₂; p.d. same; currents add.",
       "P = IV = I²R = V²/R; E = IVt; 1 kWh = 3.6 × 10⁶ J.",
       "Cost of electricity = power (kW) × time (h) × price per kWh.",
-      "Earth wire + fuse protect metal-cased appliances; double insulation removes the need for an earth wire."
+      "Earth wire + fuse protect metal-cased appliances; double insulation removes the need for an earth wire.",
+      "LDR: resistance low in light, high in the dark. Thermistor (ntc): resistance low when hot, high when cold.",
+      "Potential divider: V_out = V_s × R₂ / (R₁ + R₂).",
+      "a.c. reverses direction repeatedly (mains, ~230 V, 50 Hz); d.c. flows one way (cells/batteries).",
+      "The fuse and switch go in the LIVE wire so the appliance is isolated from 230 V when they open.",
+      "Static uses: inkjet printers, photocopiers, spray painting, smoke precipitators; dangers reduced by earthing."
     ],
     flashcards: [
       { front: "Define electric current.", back: "Electric current is the rate of flow of charge: I = Q/t (unit: ampere, A)." },
@@ -353,7 +482,13 @@ A 2 kW electric kettle runs for 5 minutes. Electricity costs $0.28 per kWh.
       { front: "What is the purpose of the earth wire in a three-pin plug?", back: "It connects the metal case to ground (0 V). If the live wire touches the case, current flows through the earth wire, blowing the fuse and making the appliance safe." },
       { front: "Why does a filament lamp have a non-linear I–V graph?", back: "As current increases, the filament temperature rises, increasing resistance. So I increases less than proportionally with V — the graph curves and flattens." },
       { front: "What charge does an object acquire when it gains electrons?", back: "Negative charge (it has more electrons than protons)." },
-      { front: "What does double insulation mean and what advantage does it have?", back: "Two layers of insulation around live parts. The appliance is safe without an earth wire — ideal for plastic-cased devices (Class II)." }
+      { front: "What does double insulation mean and what advantage does it have?", back: "Two layers of insulation around live parts. The appliance is safe without an earth wire — ideal for plastic-cased devices (Class II)." },
+      { front: "How does the resistance of an LDR change with light?", back: "In bright light its resistance is low; in the dark its resistance is high. More light → lower resistance." },
+      { front: "How does the resistance of an (ntc) thermistor change with temperature?", back: "When hot its resistance is low; when cold its resistance is high. Higher temperature → lower resistance." },
+      { front: "Give the potential-divider output formula.", back: "V_out = V_s × R₂ / (R₁ + R₂), where V_out is the p.d. across R₂." },
+      { front: "What is the difference between a.c. and d.c.?", back: "d.c. (direct current) flows in one direction only (cells). a.c. (alternating current) repeatedly reverses direction (mains: ~230 V, 50 Hz)." },
+      { front: "Why is the fuse placed in the live wire (not the neutral)?", back: "So that when it blows, the appliance is disconnected from the 230 V live supply, making it safe to touch." },
+      { front: "Give one use and one danger of static electricity.", back: "Use: inkjet printer / photocopier / electrostatic spray painting. Danger: a spark when refuelling can ignite fuel vapour — reduced by earthing." }
     ],
     keyTerms: [
       { term: "Electric current (I)", definition: "The rate of flow of charge past a point in a circuit; I = Q/t, unit: ampere (A)." },
@@ -367,7 +502,14 @@ A 2 kW electric kettle runs for 5 minutes. Electricity costs $0.28 per kWh.
       { term: "Kilowatt-hour (kWh)", definition: "Commercial unit of electrical energy; 1 kWh = 3.6 × 10⁶ J." },
       { term: "Fuse", definition: "A thin wire in the live wire that melts if the current exceeds its rated value, breaking the circuit." },
       { term: "Earth wire", definition: "A safety wire (green/yellow) connecting a metal appliance case to ground (0 V) to prevent electric shock." },
-      { term: "Double insulation", definition: "Two layers of insulation around live parts; such appliances (Class II) do not need an earth wire." }
+      { term: "Double insulation", definition: "Two layers of insulation around live parts; such appliances (Class II) do not need an earth wire." },
+      { term: "Light-dependent resistor (LDR)", definition: "A resistor whose resistance is high in the dark and low in bright light; used in light-activated switches." },
+      { term: "Thermistor", definition: "A resistor whose resistance changes with temperature; the common (ntc) type has high resistance when cold and low resistance when hot." },
+      { term: "Potential divider", definition: "Two resistors in series that share the supply voltage in proportion to their resistances; V_out = V_s × R₂/(R₁+R₂)." },
+      { term: "Alternating current (a.c.)", definition: "Current that repeatedly reverses direction; the mains supply is a.c. (~230 V, 50 Hz)." },
+      { term: "Direct current (d.c.)", definition: "Current that flows in one direction only, as provided by a cell or battery." },
+      { term: "Circuit breaker", definition: "A switch that automatically trips to break a circuit when the current is too high; unlike a fuse it can be reset." },
+      { term: "Residual current device (RCD)", definition: "A safety device that cuts off the supply within milliseconds if the live and neutral currents become unbalanced (current leaking to earth)." }
     ]
   },
 

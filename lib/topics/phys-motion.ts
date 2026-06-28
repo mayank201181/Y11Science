@@ -6,7 +6,7 @@ export const physMotion: Topic = {
   subject: "physics",
   icon: "🏃",
   blurb: "Distance, displacement, speed, velocity, acceleration and motion graphs — the foundations of mechanics.",
-  intro: "Motion is the study of how objects move — how far they travel, how fast, and whether they are speeding up or slowing down. In this topic you will build the language of kinematics (distance, displacement, speed, velocity, acceleration), master distance–time and velocity–time graphs, and apply these ideas to free fall and terminal velocity. These concepts underpin almost every other area of physics.",
+  intro: "Motion is the study of how objects move — how far they travel, how fast, and whether they are speeding up or slowing down. In this topic you will build the language of kinematics (distance, displacement, speed, velocity, acceleration), master distance–time and velocity–time graphs, use the equations of motion (SUVAT) for constant acceleration, learn how speed, acceleration and g are measured, and apply these ideas to free fall and terminal velocity. These concepts underpin almost every other area of physics.",
 
   guide: [
     {
@@ -242,10 +242,101 @@ For a curved graph, the **instantaneous speed** at a point is found by drawing a
     },
 
     {
+      heading: "Equations of Motion (SUVAT)",
+      body: `When acceleration is **uniform (constant)**, the motion is linked by a set of equations that connect five quantities. Learn the symbols — this is the *UVAST* (or *SUVAT*) table:
+
+- **s** = displacement (m)
+- **u** = initial velocity (m/s)
+- **v** = final velocity (m/s)
+- **a** = acceleration (m/s²)
+- **t** = time (s)
+
+**The three IGCSE equations of motion:**
+
+> v = u + at
+
+> s = ((u + v) / 2) × t     (distance = average velocity × time)
+
+> v² = u² + 2as
+
+Edexcel 4PH1 quotes the last one in words: **(final velocity)² = (initial velocity)² + 2 × acceleration × distance.** A fourth, **s = ut + ½at²**, is also widely used (it follows by combining the first two), and Cambridge accepts it.
+
+**Choosing the right equation.** List what you know and what you want, then pick the equation that contains exactly those quantities:
+- Missing **s** (distance not involved) → use **v = u + at**.
+- Missing **a** → use **s = ((u + v)/2) × t**.
+- Missing **t** (time not involved) → use **v² = u² + 2as**.
+
+**Worked example 1 (no time given).** A car accelerates from 8 m/s to 20 m/s over 56 m. Find a.
+- Time is unknown, so use v² = u² + 2as: 20² = 8² + 2 × a × 56 → 400 = 64 + 112a → a = 336 / 112 = **3.0 m/s²**.
+
+**Worked example 2 (find distance).** A train starts from rest and accelerates at 0.5 m/s² for 40 s.
+- s = ut + ½at² = 0 + ½ × 0.5 × 40² = ½ × 0.5 × 1600 = **400 m**.
+
+**Worked example 3 (find final velocity).** A cyclist at 4 m/s accelerates at 1.2 m/s² for 5 s.
+- v = u + at = 4 + 1.2 × 5 = **10 m/s**.`,
+
+      keyPoints: [
+        "SUVAT equations apply ONLY when acceleration is uniform (constant).",
+        "v = u + at (no s); s = ((u + v)/2) × t (no a); v² = u² + 2as (no t).",
+        "s = ut + ½at² is the combined form, accepted by both boards.",
+        "Edexcel states v² = u² + 2as in words: (final velocity)² = (initial velocity)² + 2 × acceleration × distance.",
+        "Choose the equation that omits the quantity you neither know nor want.",
+        "For an object starting from rest, u = 0, which simplifies every equation.",
+      ],
+
+      discovery: {
+        problem: "A car brakes from 30 m/s to rest with a uniform deceleration of 5 m/s². You are NOT told the time. How far does it travel while stopping?",
+        idea: "Time is missing, so reach for v² = u² + 2as. Deceleration means a = −5 m/s². 0 = 30² + 2(−5)s → 0 = 900 − 10s → s = 90 m. The trick is recognising which variable is absent and matching it to the equation that leaves it out.",
+      },
+
+      whyItWorks: "These equations come straight from the velocity–time graph for constant acceleration (a straight, sloping line). v = u + at is simply gradient × time added to the start value. s = ((u + v)/2) × t is the area of the trapezium under the line (average of the parallel sides × width). Substituting v = u + at into the area equation and eliminating t gives v² = u² + 2as, so no new physics is needed — only the geometry of the graph.",
+
+      strategies: ["Write a UVAST table: list s, u, v, a, t and fill in the three you know.", "Identify the missing quantity, then pick the equation that does not contain it.", "Take 'starts from rest' to mean u = 0, and 'comes to rest' to mean v = 0."],
+    },
+
+    {
+      heading: "Measuring Speed, Acceleration and g",
+      body: `Exams expect you to describe **experiments** that measure speed, acceleration, and the acceleration of free fall g.
+
+**Measuring speed (average): speed = distance / time.**
+Measure a known distance with a ruler/tape and time the object over it with a stopwatch (or, more precisely, electronically). Average speed = distance ÷ time. The main uncertainty is human **reaction time** when starting and stopping a stopwatch — about 0.2 s — so electronic timing is preferred for short intervals.
+
+**Light gates.** A light gate has a beam of light and a sensor; an object (or a card on it) breaks the beam. A data logger records the time the beam is blocked.
+- **Speed at one point:** speed = (length of the card that breaks the beam) ÷ (time the beam is blocked).
+- **Acceleration:** use a card with **two segments** (or two light gates a known distance apart). Find the speed at each gate, then a = (v − u) ÷ (time between gates). Light gates avoid reaction-time error, giving far more accurate results than a stopwatch.
+
+**Ticker-tape timer.** A vibrating arm makes dots on a paper tape pulled through it, usually **50 dots per second** (so the gap between adjacent dots = 1/50 = 0.02 s).
+- Equal dot spacing → constant speed; dots getting further apart → accelerating; dots getting closer → decelerating.
+- Cut the tape into strips of (say) 5 spaces (= 0.1 s). Each strip's length ÷ 0.1 s gives the speed for that interval; lining the strips up side by side builds a speed–time graph, whose gradient is the acceleration.
+
+**Measuring g (acceleration of free fall).**
+Drop a steel ball from rest through a measured height **h** and time the fall **t** (ideally with an electronic timer triggered by release and a trapdoor switch, to remove reaction-time error). Because u = 0, h = ½gt², so **g = 2h / t²**.
+- Repeat for several heights, plot **h against t²**: the graph is a straight line through the origin with gradient = ½g, so **g = 2 × gradient**.
+- Repeat readings and average to reduce random error; a typical result is close to 9.8 m/s².`,
+
+      keyPoints: [
+        "Average speed is measured as distance ÷ time; reaction time (~0.2 s) limits stopwatch accuracy.",
+        "Light gates time a card breaking a beam: speed = card length ÷ time blocked.",
+        "Acceleration with light gates: find speed at two points, then a = (v − u) ÷ time between them.",
+        "A ticker-tape timer marks 50 dots per second, so adjacent dots are 0.02 s apart; spacing shows the motion.",
+        "Measure g by dropping a ball through height h from rest: g = 2h / t².",
+        "Plotting h against t² gives a straight line of gradient ½g, so g = 2 × gradient.",
+      ],
+
+      whyItWorks: "Electronic methods (light gates, trapdoor timers) beat a hand-held stopwatch because they remove the ~0.2 s human reaction time, which is a large fraction of a short fall. For g, starting from rest makes u = 0 so s = ut + ½at² reduces to h = ½gt², and rearranging gives g = 2h/t² — measuring h and t is enough to find g.",
+
+      strategies: ["State HOW each quantity is measured (instrument) and what reduces the error (electronic timing, repeats, averaging).", "For g, prefer h = ½gt² rearranged to g = 2h/t², or the gradient of an h–t² graph."],
+
+      thinkDeeper: "Why time many dot-spaces rather than one? Each dot has a small position uncertainty. Measuring across many spaces makes the timed distance much larger than that uncertainty, so the percentage error in the speed is far smaller — the same reason you draw the largest possible triangle when finding a gradient.",
+    },
+
+    {
       heading: "Free Fall and Terminal Velocity",
       body: `**Free fall** occurs when the only force acting on an object is gravity (no air resistance). All objects in free fall near Earth's surface accelerate downward at the same rate regardless of mass.
 
-**Acceleration of free fall g ≈ 9.8 m/s²** (Cambridge IGCSE also accepts 10 m/s² — state which value you use).
+**Acceleration of free fall g ≈ 9.8 m/s²** (Cambridge IGCSE also accepts 10 m/s² — state which value you use). It can be measured by timing a ball dropped from rest through a known height h and using g = 2h / t² (see "Measuring Speed, Acceleration and g").
+
+Because free fall is motion with constant acceleration, the SUVAT equations apply with a = g: for a dropped object (u = 0) the fall is v = gt, s = ½gt², and v² = 2gs. For objects thrown upward, take a sign convention (e.g. up positive, so a = −g) and at the highest point v = 0.
 
 **Falling with air resistance — terminal velocity:**
 
@@ -367,6 +458,12 @@ At t = 10 s: s_A = s_B = 200 m. Car A catches Car B after 10 s and 200 m.`,
       "Acceleration of free fall g ≈ 9.8 m/s² (or 10 m/s² — state which you use).",
       "Terminal velocity: reached when drag = weight, so resultant force = 0 and acceleration = 0.",
       "At terminal velocity the object moves at constant speed (non-zero) with non-zero forces balancing.",
+      "Equations of motion (constant a only): v = u + at; s = ((u + v)/2)t; v² = u² + 2as; s = ut + ½at².",
+      "Edexcel form of the last equation: (final velocity)² = (initial velocity)² + 2 × acceleration × distance.",
+      "Choose the SUVAT equation that omits the quantity you neither know nor want.",
+      "Measure g by dropping a ball from rest through height h: g = 2h / t² (gradient of h vs t² = ½g).",
+      "Light gates / ticker tape measure speed and acceleration; a ticker timer makes 50 dots per second (0.02 s apart).",
+      "Electronic timing beats a stopwatch because it removes the ~0.2 s human reaction-time error.",
     ],
 
     flashcards: [
@@ -382,6 +479,13 @@ At t = 10 s: s_A = s_B = 200 m. Car A catches Car B after 10 s and 200 m.`,
       { front: "What is deceleration?", back: "Negative acceleration — the object is slowing down. Acceleration and velocity point in opposite directions." },
       { front: "A flat (horizontal) line on a velocity–time graph means…?", back: "Constant speed (zero acceleration)." },
       { front: "Why does a parachutist slow down after opening a parachute?", back: "The open parachute greatly increases drag, making drag > weight, so resultant force acts upward (against motion), decelerating the parachutist to a new, lower terminal velocity." },
+      { front: "State the three IGCSE equations of motion (constant acceleration).", back: "v = u + at;  s = ((u + v)/2) × t;  v² = u² + 2as.  (Also s = ut + ½at².)" },
+      { front: "When can you use the SUVAT equations of motion?", back: "Only when the acceleration is uniform (constant). They do not apply if a changes." },
+      { front: "Which equation of motion has no time t in it?", back: "v² = u² + 2as — use it when time is neither given nor wanted." },
+      { front: "How do you measure the acceleration of free fall g?", back: "Drop a ball from rest through a measured height h and time the fall t (electronically). Then g = 2h / t². Plotting h against t² gives a line of gradient ½g." },
+      { front: "How can a light gate measure speed?", back: "An object (or a card on it) breaks a light beam; the data logger times how long the beam is blocked. speed = length of card ÷ time blocked." },
+      { front: "How does a ticker-tape timer show acceleration?", back: "It prints dots at a fixed rate (usually 50 per second, 0.02 s apart). Dots getting further apart show the object is accelerating; equal spacing means constant speed." },
+      { front: "Why is electronic timing better than a stopwatch?", back: "It removes the human reaction-time error (about 0.2 s), which is a large fraction of a short time interval." },
     ],
 
     keyTerms: [
@@ -396,6 +500,11 @@ At t = 10 s: s_A = s_B = 200 m. Car A catches Car B after 10 s and 200 m.`,
       { term: "Drag (air resistance)", definition: "The resistive force exerted by a fluid on a moving object, opposing its motion and increasing with speed." },
       { term: "Scalar", definition: "A quantity that has magnitude only (e.g. distance, speed, time, mass)." },
       { term: "Vector", definition: "A quantity that has both magnitude and direction (e.g. displacement, velocity, acceleration, force)." },
+      { term: "Uniform acceleration", definition: "Acceleration that stays constant in size and direction; the condition required for the SUVAT equations of motion to apply." },
+      { term: "Equations of motion (SUVAT)", definition: "A set of equations linking s, u, v, a and t for constant acceleration: v = u + at, s = ((u + v)/2)t, v² = u² + 2as (and s = ut + ½at²)." },
+      { term: "Light gate", definition: "A sensor with a light beam that is broken by a passing object; a data logger times how long the beam is blocked to find speed (and, with two gates, acceleration)." },
+      { term: "Ticker-tape timer", definition: "A device that prints dots on a moving paper tape at a fixed rate (commonly 50 per second), so dot spacing reveals speed and acceleration." },
+      { term: "Reaction time", definition: "The short delay (about 0.2 s) between a person seeing an event and responding; a source of random error when timing by hand, reduced by electronic timing." },
     ],
   },
 

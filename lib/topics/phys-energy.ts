@@ -239,6 +239,48 @@ export const physEnergy: Topic = {
         "efficiency ≤ 100% for any real device.",
     },
 
+    // ─── SECTION 3b ──────────────────────────────────────────────────────────
+    {
+      heading: "Dissipation and Reducing Wasted Energy",
+      body:
+        "In every real transfer some energy ends up in stores that are **not useful** — this is **wasted** " +
+        "(or **dissipated**) energy. It is usually transferred to the **internal (thermal) store** of the device " +
+        "and its surroundings by heating, and sometimes carried away as **sound** waves.\n\n" +
+        "Crucially, the energy is **not destroyed** — it is just spread out into the surroundings, becoming " +
+        "more difficult to use again. The total energy is still conserved.\n\n" +
+        "**Reducing wasted energy** makes a device more efficient. Common methods:\n\n" +
+        "- **Lubrication** (oil/grease) reduces **friction** between moving parts, so less energy is wasted as heat.\n" +
+        "- **Streamlining** reduces **air resistance / drag**, so less kinetic energy is wasted overcoming it.\n" +
+        "- **Thermal insulation** (e.g. lagging a tank, cavity-wall insulation, double glazing) reduces the rate of " +
+        "**heat loss** by conduction, convection and radiation, keeping useful thermal energy where it is wanted.\n\n" +
+        "**Why friction wastes energy:** when surfaces rub, work is done against the friction force " +
+        "(W = F × d). That work transfers energy to the internal store of the surfaces, raising their temperature. " +
+        "Reducing the friction force reduces this unwanted transfer.",
+      keyPoints: [
+        "Wasted (dissipated) energy is usually transferred to the thermal store of the surroundings by heating; sometimes as sound.",
+        "Dissipated energy is spread out and harder to reuse, but it is NOT destroyed — energy is still conserved.",
+        "Friction and air resistance are the main causes of wasted energy in moving machines.",
+        "Reduce waste by: lubrication (less friction), streamlining (less drag), thermal insulation (less heat loss).",
+        "Less wasted energy means higher efficiency for the same input.",
+      ],
+      discovery: {
+        problem:
+          "Two identical toy cars roll down identical ramps. One axle is oiled, the other is dry. " +
+          "Predict which car travels further along the flat floor at the bottom, and explain where the 'missing' " +
+          "energy has gone for the slower car.",
+        idea:
+          "The oiled car travels further. Both cars start with the same GPE at the top, so both reach the " +
+          "bottom with (almost) the same energy. As they roll along the floor, friction in the axle does work " +
+          "against their motion, transferring kinetic energy to the **internal (thermal) store** of the axle and " +
+          "surroundings. The dry axle has more friction, so it wastes energy faster and stops sooner. None of the " +
+          "energy is lost — it has simply warmed the axle and air.",
+      },
+      strategies: ["Identify the unwanted transfer (usually heating by friction or drag)", "Match each reduction method to the loss it targets"],
+      whyItWorks:
+        "Efficiency = useful / total. Lubrication, streamlining and insulation all cut the size of the wasted " +
+        "term without changing the useful job, so the same input delivers a larger useful fraction.",
+    },
+
     // ─── SECTION 4 ───────────────────────────────────────────────────────────
     {
       heading: "Non-Renewable Energy Resources",
@@ -368,7 +410,7 @@ export const physEnergy: Topic = {
   // ─── LEARN SMART ──────────────────────────────────────────────────────────
   learn: {
     keyFacts: [
-      "Energy stores: kinetic, gravitational potential, chemical, elastic, nuclear, internal (thermal), electrostatic.",
+      "The 8 energy stores: kinetic, gravitational potential, chemical, elastic (strain), nuclear, internal (thermal), electrostatic, magnetic.",
       "Energy transfer mechanisms: mechanical work, electrical working, heating, waves.",
       "Conservation of energy: energy cannot be created or destroyed, only transferred.",
       "Ek = ½mv² (kinetic energy in joules; m in kg, v in m/s).",
@@ -378,6 +420,10 @@ export const physEnergy: Topic = {
       "Efficiency = useful energy out / total energy in × 100% (max 100%).",
       "Sankey diagrams show energy flow with arrow widths proportional to energy.",
       "Most renewables trace their energy to the Sun; tidal energy comes from Moon/Earth gravity.",
+      "Wasted energy is reduced by lubrication (less friction), streamlining (less drag) and thermal insulation (less heat loss).",
+      "All thermal power stations use the same chain: fuel → heat → steam → turbine → generator → electricity.",
+      "Nuclear stations heat water by fission of uranium-235; fossil-fuel stations heat it by combustion.",
+      "Solar cells (photovoltaic) make electricity directly from light; solar (thermal) panels use the Sun to heat water.",
     ],
     flashcards: [
       { front: "Formula for kinetic energy", back: "Ek = ½mv² (m in kg, v in m/s, Ek in joules)" },
@@ -387,7 +433,11 @@ export const physEnergy: Topic = {
       { front: "Formula for efficiency", back: "Efficiency = (useful energy output / total energy input) × 100%; always ≤ 100%" },
       { front: "What is a Sankey diagram?", back: "A diagram where arrow widths are proportional to energy; useful output goes straight ahead, wasted energy branches off" },
       { front: "Name the 4 energy transfer mechanisms", back: "Mechanical work (force), electrical working, heating, waves" },
-      { front: "Name the 7 energy stores", back: "Kinetic, gravitational potential, chemical, elastic/strain, nuclear, internal/thermal, electrostatic" },
+      { front: "Name the 8 energy stores", back: "Kinetic, gravitational potential, chemical, elastic/strain, nuclear, internal/thermal, electrostatic, magnetic" },
+      { front: "What is the magnetic energy store?", back: "Energy stored between two magnets, or between a magnet and a magnetic material, in a magnetic field" },
+      { front: "What is the electrostatic energy store?", back: "Energy stored between charged objects (charges held apart or together in an electric field)" },
+      { front: "Difference: nuclear fission vs combustion as a heat source", back: "A nuclear station heats water by fission (splitting uranium-235 nuclei); a fossil-fuel station heats water by burning (combustion) — both then use the same steam→turbine→generator chain" },
+      { front: "Two ways to reduce wasted (dissipated) energy", back: "Lubrication to reduce friction, streamlining to reduce air/water resistance, and thermal insulation to reduce heat loss" },
       { front: "Which renewables originate from the Sun?", back: "Solar, wind, wave, hydroelectric, biofuel — all driven by solar radiation" },
       { front: "Which energy resource is NOT from the Sun?", back: "Tidal — comes from gravitational pull of the Moon and rotational energy of the Earth" },
       { front: "What is dissipation?", back: "Energy spreading into the surroundings as thermal energy (heat), making it less useful but not destroyed" },
@@ -406,6 +456,15 @@ export const physEnergy: Topic = {
       { term: "Non-renewable resource", definition: "An energy resource (e.g. fossil fuel, nuclear) that cannot be replenished and will eventually be depleted." },
       { term: "Gravitational potential energy (GPE)", definition: "The energy stored by an object due to its position in a gravitational field; ΔGPE = mgΔh." },
       { term: "Kinetic energy (Ek)", definition: "The energy an object possesses due to its motion; Ek = ½mv²." },
+      { term: "Magnetic energy store", definition: "Energy stored between two magnets, or between a magnet and a magnetic material, held in a magnetic field." },
+      { term: "Electrostatic energy store", definition: "Energy stored between charged objects held apart or together in an electric field." },
+      { term: "Internal (thermal) energy store", definition: "The total kinetic and potential energy of all the particles in a substance; raising the temperature increases it." },
+      { term: "Useful energy", definition: "The portion of the input energy transferred to the store or form we actually want from a device." },
+      { term: "Wasted energy", definition: "Energy transferred to stores or surroundings we do not want, usually dissipated as thermal energy (and sometimes sound)." },
+      { term: "Fossil fuel", definition: "A non-renewable fuel (coal, oil or natural gas) formed from the remains of ancient organisms; releases CO₂ when burned." },
+      { term: "Nuclear fission", definition: "The splitting of a large unstable nucleus (e.g. uranium-235) into smaller nuclei, releasing large amounts of energy used to heat water in a nuclear power station." },
+      { term: "Biofuel", definition: "A renewable fuel made from recently living material (wood, plant oils, biogas); regarded as broadly carbon-neutral if the crops are replanted." },
+      { term: "Intermittent resource", definition: "An energy resource (e.g. wind, solar, wave) whose output varies with weather or time of day and so is not always available." },
     ],
   },
 
