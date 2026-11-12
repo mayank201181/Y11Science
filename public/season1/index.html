@@ -1410,33 +1410,6 @@
     isActivelySpeakingAudio = false;
     if (fallbackTimer) { clearTimeout(fallbackTimer); fallbackTimer = null; }
     if (cadenceInterval) { clearInterval(cadenceInterval); cadenceInterval = null; }
-    if (typeof SitcomNeuralStudio !== "undefined" && SitcomNeuralStudio.status === "ready") {
-      SitcomNeuralStudio.synthLine(item.text, item.speaker).then(function(res) {
-        if (session !== speechSessionId || !isPlaying) return;
-        const actx = SitcomNeuralStudio.ensureCtx();
-        if (SitcomNeuralStudio.liveSrc) { try { SitcomNeuralStudio.liveSrc.stop(); } catch (e) {} }
-        const buf = actx.createBuffer(1, res.pcm.length, res.sr);
-        buf.copyToChannel(res.pcm, 0);
-        const src = actx.createBufferSource();
-        src.buffer = buf;
-        src.playbackRate.value = speedMult;
-        src.connect(actx.destination);
-        SitcomNeuralStudio.liveSrc = src;
-        isActivelySpeakingAudio = true;
-        const vis = ["AA", "EE", "OO", "MBP", "FV"];
-        let vStep = 0;
-        cadenceInterval = setInterval(function() {
-          activeViseme = vis[vStep++ % vis.length];
-          lastWordBoundaryTime = performance.now();
-        }, 120);
-        src.onended = function() { handleLineFinished(); };
-        src.start(0);
-      }).catch(function() {
-        handleLineFinished();
-      });
-      return;
-    }
-
     if (window.speechSynthesis) {
       try { window.speechSynthesis.cancel(); } catch (e) {}
     }
@@ -1527,6 +1500,33 @@
         if (maybeOpenCheckpoint(curLine)) return;
         advanceLine(1, true);
       }, 330);
+    }
+
+    if (typeof SitcomNeuralStudio !== "undefined" && SitcomNeuralStudio.status === "ready") {
+      SitcomNeuralStudio.synthLine(item.text, item.speaker).then(function(res) {
+        if (session !== speechSessionId || !isPlaying) return;
+        const actx = SitcomNeuralStudio.ensureCtx();
+        if (SitcomNeuralStudio.liveSrc) { try { SitcomNeuralStudio.liveSrc.stop(); } catch (e) {} }
+        const buf = actx.createBuffer(1, res.pcm.length, res.sr);
+        buf.copyToChannel(res.pcm, 0);
+        const src = actx.createBufferSource();
+        src.buffer = buf;
+        src.playbackRate.value = speedMult;
+        src.connect(actx.destination);
+        SitcomNeuralStudio.liveSrc = src;
+        isActivelySpeakingAudio = true;
+        const vis = ["AA", "EE", "OO", "MBP", "FV"];
+        let vStep = 0;
+        cadenceInterval = setInterval(function() {
+          activeViseme = vis[vStep++ % vis.length];
+          lastWordBoundaryTime = performance.now();
+        }, 120);
+        src.onended = function() { handleLineFinished(); };
+        src.start(0);
+      }).catch(function() {
+        handleLineFinished();
+      });
+      return;
     }
 
     if (window.speechSynthesis) {

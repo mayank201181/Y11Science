@@ -256,7 +256,7 @@ export default function ProgressPage() {
                       </Link>
                     </td>
                     <td className="py-3 px-2 text-center text-xs font-bold">
-                      {acc !== null ? (
+                      {acc !== null && st ? (
                         <span className={acc >= 75 ? "tone-emerald" : "tone-amber"}>
                           {acc}% ({st.answered})
                         </span>
