@@ -17,10 +17,10 @@ EPISODE = {
         # ───────────────────────── COLD OPEN ─────────────────────────
         {"id": "cold", "shot": "host", "bg": "kitchen", "clock": "07:02", "lines": [
             ("NARR", "Seven oh two a.m. Meera. Fifteen. Year Eleven. She reaches for a mug of Milo that her mother has microwaved to roughly the temperature of the sun.", {"act": "idle"}),
-            ("HOST", "Okay. Milo. Let's go.", {"act": "reach"}),
+            ("HOST", "Okay. Milo. Let's go.", {"act": "reach", "live": "meera"}),
             ("BEAT", 0.5, {"act": "touch", "sfx": "sizzle"}),
             ("HOST", "OW! Ow ow ow ow!", {"act": "yank", "sfx": "boing"}),
-            ("MUM", "Blow on it first! How many times I have to tell you?", {"act": "yank"}),
+            ("MUM", "Blow on it first! How many times I have to tell you?", {"act": "yank", "live": "mum"}),
         ]},
         {"id": "hq", "shot": "wide", "bg": "hq_split", "cast": ["CORTEX", "RELAY"], "lines": [
             ("CORTEX", "Excuse me. Who moved the arm? I did not approve moving the arm.", {"emote": "shock", "sfx": "scratch"}),
@@ -115,7 +115,7 @@ EPISODE = {
         ]},
         {"id": "pe", "shot": "host", "bg": "field", "clock": "14:00", "lines": [
             ("NARR", "Two p.m. P.E. Outdoors. In Singapore. Thirty four degrees, with a humidity of: why.", {"act": "run"}),
-            ("HOST", "Coach, it's literally a sauna out here.", {"act": "hot"}),
+            ("HOST", "Coach, it's literally a sauna out here.", {"act": "hot", "live": "meera"}),
             ("HYPO", "Blood temperature thirty seven point six! Initiate cooling procedures!", {"act": "hot", "sfx": "alarm", "emote": "panic"}),
         ]},
         {"id": "hot", "shot": "diagram", "bg": "thermo", "cast": ["SWEAT", "ARTERIOLE"], "diagram": "skin", "lines": [
@@ -141,7 +141,7 @@ EPISODE = {
 
         # ───────────────────────── BLOOD GLUCOSE ─────────────────────────
         {"id": "boba", "shot": "host", "bg": "boba", "clock": "15:30", "lines": [
-            ("HOST", "One large brown sugar boba please. A hundred percent sugar. Extra pearls.", {"act": "order"}),
+            ("HOST", "One large brown sugar boba please. A hundred percent sugar. Extra pearls.", {"act": "order", "live": "meera"}),
             ("NARR", "Three thirty. Meera orders what is, chemically speaking, a pudding you can drink.", {"act": "drink", "sfx": "slurp"}),
         ]},
         {"id": "pancreas", "shot": "diagram", "bg": "pancreas", "cast": ["INSULIN", "GLUCAGON", "LIVER"], "diagram": "glucose", "lines": [
@@ -181,8 +181,8 @@ EPISODE = {
         # ───────────────────────── WATER & THE KIDNEY ─────────────────────────
         {"id": "netball", "shot": "host", "bg": "court", "clock": "17:00", "lines": [
             ("NARR", "Five p.m. Netball training. Ninety minutes. Zero water.", {"act": "run"}),
-            ("MUM", "Meera, did you drink water today? Two litres! I'm sending you one article.", {"act": "phone", "sfx": "ping"}),
-            ("HOST", "Ma, I'm fine.", {"act": "phone"}),
+            ("MUM", "Meera, did you drink water today? Two litres! I'm sending you one article.", {"act": "phone", "sfx": "ping", "live": "mum"}),
+            ("HOST", "Ma, I'm fine.", {"act": "phone", "live": "meera"}),
             ("HYPO", "She is not fine. Blood water content is low. The blood is too concentrated.", {"act": "phone", "emote": "annoyed"}),
         ]},
         {"id": "pit", "shot": "wide", "bg": "hq", "cast": ["HYPO", "PIT", "ADH"], "lines": [
@@ -200,7 +200,7 @@ EPISODE = {
         ]},
         {"id": "drink", "shot": "host", "bg": "court", "clock": "18:30", "lines": [
             ("NARR", "Then Meera drinks an entire litre of water, in one go.", {"act": "drink", "sfx": "gulp"}),
-            ("HOST", "Happy, Ma?", {"act": "drink"}),
+            ("HOST", "Happy, Ma?", {"act": "drink", "live": "meera"}),
         ]},
         {"id": "kidney2", "shot": "diagram", "bg": "plant", "cast": ["KIDNEY", "HYPO"], "diagram": "nephron", "lines": [
             ("HYPO", "Now the blood is too dilute. Pituitary, less A.D.H. please.", {"step": 6, "emote": "annoyed"}),

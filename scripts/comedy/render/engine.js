@@ -70,7 +70,7 @@ const SPEAKER_COL = {
   NARR: "#8d99ae", HOST: "#ff70a6", MUM: "#f15bb5", TEACHER: "#6c757d", ALL: "#ffd166",
   ...Object.fromEntries(Object.entries(CH).map(([k, v]) => [k, v.col])),
 };
-const SPEAKER_NAME = { NARR: "NARRATOR", HOST: "MEERA", MUM: "MUM (voice note)", TEACHER: "MS TAN", ALL: "EVERYONE",
+const SPEAKER_NAME = { NARR: "NARRATOR", HOST: "MEERA", MUM: "MUM", TEACHER: "MS TAN", ALL: "EVERYONE",
   ...Object.fromEntries(Object.entries(CH).map(([k, v]) => [k, v.name])) };
 
 function bodyPath(shape, w, h, t, amp) {
@@ -481,7 +481,7 @@ function drawFrame(i) {
     drawHost(hx, 560, 1.0, act, t - actStart, t, speaking === "HOST" ? amp : 0, speaking === "HOST");
     ctx.setTransform(1, 0, 0, 1, 0, 0);
     if (speaking && CH[speaking]) drawPiP(speaking, charState(speaking, 1100), t - cur.start);
-    if (speaking === "MUM") drawVoiceNote(t - cur.start, amp);
+    if (speaking === "MUM" && !cur.live) drawVoiceNote(t - cur.start, amp);
     if (speaking === "TEACHER") drawTeacher(amp);
     drawClock(sc.clock);
   } else if (shot === "confessional") {
@@ -514,8 +514,31 @@ function drawFrame(i) {
   ctx.restore();
   // fade in from black at very start / fade out at end
   if (t < 0.6) { ctx.fillStyle = `rgba(0,0,0,${1 - t / 0.6})`; ctx.fillRect(0, 0, W, H); }
+  if (cur && cur.live) drawLiveFrame(cur.live, t - cur.start, t);
   if (shot !== "title" && shot !== "end") drawSubtitle(cur, t);
   const rem = TL.duration - t; if (rem < 1.2) { ctx.fillStyle = `rgba(0,0,0,${1 - rem / 1.2})`; ctx.fillRect(0, 0, W, H); }
+}
+
+// Live-action cutaway: phone UI with a black 512x512 window at LIVE_RECT; the real
+// talking clip is overlaid there by ffmpeg after rendering (see composite_live.py).
+const LIVE_RECT = [384, 76, 512, 512];
+function drawLiveFrame(kind, lt, t) {
+  const [x, y, w, h] = LIVE_RECT; const bar = 50;
+  ctx.fillStyle = "rgba(8,8,20,0.72)"; ctx.fillRect(0, 0, W, H);
+  rr(x - 22, y - bar - 16, w + 44, h + bar + 32, 30); ctx.fillStyle = "#111"; ctx.fill(); ctx.strokeStyle = "#555"; ctx.lineWidth = 4; ctx.stroke();
+  ctx.fillStyle = "#000"; ctx.fillRect(x, y, w, h);
+  if (kind === "meera") {
+    ctx.fillStyle = "#1c1c1c"; ctx.fillRect(x, y - bar, w, bar);
+    pill("● REC", x + 10, y - bar / 2, 15, "#e63946", "#fff");
+    text("Meera's vlog · Y11 survival diary", x + w - 12, y - bar / 2, 16, "#fff", "right", 600);
+  } else {
+    ctx.fillStyle = "#075e54"; ctx.fillRect(x, y - bar, w, bar);
+    text("Mum ❤️", x + 14, y - bar / 2 - 8, 19, "#fff", "left", 700);
+    text("WhatsApp video · 0:" + String(Math.min(59, Math.floor(lt) + 1)).padStart(2, "0"), x + 14, y - bar / 2 + 12, 12, "#d8fdd2", "left", 500);
+    circle(x + w + 80, y + h - 70, 32, "#e63946"); emoji("📞", x + w + 80, y + h - 70, 28);
+  }
+  pill("REAL WORLD", x - 100, y + h - 30, 16, "#ffd166", "#1d1b33", "center");
+  if (lt < 0.15) { ctx.fillStyle = `rgba(255,255,255,${0.6 * (1 - lt / 0.15)})`; ctx.fillRect(0, 0, W, H); }
 }
 
 function drawPiP(id, st, lt) {
