@@ -57,7 +57,7 @@ export function Mascot() {
             {link && (
               <Link
                 href={link.href}
-                className="inline-block mt-2 text-xs font-bold text-indigo-300 underline"
+                className="inline-block mt-2 text-xs font-bold tone-indigo underline"
                 onClick={() => setOpen(false)}
               >
                 {link.label} →

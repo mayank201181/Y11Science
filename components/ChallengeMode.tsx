@@ -106,7 +106,7 @@ export function ChallengeMode({
         <span className="chip">
           {i + 1}/{questions.length}
         </span>
-        <span className={`chip ${left < 30 ? "text-rose-300 border-rose-500/40" : ""}`}>
+        <span className={`chip ${left < 30 ? "tone-rose border-rose-500/40" : ""}`}>
           ⏱️ {Math.floor(left / 60)}:{String(left % 60).padStart(2, "0")}
         </span>
         <span className="chip">⭐ {score}</span>

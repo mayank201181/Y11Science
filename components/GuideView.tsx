@@ -21,10 +21,22 @@ function Section({ s, topicTitle }: { s: GuideSection; topicTitle: string }) {
 
   function readAloud() {
     if (typeof window === "undefined" || !window.speechSynthesis) return;
-    const plain = `${s.heading}. ${s.body.replace(/[*#`>-]/g, " ")}`;
+    const plain = `${s.heading}. ${s.body.replace(/[*#`>-]/g, " ").replace(/&/g, " and ")}`;
     window.speechSynthesis.cancel();
+    const voices = window.speechSynthesis.getVoices() || [];
+    const best =
+      voices.find((v) => /Sonia|Libby|Natural|Neural|Google UK English Female|Serena|Ava/i.test(v.name)) ||
+      voices.find((v) => v.lang && v.lang.toLowerCase().startsWith("en-gb")) ||
+      voices.find((v) => v.lang && v.lang.toLowerCase().startsWith("en"));
     const u = new SpeechSynthesisUtterance(plain);
-    u.rate = 0.98;
+    if (best) {
+      u.voice = best;
+      u.lang = best.lang;
+    } else {
+      u.lang = "en-GB";
+    }
+    u.rate = 0.96;
+    u.pitch = 1.02;
     window.speechSynthesis.speak(u);
   }
 
@@ -38,8 +50,8 @@ function Section({ s, topicTitle }: { s: GuideSection; topicTitle: string }) {
       </div>
 
       {s.discovery && (
-        <div className="my-3 rounded-xl border border-amber-500/30 bg-amber-500/10 p-3">
-          <div className="text-xs font-bold text-amber-300 mb-1">🧩 Try this first</div>
+        <div className="my-3 rounded-xl border border-amber-500/35 bg-amber-500/10 p-3">
+          <div className="text-xs font-bold tone-amber mb-1">🧩 Try this first</div>
           <Markdown text={s.discovery.problem} />
           {!revealed ? (
             <button className="btn btn-ghost text-sm mt-2" onClick={() => setRevealed(true)}>
@@ -58,8 +70,8 @@ function Section({ s, topicTitle }: { s: GuideSection; topicTitle: string }) {
       {s.diagrams?.map((d, i) => <Diagram key={i} d={d} />)}
 
       {s.whyItWorks && (
-        <div className="my-3 rounded-xl border border-sky-500/30 bg-sky-500/10 p-3">
-          <div className="text-xs font-bold text-sky-300 mb-1">💡 Why does this work?</div>
+        <div className="my-3 rounded-xl border border-sky-500/35 bg-sky-500/10 p-3">
+          <div className="text-xs font-bold tone-sky mb-1">💡 Why does this work?</div>
           <Markdown text={s.whyItWorks} />
         </div>
       )}
@@ -102,9 +114,13 @@ function Section({ s, topicTitle }: { s: GuideSection; topicTitle: string }) {
 export function GuideView({
   topic,
   onOpenInteractive,
+  onOpenWatch,
+  onOpenMemory,
 }: {
   topic: Topic;
   onOpenInteractive?: () => void;
+  onOpenWatch?: () => void;
+  onOpenMemory?: () => void;
 }) {
   const { markGuideRead, isGuideRead } = useStore();
   const extras = getExtras(topic.id);
@@ -113,9 +129,9 @@ export function GuideView({
   return (
     <div className="space-y-4">
       {extras?.hook && (
-        <div className="card p-4 border-amber-500/30">
+        <div className="card p-4 border-amber-500/35">
           <div className="text-sm">
-            <span className="font-bold text-amber-300">Hook: </span>
+            <span className="font-bold tone-amber">Hook: </span>
             {extras.hook}
           </div>
         </div>
@@ -123,18 +139,53 @@ export function GuideView({
 
       <p className="text-ink-soft">{topic.intro}</p>
 
-      {onOpenInteractive && (
+      <div className="grid sm:grid-cols-2 gap-3">
+        {onOpenWatch && (
+          <button
+            onClick={onOpenWatch}
+            className="card p-4 w-full text-left border-indigo-500/35 hover:-translate-y-0.5 transition flex items-center gap-3"
+          >
+            <span className="text-2xl">🎬</span>
+            <span>
+              <span className="font-bold block">Watch Lesson &amp; Sitcom TV</span>
+              <span className="text-xs text-ink-soft">
+                Play the narrated 60fps Studio Masterclass or the Cartoon Sitcom episode (+⭐ stars).
+              </span>
+            </span>
+          </button>
+        )}
+
+        {onOpenInteractive && (
+          <button
+            onClick={onOpenInteractive}
+            className="card p-4 w-full text-left border-sky-500/35 hover:-translate-y-0.5 transition flex items-center gap-3"
+          >
+            <span className="text-2xl">🔬</span>
+            <span>
+              <span className="font-bold block">Explore Interactive Lab</span>
+              <span className="text-xs text-ink-soft">
+                Change variables in real time and watch the scientific model respond.
+              </span>
+            </span>
+          </button>
+        )}
+      </div>
+
+      {onOpenMemory && (
         <button
-          onClick={onOpenInteractive}
-          className="card p-4 w-full text-left border-sky-500/30 hover:-translate-y-0.5 transition flex items-center gap-3"
+          onClick={onOpenMemory}
+          className="card p-3.5 w-full text-left border-emerald-500/35 hover:-translate-y-0.5 transition flex items-center justify-between gap-3"
         >
-          <span className="text-2xl">🔬</span>
-          <span>
-            <span className="font-bold block">Explore this topic interactively</span>
-            <span className="text-xs text-ink-soft">
-              Open the Interactive tab — change the inputs and watch the science respond.
+          <span className="flex items-center gap-3">
+            <span className="text-xl">🧠</span>
+            <span>
+              <span className="font-bold text-sm block">Memory Hooks &amp; Examiner Pitfalls</span>
+              <span className="text-xs text-ink-soft">
+                High-yield mnemonics and &ldquo;Never Write This → Write This Instead&rdquo; mark-scheme traps.
+              </span>
             </span>
           </span>
+          <span className="chip shrink-0">Open →</span>
         </button>
       )}
 
@@ -176,7 +227,7 @@ export function GuideView({
                     <span className="font-semibold">The science: </span>
                     {ex.science}
                   </p>
-                  {ex.safety && <p className="text-rose-300 text-xs">⚠️ {ex.safety}</p>}
+                  {ex.safety && <p className="tone-rose text-xs font-semibold">⚠️ {ex.safety}</p>}
                 </div>
               </details>
             ))}

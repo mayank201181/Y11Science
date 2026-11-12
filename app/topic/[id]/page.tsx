@@ -1,18 +1,39 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useParams, notFound } from "next/navigation";
 import { getTopic, subjectMeta, challengeQuestions } from "@/lib/content";
 import { useStore } from "@/lib/store";
 import { useHeartbeat } from "@/lib/useHeartbeat";
 import { GuideView } from "@/components/GuideView";
+import { WatchTab } from "@/components/WatchTab";
+import { MemoryPitfallsView } from "@/components/MemoryPitfallsView";
 import { LearnSmartView } from "@/components/Flashcards";
 import { PaperRunner, type QItem } from "@/components/PaperRunner";
 import { ChallengeMode } from "@/components/ChallengeMode";
 import { InteractiveView } from "@/components/InteractiveWidgets";
 
-type Tab = "guide" | "interactive" | "learn" | "quiz" | "bank" | "challenge";
+type Tab =
+  | "guide"
+  | "watch"
+  | "memory"
+  | "interactive"
+  | "learn"
+  | "quiz"
+  | "bank"
+  | "challenge";
+
+const VALID_TABS: Tab[] = [
+  "guide",
+  "watch",
+  "memory",
+  "interactive",
+  "learn",
+  "quiz",
+  "bank",
+  "challenge",
+];
 
 export default function TopicPage() {
   const { id } = useParams<{ id: string }>();
@@ -21,6 +42,16 @@ export default function TopicPage() {
   useHeartbeat(id);
   const [tab, setTab] = useState<Tab>("guide");
   const [openPaper, setOpenPaper] = useState<string | null>(null);
+
+  useEffect(() => {
+    try {
+      const sp = new URLSearchParams(window.location.search);
+      const requested = sp.get("tab") as Tab | null;
+      if (requested && VALID_TABS.includes(requested)) {
+        setTab(requested);
+      }
+    } catch {}
+  }, [id]);
 
   if (!topic) return notFound();
   const meta = subjectMeta(topic.subject);
@@ -33,6 +64,8 @@ export default function TopicPage() {
 
   const tabs: { id: Tab; label: string; icon: string }[] = [
     { id: "guide", label: "Guide", icon: "📖" },
+    { id: "watch", label: "Watch", icon: "🎬" },
+    { id: "memory", label: "Memory & Pitfalls", icon: "🧠" },
     { id: "interactive", label: "Interactive", icon: "🔬" },
     { id: "learn", label: "Learn", icon: "🃏" },
     { id: "quiz", label: "Quick Quiz", icon: "✏️" },
@@ -48,12 +81,17 @@ export default function TopicPage() {
 
   return (
     <div className={`space-y-5 accent-${topic.subject}`}>
-      <div className="flex items-center gap-2 text-sm">
-        <Link href="/" className="chip">
-          Home
-        </Link>
-        <Link href={`/subject/${topic.subject}`} className="chip">
-          {meta.icon} {meta.title}
+      <div className="flex items-center justify-between gap-2 flex-wrap text-sm">
+        <div className="flex items-center gap-2 flex-wrap">
+          <Link href="/" className="chip">
+            Home
+          </Link>
+          <Link href={`/subject/${topic.subject}`} className="chip">
+            {meta.icon} {meta.title}
+          </Link>
+        </div>
+        <Link href={`/certificate/${topic.id}`} className="chip">
+          🏅 Mastery Certificate
         </Link>
       </div>
 
@@ -82,8 +120,15 @@ export default function TopicPage() {
       </div>
 
       {tab === "guide" && (
-        <GuideView topic={topic} onOpenInteractive={() => setTab("interactive")} />
+        <GuideView
+          topic={topic}
+          onOpenInteractive={() => setTab("interactive")}
+          onOpenWatch={() => setTab("watch")}
+          onOpenMemory={() => setTab("memory")}
+        />
       )}
+      {tab === "watch" && <WatchTab topic={topic} />}
+      {tab === "memory" && <MemoryPitfallsView topic={topic} />}
       {tab === "interactive" && <InteractiveView topicId={topic.id} />}
       {tab === "learn" && <LearnSmartView learn={topic.learn} />}
 

@@ -67,7 +67,7 @@ export function ProfilePicker() {
                     edit
                   </button>
                   <button
-                    className="text-xs underline text-rose-300"
+                    className="text-xs underline tone-rose"
                     onClick={() => {
                       if (confirm(`Remove ${p.name}? Their progress will be deleted.`))
                         deleteProfile(p.id);
@@ -117,7 +117,7 @@ export function ProfilePicker() {
               ))}
             </div>
             {error && (
-              <div className="text-sm rounded-lg px-3 py-2 mb-3 bg-rose-500/15 text-rose-200 border border-rose-500/30">
+              <div className="text-sm rounded-lg px-3 py-2 mb-3 bg-rose-500/15 tone-rose border border-rose-500/30">
                 {error}
               </div>
             )}

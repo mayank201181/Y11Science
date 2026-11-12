@@ -5,6 +5,7 @@ import { useParams, notFound } from "next/navigation";
 import { useStore } from "@/lib/store";
 import { subjectMeta, topicsBySubject, examsBySubject } from "@/lib/content";
 import type { SubjectId } from "@/lib/types";
+import { masterclassDoneKey, sitcomDoneKey } from "@/components/WatchTab";
 
 const VALID: SubjectId[] = ["biology", "chemistry", "physics"];
 
@@ -19,9 +20,12 @@ export default function SubjectPage() {
 
   return (
     <div className={`space-y-6 accent-${subject}`}>
-      <div className="flex items-center gap-3">
+      <div className="flex items-center justify-between gap-3 flex-wrap">
         <Link href="/" className="chip">
           ← Home
+        </Link>
+        <Link href="/progress" className="chip">
+          📊 Topic Completion Matrix
         </Link>
       </div>
 
@@ -38,6 +42,8 @@ export default function SubjectPage() {
       <div className="grid sm:grid-cols-2 gap-4">
         {topics.map((t, i) => {
           const read = progress.guidesRead.includes(t.id);
+          const mcDone = Boolean(progress.awarded[masterclassDoneKey(t.id)]);
+          const sitDone = Boolean(progress.awarded[sitcomDoneKey(t.id)]);
           const att = progress.analytics.perTopic[t.id];
           return (
             <Link
@@ -49,18 +55,25 @@ export default function SubjectPage() {
               }}
             >
               <span className="text-3xl shrink-0">{t.icon}</span>
-              <div className="min-w-0">
-                <div className="flex items-center gap-2">
-                  <span className="text-xs text-ink-soft">#{i + 1}</span>
-                  {read && <span className="chip">✓ read</span>}
+              <div className="min-w-0 flex-1">
+                <div className="flex items-center gap-1.5 flex-wrap">
+                  <span className="text-xs text-ink-soft font-bold">#{i + 1}</span>
+                  {read && <span className="chip">✓ guide</span>}
+                  {mcDone && <span className="chip">🎓 masterclass</span>}
+                  {sitDone && <span className="chip">🍿 sitcom</span>}
                 </div>
-                <div className="font-bold leading-tight">{t.title}</div>
+                <div className="font-bold leading-tight mt-1">{t.title}</div>
                 <p className="text-sm text-ink-soft mt-1 line-clamp-2">{t.blurb}</p>
-                {att && att.answered > 0 && (
-                  <div className="text-xs text-ink-soft mt-2">
-                    {att.correct}/{att.answered} correct
-                  </div>
-                )}
+                <div className="flex items-center justify-between gap-2 mt-2 text-xs text-ink-soft">
+                  <span>
+                    {att && att.answered > 0
+                      ? `${att.correct}/${att.answered} correct`
+                      : "Guide · Watch · Quiz · Bank"}
+                  </span>
+                  <span className="font-bold" style={{ color: "var(--accent)" }}>
+                    Open →
+                  </span>
+                </div>
               </div>
             </Link>
           );

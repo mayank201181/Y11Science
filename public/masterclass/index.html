@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Studio Masterclass Hub — Year 11 Edexcel Triple Science (37 Lessons)</title>
+<link rel="stylesheet" href="masterclass.css" />
+<style>
+  .hub-hero {
+    background: var(--bg-panel); border: 1px solid var(--border-subtle);
+    border-radius: 22px; padding: 24px 28px; box-shadow: var(--shadow-main); margin-bottom: 18px;
+  }
+  .filter-bar { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 18px; }
+  .filter-pill {
+    padding: 8px 15px; border-radius: 999px; border: 1px solid var(--border-subtle);
+    background: var(--bg-panel); color: var(--text-muted); font-weight: 800; font-size: 0.82rem;
+    cursor: pointer; font-family: inherit;
+  }
+  .filter-pill.active { background: #4f46e5; color: #ffffff; border-color: #4f46e5; }
+  .search-input {
+    flex: 1; min-width: 210px; padding: 9px 14px; border-radius: 999px;
+    border: 1px solid var(--border-subtle); background: var(--bg-panel); color: var(--text-main);
+    font-family: inherit; font-size: 0.86rem; outline: none;
+  }
+  .lessons-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 14px; }
+  .lesson-card {
+    display: flex; flex-direction: column; justify-content: space-between;
+    text-decoration: none; color: var(--text-main); background: var(--bg-panel);
+    border: 1px solid var(--border-subtle); border-radius: 18px; padding: 18px;
+    box-shadow: var(--shadow-main); transition: transform 0.16s ease, border-color 0.16s ease;
+  }
+  .lesson-card:hover { transform: translateY(-3px); border-color: #6366f1; }
+</style>
+</head>
+<body>
+<div class="app-shell">
+  <div class="top-bar">
+    <div class="brand-pill">
+      <a href="/" class="hub-back-link">← Back to Y11 Science Lab</a>
+      <a href="/season1/index.html" class="hub-back-link">🍿 Switch to Cartoon Sitcom Hub</a>
+    </div>
+    <button type="button" id="hubThemeBtn" class="ctrl-btn" onclick="toggleHubTheme()">🌙 Dark</button>
+  </div>
+
+  <section class="hub-hero">
+    <div style="font-size:0.78rem;font-weight:900;letter-spacing:0.08em;text-transform:uppercase;color:#4f46e5;">Edexcel IGCSE Triple Science · 4BI1 · 4CH1 · 4PH1</div>
+    <h1 style="font-size:clamp(1.6rem,3vw,2.3rem);font-weight:900;margin-top:4px;">🎓 Studio Masterclass Library (37 Lessons)</h1>
+    <p style="color:var(--text-muted);margin-top:6px;max-width:780px;line-height:1.55;">
+      Clean 60fps narrated whiteboard lessons covering every Year 11 Biology, Chemistry, and Physics topic — each paired with progressive syllabus notes, Think Deeper diagrams, and auto-marked exam checks.
+    </p>
+  </section>
+
+  <div class="filter-bar">
+    <button class="filter-pill active" data-subj="all" onclick="setSubj('all', this)">All Topics (37)</button>
+    <button class="filter-pill" data-subj="biology" onclick="setSubj('biology', this)">🧬 Biology 4BI1 (14)</button>
+    <button class="filter-pill" data-subj="chemistry" onclick="setSubj('chemistry', this)">⚗️ Chemistry 4CH1 (13)</button>
+    <button class="filter-pill" data-subj="physics" onclick="setSubj('physics', this)">⚡ Physics 4PH1 (10)</button>
+    <input type="search" id="searchBox" class="search-input" placeholder="Search 37 topics (e.g. coordination, electrolysis, astrophysics)..." oninput="renderHub()" />
+  </div>
+
+  <div class="lessons-grid" id="hubGrid"></div>
+</div>
+
+<script>
+const ITEMS = [{"id": "bio-cells", "epNum": 1, "title": "Cell Structure & Organisation", "icon": "🔬", "subject": "biology", "specCode": "Edexcel 4BI1", "blurb": "Animal, plant and bacterial cell structure, specialised cells, levels of organisation, and magnification calculations.", "chapters": 9, "questions": 12}, {"id": "bio-transport-cell", "epNum": 2, "title": "Movement In & Out of Cells", "icon": "💧", "subject": "biology", "specCode": "Edexcel 4BI1", "blurb": "Diffusion, osmosis and active transport across membranes.", "chapters": 6, "questions": 12}, {"id": "bio-molecules", "epNum": 3, "title": "Biological Molecules", "icon": "🧪", "subject": "biology", "specCode": "Edexcel 4BI1", "blurb": "Carbohydrates, proteins, fats, water and food tests — the chemical building blocks of life.", "chapters": 7, "questions": 12}, {"id": "bio-enzymes", "epNum": 4, "title": "Enzymes", "icon": "🔑", "subject": "biology", "specCode": "Edexcel 4BI1", "blurb": "Biological catalysts — lock-and-key model, temperature, pH, and experimental investigation.", "chapters": 8, "questions": 12}, {"id": "bio-plant-nutrition", "epNum": 5, "title": "Plant Nutrition", "icon": "🌱", "subject": "biology", "specCode": "Edexcel 4BI1", "blurb": "Photosynthesis equations, leaf structure, limiting factors and mineral nutrition.", "chapters": 6, "questions": 12}, {"id": "bio-human-nutrition", "epNum": 6, "title": "Human Nutrition", "icon": "🍎", "subject": "biology", "specCode": "Edexcel 4BI1", "blurb": "Balanced diet, digestive system, enzymes, absorption and assimilation.", "chapters": 8, "questions": 12}, {"id": "bio-transport-plants", "epNum": 7, "title": "Transport in Plants", "icon": "🌳", "subject": "biology", "specCode": "Edexcel 4BI1", "blurb": "Xylem, phloem, transpiration and translocation — how plants move water, minerals and sugars.", "chapters": 7, "questions": 12}, {"id": "bio-transport-animals", "epNum": 8, "title": "Transport in Animals", "icon": "❤️", "subject": "biology", "specCode": "Edexcel 4BI1", "blurb": "Heart structure, blood vessels, blood components and the double circulatory system.", "chapters": 7, "questions": 12}, {"id": "bio-disease-immunity", "epNum": 9, "title": "Diseases & Immunity", "icon": "🦠", "subject": "biology", "specCode": "Edexcel 4BI1", "blurb": "Pathogens, transmission, body defences, antibodies, and vaccination.", "chapters": 7, "questions": 12}, {"id": "bio-gas-respiration", "epNum": 10, "title": "Gas Exchange & Respiration", "icon": "🫁", "subject": "biology", "specCode": "Edexcel 4BI1", "blurb": "Lungs, breathing mechanics, gas exchange adaptations, aerobic and anaerobic respiration.", "chapters": 8, "questions": 12}, {"id": "bio-coordination", "epNum": 11, "title": "Coordination & Response", "icon": "🧠", "subject": "biology", "specCode": "Edexcel 4BI1", "blurb": "Nervous system, reflexes, hormones, homeostasis and plant tropisms.", "chapters": 7, "questions": 12}, {"id": "bio-reproduction", "epNum": 12, "title": "Reproduction", "icon": "🌸", "subject": "biology", "specCode": "Edexcel 4BI1", "blurb": "Asexual vs sexual reproduction, plant and human reproductive systems, hormones, and STIs.", "chapters": 6, "questions": 12}, {"id": "bio-inheritance", "epNum": 13, "title": "Inheritance & Variation", "icon": "🧬", "subject": "biology", "specCode": "Edexcel 4BI1", "blurb": "DNA, mitosis & meiosis, Punnett squares, codominance, sex determination, variation, natural selection and evolution.", "chapters": 8, "questions": 12}, {"id": "bio-ecology", "epNum": 14, "title": "Organisms & Environment", "icon": "🌍", "subject": "biology", "specCode": "Edexcel 4BI1", "blurb": "Ecosystems, energy flow, nutrient cycles, human impact, and biotechnology.", "chapters": 9, "questions": 12}, {"id": "chem-particles", "epNum": 15, "title": "States of Matter & Particles", "icon": "❄️", "subject": "chemistry", "specCode": "Edexcel 4CH1", "blurb": "Kinetic particle theory, changes of state, heating curves and diffusion.", "chapters": 6, "questions": 12}, {"id": "chem-atoms", "epNum": 16, "title": "Atomic Structure", "icon": "⚛️", "subject": "chemistry", "specCode": "Edexcel 4CH1", "blurb": "Protons, neutrons, electrons, isotopes, electron shells, and relative atomic mass.", "chapters": 7, "questions": 12}, {"id": "chem-periodic", "epNum": 17, "title": "The Periodic Table", "icon": "📋", "subject": "chemistry", "specCode": "Edexcel 4CH1", "blurb": "Groups, periods, Group I alkali metals, Group VII halogens, noble gases, and transition elements.", "chapters": 6, "questions": 12}, {"id": "chem-bonding", "epNum": 18, "title": "Chemical Bonding & Structure", "icon": "🔗", "subject": "chemistry", "specCode": "Edexcel 4CH1", "blurb": "Ionic, covalent and metallic bonding — from dot-and-cross diagrams to giant structures and their properties.", "chapters": 7, "questions": 12}, {"id": "chem-stoichiometry", "epNum": 19, "title": "Stoichiometry & The Mole", "icon": "🧮", "subject": "chemistry", "specCode": "Edexcel 4CH1", "blurb": "Master moles, reacting masses, concentrations and titration calculations for IGCSE.", "chapters": 6, "questions": 12}, {"id": "chem-electrochemistry", "epNum": 20, "title": "Electrochemistry", "icon": "🔌", "subject": "chemistry", "specCode": "Edexcel 4CH1", "blurb": "Electrolysis, electrode reactions, electroplating, and fuel cells.", "chapters": 6, "questions": 12}, {"id": "chem-energetics", "epNum": 21, "title": "Chemical Energetics", "icon": "🔥", "subject": "chemistry", "specCode": "Edexcel 4CH1", "blurb": "Exothermic and endothermic reactions, energy level diagrams, and bond energy calculations.", "chapters": 7, "questions": 12}, {"id": "chem-rates", "epNum": 22, "title": "Rate of Reaction & Equilibrium", "icon": "⏱️", "subject": "chemistry", "specCode": "Edexcel 4CH1", "blurb": "Collision theory, factors that change rate, measuring reactions, and Le Chatelier equilibrium including the Haber process.", "chapters": 6, "questions": 12}, {"id": "chem-acids-bases", "epNum": 23, "title": "Acids, Bases & Salts", "icon": "🧂", "subject": "chemistry", "specCode": "Edexcel 4CH1", "blurb": "pH, neutralisation, acid reactions, oxides, and salt preparation — core IGCSE chemistry.", "chapters": 7, "questions": 12}, {"id": "chem-metals", "epNum": 24, "title": "Metals", "icon": "🪙", "subject": "chemistry", "specCode": "Edexcel 4CH1", "blurb": "Reactivity series, reactions, extraction, rusting, alloys and recycling.", "chapters": 6, "questions": 12}, {"id": "chem-environment", "epNum": 25, "title": "Chemistry of the Environment", "icon": "🌫️", "subject": "chemistry", "specCode": "Edexcel 4CH1", "blurb": "Test for water purity, air composition, pollutants, greenhouse gases, and eutrophication.", "chapters": 10, "questions": 12}, {"id": "chem-organic", "epNum": 26, "title": "Organic Chemistry", "icon": "🛢️", "subject": "chemistry", "specCode": "Edexcel 4CH1", "blurb": "Hydrocarbons, crude oil fractions, alkanes, alkenes, alcohols, carboxylic acids and polymers.", "chapters": 7, "questions": 12}, {"id": "chem-analysis", "epNum": 27, "title": "Experimental Techniques & Analysis", "icon": "🔎", "subject": "chemistry", "specCode": "Edexcel 4CH1", "blurb": "Separation techniques, purity tests, ion identification, gas tests and paper chromatography.", "chapters": 7, "questions": 12}, {"id": "phys-motion", "epNum": 28, "title": "Motion", "icon": "🏃", "subject": "physics", "specCode": "Edexcel 4PH1", "blurb": "Distance, displacement, speed, velocity, acceleration and motion graphs — the foundations of mechanics.", "chapters": 8, "questions": 12}, {"id": "phys-forces", "epNum": 29, "title": "Forces & Momentum", "icon": "🧱", "subject": "physics", "specCode": "Edexcel 4PH1", "blurb": "Newton's laws, mass & weight, moments, pressure and momentum — the mechanics core of IGCSE Physics.", "chapters": 8, "questions": 12}, {"id": "phys-energy", "epNum": 30, "title": "Energy, Work & Power", "icon": "⚡", "subject": "physics", "specCode": "Edexcel 4PH1", "blurb": "Energy stores, transfers, work, power, efficiency, Sankey diagrams and energy resources.", "chapters": 7, "questions": 12}, {"id": "phys-thermal", "epNum": 31, "title": "Thermal Physics", "icon": "🌡️", "subject": "physics", "specCode": "Edexcel 4PH1", "blurb": "Kinetic particle model, thermal expansion, gas laws, specific heat, latent heat, and heat transfer by conduction, convection and radiation.", "chapters": 7, "questions": 12}, {"id": "phys-waves", "epNum": 32, "title": "Waves & Light", "icon": "🌊", "subject": "physics", "specCode": "Edexcel 4PH1", "blurb": "Wave properties, reflection, refraction, lenses, and dispersion — with worked calculations.", "chapters": 7, "questions": 12}, {"id": "phys-sound-em", "epNum": 33, "title": "Sound & the EM Spectrum", "icon": "🔊", "subject": "physics", "specCode": "Edexcel 4PH1", "blurb": "Longitudinal sound waves, echoes, ultrasound, and the full electromagnetic spectrum — uses and dangers.", "chapters": 8, "questions": 12}, {"id": "phys-electricity", "epNum": 34, "title": "Electricity & Circuits", "icon": "🔋", "subject": "physics", "specCode": "Edexcel 4PH1", "blurb": "Charge, current, voltage, resistance and circuit rules — from static electricity to power bills.", "chapters": 8, "questions": 12}, {"id": "phys-magnetism", "epNum": 35, "title": "Magnetism & Electromagnetism", "icon": "🧲", "subject": "physics", "specCode": "Edexcel 4PH1", "blurb": "Magnets, fields, motors, generators and transformers — the backbone of all electrical technology.", "chapters": 5, "questions": 12}, {"id": "phys-nuclear", "epNum": 36, "title": "Nuclear Physics", "icon": "☢️", "subject": "physics", "specCode": "Edexcel 4PH1", "blurb": "The nuclear atom, radioactivity, half-life, decay equations and safety.", "chapters": 7, "questions": 12}, {"id": "phys-space", "epNum": 37, "title": "Space Physics", "icon": "🚀", "subject": "physics", "specCode": "Edexcel 4PH1", "blurb": "The Solar System, stellar life cycles, galaxies, and the expanding Universe.", "chapters": 7, "questions": 12}];
+let curSubj = "all";
+
+(function initTheme() {
+  let t = "light";
+  try { if (localStorage.getItem("y11sci.theme") === "dark") t = "dark"; } catch (e) {}
+  document.documentElement.dataset.theme = t;
+  document.getElementById("hubThemeBtn").textContent = t === "light" ? "🌙 Dark" : "☀️ Light";
+})();
+
+function toggleHubTheme() {
+  const next = document.documentElement.dataset.theme === "light" ? "dark" : "light";
+  document.documentElement.dataset.theme = next;
+  document.getElementById("hubThemeBtn").textContent = next === "light" ? "🌙 Dark" : "☀️ Light";
+  try { localStorage.setItem("y11sci.theme", next); } catch (e) {}
+}
+
+function setSubj(s, btn) {
+  curSubj = s;
+  document.querySelectorAll(".filter-pill").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+  renderHub();
+}
+
+function renderHub() {
+  const q = (document.getElementById("searchBox").value || "").toLowerCase().trim();
+  const colors = { biology: "#059669", chemistry: "#7c3aed", physics: "#0284c7" };
+  const filtered = ITEMS.filter(it => (curSubj === "all" || it.subject === curSubj) && (!q || it.title.toLowerCase().includes(q) || it.blurb.toLowerCase().includes(q)));
+  document.getElementById("hubGrid").innerHTML = filtered.map(it => `
+    <a class="lesson-card" href="${it.id}.html">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+          <span style="font-size:2rem;">${it.icon}</span>
+          <span style="font-size:0.72rem;font-weight:800;padding:3px 9px;border-radius:999px;background:var(--bg-soft);color:${colors[it.subject]};">${it.specCode}</span>
+        </div>
+        <div style="font-size:1.05rem;font-weight:900;margin-bottom:5px;">${it.title}</div>
+        <p style="font-size:0.83rem;color:var(--text-muted);line-height:1.45;">${it.blurb}</p>
+      </div>
+      <div style="margin-top:14px;padding-top:10px;border-top:1px solid var(--border-subtle);display:flex;justify-content:space-between;font-size:0.76rem;font-weight:800;color:var(--text-muted);">
+        <span>🎬 ${it.chapters} chapters · ⚡ ${it.questions} Qs</span>
+        <span style="color:#4f46e5;">Launch →</span>
+      </div>
+    </a>
+  `).join("");
+}
+renderHub();
+</script>
+</body>
+</html>

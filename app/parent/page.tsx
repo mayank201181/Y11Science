@@ -59,7 +59,7 @@ export default function ParentPage() {
             onChange={(e) => setPin(e.target.value.replace(/\D/g, ""))}
             placeholder="••••"
           />
-          {error && <div className="text-sm text-rose-300 mb-3">{error}</div>}
+          {error && <div className="text-sm tone-rose mb-3">{error}</div>}
           <button className="btn btn-primary w-full" disabled={busy}>
             {busy ? "Checking…" : "Unlock"}
           </button>

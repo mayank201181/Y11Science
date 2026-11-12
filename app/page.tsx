@@ -2,9 +2,10 @@
 
 import Link from "next/link";
 import { useStore } from "@/lib/store";
-import { SUBJECTS, topicsBySubject, totalQuestionCount } from "@/lib/content";
+import { ALL_TOPICS, SUBJECTS, topicsBySubject, totalQuestionCount } from "@/lib/content";
 import { rankForStars } from "@/lib/gamify";
 import { useHeartbeat } from "@/lib/useHeartbeat";
+import { masterclassDoneKey, sitcomDoneKey } from "@/components/WatchTab";
 
 export default function Home() {
   const { activeProfile, progress, dueReviews } = useStore();
@@ -12,22 +13,32 @@ export default function Home() {
   const { rank, next, progress: rp } = rankForStars(progress.stars);
   const due = dueReviews().length;
   const totalQ = totalQuestionCount();
+  const watchedCount = ALL_TOPICS.filter(
+    (t) =>
+      Boolean(progress.awarded[masterclassDoneKey(t.id)]) ||
+      Boolean(progress.awarded[sitcomDoneKey(t.id)]),
+  ).length;
 
   return (
     <div className="space-y-8">
       <section className="card p-6 sm:p-8 overflow-hidden relative">
         <div className="relative z-10">
-          <p className="text-ink-soft">Hi {activeProfile?.name} 👋</p>
-          <h1 className="text-3xl sm:text-4xl font-black mt-1">Year 11 Science Lab</h1>
-          <p className="text-ink-soft mt-2 max-w-xl">
-            Edexcel IGCSE Biology, Chemistry &amp; Physics — illustrated guides, {totalQ}+ practice
-            questions, full mock exams, and Professor Photon to help you think it through.
+          <p className="text-ink-soft font-semibold">
+            Hi {activeProfile?.name || "Scientist"} 👋
+          </p>
+          <h1 className="text-3xl sm:text-4xl font-black mt-1">Year 11 Triple Science Lab</h1>
+          <p className="text-ink-soft mt-2 max-w-2xl">
+            Pearson Edexcel IGCSE Biology (4BI1), Chemistry (4CH1) &amp; Physics (4PH1) — 37
+            illustrated topic guides, 37 narrated Studio Masterclass whiteboards, 37 Cartoon Sitcom
+            episodes, Memory &amp; Examiner Pitfall vaults, and {totalQ.toLocaleString()}+ practice
+            questions.
           </p>
 
           <div className="mt-5 flex flex-wrap gap-3">
             <Stat icon="⭐" label="Stars" value={progress.stars} />
             <Stat icon="🔥" label="Day streak" value={progress.streak.count} />
             <Stat icon="📖" label="Guides read" value={progress.guidesRead.length} />
+            <Stat icon="🎬" label="Topics watched" value={watchedCount} />
             <Stat icon="🔁" label="Reviews due" value={due} />
           </div>
 
@@ -58,6 +69,11 @@ export default function Home() {
           {SUBJECTS.map((s) => {
             const topics = topicsBySubject(s.id);
             const read = topics.filter((t) => progress.guidesRead.includes(t.id)).length;
+            const watched = topics.filter(
+              (t) =>
+                Boolean(progress.awarded[masterclassDoneKey(t.id)]) ||
+                Boolean(progress.awarded[sitcomDoneKey(t.id)]),
+            ).length;
             return (
               <Link
                 key={s.id}
@@ -70,8 +86,8 @@ export default function Home() {
                   {s.title}
                 </div>
                 <p className="text-sm text-ink-soft mt-1">{s.blurb}</p>
-                <div className="mt-3 text-xs text-ink-soft">
-                  {topics.length} topics · {read} guides read
+                <div className="mt-3 text-xs text-ink-soft font-semibold">
+                  {topics.length} topics · {read} guides · {watched} watched
                 </div>
               </Link>
             );
@@ -79,15 +95,36 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="grid sm:grid-cols-3 gap-4">
-        <QuickCard
-          href="/review"
-          icon="🔁"
-          title="Daily review"
-          desc={due > 0 ? `${due} questions due now` : "Spaced repetition — nothing due"}
-        />
-        <QuickCard href="/exams" icon="📝" title="Mock exams" desc="Full cross-topic papers" />
-        <QuickCard href="/parent" icon="👪" title="Parent dashboard" desc="PIN-protected progress" />
+      <section>
+        <h2 className="text-xl font-black mb-3">Watch, Revise &amp; Track</h2>
+        <div className="grid sm:grid-cols-3 gap-4">
+          <ExternalQuickCard
+            href="/masterclass/index.html"
+            icon="🎓"
+            title="Studio Masterclasses"
+            desc="37 narrated 60fps whiteboard lessons + checks"
+          />
+          <ExternalQuickCard
+            href="/season1/index.html"
+            icon="🍿"
+            title="Cartoon Sitcom TV"
+            desc="37 teen-comedy episodes + Examiner Roast"
+          />
+          <QuickCard
+            href="/progress"
+            icon="📊"
+            title="Progress & Certificates"
+            desc="37-topic mastery matrix & printable awards"
+          />
+          <QuickCard
+            href="/review"
+            icon="🔁"
+            title="Daily review"
+            desc={due > 0 ? `${due} questions due now` : "Spaced repetition — nothing due"}
+          />
+          <QuickCard href="/exams" icon="📝" title="Mock exams" desc="Full cross-topic papers" />
+          <QuickCard href="/parent" icon="👪" title="Parent dashboard" desc="PIN-protected analytics" />
+        </div>
       </section>
     </div>
   );
@@ -123,5 +160,27 @@ function QuickCard({
         <div className="text-xs text-ink-soft">{desc}</div>
       </div>
     </Link>
+  );
+}
+
+function ExternalQuickCard({
+  href,
+  icon,
+  title,
+  desc,
+}: {
+  href: string;
+  icon: string;
+  title: string;
+  desc: string;
+}) {
+  return (
+    <a href={href} className="card p-4 flex items-center gap-3 hover:-translate-y-0.5 transition">
+      <span className="text-2xl">{icon}</span>
+      <div>
+        <div className="font-bold">{title}</div>
+        <div className="text-xs text-ink-soft">{desc}</div>
+      </div>
+    </a>
   );
 }

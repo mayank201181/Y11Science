@@ -1,0 +1,216 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
+import type { Topic } from "@/lib/types";
+import { getMemoryVault } from "@/lib/memoryPitfalls";
+import { useStore } from "@/lib/store";
+
+const CHAPTER_STARS = 1;
+const COMPLETE_STARS = 5;
+
+export const masterclassDoneKey = (topicId: string) => `masterclass:${topicId}:done`;
+export const sitcomDoneKey = (topicId: string) => `sitcom:${topicId}:done`;
+export const watchChapterKey = (kind: "masterclass" | "sitcom", topicId: string, ch: string) =>
+  `${kind}:${topicId}:${ch}`;
+
+type WatchMode = "masterclass" | "sitcom";
+
+interface LessonPostMessage {
+  source?: string;
+  kind?: "masterclass" | "sitcom";
+  topic?: string;
+  type?: "hello" | "height" | "chapter-done" | "complete" | "theater";
+  chapter?: string;
+  value?: number;
+  on?: boolean;
+}
+
+export function WatchTab({ topic }: { topic: Topic }) {
+  const { progress, awardActivity, theme } = useStore();
+  const [mode, setMode] = useState<WatchMode>("masterclass");
+  const [frameHeight, setFrameHeight] = useState<number>(820);
+  const [theater, setTheater] = useState(false);
+  const [toast, setToast] = useState<string | null>(null);
+  const iframeRef = useRef<HTMLIFrameElement | null>(null);
+  const vault = getMemoryVault(topic.id);
+
+  const mcDone = Boolean(progress.awarded[masterclassDoneKey(topic.id)]);
+  const sitcomDone = Boolean(progress.awarded[sitcomDoneKey(topic.id)]);
+
+  const topicWatchStars = Object.entries(progress.awarded).reduce((sum, [k, v]) => {
+    if (k.startsWith(`masterclass:${topic.id}:`) || k.startsWith(`sitcom:${topic.id}:`)) {
+      return sum + (v || 0);
+    }
+    return sum;
+  }, 0);
+
+  // Sync parent Light/Dark theme changes into the active iframe immediately
+  useEffect(() => {
+    const win = iframeRef.current?.contentWindow;
+    if (!win) return;
+    try {
+      win.postMessage({ source: "y11-app", type: "theme", theme }, "*");
+    } catch {}
+  }, [theme, mode]);
+
+  // Listen for chapter-done, complete, height, and theater events from both Masterclass & Sitcom iframes
+  useEffect(() => {
+    function handleMessage(e: MessageEvent) {
+      const m = e.data as LessonPostMessage | null;
+      if (!m || m.source !== "y11-lesson" || m.topic !== topic.id) return;
+      const kind: WatchMode = m.kind === "sitcom" ? "sitcom" : "masterclass";
+      const label = kind === "masterclass" ? "Studio Masterclass" : "Sitcom Episode";
+
+      if (m.type === "height" && typeof m.value === "number" && m.value >= 560 && m.value <= 9000) {
+        setFrameHeight(Math.ceil(m.value) + 12);
+      } else if (m.type === "theater") {
+        setTheater(Boolean(m.on));
+      } else if (m.type === "chapter-done" && typeof m.chapter === "string") {
+        const key = watchChapterKey(kind, topic.id, m.chapter);
+        if (!progress.awarded[key]) {
+          awardActivity(
+            key,
+            CHAPTER_STARS,
+            `Watched ${label} chapter (${m.chapter}): ${topic.title}`,
+          );
+          setToast(`+${CHAPTER_STARS} ⭐ earned for finishing chapter!`);
+        }
+      } else if (m.type === "complete") {
+        const key = kind === "masterclass" ? masterclassDoneKey(topic.id) : sitcomDoneKey(topic.id);
+        if (!progress.awarded[key]) {
+          awardActivity(key, COMPLETE_STARS, `Completed ${label}: ${topic.title}`);
+          setToast(`🎉 +${COMPLETE_STARS} ⭐ bonus earned for completing ${label}!`);
+        }
+      }
+    }
+    window.addEventListener("message", handleMessage);
+    return () => window.removeEventListener("message", handleMessage);
+  }, [topic.id, topic.title, progress.awarded, awardActivity]);
+
+  useEffect(() => {
+    if (!toast) return;
+    const t = setTimeout(() => setToast(null), 3500);
+    return () => clearTimeout(t);
+  }, [toast]);
+
+  const embedSrc =
+    mode === "masterclass"
+      ? `/masterclass/${encodeURIComponent(topic.id)}.html?embed=1&theme=${theme}`
+      : `/season1/index.html?ep=${encodeURIComponent(topic.id)}&embed=1&theme=${theme}`;
+
+  const standaloneHref =
+    mode === "masterclass"
+      ? `/masterclass/${encodeURIComponent(topic.id)}.html`
+      : `/season1/index.html?ep=${encodeURIComponent(topic.id)}`;
+
+  return (
+    <div className="space-y-4">
+      {/* Mode Selector Cards */}
+      <div className="grid sm:grid-cols-2 gap-3">
+        <button
+          type="button"
+          onClick={() => {
+            setMode("masterclass");
+            setFrameHeight(820);
+          }}
+          className={`card p-4 text-left transition ${
+            mode === "masterclass" ? "ring-2 ring-indigo-500" : "opacity-90 hover:opacity-100"
+          }`}
+        >
+          <div className="flex items-center justify-between gap-2 mb-1">
+            <span className="chip">🎓 Clean 60fps Whiteboard</span>
+            {mcDone ? (
+              <span className="chip tone-emerald">✓ Completed (+5 ⭐)</span>
+            ) : (
+              <span className="text-xs text-ink-soft font-bold">+1 ⭐/ch · +5 ⭐ finish</span>
+            )}
+          </div>
+          <div className="font-black text-base mt-1">Studio Masterclass Lesson</div>
+          <p className="text-xs text-ink-soft mt-1 leading-relaxed">
+            Clause-paced UK Tutor whiteboard explanation with live 60fps scientific animations,
+            progressive syllabus notes, Think Deeper diagrams, and an auto-marked 12-Q exam check.
+          </p>
+        </button>
+
+        <button
+          type="button"
+          onClick={() => {
+            setMode("sitcom");
+            setFrameHeight(860);
+          }}
+          className={`card p-4 text-left transition ${
+            mode === "sitcom" ? "ring-2 ring-indigo-500" : "opacity-90 hover:opacity-100"
+          }`}
+        >
+          <div className="flex items-center justify-between gap-2 mb-1">
+            <span className="chip">🍿 Teen-Series Sitcom TV</span>
+            {sitcomDone ? (
+              <span className="chip tone-emerald">✓ Completed (+5 ⭐)</span>
+            ) : (
+              <span className="text-xs text-ink-soft font-bold">+1 ⭐/ch · +5 ⭐ finish</span>
+            )}
+          </div>
+          <div className="font-black text-base mt-1">
+            Cartoon Episode{vault?.epTitle ? `: “${vault.epTitle}”` : ""}
+          </div>
+          <p className="text-xs text-ink-soft mt-1 leading-relaxed">
+            2D animated comedy episode with Vani, Maya, Dr. K &amp; Examiner Sterling, physical lab
+            bench props, Pause-the-Tape checkpoints, and the Examiner Roast Deck.
+          </p>
+        </button>
+      </div>
+
+      {/* Action Strip */}
+      <div className="flex items-center justify-between gap-2 flex-wrap">
+        <div className="flex items-center gap-2 flex-wrap">
+          <span className="chip">
+            ⭐ <strong className="text-ink">{topicWatchStars}</strong> Watch stars earned on this
+            topic
+          </span>
+          {toast && <span className="chip tone-emerald animate-pop">{toast}</span>}
+        </div>
+        <div className="flex items-center gap-2">
+          <button
+            type="button"
+            onClick={() => setTheater((t) => !t)}
+            className="chip"
+          >
+            {theater ? "🗗 Exit Wide View" : "🖥️ Wide View"}
+          </button>
+          <a
+            href={standaloneHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="chip"
+          >
+            ↗ Open Fullscreen Tab
+          </a>
+        </div>
+      </div>
+
+      {/* Embedded Interactive Player */}
+      <div
+        className={`card overflow-hidden transition-all ${
+          theater ? "fixed inset-3 z-50 bg-card shadow-2xl overflow-y-auto p-2" : ""
+        }`}
+      >
+        {theater && (
+          <div className="flex justify-end p-2">
+            <button type="button" className="btn btn-ghost text-xs" onClick={() => setTheater(false)}>
+              ✕ Close Wide View
+            </button>
+          </div>
+        )}
+        <iframe
+          ref={iframeRef}
+          key={mode}
+          src={embedSrc}
+          title={`${topic.title} — ${mode === "masterclass" ? "Studio Masterclass" : "Cartoon Sitcom"}`}
+          className="w-full border-0 block"
+          style={{ height: `${frameHeight}px`, minHeight: "680px" }}
+          allow="autoplay; fullscreen"
+        />
+      </div>
+    </div>
+  );
+}

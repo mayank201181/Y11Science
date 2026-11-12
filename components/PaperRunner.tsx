@@ -21,9 +21,9 @@ interface QState {
 }
 
 const DIFF_BADGE: Record<string, { label: string; cls: string }> = {
-  warmup: { label: "Warm-up", cls: "text-emerald-300 border-emerald-500/40" },
-  core: { label: "Core", cls: "text-sky-300 border-sky-500/40" },
-  challenge: { label: "Challenge", cls: "text-amber-300 border-amber-500/40" },
+  warmup: { label: "Warm-up", cls: "tone-emerald border-emerald-500/40" },
+  core: { label: "Core", cls: "tone-sky border-sky-500/40" },
+  challenge: { label: "Challenge", cls: "tone-amber border-amber-500/40" },
 };
 
 export function PaperRunner({
@@ -185,7 +185,7 @@ export function PaperRunner({
                     key={i}
                     className="text-sm rounded-lg bg-amber-500/10 border border-amber-500/30 px-3 py-2"
                   >
-                    <span className="font-bold text-amber-300">Hint {i + 1}: </span>
+                    <span className="font-bold tone-amber">Hint {i + 1}: </span>
                     {h}
                   </div>
                 ))}
@@ -210,7 +210,7 @@ export function PaperRunner({
 
         {guideHref && cur.q.guideRef && (
           <div className="mt-3 text-sm">
-            <Link href={guideHref} className="text-indigo-300 underline">
+            <Link href={guideHref} className="tone-indigo underline">
               ← Back to the guide: {cur.q.guideRef}
             </Link>
           </div>
@@ -334,7 +334,7 @@ function QaBody({
             <div className="text-xs font-bold text-ink-soft mb-1">Mark scheme</div>
             <ul className="list-disc ml-5 text-sm space-y-1">
               {q.markScheme.map((m, i) => (
-                <li key={i} className={grade?.matched.includes(m) ? "text-emerald-300" : ""}>
+                <li key={i} className={grade?.matched.includes(m) ? "tone-emerald" : ""}>
                   {m}
                   {grade?.matched.includes(m) ? " ✓" : ""}
                 </li>
@@ -359,7 +359,7 @@ function QaBody({
           ))}
 
           {q.commonError && (
-            <p className="text-sm text-rose-300">⚠️ Common error: {q.commonError}</p>
+            <p className="text-sm tone-rose">⚠️ Common error: {q.commonError}</p>
           )}
 
           {!st.recorded ? (

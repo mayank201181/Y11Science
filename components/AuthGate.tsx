@@ -91,7 +91,7 @@ export function AuthGate() {
             )}
 
             {error && (
-              <div className="text-sm rounded-lg px-3 py-2 bg-rose-500/15 text-rose-200 border border-rose-500/30">
+              <div className="text-sm rounded-lg px-3 py-2 bg-rose-500/15 tone-rose border border-rose-500/30">
                 {error}
               </div>
             )}
