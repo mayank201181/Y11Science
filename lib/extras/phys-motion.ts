@@ -26,12 +26,12 @@ export const extras: TopicExtras = {
         "Hold your thumb and index finger about 3 cm apart, level with the 0 cm mark of the ruler your partner holds vertically.",
         "Ask your partner to drop the ruler without warning at a random moment.",
         "Catch it as quickly as possible and note the number of centimetres at the point where your fingers catch it.",
-        "Convert the catch distance (d) to reaction time using t = sqrt(2d/g) where g = 9.8 m/s². For example, 15 cm gives t ≈ 0.175 s.",
+        "Convert the catch distance (d) to reaction time using t = sqrt(2d/g) where g = 10 m/s². For example, 20 cm (0.20 m) gives t = 0.20 s.",
         "Repeat 5 times, discard the highest and lowest, and average the remaining three.",
         "Try again after mild exercise or while distracted (e.g. reciting your times tables) — does your reaction time change?",
       ],
       science:
-        "The ruler accelerates under gravity at 9.8 m/s². Using s = ½gt², the catch distance directly encodes the time delay between your eyes seeing the ruler move and your hand muscles responding — your neural reaction time. Most people react in 0.15–0.25 s. The experiment is a direct application of the equations of motion (SUVAT) to a real measurement.",
+        "The ruler accelerates under gravity at 10 m/s². Using s = ½gt², the catch distance directly encodes the time delay between your eyes seeing the ruler move and your hand muscles responding — your neural reaction time. Most people react in 0.15–0.25 s. The experiment is a direct application of the equations of motion (SUVAT) to a real measurement.",
       safety:
         "No significant hazards. Ensure the ruler falls onto the table, not onto feet. Use a plastic ruler rather than metal to avoid sharp edges.",
     },
@@ -51,10 +51,10 @@ export const extras: TopicExtras = {
         "Record the slow-motion footage of the ball falling and bouncing.",
         "Play back the footage frame by frame. Every 10 frames (approximately 0.08 s at 120 fps) note the ball's height from the ruler.",
         "Plot height (y-axis) against time (x-axis). During free fall the curve should be parabolic; at the bounce point the velocity instantly reverses.",
-        "Calculate the gradient of the velocity–time graph derived from your data to estimate g. Compare to 9.8 m/s².",
+        "Calculate the gradient of the velocity–time graph derived from your data to estimate g. Compare to 10 m/s².",
       ],
       science:
-        "A falling ball under constant gravitational acceleration produces a parabolic distance–time graph (s increases as t²). The gradient of a distance–time graph gives instantaneous speed. Each bounce dissipates energy, so the ball rises to a lower height each time — demonstrating energy transfer to thermal energy and sound. Comparing your calculated g to 9.8 m/s² lets you evaluate experimental error and discuss sources of uncertainty.",
+        "A falling ball under constant gravitational acceleration produces a parabolic distance–time graph (s increases as t²). The gradient of a distance–time graph gives instantaneous speed. Each bounce dissipates energy, so the ball rises to a lower height each time — demonstrating energy transfer to thermal energy and sound. Comparing your calculated g to 10 m/s² lets you evaluate experimental error and discuss sources of uncertainty.",
       safety:
         "Ensure the ball bounces in an open area away from fragile objects and other people. Do not use a ball heavier than a tennis ball.",
     },

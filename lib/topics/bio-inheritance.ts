@@ -460,11 +460,53 @@ The trade-off with all cloning is **low genetic variation**: a clone population 
       thinkDeeper: "Why use bacteria, rather than another mammal, to manufacture human insulin? Bacteria reproduce extremely fast and cheaply in fermenters, the genetic code is universal (so a human gene works inside a bacterium), and a plasmid is easy to cut, insert a gene into, and put back. One engineered bacterium can become billions of insulin factories in a day.",
       strategies: ["Compare selective breeding (within species, slow) vs genetic engineering (between species, fast)", "Learn the insulin steps in order: cut gene → cut plasmid → join with ligase → insert into bacterium → grow"],
     },
+    {
+      heading: "DNA Structure & Protein Synthesis: Transcription & Translation (Triple 3.16B–3.18B)",
+      discovery: {
+        problem: "DNA holds the instructions for every enzyme and structural protein inside the nucleus, yet ribosomes assemble proteins out in the cytoplasm — and DNA is far too precious and bulky to leave the nucleus. How does a cell bridge that gap?",
+        idea: "The cell photocopies just one gene onto a single-stranded messenger molecule (**mRNA**) in the nucleus (**transcription**), ships the mRNA out through a nuclear pore to a **ribosome**, and uses transfer molecules (**tRNA**) carrying specific amino acids to read the mRNA three bases (**one codon**) at a time (**translation**)."
+      },
+      body: `**1. DNA Double Helix & Complementary Base Pairing (Triple 3.16B)**
+- A DNA molecule consists of **two polynucleotide strands coiled into a double helix**.
+- Each nucleotide contains deoxyribose sugar, a phosphate group, and one of four nitrogenous bases linked across the strands by hydrogen bonds via strict **complementary base pairing**: **Adenine (A) pairs with Thymine (T)**, and **Cytosine (C) pairs with Guanine (G)**.
+- RNA (**ribonucleic acid**) is **single-stranded**, contains ribose sugar, and replaces Thymine with **Uracil (U)** (so A pairs with U during RNA formation).
+
+**2. Stage 1 — Transcription (In the Nucleus, Triple 3.17B–3.18B)**
+- The DNA double helix unwinds and unzips along the specific gene as hydrogen bonds between base pairs break.
+- One DNA strand acts as the **template strand**. Free RNA nucleotides pair complementarily with exposed DNA bases (**A→U, T→A, C→G, G→C**) and RNA polymerase joins them into a single-stranded **mRNA** molecule.
+- The mRNA detaches and leaves the nucleus through a **nuclear pore** into the cytoplasm.
+
+**3. Stage 2 — Translation (At the Ribosome in Cytoplasm, Triple 3.18B)**
+- The **mRNA attaches to a ribosome**, which reads the bases in triplets called **codons** (each 3-base codon codes for one specific amino acid).
+- Cytoplasmic **tRNA (transfer RNA)** molecules each carry a **specific amino acid** at one end and a complementary 3-base **anticodon** at the other.
+- Each tRNA anticodon pairs transiently with its matching mRNA codon on the ribosome; adjacent amino acids join by peptide bonds into a **polypeptide chain** that folds into a functional protein (e.g. enzyme, hormone, haemoglobin).
+
+**4. Gene Mutations & Phenotype Impact (Triple 3.34–3.37B)**
+- A **mutation** is a rare, random change in the DNA base sequence (increased in incidence by **ionising radiation** — gamma, X-rays, UV — and **chemical mutagens** such as tar in tobacco smoke, 3.39).
+- Most mutations in **non-coding DNA** have **no effect** on phenotype, or a silent codon still codes for the same amino acid; occasionally a changed amino acid alters an enzyme's **active site** (harmful, or rarely advantageous in a changing environment, 3.36B–3.37B).`,
+      diagrams: [
+        {
+          caption: "Edexcel 4BI1 Protein Synthesis: Transcription (DNA → mRNA in nucleus) and Translation (mRNA + tRNA → polypeptide on ribosome)",
+          svg: `<svg viewBox="0 0 680 215" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Transcription and Translation diagram"><rect x="4" y="4" width="672" height="207" rx="12" fill="#131735" stroke="#2c3366"/><rect x="18" y="20" width="295" height="175" rx="10" fill="#1b1f47" stroke="#a78bfa"/><text x="165" y="42" text-anchor="middle" fill="#a78bfa" font-size="12" font-weight="bold">1. TRANSCRIPTION (Nucleus)</text><text x="34" y="72" fill="#38bdf8" font-size="12" font-family="monospace">DNA template:  T  A  C   G  G  A   C  T  T</text><text x="34" y="102" fill="#fbbf24" font-size="12" font-family="monospace">mRNA strand:   A  U  G   C  C  U   G  A  A</text><text x="34" y="135" fill="#b7bce0" font-size="10">• DNA unzips; RNA bases pair (A-U, T-A, C-G)</text><text x="34" y="153" fill="#b7bce0" font-size="10">• Single-stranded mRNA exits via nuclear pore</text><path d="M 318 105 L 352 105" stroke="#fbbf24" stroke-width="3"/><rect x="358" y="20" width="304" height="175" rx="10" fill="#18273d" stroke="#34d399"/><text x="510" y="42" text-anchor="middle" fill="#34d399" font-size="12" font-weight="bold">2. TRANSLATION (Ribosome)</text><text x="374" y="72" fill="#fbbf24" font-size="12" font-family="monospace">mRNA codons:  [AUG]  [CCU]  [GAA]</text><text x="374" y="100" fill="#fb7185" font-size="12" font-family="monospace">tRNA anticod: [UAC]  [GGA]  [CUU]</text><text x="374" y="128" fill="#34d399" font-size="12" font-weight="bold">Polypeptide:   Met ── Pro ── Glu</text><text x="374" y="156" fill="#b7bce0" font-size="10">• Each tRNA brings 1 specific amino acid</text><text x="374" y="174" fill="#b7bce0" font-size="10">• Base mutation → altered amino acid → active site</text></svg>`
+        }
+      ],
+      keyPoints: [
+        "DNA is double-stranded (A–T, C–G); mRNA is single-stranded and uses Uracil (U) instead of Thymine (T).",
+        "Transcription (nucleus): unzipped DNA template strand directs synthesis of complementary mRNA.",
+        "Translation (ribosome in cytoplasm): mRNA 3-base codons pair with tRNA anticodons carrying specific amino acids to build a polypeptide.",
+        "Most DNA mutations have zero phenotypic effect; a few alter amino acid sequence and protein/active-site shape; mutagens include ionising radiation and tar."
+      ],
+      whyItWorks: "With 4 bases read in triplets (codons), there are 4³ = 64 possible codons for just 20 amino acids. Because this genetic code is degenerate (several codons specify the same amino acid), many single-base substitutions leave the protein unchanged.",
+      strategies: ["Keep TranscriptioN (Nucleus, makes mRNA) before TranslatioN (ribosome, tRNA → polypeptide) in alphabetical order: C comes before L!"]
+    }
   ],
 
   // ── LEARN SMART ────────────────────────────────────────────────────────────
   learn: {
     keyFacts: [
+      "DNA has two strands coiled into a double helix with A\u2013T and C\u2013G complementary base pairs.",
+      "Transcription (nucleus) copies a DNA template strand into single-stranded mRNA (using Uracil U instead of T).",
+      "Translation (ribosome) matches 3-base mRNA codons with tRNA anticodons to assemble specific amino acids into a protein.",
       "A gene is a specific length of DNA that codes for the production of a protein.",
       "DNA is a double helix; strands are held together by complementary base pairs: A pairs with T, C pairs with G.",
       "Human body cells are diploid (2n = 46); gametes are haploid (n = 23).",
@@ -483,6 +525,7 @@ The trade-off with all cloning is **low genetic variation**: a clone population 
       "Genetic engineering inserts a gene (e.g. human insulin) into a bacterial plasmid using restriction enzymes and DNA ligase; cloning makes genetically identical copies (cuttings, tissue culture, nuclear transfer — e.g. Dolly the sheep)."
     ],
     flashcards: [
+      { front: "Distinguish between transcription and translation in Edexcel 4BI1.", back: "Transcription (in nucleus) makes single-stranded mRNA from a DNA template; translation (at a ribosome) uses tRNA anticodons to read mRNA codons and link specific amino acids." },
       { front: "What is a gene?", back: "A length of DNA that codes for the production of a specific protein." },
       { front: "What is the structure of DNA?", back: "A double helix: two strands wound together, held by complementary base pairs (A–T and C–G)." },
       { front: "Diploid vs haploid", back: "Diploid (2n) = two sets of chromosomes (e.g. human body cells, 46). Haploid (n) = one set (e.g. gametes, 23)." },
@@ -502,6 +545,8 @@ The trade-off with all cloning is **low genetic variation**: a clone population 
       { front: "Explain the peppered moth example.", back: "Soot from industry blackened tree bark; dark moths were now camouflaged and survived predation by birds while pale moths were eaten, so the dark form became common in polluted areas — natural selection." },
     ],
     keyTerms: [
+      { term: "Transcription", definition: "Synthesis in the nucleus of a single-stranded mRNA molecule complementary to a DNA template strand." },
+      { term: "Translation", definition: "Assembly of a polypeptide chain at a ribosome as tRNA anticodons match mRNA codons to deliver specific amino acids." },
       { term: "Allele", definition: "A specific version of a gene; different alleles of the same gene occupy the same position (locus) on homologous chromosomes." },
       { term: "Genotype", definition: "The combination of alleles an organism carries for a particular gene (e.g. Tt, TT, tt)." },
       { term: "Phenotype", definition: "The observable characteristic of an organism resulting from its genotype and environment." },
@@ -609,7 +654,21 @@ The trade-off with all cloning is **low genetic variation**: a clone population 
         guideRef: "Variation, Mutation and Sources of Genetic Difference",
         difficulty: "warmup",
       },
-    ],
+      {
+        id: "bio-inheritance-mcq-ed01",
+        question: "A section of a DNA template strand has the base sequence TAC GGA CTT. What mRNA sequence is produced during transcription?",
+        options: [
+          "ATG CCT GAA",
+          "AUG CCU GAA",
+          "UAC GGA CUU",
+          "TUG CCT GUU"
+        ],
+        answerIndex: 1,
+        explanation: "During transcription, DNA T pairs with RNA A, DNA A pairs with RNA U (uracil replaces thymine in RNA), C pairs with G, and G pairs with C, giving AUG CCU GAA.",
+        guideRef: "DNA Structure & Protein Synthesis: Transcription & Translation (Triple 3.16B–3.18B)",
+        difficulty: "core"
+      }
+  ],
     qa: [
       {
         id: "bio-inheritance-qa-q01",
@@ -696,7 +755,24 @@ The trade-off with all cloning is **low genetic variation**: a clone population 
         ],
         strategy: "Use the 5-step natural selection framework: variation → selection pressure → survival → reproduction → allele frequency change",
       },
-    ],
+      {
+        id: "bio-inheritance-qa-ed01",
+        question: "Describe the stages of protein synthesis (transcription and translation) by which a gene in the nucleus directs the production of an enzyme, and explain how a gene mutation could stop the enzyme working. [6]",
+        marks: 6,
+        modelAnswer: "In transcription in the nucleus, the DNA double helix unwinds and one strand acts as a template to form a single-stranded complementary mRNA molecule (with U instead of T) (2). The mRNA leaves via a nuclear pore and attaches to a ribosome in the cytoplasm for translation (1). The ribosome reads the mRNA bases in triplets (codons), and tRNA molecules with complementary anticodons bring specific amino acids in the correct order to join into a polypeptide chain (2). A gene mutation changes the DNA base sequence, which can change a codon and substitute a different amino acid, altering the 3D folding/shape of the enzyme's active site so the substrate is no longer complementary (1).",
+        markScheme: [
+          "transcription in nucleus: DNA unwinds / template strand used",
+          "complementary mRNA synthesised (using U instead of T) and moves to ribosome",
+          "translation at ribosome: mRNA read in base triplets / codons",
+          "tRNA anticodons pair with mRNA codons",
+          "bringing specific amino acids in sequence to form polypeptide",
+          "mutation alters base sequence → different amino acid → changes active site shape"
+        ],
+        commonError: "Writing that 'amino acids pair with codons' — tRNA anticodons pair with mRNA codons; tRNA carries the amino acid.",
+        guideRef: "DNA Structure & Protein Synthesis: Transcription & Translation (Triple 3.16B–3.18B)",
+        difficulty: "challenge"
+      }
+  ],
   },
 
   // ── QUESTION BANK ──────────────────────────────────────────────────────────────

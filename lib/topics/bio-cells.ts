@@ -359,11 +359,57 @@ For example, a ×10 eyepiece used with a ×40 objective gives a total magnificat
       },
       thinkDeeper: "Embryonic stem cells can become any cell type, which makes them medically powerful but ethically controversial. Why might adult stem cells be preferred in some treatments even though they are less versatile? Consider where they come from and the issue of rejection.",
       strategies: ["Link 'stem cell' to two abilities: divide + differentiate", "Compare embryonic (any cell) vs adult (limited)"]
+    },
+    {
+      heading: "Characteristics (MRS C GREN) & Variety of Living Organisms",
+      discovery: {
+        problem: "A mushroom growing on a rotting log does not photosynthesise, yet its cells have cell walls. Why do biologists place it in its own kingdom (Fungi) rather than Plants or Animals — and why are viruses excluded from ALL kingdoms of living organisms?",
+        idea: "Fungal cell walls are made of **chitin** (not cellulose), they lack chloroplasts, and they feed by **saprotrophic nutrition** — secreting digestive enzymes outside their hyphae onto dead organic matter and absorbing the soluble products. Viruses lack any cellular structure (just a protein coat around DNA or RNA) and cannot respire, feed, or excrete — they only replicate parasitically inside host cells, so Edexcel classifies them as **non-living**."
+      },
+      body: `**1. The Eight Characteristics of Living Organisms — MRS C GREN (Edexcel 1.1)**
+All living organisms share **eight** life processes (notice Edexcel adds **Control** of internal conditions to classic MRS GREN):
+- **M**ovement — action by an organism or part of an organism causing a change of position or place.
+- **R**espiration — chemical reactions in cells that break down nutrient molecules to release **ATP** energy.
+- **S**ensitivity — ability to detect and respond to stimuli in the surroundings.
+- **C**ontrol — **homeostasis**: maintaining steady internal conditions (e.g. body temperature and water content).
+- **G**rowth & development — permanent increase in size and dry mass (cell number and/or cell size) and complexity.
+- **R**eproduction — processes producing offspring to continue the species.
+- **E**xcretion — removal of **toxic metabolic waste** products (e.g. CO₂, urea, oxygen from photosynthesis — *not* egestion of undigested faeces).
+- **N**utrition — taking in or making nutrients required for energy, growth and tissue repair.
+
+**2. Eukaryotes (Cells WITH a True Membrane-Bound Nucleus — Edexcel 1.2)**
+- **Plants:** multicellular; chloroplasts for photosynthesis; **cellulose** cell walls; store carbohydrate as **starch** or **sucrose**. Examples: *maize* (cereal), *pea/bean* (herbaceous legume).
+- **Animals:** multicellular; **no** cell walls or chloroplasts; nervous coordination and movement; store carbohydrate as **glycogen**. Examples: *humans* (mammal), *housefly / mosquito* (insects).
+- **Fungi:** multicellular thread-like **mycelium** built of multinucleate **hyphae** (e.g. *Mucor* bread mould) OR single-celled (*yeast*); **chitin** cell walls; no chloroplasts; store carbohydrate as **glycogen**; feed by **saprotrophic nutrition** (extracellular secretion of enzymes onto dead matter + absorption of dissolved products).
+- **Protoctists:** mostly microscopic single-celled eukaryotes. *Amoeba* (pond water) is animal-like; *Chlorella* has chloroplasts (plant-like); *Plasmodium* is the pathogenic protoctist causing **malaria**.
+
+**3. Prokaryotes & Non-Living Viruses (Edexcel 1.3–1.4)**
+- **Bacteria (Prokaryotes):** microscopic single-celled organisms with a peptidoglycan cell wall, cell membrane, cytoplasm, ribosomes, a single **circular chromosome of DNA** (no nucleus), and **plasmids**; no mitochondria. Named Edexcel examples: ***Lactobacillus bulgaricus*** (rod-shaped bacterium that ferments lactose to lactic acid in yoghurt production) and ***Pneumococcus*** (spherical bacterium causing pneumonia).
+- **Viruses (Non-living particles):** much smaller than bacteria; **no cellular structure** (no cytoplasm, membrane, or ribosomes) — only a **protein coat (capsid)** surrounding either **DNA or RNA**. Parasitic: reproduce only by hijacking living host cells. Named Edexcel examples: **Tobacco Mosaic Virus (TMV)** (prevents chloroplast formation, mottling leaves), **Influenza virus** (flu), and **HIV** (causes AIDS).`,
+      diagrams: [
+        {
+          caption: "Edexcel 4BI1 classification summary: 4 Eukaryotic groups, Prokaryotes (Bacteria), and non-living Viruses",
+          svg: `<svg viewBox="0 0 680 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Comparison of Eukaryotes Prokaryotes and Viruses"><rect x="4" y="4" width="672" height="222" rx="12" fill="#131735" stroke="#2c3366"/><rect x="18" y="18" width="310" height="194" rx="8" fill="#182246" stroke="#34d399"/><text x="173" y="38" text-anchor="middle" fill="#34d399" font-size="13" font-weight="bold">EUKARYOTES (True Nucleus)</text><text x="30" y="62" fill="#e2e8f0" font-size="11">• Plants: cellulose wall, chloroplasts, starch (maize, pea)</text><text x="30" y="86" fill="#e2e8f0" font-size="11">• Animals: no wall, nervous system, glycogen (human)</text><text x="30" y="110" fill="#fbbf24" font-size="11">• Fungi: chitin wall, hyphae/mycelium, saprotrophic</text><text x="42" y="126" fill="#b7bce0" font-size="10">(Mucor mould, single-celled yeast; glycogen store)</text><text x="30" y="150" fill="#38bdf8" font-size="11">• Protoctists: unicellular — Amoeba (animal-like),</text><text x="42" y="166" fill="#b7bce0" font-size="10">Chlorella (chloroplasts), Plasmodium (malaria pathogen)</text><rect x="342" y="18" width="320" height="92" rx="8" fill="#182246" stroke="#a78bfa"/><text x="502" y="38" text-anchor="middle" fill="#a78bfa" font-size="13" font-weight="bold">PROKARYOTES (No Nucleus)</text><text x="354" y="60" fill="#e2e8f0" font-size="11">• Bacteria: circular DNA + plasmids, cell wall, no mito</text><text x="354" y="80" fill="#b7bce0" font-size="10">• Lactobacillus bulgaricus (yoghurt), Pneumococcus</text><rect x="342" y="120" width="320" height="92" rx="8" fill="#2a162a" stroke="#fb7185"/><text x="502" y="140" text-anchor="middle" fill="#fb7185" font-size="13" font-weight="bold">VIRUSES (Non-Living Particles)</text><text x="354" y="162" fill="#e2e8f0" font-size="11">• No cell structure: protein coat + DNA OR RNA only</text><text x="354" y="182" fill="#b7bce0" font-size="10">• Parasitic only: TMV (leaf mosaic), Influenza, HIV</text></svg>`
+        }
+      ],
+      keyPoints: [
+        "MRS C GREN = Movement, Respiration, Sensitivity, Control (homeostasis), Growth, Reproduction, Excretion, Nutrition.",
+        "Fungi (Mucor, yeast) have chitin cell walls, store glycogen, and feed by saprotrophic nutrition (extracellular enzyme secretion).",
+        "Protoctists include Amoeba (animal-like), Chlorella (chloroplasts), and Plasmodium (malaria pathogen).",
+        "Bacteria (Lactobacillus bulgaricus, Pneumococcus) are prokaryotes: circular DNA + plasmids, no nucleus or mitochondria.",
+        "Viruses (TMV, HIV, influenza) are non-living particles with a protein coat and DNA or RNA, reproducing only inside host cells."
+      ],
+      whyItWorks: "Saprotrophic fungi cannot engulf solid food because their rigid chitin cell walls block phagocytosis; secreting hydrolytic enzymes outside the hyphae breaks polymers (starch, protein) into small soluble molecules (glucose, amino acids) that diffuse/transport across the membrane.",
+      thinkDeeper: "Why are antibiotics completely ineffective against Tobacco Mosaic Virus or influenza? Antibiotics target bacterial machinery such as peptidoglycan cell wall synthesis or 70S bacterial ribosomes — viruses possess neither.",
+      strategies: ["Use MRS C GREN so you never forget 'Control of internal conditions'", "Memorise Edexcel's exact named organisms: Mucor, Amoeba, Chlorella, Plasmodium, Lactobacillus bulgaricus, Pneumococcus, TMV, HIV"]
     }
   ],
 
   learn: {
     keyFacts: [
+      "MRS C GREN = Movement, Respiration, Sensitivity, Control (homeostasis), Growth, Reproduction, Excretion, Nutrition.",
+      "Fungi (Mucor, yeast) have chitin cell walls, store glycogen, and feed by saprotrophic nutrition (extracellular enzymes).",
+      "Named Edexcel bacteria: Lactobacillus bulgaricus (yoghurt) and Pneumococcus (pneumonia); protoctists: Amoeba, Chlorella, Plasmodium; viruses: TMV, influenza, HIV.",
       "All cells have a cell membrane, cytoplasm and ribosomes (animal, plant and bacterial).",
       "Plant cells additionally have a cellulose cell wall, chloroplasts and a permanent sap vacuole.",
       "Bacteria are prokaryotes — no membrane-bound nucleus, no mitochondria, no chloroplasts.",
@@ -384,6 +430,8 @@ For example, a ×10 eyepiece used with a ×40 objective gives a total magnificat
       "1 µm = 1000 nm; a typical animal/plant cell is tens of micrometres across, a bacterium only a few micrometres."
     ],
     flashcards: [
+      { front: "What is saprotrophic nutrition (as in Mucor)?", back: "Extracellular secretion of digestive enzymes onto dead organic matter, followed by absorption of the soluble digested products." },
+      { front: "Name Edexcel's two required bacterial examples and their roles.", back: "Lactobacillus bulgaricus (rod-shaped, makes yoghurt from milk) and Pneumococcus (spherical pathogen causing pneumonia)." },
       { front: "What is the function of the nucleus?", back: "Controls cell activities; contains chromosomes (DNA) which carry genetic information for protein synthesis." },
       { front: "What is the function of mitochondria?", back: "Site of aerobic respiration — releases energy as ATP from glucose and oxygen." },
       { front: "What three structures does a plant cell have that an animal cell does NOT?", back: "Cell wall (cellulose), chloroplasts, permanent sap vacuole." },
@@ -409,6 +457,8 @@ For example, a ×10 eyepiece used with a ×40 objective gives a total magnificat
       { front: "Name the adaptations of a palisade mesophyll cell.", back: "Tall column shape and many chloroplasts near the top of the leaf to absorb the maximum amount of light for photosynthesis." }
     ],
     keyTerms: [
+      { term: "Saprotrophic nutrition", definition: "Feeding by secreting digestive enzymes outside the body onto dead organic material and absorbing the soluble products (fungi and many bacteria)." },
+      { term: "Mycelium & Hyphae", definition: "A fungal body (mycelium) composed of a network of thread-like filaments (hyphae) with chitin walls and many nuclei." },
       { term: "Nucleus", definition: "A membrane-bound organelle containing chromosomes (DNA); controls cell activities and protein synthesis." },
       { term: "Cell membrane", definition: "The selectively permeable phospholipid bilayer surrounding all cells; controls movement of substances in and out." },
       { term: "Mitochondrion", definition: "Organelle with folded inner membrane (cristae); site of aerobic respiration producing ATP." },
@@ -513,8 +563,36 @@ For example, a ×10 eyepiece used with a ×40 objective gives a total magnificat
           "The cell wall confirms it — but check what it is made of to rule out bacteria."
         ],
         strategy: "Process of elimination"
+      },
+      {
+        id: "bio-cells-mcq-ed01",
+        question: "Which row correctly matches the organism to its group, cell wall material, and mode of nutrition in the Edexcel 4BI1 specification?",
+        options: [
+          "Mucor — Fungus — Chitin — Saprotrophic (extracellular enzymes)",
+          "Mucor — Plant — Cellulose — Photosynthesis",
+          "Lactobacillus — Protoctist — Chitin — Parasitic",
+          "Chlorella — Bacterium — Peptidoglycan — Saprotrophic"
+        ],
+        answerIndex: 0,
+        explanation: "Mucor is a multicellular hyphal fungus with chitin cell walls that feeds saprotrophically by secreting enzymes onto organic matter and absorbing the soluble products.",
+        guideRef: "Characteristics (MRS C GREN) & Variety of Living Organisms",
+        difficulty: "core"
+      },
+      {
+        id: "bio-cells-mcq-ed02",
+        question: "Why does Edexcel classify viruses (such as TMV and HIV) as non-living particles rather than prokaryotes?",
+        options: [
+          "They have chitin cell walls instead of peptidoglycan",
+          "They have no cellular structure (only a protein coat and DNA or RNA) and carry out no life processes outside a host cell",
+          "They store carbohydrates as starch rather than glycogen",
+          "They contain chloroplasts and respire anaerobically"
+        ],
+        answerIndex: 1,
+        explanation: "Viruses lack cytoplasm, cell membranes, ribosomes, and independent metabolism; they consist solely of a protein capsid enclosing DNA or RNA and replicate only inside living host cells.",
+        guideRef: "Characteristics (MRS C GREN) & Variety of Living Organisms",
+        difficulty: "warmup"
       }
-    ],
+  ],
     qa: [
       {
         id: "bio-cells-qa-q01",
@@ -598,8 +676,24 @@ For example, a ×10 eyepiece used with a ×40 objective gives a total magnificat
           "One structure at the tip helps the sperm enter the egg."
         ],
         strategy: "Structure → Function — state the structure, then state what it does"
+      },
+      {
+        id: "bio-cells-qa-ed01",
+        question: "Describe how a fungus such as Mucor obtains its nutrition from bread, and state two structural differences between a Mucor hypha and a plant palisade cell. [4]",
+        marks: 4,
+        modelAnswer: "Mucor feeds by saprotrophic nutrition: its hyphae secrete digestive enzymes extracellularly onto the bread (1), breaking insoluble polymers like starch and protein into soluble glucose and amino acids which are absorbed into the hyphae (1). Unlike a plant cell, Mucor has a cell wall made of chitin rather than cellulose (1) and lacks chloroplasts (and stores carbohydrate as glycogen rather than starch) (1).",
+        markScheme: [
+          "saprotrophic nutrition / secretes digestive enzymes extracellularly onto food",
+          "digests large insoluble molecules into small soluble products that are absorbed",
+          "chitin cell wall (vs cellulose in plant)",
+          "no chloroplasts / multinucleate hyphae / stores glycogen"
+        ],
+        commonError: "Saying fungi 'eat' or 'engulf' decaying matter — examiners require 'extracellular secretion of enzymes' and 'absorption of soluble products'.",
+        guideRef: "Characteristics (MRS C GREN) & Variety of Living Organisms",
+        difficulty: "core",
+        hints: ["Name the feeding method starting with S.", "How do enzymes get onto the bread?", "Compare cell wall material and chloroplasts."]
       }
-    ]
+  ]
   },
 
   questionBank: {

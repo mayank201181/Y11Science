@@ -300,8 +300,10 @@ Arterioles have a ring of muscle in their walls that can contract or relax to co
 
     // ── SECTION 4b ─────────────────────────────────────────────────────────
     {
-      heading: "Tissue Fluid and Exchange",
-      body: `Blood cells and most plasma proteins are too large to leave the capillaries, so how do substances actually reach the body cells? The answer is **tissue fluid** (also called interstitial fluid) — the watery liquid that bathes every cell.
+      heading: "Capillary Exchange (with Tissue Fluid Extension Context)",
+      body: `*(Edexcel 4BI1 Exam Note: Focus on single-cell-thick capillary walls giving a short diffusion distance in 2.68, plus named vessels — pulmonary, hepatic artery, hepatic portal vein, renal artery/vein in 2.69; detailed lymphatic/tissue-fluid drainage is extension only.)*
+
+Blood cells and most plasma proteins are too large to leave the capillaries, so how do substances actually reach the body cells? The answer is **tissue fluid** (also called interstitial fluid) — the watery liquid that bathes every cell.
 
 **How tissue fluid forms:**
 - At the **arterial end** of a capillary, the blood is still at relatively high pressure (from the heart). This pressure forces water and small dissolved molecules (glucose, amino acids, ions, O₂) out through the tiny gaps in the capillary wall. This process is called **pressure filtration** (ultrafiltration).

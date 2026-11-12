@@ -312,7 +312,7 @@ Measure a known distance with a ruler/tape and time the object over it with a st
 **Measuring g (acceleration of free fall).**
 Drop a steel ball from rest through a measured height **h** and time the fall **t** (ideally with an electronic timer triggered by release and a trapdoor switch, to remove reaction-time error). Because u = 0, h = ½gt², so **g = 2h / t²**.
 - Repeat for several heights, plot **h against t²**: the graph is a straight line through the origin with gradient = ½g, so **g = 2 × gradient**.
-- Repeat readings and average to reduce random error; a typical result is close to 9.8 m/s².`,
+- Repeat readings and average to reduce random error; a typical result is close to 10 m/s².`,
 
       keyPoints: [
         "Average speed is measured as distance ÷ time; reaction time (~0.2 s) limits stopwatch accuracy.",
@@ -334,7 +334,7 @@ Drop a steel ball from rest through a measured height **h** and time the fall **
       heading: "Free Fall and Terminal Velocity",
       body: `**Free fall** occurs when the only force acting on an object is gravity (no air resistance). All objects in free fall near Earth's surface accelerate downward at the same rate regardless of mass.
 
-**Acceleration of free fall g ≈ 9.8 m/s²** (Edexcel 4PH1 typically uses 10 m/s² — state which value you use). It can be measured by timing a ball dropped from rest through a known height h and using g = 2h / t² (see "Measuring Speed, Acceleration and g").
+**Acceleration of free fall g = 10 m/s²** (Edexcel 4PH1 standard value: g = 10 N/kg = 10 m/s² near Earth's surface). It can be measured by timing a ball dropped from rest through a known height h and using g = 2h / t² (see "Measuring Speed, Acceleration and g").
 
 Because free fall is motion with constant acceleration, the SUVAT equations apply with a = g: for a dropped object (u = 0) the fall is v = gt, s = ½gt², and v² = 2gs. For objects thrown upward, take a sign convention (e.g. up positive, so a = −g) and at the highest point v = 0.
 
@@ -394,7 +394,7 @@ As the object speeds up, drag increases until drag = weight. At this point the *
       ],
 
       keyPoints: [
-        "Free fall: only gravity acts; acceleration = g ≈ 9.8 m/s² downward.",
+        "Free fall: only gravity acts; acceleration = g ≈ 10 m/s² downward.",
         "All objects in free fall accelerate at the same rate regardless of mass (in the absence of air resistance).",
         "Drag increases with speed; terminal velocity is reached when drag = weight (resultant force = 0).",
         "At terminal velocity: constant speed, zero acceleration, but non-zero forces acting.",
@@ -455,7 +455,7 @@ At t = 10 s: s_A = s_B = 200 m. Car A catches Car B after 10 s and 200 m.`,
       "Gradient of a distance–time graph = speed.",
       "Gradient of a speed–time (velocity–time) graph = acceleration.",
       "Area under a speed–time graph = distance travelled.",
-      "Acceleration of free fall g ≈ 9.8 m/s² (or 10 m/s² — state which you use).",
+      "Acceleration of free fall g = 10 m/s² (Edexcel 4PH1 standard value).",
       "Terminal velocity: reached when drag = weight, so resultant force = 0 and acceleration = 0.",
       "At terminal velocity the object moves at constant speed (non-zero) with non-zero forces balancing.",
       "Equations of motion (constant a only): v = u + at; s = ((u + v)/2)t; v² = u² + 2as; s = ut + ½at².",
@@ -473,7 +473,7 @@ At t = 10 s: s_A = s_B = 200 m. Car A catches Car B after 10 s and 200 m.`,
       { front: "What does the gradient of a distance–time graph represent?", back: "The speed of the object at that point." },
       { front: "What does the gradient of a velocity–time graph represent?", back: "The acceleration of the object." },
       { front: "What does the area under a velocity–time graph represent?", back: "The distance (or displacement) travelled." },
-      { front: "What is the acceleration of free fall near Earth's surface?", back: "g ≈ 9.8 m/s² (or 10 m/s² — state which value you use)." },
+      { front: "What is the acceleration of free fall near Earth's surface?", back: "g = 10 m/s² (Edexcel 4PH1 standard value)." },
       { front: "What is terminal velocity?", back: "The constant maximum speed reached when drag (air resistance) equals weight, so the resultant force and acceleration are both zero." },
       { front: "How does a curved distance–time graph getting steeper indicate?", back: "Increasing speed (acceleration)." },
       { front: "What is deceleration?", back: "Negative acceleration — the object is slowing down. Acceleration and velocity point in opposite directions." },
@@ -495,7 +495,7 @@ At t = 10 s: s_A = s_B = 200 m. Car A catches Car B after 10 s and 200 m.`,
       { term: "Velocity", definition: "The rate of change of displacement with time; speed in a specified direction; a vector quantity (unit: m/s)." },
       { term: "Acceleration", definition: "The rate of change of velocity with time (a = Δv / t); a vector quantity (unit: m/s²)." },
       { term: "Deceleration", definition: "Negative acceleration; the magnitude of velocity is decreasing." },
-      { term: "Free fall", definition: "Motion under gravity alone with no air resistance; all objects accelerate at g ≈ 9.8 m/s² downward." },
+      { term: "Free fall", definition: "Motion under gravity alone with no air resistance; all objects accelerate at g ≈ 10 m/s² downward." },
       { term: "Terminal velocity", definition: "The constant velocity reached by a falling object when the upward drag force equals the downward weight, giving zero resultant force and zero acceleration." },
       { term: "Drag (air resistance)", definition: "The resistive force exerted by a fluid on a moving object, opposing its motion and increasing with speed." },
       { term: "Scalar", definition: "A quantity that has magnitude only (e.g. distance, speed, time, mass)." },
@@ -540,12 +540,12 @@ At t = 10 s: s_A = s_B = 200 m. Car A catches Car B after 10 s and 200 m.`,
         question: "A ball is thrown upward and reaches its highest point. At that instant, which statement is correct?",
         options: [
           "Both speed and acceleration are zero.",
-          "Speed is zero but acceleration is approximately 9.8 m/s² downward.",
+          "Speed is zero but acceleration is approximately 10 m/s² downward.",
           "Speed is zero and acceleration is zero.",
-          "Speed is 9.8 m/s upward and acceleration is zero.",
+          "Speed is 10 m/s upward and acceleration is zero.",
         ],
         answerIndex: 1,
-        explanation: "At the highest point the ball momentarily stops so speed = 0. However, gravity still acts; the ball is still in a gravitational field, so acceleration = g ≈ 9.8 m/s² downward. Acceleration never becomes zero unless there is no net force.",
+        explanation: "At the highest point the ball momentarily stops so speed = 0. However, gravity still acts; the ball is still in a gravitational field, so acceleration = g ≈ 10 m/s² downward. Acceleration never becomes zero unless there is no net force.",
         difficulty: "core",
         guideRef: "Acceleration",
         hints: [
@@ -1021,17 +1021,17 @@ At t = 10 s: s_A = s_B = 200 m. Car A catches Car B after 10 s and 200 m.`,
           },
           {
             id: "phys-motion-bm3-02",
-            question: "Using g = 9.8 m/s², what is the speed of an object dropped from rest after falling for 2.0 s (ignore air resistance)?",
-            options: ["4.9 m/s", "9.8 m/s", "19.6 m/s", "11.8 m/s"],
+            question: "Using g = 10 m/s², what is the speed of an object dropped from rest after falling for 2.0 s (ignore air resistance)?",
+            options: ["5.0 m/s", "10 m/s", "20 m/s", "12 m/s"],
             answerIndex: 2,
-            explanation: "v = u + gt = 0 + 9.8 × 2.0 = 19.6 m/s.",
+            explanation: "v = u + gt = 0 + 10 × 2.0 = 20 m/s (using Edexcel g = 10 m/s²).",
             difficulty: "warmup",
             guideRef: "Free Fall and Terminal Velocity",
           },
           {
             id: "phys-motion-bm3-03",
             question: "A falling object reaches terminal velocity. What is its acceleration at this point?",
-            options: ["9.8 m/s²", "Zero", "Increasing", "Equal to its weight"],
+            options: ["10 m/s²", "Zero", "Increasing", "Equal to its weight"],
             answerIndex: 1,
             explanation: "At terminal velocity, drag equals weight, so the resultant force is zero. By F = ma, zero resultant force means zero acceleration — the object moves at constant speed.",
             difficulty: "core",
@@ -1116,14 +1116,14 @@ At t = 10 s: s_A = s_B = 200 m. Car A catches Car B after 10 s and 200 m.`,
           },
           {
             id: "phys-motion-bm3-08",
-            question: "Using g = 9.8 m/s², a ball is thrown straight up at 14.7 m/s. How long does it take to reach its highest point?",
-            options: ["1.5 s", "3.0 s", "0.67 s", "14.7 s"],
+            question: "Using g = 10 m/s², a ball is thrown straight up at 15 m/s. How long does it take to reach its highest point?",
+            options: ["1.5 s", "3.0 s", "0.67 s", "15 s"],
             answerIndex: 0,
-            explanation: "At the top v = 0. Taking up as positive: t = (v − u)/a = (0 − 14.7)/(−9.8) = 1.5 s.",
+            explanation: "At the top v = 0. Taking up as positive: t = (v − u)/a = (0 − 15)/(−10) = 1.5 s.",
             difficulty: "challenge",
             guideRef: "Free Fall and Terminal Velocity",
             hints: [
-              "Take upward as positive: u = +14.7 m/s, a = −9.8 m/s².",
+              "Take upward as positive: u = +15 m/s, a = −10 m/s².",
               "At the highest point the velocity is momentarily zero.",
               "Use t = (v − u)/a with v = 0.",
             ],
@@ -1914,10 +1914,10 @@ At t = 10 s: s_A = s_B = 200 m. Car A catches Car B after 10 s and 200 m.`,
             id: "phys-motion-bq3-01",
             question: "(a) State what is meant by free fall. [1]\n(b) State the approximate value of the acceleration of free fall near the Earth's surface, including its unit. [1]\n(c) State why, in the absence of air resistance, a heavy ball and a light ball dropped together reach the ground at the same time. [2]",
             marks: 4,
-            modelAnswer: "(a) Free fall is motion under gravity alone, with no air resistance (the only force acting is weight).\n\n(b) g ≈ 9.8 m/s² (10 m/s² also accepted).\n\n(c) In free fall every object accelerates at the same value g regardless of mass, because a larger weight is exactly matched by a larger mass (inertia), so the acceleration is the same. They therefore fall together and land at the same time.",
+            modelAnswer: "(a) Free fall is motion under gravity alone, with no air resistance (the only force acting is weight).\n\n(b) g = 10 m/s² (10 N/kg).\n\n(c) In free fall every object accelerates at the same value g regardless of mass, because a larger weight is exactly matched by a larger mass (inertia), so the acceleration is the same. They therefore fall together and land at the same time.",
             markScheme: [
               "free fall = falling under gravity only / no air resistance (1 mark)",
-              "g ≈ 9.8 m/s² (or 10 m/s²) with unit (1 mark)",
+              "g = 10 m/s² with unit (1 mark)",
               "all objects accelerate at the same g regardless of mass (1 mark)",
               "larger weight balanced by larger mass/inertia (1 mark)",
             ],

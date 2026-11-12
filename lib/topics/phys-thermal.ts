@@ -267,8 +267,10 @@ A **thermistor** has a resistance that falls sharply as temperature rises, makin
     },
 
     {
-      heading: "Specific Heat Capacity and Latent Heat",
-      body: `**Specific heat capacity (c)** is the energy needed to raise the temperature of 1 kg of a substance by 1 °C (or 1 K). It has units J/(kg °C) or J/(kg K).
+      heading: "Specific Heat Capacity ΔQ = mcΔT (with Latent Heat Extension)",
+      body: `*(Edexcel 4PH1 Exam Note: Edexcel 5.11P–5.14P examines ΔQ = m × c × ΔT and flat constant-temperature plateaus during changes of state, whereas numerical specific latent heat Q = mL calculations below are non-examined extension.)*
+
+**Specific heat capacity (c)** is the energy needed to raise the temperature of 1 kg of a substance by 1 °C (or 1 K). It has units J/(kg °C) or J/(kg K).
 
 > **E = mcΔT**
 

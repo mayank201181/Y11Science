@@ -54,7 +54,7 @@ export const extras: TopicExtras = {
         "Pull the mass to one side so it is 10 cm higher than rest and release it gently.",
         "Using a phone stopwatch, time 10 complete swings (one swing = out and back). Divide by 10 to get the period T.",
         "Repeat from heights of 5 cm and 15 cm. Notice that the period barely changes — proving period depends on length, not amplitude (for small angles).",
-        "Calculate the gravitational potential energy at the top of each swing: GPE = mgh (use mass in kg, g = 9.8 m/s², h in metres).",
+        "Calculate the gravitational potential energy at the top of each swing: GPE = mgh (use mass in kg, g = 10 m/s², h in metres).",
         "Discuss where this energy goes at the bottom of the swing (kinetic energy) and why the pendulum eventually stops (energy transferred to thermal energy and sound via air resistance and string flexing).",
       ],
       science:

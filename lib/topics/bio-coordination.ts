@@ -161,10 +161,56 @@ export const bioCoordination: Topic = {
       thinkDeeper:
         "Weed killers like 2,4-D are synthetic auxins. At high concentrations they cause uncontrolled, disorganised growth in broad-leaved plants (dicots), killing them. Narrow-leaved grasses (monocots) are much less sensitive. How does this make 2,4-D useful as a selective herbicide on lawns?",
     },
+    {
+      heading: "Excretion, the Kidney Nephron & ADH Osmoregulation (Triple 2.70–2.79B)",
+      discovery: {
+        problem: "Every day your glomeruli filter ~180 litres of fluid out of your blood, including all your blood glucose — yet you only produce ~1.5 litres of urine and healthy urine contains ZERO glucose. Where did the other 178.5 litres of water and 100% of the glucose go?",
+        idea: "Small molecules (water, glucose, urea, ions) are squeezed into **Bowman's capsule** by high-pressure **ultrafiltration**, leaving blood cells and plasma proteins behind. Immediately in the **proximal convoluted tubule (PCT)**, **100% of the glucose** is reclaimed by **active transport** (packed with mitochondria). Water is reabsorbed in the **loop of Henle** and fine-tuned in the **collecting duct** by the pituitary hormone **ADH**."
+      },
+      body: `**1. Excretion in Plants and Humans (Edexcel 2.70–2.71)**
+- **Excretion** is the removal of toxic metabolic waste products made by chemical reactions inside cells (never confuse with *egestion* of undigested fibre in faeces).
+- **Flowering plants (2.70):** excrete **oxygen** (waste from photosynthesis in daylight) and **carbon dioxide** (waste from aerobic respiration day and night) by diffusion out through **stomata**.
+- **Human organs of excretion (2.71):** **Lungs** excrete CO₂ and water vapour; **Kidneys** excrete **urea**, excess water, and excess mineral ions (as urine); **Skin** excretes sweat containing water, salts/ions, and traces of urea.
+
+**2. The Urinary System & Structure of the Nephron (Triple 2.72B–2.77B)**
+- **Urinary pathway:** Renal artery (oxygenated blood high in urea) → **Kidney** → **Ureter** (carries urine to bladder) → **Bladder** (stores urine) → **Urethra** (releases urine outside); cleaned blood leaves via the **renal vein**.
+- Each kidney contains ~1 million microscopic filtering units called **nephrons**:
+  - **Ultrafiltration (Glomerulus → Bowman's capsule, 2.75B):** The afferent arteriole entering the glomerulus is wider than the efferent vessel leaving it, creating **high hydrostatic blood pressure**. This forces small molecules — **water, glucose, urea, and mineral ions** — through the capillary wall and basement membrane into Bowman's capsule as **glomerular filtrate**. **Red/white blood cells and large plasma proteins** are too big to pass through.
+  - **Selective Reabsorption of Glucose (Proximal Convoluted Tubule, 2.77B):** **All (100%) of the glucose** (plus needed amino acids) is pumped back into the peritubular capillaries at the **PCT** by **active transport** against its concentration gradient, powered by ATP from abundant mitochondria. *(Glucose in urine indicates untreated diabetes — filtrate glucose exceeds PCT transporter capacity).*
+  - **Water & Ion Reabsorption (Loop of Henle & Collecting Duct, 2.76B & 2.79B):** The loop of Henle establishes a salty medulla gradient for osmosis, and the **collecting duct** reabsorbs regulated amounts of water. Final **urine** leaving for the ureter contains **water, urea, and excess ions** (zero protein, zero glucose).
+
+**3. Osmoregulation by ADH Negative Feedback (Triple 2.78B & 2.95B)**
+- **Osmoregulation** maintains constant blood water potential so cells neither lyse nor crenate.
+- **Dehydrated / heavy sweating / salty meal (low blood water content):** Osmoreceptors in the **hypothalamus** detect concentrated blood → stimulate the **pituitary gland** to secrete **MORE ADH** (antidiuretic hormone) into the blood → ADH makes **collecting duct walls MORE permeable** to water → **more water is reabsorbed** into blood by osmosis → **small volume of concentrated** (dark yellow) urine.
+- **Over-hydrated (high blood water content):** Hypothalamus detects dilute blood → pituitary releases **LESS ADH** → collecting duct becomes **LESS permeable** → less water reabsorbed → **large volume of dilute** (pale) urine.
+
+**4. Additional Edexcel Triple Hormones (2.94–2.95B)**
+- Alongside **Adrenaline** (adrenal glands: raises heart/breathing rate and glycogenolysis for fight-or-flight), **Insulin** (pancreas: converts blood glucose → glycogen in liver/muscles), **Testosterone** (testes), **Oestrogen** (ovaries: repairs uterus lining, inhibits FSH, stimulates LH surge), and **Progesterone** (corpus luteum/placenta: maintains uterus lining), Triple Paper 2 also examines pituitary **FSH** (matures ovarian follicle + stimulates oestrogen), **LH** (triggers ovulation at day 14), and **ADH**.`,
+      diagrams: [
+        {
+          caption: "Edexcel 4BI1 Nephron: high-pressure ultrafiltration, 100% glucose selective reabsorption at the PCT, and ADH control at the collecting duct",
+          svg: `<svg viewBox="0 0 680 245" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kidney nephron ultrafiltration selective reabsorption and ADH"><rect x="4" y="4" width="672" height="237" rx="12" fill="#131735" stroke="#2c3366"/><circle cx="88" cy="78" r="34" fill="none" stroke="#38bdf8" stroke-width="5"/><circle cx="84" cy="78" r="19" fill="#fb7185" fill-opacity="0.35" stroke="#fb7185" stroke-width="3"/><text x="88" y="34" text-anchor="middle" fill="#fb7185" font-size="11" font-weight="bold">1. Glomerulus &amp; Bowman's Capsule</text><text x="88" y="128" text-anchor="middle" fill="#b7bce0" font-size="10">High-P ultrafiltration:</text><text x="88" y="141" text-anchor="middle" fill="#b7bce0" font-size="10">H2O, glucose, urea, ions IN</text><text x="88" y="154" text-anchor="middle" fill="#fb7185" font-size="10">(Cells &amp; proteins STAY in blood)</text><path d="M 122 78 Q 175 45 225 78 T 310 78" fill="none" stroke="#fbbf24" stroke-width="6"/><text x="220" y="42" text-anchor="middle" fill="#fbbf24" font-size="11" font-weight="bold">2. Proximal Convoluted Tubule (PCT)</text><text x="220" y="106" text-anchor="middle" fill="#34d399" font-size="10">100% Glucose selectively reabsorbed</text><text x="220" y="119" text-anchor="middle" fill="#b7bce0" font-size="10">(Active transport + mitochondria)</text><path d="M 310 78 L 310 190 Q 340 222 370 190 L 370 78 Q 415 55 460 78" fill="none" stroke="#38bdf8" stroke-width="5"/><text x="340" y="228" text-anchor="middle" fill="#38bdf8" font-size="11" font-weight="bold">3. Loop of Henle (H2O &amp; ions)</text><line x1="460" y1="52" x2="460" y2="215" stroke="#a78bfa" stroke-width="8" stroke-linecap="round"/><text x="565" y="65" text-anchor="middle" fill="#a78bfa" font-size="11" font-weight="bold">4. Collecting Duct + ADH</text><text x="565" y="85" text-anchor="middle" fill="#e2e8f0" font-size="10">Pituitary ADH ↑ permeability</text><text x="565" y="100" text-anchor="middle" fill="#e2e8f0" font-size="10">→ More H2O reabsorbed by osmosis</text><text x="565" y="118" text-anchor="middle" fill="#fbbf24" font-size="10">Dehydrated: High ADH → small conc. urine</text><text x="565" y="133" text-anchor="middle" fill="#38bdf8" font-size="10">Hydrated: Low ADH → large dilute urine</text><text x="565" y="195" text-anchor="middle" fill="#34d399" font-size="11" font-weight="bold">5. Urine to Ureter → Bladder</text><text x="565" y="210" text-anchor="middle" fill="#b7bce0" font-size="10">(Water + Urea + Ions ONLY)</text></svg>`
+        }
+      ],
+      keyPoints: [
+        "Excretory organs: lungs (CO₂, H₂O), kidneys (urea, excess H₂O, ions), skin (sweat); leaves excrete O₂ and CO₂ via stomata.",
+        "Ultrafiltration at the glomerulus/Bowman's capsule uses high blood pressure to filter water, glucose, urea, and ions while retaining blood cells and proteins.",
+        "Selective reabsorption at the proximal convoluted tubule (PCT) reclaims 100% of glucose into blood via active transport.",
+        "ADH from the pituitary gland increases collecting duct permeability so more water is reabsorbed into blood by osmosis.",
+        "Eye accommodation (2.92): NEAR object = Ciliary muscles Contract, Suspensory ligaments Slacken, Lens fattens (more convex); DISTANT = Ciliary Relax, Suspensory taut, Lens thinner."
+      ],
+      whyItWorks: "Filtering almost everything small out at the glomerulus and selectively reabsorbing useful molecules (like glucose) lets the kidney clear unfamiliar toxins automatically without needing a dedicated pump for every waste chemical.",
+      thinkDeeper: "Alcohol inhibits ADH release from the pituitary gland. Why does drinking alcohol cause a person to produce a large volume of pale urine and wake up dehydrated?",
+      strategies: ["Never mix up Ureter (kidney → bladder) with Urethra (bladder → outside)", "For ADH questions, always write the 4-step chain: Pituitary secretes more ADH → Collecting duct MORE permeable → More water reabsorbed into blood by osmosis → Smaller volume of more concentrated urine"]
+    }
   ],
 
   learn: {
     keyFacts: [
+      "Ultrafiltration in the glomerulus/Bowman's capsule filters water, glucose, urea, and ions under high pressure; cells and proteins are too big.",
+      "100% of glucose is selectively reabsorbed in the proximal convoluted tubule (PCT) by active transport.",
+      "Pituitary ADH increases collecting duct permeability so more water is reabsorbed by osmosis, giving a small volume of concentrated urine.",
+      "Eye accommodation: Near = ciliary contract, suspensory slack, lens thick/curved; Distant = ciliary relax, suspensory taut, lens thin.",
       "The CNS consists of the brain and spinal cord.",
       "The order of a reflex arc is: stimulus → receptor → sensory neurone → relay neurone → motor neurone → effector → response.",
       "Synapses transmit impulses chemically using neurotransmitters that diffuse across the synaptic cleft.",
@@ -182,6 +228,8 @@ export const bioCoordination: Topic = {
       "A sense organ is a group of receptor cells: eyes (light), ears (sound), nose and tongue (chemicals), skin (touch, pressure, temperature, pain).",
     ],
     flashcards: [
+      { front: "What does ADH stand for, where is it made, and what is its target structure?", back: "Antidiuretic hormone; secreted by the pituitary gland; increases water permeability of the kidney's collecting duct." },
+      { front: "Why is there glucose in glomerular filtrate but NONE in healthy urine?", back: "Small glucose molecules enter Bowman's capsule in ultrafiltration, then 100% is selectively reabsorbed by active transport in the proximal convoluted tubule." },
       { front: "What are the two main divisions of the human nervous system?", back: "Central nervous system (brain + spinal cord) and peripheral nervous system." },
       { front: "What is the function of a relay neurone?", back: "To connect sensory and motor neurones inside the CNS; it processes and relays impulses." },
       { front: "What happens at a synapse?", back: "Neurotransmitter is released from the pre-synaptic knob, diffuses across the cleft, and triggers an impulse in the post-synaptic neurone." },
@@ -199,6 +247,9 @@ export const bioCoordination: Topic = {
       { front: "What is the role of the hypothalamus in temperature regulation?", back: "It acts as the body's thermostat, detecting blood temperature changes and coordinating responses (sweating, vasodilation, shivering, vasoconstriction)." },
     ],
     keyTerms: [
+      { term: "Ultrafiltration", definition: "High-pressure filtration of small molecules (water, glucose, urea, ions) from the glomerulus into Bowman's capsule while blood cells and proteins remain in blood." },
+      { term: "Selective reabsorption", definition: "Active transport of 100% of glucose (and needed ions/amino acids) from the proximal convoluted tubule back into blood capillaries." },
+      { term: "Osmoregulation", definition: "Homeostatic control of body water and ion balance by the kidneys via negative feedback involving pituitary ADH." },
       { term: "CNS", definition: "Central nervous system; consists of the brain and spinal cord; the site of coordination." },
       { term: "Stimulus", definition: "A change in the internal or external environment that is detected by a receptor." },
       { term: "Receptor", definition: "A cell (or group of cells) that detects a stimulus and converts it into an electrical impulse." },
@@ -322,7 +373,35 @@ export const bioCoordination: Topic = {
         ],
         guideRef: "Nervous vs Hormonal Control and Plant Tropisms",
       },
-    ],
+      {
+        id: "bio-coordination-mcq-ed01",
+        question: "In a healthy human nephron, where is 100% of the filtered glucose selectively reabsorbed back into the blood, and by what mechanism?",
+        options: [
+          "Bowman's capsule — by ultrafiltration",
+          "Proximal convoluted tubule — by active transport",
+          "Loop of Henle — by osmosis",
+          "Collecting duct — controlled by ADH"
+        ],
+        answerIndex: 1,
+        explanation: "All glucose in the glomerular filtrate is selectively reabsorbed at the proximal convoluted tubule (PCT) by active transport (using ATP from numerous mitochondria) so zero glucose remains in urine.",
+        guideRef: "Excretion, the Kidney Nephron & ADH Osmoregulation (Triple 2.70–2.79B)",
+        difficulty: "core"
+      },
+      {
+        id: "bio-coordination-mcq-ed02",
+        question: "On a hot afternoon in Singapore, a runner sweats heavily without drinking water. How does her body's osmoregulation respond?",
+        options: [
+          "Pituitary releases less ADH → collecting duct less permeable → large volume of dilute urine",
+          "Pancreas releases more ADH → proximal tubule reabsorbs more urea → concentrated urine",
+          "Pituitary releases more ADH → collecting duct more permeable → more water reabsorbed into blood → small volume of concentrated urine",
+          "Kidney releases adrenaline → glomerulus stops ultrafiltration completely"
+        ],
+        answerIndex: 2,
+        explanation: "Hypothalamic osmoreceptors detect lower blood water potential; the pituitary secretes more ADH, making the collecting duct walls more permeable so more water re-enters the blood by osmosis, producing a small volume of concentrated urine.",
+        guideRef: "Excretion, the Kidney Nephron & ADH Osmoregulation (Triple 2.70–2.79B)",
+        difficulty: "core"
+      }
+  ],
     qa: [
       {
         id: "bio-coordination-qa-q01",
@@ -416,7 +495,24 @@ export const bioCoordination: Topic = {
           },
         ],
       },
-    ],
+      {
+        id: "bio-coordination-qa-ed01",
+        question: "A table shows concentrations (g/dm³) in three fluids: Plasma (Protein 70, Glucose 1.0, Urea 0.3), Glomerular filtrate (Protein 0, Glucose 1.0, Urea 0.3), and Urine (Protein 0, Glucose 0, Urea 20.0). Explain the differences for protein, glucose, and urea. [5]",
+        marks: 5,
+        modelAnswer: "Protein is 70 g/dm³ in plasma but 0 in filtrate and urine because protein molecules are too large to pass through the capillary/basement membrane pores during high-pressure ultrafiltration at the glomerulus/Bowman's capsule (1). Glucose passes into the filtrate (1.0 g/dm³) as a small molecule, but falls to 0 in urine because 100% of glucose is selectively reabsorbed into the blood at the proximal convoluted tubule (1) by active transport (1). Urea is filtered freely into Bowman's capsule (0.3 g/dm³) and rises to 20.0 g/dm³ in urine because most of the water is reabsorbed along the nephron/collecting duct (under ADH control) while urea is left behind (2).",
+        markScheme: [
+          "proteins too large to pass through glomerulus / Bowman's capsule during ultrafiltration",
+          "all / 100% of glucose selectively reabsorbed at proximal convoluted tubule (PCT)",
+          "by active transport (using ATP / against concentration gradient)",
+          "most water reabsorbed (in loop of Henle / collecting duct by osmosis)",
+          "concentrating the remaining urea in a much smaller volume of urine"
+        ],
+        commonError: "Saying urea is 'actively pumped into the collecting duct to reach 20 g/dm³' — urea concentration rises simply because water is reabsorbed out of the tubule!",
+        guideRef: "Excretion, the Kidney Nephron & ADH Osmoregulation (Triple 2.70–2.79B)",
+        difficulty: "challenge",
+        hints: ["Why can't plasma proteins enter Bowman's capsule?", "Where does all the glucose go after Bowman's capsule?", "Why does urea's concentration jump 60-fold even though no extra urea is added?"]
+      }
+  ],
   },
 
   questionBank: {

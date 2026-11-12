@@ -560,11 +560,53 @@ export const bioEcology: Topic = {
       ],
       strategies: ["Name the enzyme, organism, and product", "Balance benefits vs. risks for evaluation questions"],
     },
+    {
+      heading: "Crop Yield in Glasshouses, Pest Control & Fish Farming (Edexcel 5.1–5.4 & 5.9B)",
+      discovery: {
+        problem: "Why do commercial tomato growers pump extra carbon dioxide AND run heaters inside glasshouses even on sunny afternoons — and why do salmon farmers sort fish into separate cages by size?",
+        idea: "On a bright sunny day, **light is no longer the limiting factor** for photosynthesis — CO₂ (~0.04% in air) or temperature becomes the bottleneck! Raising both unlocks much faster glucose production and higher crop biomass. Meanwhile in fish farms, large salmon attack and eat smaller salmon (**intraspecific predation**), so sorting by size stops cannibalism and maximises protein yield!"
+      },
+      body: `**1. Glasshouses & Polythene Tunnels (Edexcel 5.1–5.2)**
+- Transparent glass or polythene lets short-wavelength solar radiation in, traps warm air (preventing convection losses), and protects crops from wind, frost, and pests.
+- Growers actively control **limiting factors of photosynthesis** to maximise glucose → starch/protein synthesis and **crop yield**:
+  - **Increased temperature (heaters / solar trapping):** gives molecules more kinetic energy so rubisco/photosynthetic enzymes collide more frequently up to their **optimum temperature** (avoiding denaturation above ~40 °C).
+  - **Increased CO₂ concentration (burning paraffin/fuels or CO₂ cylinders):** removes the normal 0.04% atmospheric CO₂ bottleneck, boosting photosynthesis rate.
+  - **Artificial lighting & irrigation:** extends daylight hours in winter and supplies water + **NPK mineral fertilisers** (nitrate for amino acids/proteins, magnesium for chlorophyll, phosphate for DNA/ATP, potassium for enzymes, 5.3).
+
+**2. Pest Control: Chemical Pesticides vs Biological Control (Edexcel 5.4)**
+- **Pesticides (insecticides, herbicides, fungicides):** *Advantages:* fast-acting, can eradicate an entire pest outbreak immediately, easy to apply. *Disadvantages:* **non-specific** (kills pollinators like bees and natural predators), **bioaccumulation / biomagnification** up food chains, pests evolve **resistance**, and requires repeated costly spraying.
+- **Biological control** (introducing a natural predator, parasite, or pathogen — e.g. ladybirds or *Encarsia* wasps eating whitefly/aphids): *Advantages:* **species-specific**, **self-sustaining** (reproduces, no repeat chemical sprays), **no toxic residues or bioaccumulation**, no chemical resistance. *Disadvantages:* slower to act, reduces pest numbers rather than eradicating 100%, and risk that an introduced exotic predator becomes invasive if not tested.
+
+**3. Fish Farming Methods (Triple 5.9B — Six Mark-Scheme Pillars)**
+To farm large numbers of fish efficiently as a protein source, farmers control six factors:
+1. **Maintaining water quality:** pump/paddlewheel **aeration** keeps dissolved **O₂** high for aerobic respiration; monitor temperature and pH.
+2. **Controlling intraspecific predation** (same species fighting/eating smaller individuals): **separate fish by age/size** into different cages and avoid overcrowding.
+3. **Controlling interspecific predation** (other species such as birds, seals, otters): cover cages with **overhead anti-predator nets** and sturdy underwater enclosures.
+4. **Controlling disease:** avoid overcrowding, add **antibiotics** to feed, or use **biological control** (e.g. *wrasse* cleaner fish eating sea lice off salmon).
+5. **Removing waste products:** circulate/filter water or site cages in tidal currents to flush toxic **ammonia/faeces** and uneaten food (preventing bacterial O₂ depletion/eutrophication).
+6. **Controlling quality & frequency of feeding + Selective breeding:** feed **small, frequent meals high in protein/lipid** (maximises growth while minimising wasted food sinking to rot), and **selectively breed** fast-growing, docile, disease-resistant stock.`,
+      diagrams: [
+        {
+          caption: "Edexcel 5.1–5.4 & 5.9B: Glasshouse yield optimisation vs the 6 pillars of commercial fish farming",
+          svg: `<svg viewBox="0 0 680 205" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Glasshouse and Fish Farming Edexcel summary"><rect x="4" y="4" width="672" height="197" rx="12" fill="#131735" stroke="#2c3366"/><rect x="18" y="18" width="305" height="168" rx="9" fill="#172b2a" stroke="#34d399"/><text x="170" y="39" text-anchor="middle" fill="#34d399" font-size="12" font-weight="bold">GLASSHOUSE &amp; PEST CONTROL (5.1–5.4)</text><text x="30" y="63" fill="#e2e8f0" font-size="11">• Warmth: kinetic energy → optimum enzyme rate</text><text x="30" y="83" fill="#e2e8f0" font-size="11">• Extra CO₂ (paraffin burner): lifts 0.04% limit</text><text x="30" y="103" fill="#e2e8f0" font-size="11">• NPK fertiliser: NO₃⁻ → amino acids, Mg²⁺ → chloro</text><text x="30" y="127" fill="#fbbf24" font-size="10">• Pesticides: fast &amp; total, BUT bioaccumulate/non-spec</text><text x="30" y="146" fill="#38bdf8" font-size="10">• Bio control (ladybirds): specific &amp; self-sustaining</text><rect x="338" y="18" width="324" height="168" rx="9" fill="#182246" stroke="#38bdf8"/><text x="500" y="39" text-anchor="middle" fill="#38bdf8" font-size="12" font-weight="bold">FISH FARMING — 6 PILLARS (Triple 5.9B)</text><text x="350" y="61" fill="#e2e8f0" font-size="10.5">1. Water quality: aerate for O₂, filter temp/pH</text><text x="350" y="80" fill="#e2e8f0" font-size="10.5">2. Intraspecific predation: sort cages by fish size</text><text x="350" y="99" fill="#e2e8f0" font-size="10.5">3. Interspecific predation: nets vs birds &amp; seals</text><text x="350" y="118" fill="#e2e8f0" font-size="10.5">4. Disease: antibiotics + cleaner wrasse (sea lice)</text><text x="350" y="137" fill="#e2e8f0" font-size="10.5">5. Waste removal: flush/filter toxic NH₃ &amp; faeces</text><text x="350" y="156" fill="#e2e8f0" font-size="10.5">6. Feed &amp; genetics: frequent high-protein + selective</text></svg>`
+        }
+      ],
+      keyPoints: [
+        "Glasshouses and polythene tunnels boost crop yield by maintaining optimum enzyme temperature, enriching CO₂, and extending light.",
+        "Biological control is specific, self-sustaining, and avoids bioaccumulation/resistance, whereas pesticides act fast but harm non-target species.",
+        "Fish farming (5.9B) controls water O₂, intraspecific (size sorting) & interspecific (nets) predation, disease, waste removal, high-protein frequent feeding, and selective breeding."
+      ],
+      whyItWorks: "Burning paraffin heaters inside a glasshouse scores a double win: it releases both **thermal energy** (raising enzymes toward optimum temperature) AND **carbon dioxide + water** (directly supplying the substrates for photosynthesis).",
+      strategies: ["Distinguish INTRAspecific (within same species → sort by size) from INTERspecific (different species like birds/seals → overhead nets)"]
+    }
   ],
 
   // ── LEARN SMART ─────────────────────────────────────────────────────────────
   learn: {
     keyFacts: [
+      "Glasshouses boost yield by raising temperature (enzyme kinetic energy) and CO\u2082 concentration (removing limiting factor).",
+      "Biological pest control is species-specific and avoids bioaccumulation/resistance, unlike chemical pesticides.",
+      "Fish farming (5.9B): aerate O\u2082, sort sizes (intraspecific), net birds/seals (interspecific), control disease, remove waste, feed small frequent high-protein meals.",
       "An ecosystem is all the organisms in an area plus the abiotic factors they interact with.",
       "Producers (plants, algae) are at trophic level 1 and are the entry point for energy into most food chains.",
       "Approximately 10% of energy is transferred from one trophic level to the next; the rest is lost as heat and in egestion.",
@@ -720,7 +762,21 @@ export const bioEcology: Topic = {
           "The pyramid of energy measures flow over time, not a snapshot — why is this relevant?",
         ],
       },
-    ],
+      {
+        id: "bio-ecology-mcq-ed01",
+        question: "In commercial fish farming (Edexcel 5.9B), how do farmers prevent INTRAspecific predation versus INTERspecific predation?",
+        options: [
+          "Intraspecific: overhead nets against birds; Interspecific: antibiotics in feed",
+          "Intraspecific: separating fish of different ages/sizes into separate cages; Interspecific: covering enclosures with nets against birds and seals",
+          "Intraspecific: aerating the water; Interspecific: feeding high-protein pellets",
+          "Intraspecific: biological control with wrasse; Interspecific: selective breeding"
+        ],
+        answerIndex: 1,
+        explanation: "Intraspecific predation occurs between members of the SAME species (bigger fish eating smaller ones, prevented by size-sorting), whereas interspecific predation involves OTHER species such as herons or seals (prevented by nets).",
+        guideRef: "Crop Yield in Glasshouses, Pest Control & Fish Farming (Edexcel 5.1–5.4 & 5.9B)",
+        difficulty: "core"
+      }
+  ],
     qa: [
       {
         id: "bio-ecology-qa-q01",

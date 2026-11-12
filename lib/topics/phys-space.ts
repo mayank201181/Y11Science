@@ -362,10 +362,53 @@ export const physSpace: Topic = {
       whyItWorks:
         "The Doppler effect: when a source moves away at speed v, the observed wavelength increases by a factor (1 + v/c). For galaxies, v ≪ c, so the fractional redshift z ≈ v/c. Hubble found z (and hence v) proportional to distance d: v = H₀d (Hubble's Law, not required by name in IGCSE but the qualitative relationship is). This directly implies a uniform expansion with no special centre.",
     },
+    {
+      heading: "Star Colours, Absolute Magnitude & the Hertzsprung–Russell (HR) Diagram (Triple 8.7 & 8.10P–8.11P)",
+      discovery: {
+        problem: "Look up at Orion: Betelgeuse glows orange-red while Rigel blazes blue-white — yet everyday taps label red as 'hot' and blue as 'cold'! In astrophysics, which star is actually hotter, and how can a cool red star still shine 10,000 times brighter than our Sun?",
+        idea: "Hotter objects emit shorter-wavelength light, so **blue-white stars (>10,000–30,000 K) are the HOTTEST** and **red stars (~3,000 K) are the COOLEST**! A cool red star can still have huge **luminosity** (low/negative **absolute magnitude**) if its surface area is gigantic — making it a **Red Giant** or **Red Supergiant** in the top-right of the **Hertzsprung–Russell (HR) diagram**."
+      },
+      body: `**1. Classifying Stars by Colour and Surface Temperature (Edexcel 8.7)**
+From **hottest** (shortest peak wavelength) to **coolest** (longest peak wavelength):
+- **Blue → Blue-white → White → Yellow-white → Yellow (the Sun, ~5,800 K) → Orange → Red (~3,000 K).**
+
+**2. Apparent Brightness vs Absolute Magnitude / Luminosity (Triple 8.10P)**
+- A dim torch held 1 m from your eyes looks brighter than a lighthouse 20 km away — so **apparent brightness** depends on distance.
+- **Absolute magnitude** measures how bright a star would appear if placed at a **standard fixed distance** (10 parsecs / ~32.6 light-years), directly reflecting its true **luminosity** (total power output). *(Watch the historical scale: brighter / more luminous stars have MORE NEGATIVE absolute magnitudes, e.g. −5 is far brighter than +10!)*
+
+**3. Reading & Sketching the Hertzsprung–Russell (HR) Diagram (Triple 8.11P)**
+The HR diagram plots **Luminosity** (increasing upwards; or **Absolute Magnitude** becoming more negative upwards) on the y-axis against **Surface Temperature** on the x-axis — **CRITICAL TRAP: Temperature runs BACKWARDS (HOTTEST on the LEFT → COOLEST on the RIGHT)!**
+- **Main Sequence (diagonal band from top-left to bottom-right):** stable hydrogen-fusing stars (~90% of stars). Hot blue-white high-mass stars sit **top-left** (bright & hot); the **Sun** sits near the middle; cool dim red dwarfs sit **bottom-right**.
+- **Red Giants & Red Supergiants (top-right):** **cool** (red, right side) yet **very luminous** (high up) because they have expanded to enormous radii.
+- **White Dwarfs (bottom-left):** **very hot** (white/blue-white, left side) yet **very dim** (low luminosity) because they are tiny Earth-sized stellar cores with tiny surface area.
+
+**4. Cosmological Doppler Redshift Equation (Triple 8.16P–8.18P)**
+- Light from distant galaxies shows absorption lines shifted to **longer wavelengths (red-shift)**:
+- **\`(λ − λ₀) / λ₀ = Δλ / λ₀ = v / c\`**
+  where **λ₀** = reference (laboratory) wavelength, **λ** = observed wavelength, **Δλ = λ − λ₀** = change in wavelength, **v** = recession speed of the galaxy, and **c** = speed of light in free space (\`3.0 × 10⁸ m/s\`).
+- **Further-away galaxies show a LARGER red-shift (Δλ / λ₀)** → moving away faster (**v ∝ distance**), providing key quantitative evidence that the Universe is **expanding** from the **Big Bang** (alongside **Cosmic Microwave Background, CMB** radiation, which only Big Bang theory explains!).`,
+      diagrams: [
+        {
+          caption: "Edexcel 4PH1 Hertzsprung–Russell (HR) Diagram — note Temperature decreases from LEFT (hot blue) to RIGHT (cool red)!",
+          svg: `<svg viewBox="0 0 680 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hertzsprung Russell diagram"><rect x="4" y="4" width="672" height="242" rx="12" fill="#131735" stroke="#2c3366"/><line x1="88" y1="24" x2="88" y2="206" stroke="#b7bce0" stroke-width="2"/><line x1="88" y1="206" x2="640" y2="206" stroke="#b7bce0" stroke-width="2"/><text x="26" y="115" fill="#e2e8f0" font-size="11" font-weight="bold" transform="rotate(-90 26 115)" text-anchor="middle">Luminosity ↑ (Abs Mag −10 at top → +15 at bottom)</text><text x="364" y="236" text-anchor="middle" fill="#e2e8f0" font-size="11" font-weight="bold">← HOTTER (30,000 K · Blue)     Surface Temperature     COOLER (3,000 K · Red) →</text><path d="M 135 42 Q 345 122 575 190" fill="none" stroke="#38bdf8" stroke-width="18" stroke-opacity="0.28" stroke-linecap="round"/><text x="275" y="102" fill="#38bdf8" font-size="12" font-weight="bold">MAIN SEQUENCE</text><circle cx="362" cy="128" r="6" fill="#fbbf24"/><text x="362" y="146" text-anchor="middle" fill="#fbbf24" font-size="11" font-weight="bold">Sun (G, Yellow)</text><ellipse cx="535" cy="52" rx="72" ry="20" fill="#fb7185" fill-opacity="0.25" stroke="#fb7185"/><text x="535" y="56" text-anchor="middle" fill="#fb7185" font-size="11" font-weight="bold">SUPERGIANT STARS</text><ellipse cx="525" cy="98" rx="64" ry="20" fill="#fbbf24" fill-opacity="0.2" stroke="#fbbf24"/><text x="525" y="102" text-anchor="middle" fill="#fbbf24" font-size="11" font-weight="bold">RED GIANTS</text><ellipse cx="205" cy="176" rx="62" ry="18" fill="#e2e8f0" fill-opacity="0.18" stroke="#e2e8f0"/><text x="205" y="180" text-anchor="middle" fill="#e2e8f0" font-size="11" font-weight="bold">WHITE DWARFS</text></svg>`
+        }
+      ],
+      keyPoints: [
+        "Star colour order (hottest to coolest): Blue → Blue-white → White → Yellow (Sun) → Orange → Red.",
+        "Absolute magnitude measures brightness at a standard fixed distance (more negative = more luminous).",
+        "HR diagram axes: Luminosity ↑ (y) vs Temperature running HOT (left) to COOL (right) (x): Main Sequence diagonal, Red Giants/Supergiants top-right, White Dwarfs bottom-left.",
+        "Red-shift formula (8.16P): (λ − λ₀) / λ₀ = Δλ / λ₀ = v / c, with c = 3.0 × 10⁸ m/s."
+      ],
+      whyItWorks: "A star's luminosity depends on BOTH temperature (T⁴) and surface area (4πR²). That is why the four corners of the HR diagram read themselves: top-right = cool but gigantic (Red Giants); bottom-left = scorching hot but Earth-sized (White Dwarfs)!",
+      strategies: ["Check the HR x-axis first: Temperature goes HIGH → LOW from left to right!", "In Δλ / λ₀ = v / c, keep λ and λ₀ in the SAME unit (both nm or both m) so units cancel cleanly."]
+    }
   ],
 
   learn: {
     keyFacts: [
+      "Star colour (hottest \u2192 coolest): Blue \u2192 White \u2192 Yellow (Sun) \u2192 Orange \u2192 Red.",
+      "HR diagram: Luminosity \u2191 (y) vs Temperature HOT-left \u2192 COOL-right (x); Main Sequence diagonal, Red Giants top-right, White Dwarfs bottom-left.",
+      "Cosmological Doppler red-shift (8.16P): (\u03bb \u2212 \u03bb\u2080) / \u03bb\u2080 = \u0394\u03bb / \u03bb\u2080 = v / c (c = 3.0 \u00d7 10\u2078 m/s).",
       "The eight planets in order from the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune.",
       "Orbital speed formula: v = 2πr / T (v in m/s, r in m, T in s).",
       "Gravitational attraction provides the centripetal force for all orbits.",
@@ -380,6 +423,8 @@ export const physSpace: Topic = {
       "The cosmic microwave background radiation (CMBR) — microwaves from all directions — is the second key piece of evidence for the Big Bang.",
     ],
     flashcards: [
+      { front: "State the Edexcel 4PH1 Doppler red-shift formula and define every symbol.", back: "(\u03bb \u2212 \u03bb\u2080) / \u03bb\u2080 = \u0394\u03bb / \u03bb\u2080 = v / c, where \u03bb\u2080 is reference wavelength, \u03bb is observed wavelength, v is galaxy recession speed, and c = 3.0 \u00d7 10\u2078 m/s." },
+      { front: "Where are Main Sequence stars, Red Giants, and White Dwarfs on an HR diagram?", back: "Main Sequence: top-left to bottom-right diagonal; Red Giants: top-right (cool, huge, luminous); White Dwarfs: bottom-left (hot, tiny, dim)." },
       { front: "What force provides the centripetal force for planetary orbits?", back: "Gravitational attraction between the planet and the Sun." },
       { front: "State the formula for orbital speed.", back: "v = 2πr / T, where r is orbital radius (m) and T is period (s)." },
       { front: "How does orbital period change as orbital radius increases?", back: "Period increases — planets farther from the Sun take longer to complete one orbit." },
@@ -399,6 +444,8 @@ export const physSpace: Topic = {
       { front: "Name the stages in the life cycle of a massive star after the main sequence.", back: "Red supergiant → supernova → neutron star or black hole." },
     ],
     keyTerms: [
+      { term: "Absolute magnitude", definition: "How bright a star would appear at a standard fixed distance (10 parsecs), measuring its intrinsic luminosity (more negative = brighter)." },
+      { term: "Hertzsprung\u2013Russell (HR) diagram", definition: "Plot of star luminosity/absolute magnitude (y-axis) against decreasing surface temperature from hot-left to cool-right (x-axis)." },
       { term: "Accretion", definition: "The gradual accumulation of material (gas and dust) under gravity to form larger bodies such as planets and stars." },
       { term: "Comet", definition: "A small icy body with a highly elliptical (eccentric) orbit; it grows a tail of gas and dust that always points away from the Sun, and moves fastest at perihelion and slowest at aphelion." },
       { term: "Natural satellite (moon)", definition: "A natural body, such as a moon, held in orbit around a planet by gravitational attraction." },
@@ -495,7 +542,35 @@ export const physSpace: Topic = {
           "The Doppler effect: a receding source stretches the wavelength of the waves it emits.",
         ],
       },
-    ],
+      {
+        id: "phys-space-mcq-ed01",
+        question: "On a Hertzsprung–Russell (HR) diagram with luminosity increasing upwards and surface temperature decreasing from left to right, where are White Dwarfs and Red Giants located?",
+        options: [
+          "White Dwarfs: top-left; Red Giants: bottom-right",
+          "White Dwarfs: bottom-left; Red Giants: top-right",
+          "White Dwarfs: bottom-right; Red Giants: top-left",
+          "Both lie along the diagonal Main Sequence"
+        ],
+        answerIndex: 1,
+        explanation: "White Dwarfs are very hot (left) but tiny so they have low luminosity (bottom-left). Red Giants are cool (right) but enormous in radius so they have high luminosity (top-right).",
+        guideRef: "Star Colours, Absolute Magnitude & the Hertzsprung–Russell (HR) Diagram (Triple 8.7 & 8.10P–8.11P)",
+        difficulty: "core"
+      },
+      {
+        id: "phys-space-mcq-ed02",
+        question: "A hydrogen spectral line has a laboratory reference wavelength λ₀ = 400 nm. In the spectrum of a distant galaxy, this line is observed at λ = 420 nm. Taking c = 3.0 × 10⁸ m/s, what is the recession speed v of the galaxy?",
+        options: [
+          "1.5 × 10⁷ m/s",
+          "6.0 × 10⁶ m/s",
+          "1.5 × 10⁸ m/s",
+          "2.85 × 10⁸ m/s"
+        ],
+        answerIndex: 0,
+        explanation: "Δλ / λ₀ = (420 − 400) / 400 = 20 / 400 = 0.05. Using Δλ / λ₀ = v / c gives v = 0.05 × 3.0 × 10⁸ = 1.5 × 10⁷ m/s.",
+        guideRef: "Star Colours, Absolute Magnitude & the Hertzsprung–Russell (HR) Diagram (Triple 8.7 & 8.10P–8.11P)",
+        difficulty: "core"
+      }
+  ],
     qa: [
       {
         id: "phys-space-qa-q01",
@@ -582,7 +657,24 @@ export const physSpace: Topic = {
         ],
         strategy: "Evidence → observation → conclusion → theory name.",
       },
-    ],
+      {
+        id: "phys-space-qa-ed01",
+        question: "(a) State what is meant by the absolute magnitude of a star and explain why White Dwarfs lie in the bottom-left of the Hertzsprung–Russell diagram. [3]\n(b) A spectral line of reference wavelength 656 nm is observed from a distant galaxy at 689 nm. Calculate the speed at which the galaxy is moving away from Earth (c = 3.0 × 10⁸ m/s). [3]",
+        marks: 6,
+        modelAnswer: "(a) Absolute magnitude is a measure of how bright a star would appear if placed at the same standard distance from Earth (10 parsecs), indicating its true luminosity (1). White dwarfs have a very high surface temperature so they sit on the left (1), but a very small surface area/radius so they emit little total light per second (low luminosity), placing them at the bottom-left (1).\n\n(b) Δλ = 689 − 656 = 33 nm (1). Using Δλ / λ₀ = v / c: 33 / 656 = v / (3.0 × 10⁸) (1), so v = (33 / 656) × 3.0 × 10⁸ = 1.51 × 10⁷ m/s (1.5 × 10⁷ m/s) (1).",
+        markScheme: [
+          "brightness of star at a fixed / standard distance (measures luminosity)",
+          "high surface temperature → left side of HR diagram",
+          "small surface area / radius → low luminosity → bottom of HR diagram",
+          "Δλ = 689 − 656 = 33 nm",
+          "substitutes into (λ − λ₀) / λ₀ = v / c",
+          "v = 1.5 × 10⁷ m/s (accept 1.51 × 10⁷ m/s)"
+        ],
+        commonError: "Dividing Δλ by the observed wavelength 689 nm instead of the reference laboratory wavelength λ₀ = 656 nm.",
+        guideRef: "Star Colours, Absolute Magnitude & the Hertzsprung–Russell (HR) Diagram (Triple 8.7 & 8.10P–8.11P)",
+        difficulty: "challenge"
+      }
+  ],
   },
 
   questionBank: {

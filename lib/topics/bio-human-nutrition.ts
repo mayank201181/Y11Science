@@ -202,8 +202,10 @@ The five key processes are: **ingestion** (taking food into the body through the
 
     // ── Section 4 ─────────────────────────────────────────────────────────────
     {
-      heading: "Teeth and Dental Health",
-      body: `Humans have two sets of teeth: **deciduous** (milk teeth, 20 total) and **permanent** (32 total, including wisdom teeth).
+      heading: "Teeth and Mechanical Digestion (Extension Context)",
+      body: `*(Edexcel 4BI1 Exam Note: Detailed tooth layers like enamel/dentine are background context rather than examined 4BI1 specification points — focus on mechanical breakdown increasing surface area for enzymes and peristalsis in 2.27–2.29.)*
+
+Humans have two sets of teeth: **deciduous** (milk teeth, 20 total) and **permanent** (32 total, including wisdom teeth).
 
 **Types of teeth and functions:**
 - **Incisors** — chisel-shaped; cutting and biting food.
@@ -503,6 +505,42 @@ So the liver sits at the crossroads of digestion and metabolism: it receives the
       thinkDeeper:
         "Why is excess protein not simply stored like glucose or fat? The amino group makes amino acids toxic to accumulate, and there is no safe nitrogen-storage polymer in animals. So surplus protein must be deaminated, the nitrogen excreted as urea, and only the carbon skeleton kept — which is why a very high-protein diet makes the liver and kidneys work harder.",
     },
+    {
+      heading: "Practical: Investigating Energy Content in a Food Sample (Triple 2.33B)",
+      discovery: {
+        problem: "A crisp packet claims 21 kJ per gram, yet when you burn a 1.0 g crisp under a boiling tube of 20 cm³ water in the school lab, the water warms by only 30 °C — giving just 2.5 kJ/g! Did the manufacturer lie, or where did nearly 90% of the thermal energy go?",
+        idea: "Simple boiling-tube calorimetry loses huge amounts of thermal energy to the surrounding air, to heating the glass tube and mounted needle, and through **incomplete combustion** (black soot). Real food labels use a sealed **bomb calorimeter** surrounded by an insulated water jacket and pure oxygen!"
+      },
+      body: `**1. Method — Burning Food Calorimetry (Edexcel Core Practical 2.33B)**
+1. Measure a fixed volume of cold water (e.g. **20 cm³ = 20 g**, since 1 cm³ water has mass 1 g) into a boiling tube clamped at a fixed angle, and record its **initial temperature (T₁)** with a thermometer.
+2. Weigh a dry food sample (e.g. peanut, crisp, cracker) on an electronic balance to find its **initial mass (m)**.
+3. Impale the food on a **mounted needle**, ignite it in a Bunsen flame, and immediately hold the burning food directly underneath the boiling tube. If the flame goes out, relight it quickly and continue until the food will no longer burn.
+4. Stir the water gently and record the **highest final temperature reached (T₂)**, so **ΔT = T₂ − T₁**.
+
+**2. Calculating Energy Content per Gram**
+- Specific heat capacity of water = **4.2 J / (g °C)**.
+- **Energy transferred to water (J)** = mass of water (g) × 4.2 × ΔT.
+- **Energy per gram of food (J/g)** = \`(mass of water × 4.2 × ΔT) ÷ mass of food burned (g)\`. Dividing by mass of food allows fair comparison between samples of different sizes!
+
+**3. Sources of Inaccuracy & Improvements (High-Frequency Exam Question)**
+- **Heat lost to surrounding air / convection currents** → wrap a **foil/mineral-wool draught shield (insulating sleeve)** around the boiling tube and place a lid around the thermometer.
+- **Incomplete combustion** (soot on tube) → supply **pure oxygen** (as in a bomb calorimeter) or hold food at an optimal fixed distance so airflow isn't choked.
+- **Uneven water temperature** → stir before reading the peak temperature; repeat with fresh samples to calculate a mean and spot anomalies.`,
+      diagrams: [
+        {
+          caption: "Edexcel 2.33B Food Calorimetry setup and bomb-calorimeter style insulation upgrades",
+          svg: `<svg viewBox="0 0 680 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Food calorimetry boiling tube apparatus"><rect x="4" y="4" width="672" height="182" rx="12" fill="#131735" stroke="#2c3366"/><rect x="115" y="28" width="44" height="96" rx="18" fill="#38bdf8" fill-opacity="0.25" stroke="#38bdf8" stroke-width="2.5"/><line x1="137" y1="16" x2="137" y2="108" stroke="#fb7185" stroke-width="3"/><polygon points="137,132 127,154 147,154" fill="#fbbf24"/><line x1="65" y1="162" x2="137" y2="154" stroke="#b7bce0" stroke-width="3"/><text x="205" y="55" fill="#38bdf8" font-size="12" font-weight="bold">Boiling tube: 20 cm³ (= 20 g) water</text><text x="205" y="76" fill="#fb7185" font-size="11">Thermometer records ΔT = T₂ − T₁</text><text x="205" y="98" fill="#fbbf24" font-size="11">Burning weighed food on mounted needle</text><text x="205" y="128" fill="#34d399" font-size="12" font-weight="bold">E (J/g) = (m_water × 4.2 × ΔT) ÷ m_food</text><text x="205" y="152" fill="#b7bce0" font-size="10">Upgrade: foil draught shield + lid + O₂ supply + stir water</text></svg>`
+        }
+      ],
+      keyPoints: [
+        "Energy per gram (J/g) = (mass of water in g × 4.2 × temperature rise ΔT) ÷ mass of food burned in g.",
+        "Divide by mass of food so samples of different masses can be fairly compared.",
+        "Measured values are much lower than true values due to heat lost to surrounding air/glass and incomplete combustion (soot).",
+        "Improve accuracy with an insulated draught shield/lid, stirring water, relighting until completely burned, and repeating."
+      ],
+      whyItWorks: "1 cm³ of water has a mass of 1.0 g and takes 4.2 J to warm by 1 °C, so water acts as an easy-to-measure thermal sink that captures the chemical energy transferred by combustion.",
+      strategies: ["Always divide by food mass at the end for J/g", "Quote BOTH heat loss to air AND incomplete combustion when asked why lab values are too low"]
+    }
   ],
 
   // ─────────────────────────────────────────────────────────────────────────────
@@ -510,6 +548,7 @@ So the liver sits at the crossroads of digestion and metabolism: it receives the
   // ─────────────────────────────────────────────────────────────────────────────
   learn: {
     keyFacts: [
+      "Food calorimetry (2.33B): Energy (J/g) = (mass of water \u00d7 4.2 \u00d7 \u0394T) \u00f7 mass of food; reduce heat loss with an insulated shield/lid and O\u2082 supply.",
       "A balanced diet contains carbohydrates, fats, proteins, vitamins (C, D), minerals (Ca, Fe), dietary fibre, and water.",
       "Vitamin C deficiency causes scurvy (bleeding gums, poor wound healing); vitamin D deficiency causes rickets (soft bones).",
       "Amylase converts starch → maltose in the mouth and duodenum; maltase then converts maltose → glucose.",
@@ -642,7 +681,16 @@ So the liver sits at the crossroads of digestion and metabolism: it receives the
         guideRef: "Energy Requirements",
         difficulty: "warmup",
       },
-    ],
+      {
+        id: "bio-human-nutrition-mcq-ed01",
+        question: "A 0.50 g piece of biscuit is burned under a boiling tube containing 25 cm³ of water. The water temperature rises from 20 °C to 40 °C (specific heat capacity of water = 4.2 J / g °C). What is the measured energy content per gram of biscuit?",
+        options: ["2,100 J/g", "4,200 J/g", "1,050 J/g", "8,400 J/g"],
+        answerIndex: 1,
+        explanation: "Energy transferred to water = 25 g × 4.2 × (40 − 20) = 2,100 J. Energy per gram = 2,100 J ÷ 0.50 g = 4,200 J/g (4.2 kJ/g).",
+        guideRef: "Practical: Investigating Energy Content in a Food Sample (Triple 2.33B)",
+        difficulty: "core"
+      }
+  ],
     qa: [
       {
         id: "bio-human-nutrition-qa-q01",

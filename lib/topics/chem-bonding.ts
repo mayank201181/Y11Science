@@ -499,11 +499,46 @@ For melting/boiling point questions, always state **which forces must be overcom
       ],
       strategies: ["Identify structure type first", "Name the force broken on melting", "State whether charge carriers are mobile"],
     },
+    {
+      heading: "Carbon Allotropes Compared: Diamond, Graphite & C₆₀ Fullerene (Triple 1.52C–1.54C)",
+      discovery: {
+        problem: "Diamond, graphite, and Buckminsterfullerene (C₆₀) are all made of 100% pure carbon atoms — yet diamond melts above 3,550 °C while C₆₀ sublimes around 600 °C, and graphite conducts electricity while C₆₀ is an electrical insulator! How can pure carbon behave three completely different ways?",
+        idea: "Diamond and graphite are **giant covalent lattices** (melting breaks thousands of strong C–C covalent bonds), whereas **C₆₀ fullerene is a simple molecular substance** made of discrete 60-atom hollow cages held together only by **weak intermolecular forces**! And while each carbon in C₆₀ has one delocalised electron on its cage, electrons **cannot jump between separate C₆₀ molecules**, so bulk C₆₀ does not conduct electricity."
+      },
+      body: `**Allotropes** are different structural forms of the **same element** in the same physical state. Edexcel 4CH1 Paper 2 requires a crisp three-way comparison of **diamond**, **graphite**, and **C₆₀ fullerene**:
+
+- **Diamond (Giant Covalent Lattice):** Each carbon forms **4 strong covalent bonds** in a rigid 3D tetrahedral network.
+  - *Melting point:* **Very high** — huge thermal energy needed to break countless strong C–C covalent bonds throughout the lattice.
+  - *Hardness:* **Extremely hard** (cutting tools/drills) — rigid 3D network with no layers to slide.
+  - *Electrical conductivity:* **Does NOT conduct** — all 4 outer electrons per C are locked in localised covalent bonds (no mobile charge carriers).
+- **Graphite (Layered Giant Covalent Lattice):** Each carbon forms **3 strong covalent bonds** in flat hexagonal layers, leaving **1 delocalised electron per carbon** free to move along the layers. Weak forces act between layers.
+  - *Melting point:* **Very high** — melting still requires breaking the strong covalent bonds within the giant layers.
+  - *Hardness:* **Soft and slippery** (lubricant, pencils) — weak forces between hexagonal layers let layers slide easily over one another.
+  - *Electrical conductivity:* **Good conductor** (electrodes) — delocalised electrons move freely along the layers when a voltage is applied.
+- **Buckminsterfullerene, C₆₀ (Simple Molecular Hollow Cage — Triple 1.52C–1.54C):** Discrete spherical molecules each containing **60 carbon atoms** arranged in pentagons and hexagons (like a football), where each C bonds to 3 neighbours.
+  - *Melting/sublimation point:* **Much lower than diamond/graphite** — overcoming the **weak intermolecular forces** between separate C₆₀ molecules takes relatively little energy (the strong C–C covalent bonds inside each cage are NOT broken!).
+  - *Hardness:* **Soft and slippery** — spherical C₆₀ molecules roll over one another easily due to weak intermolecular attractions.
+  - *Electrical conductivity:* **Poor conductor (semiconductor/insulator in bulk)** — although each C has 1 delocalised electron over its own 60-atom sphere, electrons **cannot move easily from one C₆₀ molecule to the next**.`,
+      diagrams: [
+        {
+          caption: "Edexcel 4CH1 Carbon Allotropes: Giant Covalent (Diamond, Graphite) vs Simple Molecular (C₆₀ Fullerene)",
+          svg: `<svg viewBox="0 0 680 195" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diamond Graphite and C60 Fullerene comparison"><rect x="4" y="4" width="672" height="187" rx="12" fill="#131735" stroke="#2c3366"/><rect x="16" y="18" width="205" height="160" rx="8" fill="#182246" stroke="#38bdf8"/><text x="118" y="38" text-anchor="middle" fill="#38bdf8" font-size="12" font-weight="bold">DIAMOND (Giant Covalent)</text><text x="26" y="62" fill="#e2e8f0" font-size="10.5">• 4 C–C bonds (3D tetrahedral)</text><text x="26" y="82" fill="#e2e8f0" font-size="10.5">• Very high MP (break C–C)</text><text x="26" y="102" fill="#e2e8f0" font-size="10.5">• Very hard (rigid 3D network)</text><text x="26" y="122" fill="#fb7185" font-size="10.5">• No conductivity (0 free e⁻)</text><rect x="236" y="18" width="205" height="160" rx="8" fill="#182246" stroke="#34d399"/><text x="338" y="38" text-anchor="middle" fill="#34d399" font-size="12" font-weight="bold">GRAPHITE (Giant Covalent)</text><text x="246" y="62" fill="#e2e8f0" font-size="10.5">• 3 C–C bonds (hex layers)</text><text x="246" y="82" fill="#e2e8f0" font-size="10.5">• Very high MP (break C–C)</text><text x="246" y="102" fill="#e2e8f0" font-size="10.5">• Soft: layers slide (weak forces)</text><text x="246" y="122" fill="#34d399" font-size="10.5">• Conducts: 1 delocalised e⁻/C</text><rect x="456" y="18" width="208" height="160" rx="8" fill="#231b3d" stroke="#fbbf24"/><text x="560" y="38" text-anchor="middle" fill="#fbbf24" font-size="12" font-weight="bold">C₆₀ FULLERENE (Simple Mol.)</text><text x="466" y="62" fill="#e2e8f0" font-size="10.5">• Discrete 60-atom hollow spheres</text><text x="466" y="82" fill="#fbbf24" font-size="10.5">• Lower MP: weak IMFs between C₆₀</text><text x="466" y="102" fill="#e2e8f0" font-size="10.5">• Soft/slippery: spheres roll</text><text x="466" y="122" fill="#fb7185" font-size="10.5">• Poor conductor: e⁻ stuck on cage</text></svg>`
+        }
+      ],
+      keyPoints: [
+        "Diamond and graphite are giant covalent structures (very high MP); C₆₀ fullerene is a simple molecular structure (much lower MP due to weak intermolecular forces between C₆₀ molecules).",
+        "Graphite conducts electricity (delocalised electrons travel along giant layers), whereas C₆₀ fullerene is a poor conductor because delocalised electrons cannot easily jump between separate C₆₀ cages.",
+        "Both graphite (sliding layers) and C₆₀ fullerene (rolling spherical molecules with weak IMFs) are soft."
+      ],
+      whyItWorks: "The #1 Edexcel mark-scheme trap on C₆₀ fullerene is writing 'C₆₀ has weak covalent bonds' — instantaneous zero marks! Always write: 'weak intermolecular forces of attraction BETWEEN C₆₀ molecules require little energy to overcome'.",
+      strategies: ["Classify C₆₀ as SIMPLE MOLECULAR first — every property (low MP, soft, poor bulk conductivity) follows immediately!"]
+    }
   ],
 
   // ─── LEARN SMART ────────────────────────────────────────────────────────
   learn: {
     keyFacts: [
+      "C\u2086\u2080 fullerene is simple molecular (weak intermolecular forces between C\u2086\u2080 cages \u2192 lower MP and soft; electrons trapped on each cage \u2192 poor electrical conductor).",
       "Ionic bonding = transfer of electrons from metal to non-metal; ions held by strong electrostatic attraction.",
       "Covalent bonding = sharing of electron pairs between non-metal atoms.",
       "Metallic bonding = positive ions in a sea of delocalised electrons.",
@@ -518,6 +553,7 @@ For melting/boiling point questions, always state **which forces must be overcom
       "In a dot-and-cross diagram only outer electrons are shown; dots for one atom, crosses for the other, shared pairs in the overlap.",
     ],
     flashcards: [
+      { front: "Why does C\u2086\u2080 fullerene have a lower melting point than graphite and fail to conduct electricity well?", back: "C\u2086\u2080 is simple molecular with weak intermolecular forces between C\u2086\u2080 molecules (low MP), and delocalised electrons cannot jump between separate C\u2086\u2080 cages." },
       { front: "What is ionic bonding?", back: "Transfer of electrons from a metal atom to a non-metal atom, forming oppositely charged ions held by strong electrostatic attraction." },
       { front: "Why do ionic compounds have high melting points?", back: "Many strong electrostatic attractions between oppositely charged ions in the giant lattice must all be overcome — this requires a large amount of energy." },
       { front: "Why can ionic compounds conduct electricity when dissolved in water but not as a solid?", back: "In solution, the lattice breaks down to give free-moving ions that carry charge. In a solid, ions are fixed in position and cannot move." },
@@ -534,6 +570,7 @@ For melting/boiling point questions, always state **which forces must be overcom
       { front: "How many shared pairs are in the bond in O₂?", back: "Two — O₂ has a double bond (two shared pairs of electrons), and each oxygen also has two lone pairs." },
     ],
     keyTerms: [
+      { term: "Buckminsterfullerene (C\u2086\u2080)", definition: "A simple molecular allotrope of carbon consisting of hollow 60-atom spherical cages held together by weak intermolecular forces." },
       { term: "Ionic bonding", definition: "The electrostatic attraction between oppositely charged ions formed by electron transfer from a metal to a non-metal." },
       { term: "Covalent bonding", definition: "The strong attraction between two nuclei and a shared pair of electrons between non-metal atoms." },
       { term: "Metallic bonding", definition: "The attraction between a lattice of positive metal ions and a sea of delocalised (free) electrons." },
@@ -648,7 +685,21 @@ For melting/boiling point questions, always state **which forces must be overcom
         guideRef: "Properties of Ionic Compounds",
         strategy: "Coulomb's law reasoning",
       },
-    ],
+      {
+        id: "chem-bonding-mcq-ed01",
+        question: "Why does Buckminsterfullerene (C₆₀) have a much lower sublimation/melting point than diamond and graphite, and why is solid C₆₀ a poor conductor of electricity?",
+        options: [
+          "C₆₀ has weak covalent bonds and each carbon forms 4 bonds",
+          "C₆₀ has a simple molecular structure with weak intermolecular forces between C₆₀ molecules, and delocalised electrons cannot easily jump between separate C₆₀ cages",
+          "C₆₀ is an ionic lattice whose ions are fixed in place when solid",
+          "C₆₀ is a giant covalent sheet whose delocalised electrons only move when molten"
+        ],
+        answerIndex: 1,
+        explanation: "Unlike giant covalent diamond and graphite, C₆₀ consists of discrete 60-atom molecules attracted by weak intermolecular forces (low energy to separate), and electrons delocalised on each cage cannot move freely from molecule to molecule.",
+        guideRef: "Carbon Allotropes Compared: Diamond, Graphite & C₆₀ Fullerene (Triple 1.52C–1.54C)",
+        difficulty: "core"
+      }
+  ],
     qa: [
       {
         id: "chem-bonding-qa-q01",

@@ -28,7 +28,7 @@ export const extras: TopicExtras = {
         "Sit in a chair with your forearm resting on a table so your hand extends just beyond the edge. Open your thumb and index finger about 3 cm apart, positioned at the zero end of the ruler.",
         "Your partner holds the ruler vertically so that the zero mark is level with the top of your thumb and forefinger, without touching your hand.",
         "Without warning, your partner drops the ruler. Catch it as quickly as possible by closing your fingers.",
-        "Record the distance the ruler fell (in cm) before you caught it. Use the formula: distance = ½ × g × t², rearranged to t = √(2d/g) where g = 9.8 m/s², to calculate your reaction time in seconds.",
+        "Record the distance the ruler fell (in cm) before you caught it. Use the formula: distance = ½ × g × t², rearranged to t = √(2d/g) where g = 10 m/s², to calculate your reaction time in seconds.",
         "Repeat 10 times and calculate your mean reaction time. Then test the effect of a distracting factor (e.g. your partner saying a random word while dropping) — does mean reaction time change?",
         "Compare dominant vs. non-dominant hand, or test before and after a short period of physical exercise."
       ],

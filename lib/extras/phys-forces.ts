@@ -28,7 +28,7 @@ export const extras: TopicExtras = {
         "Read the force on the balance while the block is moving steadily — this equals the kinetic (sliding) friction force.",
         "Record the value. Then gently increase the pull from rest and record the maximum reading just before the block starts moving — this is the static friction force (it will be slightly higher).",
         "Repeat on each surface and tabulate: surface, static friction force, kinetic friction force.",
-        "Calculate the coefficient of kinetic friction (mu) = friction force / normal force. The normal force equals the weight of the block (mass in kg times 9.8 N/kg).",
+        "Calculate the coefficient of kinetic friction (mu) = friction force / normal force. The normal force equals the weight of the block (mass in kg times 10 N/kg).",
         "Plot a bar chart comparing mu values for each surface and write a conclusion.",
       ],
       science:

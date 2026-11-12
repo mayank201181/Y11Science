@@ -35,7 +35,7 @@ export interface DayActivity {
 
 export interface ActivityLogEntry {
   at: number;
-  kind: "quiz" | "guide" | "challenge" | "review" | "exam";
+  kind: "quiz" | "guide" | "challenge" | "review" | "exam" | "watch";
   detail: string;
 }
 
@@ -50,7 +50,7 @@ export interface Analytics {
 export interface ProgressDoc {
   profileId: string;
   stars: number;
-  awarded: Record<string, number>; // qid -> stars earned (so we never double-award)
+  awarded: Record<string, number>; // qid or watch key -> stars earned (so we never double-award)
   attempts: Record<string, { correct: number; total: number }>; // qid -> tally
   guidesRead: string[]; // topic ids
   missed: string[]; // qids currently in the review pool (legacy / quick lookup)

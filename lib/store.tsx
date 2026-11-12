@@ -15,6 +15,7 @@ import { todayKey, yesterdayKey, starsFor } from "./gamify";
 import { getQuestion } from "./content";
 
 type Status = "loading" | "anon" | "no-profile" | "ready";
+export type ThemeMode = "light" | "dark";
 
 interface RecordOpts {
   difficulty?: "warmup" | "core" | "challenge";
@@ -28,6 +29,9 @@ interface StoreValue {
   account: Account | null;
   activeProfile: Profile | null;
   progress: ProgressDoc;
+  theme: ThemeMode;
+  setTheme: (mode: ThemeMode) => void;
+  toggleTheme: () => void;
   // auth
   refreshMe: () => Promise<void>;
   login: (familyName: string, password: string) => Promise<{ ok: boolean; error?: string }>;
@@ -45,6 +49,7 @@ interface StoreValue {
   // progress actions
   recordResult: (qid: string, correct: boolean, opts?: RecordOpts) => void;
   markGuideRead: (topicId: string) => void;
+  awardActivity: (key: string, stars: number, detail?: string) => void;
   recordChallenge: (topicId: string, score: number) => void;
   heartbeat: (minutes: number, topicId?: string) => void;
   setGoal: (minutes: number) => void;
@@ -55,6 +60,7 @@ interface StoreValue {
 const StoreCtx = createContext<StoreValue | null>(null);
 
 const LS_PROFILE = "y11sci.activeProfile";
+const LS_THEME = "y11sci.theme";
 const lsProgressKey = (pid: string) => `y11sci.progress.${pid}`;
 
 function scheduleSrs(srs: SrsItem[], qid: string, correct: boolean, now: number): SrsItem[] {
@@ -86,13 +92,48 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
   const [account, setAccount] = useState<Account | null>(null);
   const [activeProfile, setActiveProfile] = useState<Profile | null>(null);
   const [progress, setProgress] = useState<ProgressDoc>(emptyProgress(""));
+  const [theme, setThemeState] = useState<ThemeMode>("light");
   const syncTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const dirty = useRef(false);
+
+  // ---- theme sync ----
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem(LS_THEME);
+      const initial: ThemeMode = saved === "dark" ? "dark" : "light";
+      setThemeState(initial);
+      document.documentElement.dataset.theme = initial;
+    } catch {
+      document.documentElement.dataset.theme = "light";
+    }
+  }, []);
+
+  const setTheme = useCallback((mode: ThemeMode) => {
+    setThemeState(mode);
+    if (typeof document !== "undefined") {
+      document.documentElement.dataset.theme = mode;
+    }
+    try {
+      localStorage.setItem(LS_THEME, mode);
+    } catch {}
+  }, []);
+
+  const toggleTheme = useCallback(() => {
+    setThemeState((prev) => {
+      const next: ThemeMode = prev === "light" ? "dark" : "light";
+      if (typeof document !== "undefined") {
+        document.documentElement.dataset.theme = next;
+      }
+      try {
+        localStorage.setItem(LS_THEME, next);
+      } catch {}
+      return next;
+    });
+  }, []);
 
   // ---- bootstrapping ----
   const refreshMe = useCallback(async () => {
     try {
-      // cache-buster — some mobile browsers ignore `no-store` for repeated GETs
       const res = await fetch(`/api/auth/me?t=${Date.now()}`, { cache: "no-store" });
       if (!res.ok) {
         setAccount(null);
@@ -119,13 +160,16 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
   // Once we have an account, decide profile state.
   useEffect(() => {
     if (!account) return;
-    const savedId = typeof window !== "undefined" ? localStorage.getItem(LS_PROFILE) : null;
+    let savedId: string | null = null;
+    try {
+      savedId = typeof window !== "undefined" ? localStorage.getItem(LS_PROFILE) : null;
+    } catch {}
     const prof = account.profiles.find((p) => p.id === savedId) || null;
     if (prof) {
       setActiveProfile(prof);
     } else {
       setActiveProfile(null);
-      setStatus(account.profiles.length ? "no-profile" : "no-profile");
+      setStatus("no-profile");
     }
   }, [account]);
 
@@ -134,7 +178,6 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
     if (!account || !activeProfile) return;
     let cancelled = false;
     (async () => {
-      // optimistic from cache
       let cached: ProgressDoc | null = null;
       try {
         const raw = localStorage.getItem(lsProgressKey(activeProfile.id));
@@ -148,7 +191,6 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
         if (res.ok) {
           const remote = (await res.json()) as ProgressDoc;
           if (!cancelled) {
-            // take whichever is newer
             const use = !cached || remote.updatedAt >= cached.updatedAt ? remote : cached;
             setProgress({ ...emptyProgress(activeProfile.id), ...use });
           }
@@ -160,7 +202,6 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
       }
       if (!cancelled) {
         setStatus("ready");
-        // count a session + ensure streak day handled on entry
         bumpStreakAndSession();
       }
     })();
@@ -190,14 +231,13 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(cur),
         }).catch(() => {
-          dirty.current = true; // retry next change
+          dirty.current = true;
         });
         return cur;
       });
     }, 1200);
   }, [persistLocal]);
 
-  // Mutate progress with a function then queue a sync.
   const mutate = useCallback(
     (fn: (p: ProgressDoc) => ProgressDoc) => {
       setProgress((cur) => {
@@ -245,7 +285,6 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
           total: prev.total + 1,
         };
 
-        // award stars once per question (on first correct), AoPS hint bonus
         const idx = getQuestion(qid);
         const difficulty = opts.difficulty || idx?.question.difficulty;
         if (correct && !next.awarded[qid]) {
@@ -254,11 +293,9 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
           next.stars = p.stars + s;
         }
 
-        // SRS scheduling
         next.srs = scheduleSrs(p.srs, qid, correct, now);
         next.missed = next.srs.map((s) => s.qid);
 
-        // analytics per topic + per day
         const topicId = opts.topicId || idx?.topicId;
         if (topicId) {
           const t = next.analytics.perTopic[topicId] || { answered: 0, correct: 0, minutes: 0 };
@@ -294,6 +331,34 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
           guidesRead: [...p.guidesRead, topicId],
           stars: p.stars + 1,
           analytics: { ...p.analytics, log },
+        };
+      });
+    },
+    [mutate],
+  );
+
+  const awardActivity = useCallback(
+    (key: string, stars: number, detail?: string) => {
+      mutate((p) => {
+        if (p.awarded[key]) return p;
+        const now = Date.now();
+        const dk = todayKey(now);
+        const day = p.analytics.perDay[dk] || { date: dk, minutes: 0, stars: 0, answered: 0 };
+        const log = detail
+          ? [{ at: now, kind: "watch" as const, detail }, ...p.analytics.log].slice(0, 80)
+          : p.analytics.log;
+        return {
+          ...p,
+          stars: p.stars + stars,
+          awarded: { ...p.awarded, [key]: stars },
+          analytics: {
+            ...p.analytics,
+            perDay: {
+              ...p.analytics.perDay,
+              [dk]: { ...day, stars: day.stars + stars },
+            },
+            log,
+          },
         };
       });
     },
@@ -394,7 +459,9 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
 
   const logout = useCallback(async () => {
     await fetch("/api/auth/logout", { method: "POST" });
-    if (typeof window !== "undefined") localStorage.removeItem(LS_PROFILE);
+    try {
+      if (typeof window !== "undefined") localStorage.removeItem(LS_PROFILE);
+    } catch {}
     setActiveProfile(null);
     setAccount(null);
     setStatus("anon");
@@ -405,7 +472,9 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
     (id: string) => {
       const prof = account?.profiles.find((p) => p.id === id) || null;
       if (prof) {
-        localStorage.setItem(LS_PROFILE, id);
+        try {
+          localStorage.setItem(LS_PROFILE, id);
+        } catch {}
         setActiveProfile(prof);
         setStatus("loading");
       }
@@ -423,8 +492,6 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
       const e = await res.json().catch(() => ({}));
       throw new Error(e.error || "Could not save learner. Please try again.");
     }
-    // Use the account returned by the server directly (don't rely on a second
-    // fetch, which mobile browsers may serve from cache), then jump straight in.
     const data = await res.json();
     const acct = data.account as Account;
     setAccount(acct);
@@ -480,6 +547,9 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
       account,
       activeProfile,
       progress,
+      theme,
+      setTheme,
+      toggleTheme,
       refreshMe,
       login,
       signup,
@@ -490,6 +560,7 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
       deleteProfile,
       recordResult,
       markGuideRead,
+      awardActivity,
       recordChallenge,
       heartbeat,
       setGoal,
@@ -501,6 +572,9 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
       account,
       activeProfile,
       progress,
+      theme,
+      setTheme,
+      toggleTheme,
       refreshMe,
       login,
       signup,
@@ -511,6 +585,7 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
       deleteProfile,
       recordResult,
       markGuideRead,
+      awardActivity,
       recordChallenge,
       heartbeat,
       setGoal,

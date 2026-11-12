@@ -372,8 +372,10 @@ So to get **more** diffraction you make the **gap narrower** and/or the **wavele
     },
 
     {
-      heading: "Converging Lenses, Ray Diagrams, and Dispersion",
-      body: `**Converging (convex) lens:** a lens that is thicker at the centre than the edges. It refracts parallel rays so that they converge at the **principal focus (F)**.
+      heading: "Dispersion in Prisms (with Converging Lens Extension)",
+      body: `*(Edexcel 4PH1 Exam Note: Triangular prism refraction/dispersion is examined in 3.16, whereas converging lens ray diagrams and focal lengths below are extension only — prioritise Snell's law n = sin i / sin r and critical angle sin c = 1 / n!)*
+
+**Converging (convex) lens:** a lens that is thicker at the centre than the edges. It refracts parallel rays so that they converge at the **principal focus (F)**.
 
 **Focal length (f):** the distance from the optical centre of the lens to F. Measured in metres; a more powerful lens has a shorter focal length.
 

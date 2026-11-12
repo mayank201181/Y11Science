@@ -441,10 +441,43 @@ An **echo** is a reflected sound that is heard separately from the original soun
       ],
       strategies: ["Echo = reflection of sound; apply v = 2d/t", "Angle of incidence = angle of reflection"],
     },
+    {
+      heading: "The Doppler Effect & Moving Wavefronts (Edexcel 3.8)",
+      discovery: {
+        problem: "As a racing car or ambulance speeds towards you with its siren blaring, the note sounds higher-pitched, then suddenly drops in pitch the instant it passes you — yet the driver inside hears a completely steady pitch the whole time! Does sound travel faster ahead of the ambulance?",
+        idea: "**No!** Wave speed **v** in air depends only on the air itself (~340 m/s), NOT on the moving siren. Instead, as the source chases its own forward waves, successive **wavefronts bunch closer together** ahead of it (shorter wavelength **λ** → higher observed frequency **f = v / λ**), while behind it the wavefronts are **stretched further apart** (longer **λ** → lower observed **f**)."
+      },
+      body: `**1. What Is the Doppler Effect? (Edexcel 3.8)**
+- The **Doppler effect** is the apparent **change in observed frequency and wavelength** of a wave when the **wave source is moving relative to an observer**.
+
+**2. Explaining Doppler with Wavefronts (4-Mark Exam Template)**
+- **Source moving TOWARDS observer:**
+  1. Between emitting one wave crest and the next, the source moves forward in the same direction as the waves.
+  2. Wavefronts in front of the source become **bunched / compressed closer together**, so the observed **wavelength (λ) decreases**.
+  3. Wave speed **v** in the medium (air) stays **constant**.
+  4. Since \`f = v / λ\`, a smaller observed wavelength produces a **higher observed frequency** (higher pitch for sound; blue-shift for light).
+- **Source moving AWAY from observer:**
+  - The source moves away between successive emissions, **stretching wavefronts further apart** → **larger observed wavelength (λ)** → with constant **v**, **lower observed frequency (f)** (lower pitch for sound; **red-shift** for distant galaxies!).`,
+      diagrams: [
+        {
+          caption: "Edexcel 3.8 Wavefront Doppler diagram: compressed λ (higher pitch) ahead of a moving source, stretched λ (lower pitch) behind",
+          svg: `<svg viewBox="0 0 680 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Doppler effect wavefronts"><rect x="4" y="4" width="672" height="182" rx="12" fill="#131735" stroke="#2c3366"/><circle cx="290" cy="95" r="78" fill="none" stroke="#38bdf8" stroke-width="1.8"/><circle cx="312" cy="95" r="58" fill="none" stroke="#38bdf8" stroke-width="1.8"/><circle cx="334" cy="95" r="38" fill="none" stroke="#38bdf8" stroke-width="1.8"/><circle cx="356" cy="95" r="18" fill="none" stroke="#38bdf8" stroke-width="2"/><circle cx="368" cy="95" r="5" fill="#fb7185"/><text x="112" y="82" text-anchor="middle" fill="#fbbf24" font-size="12" font-weight="bold">Observer BEHIND</text><text x="112" y="102" text-anchor="middle" fill="#b7bce0" font-size="10.5">Stretched wavefronts (λ ↑)</text><text x="112" y="118" text-anchor="middle" fill="#b7bce0" font-size="10.5">Lower observed f (lower pitch)</text><text x="545" y="82" text-anchor="middle" fill="#34d399" font-size="12" font-weight="bold">Observer AHEAD</text><text x="545" y="102" text-anchor="middle" fill="#b7bce0" font-size="10.5">Bunched wavefronts (λ ↓)</text><text x="545" y="118" text-anchor="middle" fill="#b7bce0" font-size="10.5">Higher observed f (v constant!)</text><text x="340" y="175" text-anchor="middle" fill="#e2e8f0" font-size="11">Source moving right →   (Wave speed v in air stays constant; f = v / λ)</text></svg>`
+        }
+      ],
+      keyPoints: [
+        "Doppler effect: change in observed frequency and wavelength when a wave source moves relative to an observer.",
+        "Approaching source → bunched wavefronts → shorter observed λ → higher observed f (higher pitch).",
+        "Receding source → stretched wavefronts → longer observed λ → lower observed f (lower pitch).",
+        "Crucial trap: wave speed v in air stays CONSTANT — never say the sound waves speed up!"
+      ],
+      whyItWorks: "Once a sound wave leaves the siren, it is just air molecules nudging neighbours at ~340 m/s — the air has no memory of how fast the ambulance was driving. Only the spacing (λ) between consecutive emissions changes!",
+      strategies: ["Always state 'wave speed v remains constant' in 3–4 mark Doppler explanations — it's almost always worth 1 mark!"]
+    }
   ],
 
   learn: {
     keyFacts: [
+      "Doppler effect (3.8): approaching source bunches wavefronts (smaller \u03bb, higher f, constant v); receding source stretches wavefronts (larger \u03bb, lower f, constant v).",
       "Sound is a longitudinal wave requiring a material medium — it cannot travel through a vacuum.",
       "Speed of sound in air ≈ 340 m/s; speed of EM waves in vacuum c ≈ 3 × 10^8 m/s.",
       "Human audible range: 20 Hz to 20 000 Hz (20 kHz).",
@@ -458,6 +491,7 @@ An **echo** is a reflected sound that is heard separately from the original soun
       "On an oscilloscope trace: closer-together waves = higher pitch; taller waves = louder (compared at the same settings).",
     ],
     flashcards: [
+      { front: "Explain why a siren sounds lower-pitched as an ambulance moves away (Doppler effect).", back: "Wavefronts behind the receding source are stretched further apart (increased \u03bb); since wave speed v in air is constant, f = v / \u03bb gives a lower observed frequency." },
       { front: "What type of wave is sound?", back: "Longitudinal — particle vibrations are parallel to the direction of wave travel." },
       { front: "Can sound travel through a vacuum? Why / why not?", back: "No — sound requires a medium (particles to vibrate). A vacuum has no particles." },
       { front: "What is a compression in a sound wave?", back: "A region where particles are pushed together — local pressure is above normal." },
@@ -573,7 +607,21 @@ An **echo** is a reflected sound that is heard separately from the original soun
         guideRef: "The Electromagnetic Spectrum",
         difficulty: "warmup",
       },
-    ],
+      {
+        id: "phys-sound-em-mcq-ed01",
+        question: "An ambulance with its siren sounding drives rapidly AWAY from a stationary pedestrian. Compared with the sound heard by the driver, the sound waves reaching the pedestrian have:",
+        options: [
+          "Lower wave speed, longer wavelength, and lower frequency",
+          "The same wave speed, longer wavelength, and lower frequency",
+          "The same wave speed, shorter wavelength, and higher frequency",
+          "Higher wave speed, shorter wavelength, and the same frequency"
+        ],
+        answerIndex: 1,
+        explanation: "Wave speed in air depends only on the medium and stays constant. Because the source moves away between wave crests, wavefronts are stretched apart (longer λ), so f = v / λ gives a lower observed frequency (lower pitch).",
+        guideRef: "The Doppler Effect & Moving Wavefronts (Edexcel 3.8)",
+        difficulty: "core"
+      }
+  ],
     qa: [
       {
         id: "phys-sound-em-qa-q01",

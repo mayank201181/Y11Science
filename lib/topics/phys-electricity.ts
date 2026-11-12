@@ -449,11 +449,33 @@ A 2 kW electric kettle runs for 5 minutes. Electricity costs $0.28 per kWh.
         "Double-insulated appliances (Class II) need no earth wire as plastic cases cannot become live."
       ],
       thinkDeeper: "A fuse blows only after a fault has already passed a dangerous current for a short time. An RCD trips on a tiny current imbalance (≈30 mA). Why is an RCD much better at protecting a *person* from electrocution than a fuse is?"
+    },
+    {
+      heading: "Voltage as Joules per Coulomb & E = Q × V (Edexcel 2.20–2.21)",
+      discovery: {
+        problem: "What does the '12 V' label on a car battery actually mean for each coulomb of charge flowing around the circuit?",
+        idea: "**1 volt = 1 joule per coulomb (1 V = 1 J/C)**. A 12 V battery transfers **12 J of electrical energy** to every **1 C of charge** passing through it — giving the fundamental Edexcel equation **E = Q × V**."
+      },
+      body: `**1. Defining Voltage Properly (Edexcel 2.20)**
+- **Voltage** (potential difference / e.m.f.) is the **energy transferred per unit charge passed**.
+- **1 volt is equal to 1 joule per coulomb** (\`1 V = 1 J/C\`).
+
+**2. The Energy–Charge–Voltage Equation (Edexcel 2.21)**
+- **\`E = Q × V\`** — where **E** is energy transferred in joules (**J**), **Q** is charge in coulombs (**C**), and **V** is voltage in volts (**V**).
+- Combining \`Q = I × t\` with \`E = Q × V\` immediately derives \`E = I × V × t\` (and \`P = E / t = I × V\`), linking every circuit energy formula into one family!`,
+      keyPoints: [
+        "Voltage is the energy transferred per unit charge passed; 1 volt = 1 joule per coulomb (1 V = 1 J/C).",
+        "Energy transferred E = Q × V (in J, C, and V); rearranged: V = E / Q and Q = E / V.",
+        "Substituting Q = I × t into E = Q × V gives E = I × V × t."
+      ],
+      whyItWorks: "Thinking of coulombs as delivery vans and joules as parcels makes series and parallel rules obvious: in series, the same van (Q) visits two bulbs in a row so it drops part of its parcels at each (V_total = V₁ + V₂); in parallel, each van takes only one branch and drops its full load of parcels there (V_branch = V_supply).",
+      strategies: ["If an Edexcel question asks 'State what is meant by 1 volt', write verbatim: '1 joule of energy transferred per coulomb of charge passed'."]
     }
   ],
 
   learn: {
     keyFacts: [
+      "Voltage = energy transferred per unit charge passed; 1 volt = 1 joule per coulomb (E = Q \u00d7 V).",
       "Electrons transfer during charging by friction; the object gaining electrons becomes negative.",
       "I = Q / t: current (A) = charge (C) ÷ time (s).",
       "Conventional current flows positive → negative; electrons flow negative → positive.",
@@ -471,6 +493,7 @@ A 2 kW electric kettle runs for 5 minutes. Electricity costs $0.28 per kWh.
       "Static uses: inkjet printers, photocopiers, spray painting, smoke precipitators; dangers reduced by earthing."
     ],
     flashcards: [
+      { front: "State the equation linking energy transferred, charge, and voltage, and define the volt.", back: "E = Q \u00d7 V; 1 volt is 1 joule of energy transferred per coulomb of charge passed." },
       { front: "Define electric current.", back: "Electric current is the rate of flow of charge: I = Q/t (unit: ampere, A)." },
       { front: "What is the difference between e.m.f. and potential difference?", back: "e.m.f. is the energy transferred TO the circuit per unit charge by a source. p.d. is the energy transferred FROM the circuit per unit charge by a component." },
       { front: "State Ohm's Law.", back: "The current through a metallic conductor is directly proportional to the p.d. across it, provided temperature is constant (V = IR)." },
@@ -594,8 +617,17 @@ A 2 kW electric kettle runs for 5 minutes. Electricity costs $0.28 per kWh.
           "What shape is associated with a component where R is constant?"
         ],
         guideRef: "Resistance and Ohm's Law"
+      },
+      {
+        id: "phys-electricity-mcq-ed01",
+        question: "A 9.0 V battery pushes 40 C of charge around a torch circuit. How much energy is transferred by the battery (using E = Q × V)?",
+        options: ["0.225 J", "4.4 J", "49 J", "360 J"],
+        answerIndex: 3,
+        explanation: "Using E = Q × V = 40 C × 9.0 V = 360 J (since 1 V = 1 J/C).",
+        guideRef: "Voltage as Joules per Coulomb & E = Q × V (Edexcel 2.20–2.21)",
+        difficulty: "warmup"
       }
-    ],
+  ],
     qa: [
       {
         id: "phys-electricity-qa-q01",

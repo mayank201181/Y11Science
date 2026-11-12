@@ -160,11 +160,38 @@ export const physNuclear: Topic = {
       thinkDeeper:
         "Why must a medical tracer have a short half-life but not too short? If t½ is too long, the patient receives an unnecessarily high cumulative dose. If t½ is too short, the isotope decays before imaging is complete. Technetium-99m (t½ = 6 hours) is ideal: it lasts long enough for a scan session but decays to near-zero within a day.",
     },
+    {
+      heading: "Contamination vs Irradiation & Medical Applications (Edexcel 7.13–7.16)",
+      discovery: {
+        problem: "A crate of plastic surgical syringes is blasted with fierce gamma rays from cobalt-60 to kill bacteria — yet nurses immediately pick up and use the syringes with bare hands! Why aren't the syringes radioactive?",
+        idea: "Shining gamma rays through sealed syringes is **irradiation** — energy passes through and kills microbes without leaving any radioactive atoms behind, just like switching off a torch leaves no light in a room! **Contamination** only happens if actual unstable radioactive atoms get onto or inside an object."
+      },
+      body: `**1. Irradiation vs Contamination (Edexcel 7.15 — Classic Exam Distinction)**
+- **Irradiation:** exposing an object to nuclear radiation from an **external** source without touching/absorbing the radioactive material itself.
+  - *Key fact:* Irradiation **does NOT make the object radioactive**. The hazard stops the instant the source is shielded or moved away (used to **sterilise medical equipment and food** with gamma rays).
+  - *Precautions:* lead/concrete shielding, keeping distance (tongs), minimising exposure time.
+- **Contamination:** unwanted presence of **radioactive atoms (radionuclides)** ON or INSIDE an object or living body (inhaled, swallowed, or on skin).
+  - *Key fact:* Much harder to stop — the person continues being irradiated from within until the isotope **decays away** (short half-life helps) or is **excreted**.
+  - *External vs Internal hazard:* **Alpha (α)** is relatively harmless outside the body (stopped by dead skin) but **extremely dangerous if inhaled/swallowed (internal contamination)** because it is intensely ionising inside soft tissue. **Gamma (γ)** is the main external irradiation hazard because it penetrates deep into the body.
+
+**2. Choosing Isotopes for Tracers vs Radiotherapy (Edexcel 7.13–7.14)**
+- **Medical tracers** (injected/swallowed to image organs with an external gamma camera): must emit **gamma (γ)** (passes out of the body to the detector and is weakly ionising, **never alpha**) with a **short half-life** (hours, e.g. Technetium-99m ~6 h — long enough to scan, decays quickly to minimise patient dose).
+- **Radiotherapy** (destroying cancerous tumours): multiple external **gamma beams** rotated around the patient intersect on the tumour, giving a lethal dose to cancer cells while sparing healthy surrounding tissue.`,
+      keyPoints: [
+        "Irradiation = exposure to radiation from an external source; stops immediately when shielded and does NOT make the object radioactive.",
+        "Contamination = radioactive atoms get onto or inside an object/body; continues emitting radiation until decayed or excreted.",
+        "Medical tracers require a gamma emitter (escapes body, low ionisation) with a short half-life (hours) to minimise patient dose."
+      ],
+      whyItWorks: "Gamma rays are high-energy electromagnetic waves, not unstable nuclei. Absorbing a gamma photon ionises electrons in bacterial DNA (killing microbes on a scalpel), it does not turn stable carbon or steel nuclei unstable.",
+      strategies: ["In compare questions, always write TWO sentences: define irradiation (exposure, object NOT radioactive) AND define contamination (radioactive atoms on/in object, stays hazardous)."]
+    }
   ],
 
   // ─── LEARN SMART ──────────────────────────────────────────────────────────
   learn: {
     keyFacts: [
+      "Irradiation exposes an object to external radiation (does NOT make it radioactive); contamination is unwanted radioactive atoms on/in the object.",
+      "Injected medical tracers must emit gamma rays (escape body, weakly ionising) and have a short half-life (hours).",
       "The nucleus is about 10 000 times smaller than the atom (10⁻¹⁴ m vs 10⁻¹⁰ m).",
       "Alpha particle = helium nucleus (⁴₂He); charge +2, stopped by paper.",
       "Beta particle = fast electron (⁰₋₁e); charge −1, stopped by a few mm of aluminium.",
@@ -183,6 +210,7 @@ export const physNuclear: Topic = {
       "Fusion in stars: light nuclei (e.g. hydrogen) join to form helium, releasing energy via E = mc².",
     ],
     flashcards: [
+      { front: "Distinguish between irradiation and contamination.", back: "Irradiation is exposure to radiation from an external source (object does not become radioactive); contamination is radioactive atoms getting onto or inside an object/body." },
       {
         front: "What is the proton number Z?",
         back: "The number of protons in the nucleus; it determines which element the atom is.",
@@ -422,7 +450,21 @@ export const physNuclear: Topic = {
           "Shorter t½ means activity drops to negligible levels faster.",
         ],
       },
-    ],
+      {
+        id: "phys-nuclear-mcq-ed01",
+        question: "Which row correctly distinguishes irradiation from radioactive contamination, and selects the safest medical tracer to inject into a patient's bloodstream?",
+        options: [
+          "Irradiation makes the object radioactive; tracer = alpha emitter with 5-year half-life",
+          "Irradiation is exposure from an external source without making the object radioactive, whereas contamination is radioactive atoms on/in the body; tracer = gamma emitter with a 6-hour half-life",
+          "Contamination stops as soon as lead shielding is placed outside the patient; tracer = beta emitter with 1,600-year half-life",
+          "Irradiation and contamination both deposit unstable nuclei; tracer = alpha emitter with 2-second half-life"
+        ],
+        answerIndex: 1,
+        explanation: "Irradiation exposes an object without transferring radioactive atoms; contamination deposits unstable nuclei on/in the body. An injected tracer must be gamma (penetrates out to the camera, low ionisation) with a short half-life (~hours) so patient dose drops quickly.",
+        guideRef: "Contamination vs Irradiation & Medical Applications (Edexcel 7.13–7.16)",
+        difficulty: "core"
+      }
+  ],
     qa: [
       {
         id: "phys-nuclear-qa-q01",
