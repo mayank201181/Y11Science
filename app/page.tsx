@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useStore } from "@/lib/store";
-import { ALL_TOPICS, SUBJECTS, topicsBySubject, totalQuestionCount } from "@/lib/content";
+import { TOPICS, SUBJECTS, topicsBySubject, totalQuestionCount } from "@/lib/content";
 import { rankForStars } from "@/lib/gamify";
 import { useHeartbeat } from "@/lib/useHeartbeat";
 import { masterclassDoneKey, sitcomDoneKey } from "@/components/WatchTab";
@@ -13,7 +13,7 @@ export default function Home() {
   const { rank, next, progress: rp } = rankForStars(progress.stars);
   const due = dueReviews().length;
   const totalQ = totalQuestionCount();
-  const watchedCount = ALL_TOPICS.filter(
+  const watchedCount = TOPICS.filter(
     (t) =>
       Boolean(progress.awarded[masterclassDoneKey(t.id)]) ||
       Boolean(progress.awarded[sitcomDoneKey(t.id)]),

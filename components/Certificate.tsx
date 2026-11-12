@@ -83,7 +83,7 @@ export function Certificate({ topic }: { topic: Topic }) {
               ✓ Sitcom Episode Completed
             </span>
           )}
-          {accuracy !== null && (
+          {accuracy !== null && topicStats && (
             <span className="rounded-full bg-indigo-100 border border-indigo-300 px-3.5 py-1 text-xs font-extrabold text-indigo-800">
               Question Accuracy: {accuracy}% ({topicStats.correct}/{topicStats.answered})
             </span>

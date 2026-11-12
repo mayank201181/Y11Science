@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { ALL_TOPICS, SUBJECTS } from "@/lib/content";
+import { TOPICS, SUBJECTS } from "@/lib/content";
 import type { SubjectId } from "@/lib/types";
 import { rankForStars } from "@/lib/gamify";
 import { useStore } from "@/lib/store";
@@ -23,11 +23,11 @@ export default function ProgressPage() {
 
   const guidesDone = progress.guidesRead.length;
   const masterclassesDone = useMemo(
-    () => ALL_TOPICS.filter((t) => Boolean(progress.awarded[masterclassDoneKey(t.id)])).length,
+    () => TOPICS.filter((t) => Boolean(progress.awarded[masterclassDoneKey(t.id)])).length,
     [progress.awarded],
   );
   const sitcomsDone = useMemo(
-    () => ALL_TOPICS.filter((t) => Boolean(progress.awarded[sitcomDoneKey(t.id)])).length,
+    () => TOPICS.filter((t) => Boolean(progress.awarded[sitcomDoneKey(t.id)])).length,
     [progress.awarded],
   );
   const totalAnswered = useMemo(
@@ -59,8 +59,8 @@ export default function ProgressPage() {
       id: "all-guides",
       name: "Syllabus Sweeper",
       emoji: "🏰",
-      done: guidesDone >= ALL_TOPICS.length,
-      hint: `Read all ${ALL_TOPICS.length} Triple Science guides`,
+      done: guidesDone >= TOPICS.length,
+      hint: `Read all ${TOPICS.length} Triple Science guides`,
     },
     {
       id: "first-mc",
@@ -114,7 +114,7 @@ export default function ProgressPage() {
   ];
 
   const visibleTopics = useMemo(
-    () => (filter === "all" ? ALL_TOPICS : ALL_TOPICS.filter((t) => t.subject === filter)),
+    () => (filter === "all" ? TOPICS : TOPICS.filter((t) => t.subject === filter)),
     [filter],
   );
 
@@ -154,9 +154,9 @@ export default function ProgressPage() {
         )}
 
         <div className="mt-6 grid grid-cols-2 sm:grid-cols-5 gap-3 text-left">
-          <SummaryTile emoji="📖" label="Guides read" value={`${guidesDone} / ${ALL_TOPICS.length}`} />
-          <SummaryTile emoji="🎓" label="Masterclasses" value={`${masterclassesDone} / ${ALL_TOPICS.length}`} />
-          <SummaryTile emoji="🍿" label="Sitcom eps" value={`${sitcomsDone} / ${ALL_TOPICS.length}`} />
+          <SummaryTile emoji="📖" label="Guides read" value={`${guidesDone} / ${TOPICS.length}`} />
+          <SummaryTile emoji="🎓" label="Masterclasses" value={`${masterclassesDone} / ${TOPICS.length}`} />
+          <SummaryTile emoji="🍿" label="Sitcom eps" value={`${sitcomsDone} / ${TOPICS.length}`} />
           <SummaryTile emoji="✅" label="Questions done" value={`${totalAnswered} (${overallAcc}%)`} />
           <SummaryTile emoji="🔥" label="Day streak" value={`${progress.streak.count}d`} />
         </div>
@@ -194,7 +194,7 @@ export default function ProgressPage() {
               onClick={() => setFilter("all")}
               className={`btn text-xs py-1.5 px-3 ${filter === "all" ? "btn-primary" : "btn-ghost"}`}
             >
-              All ({ALL_TOPICS.length})
+              All ({TOPICS.length})
             </button>
             {SUBJECTS.map((s) => (
               <button
