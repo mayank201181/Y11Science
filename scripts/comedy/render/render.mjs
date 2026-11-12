@@ -23,7 +23,7 @@ const N = parseInt(opt("--workers") ?? "4"); const per = Math.ceil((to - from) /
 const t0 = Date.now(); let done = 0;
 await Promise.all([...Array(N).keys()].map(async w => {
   const a = from + w * per, b = Math.min(to, a + per); if (a >= b) return; const p = await newPage();
-  const ff = spawn("ffmpeg", ["-y", "-v", "error", "-f", "image2pipe", "-framerate", String(fps), "-c:v", "mjpeg", "-i", "-", "-c:v", "libx264", "-preset", "slow", "-crf", "26", "-pix_fmt", "yuv420p", "-tune", "animation", path.join(tmp, `p${w}.mp4`)], { stdio: ["pipe", "inherit", "inherit"] });
+  const ff = spawn("ffmpeg", ["-y", "-v", "error", "-f", "image2pipe", "-framerate", String(fps), "-c:v", "mjpeg", "-i", "-", "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p", "-tune", "animation", path.join(tmp, `p${w}.mp4`)], { stdio: ["pipe", "inherit", "inherit"] });
   for (let i = a; i < b; i++) { const buf = await grab(p, i, 0.93); if (!ff.stdin.write(buf)) await new Promise(r => ff.stdin.once("drain", r)); if (++done % 600 === 0) console.log(`${done}/${to - from} frames, ${((Date.now() - t0) / 1000).toFixed(0)}s`); }
   ff.stdin.end(); await new Promise(r => ff.on("close", r));
 }));

@@ -30,7 +30,10 @@ for k, (f, s, e) in enumerate(items, start=1):
     fc.append(f"[{k}:v]scale={w}:{h},setpts=PTS-STARTPTS+{s}/TB[c{k}]")
     fc.append(f"[{prev}][c{k}]overlay={x}:{y}:enable='between(t,{s},{e})':eof_action=pass[v{k}]")
     prev = f"v{k}"
-cmd += ["-filter_complex", ";".join(fc), "-map", f"[{prev}]", "-map", f"{len(items) + 1}:a",
+vmap = f"[{prev}]" if fc else "0:v"
+if fc:
+    cmd += ["-filter_complex", ";".join(fc)]
+cmd += ["-map", vmap, "-map", f"{len(items) + 1}:a",
         "-c:v", "libx264", "-preset", "medium", "-crf", "26", "-tune", "animation", "-pix_fmt", "yuv420p",
         "-c:a", "aac", "-b:a", "128k", "-shortest", "-movflags", "+faststart", out]
 subprocess.run(cmd, check=True)

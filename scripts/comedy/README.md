@@ -14,5 +14,11 @@ Pipeline (fully scripted, no manual editing):
    `render.mjs` captures frames in parallel headless Chromium → H.264.
 4. `make_episode.sh <module> <slug>` runs all three and writes `public/comedy/<slug>.mp4`.
 
+Live-action cutaways (optional): lines marked `"live": "meera"|"mum"` render as a phone
+screen (selfie vlog / WhatsApp video call). The talking-head clip for each is made once from
+an AI-generated portrait (`live/<slug>/face_*.png`, SDXL-Turbo) and the line's TTS audio with
+SadTalker (open-source, CPU OK at 256px: ~4 s/frame) via `live/run_talk.py`, saved as
+`live/<slug>/clips/<scene>_<lineIdx>_<WHO>.mp4`. `composite_live.py` overlays them.
+
 To add an episode: write `episodes/<topic>.py`, add any new diagram to `render/diagrams.js`,
 run the script, then register the MP4 in `COMEDY_VIDEOS` in `components/WatchTab.tsx`.
