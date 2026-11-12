@@ -39,3 +39,5 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+scripts/comedy/.work/
+scripts/comedy/**/__pycache__/
