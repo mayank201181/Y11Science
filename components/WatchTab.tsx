@@ -79,7 +79,7 @@ function stripMd(raw: string, maxLen = 210): string {
   return cut.length > 1 ? cut.slice(0, -1).join(". ") + "." : s.slice(0, maxLen) + "...";
 }
 
-function buildMockumentaryHtml(topic: Topic, vault: TopicMemoryVault | undefined, initTheme: string): string {
+function buildMockumentaryHtml(topic: Topic, vault: TopicMemoryVault | null, initTheme: string): string {
   const spec = COMEDY_SPECS[topic.id] || {
     show: topic.subject === "biology" ? "Body Corporate" : topic.subject === "chemistry" ? "Atomic HR" : "Forces HQ",
     title: topic.title,
