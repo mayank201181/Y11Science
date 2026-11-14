@@ -22,3 +22,10 @@ SadTalker (open-source, CPU OK at 256px: ~4 s/frame) via `live/run_talk.py`, sav
 
 To add an episode: write `episodes/<topic>.py`, add any new diagram to `render/diagrams.js`,
 run the script, then register the MP4 in `COMEDY_VIDEOS` in `components/WatchTab.tsx`.
+
+Live-action edition (`episodes/bio_coordination_live.py`): every real-world scene is replaced by
+8-second Veo 3.1 shots (`live/veo_shots.py`, via the Hedra API, $3.20 a shot at standard quality)
+with the characters speaking their own lines; the narrator voice-over and burned-in captions are
+added by `composite_live.py`. Generated shots live in `live/<slug>/veo/` so a rebuild costs nothing:
+`./make_episode.sh bio_coordination_live bio-coordination`. `live/caption_shots.py` transcribes the
+shots (faster-whisper) to check each one says its lines and to time the captions.
