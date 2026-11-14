@@ -191,6 +191,8 @@ def main():
                     dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f],
                                                capture_output=True, text=True).stdout.strip() or 8.0)
                 dur -= c.get("trim_start", 0)
+                dur -= sum(b - a for a, b in c.get("cuts", []))
+                dur = min(dur, c.get("max_dur", dur))
                 if c.get("vo"):
                     a = clip[(c["vo"], "NARR")]; vs = t + 0.3
                     if len(a) / SR > dur - 0.3:
@@ -198,7 +200,7 @@ def main():
                     voice_events.append((vs, a))
                     lines_out.append({"who": "NARR", "text": c["vo"], "start": round(vs, 3), "end": round(vs + len(a) / SR, 3), "amp": []})
                 clips_out.append({"id": c["id"], "file": f, "start": round(t, 3), "dur": round(dur, 3), "gain": c.get("gain", 1.0), "crop": c.get("crop"),
-                                  "trim_start": c.get("trim_start", 0), "captions": c.get("captions")})
+                                  "trim_start": c.get("trim_start", 0), "cuts": c.get("cuts"), "captions": c.get("captions")})
                 t += dur
             scene = {k: v for k, v in sc.items() if k not in ("lines", "clips")}
             scene.update({"start": round(s_start, 3), "end": round(t, 3), "lines": lines_out, "clips": clips_out})

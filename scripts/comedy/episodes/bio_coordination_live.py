@@ -16,11 +16,18 @@ NO_DIALOGUE = " No dialogue, only natural ambient sound."
 
 LIVE = {
     "cold": [
-        {"id": "c1", "refs": ["meera"], "audio": False, "gain": 0.0,
-         "vo": "Seven oh two a.m. Meera, fifteen, is about to meet a Milo microwaved to roughly the temperature of the sun.",
+        {"id": "c1", "refs": ["meera"], "audio": False, "gain": 0.0, "max_dur": 4.5,  # ends before her hand reaches the mug
+         "vo": "Seven oh two a.m. A Milo the temperature of the sun.",
          "prompt": STYLE + "Early morning in a bright Singapore HDB flat kitchen with warm wooden cabinets, white tiled walls and a window behind the counter. Close-up of a red mug of chocolate malt drink steaming on the counter, then "
                    + MEERA + ", in a white school uniform blouse, walks in still sleepy, rubbing her eyes, spots the mug with delight and steps up to the counter in front of it, grinning." + NO_DIALOGUE},
-        {"id": "c2", "file": "c2_reuse.mp4", "gain": 1.0},  # the approved test shot: "Okay. Milo. Let's go." / "Ow!" / Mum: "Blow on it first!"
+        # Starts from c1's frame at 4.5 s. Veo kept her fingers on the mug ~0.9 s before the reflex, so that span is cut:
+        # the touch and the yank are now instant ("Okay, Milo... OW!").
+        {"id": "c2", "file": "c2a.mp4", "gain": 1.0, "cuts": [[1.55, 2.45]], "start_from": ["c1", 4.5], "refs": [],
+         "prompt": STYLE + "Continue this exact scene in the same kitchen. The schoolgirl grins at the steaming red mug and, with her hands still away from it, "
+                   "says cheerfully in a Singaporean English accent: \"Okay. Milo. Let's go.\" Then she reaches for it. The very instant her fingertips touch the scalding mug "
+                   "she snaps her hand back as a reflex, before even gripping it, and yelps: \"Ow! Ow ow ow!\" shaking her fingers. She never lifts or holds the mug. "
+                   "From off-screen, her Indian mother calls in an exasperated Indian English accent: \"Blow on it first! How many times I have to tell you?\" "
+                   "The girl blows on her fingers, embarrassed."},
     ],
     "cinema": [
         {"id": "m1", "refs": ["meera"], "gain": 0.35,
@@ -91,8 +98,8 @@ LIVE = {
 # Hand-checked captions per shot: (start, end, speaker, text), seconds from the start of the (trimmed) clip.
 # Timings come from a Whisper word-level transcript of each generated shot.
 CAPTIONS = {
-    "c2": [(0.0, 2.7, "MEERA", "Okay. Milo. Let's go."), (2.8, 4.1, "MEERA", "Ow! Ow!"),
-           (4.2, 7.0, "MUM", "Blow on it first! How many times I have to tell you?")],
+    "c2": [(0.0, 1.45, "MEERA", "Okay. Milo..."), (1.55, 3.6, "MEERA", "OW! Ow ow ow!"),
+           (3.8, 6.6, "MUM", "Blow on it first! How many times I have to tell you?")],
     "m2": [(2.5, 5.9, "MEERA", "Argh! My eyes!")],
     "p2": [(0.0, 5.7, "MEERA", "Coach, it's literally a sauna out here.")],
     "b1": [(0.0, 5.4, "MEERA", "One large brown sugar boba please. A hundred percent sugar. Extra pearls."),

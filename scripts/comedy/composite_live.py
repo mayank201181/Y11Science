@@ -101,12 +101,16 @@ def main():
         crop = f"crop=iw*{c['crop']}:ih*{c['crop']}:(iw-iw*{c['crop']})/2:0," if c.get("crop") else ""  # zoom past burned-in text at the bottom
         ts = c.get("trim_start") or 0
         trim = f"trim=start={ts}," if ts else ""
-        fc.append(f"[{k}:v]{trim}{crop}scale={W}:{H},fps={tl['fps']},setpts=PTS-STARTPTS+{s}/TB[c{k}]")
+        cuts = c.get("cuts") or []  # [[from, to], ...] seconds removed from the clip (picture and sound)
+        keep = "+".join(f"between(t,{a},{b})" for a, b in cuts)
+        vcut = f"select='not({keep})',setpts=N/FRAME_RATE/TB," if cuts else ""
+        acut = f"aselect='not({keep})',asetpts=N/SR/TB," if cuts else ""
+        fc.append(f"[{k}:v]{vcut}{trim}{crop}scale={W}:{H},fps={tl['fps']},setpts=PTS-STARTPTS+{s}/TB[c{k}]")
         fc.append(f"[{prev}][c{k}]overlay=0:0:enable='between(t,{s},{e - 0.001})':eof_action=pass[v{k}]")
         prev = f"v{k}"
         if has_audio(c["file"]):
             ms = int(round(s * 1000))
-            amix.append(f"[{k}:a]aformat=sample_rates=48000:channel_layouts=stereo,atrim={ts}:{ts + c['dur']},asetpts=PTS-STARTPTS,volume={c['gain']},adelay={ms}|{ms}[a{k}]")
+            amix.append(f"[{k}:a]aformat=sample_rates=48000:channel_layouts=stereo,{acut}atrim={ts}:{ts + c['dur']},asetpts=PTS-STARTPTS,volume={c['gain']},adelay={ms}|{ms}[a{k}]")
             alabels.append(f"[a{k}]")
     if cap_events:
         ass = os.path.join(work, "live_captions.ass")

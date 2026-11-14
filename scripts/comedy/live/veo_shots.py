@@ -32,10 +32,10 @@ def upload(path):
 
 
 def frame_of(vdir, ref):
-    """Upload the first or last frame of another clip: ref = ["c2", "first"|"last"]."""
+    """Upload a frame of another clip: ref = ["c2", "first" | "last" | seconds]."""
     src = os.path.join(vdir, f"{ref[0]}.mp4") if os.path.exists(os.path.join(vdir, f"{ref[0]}.mp4")) else os.path.join(vdir, f"{ref[0]}_reuse.mp4")
-    png = os.path.join(vdir, f".{ref[0]}_{ref[1]}.png")
-    pos = ["-sseof", "-0.1"] if ref[1] == "last" else []
+    png = os.path.join(vdir, f".{ref[0]}_{ref[1]}.png")  # hidden scratch file, not committed
+    pos = ["-sseof", "-0.1"] if ref[1] == "last" else (["-ss", str(ref[1])] if not isinstance(ref[1], str) else [])
     subprocess.run(["ffmpeg", "-v", "error", "-y"] + pos + ["-i", src, "-frames:v", "1", png], check=True)
     return {"source": "url", "url": upload(png)}
 
