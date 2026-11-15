@@ -470,6 +470,7 @@ function drawFrame(i) {
 
   const shot = sc.shot;
   const SPEAK_X = {};
+  if (shot === "live") { ctx.restore(); ctx.fillStyle = "#000"; ctx.fillRect(0, 0, W, H); return; } // live-action clip composited here later
   if (shot === "title" || shot === "end") drawTitle(sc, st, shot === "end");
   else if (shot === "card") { drawBG("card", t); drawCard(sc, S, t); }
   else if (shot === "speed") { drawBG("card", t); SPEAK_X.HYPO = 200; drawChar("HYPO", 200, 560, 1.6, charState("HYPO", 200)); drawSpeed(sc, S, t); }
