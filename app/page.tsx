@@ -133,12 +133,15 @@ export default function Home() {
               full-mark syllabus wording.
             </p>
           </div>
-          <div className="flex items-center gap-2 shrink-0">
+          <div className="flex flex-wrap items-center gap-2 shrink-0">
+            <Link href="/cram" className="btn btn-primary text-xs sm:text-sm py-2 px-3.5">
+              🚨 Custom Exam Cram Sheet →
+            </Link>
             <Link href="/formulas" className="btn btn-ghost text-xs sm:text-sm py-2 px-3">
               📐 Equations Sheet
             </Link>
-            <Link href="/pitfalls" className="btn btn-primary text-xs sm:text-sm py-2 px-3.5">
-              🛡️ Open Full Vault →
+            <Link href="/pitfalls" className="btn btn-ghost text-xs sm:text-sm py-2 px-3">
+              🛡️ Full Vault
             </Link>
           </div>
         </div>
@@ -252,6 +255,12 @@ export default function Home() {
             icon="🍿"
             title="Sitcom TV & Body Corporate"
             desc="37 comedy episodes + Examiner Sterling Roasts"
+          />
+          <QuickCard
+            href="/cram"
+            icon="🚨"
+            title="Custom Exam Cram Sheet"
+            desc="Pick any 3–4 test topics for an instant mark-saver sheet"
           />
           <QuickCard
             href="/pitfalls"

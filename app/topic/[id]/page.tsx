@@ -10,6 +10,8 @@ import { useHeartbeat } from "@/lib/useHeartbeat";
 import { GuideView } from "@/components/GuideView";
 import { WatchTab, type WatchMode } from "@/components/WatchTab";
 import { MemoryPitfallsView, renderPitfallRichText } from "@/components/MemoryPitfallsView";
+import { CramSheet } from "@/components/CramSheet";
+import { buildTopicCramPack } from "@/lib/cram";
 import { LearnSmartView } from "@/components/Flashcards";
 import { PaperRunner, type QItem } from "@/components/PaperRunner";
 import { ChallengeMode } from "@/components/ChallengeMode";
@@ -19,6 +21,7 @@ type Tab =
   | "guide"
   | "watch"
   | "memory"
+  | "cram"
   | "interactive"
   | "learn"
   | "quiz"
@@ -29,6 +32,7 @@ const VALID_TABS: Tab[] = [
   "guide",
   "watch",
   "memory",
+  "cram",
   "interactive",
   "learn",
   "quiz",
@@ -94,6 +98,7 @@ function TopicPageContent({
   const tabs: { id: Tab; label: string; icon: string }[] = [
     { id: "guide", label: "Guide", icon: "📖" },
     { id: "watch", label: "Watch", icon: "🎬" },
+    { id: "cram", label: "Exam Cram", icon: "🚨" },
     { id: "memory", label: "Memory & Pitfalls", icon: "🧠" },
     { id: "interactive", label: "Interactive", icon: "🔬" },
     { id: "learn", label: "Learn", icon: "🃏" },
@@ -137,19 +142,28 @@ function TopicPageContent({
       </header>
 
       {/* Top Marks-Saver Callout so Vanishree immediately sees #1 Edexcel trap on every topic */}
-      {tab !== "memory" && topTrap && vault && (
+      {tab !== "memory" && tab !== "cram" && topTrap && vault && (
         <div className="card p-4 border-emerald-500/35 space-y-2.5">
           <div className="flex items-center justify-between gap-2 flex-wrap">
             <span className="chip tone-emerald">
               🛡️ #1 Edexcel Marks-Saver Trap · {topTrap.spec}
             </span>
-            <button
-              type="button"
-              onClick={() => setTab("memory")}
-              className="text-xs font-extrabold tone-indigo underline"
-            >
-              See all {vault.pitfalls.length} traps &amp; {vault.mnemonics.length} memory hooks →
-            </button>
+            <div className="flex items-center gap-3 flex-wrap">
+              <button
+                type="button"
+                onClick={() => setTab("cram")}
+                className="text-xs font-extrabold tone-rose underline"
+              >
+                🚨 Open Exam Cram Sheet →
+              </button>
+              <button
+                type="button"
+                onClick={() => setTab("memory")}
+                className="text-xs font-extrabold tone-indigo underline"
+              >
+                See all {vault.pitfalls.length} traps &amp; {vault.mnemonics.length} hooks →
+              </button>
+            </div>
           </div>
           <div className="grid sm:grid-cols-2 gap-2.5 text-xs sm:text-sm">
             <div className="rounded-xl border border-rose-500/30 bg-rose-500/10 p-2.5">
@@ -201,6 +215,16 @@ function TopicPageContent({
           topic={topic}
           initialMode={initialWatchMode}
         />
+      )}
+      {tab === "cram" && (
+        <Suspense fallback={<div className="card p-6 text-ink-soft">Loading Exam Cram Sheet…</div>}>
+          <CramSheet
+            packs={[buildTopicCramPack(topic)]}
+            singleTopicMode
+            subjectLabel="Year 11 Triple Science"
+            onPractise={() => setTab("bank")}
+          />
+        </Suspense>
       )}
       {tab === "memory" && <MemoryPitfallsView topic={topic} />}
       {tab === "interactive" && <InteractiveView topicId={topic.id} />}

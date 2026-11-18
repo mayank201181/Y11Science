@@ -11,6 +11,7 @@ const GUEST_AVATARS = ["👩‍🔬", "🧑‍🔬", "🦉", "🦊", "🚀", "�
 const BOTTOM_NAV = [
   { href: "/", label: "Home", icon: "🏠" },
   { href: "/topics", label: "Topics", icon: "📚" },
+  { href: "/cram", label: "Cram", icon: "🚨" },
   { href: "/watch", label: "Watch", icon: "🎬" },
   { href: "/episodes", label: "Sitcom", icon: "🍿" },
   { href: "/review", label: "Review", icon: "🔁" },
@@ -102,8 +103,16 @@ export function Header() {
         </Link>
 
         <Link
+          href="/cram"
+          className={`chip tone-rose ${path.startsWith("/cram") ? "border-rose-500 text-ink" : ""}`}
+          title="Custom Multi-Topic Exam Cram & Mark-Savers Sheet"
+        >
+          🚨 <span className="hidden sm:inline">Cram</span>
+        </Link>
+
+        <Link
           href="/pitfalls"
-          className={`chip hidden md:inline-flex ${path.startsWith("/pitfalls") ? "border-indigo-500 text-ink" : ""}`}
+          className={`chip hidden lg:inline-flex ${path.startsWith("/pitfalls") ? "border-indigo-500 text-ink" : ""}`}
           title="Edexcel 4BI1 / 4CH1 / 4PH1 Marks-Saver & Examiner Pitfalls Vault"
         >
           🛡️ <span>Marks-Savers</span>
@@ -209,6 +218,13 @@ export function Header() {
 
                 <div className="h-px bg-line my-1" />
 
+                <Link
+                  href="/cram"
+                  onClick={() => setMenu(false)}
+                  className="block px-3 py-2 rounded-lg hover:bg-bg-soft text-sm font-bold tone-rose"
+                >
+                  🚨 Custom Exam Cram Sheet
+                </Link>
                 <Link
                   href="/pitfalls"
                   onClick={() => setMenu(false)}
@@ -363,7 +379,7 @@ export function BottomNav() {
       style={{ background: "var(--header-bg)" }}
       aria-label="Bottom navigation"
     >
-      <div className="mx-auto grid max-w-3xl grid-cols-7 px-1">
+      <div className="mx-auto grid max-w-4xl grid-cols-8 px-1">
         {BOTTOM_NAV.map((n) => {
           const active = isBottomActive(path, n.href);
           return (

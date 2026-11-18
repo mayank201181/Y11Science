@@ -35,6 +35,9 @@ export default function TopicsDirectoryPage() {
           ← Home
         </Link>
         <div className="flex items-center gap-2 flex-wrap">
+          <Link href="/cram" className="chip tone-rose">
+            🚨 Custom Exam Cram Sheet
+          </Link>
           <Link href="/pitfalls" className="chip tone-emerald">
             🛡️ Edexcel Marks-Saver Vault
           </Link>
@@ -142,6 +145,9 @@ export default function TopicsDirectoryPage() {
                   </Link>
                   <Link href={`/topic/${t.id}?tab=watch`} className="chip">
                     🎬 Watch
+                  </Link>
+                  <Link href={`/topic/${t.id}?tab=cram`} className="chip tone-rose">
+                    🚨 Cram
                   </Link>
                   <Link href={`/topic/${t.id}?tab=memory`} className="chip tone-emerald">
                     🛡️ {vault ? `${vault.pitfalls.length} Pitfalls` : "Pitfalls"}
