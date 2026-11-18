@@ -1,4 +1,4 @@
-// Types for cloud accounts, learner profiles and progress (used with Vercel Blob sync).
+// Types for cloud accounts, learner profiles and progress (local device guest + optional Vercel Blob sync).
 
 export interface Account {
   id: string;
@@ -78,5 +78,52 @@ export function emptyProgress(profileId: string): ProgressDoc {
     goalMinutes: 20,
     analytics: { totalMinutes: 0, sessions: 0, perDay: {}, perTopic: {}, log: [] },
     updatedAt: 0,
+  };
+}
+
+/** Defensively normalize any stored JSON object into a valid ProgressDoc. */
+export function normalizeProgress(raw: unknown, fallbackProfileId: string): ProgressDoc {
+  const base = emptyProgress(fallbackProfileId);
+  if (!raw || typeof raw !== "object") return base;
+  const r = raw as Partial<ProgressDoc>;
+  const analyticsRaw = (r.analytics && typeof r.analytics === "object" ? r.analytics : {}) as Partial<Analytics>;
+  const streakRaw = (r.streak && typeof r.streak === "object" ? r.streak : {}) as Partial<ProgressDoc["streak"]>;
+
+  return {
+    profileId: typeof r.profileId === "string" && r.profileId ? r.profileId : fallbackProfileId,
+    stars: typeof r.stars === "number" && Number.isFinite(r.stars) ? Math.max(0, r.stars) : 0,
+    awarded: r.awarded && typeof r.awarded === "object" ? { ...r.awarded } : {},
+    attempts: r.attempts && typeof r.attempts === "object" ? { ...r.attempts } : {},
+    guidesRead: Array.isArray(r.guidesRead) ? r.guidesRead.filter((x): x is string => typeof x === "string") : [],
+    missed: Array.isArray(r.missed) ? r.missed.filter((x): x is string => typeof x === "string") : [],
+    challengeBest: r.challengeBest && typeof r.challengeBest === "object" ? { ...r.challengeBest } : {},
+    streak: {
+      count: typeof streakRaw.count === "number" && Number.isFinite(streakRaw.count) ? Math.max(0, streakRaw.count) : 0,
+      lastDay: typeof streakRaw.lastDay === "string" ? streakRaw.lastDay : "",
+    },
+    srs: Array.isArray(r.srs)
+      ? r.srs.filter(
+          (s): s is SrsItem =>
+            Boolean(s && typeof s === "object" && typeof s.qid === "string" && typeof s.dueAt === "number"),
+        )
+      : [],
+    goalMinutes:
+      typeof r.goalMinutes === "number" && Number.isFinite(r.goalMinutes)
+        ? Math.max(5, Math.min(120, Math.round(r.goalMinutes)))
+        : 20,
+    analytics: {
+      totalMinutes:
+        typeof analyticsRaw.totalMinutes === "number" && Number.isFinite(analyticsRaw.totalMinutes)
+          ? Math.max(0, analyticsRaw.totalMinutes)
+          : 0,
+      sessions:
+        typeof analyticsRaw.sessions === "number" && Number.isFinite(analyticsRaw.sessions)
+          ? Math.max(0, analyticsRaw.sessions)
+          : 0,
+      perDay: analyticsRaw.perDay && typeof analyticsRaw.perDay === "object" ? { ...analyticsRaw.perDay } : {},
+      perTopic: analyticsRaw.perTopic && typeof analyticsRaw.perTopic === "object" ? { ...analyticsRaw.perTopic } : {},
+      log: Array.isArray(analyticsRaw.log) ? analyticsRaw.log.slice(0, 80) : [],
+    },
+    updatedAt: typeof r.updatedAt === "number" && Number.isFinite(r.updatedAt) ? r.updatedAt : 0,
   };
 }

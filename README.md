@@ -1,45 +1,23 @@
-# 🔬 Year 11 Science Lab — Edexcel IGCSE
+# 🔬 Year 11 Science Lab — Edexcel IGCSE Triple Science
 
-An interactive study guide & question bank for **Edexcel IGCSE Biology (4BI1), Chemistry (4CH1)
-and Physics (4PH1)** — three separate sciences, Extended tier. Built for a Year 11 student at
-Tanglin Trust School.
+An interactive study guide, video studio & question bank for **Pearson Edexcel IGCSE Biology (4BI1), Chemistry (4CH1) and Physics (4PH1)** — built for **Vanishree** (Year 11, Tanglin Trust School).
 
 **Live:** https://y11science.vercel.app
 
 ## What's inside
-- **37 topics** (Biology 14 · Chemistry 13 · Physics 10), each with an illustrated guide,
-  "Learn Smart" flashcards, a quick quiz, and a heavy question bank — **~1,150 questions** in total,
-  plus a full cross-topic **mock exam** per subject.
-- **Art of Problem Solving pedagogy**: every topic opens problems before methods, derives the "why",
-  ladders hints, shows multiple solution methods, and tiers difficulty (warm-up → core → challenge).
-- **Learning engine**: self-marking papers with resume, spaced-repetition review (1/3/7/16/35 days),
-  gamification (stars, ranks, daily streak, goal, timed challenge), and **Professor Photon**, a
-  Socratic AI tutor.
-- **Family accounts & cloud sync**: one family login → multiple learner profiles, progress synced
-  across devices, plus a **PIN-protected parent dashboard** (time on task, accuracy, per-topic
-  breakdown, weekly chart).
-- **Installable PWA** with offline shell.
+- **Zero-Login Open Access + Automatic iPad `localStorage` Persistence**: Opens immediately into local device mode (`Vanishree`) with zero login/password wall, saving stars, streaks, daily goals, read guides, watched episodes, in-progress paper states, and spaced-repetition items synchronously on device. Optional cloud family sync and PIN-protected Parent Dashboard sit discretely inside the top-right profile menu.
+- **Persistent Bottom Navigation Dock**: Fixed across mobile, iPad, and desktop (`Home · Topics · Watch · Sitcom · Review · Exams · Progress`), plus top-bar Watch & Sitcom shortcuts.
+- **37 Topics (`4BI1` · `4CH1` · `4PH1`)**: Illustrated AoPS discovery guides, interactive simulations, "Learn Smart" flashcards, quick quizzes, question banks, and timed challenges, plus full cross-topic **Mock Exams** per subject.
+- **37 Studio Masterclasses + 37 Sitcom & Body Corporate Episodes**: 60fps narrated UK Tutor whiteboard lessons (`/watch`), animated Sitcom TV + Examiner Sterling Roasts + `Body Corporate` / `Atomic HR` / `Forces HQ` comedies (`/episodes`).
+- **Edexcel Marks-Saver & Examiner Pitfalls Vault (`/pitfalls`)**: Side-by-side `"Never Write This → Write This Instead"` mark-scheme traps, high-yield memory hooks, and rapid-fire mark-scheme checks across all 37 topics.
 
 ## Tech
-Next.js 16 (App Router) · TypeScript · Tailwind v4 · Vercel Blob (storage) · Anthropic SDK (tutor).
+Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS v4 · Vercel Blob (optional cloud sync) · Anthropic SDK (optional Professor Photon tutor).
 
 ## Develop
 ```bash
 npm install
-npm run dev      # http://localhost:3000  (use dev for auth — secure cookies need https in prod)
-npm run build    # production build
+npm run dev      # http://localhost:3000
+npm run lint     # ESLint check
+npm run build    # Production build
 ```
-
-### Environment variables (set in Vercel)
-| Variable | Purpose |
-|---|---|
-| `BLOB_READ_WRITE_TOKEN` | Vercel Blob store (accounts + progress) — auto-injected |
-| `AUTH_SECRET` | HMAC secret for session cookies |
-| `ANTHROPIC_API_KEY` | AI tutor |
-| `AI_MODEL` | optional model override (default `claude-opus-4-8`) |
-
-## Content architecture
-- Audited exam content: `lib/topics/<id>.ts` (guide + quiz + question bank).
-- Engagement extras (hooks, fun facts, at-home experiments, interactive widgets):
-  `lib/extras/<id>.ts` — kept **separate** so answer keys are never touched.
-- Mock exams: `lib/exams/<subject>.ts`. Types: `lib/types.ts`. Content scripts: `scripts/`.

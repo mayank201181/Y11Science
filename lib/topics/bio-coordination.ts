@@ -296,7 +296,7 @@ export const bioCoordination: Topic = {
           "Sensory neurone → receptor → relay neurone → motor neurone",
         ],
         answerIndex: 1,
-        explanation: "The reflex arc order is: receptor (detects stimulus) → sensory neurone (to CNS) → relay neurone (in spinal cord) → motor neurone (to effector) → effector (muscle produces response). Options A and D reverse the order; C incorrectly routes the arc through the brain.",
+        explanation: "The reflex arc order is: receptor (detects stimulus) → sensory neurone (to CNS) → relay neurone (in spinal cord) → motor neurone (to effector) → effector (muscle produces response). ‘Motor neurone → relay neurone → sensory neurone → effector’ and ‘Sensory neurone → receptor → relay neurone → motor neurone’ reverse the order; ‘Receptor → motor neurone → brain → sensory neurone → effector’ incorrectly routes the arc through the brain.",
         difficulty: "core",
         hints: [
           "Think about what detects the stimulus first.",
@@ -333,7 +333,7 @@ export const bioCoordination: Topic = {
           "Ciliary muscles relax; suspensory ligaments slacken; lens becomes fat",
         ],
         answerIndex: 1,
-        explanation: "For a near object, greater refraction is needed. Ciliary muscles contract, reducing the tension on the suspensory ligaments, which slacken. The elastic lens is then free to bulge into its natural fat (more convex) shape. Options A and C have incorrect ligament/lens relationships.",
+        explanation: "For a near object, greater refraction is needed. Ciliary muscles contract, reducing the tension on the suspensory ligaments, which slacken. The elastic lens is then free to bulge into its natural fat (more convex) shape. ‘Ciliary muscles relax; suspensory ligaments tighten; lens becomes flat’ and ‘Ciliary muscles contract; suspensory ligaments tighten; lens becomes flat’ have incorrect ligament/lens relationships.",
         difficulty: "core",
         hints: [
           "A fatter lens refracts light more strongly — needed for near objects.",

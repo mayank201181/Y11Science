@@ -557,7 +557,7 @@ export const chemAcidsBases: Topic = {
               "A base must contain a metal; an alkali must not.",
             ],
             answerIndex: 1,
-            explanation: "An alkali is simply a base that is soluble in water. Therefore every alkali is a base, but bases such as copper(II) oxide are insoluble and so are not alkalis. Aqueous ammonia is an alkali that contains no metal, disproving the last option.",
+            explanation: "An alkali is simply a base that is soluble in water. Therefore every alkali is a base, but bases such as copper(II) oxide are insoluble and so are not alkalis. Aqueous ammonia is an alkali that contains no metal, disproving ‘A base must contain a metal; an alkali must not’.",
             difficulty: "core",
             hints: [
               "An alkali is a special kind of base — the soluble kind.",
@@ -696,7 +696,7 @@ export const chemAcidsBases: Topic = {
               "Na₂CO₃ + 2HCl → 2NaCl + H₂ + CO₂",
             ],
             answerIndex: 1,
-            explanation: "Sodium carbonate is Na₂CO₃; it needs 2HCl to balance the two sodium atoms. The products are 2NaCl + H₂O + CO₂. Option A is unbalanced, C uses wrong formulae, and D wrongly produces H₂ instead of H₂O.",
+            explanation: "Sodium carbonate is Na₂CO₃; it needs 2HCl to balance the two sodium atoms. The products are 2NaCl + H₂O + CO₂. ‘Na₂CO₃ + HCl → NaCl + H₂O + CO₂’ is unbalanced, ‘NaCO₃ + 2HCl → NaCl₂ + H₂O + CO₂’ uses wrong formulae, and ‘Na₂CO₃ + 2HCl → 2NaCl + H₂ + CO₂’ wrongly produces H₂ instead of H₂O.",
             difficulty: "core",
             hints: [
               "Write the correct formula for sodium carbonate first.",
@@ -950,7 +950,7 @@ export const chemAcidsBases: Topic = {
               "Al₂O₃ + 6HCl → 2AlCl₂ + 3H₂O",
             ],
             answerIndex: 1,
-            explanation: "Al₂O₃ + 6HCl → 2AlCl₃ + 3H₂O is balanced: 2 Al, 3 O on the left; 6 H and 6 Cl on the left match 2AlCl₃ (6 Cl) and 3H₂O (6 H, 3 O). Option A has too few HCl; C and D use incorrect formulae (aluminium is Al³⁺, so AlCl₃).",
+            explanation: "Al₂O₃ + 6HCl → 2AlCl₃ + 3H₂O is balanced: 2 Al, 3 O on the left; 6 H and 6 Cl on the left match 2AlCl₃ (6 Cl) and 3H₂O (6 H, 3 O). ‘Al₂O₃ + 3HCl → 2AlCl₃ + 3H₂O’ has too few HCl; ‘AlO₃ + 6HCl → AlCl₆ + 3H₂O’ and ‘Al₂O₃ + 6HCl → 2AlCl₂ + 3H₂O’ use incorrect formulae (aluminium is Al³⁺, so AlCl₃).",
             difficulty: "challenge",
             hints: [
               "Aluminium forms Al³⁺, so the chloride is AlCl₃.",
@@ -992,7 +992,7 @@ export const chemAcidsBases: Topic = {
               "Phosphoric acid → nitrate",
             ],
             answerIndex: 2,
-            explanation: "Hydrochloric acid (HCl) forms chlorides. Nitric acid forms nitrates, sulfuric acid forms sulfates, and phosphoric acid (H₃PO₄) forms phosphates. Only option C matches correctly.",
+            explanation: "Hydrochloric acid (HCl) forms chlorides. Nitric acid forms nitrates, sulfuric acid forms sulfates, and phosphoric acid (H₃PO₄) forms phosphates.",
             difficulty: "warmup",
             guideRef: "Reactions of Acids",
           },

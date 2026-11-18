@@ -1200,7 +1200,7 @@ The DCPIP test for vitamin C can be made **semi-quantitative**: add fruit juice 
               "Carbohydrate: C,H,O | Protein: C,H,O | Lipid: C,H,O,N",
             ],
             answerIndex: 1,
-            explanation: "Carbohydrates and lipids both contain only C, H, and O. Proteins additionally contain nitrogen (and often sulfur). Only option B reflects this correctly.",
+            explanation: "Carbohydrates and lipids both contain only C, H, and O. Proteins additionally contain nitrogen (and often sulfur).",
             difficulty: "core",
             hints: [
               "Which class has the extra element nitrogen?",
@@ -1272,7 +1272,7 @@ The DCPIP test for vitamin C can be made **semi-quantitative**: add fruit juice 
               "Iodine: orange-brown; Benedict's: brick-red; Biuret: blue; ethanol: clear",
             ],
             answerIndex: 1,
-            explanation: "Pure oil contains only fat. So: iodine stays orange-brown (no starch), Benedict's stays blue (no reducing sugar), Biuret stays blue (no protein), and the ethanol emulsion test gives a cloudy white emulsion (fat present). Only option B matches.",
+            explanation: "Pure oil contains only fat. So: iodine stays orange-brown (no starch), Benedict's stays blue (no reducing sugar), Biuret stays blue (no protein), and the ethanol emulsion test gives a cloudy white emulsion (fat present).",
             difficulty: "challenge",
             hints: [
               "Pure oil is fat only — so three tests should be negative.",
@@ -1292,7 +1292,7 @@ The DCPIP test for vitamin C can be made **semi-quantitative**: add fruit juice 
               "Water is used to join glucose units into starch.",
             ],
             answerIndex: 1,
-            explanation: "During digestion, large polymers are broken into monomers by hydrolysis, which uses (adds) water. Water is released — not used — in condensation (e.g. building starch). So option B is correct; the others misstate water's role.",
+            explanation: "During digestion, large polymers are broken into monomers by hydrolysis, which uses (adds) water. Water is released — not used — in condensation (e.g. building starch). The other choices misstate water's role.",
             difficulty: "core",
             hints: [
               "Digestion breaks polymers down — does that use or release water?",
@@ -1306,7 +1306,7 @@ The DCPIP test for vitamin C can be made **semi-quantitative**: add fruit juice 
             question: "A DNA strand has the base sequence A–T–G–C–C–A. What is the sequence of the complementary strand (read against it)?",
             options: ["T–A–C–G–G–T", "A–T–G–C–C–A", "T–A–G–C–C–T", "U–A–C–G–G–U"],
             answerIndex: 0,
-            explanation: "Each base pairs with its partner: A-T and C-G. So A→T, T→A, G→C, C→G, C→G, A→T gives T–A–C–G–G–T. (Uracil/U occurs in RNA, not DNA, so option D is wrong.)",
+            explanation: "Each base pairs with its partner: A-T and C-G. So A→T, T→A, G→C, C→G, C→G, A→T gives T–A–C–G–G–T. (Uracil/U occurs in RNA, not DNA, so ‘U–A–C–G–G–U’ is wrong.)",
             difficulty: "challenge",
             hints: [
               "Pair each base: A with T, C with G (and vice versa).",

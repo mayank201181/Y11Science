@@ -3,10 +3,18 @@
 import { useState } from "react";
 import { useStore } from "@/lib/store";
 
-const AVATARS = ["🧑‍🔬", "👩‍🔬", "👨‍🔬", "🦊", "🐬", "🦉", "🐼", "🦄", "🚀", "🌟", "🧠", "🐙"];
+const AVATARS = ["👩‍🔬", "🧑‍🔬", "👨‍🔬", "🦊", "🐬", "🦉", "🐼", "🦄", "🚀", "🌟", "🧠", "🐙"];
 
 export function ProfilePicker() {
-  const { account, selectProfile, addProfile, editProfile, deleteProfile, logout } = useStore();
+  const {
+    account,
+    selectProfile,
+    addProfile,
+    editProfile,
+    deleteProfile,
+    logout,
+    closeProfileModal,
+  } = useStore();
   const [adding, setAdding] = useState(false);
   const [editId, setEditId] = useState<string | null>(null);
   const [name, setName] = useState("");
@@ -23,7 +31,6 @@ export function ProfilePicker() {
     try {
       if (editId) await editProfile(editId, name.trim(), avatar);
       else await addProfile(name.trim(), avatar);
-      // success: adding a learner jumps straight into the app; editing returns to the grid
       setAdding(false);
       setEditId(null);
       setName("");
@@ -36,11 +43,25 @@ export function ProfilePicker() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-4 py-10">
-      <div className="w-full max-w-2xl">
-        <div className="text-center mb-8">
-          <h1 className="text-3xl font-black">Who&apos;s studying?</h1>
-          <p className="text-ink-soft mt-1">{account?.familyName}</p>
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/55 backdrop-blur-sm px-4 py-8 overflow-y-auto"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Choose learner profile"
+    >
+      <div className="w-full max-w-2xl card p-6 relative">
+        <button
+          type="button"
+          onClick={closeProfileModal}
+          className="absolute top-3 right-3 chip"
+          aria-label="Close learner switcher"
+        >
+          ✕ Close
+        </button>
+
+        <div className="text-center mb-6">
+          <h2 className="text-2xl font-black">Who&apos;s studying?</h2>
+          <p className="text-ink-soft text-sm mt-1">{account?.familyName}</p>
         </div>
 
         {!adding && !editId && (
@@ -48,6 +69,7 @@ export function ProfilePicker() {
             {profiles.map((p) => (
               <div key={p.id} className="card p-4 flex flex-col items-center gap-2 group">
                 <button
+                  type="button"
                   onClick={() => selectProfile(p.id)}
                   className="flex flex-col items-center gap-2 w-full"
                 >
@@ -56,6 +78,7 @@ export function ProfilePicker() {
                 </button>
                 <div className="flex gap-2 opacity-70">
                   <button
+                    type="button"
                     className="text-xs underline text-ink-soft"
                     onClick={() => {
                       setError(null);
@@ -67,10 +90,11 @@ export function ProfilePicker() {
                     edit
                   </button>
                   <button
+                    type="button"
                     className="text-xs underline tone-rose"
                     onClick={() => {
-                      if (confirm(`Remove ${p.name}? Their progress will be deleted.`))
-                        deleteProfile(p.id);
+                      if (confirm(`Remove ${p.name}? Their cloud progress will be deleted.`))
+                        void deleteProfile(p.id);
                     }}
                   >
                     remove
@@ -80,6 +104,7 @@ export function ProfilePicker() {
             ))}
 
             <button
+              type="button"
               onClick={() => {
                 setError(null);
                 setAdding(true);
@@ -93,20 +118,21 @@ export function ProfilePicker() {
         )}
 
         {(adding || editId) && (
-          <div className="card p-6 max-w-md mx-auto">
-            <h2 className="text-xl font-bold mb-4">{editId ? "Edit learner" : "New learner"}</h2>
+          <div className="max-w-md mx-auto">
+            <h3 className="text-lg font-bold mb-3">{editId ? "Edit learner" : "New learner"}</h3>
             <label className="text-sm font-semibold text-ink-soft">Name</label>
             <input
               className="input mt-1 mb-4"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder="First name"
+              placeholder="e.g. Vanishree"
             />
             <label className="text-sm font-semibold text-ink-soft">Pick an avatar</label>
             <div className="grid grid-cols-6 gap-2 mt-2 mb-5">
               {AVATARS.map((a) => (
                 <button
                   key={a}
+                  type="button"
                   onClick={() => setAvatar(a)}
                   className={`text-3xl p-2 rounded-xl border ${
                     avatar === a ? "border-indigo-400 bg-indigo-500/15" : "border-line"
@@ -122,10 +148,11 @@ export function ProfilePicker() {
               </div>
             )}
             <div className="flex gap-2">
-              <button className="btn btn-primary flex-1" onClick={save} disabled={busy}>
+              <button type="button" className="btn btn-primary flex-1" onClick={save} disabled={busy}>
                 {busy ? "Saving…" : "Save"}
               </button>
               <button
+                type="button"
                 className="btn btn-ghost"
                 onClick={() => {
                   setAdding(false);
@@ -140,9 +167,12 @@ export function ProfilePicker() {
           </div>
         )}
 
-        <div className="text-center mt-8">
-          <button className="text-sm text-ink-soft underline" onClick={logout}>
-            Sign out of {account?.familyName}
+        <div className="flex flex-wrap items-center justify-between gap-3 mt-6 pt-4 border-t border-line text-xs">
+          <button type="button" className="text-ink-soft underline" onClick={closeProfileModal}>
+            ← Back to Science Lab
+          </button>
+          <button type="button" className="tone-rose underline" onClick={() => void logout()}>
+            Sign out of {account?.familyName} (use device storage)
           </button>
         </div>
       </div>

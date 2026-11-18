@@ -24,7 +24,7 @@ export default function ReviewPage() {
       );
   }, [due]);
 
-  const pid = activeProfile?.id || "anon";
+  const pid = activeProfile?.id || "guest";
 
   return (
     <div className="space-y-5">

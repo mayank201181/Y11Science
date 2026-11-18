@@ -412,7 +412,7 @@ Dissolving is a *physical change*: no new substance is made, and the solute can 
           "Fixed shape, no fixed volume, compressible",
         ],
         answerIndex: 1,
-        explanation: "A liquid takes the shape of its container (no fixed shape) but has a definite volume because particles are close together. It is not compressible because particles are already in contact. Option A is solid; option C is gas.",
+        explanation: "A liquid takes the shape of its container (no fixed shape) but has a definite volume because particles are close together. It is not compressible because particles are already in contact. ‘Fixed shape, fixed volume, not compressible’ is solid; ‘No fixed shape, no fixed volume, compressible’ is gas.",
         guideRef: "The Three States of Matter",
         difficulty: "warmup",
       },
@@ -465,7 +465,7 @@ Dissolving is a *physical change*: no new substance is made, and the solute can 
           "NH₃ is denser than HCl gas",
         ],
         answerIndex: 1,
-        explanation: "NH₃ has Mr = 17 and HCl has Mr = 36.5. Lighter molecules move faster at the same temperature (same average KE), so NH₃ diffuses faster and travels further along the tube before meeting HCl — the ring forms nearer the HCl end. Option C is incorrect: HCl is heavier, not lighter.",
+        explanation: "NH₃ has Mr = 17 and HCl has Mr = 36.5. Lighter molecules move faster at the same temperature (same average KE), so NH₃ diffuses faster and travels further along the tube before meeting HCl — the ring forms nearer the HCl end. ‘HCl molecules have a smaller relative molecular mass and diffuse faster’ is incorrect: HCl is heavier, not lighter.",
         guideRef: "Diffusion",
         difficulty: "core",
         hints: [

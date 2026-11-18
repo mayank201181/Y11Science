@@ -666,7 +666,7 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
               "Li + 2H₂O → Li(OH)₂ + H₂"
             ],
             answerIndex: 1,
-            explanation: "2Li + 2H₂O → 2LiOH + H₂ is balanced: 2 Li, 4 H and 2 O on each side. Option A is unbalanced for hydrogen; C gives the wrong product (the metal oxide, not hydroxide); D wrongly gives Li a 2+ charge.",
+            explanation: "2Li + 2H₂O → 2LiOH + H₂ is balanced: 2 Li, 4 H and 2 O on each side. ‘Li + H₂O → LiOH + H₂’ is unbalanced for hydrogen; ‘2Li + H₂O → Li₂O + H₂’ gives the wrong product (the metal oxide, not hydroxide); ‘Li + 2H₂O → Li(OH)₂ + H₂’ wrongly gives Li a 2+ charge.",
             guideRef: "Group I — The Alkali Metals",
             difficulty: "core",
             hints: [

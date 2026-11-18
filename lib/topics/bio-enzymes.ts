@@ -531,7 +531,7 @@ export const bioEnzymes: Topic = {
           "Enzyme activity falls to zero permanently because the enzyme has been killed.",
         ],
         answerIndex: 1,
-        explanation: "At 80 °C the enzyme is denatured — the active-site shape is permanently altered. Cooling to 37 °C cannot restore the original shape. Option A is wrong because denaturation is irreversible. Option D uses 'killed', which is incorrect terminology; enzymes are not living things.",
+        explanation: "At 80 °C the enzyme is denatured — the active-site shape is permanently altered. Cooling to 37 °C cannot restore the original shape. ‘Full enzyme activity restored, because the enzyme is now at its optimum temperature’ is wrong because denaturation is irreversible. ‘Enzyme activity falls to zero permanently because the enzyme has been killed’ uses 'killed', which is incorrect terminology; enzymes are not living things.",
         guideRef: "Effect of Temperature on Enzyme Activity",
         difficulty: "core",
         hints: [

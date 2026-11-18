@@ -5,6 +5,7 @@ import Link from "next/link";
 import type { ProgressDoc, Profile } from "@/lib/profileTypes";
 import { getTopic } from "@/lib/content";
 import { rankForStars } from "@/lib/gamify";
+import { useStore, DEFAULT_GUEST_PROFILE } from "@/lib/store";
 
 interface Learner {
   profile: Profile;
@@ -12,6 +13,7 @@ interface Learner {
 }
 
 export default function ParentPage() {
+  const { guest, activeProfile, progress, setGoal, resetGuestProgress, openAuthModal } = useStore();
   const [pin, setPin] = useState("");
   const [learners, setLearners] = useState<Learner[] | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -38,17 +40,77 @@ export default function ParentPage() {
 
   return (
     <div className="space-y-5">
-      <div className="flex items-center gap-2">
+      <div className="flex items-center justify-between gap-2 flex-wrap">
         <Link href="/" className="chip">
           ← Home
         </Link>
+        {guest && (
+          <button type="button" onClick={openAuthModal} className="chip tone-indigo">
+            ☁️ Optional Cloud Sync
+          </button>
+        )}
       </div>
+
       <header>
         <h1 className="text-3xl font-black">👪 Parent Dashboard</h1>
-        <p className="text-ink-soft mt-1">See how each learner is getting on. PIN protected.</p>
+        <p className="text-ink-soft mt-1">
+          {guest
+            ? "Viewing progress saved automatically on this device. (Optional cloud family sync is available anytime.)"
+            : "See how each cloud-synced learner is getting on. PIN protected."}
+        </p>
       </header>
 
-      {!learners ? (
+      {guest ? (
+        <div className="space-y-6">
+          <LearnerCard
+            learner={{
+              profile: activeProfile || DEFAULT_GUEST_PROFILE,
+              progress,
+            }}
+          />
+
+          <div className="card p-5 flex items-center justify-between gap-4 flex-wrap">
+            <div>
+              <div className="font-bold text-sm">Daily study goal</div>
+              <div className="text-xs text-ink-soft">
+                Currently {progress.goalMinutes} minutes per day
+              </div>
+            </div>
+            <div className="flex flex-wrap gap-1.5">
+              {[15, 20, 30, 45, 60].map((m) => (
+                <button
+                  key={m}
+                  type="button"
+                  onClick={() => setGoal(m)}
+                  className={`chip ${progress.goalMinutes === m ? "border-indigo-500 text-ink" : ""}`}
+                >
+                  {m} min
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="card p-5 flex items-center justify-between gap-4 flex-wrap">
+            <div>
+              <div className="font-bold text-sm">Reset local device progress</div>
+              <div className="text-xs text-ink-soft">
+                Clears stars, attempts, and spaced-repetition items on this browser only.
+              </div>
+            </div>
+            <button
+              type="button"
+              onClick={() => {
+                if (confirm("Reset all local progress on this device? This cannot be undone.")) {
+                  resetGuestProgress();
+                }
+              }}
+              className="btn btn-ghost text-xs tone-rose"
+            >
+              Reset device progress
+            </button>
+          </div>
+        </div>
+      ) : !learners ? (
         <form onSubmit={unlock} className="card p-6 max-w-sm">
           <label className="text-sm font-semibold text-ink-soft">Enter parent PIN</label>
           <input
@@ -77,6 +139,7 @@ export default function ParentPage() {
 
 function LearnerCard({ learner }: { learner: Learner }) {
   const { profile, progress } = learner;
+  const [anchorMs] = useState(() => Date.now());
   const { rank } = rankForStars(progress.stars);
   const totalAnswered = Object.values(progress.attempts).reduce((n, a) => n + a.total, 0);
   const totalCorrect = Object.values(progress.attempts).reduce((n, a) => n + a.correct, 0);
@@ -85,7 +148,7 @@ function LearnerCard({ learner }: { learner: Learner }) {
   // last 7 days
   const days: { date: string; minutes: number }[] = [];
   for (let i = 6; i >= 0; i--) {
-    const d = new Date(Date.now() - i * 86400000).toISOString().slice(0, 10);
+    const d = new Date(anchorMs - i * 86400000).toISOString().slice(0, 10);
     days.push({ date: d, minutes: Math.round(progress.analytics.perDay[d]?.minutes || 0) });
   }
   const maxMin = Math.max(10, ...days.map((d) => d.minutes));

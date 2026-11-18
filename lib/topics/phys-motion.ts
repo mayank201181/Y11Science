@@ -751,7 +751,7 @@ At t = 10 s: s_A = s_B = 200 m. Car A catches Car B after 10 s and 200 m.`,
             question: "A car accelerates uniformly from 6 m/s to 30 m/s in 8 s. What is its acceleration?",
             options: ["4.5 m/s²", "3.0 m/s²", "2.4 m/s²", "24 m/s²"],
             answerIndex: 1,
-            explanation: "a = (v − u) / t = (30 − 6) / 8 = 24 / 8 = 3.0 m/s². Option A (4.5) comes from 36/8 (adding instead of subtracting).",
+            explanation: "a = (v − u) / t = (30 − 6) / 8 = 24 / 8 = 3.0 m/s². ‘4.5 m/s²’ comes from 36/8 (adding instead of subtracting).",
             difficulty: "core",
             guideRef: "Acceleration",
             hints: [

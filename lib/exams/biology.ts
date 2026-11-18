@@ -108,7 +108,7 @@ export const biologyExam: ComprehensiveExam = {
           ],
           answerIndex: 1,
           explanation:
-            "Photosynthesis uses light energy to combine carbon dioxide and water into glucose, releasing oxygen. Option A is aerobic respiration; C and D are anaerobic respiration.",
+            "Photosynthesis uses light energy to combine carbon dioxide and water into glucose, releasing oxygen. ‘glucose + oxygen → carbon dioxide + water’ is aerobic respiration; ‘glucose → lactic acid’ and ‘glucose → ethanol + carbon dioxide’ are anaerobic respiration.",
           difficulty: "warmup",
         },
         {

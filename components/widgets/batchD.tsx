@@ -41,7 +41,7 @@ function EnergyProfile() {
   const [broken, setBroken] = useState(679);
   const [made, setMade] = useState(864);
 
-  const usePreset = (key: "hcl" | "methane" | "ammonia") => {
+  const applyPreset = (key: "hcl" | "methane" | "ammonia") => {
     setPreset(key);
     setBroken(ENERGY_PRESETS[key].broken);
     setMade(ENERGY_PRESETS[key].made);
@@ -73,9 +73,9 @@ function EnergyProfile() {
                   : "Custom"
           }
           set={(v) => {
-            if (v === "H₂+Cl₂") usePreset("hcl");
-            else if (v === "CH₄+O₂") usePreset("methane");
-            else if (v === "N₂+H₂") usePreset("ammonia");
+            if (v === "H₂+Cl₂") applyPreset("hcl");
+            else if (v === "CH₄+O₂") applyPreset("methane");
+            else if (v === "N₂+H₂") applyPreset("ammonia");
             else setPreset("custom");
           }}
         />

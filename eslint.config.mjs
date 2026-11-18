@@ -12,6 +12,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Standalone browser canvas/sitcom engines & offline render scripts:
+    "public/**",
+    "scripts/**",
   ]),
 ]);
 

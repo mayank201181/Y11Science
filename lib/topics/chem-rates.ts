@@ -437,7 +437,7 @@ The Contact process makes sulfuric acid. Its key reversible step is:
           "Particles collide only when heated above 100 °C."
         ],
         answerIndex: 1,
-        explanation: "Both conditions must be met: the collision energy must be ≥ Ea AND the particles must approach with the correct geometry. Option A ignores both conditions; C ignores orientation; D is a misconception.",
+        explanation: "Both conditions must be met: the collision energy must be ≥ Ea AND the particles must approach with the correct geometry. ‘Particles collide with any amount of energy regardless of orientation’ ignores both conditions; ‘Particles collide with energy greater than or equal to the activation energy, but orientation does not matter’ ignores orientation; ‘Particles collide only when heated above 100 °C’ is a misconception.",
         guideRef: "Collision Theory: Why Reactions Happen",
         difficulty: "warmup"
       },
@@ -742,7 +742,7 @@ The Contact process makes sulfuric acid. Its key reversible step is:
               "4.0 g/min"
             ],
             answerIndex: 2,
-            explanation: "A rise from 20 °C to 40 °C is two 10 °C steps, so the rate roughly doubles twice: 0.5 → 1.0 → 2.0 g/min (a factor of 2² = 4). 2.0 g/min is correct. Option D (4.0) would need a third doubling; A and B undercount the steps.",
+            explanation: "A rise from 20 °C to 40 °C is two 10 °C steps, so the rate roughly doubles twice: 0.5 → 1.0 → 2.0 g/min (a factor of 2² = 4). 2.0 g/min is correct. ‘4.0 g/min’ would need a third doubling; ‘1.0 g/min’ and ‘1.5 g/min’ undercount the steps.",
             guideRef: "Factors Affecting Rate of Reaction",
             difficulty: "core",
             hints: [
@@ -906,7 +906,7 @@ The Contact process makes sulfuric acid. Its key reversible step is:
               "960 cm³/s"
             ],
             answerIndex: 1,
-            explanation: "Mean rate = change in volume ÷ time = 48 cm³ ÷ 20 s = 2.4 cm³/s. Option A inverts the division; the others mis-scale the numbers.",
+            explanation: "Mean rate = change in volume ÷ time = 48 cm³ ÷ 20 s = 2.4 cm³/s. ‘0.42 cm³/s’ inverts the division; the others mis-scale the numbers.",
             guideRef: "Measuring Rate & Interpreting Rate Graphs",
             difficulty: "core",
             hints: [

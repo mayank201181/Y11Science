@@ -196,7 +196,7 @@ function EnzymeExplorer(): ReactElement {
         enzyme collide more often and the rate climbs (≈ doubling per 10 °C). Above the optimum the
         enzyme is <strong>denatured</strong> — its active site changes shape permanently — so the rate
         falls steeply to zero. Each enzyme also has an <strong>optimum pH</strong> (here{" "}
-        {PH_OPTIMUM[ph]}); extreme pH denatures it too. Enzymes are not "killed" — they are not alive.
+        {PH_OPTIMUM[ph]}); extreme pH denatures it too. Enzymes are not &ldquo;killed&rdquo; — they are not alive.
       </Caption>
     </Wrap>
   );
@@ -214,8 +214,6 @@ function ImmuneResponse(): ReactElement {
   const [exposure, setExposure] = useState<Exposure>("First exposure");
   const secondary = exposure === "Second exposure";
 
-  const W = 300;
-  const H = 180;
   const x0 = 30;
   const y0 = 150;
   const plotW = 256;
@@ -398,8 +396,6 @@ function Thermostat(): ReactElement {
     : ["No correction needed — at the set point"];
 
   // Thermometer SVG
-  const W = 300;
-  const H = 150;
   const tubeX = 40;
   const tubeTop = 20;
   const tubeBot = 120;

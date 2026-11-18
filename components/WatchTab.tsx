@@ -14,9 +14,9 @@ export const comedyDoneKey = (topicId: string) => `comedy:${topicId}:done`;
 export const watchChapterKey = (kind: "masterclass" | "sitcom" | "comedy", topicId: string, ch: string) =>
   `${kind}:${topicId}:${ch}`;
 
-type WatchMode = "masterclass" | "sitcom" | "comedy";
+export type WatchMode = "masterclass" | "sitcom" | "comedy";
 
-interface ComedyTopicSpec {
+export interface ComedyTopicSpec {
   show: string;
   title: string;
   minutes: number;
@@ -27,7 +27,7 @@ interface ComedyTopicSpec {
   rant: string;
 }
 
-const COMEDY_SPECS: Record<string, ComedyTopicSpec> = {
+export const COMEDY_SPECS: Record<string, ComedyTopicSpec> = {
   "bio-cells": { show: "Body Corporate", title: "Who Let The Virus Past Security?", minutes: 11, lead: ["Mito", "Mitochondrial Power Boss", "#f97316", "bean"], foil: ["Influenza", "Non-Living Freelancer", "#ec4899", "spiky"], dinner: "Meera checks bread mould while sneezing over her Biology notes", cold: "Security Alert: An influenza virus walked past Reception claiming to be a living cell while Mucor mould spat extracellular enzymes onto the carpet!", rant: "Antibiotics cannot touch viruses! Penicillin targets bacterial peptidoglycan walls — viruses are just RNA or DNA in a protein coat hijacking host cells!" },
   "bio-transport-cell": { show: "Body Corporate", title: "Paying ATP For Escalator Privileges", minutes: 11, lead: ["Membrane", "Partially Permeable VIP Bouncer", "#06b6d4", "round"], foil: ["Carrier", "ATP Escalator Operator", "#f59e0b", "enzyme"], dinner: "Mum salts sliced cucumbers for raita and water floods onto the plate", cold: "Diffusion and Osmosis rode downhill for free all morning while Active Transport demanded ATP from Mitochondria to push ions uphill!", rant: "Moving ions AGAINST a concentration gradient requires carrier proteins and ATP from aerobic respiration — no oxygen, escalator closed!" },
   "bio-molecules": { show: "Body Corporate", title: "Benedict's Brick-Red Audit", minutes: 11, lead: ["Benedict", "80°C Sugar Forensics Chief", "#ef4444", "drop"], foil: ["Biuret", "Lilac Protein Detective", "#a855f7", "round"], dinner: "Testing garlic naan, paneer, and mango lassi with the four food reagents", cold: "Someone forgot to heat Benedict's reagent in an 80 °C water bath and wondered why glucose stayed blue!", rant: "Never boil Biuret! Add Biuret at room temperature and peptide bonds turn pale blue straight to lilac!" },
@@ -515,9 +515,15 @@ interface LessonPostMessage {
   on?: boolean;
 }
 
-export function WatchTab({ topic }: { topic: Topic }) {
+export function WatchTab({
+  topic,
+  initialMode = "masterclass",
+}: {
+  topic: Topic;
+  initialMode?: WatchMode;
+}) {
   const { progress, awardActivity, theme } = useStore();
-  const [mode, setMode] = useState<WatchMode>("masterclass");
+  const [mode, setMode] = useState<WatchMode>(initialMode);
   const [frameHeight, setFrameHeight] = useState<number>(820);
   const [theater, setTheater] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
@@ -555,16 +561,18 @@ export function WatchTab({ topic }: { topic: Topic }) {
 
   useEffect(() => {
     let cancelled = false;
-    setHasMp4(false);
     fetch(`/comedy/${encodeURIComponent(topic.id)}.mp4`, { method: "HEAD" })
       .then((res) => {
         const ct = res.headers.get("content-type") || "";
-        if (!cancelled && res.ok && ct.includes("video")) {
-          setHasMp4(true);
-          setUseMp4Player(true);
+        const ok = res.ok && ct.includes("video");
+        if (!cancelled) {
+          setHasMp4(ok);
+          if (ok) setUseMp4Player(true);
         }
       })
-      .catch(() => {});
+      .catch(() => {
+        if (!cancelled) setHasMp4(false);
+      });
     return () => {
       cancelled = true;
     };

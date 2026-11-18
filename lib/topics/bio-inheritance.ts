@@ -581,7 +581,7 @@ The trade-off with all cloning is **low genetic variation**: a clone population 
           "A section of DNA that controls the rate of cell division"
         ],
         answerIndex: 1,
-        explanation: "A gene is defined as a specific length (sequence) of DNA that codes for the production of a particular protein. Option A describes chromosomal DNA in total, not a gene. Options C and D are incorrect by definition.",
+        explanation: "A gene is defined as a specific length (sequence) of DNA that codes for the production of a particular protein. ‘A molecule of DNA that makes up an entire chromosome’ describes chromosomal DNA in total, not a gene. ‘A pair of alleles that determines the phenotype of an organism’ and ‘A section of DNA that controls the rate of cell division’ are incorrect by definition.",
         guideRef: "DNA, Genes and Chromosomes",
         difficulty: "warmup",
       },
@@ -873,7 +873,7 @@ The trade-off with all cloning is **low genetic variation**: a clone population 
             question: "A scientist finds a section of DNA with the base sequence: A-T-G-C-C-A. What is the complementary base sequence on the other strand?",
             options: ["T-A-C-G-G-T", "U-A-C-G-G-U", "A-T-G-C-C-A", "T-A-C-G-T-A"],
             answerIndex: 0,
-            explanation: "Apply the base-pairing rules: A pairs with T, T pairs with A, G pairs with C, C pairs with G. So A-T-G-C-C-A becomes T-A-C-G-G-T. Uracil (U) only appears in RNA, not DNA — option B is an RNA sequence.",
+            explanation: "Apply the base-pairing rules: A pairs with T, T pairs with A, G pairs with C, C pairs with G. So A-T-G-C-C-A becomes T-A-C-G-G-T. Uracil (U) only appears in RNA, not DNA — ‘U-A-C-G-G-U’ is an RNA sequence.",
             guideRef: "DNA, Genes and Chromosomes",
             difficulty: "challenge",
             hints: [

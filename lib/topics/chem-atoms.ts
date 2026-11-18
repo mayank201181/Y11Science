@@ -586,7 +586,7 @@ where X = element symbol, A = mass number (top), Z = proton number (bottom).
           "24 × 0.79 + 25 × 0.10 + 26 × 0.11 × 100",
         ],
         answerIndex: 1,
-        explanation: "Ar = Σ(mass × % abundance) ÷ 100. Option A is a simple mean (ignores abundance). Option C divides by 3 instead of 100. Option D incorrectly multiplies by 100 at the end.",
+        explanation: "Ar = Σ(mass × % abundance) ÷ 100. ‘(24 + 25 + 26) ÷ 3’ is a simple mean (ignores abundance). ‘(24 × 79 + 25 × 10 + 26 × 11) ÷ 3’ divides by 3 instead of 100. ‘24 × 0.79 + 25 × 0.10 + 26 × 0.11 × 100’ incorrectly multiplies by 100 at the end.",
         guideRef: "Relative Atomic Mass from Isotopic Abundances",
         difficulty: "core",
         hints: [

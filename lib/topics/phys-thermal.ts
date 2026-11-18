@@ -607,7 +607,7 @@ All objects emit thermal radiation. The rate of emission depends on:
           "Widely separated, vibrating about fixed positions"
         ],
         answerIndex: 2,
-        explanation: "Gas particles are widely separated (much more so than in liquids or solids) and move rapidly and randomly in all directions. Option A describes a solid; Option B describes a liquid; Option D is incorrect because gas particles are not bound to fixed positions.",
+        explanation: "Gas particles are widely separated (much more so than in liquids or solids) and move rapidly and randomly in all directions. ‘Closely packed in a regular pattern, vibrating about fixed positions’ describes a solid; ‘Randomly arranged and close together, able to slide past each other’ describes a liquid; ‘Widely separated, vibrating about fixed positions’ is incorrect because gas particles are not bound to fixed positions.",
         guideRef: "The Kinetic Particle Model",
         difficulty: "warmup"
       },
@@ -667,7 +667,7 @@ All objects emit thermal radiation. The rate of emission depends on:
           "Neither surface emits radiation unless above 100 °C"
         ],
         answerIndex: 2,
-        explanation: "Dull black surfaces are the best emitters of thermal radiation. Shiny silver surfaces are poor emitters (they reflect rather than absorb or emit). All objects above absolute zero emit some radiation, so Option D is also wrong.",
+        explanation: "Dull black surfaces are the best emitters of thermal radiation. Shiny silver surfaces are poor emitters (they reflect rather than absorb or emit). All objects above absolute zero emit some radiation, so ‘Neither surface emits radiation unless above 100 °C’ is also wrong.",
         guideRef: "Thermal Radiation and Applications",
         difficulty: "warmup"
       },

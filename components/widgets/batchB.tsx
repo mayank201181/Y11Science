@@ -13,6 +13,22 @@ function order(g: string): string {
   return g.split("").sort((x, y) => (x === y ? 0 : x === "A" ? -1 : 1)).join("");
 }
 
+function AlleleBtn({ a, on }: { a: Allele; on: () => void }) {
+  return (
+    <button onClick={on} className="btn btn-ghost px-2.5 py-0.5 font-black text-base leading-none">
+      {a}
+    </button>
+  );
+}
+
+function HormoneLegend({ c, label }: { c: string; label: string }) {
+  return (
+    <span className="inline-flex items-center gap-1 text-xs text-ink-soft mr-2">
+      <span style={{ background: c }} className="inline-block w-3 h-1 rounded" /> {label}
+    </span>
+  );
+}
+
 function PunnettSquare() {
   // Each parent is two allele toggles.
   const [p1, setP1] = useState<[Allele, Allele]>(["A", "a"]);
@@ -53,12 +69,6 @@ function PunnettSquare() {
   const genoOrder = ["AA", "Aa", "aa"].filter((g) => gCount[g] > 0);
   const genoRatio = ratio(genoOrder.map((g) => gCount[g]));
   const phenoRatio = ratio([domN, recN]);
-
-  const AlleleBtn = ({ a, on }: { a: Allele; on: () => void }) => (
-    <button onClick={on} className="btn btn-ghost px-2.5 py-0.5 font-black text-base leading-none">
-      {a}
-    </button>
-  );
 
   const cellFill = (g: string) => (isDom(g) ? "#1e3a5f" : "#3a1e2e");
   const cellInk = (g: string) => (isDom(g) ? "#34d399" : "#fb7185");
@@ -166,7 +176,6 @@ function MenstrualCycle() {
 
   // Build SVG polyline points for a curve fn across days 1..28.
   const W = 300;
-  const H = 150;
   const x0 = 30;
   const y0 = 130;
   const plotW = W - x0 - 8;
@@ -181,12 +190,6 @@ function MenstrualCycle() {
 
   const markX = px(day);
   const lvl = (fn: (d: number) => number) => Math.round(fn(day) * 100);
-
-  const Legend = ({ c, label }: { c: string; label: string }) => (
-    <span className="inline-flex items-center gap-1 text-xs text-ink-soft mr-2">
-      <span style={{ background: c }} className="inline-block w-3 h-1 rounded" /> {label}
-    </span>
-  );
 
   return (
     <Wrap title="Menstrual Cycle Explorer (28-day cycle)">
@@ -215,10 +218,10 @@ function MenstrualCycle() {
       </div>
 
       <div className="mb-2">
-        <Legend c="#38bdf8" label="FSH" />
-        <Legend c="#fbbf24" label="LH" />
-        <Legend c="#fb7185" label="oestrogen" />
-        <Legend c="#a78bfa" label="progesterone" />
+        <HormoneLegend c="#38bdf8" label="FSH" />
+        <HormoneLegend c="#fbbf24" label="LH" />
+        <HormoneLegend c="#fb7185" label="oestrogen" />
+        <HormoneLegend c="#a78bfa" label="progesterone" />
       </div>
 
       <Slider label="Day of cycle" value={day} set={setDay} min={1} max={28} display={`Day ${day}`} />

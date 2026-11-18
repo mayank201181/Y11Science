@@ -555,7 +555,7 @@ White light is a mixture of all visible wavelengths (colours). When it enters a 
         question: "A wave has a frequency of 250 Hz and a wavelength of 1.4 m. What is its speed?",
         options: ["178.6 m/s", "250 m/s", "350 m/s", "1.4 m/s"],
         answerIndex: 2,
-        explanation: "v = fλ = 250 × 1.4 = 350 m/s. Option A results from dividing instead of multiplying. Option B is just the frequency.",
+        explanation: "v = fλ = 250 × 1.4 = 350 m/s. ‘178.6 m/s’ results from dividing instead of multiplying. ‘250 m/s’ is just the frequency.",
         guideRef: "Wave Quantities and the Wave Equation",
         difficulty: "warmup",
       },
@@ -1030,7 +1030,7 @@ White light is a mixture of all visible wavelengths (colours). When it enters a 
             question: "A ray of light in air strikes a transparent block and the measured angles are i = 45° and r = 28°. What is the refractive index of the block (to 2 d.p.)?",
             options: ["0.66", "1.51", "1.61", "2.30"],
             answerIndex: 1,
-            explanation: "n = sin i / sin r = sin 45° / sin 28° = 0.7071 / 0.4695 = 1.51. Option A is the inverted (incorrect) ratio sin r / sin i, which would wrongly give a value below 1 for a denser medium.",
+            explanation: "n = sin i / sin r = sin 45° / sin 28° = 0.7071 / 0.4695 = 1.51. ‘0.66’ is the inverted (incorrect) ratio sin r / sin i, which would wrongly give a value below 1 for a denser medium.",
             guideRef: "Refraction and Refractive Index",
             difficulty: "challenge",
             hints: [

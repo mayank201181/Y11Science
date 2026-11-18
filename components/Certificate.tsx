@@ -15,7 +15,7 @@ const SPEC_LABELS: Record<string, string> = {
 export function Certificate({ topic }: { topic: Topic }) {
   const { activeProfile, progress } = useStore();
   const meta = subjectMeta(topic.subject);
-  const learnerName = activeProfile?.name || "A Year 11 Triple Scientist";
+  const learnerName = activeProfile?.name || "Vanishree";
   const guideDone = progress.guidesRead.includes(topic.id);
   const mcDone = Boolean(progress.awarded[masterclassDoneKey(topic.id)]);
   const sitcomDone = Boolean(progress.awarded[sitcomDoneKey(topic.id)]);

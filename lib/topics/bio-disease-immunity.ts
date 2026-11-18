@@ -610,7 +610,7 @@ export const bioDiseaseImmunity: Topic = {
             difficulty: "challenge",
             hints: [
               "Recall the pathogen type for malaria first.",
-              "Cholera is bacterial, so the first option is wrong.",
+              "Cholera is bacterial, so ‘Virus — cholera’ is wrong.",
               "Influenza is viral, not fungal.",
             ],
             strategy: "Eliminate the three pairings you can confidently disprove.",

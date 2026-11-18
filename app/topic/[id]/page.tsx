@@ -1,14 +1,15 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { Suspense, useState } from "react";
 import Link from "next/link";
-import { useParams, notFound } from "next/navigation";
+import { useParams, useSearchParams, notFound } from "next/navigation";
 import { getTopic, subjectMeta, challengeQuestions } from "@/lib/content";
+import { getMemoryVault } from "@/lib/memoryPitfalls";
 import { useStore } from "@/lib/store";
 import { useHeartbeat } from "@/lib/useHeartbeat";
 import { GuideView } from "@/components/GuideView";
-import { WatchTab } from "@/components/WatchTab";
-import { MemoryPitfallsView } from "@/components/MemoryPitfallsView";
+import { WatchTab, type WatchMode } from "@/components/WatchTab";
+import { MemoryPitfallsView, renderPitfallRichText } from "@/components/MemoryPitfallsView";
 import { LearnSmartView } from "@/components/Flashcards";
 import { PaperRunner, type QItem } from "@/components/PaperRunner";
 import { ChallengeMode } from "@/components/ChallengeMode";
@@ -35,27 +36,55 @@ const VALID_TABS: Tab[] = [
   "challenge",
 ];
 
+const VALID_WATCH_MODES: WatchMode[] = ["masterclass", "sitcom", "comedy"];
+
 export default function TopicPage() {
+  return (
+    <Suspense fallback={<div className="card p-6 text-center text-ink-soft">Loading topic…</div>}>
+      <TopicPageRouter />
+    </Suspense>
+  );
+}
+
+function TopicPageRouter() {
   const { id } = useParams<{ id: string }>();
+  const sp = useSearchParams();
+  const reqTab = sp.get("tab") as Tab | null;
+  const reqMode = sp.get("mode") as WatchMode | null;
+  const initialTab: Tab = reqTab && VALID_TABS.includes(reqTab) ? reqTab : "guide";
+  const initialWatchMode: WatchMode =
+    reqMode && VALID_WATCH_MODES.includes(reqMode) ? reqMode : "masterclass";
+
+  return (
+    <TopicPageContent
+      key={`${id}:${initialTab}:${initialWatchMode}`}
+      id={id}
+      initialTab={initialTab}
+      initialWatchMode={initialWatchMode}
+    />
+  );
+}
+
+function TopicPageContent({
+  id,
+  initialTab,
+  initialWatchMode,
+}: {
+  id: string;
+  initialTab: Tab;
+  initialWatchMode: WatchMode;
+}) {
   const topic = getTopic(id);
   const { activeProfile } = useStore();
   useHeartbeat(id);
-  const [tab, setTab] = useState<Tab>("guide");
+  const [tab, setTab] = useState<Tab>(initialTab);
   const [openPaper, setOpenPaper] = useState<string | null>(null);
-
-  useEffect(() => {
-    try {
-      const sp = new URLSearchParams(window.location.search);
-      const requested = sp.get("tab") as Tab | null;
-      if (requested && VALID_TABS.includes(requested)) {
-        setTab(requested);
-      }
-    } catch {}
-  }, [id]);
 
   if (!topic) return notFound();
   const meta = subjectMeta(topic.subject);
-  const pid = activeProfile?.id || "anon";
+  const vault = getMemoryVault(topic.id);
+  const topTrap = vault?.pitfalls[0] || null;
+  const pid = activeProfile?.id || "guest";
 
   const quizItems: QItem[] = [
     ...topic.quiz.mcq.map((q) => ({ kind: "mcq" as const, q })),
@@ -89,6 +118,9 @@ export default function TopicPage() {
           <Link href={`/subject/${topic.subject}`} className="chip">
             {meta.icon} {meta.title}
           </Link>
+          <Link href="/topics" className="chip">
+            📚 All Topics
+          </Link>
         </div>
         <Link href={`/certificate/${topic.id}`} className="chip">
           🏅 Mastery Certificate
@@ -98,16 +130,52 @@ export default function TopicPage() {
       <header className="flex items-center gap-4">
         <span className="text-5xl">{topic.icon}</span>
         <div>
+          <div className="text-xs font-bold tone-indigo">{vault?.specRefs || meta.title}</div>
           <h1 className="text-2xl sm:text-3xl font-black">{topic.title}</h1>
           <p className="text-ink-soft text-sm">{topic.blurb}</p>
         </div>
       </header>
+
+      {/* Top Marks-Saver Callout so Vanishree immediately sees #1 Edexcel trap on every topic */}
+      {tab !== "memory" && topTrap && vault && (
+        <div className="card p-4 border-emerald-500/35 space-y-2.5">
+          <div className="flex items-center justify-between gap-2 flex-wrap">
+            <span className="chip tone-emerald">
+              🛡️ #1 Edexcel Marks-Saver Trap · {topTrap.spec}
+            </span>
+            <button
+              type="button"
+              onClick={() => setTab("memory")}
+              className="text-xs font-extrabold tone-indigo underline"
+            >
+              See all {vault.pitfalls.length} traps &amp; {vault.mnemonics.length} memory hooks →
+            </button>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-2.5 text-xs sm:text-sm">
+            <div className="rounded-xl border border-rose-500/30 bg-rose-500/10 p-2.5">
+              <span className="font-extrabold tone-rose block text-[0.7rem]">
+                ❌ Loses Marks (Never Write):
+              </span>
+              <span className="font-semibold">
+                &ldquo;{renderPitfallRichText(topTrap.wrong)}&rdquo;
+              </span>
+            </div>
+            <div className="rounded-xl border border-emerald-500/30 bg-emerald-500/10 p-2.5">
+              <span className="font-extrabold tone-emerald block text-[0.7rem]">
+                ✅ Full Marks (Write Instead):
+              </span>
+              <span className="font-semibold">{renderPitfallRichText(topTrap.right)}</span>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* tabs */}
       <div className="flex gap-1.5 overflow-x-auto pb-1 -mx-1 px-1">
         {tabs.map((t) => (
           <button
             key={t.id}
+            type="button"
             onClick={() => {
               setTab(t.id);
               setOpenPaper(null);
@@ -127,7 +195,13 @@ export default function TopicPage() {
           onOpenMemory={() => setTab("memory")}
         />
       )}
-      {tab === "watch" && <WatchTab topic={topic} />}
+      {tab === "watch" && (
+        <WatchTab
+          key={`${topic.id}-${initialWatchMode}`}
+          topic={topic}
+          initialMode={initialWatchMode}
+        />
+      )}
       {tab === "memory" && <MemoryPitfallsView topic={topic} />}
       {tab === "interactive" && <InteractiveView topicId={topic.id} />}
       {tab === "learn" && <LearnSmartView learn={topic.learn} />}
@@ -148,7 +222,7 @@ export default function TopicPage() {
       {tab === "bank" &&
         (current ? (
           <div className="space-y-3">
-            <button className="chip" onClick={() => setOpenPaper(null)}>
+            <button type="button" className="chip" onClick={() => setOpenPaper(null)}>
               ← All papers
             </button>
             <PaperRunner
@@ -168,6 +242,7 @@ export default function TopicPage() {
             {allPapers.map((p) => (
               <button
                 key={p.id}
+                type="button"
                 onClick={() => setOpenPaper(p.id)}
                 className="card p-4 text-left hover:-translate-y-0.5 transition"
               >

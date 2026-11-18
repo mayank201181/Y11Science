@@ -507,7 +507,7 @@ export const chemElectrochemistry: Topic = {
           "2H₂O → 2H₂ + O₂",
         ],
         answerIndex: 1,
-        explanation: "At the anode, oxidation occurs. Dilute H₂SO₄ contains no concentrated halide, so OH- ions from water are discharged: 4OH- → O₂ + 2H₂O + 4e-. Option A is the cathode (reduction) reaction. Option C is incorrect — SO₄2- is not discharged under these conditions. Option D is an overall equation, not a half-equation.",
+        explanation: "At the anode, oxidation occurs. Dilute H₂SO₄ contains no concentrated halide, so OH- ions from water are discharged: 4OH- → O₂ + 2H₂O + 4e-. ‘2H+ + 2e- → H₂’ is the cathode (reduction) reaction. ‘SO₄2- → S + 2O₂ + 2e-’ is incorrect — SO₄2- is not discharged under these conditions. ‘2H₂O → 2H₂ + O₂’ is an overall equation, not a half-equation.",
         guideRef: "Worked Examples — Aqueous Electrolysis",
         difficulty: "core",
         hints: [
@@ -730,7 +730,7 @@ export const chemElectrochemistry: Topic = {
               "2Br- + 2e- → Br₂",
             ],
             answerIndex: 1,
-            explanation: "At the anode, bromide ions lose electrons (oxidation, electrons on the right). Bromine is diatomic, so two Br- ions combine: 2Br- → Br₂ + 2e-. Option C is the reverse (reduction); option D has electrons on the wrong side; option A does not form the diatomic molecule.",
+            explanation: "At the anode, bromide ions lose electrons (oxidation, electrons on the right). Bromine is diatomic, so two Br- ions combine: 2Br- → Br₂ + 2e-. ‘Br₂ + 2e- → 2Br-’ is the reverse (reduction); ‘2Br- + 2e- → Br₂’ has electrons on the wrong side; ‘Br- + e- → Br’ does not form the diatomic molecule.",
             guideRef: "Electrolysis of Molten Compounds",
             difficulty: "core",
             hints: [
@@ -796,7 +796,7 @@ export const chemElectrochemistry: Topic = {
               "Br- is oxidised at the cathode because it gains electrons.",
             ],
             answerIndex: 1,
-            explanation: "Pb2+ + 2e- → Pb at the cathode: it gains electrons. Gain of electrons is reduction (RIG: Reduction Is Gain). Br- loses electrons at the anode (oxidation), so options C and D are wrong on both the electrode and the electron-direction. Option B correctly pairs 'cathode', 'gain electrons', and 'reduction'; only careful cross-checking of all three parts of each statement rejects the distractors.",
+            explanation: "Pb2+ + 2e- → Pb at the cathode: it gains electrons. Gain of electrons is reduction (RIG: Reduction Is Gain). Br- loses electrons at the anode (oxidation), so ‘Br- is reduced at the anode because it loses electrons’ and ‘Br- is oxidised at the cathode because it gains electrons’ are wrong on both the electrode and the electron-direction. The correct statement pairs 'cathode', 'gain electrons', and 'reduction'; only careful cross-checking of all three parts of each statement rejects the distractors.",
             guideRef: "Electrolysis of Molten Compounds",
             difficulty: "challenge",
             hints: [
@@ -1047,7 +1047,7 @@ export const chemElectrochemistry: Topic = {
               "4OH- + 4e- → O₂ + 2H₂O",
             ],
             answerIndex: 0,
-            explanation: "The standard IGCSE half-equation is 4OH- → O₂ + 2H₂O + 4e-. Check: O balances (4 left; 2 in O₂ + 2 in H₂O = 4 right); H balances (4 left; 4 in 2H₂O right); charge balances (4- left; 4- from electrons right). Option D has electrons on the wrong side.",
+            explanation: "The standard IGCSE half-equation is 4OH- → O₂ + 2H₂O + 4e-. Check: O balances (4 left; 2 in O₂ + 2 in H₂O = 4 right); H balances (4 left; 4 in 2H₂O right); charge balances (4- left; 4- from electrons right). ‘4OH- + 4e- → O₂ + 2H₂O’ has electrons on the wrong side.",
             guideRef: "Writing Ionic Half-Equations",
             difficulty: "core",
             hints: [
@@ -1066,7 +1066,7 @@ export const chemElectrochemistry: Topic = {
               "2H+ + 2e- → H₂",
             ],
             answerIndex: 1,
-            explanation: "A copper anode is an active electrode. Instead of discharging an ion from solution, the copper electrode itself dissolves (is oxidised): Cu → Cu2+ + 2e-. Option A is the cathode reaction; option C would apply only with an inert anode.",
+            explanation: "A copper anode is an active electrode. Instead of discharging an ion from solution, the copper electrode itself dissolves (is oxidised): Cu → Cu2+ + 2e-. ‘Cu2+ + 2e- → Cu’ is the cathode reaction; ‘4OH- → O₂ + 2H₂O + 4e-’ would apply only with an inert anode.",
             guideRef: "Worked Examples — Aqueous Electrolysis",
             difficulty: "core",
             hints: [
@@ -1177,7 +1177,7 @@ export const chemElectrochemistry: Topic = {
               "Oxidation of H+ at the cathode",
             ],
             answerIndex: 1,
-            explanation: "In Na₂SO₄(aq), sulfate is too stable to be discharged and sodium is too reactive, so the products come from water. At the anode OH- is oxidised: 4OH- → O₂ + 2H₂O + 4e-. At the cathode H+ is reduced: 2H+ + 2e- → H₂. Only option B is correct.",
+            explanation: "In Na₂SO₄(aq), sulfate is too stable to be discharged and sodium is too reactive, so the products come from water. At the anode OH- is oxidised: 4OH- → O₂ + 2H₂O + 4e-. At the cathode H+ is reduced: 2H+ + 2e- → H₂.",
             guideRef: "Worked Examples — Aqueous Electrolysis",
             difficulty: "core",
             hints: [
@@ -1264,7 +1264,7 @@ export const chemElectrochemistry: Topic = {
               "H₂ + Cl₂ → 2HCl",
             ],
             answerIndex: 0,
-            explanation: "A hydrogen–oxygen fuel cell combines hydrogen and oxygen to form water, releasing energy as electricity: 2H₂ + O₂ → 2H₂O. Water is the only product. Option C is the reverse (electrolysis of water).",
+            explanation: "A hydrogen–oxygen fuel cell combines hydrogen and oxygen to form water, releasing energy as electricity: 2H₂ + O₂ → 2H₂O. Water is the only product. ‘2H₂O → 2H₂ + O₂’ is the reverse (electrolysis of water).",
             guideRef: "Electroplating, Copper Purification, and the Hydrogen–Oxygen Fuel Cell",
             difficulty: "warmup",
           },

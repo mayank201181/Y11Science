@@ -250,7 +250,6 @@ function BondPredictor() {
 
   const bothNonMetal = !a.metal && !b.metal;
   const oneEach = a.metal !== b.metal;
-  const bothMetal = a.metal && b.metal;
 
   let bondType: string;
   let detail: ReactNode;

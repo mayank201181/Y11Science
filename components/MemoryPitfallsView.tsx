@@ -1,8 +1,31 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import type { Topic } from "@/lib/types";
 import { getMemoryVault } from "@/lib/memoryPitfalls";
+
+/** Safely render inline <strong> and <em> markup from memoryPitfalls strings as React nodes. */
+export function renderPitfallRichText(raw: string): React.ReactNode {
+  if (!raw || (!raw.includes("<strong") && !raw.includes("<em"))) return raw;
+  const tokens = raw.split(/(<strong>[\s\S]*?<\/strong>|<em>[\s\S]*?<\/em>)/g);
+  return tokens.map((tok, i) => {
+    if (tok.startsWith("<strong>") && tok.endsWith("</strong>")) {
+      return (
+        <strong key={i} className="font-extrabold text-ink">
+          {tok.slice(8, -9)}
+        </strong>
+      );
+    }
+    if (tok.startsWith("<em>") && tok.endsWith("</em>")) {
+      return (
+        <em key={i} className="italic">
+          {tok.slice(4, -5)}
+        </em>
+      );
+    }
+    return <React.Fragment key={i}>{tok}</React.Fragment>;
+  });
+}
 
 export function MemoryPitfallsView({ topic }: { topic: Topic }) {
   const vault = getMemoryVault(topic.id);
@@ -21,37 +44,25 @@ export function MemoryPitfallsView({ topic }: { topic: Topic }) {
       {/* Header Banner */}
       <section className="card p-5">
         <div className="flex items-center justify-between gap-2 flex-wrap">
-          <span className="chip">🧠 {vault.specCode} · {vault.specRefs}</span>
+          <span className="chip">
+            🧠 {vault.specCode} · {vault.specRefs}
+          </span>
           <span className="text-xs text-ink-soft font-bold">
-            {vault.mnemonics.length} Memory Hooks · {vault.pitfalls.length} Examiner Traps
+            {vault.mnemonics.length} Memory Hooks · {vault.pitfalls.length} Examiner Traps ·{" "}
+            {vault.rapidChecks.length} Rapid Checks
           </span>
         </div>
         <h2 className="text-xl font-black mt-2">
-          Memory Hooks &amp; Examiner Pitfalls — {topic.title}
+          Edexcel Marks-Saver &amp; Examiner Pitfalls — {topic.title}
         </h2>
         <p className="text-sm text-ink-soft mt-1">
-          Lock in the high-yield Edexcel phrasing before attempting timed papers. Examiners dock
-          marks on vague everyday words even when you understand the science.
+          Lock in the exact Pearson Edexcel ({vault.specCode}) mark-scheme phrasing before sitting
+          timed papers. Examiners dock marks on vague everyday words even when your intuition is
+          right.
         </p>
       </section>
 
-      {/* Section 1: High-Yield Mnemonics & Memory Hooks */}
-      <section className="space-y-3">
-        <h3 className="text-lg font-black">💡 High-Yield Memory Hooks &amp; Formula Rules</h3>
-        <div className="grid sm:grid-cols-2 gap-3">
-          {vault.mnemonics.map((m, idx) => (
-            <div key={idx} className="card p-4 space-y-1.5">
-              <div className="text-xs font-bold tone-indigo uppercase tracking-wide">
-                {m.label}
-              </div>
-              <div className="font-black text-base">{m.hook}</div>
-              {m.detail && <p className="text-xs text-ink-soft leading-relaxed">{m.detail}</p>}
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Section 2: Examiner Sterling's Never Write This -> Write This Instead */}
+      {/* Section 1: Examiner Sterling's Never Write This -> Write This Instead (Put front & center!) */}
       <section className="space-y-3">
         <h3 className="text-lg font-black">
           🛡️ Examiner Traps: &ldquo;Never Write This → Write This Instead&rdquo;
@@ -64,22 +75,45 @@ export function MemoryPitfallsView({ topic }: { topic: Topic }) {
                 <span className="text-xs font-bold tone-rose">{p.verdict}</span>
               </div>
               <div className="grid sm:grid-cols-2 gap-3">
-                <div className="rounded-xl border border-rose-500/30 bg-rose-500/10 p-3">
+                <div className="rounded-xl border border-rose-500/35 bg-rose-500/10 p-3">
                   <div className="text-xs font-extrabold tone-rose mb-1">
-                    ❌ Losses Marks (Candidate Script)
+                    ❌ Loses Marks — Never Write This
                   </div>
-                  <p className="text-sm font-semibold">&ldquo;{p.wrong}&rdquo;</p>
+                  <p className="text-sm font-semibold">
+                    &ldquo;{renderPitfallRichText(p.wrong)}&rdquo;
+                  </p>
                 </div>
-                <div className="rounded-xl border border-emerald-500/30 bg-emerald-500/10 p-3">
+                <div className="rounded-xl border border-emerald-500/35 bg-emerald-500/10 p-3">
                   <div className="text-xs font-extrabold tone-emerald mb-1">
-                    ✅ Full-Mark Edexcel Wording
+                    ✅ Earns Full Marks — Write This Instead
                   </div>
-                  <p className="text-sm font-semibold">{p.right}</p>
+                  <p className="text-sm font-semibold">{renderPitfallRichText(p.right)}</p>
                 </div>
               </div>
               {p.why && (
                 <p className="text-xs text-ink-soft">
-                  <strong className="text-ink">Why it matters:</strong> {p.why}
+                  <strong className="text-ink">Examiner note:</strong>{" "}
+                  {renderPitfallRichText(p.why)}
+                </p>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Section 2: High-Yield Mnemonics & Memory Hooks */}
+      <section className="space-y-3">
+        <h3 className="text-lg font-black">💡 High-Yield Memory Hooks &amp; Formula Rules</h3>
+        <div className="grid sm:grid-cols-2 gap-3">
+          {vault.mnemonics.map((m, idx) => (
+            <div key={idx} className="card p-4 space-y-1.5">
+              <div className="text-xs font-bold tone-indigo uppercase tracking-wide">
+                {m.label}
+              </div>
+              <div className="font-black text-base">{renderPitfallRichText(m.hook)}</div>
+              {m.detail && (
+                <p className="text-xs text-ink-soft leading-relaxed">
+                  {renderPitfallRichText(m.detail)}
                 </p>
               )}
             </div>
@@ -101,7 +135,9 @@ export function MemoryPitfallsView({ topic }: { topic: Topic }) {
                       <span className="chip">Rapid Check #{idx + 1}</span>
                       <span className="chip tone-amber">[{rc.marks}]</span>
                     </div>
-                    <div className="font-bold text-sm leading-snug">{rc.q}</div>
+                    <div className="font-bold text-sm leading-snug">
+                      {renderPitfallRichText(rc.q)}
+                    </div>
                   </div>
 
                   <div>
@@ -120,13 +156,13 @@ export function MemoryPitfallsView({ topic }: { topic: Topic }) {
                         <ul className="list-disc ml-4 space-y-1">
                           {rc.points.map((pt, j) => (
                             <li key={j} className="font-semibold">
-                              {pt}
+                              {renderPitfallRichText(pt)}
                             </li>
                           ))}
                         </ul>
                         {rc.hook && (
                           <div className="pt-1.5 border-t border-line tone-indigo font-bold">
-                            💡 {rc.hook}
+                            💡 {renderPitfallRichText(rc.hook)}
                           </div>
                         )}
                       </div>

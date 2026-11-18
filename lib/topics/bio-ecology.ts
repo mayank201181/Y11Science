@@ -681,7 +681,7 @@ To farm large numbers of fish efficiently as a protein source, farmers control s
         ],
         answerIndex: 1,
         explanation:
-          "An ecosystem includes both the living community (all species) AND the abiotic factors (light, temperature, minerals, water). Option A is a population; option C is a community; option D is a habitat.",
+          "An ecosystem includes both the living community (all species) AND the abiotic factors (light, temperature, minerals, water). ‘All individuals of one species in an area’ is a population; ‘All the different species living in one place’ is a community; ‘The physical location where an organism lives’ is a habitat.",
         guideRef: "Ecosystem Vocabulary",
         difficulty: "warmup",
       },

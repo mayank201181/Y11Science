@@ -551,7 +551,7 @@ Both ions are absorbed from soil solution by active transport — an energy-requ
         ],
         answerIndex: 1,
         explanation:
-          "6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂ is correctly balanced: 6C, 12H, and 18O on each side. Option A is unbalanced. Option C uses 12H₂O which would give 12H₂ worth of hydrogen (i.e. 24H), but glucose only has 12H — so that equation is unbalanced. Option D has 12O₂ on the right giving 24 extra oxygens, which is unbalanced.",
+          "6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂ is correctly balanced: 6C, 12H, and 18O on each side. ‘CO₂ + H₂O → C₆H₁₂O₆ + O₂’ is unbalanced. ‘6CO₂ + 12H₂O → C₆H₁₂O₆ + 6O₂’ uses 12H₂O which would give 12H₂ worth of hydrogen (i.e. 24H), but glucose only has 12H — so that equation is unbalanced. ‘6CO₂ + 6H₂O → C₆H₁₂O₆ + 12O₂’ has 12O₂ on the right giving 24 extra oxygens, which is unbalanced.",
         guideRef: "The Photosynthesis Equation",
         difficulty: "warmup",
       },
@@ -641,7 +641,7 @@ Both ions are absorbed from soil solution by active transport — an energy-requ
         ],
         answerIndex: 3,
         explanation:
-          "NaOH removes CO₂ from the air in the container. With no CO₂ (a reactant), photosynthesis cannot proceed, so no new starch is made. After destarching and running the experiment, the leaf remains orange-brown with iodine — proving CO₂ is required. Option A incorrectly concludes CO₂ is not needed. Option B incorrectly links the result to light (light is provided). Option C incorrectly states starch forms from stored glucose — that would make the leaf blue-black but the experiment shows it is orange-brown.",
+          "NaOH removes CO₂ from the air in the container. With no CO₂ (a reactant), photosynthesis cannot proceed, so no new starch is made. After destarching and running the experiment, the leaf remains orange-brown with iodine — proving CO₂ is required. ‘Blue-black — CO₂ is not needed for photosynthesis’ incorrectly concludes CO₂ is not needed. ‘Orange-brown — light is needed for photosynthesis’ incorrectly links the result to light (light is provided). ‘Blue-black — the plant used stored glucose to make starch’ incorrectly states starch forms from stored glucose — that would make the leaf blue-black but the experiment shows it is orange-brown.",
         guideRef: "Experiments: Testing for Starch and Controlled Investigations",
         difficulty: "core",
         hints: [
@@ -769,7 +769,7 @@ Both ions are absorbed from soil solution by active transport — an energy-requ
             ],
             answerIndex: 1,
             explanation:
-              "Photosynthesis builds glucose from carbon dioxide and water, releasing oxygen as a by-product: carbon dioxide + water → glucose + oxygen. Option A is the word equation for aerobic respiration (the reverse process).",
+              "Photosynthesis builds glucose from carbon dioxide and water, releasing oxygen as a by-product: carbon dioxide + water → glucose + oxygen. ‘glucose + oxygen → carbon dioxide + water’ is the word equation for aerobic respiration (the reverse process).",
             difficulty: "warmup",
             guideRef: "The Photosynthesis Equation",
           },

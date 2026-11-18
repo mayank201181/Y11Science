@@ -26,7 +26,17 @@ const DIFF_BADGE: Record<string, { label: string; cls: string }> = {
   challenge: { label: "Challenge", cls: "tone-amber border-amber-500/40" },
 };
 
-export function PaperRunner({
+export function PaperRunner(props: {
+  title: string;
+  items: QItem[];
+  topicId?: string;
+  storageKey: string;
+  guideHref?: string;
+}) {
+  return <PaperRunnerInner key={props.storageKey} {...props} />;
+}
+
+function PaperRunnerInner({
   title,
   items,
   topicId,
@@ -40,26 +50,43 @@ export function PaperRunner({
   guideHref?: string;
 }) {
   const { recordResult } = useStore();
-  const [idx, setIdx] = useState(0);
-  const [states, setStates] = useState<Record<string, QState>>({});
-  const [loaded, setLoaded] = useState(false);
+  const [idx, setIdx] = useState<number>(() => {
+    try {
+      if (typeof window === "undefined") return 0;
+      const rawIdx = localStorage.getItem(`${storageKey}.idx`);
+      if (rawIdx !== null) {
+        const parsedIdx = Number(rawIdx);
+        if (Number.isInteger(parsedIdx) && parsedIdx >= 0 && parsedIdx < items.length) {
+          return parsedIdx;
+        }
+      }
+    } catch {}
+    return 0;
+  });
+  const [states, setStates] = useState<Record<string, QState>>(() => {
+    try {
+      if (typeof window === "undefined") return {};
+      const raw = localStorage.getItem(storageKey);
+      if (raw) return JSON.parse(raw) as Record<string, QState>;
+    } catch {}
+    return {};
+  });
 
-  // resume
   useEffect(() => {
     try {
-      const raw = localStorage.getItem(storageKey);
-      if (raw) setStates(JSON.parse(raw));
+      localStorage.setItem(storageKey, JSON.stringify(states));
+      localStorage.setItem(`${storageKey}.idx`, String(idx));
     } catch {}
-    setLoaded(true);
-  }, [storageKey]);
+  }, [states, idx, storageKey]);
 
-  useEffect(() => {
-    if (loaded) {
-      try {
-        localStorage.setItem(storageKey, JSON.stringify(states));
-      } catch {}
-    }
-  }, [states, storageKey, loaded]);
+  function resetPaper() {
+    setStates({});
+    setIdx(0);
+    try {
+      localStorage.removeItem(storageKey);
+      localStorage.removeItem(`${storageKey}.idx`);
+    } catch {}
+  }
 
   const cur = items[idx];
   const st = states[cur.q.id] || { revealedHints: 0 };
@@ -121,8 +148,15 @@ export function PaperRunner({
     <div className="space-y-4">
       <div className="flex items-center justify-between gap-3 flex-wrap">
         <h2 className="text-xl font-black">{title}</h2>
-        <div className="text-sm text-ink-soft">
-          {done}/{items.length} done · {correct} ⭐ correct
+        <div className="flex items-center gap-2 text-sm text-ink-soft">
+          <span>
+            {done}/{items.length} done · {correct} ⭐ correct
+          </span>
+          {done > 0 && (
+            <button type="button" onClick={resetPaper} className="chip">
+              🔄 Reset paper
+            </button>
+          )}
         </div>
       </div>
 
@@ -305,7 +339,10 @@ function QaBody({
   setSt: (p: Partial<QState>) => void;
   onRecord: (correct: boolean, verdict: QState["selfVerdict"]) => void;
 }) {
-  const grade = st.revealed && st.answerText ? gradeAnswer(st.answerText, q.markScheme) : null;
+  const grade =
+    st.revealed && st.answerText
+      ? gradeAnswer(st.answerText, q.markScheme, q.question, q.modelAnswer)
+      : null;
 
   return (
     <div className="mt-4">

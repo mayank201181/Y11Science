@@ -633,7 +633,7 @@ Not all polymers are made by addition. In **condensation polymerisation**, monom
           "–(CH₃–CH₂)ₙ–",
         ],
         answerIndex: 1,
-        explanation: "In addition polymerisation the C=C double bond opens to form the backbone. Propene CH₂=CHCH₃ gives repeat unit –CH₂–CH(CH₃)– where the methyl group hangs off the chain. Option A is poly(ethene). Options C and D are incorrect structures.",
+        explanation: "In addition polymerisation the C=C double bond opens to form the backbone. Propene CH₂=CHCH₃ gives repeat unit –CH₂–CH(CH₃)– where the methyl group hangs off the chain. ‘–(CH₂–CH₂)ₙ–’ is poly(ethene). ‘–(CH=CHCH₃)ₙ–’ and ‘–(CH₃–CH₂)ₙ–’ are incorrect structures.",
         guideRef: "Addition Polymerisation and Plastics",
         difficulty: "core",
         hints: [
@@ -832,7 +832,7 @@ Not all polymers are made by addition. In **condensation polymerisation**, monom
               "2CH₄ + 3O₂ → 2CO + 4H₂O",
             ],
             answerIndex: 1,
-            explanation: "Complete combustion gives CO₂ and H₂O only, and the equation must balance. CH₄ + 2O₂ → CO₂ + 2H₂O: C 1=1, H 4=4, O 4=2+2=4. Option A is unbalanced; options C and D give CO (incomplete combustion).",
+            explanation: "Complete combustion gives CO₂ and H₂O only, and the equation must balance. CH₄ + 2O₂ → CO₂ + 2H₂O: C 1=1, H 4=4, O 4=2+2=4. ‘CH₄ + O₂ → CO₂ + H₂O’ is unbalanced; ‘CH₄ + 2O₂ → CO + 2H₂O’ and ‘2CH₄ + 3O₂ → 2CO + 4H₂O’ give CO (incomplete combustion).",
             guideRef: "Homologous Series and Alkanes",
             difficulty: "core",
             hints: [
@@ -1008,7 +1008,7 @@ Not all polymers are made by addition. In **condensation polymerisation**, monom
               "C₈H₁₈ → C₆H₁₄ + C₂H₆",
             ],
             answerIndex: 0,
-            explanation: "Check option A: C 8 = 6 + 2 ✓; H 18 = 14 + 4 ✓ (C₆H₁₄ alkane + C₂H₄ alkene). Option B has 12+4=16 H (wrong). Option C gives two alkanes with no alkene and 20 H (wrong). Option D gives 14+6=20 H (wrong).",
+            explanation: "Check ‘C₈H₁₈ → C₆H₁₄ + C₂H₄’: C 8 = 6 + 2 ✓; H 18 = 14 + 4 ✓ (C₆H₁₄ alkane + C₂H₄ alkene). ‘C₈H₁₈ → C₆H₁₂ + C₂H₄’ has 12+4=16 H (wrong). ‘C₈H₁₈ → C₄H₁₀ + C₄H₁₀’ gives two alkanes with no alkene and 20 H (wrong). ‘C₈H₁₈ → C₆H₁₄ + C₂H₆’ gives 14+6=20 H (wrong).",
             guideRef: "Alkenes, Cracking and Addition Reactions",
             difficulty: "challenge",
             hints: [
@@ -1112,7 +1112,7 @@ Not all polymers are made by addition. In **condensation polymerisation**, monom
               "C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O",
             ],
             answerIndex: 0,
-            explanation: "Fermentation: C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂, carried out by yeast under anaerobic conditions at ~35 °C. Option B is hydration of ethene, option C is combustion of ethanol, and option D is aerobic respiration of glucose.",
+            explanation: "Fermentation: C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂, carried out by yeast under anaerobic conditions at ~35 °C. ‘C₂H₄ + H₂O → C₂H₅OH’ is hydration of ethene, ‘C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O’ is combustion of ethanol, and ‘C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O’ is aerobic respiration of glucose.",
             guideRef: "Alcohols and Ethanol",
             difficulty: "core",
             hints: [
@@ -1150,7 +1150,7 @@ Not all polymers are made by addition. In **condensation polymerisation**, monom
               "2C₂H₅OH + 5O₂ → 4CO₂ + 6H₂O",
             ],
             answerIndex: 1,
-            explanation: "C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O. Check O: ethanol provides 1 O, plus 3O₂ = 6 O, total 7 O on the left; right side 2CO₂ (4 O) + 3H₂O (3 O) = 7 O ✓. Option A is short of oxygen; option C gives CO (incomplete); option D, though it scales, is not the simplest balanced form and is offered to test care — option B is the standard answer.",
+            explanation: "C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O. Check O: ethanol provides 1 O, plus 3O₂ = 6 O, total 7 O on the left; right side 2CO₂ (4 O) + 3H₂O (3 O) = 7 O ✓. ‘C₂H₅OH + 2O₂ → 2CO₂ + 3H₂O’ is short of oxygen; ‘C₂H₅OH + 3O₂ → 2CO + 3H₂O’ gives CO (incomplete); ‘2C₂H₅OH + 5O₂ → 4CO₂ + 6H₂O’, though it scales, is not the simplest balanced form and is offered to test care.",
             guideRef: "Alcohols and Ethanol",
             difficulty: "challenge",
             hints: [

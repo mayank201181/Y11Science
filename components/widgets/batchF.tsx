@@ -166,7 +166,7 @@ function WaveRefraction() {
           <Slider label="Angle of incidence i" value={iDeg} set={setIDeg} min={0} max={89} step={1} display={`${iDeg}°`} />
           <Slider label="Refractive index n" value={n} set={setN} min={1.1} max={2.4} step={0.05} display={n.toFixed(2)} />
           <Caption>
-            Snell's law: <strong>n = sin i / sin r</strong>. Going into a denser medium the ray bends{" "}
+            Snell&apos;s law: <strong>n = sin i / sin r</strong>. Going into a denser medium the ray bends{" "}
             <strong>toward the normal</strong> (r &lt; i). Note this widget bends air → medium; the{" "}
             <strong>critical angle</strong> (c = {critDeg.toFixed(1)}°, from sin c = 1/n) only matters for the
             reverse trip — a ray inside the medium hitting the boundary above c is totally internally reflected.
@@ -317,7 +317,7 @@ function HeatCalculator() {
           <Slider label="Volume V₁" value={v1} set={setV1} min={1} max={5} step={0.5} display={`${v1}`} />
           <Slider label="Volume V₂" value={v2} set={setV2} min={0.5} max={5} step={0.5} display={`${v2}`} />
           <Caption>
-            <strong>Boyle's law p₁V₁ = p₂V₂</strong> (constant temperature, fixed mass of gas): pressure and
+            <strong>Boyle&apos;s law p₁V₁ = p₂V₂</strong> (constant temperature, fixed mass of gas): pressure and
             volume are <strong>inversely proportional</strong>. Squeezing the gas from V₁ = {v1} to V₂ = {v2}{" "}
             raises the pressure to <strong>{p2.toFixed(0)} kPa</strong> — halve the volume and the pressure doubles.
           </Caption>

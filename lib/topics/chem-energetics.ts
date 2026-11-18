@@ -569,7 +569,7 @@ export const chemEnergetics: Topic = {
         ],
         answerIndex: 1,
         explanation:
-          "In an exothermic reaction, energy is transferred TO the surroundings, so the temperature of the surroundings rises and ΔH is negative. Option A describes an endothermic reaction; option D has the sign wrong.",
+          "In an exothermic reaction, energy is transferred TO the surroundings, so the temperature of the surroundings rises and ΔH is negative. ‘Energy is absorbed from the surroundings and the temperature falls’ describes an endothermic reaction; ‘The enthalpy change ΔH is positive’ has the sign wrong.",
         guideRef: "Exothermic and Endothermic Reactions",
         difficulty: "warmup",
       },

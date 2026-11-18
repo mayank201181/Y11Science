@@ -758,7 +758,7 @@ This is proved with three test tubes: a nail in tap water and air rusts; a nail 
           "C + O₂ → CO₂",
         ],
         answerIndex: 1,
-        explanation: "In a catalytic converter, CO and NO react on the platinum/rhodium surface: 2CO + 2NO → 2CO₂ + N₂. This converts two pollutants (CO and NOₓ) into harmless CO₂ and N₂. Option A is the source reaction forming NO in engines. Options C and D are unrelated.",
+        explanation: "In a catalytic converter, CO and NO react on the platinum/rhodium surface: 2CO + 2NO → 2CO₂ + N₂. This converts two pollutants (CO and NOₓ) into harmless CO₂ and N₂. ‘N₂ + O₂ → 2NO’ is the source reaction forming NO in engines. ‘SO₂ + H₂O → H₂SO₃’ and ‘C + O₂ → CO₂’ are unrelated.",
         guideRef: "Air Pollutants: Sources and Adverse Effects",
         difficulty: "core",
         hints: [
@@ -1125,7 +1125,7 @@ This is proved with three test tubes: a nail in tap water and air rusts; a nail 
               "CO + NO → CO₂ + N",
             ],
             answerIndex: 1,
-            explanation: "A catalytic converter converts two pollutants at once: 2CO + 2NO → 2CO₂ + N₂. This is balanced (2 C, 2 N, 4 O on each side). Option D is not balanced (single N atom is impossible here), and option C is the engine reaction that produces NO.",
+            explanation: "A catalytic converter converts two pollutants at once: 2CO + 2NO → 2CO₂ + N₂. This is balanced (2 C, 2 N, 4 O on each side). ‘CO + NO → CO₂ + N’ is not balanced (single N atom is impossible here), and ‘N₂ + O₂ → 2NO’ is the engine reaction that produces NO.",
             guideRef: "Air Pollutants: Sources and Adverse Effects",
             difficulty: "core",
             hints: [

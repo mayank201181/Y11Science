@@ -29,7 +29,7 @@ export const physicsExam: ComprehensiveExam = {
           options: ["0.04 m/s", "25 m/s", "900 m/s", "144 m/s"],
           answerIndex: 1,
           explanation:
-            "Speed = distance ÷ time = 150 ÷ 6.0 = 25 m/s. Option C multiplies; option A inverts the division.",
+            "Speed = distance ÷ time = 150 ÷ 6.0 = 25 m/s. ‘900 m/s’ multiplies; ‘0.04 m/s’ inverts the division.",
           difficulty: "warmup",
         },
         {
@@ -39,7 +39,7 @@ export const physicsExam: ComprehensiveExam = {
           options: ["3.3 m/s", "10 m/s", "30 m/s", "90 m/s"],
           answerIndex: 2,
           explanation:
-            "v = u + at = 0 + 10 × 3.0 = 30 m/s. Option D is the distance fallen (½gt² = 45 m is actually distance; 90 comes from gt²).",
+            "v = u + at = 0 + 10 × 3.0 = 30 m/s. ‘90 m/s’ is the distance fallen (½gt² = 45 m is actually distance; 90 comes from gt²).",
           difficulty: "core",
           hints: [
             "Starts from rest, so u = 0.",
@@ -54,7 +54,7 @@ export const physicsExam: ComprehensiveExam = {
           options: ["4.0 m/s²", "0.25 m/s²", "100 m/s²", "15 m/s²"],
           answerIndex: 0,
           explanation:
-            "a = F/m = 20/5.0 = 4.0 m/s². Option B inverts; option C multiplies.",
+            "a = F/m = 20/5.0 = 4.0 m/s². ‘0.25 m/s²’ inverts; ‘100 m/s²’ multiplies.",
           difficulty: "warmup",
         },
         {
@@ -89,7 +89,7 @@ export const physicsExam: ComprehensiveExam = {
           options: ["24 N m", "12.5 N m", "0.042 N m", "6.0 N m"],
           answerIndex: 3,
           explanation:
-            "Moment = force × perpendicular distance = 12 × 0.50 = 6.0 N m. Option A divides by 0.5 instead of multiplying.",
+            "Moment = force × perpendicular distance = 12 × 0.50 = 6.0 N m. ‘24 N m’ divides by 0.5 instead of multiplying.",
           difficulty: "warmup",
         },
         {
@@ -99,7 +99,7 @@ export const physicsExam: ComprehensiveExam = {
           options: ["400 N", "0.0025 N", "200 N", "100 N"],
           answerIndex: 3,
           explanation:
-            "p = F/A, so F = pA = 200 × 0.50 = 100 N. Option A divides instead of multiplying.",
+            "p = F/A, so F = pA = 200 × 0.50 = 100 N. ‘400 N’ divides instead of multiplying.",
           difficulty: "core",
           hints: [
             "Pressure = force ÷ area.",
@@ -114,7 +114,7 @@ export const physicsExam: ComprehensiveExam = {
           options: ["2.0 × 10⁴ Pa", "2000 Pa", "5.0 Pa", "2.0 × 10⁵ Pa"],
           answerIndex: 0,
           explanation:
-            "p = ρgh = 1000 × 10 × 2.0 = 20 000 Pa = 2.0 × 10⁴ Pa. Option B omits g; option D adds atmospheric incorrectly.",
+            "p = ρgh = 1000 × 10 × 2.0 = 20 000 Pa = 2.0 × 10⁴ Pa. ‘2000 Pa’ omits g; ‘2.0 × 10⁵ Pa’ adds atmospheric incorrectly.",
           difficulty: "core",
           hints: [
             "Use p = ρgh.",
@@ -164,7 +164,7 @@ export const physicsExam: ComprehensiveExam = {
           ],
           answerIndex: 2,
           explanation:
-            "In a gas, particles are far apart with negligible forces between them, moving rapidly and randomly. Option A describes a solid; option B a liquid.",
+            "In a gas, particles are far apart with negligible forces between them, moving rapidly and randomly. ‘Closely packed in a regular lattice, vibrating about fixed positions’ describes a solid; ‘Closely packed but irregular, able to slide past each other’ a liquid.",
           difficulty: "warmup",
         },
         {
@@ -219,7 +219,7 @@ export const physicsExam: ComprehensiveExam = {
           options: ["300 m/s", "56 m/s", "8.3 m/s", "0.12 m/s"],
           answerIndex: 0,
           explanation:
-            "v = fλ = 50 × 6.0 = 300 m/s. Option B adds; option C divides.",
+            "v = fλ = 50 × 6.0 = 300 m/s. ‘56 m/s’ adds; ‘8.3 m/s’ divides.",
           difficulty: "warmup",
         },
         {
@@ -254,7 +254,7 @@ export const physicsExam: ComprehensiveExam = {
           ],
           answerIndex: 0,
           explanation:
-            "Increasing frequency (decreasing wavelength): radio < microwave < infrared < visible < ultraviolet < X-rays < gamma. Option A follows this order.",
+            "Increasing frequency (decreasing wavelength): radio < microwave < infrared < visible < ultraviolet < X-rays < gamma. ‘Radio, infrared, visible, X-rays’ follows this order.",
           difficulty: "core",
           hints: [
             "Recall the EM spectrum order by wavelength.",
@@ -269,7 +269,7 @@ export const physicsExam: ComprehensiveExam = {
           options: ["24 Ω", "0.17 Ω", "14 Ω", "6.0 Ω"],
           answerIndex: 3,
           explanation:
-            "R = V/I = 12/2.0 = 6.0 Ω. Option A multiplies V × I.",
+            "R = V/I = 12/2.0 = 6.0 Ω. ‘24 Ω’ multiplies V × I.",
           difficulty: "warmup",
         },
         {
@@ -294,7 +294,7 @@ export const physicsExam: ComprehensiveExam = {
           options: ["115 W", "230 W", "0.0087 W", "460 W"],
           answerIndex: 3,
           explanation:
-            "P = VI = 230 × 2.0 = 460 W. Option A divides.",
+            "P = VI = 230 × 2.0 = 460 W. ‘115 W’ divides.",
           difficulty: "warmup",
         },
         {
@@ -377,7 +377,7 @@ export const physicsExam: ComprehensiveExam = {
           options: ["m/s", "m/s²", "m²/s", "N"],
           answerIndex: 1,
           explanation:
-            "Acceleration is the rate of change of velocity, so its unit is (m/s)/s = m/s². Option A is velocity; option D is force.",
+            "Acceleration is the rate of change of velocity, so its unit is (m/s)/s = m/s². ‘m/s’ is velocity; ‘N’ is force.",
           difficulty: "warmup",
         },
         {
@@ -552,7 +552,7 @@ export const physicsExam: ComprehensiveExam = {
           options: ["54 °C", "600 K", "327 K", "300 K"],
           answerIndex: 1,
           explanation:
-            "At constant pressure V ∝ T (in kelvin). 27 °C = 300 K. To double V, T must double to 600 K (= 327 °C). Option A wrongly doubles the Celsius value.",
+            "At constant pressure V ∝ T (in kelvin). 27 °C = 300 K. To double V, T must double to 600 K (= 327 °C). ‘54 °C’ wrongly doubles the Celsius value.",
           difficulty: "challenge",
           hints: [
             "Convert temperature to kelvin: K = °C + 273.",
@@ -845,7 +845,7 @@ export const physicsExam: ComprehensiveExam = {
           ],
           answerIndex: 1,
           explanation:
-            "Specific latent heat of fusion is the energy needed to change 1 kg from solid to liquid at constant temperature. Option A is specific heat capacity; option C is vaporisation.",
+            "Specific latent heat of fusion is the energy needed to change 1 kg from solid to liquid at constant temperature. ‘It is the energy to change the temperature of 1 kg by 1 °C’ is specific heat capacity; ‘It is the energy to boil 1 kg of a substance’ is vaporisation.",
           difficulty: "core",
           hints: [
             "Fusion means melting.",
@@ -970,7 +970,7 @@ export const physicsExam: ComprehensiveExam = {
           options: ["300 J", "1.08 × 10⁶ J", "12 J", "3.6 × 10⁵ J"],
           answerIndex: 1,
           explanation:
-            "E = Pt; t = 5.0 × 3600 = 18 000 s. E = 60 × 18 000 = 1 080 000 J = 1.08 × 10⁶ J. (Option D would be 100 W; check: 60×18000=1.08×10⁶.)",
+            "E = Pt; t = 5.0 × 3600 = 18 000 s. E = 60 × 18 000 = 1 080 000 J = 1.08 × 10⁶ J. (‘3.6 × 10⁵ J’ would be 100 W; check: 60×18000=1.08×10⁶.)",
           difficulty: "core",
           hints: [
             "Convert hours to seconds: × 3600.",

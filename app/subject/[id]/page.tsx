@@ -5,7 +5,8 @@ import { useParams, notFound } from "next/navigation";
 import { useStore } from "@/lib/store";
 import { subjectMeta, topicsBySubject, examsBySubject } from "@/lib/content";
 import type { SubjectId } from "@/lib/types";
-import { masterclassDoneKey, sitcomDoneKey } from "@/components/WatchTab";
+import { comedyDoneKey, masterclassDoneKey, sitcomDoneKey } from "@/components/WatchTab";
+import { getMemoryVault } from "@/lib/memoryPitfalls";
 
 const VALID: SubjectId[] = ["biology", "chemistry", "physics"];
 
@@ -21,12 +22,22 @@ export default function SubjectPage() {
   return (
     <div className={`space-y-6 accent-${subject}`}>
       <div className="flex items-center justify-between gap-3 flex-wrap">
-        <Link href="/" className="chip">
-          ← Home
-        </Link>
-        <Link href="/progress" className="chip">
-          📊 Topic Completion Matrix
-        </Link>
+        <div className="flex items-center gap-2 flex-wrap">
+          <Link href="/" className="chip">
+            ← Home
+          </Link>
+          <Link href="/topics" className="chip">
+            📚 All 37 Topics
+          </Link>
+        </div>
+        <div className="flex items-center gap-2 flex-wrap">
+          <Link href="/pitfalls" className="chip tone-emerald">
+            🛡️ Marks-Saver Vault
+          </Link>
+          <Link href="/progress" className="chip">
+            📊 Topic Completion Matrix
+          </Link>
+        </div>
       </div>
 
       <header className="flex items-center gap-4">
@@ -44,7 +55,9 @@ export default function SubjectPage() {
           const read = progress.guidesRead.includes(t.id);
           const mcDone = Boolean(progress.awarded[masterclassDoneKey(t.id)]);
           const sitDone = Boolean(progress.awarded[sitcomDoneKey(t.id)]);
+          const comDone = Boolean(progress.awarded[comedyDoneKey(t.id)]);
           const att = progress.analytics.perTopic[t.id];
+          const vault = getMemoryVault(t.id);
           return (
             <Link
               key={t.id}
@@ -61,6 +74,7 @@ export default function SubjectPage() {
                   {read && <span className="chip">✓ guide</span>}
                   {mcDone && <span className="chip">🎓 masterclass</span>}
                   {sitDone && <span className="chip">🍿 sitcom</span>}
+                  {comDone && <span className="chip">😂 comedy</span>}
                 </div>
                 <div className="font-bold leading-tight mt-1">{t.title}</div>
                 <p className="text-sm text-ink-soft mt-1 line-clamp-2">{t.blurb}</p>
@@ -68,7 +82,7 @@ export default function SubjectPage() {
                   <span>
                     {att && att.answered > 0
                       ? `${att.correct}/${att.answered} correct`
-                      : "Guide · Watch · Quiz · Bank"}
+                      : `Guide · Watch · ${vault ? `${vault.pitfalls.length} Pitfalls` : "Pitfalls"} · Bank`}
                   </span>
                   <span className="font-bold" style={{ color: "var(--accent)" }}>
                     Open →

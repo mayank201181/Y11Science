@@ -541,7 +541,7 @@ An **echo** is a reflected sound that is heard separately from the original soun
           "The wave is made up of oscillating electric and magnetic fields.",
         ],
         answerIndex: 1,
-        explanation: "In a longitudinal wave, particles oscillate back and forth along the same line as the wave travels. This is in contrast to transverse waves (options A and D describe transverse waves or EM waves). Sound cannot travel through a vacuum, so C is wrong.",
+        explanation: "In a longitudinal wave, particles oscillate back and forth along the same line as the wave travels. This is in contrast to transverse waves (transverse and EM wave statements describe transverse waves or EM waves). Sound cannot travel through a vacuum, so ‘The wave can travel through a vacuum’ is wrong.",
         guideRef: "Sound as a Longitudinal Wave",
         difficulty: "warmup",
       },
@@ -550,7 +550,7 @@ An **echo** is a reflected sound that is heard separately from the original soun
         question: "A student stands 85 m from a cliff and claps. She hears the echo after 0.50 s. What is the speed of sound?",
         options: ["85 m/s", "170 m/s", "340 m/s", "425 m/s"],
         answerIndex: 2,
-        explanation: "The sound travels to the cliff and back: total distance = 2 × 85 = 170 m. Speed = distance/time = 170/0.50 = 340 m/s. Option A forgets to double the distance; option B uses only one-way distance with the wrong time.",
+        explanation: "The sound travels to the cliff and back: total distance = 2 × 85 = 170 m. Speed = distance/time = 170/0.50 = 340 m/s. ‘85 m/s’ forgets to double the distance; ‘170 m/s’ uses only one-way distance with the wrong time.",
         guideRef: "Speed of Sound and Measuring It",
         difficulty: "core",
         hints: [
@@ -763,7 +763,7 @@ An **echo** is a reflected sound that is heard separately from the original soun
             question: "A sound wave in air has a frequency of 170 Hz. Taking the speed of sound in air as 340 m/s, what is its wavelength?",
             options: ["0.5 m", "2.0 m", "510 m", "57 800 m"],
             answerIndex: 1,
-            explanation: "Rearrange v = f × λ to λ = v / f = 340 / 170 = 2.0 m. Option D multiplies instead of dividing; option A inverts the division.",
+            explanation: "Rearrange v = f × λ to λ = v / f = 340 / 170 = 2.0 m. ‘57 800 m’ multiplies instead of dividing; ‘0.5 m’ inverts the division.",
             guideRef: "Speed of Sound and Measuring It",
             difficulty: "core",
             hints: [
@@ -778,7 +778,7 @@ An **echo** is a reflected sound that is heard separately from the original soun
             question: "A girl claps her hands 68 m from a tall cliff and hears the echo 0.40 s later. What value does this give for the speed of sound in air?",
             options: ["170 m/s", "270 m/s", "340 m/s", "680 m/s"],
             answerIndex: 2,
-            explanation: "The sound travels to the cliff and back: total distance = 2 × 68 = 136 m. Speed = distance / time = 136 / 0.40 = 340 m/s. Forgetting to double the distance gives 170 m/s (option A).",
+            explanation: "The sound travels to the cliff and back: total distance = 2 × 68 = 136 m. Speed = distance / time = 136 / 0.40 = 340 m/s. Forgetting to double the distance gives 170 m/s.",
             guideRef: "Reflection of Sound and Echoes",
             difficulty: "core",
             hints: [
@@ -798,7 +798,7 @@ An **echo** is a reflected sound that is heard separately from the original soun
               "Visible, infrared, microwaves, radio, UV, X-rays, gamma",
             ],
             answerIndex: 1,
-            explanation: "Increasing frequency (decreasing wavelength) runs: radio, microwaves, infrared, visible, ultraviolet, X-rays, gamma rays. Option A is the reverse order; the others scramble the sequence.",
+            explanation: "Increasing frequency (decreasing wavelength) runs: radio, microwaves, infrared, visible, ultraviolet, X-rays, gamma rays. ‘Gamma, X-rays, UV, visible, infrared, microwaves, radio’ is the reverse order; the others scramble the sequence.",
             guideRef: "The Electromagnetic Spectrum",
             difficulty: "warmup",
           },
@@ -842,7 +842,7 @@ An **echo** is a reflected sound that is heard separately from the original soun
             question: "An ultrasound transducer sends a pulse of frequency 2.0 MHz into body tissue where the speed of sound is 1540 m/s. What is the wavelength of this ultrasound in the tissue?",
             options: ["7.7 × 10^-4 m", "3.85 × 10^-3 m", "1.3 × 10^3 m", "3.08 × 10^9 m"],
             answerIndex: 0,
-            explanation: "λ = v / f = 1540 / (2.0 × 10^6) = 7.7 × 10^-4 m (0.77 mm). The very short wavelength is what gives ultrasound its fine imaging resolution. Option D multiplies v by f instead of dividing.",
+            explanation: "λ = v / f = 1540 / (2.0 × 10^6) = 7.7 × 10^-4 m (0.77 mm). The very short wavelength is what gives ultrasound its fine imaging resolution. ‘3.08 × 10^9 m’ multiplies v by f instead of dividing.",
             guideRef: "Ultrasound and Its Uses",
             difficulty: "challenge",
             hints: [
@@ -959,7 +959,7 @@ An **echo** is a reflected sound that is heard separately from the original soun
             question: "A bat emits ultrasound at 50 kHz. The speed of sound in air is 340 m/s. What is the wavelength of this ultrasound in air?",
             options: ["6.8 × 10^-3 m", "1.5 × 10^-2 m", "0.15 m", "1.7 × 10^7 m"],
             answerIndex: 0,
-            explanation: "λ = v / f = 340 / (50 000) = 6.8 × 10^-3 m (6.8 mm). Convert 50 kHz to 50 000 Hz before dividing. Option D multiplies instead of dividing.",
+            explanation: "λ = v / f = 340 / (50 000) = 6.8 × 10^-3 m (6.8 mm). Convert 50 kHz to 50 000 Hz before dividing. ‘1.7 × 10^7 m’ multiplies instead of dividing.",
             guideRef: "Ultrasound and Its Uses",
             difficulty: "core",
             hints: [
@@ -1228,7 +1228,7 @@ An **echo** is a reflected sound that is heard separately from the original soun
             question: "A loudspeaker produces a note of wavelength 0.85 m in air, where the speed of sound is 340 m/s. What is the frequency of the note?",
             options: ["289 Hz", "400 Hz", "0.0025 Hz", "289 000 Hz"],
             answerIndex: 1,
-            explanation: "f = v / λ = 340 / 0.85 = 400 Hz. Option C inverts the division; the answer must be a sensible audible frequency.",
+            explanation: "f = v / λ = 340 / 0.85 = 400 Hz. ‘0.0025 Hz’ inverts the division; the answer must be a sensible audible frequency.",
             guideRef: "Speed of Sound and Measuring It",
             difficulty: "core",
             hints: [
@@ -1263,7 +1263,7 @@ An **echo** is a reflected sound that is heard separately from the original soun
             question: "A microwave of frequency 1.2 × 10^10 Hz travels through a vacuum. Using c = 3 × 10^8 m/s, what is its wavelength?",
             options: ["2.5 × 10^-2 m", "4.0 × 10^1 m", "3.6 × 10^18 m", "2.5 × 10^2 m"],
             answerIndex: 0,
-            explanation: "λ = c / f = (3 × 10^8) / (1.2 × 10^10) = 2.5 × 10^-2 m (2.5 cm), a typical microwave wavelength. Option C multiplies c by f instead of dividing.",
+            explanation: "λ = c / f = (3 × 10^8) / (1.2 × 10^10) = 2.5 × 10^-2 m (2.5 cm), a typical microwave wavelength. ‘3.6 × 10^18 m’ multiplies c by f instead of dividing.",
             guideRef: "The Electromagnetic Spectrum",
             difficulty: "core",
             hints: [
@@ -1313,7 +1313,7 @@ An **echo** is a reflected sound that is heard separately from the original soun
             question: "An ultrasound scanner sends a pulse that reflects off a boundary 4.5 cm deep in tissue. The speed of ultrasound in the tissue is 1500 m/s. How long after emission is the echo received?",
             options: ["3.0 × 10^-5 s", "6.0 × 10^-5 s", "3.0 × 10^-2 s", "1.5 × 10^-5 s"],
             answerIndex: 1,
-            explanation: "Convert depth: 4.5 cm = 0.045 m. Total path (there and back) = 2 × 0.045 = 0.090 m. time = distance / speed = 0.090 / 1500 = 6.0 × 10^-5 s (60 microseconds). Forgetting the return trip gives 3.0 × 10^-5 s (option A).",
+            explanation: "Convert depth: 4.5 cm = 0.045 m. Total path (there and back) = 2 × 0.045 = 0.090 m. time = distance / speed = 0.090 / 1500 = 6.0 × 10^-5 s (60 microseconds). Forgetting the return trip gives 3.0 × 10^-5 s.",
             guideRef: "Ultrasound and Its Uses",
             difficulty: "challenge",
             hints: [

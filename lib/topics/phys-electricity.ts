@@ -609,7 +609,7 @@ A 2 kW electric kettle runs for 5 minutes. Electricity costs $0.28 per kWh.
           "A symmetrical curve about the voltage axis"
         ],
         answerIndex: 2,
-        explanation: "A diode conducts only in the forward direction. In reverse bias the current is effectively zero. In forward bias, current remains very small until the threshold voltage (~0.6–0.7 V) is crossed, then rises steeply. The graph is highly asymmetric — option C describes this correctly.",
+        explanation: "A diode conducts only in the forward direction. In reverse bias the current is effectively zero. In forward bias, current remains very small until the threshold voltage (~0.6–0.7 V) is crossed, then rises steeply. The graph is highly asymmetric.",
         difficulty: "core",
         hints: [
           "What is special about a diode — in which direction does current flow?",
@@ -788,9 +788,9 @@ A 2 kW electric kettle runs for 5 minutes. Electricity costs $0.28 per kWh.
           {
             id: "phys-electricity-bm1-07",
             question: "A potential difference of 9 V is applied across a 1500 Ohm resistor. What current flows?",
-            options: ["0.006 A", "0.06 A", "6 mA", "Both A and C are correct"],
-            answerIndex: 3,
-            explanation: "I = V/R = 9/1500 = 0.006 A = 6 mA. Options A and C express the same value (0.006 A = 6 x 10^-3 A = 6 mA).",
+            options: ["0.006 A (6 mA)", "0.06 A (60 mA)", "0.6 A (600 mA)", "167 A"],
+            answerIndex: 0,
+            explanation: "I = V/R = 9/1500 = 0.006 A (= 6 x 10^-3 A = 6 mA). Dividing the wrong way round (1500 / 9) gives 167 A, while 0.06 A and 0.6 A are decimal-place slips.",
             difficulty: "core",
             hints: [
               "I = V/R — divide voltage by resistance",

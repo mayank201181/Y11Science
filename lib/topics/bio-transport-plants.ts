@@ -541,7 +541,7 @@ Note that the same plant carries out both at once: water travels up the xylem in
           "0.5 mm³ min⁻¹",
         ],
         answerIndex: 1,
-        explanation: "Volume = π × r² × distance = π × 0.4² × 25 = π × 0.16 × 25 = 12.57 mm³ over 10 min. Rate = 12.57 / 10 ≈ 1.26 mm³ min⁻¹. Option A incorrectly uses r = 0.5 or omits π; options C and D use wrong calculations.",
+        explanation: "Volume = π × r² × distance = π × 0.4² × 25 = π × 0.16 × 25 = 12.57 mm³ over 10 min. Rate = 12.57 / 10 ≈ 1.26 mm³ min⁻¹. ‘1.0 mm³ min⁻¹’ incorrectly uses r = 0.5 or omits π; ‘10.0 mm³ min⁻¹’ and ‘0.5 mm³ min⁻¹’ use wrong calculations.",
         guideRef: "Investigating Transpiration with a Potometer",
         difficulty: "challenge",
         hints: [
@@ -561,7 +561,7 @@ Note that the same plant carries out both at once: water travels up the xylem in
           "Phloem — living cells — upward only",
         ],
         answerIndex: 2,
-        explanation: "Xylem = dead, hollow, lignified cells; transport is upward only (water and minerals). Phloem = living sieve tube elements; translocation is bidirectional (sucrose and amino acids). Options A and D have the cell state and/or direction wrong.",
+        explanation: "Xylem = dead, hollow, lignified cells; transport is upward only (water and minerals). Phloem = living sieve tube elements; translocation is bidirectional (sucrose and amino acids). ‘Xylem — living cells — upward only’ and ‘Phloem — living cells — upward only’ have the cell state and/or direction wrong.",
         guideRef: "Xylem and Phloem — Structure and Function",
         difficulty: "warmup",
       },

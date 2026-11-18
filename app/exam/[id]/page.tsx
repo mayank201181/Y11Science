@@ -17,7 +17,7 @@ export default function ExamPage() {
 
   if (!exam) return notFound();
   const meta = subjectMeta(exam.subject);
-  const pid = activeProfile?.id || "anon";
+  const pid = activeProfile?.id || "guest";
 
   const papers = [
     ...exam.mcqPapers.map((p) => ({ ...p, kind: "mcq" as const })),
