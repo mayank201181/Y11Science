@@ -50,10 +50,17 @@ export default function TopicPage() {
   );
 }
 
+const TAB_ALIASES: Record<string, Tab> = {
+  practice: "quiz",
+  practise: "quiz",
+  pitfalls: "memory",
+};
+
 function TopicPageRouter() {
   const { id } = useParams<{ id: string }>();
   const sp = useSearchParams();
-  const reqTab = sp.get("tab") as Tab | null;
+  const rawTab = sp.get("tab");
+  const reqTab = rawTab ? (TAB_ALIASES[rawTab] ?? (rawTab as Tab)) : null;
   const reqMode = sp.get("mode") as WatchMode | null;
   const initialTab: Tab = reqTab && VALID_TABS.includes(reqTab) ? reqTab : "guide";
   const initialWatchMode: WatchMode =
@@ -115,7 +122,7 @@ function TopicPageContent({
 
   return (
     <div className={`space-y-5 accent-${topic.subject}`}>
-      <div className="flex items-center justify-between gap-2 flex-wrap text-sm">
+      <div className="flex items-center justify-between gap-2 flex-wrap text-sm print:hidden">
         <div className="flex items-center gap-2 flex-wrap">
           <Link href="/" className="chip">
             Home
@@ -143,7 +150,7 @@ function TopicPageContent({
 
       {/* Top Marks-Saver Callout so Vanishree immediately sees #1 Edexcel trap on every topic */}
       {tab !== "memory" && tab !== "cram" && topTrap && vault && (
-        <div className="card p-4 border-emerald-500/35 space-y-2.5">
+        <div className="card p-4 border-emerald-500/35 space-y-2.5 print:hidden">
           <div className="flex items-center justify-between gap-2 flex-wrap">
             <span className="chip tone-emerald">
               🛡️ #1 Edexcel Marks-Saver Trap · {topTrap.spec}
@@ -185,7 +192,7 @@ function TopicPageContent({
       )}
 
       {/* tabs */}
-      <div className="flex gap-1.5 overflow-x-auto pb-1 -mx-1 px-1">
+      <div className="flex gap-1.5 overflow-x-auto pb-1 -mx-1 px-1 print:hidden">
         {tabs.map((t) => (
           <button
             key={t.id}

@@ -7,6 +7,7 @@ import { useStore } from "@/lib/store";
 
 const CHAPTER_STARS = 1;
 const COMPLETE_STARS = 5;
+const COMEDY_MP4_TOPICS = new Set<string>(["bio-coordination"]);
 
 export const masterclassDoneKey = (topicId: string) => `masterclass:${topicId}:done`;
 export const sitcomDoneKey = (topicId: string) => `sitcom:${topicId}:done`;
@@ -400,7 +401,7 @@ return rk[0];
 const AI={status:"idle",w:null,pend:new Map(),seq:1,ac:null,src:null,
 init(){
 if(this.status==="ready")return;this.status="loading";const b=document.getElementById("bAi");b.textContent="⏳ Loading AI...";
-const code='import {KokoroTTS} from ""+["ht","tps://"].join("")+"cdn.jsdelivr.net/npm/kokoro-js@1.2.1/+esm";let t=null;self.onmessage=async e=>{const m=e.data;if(m.t==="i"){try{t=await KokoroTTS.from_pretrained("onnx-community/Kokoro-82M-v1.0-ONNX",{dtype:"q8",device:"wasm"});self.postMessage({t:"r"});}catch{self.postMessage({t:"e"});}}else{try{const o=await t.generate(m.txt,{voice:m.v,speed:m.s});const p=new Float32Array(o.audio||o.data);self.postMessage({t:"p",id:m.id,p,sr:o.sampling_rate||24000},[p.buffer]);}catch{self.postMessage({t:"p",id:m.id});}}};';
+const code='import {KokoroTTS} from "https://cdn.jsdelivr.net/npm/kokoro-js@1.2.1/+esm";let t=null;self.onmessage=async e=>{const m=e.data;if(m.t==="i"){try{t=await KokoroTTS.from_pretrained("onnx-community/Kokoro-82M-v1.0-ONNX",{dtype:"q8",device:"wasm"});self.postMessage({t:"r"});}catch{self.postMessage({t:"e"});}}else{try{const o=await t.generate(m.txt,{voice:m.v,speed:m.s});const p=new Float32Array(o.audio||o.data);self.postMessage({t:"p",id:m.id,p,sr:o.sampling_rate||24000},[p.buffer]);}catch{self.postMessage({t:"p",id:m.id});}}};';
 const w=new Worker(URL.createObjectURL(new Blob([code],{type:"text/javascript"})),{type:"module"});
 w.onmessage=ev=>{const d=ev.data||{};if(d.t==="r"){this.status="ready";this.w=w;b.textContent="✨ AI Studio Active";}else if(d.t==="e"){this.status="err";b.textContent="🔊 Clean Voices";}else if(d.t==="p"&&this.pend.has(d.id)){this.pend.get(d.id)(d);this.pend.delete(d.id);}};
 w.postMessage({t:"i"});
@@ -527,8 +528,8 @@ export function WatchTab({
   const [frameHeight, setFrameHeight] = useState<number>(820);
   const [theater, setTheater] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
-  const [hasMp4, setHasMp4] = useState(false);
-  const [useMp4Player, setUseMp4Player] = useState(true);
+  const hasMp4 = COMEDY_MP4_TOPICS.has(topic.id);
+  const [useMp4Player, setUseMp4Player] = useState(hasMp4);
   const iframeRef = useRef<HTMLIFrameElement | null>(null);
   const vault = getMemoryVault(topic.id);
 
@@ -558,25 +559,6 @@ export function WatchTab({
     }
     return sum;
   }, 0);
-
-  useEffect(() => {
-    let cancelled = false;
-    fetch(`/comedy/${encodeURIComponent(topic.id)}.mp4`, { method: "HEAD" })
-      .then((res) => {
-        const ct = res.headers.get("content-type") || "";
-        const ok = res.ok && ct.includes("video");
-        if (!cancelled) {
-          setHasMp4(ok);
-          if (ok) setUseMp4Player(true);
-        }
-      })
-      .catch(() => {
-        if (!cancelled) setHasMp4(false);
-      });
-    return () => {
-      cancelled = true;
-    };
-  }, [topic.id]);
 
   useEffect(() => {
     const win = iframeRef.current?.contentWindow;

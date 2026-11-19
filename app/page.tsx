@@ -133,7 +133,7 @@ export default function Home() {
               full-mark syllabus wording.
             </p>
           </div>
-          <div className="flex flex-wrap items-center gap-2 shrink-0">
+          <div className="flex flex-wrap items-center gap-2">
             <Link href="/cram" className="btn btn-primary text-xs sm:text-sm py-2 px-3.5">
               🚨 Custom Exam Cram Sheet →
             </Link>

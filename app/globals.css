@@ -283,3 +283,49 @@ body {
 .animate-floaty {
   animation: floaty 3s ease-in-out infinite;
 }
+
+@media print {
+  :root,
+  html,
+  html[data-theme="dark"],
+  html[data-theme="light"] {
+    color-scheme: light !important;
+    --color-bg: #ffffff;
+    --color-bg-soft: #f8fafc;
+    --color-card: #ffffff;
+    --color-card-2: #ffffff;
+    --color-ink: #0f172a;
+    --color-ink-soft: #334155;
+    --color-line: #cbd5e1;
+    --tone-amber: #b45309;
+    --tone-sky: #0369a1;
+    --tone-rose: #be123c;
+    --tone-emerald: #047857;
+    --tone-indigo: #3730a3;
+    --card-shadow: none;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  main {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    max-width: none !important;
+  }
+
+  .card {
+    box-shadow: none !important;
+    background: #ffffff !important;
+    border-color: #cbd5e1 !important;
+  }
+
+  article.card > section {
+    break-inside: avoid;
+  }
+}

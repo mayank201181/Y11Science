@@ -1,10 +1,13 @@
 "use client";
 
+import { useSyncExternalStore } from "react";
 import Link from "next/link";
 import type { Topic } from "@/lib/types";
 import { subjectMeta } from "@/lib/content";
 import { useStore } from "@/lib/store";
 import { masterclassDoneKey, sitcomDoneKey } from "./WatchTab";
+
+const emptySubscribe = () => () => {};
 
 const SPEC_LABELS: Record<string, string> = {
   biology: "Pearson Edexcel IGCSE Biology (4BI1)",
@@ -26,11 +29,16 @@ export function Certificate({ topic }: { topic: Topic }) {
       ? Math.round((topicStats.correct / topicStats.answered) * 100)
       : null;
 
-  const date = new Date().toLocaleDateString(undefined, {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
+  const date = useSyncExternalStore(
+    emptySubscribe,
+    () =>
+      new Date().toLocaleDateString("en-GB", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      }),
+    () => "",
+  );
 
   return (
     <div className="mx-auto max-w-3xl py-4">

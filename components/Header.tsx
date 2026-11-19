@@ -379,7 +379,7 @@ export function BottomNav() {
       style={{ background: "var(--header-bg)" }}
       aria-label="Bottom navigation"
     >
-      <div className="mx-auto grid max-w-4xl grid-cols-8 px-1">
+      <div className="mx-auto grid max-w-4xl grid-cols-8 px-0.5 sm:px-1">
         {BOTTOM_NAV.map((n) => {
           const active = isBottomActive(path, n.href);
           return (
@@ -387,7 +387,7 @@ export function BottomNav() {
               key={n.href}
               href={n.href}
               aria-current={active ? "page" : undefined}
-              className={`relative flex flex-col items-center justify-center gap-0.5 py-2 text-[0.65rem] sm:text-xs font-extrabold transition-colors ${
+              className={`relative flex min-w-0 flex-col items-center justify-center gap-0.5 py-2 text-[10px] leading-tight sm:text-xs font-extrabold whitespace-nowrap transition-colors ${
                 active ? "tone-indigo" : "text-ink-soft hover:text-ink"
               }`}
             >

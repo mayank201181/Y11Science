@@ -436,11 +436,13 @@ export function CramSheet({
                       {pack.questionTraps.map((qt, i) => (
                         <div
                           key={i}
-                          className="rounded-xl border border-amber-500/35 bg-amber-500/10 p-3 text-xs space-y-1"
+                          className="rounded-xl border border-amber-500/35 bg-amber-500/10 p-3 text-xs space-y-1 break-inside-avoid"
                         >
-                          <div className="font-bold text-ink">When asked: {qt.question}</div>
+                          <div className="font-bold text-ink">
+                            When asked: {renderPitfallRichText(qt.question)}
+                          </div>
                           <div className="font-semibold tone-rose">
-                            ⚠️ Marks lost if: {qt.commonError}
+                            ⚠️ Marks lost if: {renderPitfallRichText(qt.commonError)}
                           </div>
                         </div>
                       ))}
@@ -540,7 +542,9 @@ export function CramSheet({
                         className="rounded-xl border border-line bg-bg-soft p-3 text-sm"
                       >
                         <div className="text-xs font-extrabold tone-indigo">{f.name}</div>
-                        <p className="mt-0.5 text-xs sm:text-sm font-medium">{f.value}</p>
+                        <p className="mt-0.5 text-xs sm:text-sm font-medium">
+                          {renderPitfallRichText(f.value)}
+                        </p>
                       </div>
                     ))}
                   </div>

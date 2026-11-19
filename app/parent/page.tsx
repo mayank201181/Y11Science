@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useSyncExternalStore } from "react";
 import Link from "next/link";
 import type { ProgressDoc, Profile } from "@/lib/profileTypes";
 import { getTopic } from "@/lib/content";
@@ -137,19 +137,33 @@ export default function ParentPage() {
   );
 }
 
+const WEEKDAY_LETTERS = ["S", "M", "T", "W", "T", "F", "S"] as const;
+const emptySubscribe = () => () => {};
+
 function LearnerCard({ learner }: { learner: Learner }) {
   const { profile, progress } = learner;
-  const [anchorMs] = useState(() => Date.now());
+  const mounted = useSyncExternalStore(emptySubscribe, () => true, () => false);
   const { rank } = rankForStars(progress.stars);
   const totalAnswered = Object.values(progress.attempts).reduce((n, a) => n + a.total, 0);
   const totalCorrect = Object.values(progress.attempts).reduce((n, a) => n + a.correct, 0);
   const accuracy = totalAnswered ? Math.round((totalCorrect / totalAnswered) * 100) : 0;
 
-  // last 7 days
-  const days: { date: string; minutes: number }[] = [];
-  for (let i = 6; i >= 0; i--) {
-    const d = new Date(anchorMs - i * 86400000).toISOString().slice(0, 10);
-    days.push({ date: d, minutes: Math.round(progress.analytics.perDay[d]?.minutes || 0) });
+  // last 7 days (computed after mount so SSR UTC and client timezone never diverge)
+  const days: { date: string; minutes: number; letter: string }[] = [];
+  if (mounted) {
+    const now = new Date();
+    for (let i = 6; i >= 0; i--) {
+      const dt = new Date(now.getFullYear(), now.getMonth(), now.getDate() - i);
+      const y = dt.getFullYear();
+      const m = String(dt.getMonth() + 1).padStart(2, "0");
+      const day = String(dt.getDate()).padStart(2, "0");
+      const d = `${y}-${m}-${day}`;
+      days.push({
+        date: d,
+        minutes: Math.round(progress.analytics.perDay[d]?.minutes || 0),
+        letter: WEEKDAY_LETTERS[dt.getDay()],
+      });
+    }
   }
   const maxMin = Math.max(10, ...days.map((d) => d.minutes));
 
@@ -187,9 +201,7 @@ function LearnerCard({ learner }: { learner: Learner }) {
                 style={{ height: `${(d.minutes / maxMin) * 100}%`, minHeight: d.minutes ? 4 : 0 }}
                 title={`${d.minutes} min`}
               />
-              <div className="text-[0.6rem] text-ink-soft">
-                {new Date(d.date).toLocaleDateString(undefined, { weekday: "short" })[0]}
-              </div>
+              <div className="text-[0.6rem] text-ink-soft">{d.letter}</div>
             </div>
           ))}
         </div>
@@ -226,7 +238,7 @@ function LearnerCard({ learner }: { learner: Learner }) {
           <ul className="text-xs text-ink-soft space-y-1">
             {progress.analytics.log.slice(0, 8).map((e, i) => (
               <li key={i}>
-                {new Date(e.at).toLocaleString()} — {e.detail}
+                {mounted ? new Date(e.at).toLocaleString("en-GB") : ""} — {e.detail}
               </li>
             ))}
           </ul>
