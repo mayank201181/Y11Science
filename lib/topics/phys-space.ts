@@ -804,10 +804,10 @@ The HR diagram plots **Luminosity** (increasing upwards; or **Absolute Magnitude
             id: "phys-space-bm1-08",
             question: "The Solar System is thought to have formed by accretion. This means:",
             options: [
-              "A single huge planet broke apart into smaller pieces",
+              "A single gigantic planet cooled and broke apart into the smaller planets and moons",
               "Material in a rotating cloud of gas and dust gradually clumped together under gravity",
-              "The Sun captured ready-made planets passing nearby",
-              "Stars exploded and the fragments cooled into planets",
+              "The Sun drifted through space and captured fully formed planets passing close by",
+              "Nearby stars exploded violently and their molten fragments cooled directly into planets",
             ],
             answerIndex: 1,
             explanation:
@@ -846,10 +846,10 @@ The HR diagram plots **Luminosity** (increasing upwards; or **Absolute Magnitude
             id: "phys-space-bm1-10",
             question: "In the Sun's core, fusion releases energy because:",
             options: [
-              "Hydrogen nuclei are split into smaller particles",
-              "The helium nucleus formed has slightly more mass than the hydrogen nuclei",
+              "Heavy hydrogen nuclei are split apart by neutrons into lighter nuclei, releasing thermal energy",
+              "The helium nucleus formed has slightly more mass than the hydrogen nuclei that fused together",
               "The helium nucleus formed has slightly less mass than the hydrogen nuclei that fused, and the lost mass becomes energy",
-              "Chemical bonds form between hydrogen atoms, releasing heat",
+              "Strong chemical bonds form between hydrogen atoms under high pressure, releasing heat energy",
             ],
             answerIndex: 2,
             explanation:
@@ -985,9 +985,9 @@ The HR diagram plots **Luminosity** (increasing upwards; or **Absolute Magnitude
             question: "A comet's speed is 50 km/s at perihelion and 1 km/s at aphelion. Which best explains this difference?",
             options: [
               "The Sun's gravity does work on the comet, converting GPE to KE as it falls inward",
-              "Friction with space slows the comet at aphelion",
-              "The comet's mass changes during the orbit",
-              "The Sun pushes the comet faster when it is close",
+              "Friction with interplanetary gas slows the comet down as it approaches aphelion",
+              "The comet gains extra mass from empty space at aphelion, which reduces its speed",
+              "Solar radiation pressure pushes the comet forward to a higher speed near the Sun",
             ],
             answerIndex: 0,
             explanation:
@@ -1152,10 +1152,10 @@ The HR diagram plots **Luminosity** (increasing upwards; or **Absolute Magnitude
             id: "phys-space-bm3-07",
             question: "Elements heavier than helium, such as carbon and iron, are mainly produced:",
             options: [
-              "In nebulae before stars form",
+              "Inside cold nebulae before any stars begin to form",
               "By fusion inside stars and scattered by supernovae",
-              "By the Sun's solar wind",
-              "Only during the Big Bang",
+              "By chemical reactions in the Sun's hot solar wind",
+              "Only during the first few minutes of the Big Bang",
             ],
             answerIndex: 1,
             explanation:
@@ -1183,10 +1183,10 @@ The HR diagram plots **Luminosity** (increasing upwards; or **Absolute Magnitude
             id: "phys-space-bm3-09",
             question: "Which stage is common to the life cycle of BOTH a Sun-like star and a massive star?",
             options: [
-              "Supernova",
-              "White dwarf",
+              "Supernova (explosive death of a core)",
+              "White dwarf (dense cooling remnant)",
               "Main-sequence (hydrogen-fusing) star",
-              "Black hole",
+              "Black hole (collapsed stellar core)",
             ],
             answerIndex: 2,
             explanation:
@@ -1374,10 +1374,10 @@ The HR diagram plots **Luminosity** (increasing upwards; or **Absolute Magnitude
             id: "phys-space-bm4-10",
             question: "Besides the redshift of galaxies, which additional observation supports the Big Bang theory?",
             options: [
-              "The Sun's daily motion across the sky",
+              "The Sun's apparent daily motion across the sky from east to west",
               "The cosmic microwave background radiation detected from all directions",
-              "The phases of the Moon",
-              "The existence of the asteroid belt",
+              "The regular monthly cycle of phases observed on the Earth's Moon",
+              "The circular belt of rocky asteroids orbiting between Mars and Jupiter",
             ],
             answerIndex: 1,
             explanation:

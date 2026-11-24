@@ -67,10 +67,10 @@ export const biologyExam: ComprehensiveExam = {
           question:
             "An enzyme is heated to 80 °C and then cooled to 37 °C. Its activity does not return. Why?",
           options: [
-            "The substrate has been used up.",
+            "All of the substrate molecules have been completely used up already.",
             "The active site shape has been permanently changed by denaturation.",
-            "The enzyme has been inhibited reversibly.",
-            "The pH has changed.",
+            "The enzyme has been blocked temporarily by a reversible inhibitor.",
+            "Cooling the solution back to 37 °C has permanently altered the pH.",
           ],
           answerIndex: 1,
           explanation:
@@ -145,10 +145,10 @@ export const biologyExam: ComprehensiveExam = {
           question:
             "Which feature of the small intestine villi increases the rate of absorption?",
           options: [
-            "Thick muscular walls",
+            "Thick muscular walls to crush and churn digested food",
             "A large surface area and thin walls one cell thick",
-            "Cilia that sweep food along",
-            "A waterproof cuticle",
+            "Beating cilia that sweep solid food rapidly onwards",
+            "A waterproof waxy cuticle lining the outer surface",
           ],
           answerIndex: 1,
           explanation:
@@ -289,7 +289,12 @@ export const biologyExam: ComprehensiveExam = {
           id: "exam-biology-mcq-p1-20",
           question:
             "Which part of the human female reproductive system is the usual site of fertilisation?",
-          options: ["Ovary", "Uterus", "Oviduct (fallopian tube)", "Cervix"],
+          options: [
+            "Ovary (egg-producing organ)",
+            "Uterus (muscular womb)",
+            "Oviduct (fallopian tube)",
+            "Cervix (neck of the uterus)",
+          ],
           answerIndex: 2,
           explanation:
             "Fertilisation usually occurs in the oviduct (fallopian tube), where the sperm meets the egg. The fertilised egg then implants in the uterus lining.",
@@ -337,7 +342,12 @@ export const biologyExam: ComprehensiveExam = {
           id: "exam-biology-mcq-p1-24",
           question:
             "Which gas, released by combustion and respiration, is the main contributor to the enhanced greenhouse effect?",
-          options: ["Oxygen", "Nitrogen", "Carbon dioxide", "Hydrogen"],
+          options: [
+            "Oxygen gas (O₂)",
+            "Nitrogen gas (N₂)",
+            "Carbon dioxide (CO₂)",
+            "Hydrogen gas (H₂)",
+          ],
           answerIndex: 2,
           explanation:
             "Carbon dioxide (from burning fossil fuels and respiration) and methane are the principal greenhouse gases. CO2 traps long-wave radiation, contributing to global warming.",
@@ -483,10 +493,10 @@ export const biologyExam: ComprehensiveExam = {
           question:
             "Which test confirms that a leaf has been carrying out photosynthesis by detecting starch?",
           options: [
-            "Benedict's test",
+            "Benedict's test heated in a boiling water bath",
             "Iodine test after removing chlorophyll with ethanol",
-            "Biuret test",
-            "Limewater test",
+            "Biuret test with potassium hydroxide and copper sulfate",
+            "Limewater test bubbling gas through calcium hydroxide",
           ],
           answerIndex: 1,
           explanation:
@@ -508,10 +518,10 @@ export const biologyExam: ComprehensiveExam = {
           question:
             "Peristalsis moves food along the gut. It is caused by:",
           options: [
-            "Gravity pulling food downward",
-            "Cilia beating in the gut lining",
+            "Gravity pulling chewed food steadily downward through the tube",
+            "Microscopic cilia beating rhythmically along the gut lining",
             "Waves of contraction of circular and longitudinal muscle",
-            "The pressure of swallowed air",
+            "High gas pressure from swallowed air pushing the bolus along",
           ],
           answerIndex: 2,
           explanation:
@@ -527,10 +537,10 @@ export const biologyExam: ComprehensiveExam = {
           question:
             "What provides the force that pulls water up the xylem of a tall tree?",
           options: [
-            "Active transport in the roots",
+            "Active transport of water molecules up through living root cells",
             "Transpiration pull (evaporation from leaves) and cohesion of water",
-            "Translocation in the phloem",
-            "Root pressure alone",
+            "Active translocation of sucrose down through the phloem tubes",
+            "Positive osmotic root pressure pushing water up from soil alone",
           ],
           answerIndex: 1,
           explanation:
@@ -547,10 +557,10 @@ export const biologyExam: ComprehensiveExam = {
           question:
             "Which adaptation of red blood cells increases their oxygen-carrying capacity?",
           options: [
-            "Presence of a large nucleus",
+            "Presence of a large lobed nucleus to store extra oxygen",
             "Absence of a nucleus, giving more room for haemoglobin",
-            "Thick cell wall",
-            "Ability to divide rapidly",
+            "Thick lignified cell wall to resist high arterial pressure",
+            "Ability to divide rapidly by mitosis inside blood vessels",
           ],
           answerIndex: 1,
           explanation:
@@ -566,10 +576,10 @@ export const biologyExam: ComprehensiveExam = {
           question:
             "Coronary heart disease is caused by:",
           options: [
-            "Blockage of the pulmonary vein",
+            "Blockage of the pulmonary vein returning oxygenated blood from the lungs",
             "Fatty deposits narrowing the coronary arteries supplying the heart muscle",
-            "A faulty bicuspid valve only",
-            "Excess red blood cells",
+            "A faulty bicuspid valve alone preventing blood entering the right atrium",
+            "Excess red blood cells making blood carry too much oxygen to the heart",
           ],
           answerIndex: 1,
           explanation:
@@ -634,10 +644,10 @@ export const biologyExam: ComprehensiveExam = {
           question:
             "At a synapse, the nerve impulse is transmitted across the gap by:",
           options: [
-            "An electric spark jumping the gap",
+            "An electrical spark jumping directly across the empty gap",
             "Diffusion of a neurotransmitter across the synaptic cleft",
-            "Movement of the whole neurone",
-            "Active transport of the impulse",
+            "Physical movement of the whole sensory neurone to touch",
+            "Active transport of electrical charge through blood plasma",
           ],
           answerIndex: 1,
           explanation:
@@ -763,10 +773,10 @@ export const biologyExam: ComprehensiveExam = {
           question:
             "Deforestation can lead to increased flooding and soil erosion mainly because:",
           options: [
-            "Trees no longer release oxygen",
+            "Felled trees no longer release oxygen gas to dry out damp ground surfaces",
             "Tree roots no longer bind the soil and less water is intercepted/absorbed",
-            "There are fewer animals to dig the soil",
-            "The soil becomes too warm",
+            "Fewer burrowing soil animals remain to dig drainage tunnels through clay",
+            "Exposed soil becomes too warm and causes rainwater to condense underground",
           ],
           answerIndex: 1,
           explanation:
@@ -829,10 +839,10 @@ export const biologyExam: ComprehensiveExam = {
           question:
             "Which statement best describes the action of an enzyme as a biological catalyst?",
           options: [
-            "It is used up during the reaction.",
-            "It raises the activation energy of a reaction.",
+            "It is permanently used up as a chemical reactant during every catalysed reaction.",
+            "It raises the activation energy needed so fewer substrate molecules can react.",
             "It speeds up a reaction and is unchanged at the end, lowering activation energy.",
-            "It works on any substrate of any shape.",
+            "It binds and catalyses any biological substrate regardless of its 3-D shape.",
           ],
           answerIndex: 2,
           explanation:
@@ -859,10 +869,10 @@ export const biologyExam: ComprehensiveExam = {
           question:
             "Greenhouse growers sometimes burn paraffin heaters in winter. Which TWO factors does this increase to raise photosynthesis?",
           options: [
-            "Oxygen and water",
+            "Oxygen concentration and mineral ion supply",
             "Temperature and carbon dioxide concentration",
-            "Light intensity and oxygen",
-            "Humidity and nitrogen",
+            "Light intensity and atmospheric oxygen level",
+            "Air humidity and atmospheric nitrogen gas",
           ],
           answerIndex: 1,
           explanation:
@@ -892,10 +902,10 @@ export const biologyExam: ComprehensiveExam = {
           question:
             "Why does the stomach produce hydrochloric acid?",
           options: [
-            "To digest fats directly",
+            "To chemically digest dietary fats directly into fatty acids and glycerol",
             "To provide the optimum pH for pepsin and to kill ingested bacteria",
-            "To neutralise bile",
-            "To emulsify proteins",
+            "To neutralise alkaline bile entering the stomach from the gall bladder",
+            "To physically emulsify large protein chains into tiny liquid droplets",
           ],
           answerIndex: 1,
           explanation:
@@ -1011,7 +1021,12 @@ export const biologyExam: ComprehensiveExam = {
           id: "exam-biology-mcq-p3-15",
           question:
             "The kidney controls the water content of the blood. The reabsorption of water in the kidney is controlled by:",
-          options: ["Insulin", "ADH (antidiuretic hormone)", "Adrenaline", "Glucagon"],
+          options: [
+            "Insulin (pancreatic hormone)",
+            "ADH (antidiuretic hormone)",
+            "Adrenaline (adrenal hormone)",
+            "Glucagon (pancreatic hormone)",
+          ],
           answerIndex: 1,
           explanation:
             "ADH increases the permeability of the collecting ducts, increasing water reabsorption when the blood is too concentrated. This is part of osmoregulation by negative feedback.",
@@ -1164,10 +1179,10 @@ export const biologyExam: ComprehensiveExam = {
           question:
             "Eutrophication of a lake caused by fertiliser run-off leads to fish dying mainly because:",
           options: [
-            "Fertiliser is directly toxic to fish",
+            "Dissolved nitrate fertiliser is directly toxic and poisons fish through their gills",
             "Algal blooms block light; when algae die, decomposers use up dissolved oxygen",
-            "Fertiliser raises the water temperature",
-            "Fish cannot eat the algae",
+            "Dissolved fertiliser reacts exothermically and raises lake water to lethal temperatures",
+            "Fish starve rapidly because they cannot digest the excess floating surface algae",
           ],
           answerIndex: 1,
           explanation:
@@ -1184,10 +1199,10 @@ export const biologyExam: ComprehensiveExam = {
           question:
             "In genetic engineering to produce human insulin, the human insulin gene is inserted into:",
           options: [
-            "A virus that infects humans",
+            "A live human virus, which is then injected into patients",
             "A bacterial plasmid, which is then put into bacteria",
-            "A plant chloroplast",
-            "A red blood cell",
+            "A plant chloroplast, which is then grown in leaf cells",
+            "A mature red blood cell, which then divides in blood",
           ],
           answerIndex: 1,
           explanation:
@@ -1211,10 +1226,10 @@ export const biologyExam: ComprehensiveExam = {
           question:
             "Which of the following is the correct function of the cell membrane?",
           options: [
-            "To provide a rigid shape",
+            "To provide a rigid cellulose wall that prevents the cell bursting",
             "To control what enters and leaves the cell (partially permeable)",
-            "To store genetic information",
-            "To release energy",
+            "To store the cell's genetic information as chromosomal DNA strands",
+            "To release ATP energy from glucose during aerobic cell respiration",
           ],
           answerIndex: 1,
           explanation:
@@ -1225,7 +1240,12 @@ export const biologyExam: ComprehensiveExam = {
           id: "exam-biology-mcq-p4-02",
           question:
             "Which kingdom do organisms with cells that have no nucleus belong to?",
-          options: ["Plants", "Animals", "Fungi", "Prokaryotes (bacteria)"],
+          options: [
+            "Plants (multicellular autotrophs)",
+            "Animals (multicellular heterotrophs)",
+            "Fungi (chitin-walled saprotrophs)",
+            "Prokaryotes (bacteria)",
+          ],
           answerIndex: 3,
           explanation:
             "Prokaryotes (bacteria) have no true nucleus; their genetic material is a circular loop of DNA in the cytoplasm. Plants, animals and fungi are eukaryotes with a nucleus.",
@@ -1273,7 +1293,12 @@ export const biologyExam: ComprehensiveExam = {
           id: "exam-biology-mcq-p4-05",
           question:
             "The lock-and-key model explains enzyme action. The 'lock' represents the:",
-          options: ["Substrate", "Product", "Active site of the enzyme", "Inhibitor"],
+          options: [
+            "Substrate molecule binding",
+            "Product molecule released",
+            "Active site of the enzyme",
+            "Inhibitor molecule blocking",
+          ],
           answerIndex: 2,
           explanation:
             "In the lock-and-key model the active site of the enzyme is the lock, and the substrate is the key that fits into it. Only a complementary substrate can bind.",
@@ -1284,10 +1309,10 @@ export const biologyExam: ComprehensiveExam = {
           question:
             "An experiment shows photosynthesis rate rises as light intensity increases, then levels off. The plateau is best explained by:",
           options: [
-            "Light becoming the limiting factor",
+            "Light intensity remaining the sole limiting factor for the leaf",
             "Another factor (CO2 or temperature) becoming the limiting factor",
-            "Chlorophyll being used up",
-            "The plant dying",
+            "All chlorophyll pigment in the chloroplasts being chemically used up",
+            "The plant cells dying immediately once bright light hits the leaf",
           ],
           answerIndex: 1,
           explanation:
@@ -1399,10 +1424,10 @@ export const biologyExam: ComprehensiveExam = {
           question:
             "Active immunity differs from passive immunity because active immunity:",
           options: [
-            "Is always provided by injecting antibodies",
+            "Is always provided immediately by injecting ready-made antibodies from a donor",
             "Involves the body making its own antibodies and memory cells, giving long-term protection",
-            "Is only short-lived",
-            "Does not involve antigens",
+            "Provides only temporary, short-lived protection because no memory cells are ever formed",
+            "Does not involve pathogen antigens or any specific response by white blood lymphocytes",
           ],
           answerIndex: 1,
           explanation:
@@ -1420,9 +1445,9 @@ export const biologyExam: ComprehensiveExam = {
             "Carbon monoxide in cigarette smoke is harmful because it:",
           options: [
             "Combines irreversibly with haemoglobin, reducing oxygen transport",
-            "Causes the alveoli to expand",
-            "Increases the number of red blood cells",
-            "Speeds up gas exchange",
+            "Causes healthy alveoli to stretch and permanently increase surface area",
+            "Immediately increases red blood cell count to boost blood oxygen supply",
+            "Speeds up oxygen diffusion across alveolar walls into the bloodstream",
           ],
           answerIndex: 0,
           explanation:
@@ -1453,9 +1478,9 @@ export const biologyExam: ComprehensiveExam = {
             "Homeostasis is best defined as:",
           options: [
             "The maintenance of a constant internal environment",
-            "Growth of an organism",
-            "Reproduction of cells",
-            "The response of plants to light",
+            "The permanent increase in dry mass and size of cells",
+            "The division of body cells to produce new offspring",
+            "The directional growth response of plant shoots to light",
           ],
           answerIndex: 0,
           explanation:
@@ -1541,9 +1566,9 @@ export const biologyExam: ComprehensiveExam = {
             "In selective breeding of dairy cattle for high milk yield, a farmer should:",
           options: [
             "Breed from the cows and bulls with the best milk-yield characteristics over many generations",
-            "Expose the cattle to mutagens",
-            "Insert a milk gene using a plasmid",
-            "Clone a single random cow",
+            "Expose the entire herd to ionising radiation and mutagens to create higher milk yield at once",
+            "Insert a bacterial plasmid carrying a human milk gene directly into adult cows' bloodstreams",
+            "Produce identical clones from a single randomly chosen calf without testing its milk output",
           ],
           answerIndex: 0,
           explanation:
@@ -1578,10 +1603,10 @@ export const biologyExam: ComprehensiveExam = {
           question:
             "The energy lost between trophic levels is mainly due to:",
           options: [
-            "Photosynthesis",
+            "Photosynthesis converting light energy into glucose in green leaves",
             "Respiration, movement and heat loss (and material not eaten/egested)",
-            "Active transport in roots",
-            "Mineral uptake",
+            "Active transport pumping water molecules up dead hollow xylem tubes",
+            "Passive uptake of dissolved nitrate and magnesium ions by root hairs",
           ],
           answerIndex: 1,
           explanation:
@@ -1597,10 +1622,10 @@ export const biologyExam: ComprehensiveExam = {
           question:
             "Which of the following is a sustainable resource management practice for a forest?",
           options: [
-            "Clear-felling the entire forest at once",
+            "Clear-felling the entire mature forest at once to maximise immediate timber profit",
             "Replanting trees and only harvesting at a rate that allows regrowth",
-            "Burning the forest to clear land",
-            "Removing all the topsoil",
+            "Burning all standing forest trees to clear the land permanently for cattle grazing",
+            "Removing all the fertile topsoil layer immediately after cutting down the woodland",
           ],
           answerIndex: 1,
           explanation:
@@ -1688,11 +1713,12 @@ export const biologyExam: ComprehensiveExam = {
           modelAnswer:
             "(a) Any two of: concentration/volume of hydrogen peroxide; concentration/mass of catalase (e.g. same source/amount); pH; volume of solution; same apparatus.\n\n(b) As temperature rises from 10 to 40 degrees C, the enzyme and substrate molecules gain kinetic energy and move faster, so there are more frequent successful collisions and more enzyme-substrate complexes form per second, increasing the rate. Above about 45 degrees C the high temperature breaks the bonds holding the enzyme's tertiary structure, so the active site changes shape (denaturation). The substrate can no longer fit, fewer complexes form, and the rate falls sharply.",
           markScheme: [
-            "(a) any two suitable controlled variables [2]",
-            "(b) increased kinetic energy / more collisions with more energy [1]",
-            "(b) more enzyme-substrate complexes form / rate rises to optimum [1]",
-            "(b) above ~45 degrees C the enzyme denatures / active site changes shape [1]",
-            "(b) substrate no longer fits / fewer complexes so rate falls [1]",
+            "(a) Controlled variable 1: concentration or volume of hydrogen peroxide / concentration or mass of catalase",
+            "(a) Controlled variable 2: pH / volume of solution / same apparatus / same source of catalase",
+            "(b) Increased kinetic energy / faster movement giving more frequent successful collisions",
+            "(b) More enzyme-substrate complexes form per second / rate rises to optimum",
+            "(b) Above 45 degrees C high temperature breaks bonds and denatures the enzyme / active site changes shape",
+            "(b) Substrate no longer fits the active site / fewer complexes form so rate falls sharply",
           ],
           commonError:
             "Writing that the enzyme is 'killed' (enzymes are not alive) and not mentioning the change in active-site shape.",
@@ -2005,9 +2031,12 @@ export const biologyExam: ComprehensiveExam = {
           modelAnswer:
             "1. Large surface area: the millions of alveoli provide a very large total surface area, so more gas can diffuse at once. 2. Thin walls (one cell thick): the alveolar wall and capillary wall are each one cell thick, giving a short diffusion distance for oxygen and carbon dioxide. 3. Rich blood (capillary) supply: blood constantly flows past carrying oxygen away and bringing carbon dioxide, maintaining a steep concentration gradient. 4. Moist lining: gases dissolve in the moisture before diffusing across. (Any three explained.)",
           markScheme: [
-            "large surface area [1] + so more diffusion / faster exchange [1]",
-            "thin walls / one cell thick [1] + short diffusion distance [1]",
-            "good blood supply [1] + maintains concentration gradient [1]",
+            "Adaptation 1: large surface area (millions of alveoli)",
+            "Explanation 1: more gas can diffuse at once / faster exchange",
+            "Adaptation 2: thin walls / alveolar and capillary walls one cell thick",
+            "Explanation 2: gives a very short diffusion distance for oxygen and carbon dioxide",
+            "Adaptation 3: rich blood (capillary) supply / moist lining",
+            "Explanation 3: maintains a steep concentration gradient / gases dissolve before diffusing",
           ],
           commonError:
             "Listing the adaptations without explaining how each one helps gas exchange (the explanation marks are lost).",
@@ -2542,8 +2571,10 @@ export const biologyExam: ComprehensiveExam = {
           modelAnswer:
             "Deforestation destroys habitats, so the species that lived there lose their food and shelter and their populations fall or become extinct, reducing biodiversity. Pollution, for example water pollution by fertilisers, causes eutrophication that kills aquatic organisms and reduces the variety of species in the water. (Other valid examples: overfishing/hunting reducing populations; introduction of non-native species outcompeting natives.) Each reduces the number and variety of species in an ecosystem.",
           markScheme: [
-            "named example 1 (e.g. deforestation) [1] + effect (habitat loss / species decline) [1]",
-            "named example 2 (e.g. pollution/overfishing) [1] + effect on species variety [1]",
+            "First named example: deforestation",
+            "Effect of deforestation: destroys habitats / species lose food and shelter / populations fall or become extinct",
+            "Second named example: water pollution by fertilisers (eutrophication) / overfishing / non-native species",
+            "Effect of second example: kills aquatic organisms / outcompetes natives / reduces the variety of species",
           ],
           commonError:
             "Naming an activity but not stating how it actually reduces the number/variety of species.",
@@ -3050,9 +3081,10 @@ export const biologyExam: ComprehensiveExam = {
           modelAnswer:
             "Both plant and animal cells have: a cell-surface membrane, cytoplasm, a nucleus, mitochondria and ribosomes (any two). Only the plant cell has: a cellulose cell wall, a large permanent (sap) vacuole, and chloroplasts (in green parts) (any two). The cell wall gives support and shape, the vacuole helps keep the cell turgid, and chloroplasts allow photosynthesis.",
           markScheme: [
-            "two structures present in both (e.g. membrane, cytoplasm, nucleus, mitochondria) [2]",
-            "first plant-only structure (cell wall / vacuole / chloroplast) [1]",
-            "second plant-only structure [1]",
+            "Shared structure 1: cell-surface membrane / cytoplasm",
+            "Shared structure 2: nucleus / mitochondria / ribosomes",
+            "Plant-only structure 1: cellulose cell wall / large permanent (sap) vacuole",
+            "Plant-only structure 2: chloroplasts / large permanent (sap) vacuole",
           ],
           commonError:
             "Listing the cell membrane as plant-only (both have it); confusing cell wall with cell membrane.",

@@ -2,18 +2,22 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Topic } from "@/lib/types";
+import { optionOrder } from "@/lib/optionOrder";
 import { getMemoryVault, type TopicMemoryVault } from "@/lib/memoryPitfalls";
 import { useStore } from "@/lib/store";
+
+import {
+  masterclassDoneKey,
+  sitcomDoneKey,
+  comedyDoneKey,
+  watchChapterKey,
+} from "@/lib/watchKeys";
+
+export { masterclassDoneKey, sitcomDoneKey, comedyDoneKey, watchChapterKey };
 
 const CHAPTER_STARS = 1;
 const COMPLETE_STARS = 5;
 const COMEDY_MP4_TOPICS = new Set<string>(["bio-coordination"]);
-
-export const masterclassDoneKey = (topicId: string) => `masterclass:${topicId}:done`;
-export const sitcomDoneKey = (topicId: string) => `sitcom:${topicId}:done`;
-export const comedyDoneKey = (topicId: string) => `comedy:${topicId}:done`;
-export const watchChapterKey = (kind: "masterclass" | "sitcom" | "comedy", topicId: string, ch: string) =>
-  `${kind}:${topicId}:${ch}`;
 
 export type WatchMode = "masterclass" | "sitcom" | "comedy";
 
@@ -208,11 +212,17 @@ function buildMockumentaryHtml(topic: Topic, vault: TopicMemoryVault | null, ini
     };
   });
 
-  const mcqs = topic.quiz.mcq.slice(0, 6).map((m) => ({
-    q: m.question, opts: m.options, ans: m.answerIndex,
-    hint: (m.hints && m.hints[0]) || "Focus on the exact Edexcel mark-scheme wording.",
-    why: m.explanation, ref: m.guideRef || topic.title,
-  }));
+  const mcqs = topic.quiz.mcq.slice(0, 6).map((m) => {
+    const order = optionOrder(m.id, m.options);
+    return {
+      q: m.question,
+      opts: order.map((idx) => m.options[idx]),
+      ans: order.indexOf(m.answerIndex),
+      hint: (m.hints && m.hints[0]) || "Focus on the exact Edexcel mark-scheme wording.",
+      why: m.explanation,
+      ref: m.guideRef || topic.title,
+    };
+  });
 
   const payload = JSON.stringify({
     slug: topic.id, show: spec.show, epTitle: spec.title, topicTitle: topic.title,

@@ -6,7 +6,7 @@ import { TOPICS, SUBJECTS, subjectMeta } from "@/lib/content";
 import type { SubjectId } from "@/lib/types";
 import { useStore } from "@/lib/store";
 import { useHeartbeat } from "@/lib/useHeartbeat";
-import { comedyDoneKey, masterclassDoneKey, sitcomDoneKey } from "@/components/WatchTab";
+import { comedyDoneKey, masterclassDoneKey, sitcomDoneKey } from "@/lib/watchKeys";
 import { getMemoryVault } from "@/lib/memoryPitfalls";
 
 export default function TopicsDirectoryPage() {

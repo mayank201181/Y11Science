@@ -1016,10 +1016,10 @@ export const chemEnergetics: Topic = {
             id: "chem-energetics-bm2-02",
             question: "What are the units of bond energy?",
             options: [
-              "kJ",
+              "kJ g⁻¹",
               "kJ mol⁻¹",
-              "°C",
-              "mol",
+              "J g⁻¹ °C⁻¹",
+              "mol dm⁻³",
             ],
             answerIndex: 1,
             explanation:
@@ -1375,10 +1375,10 @@ export const chemEnergetics: Topic = {
             question:
               "Which statement about Ea and ΔH on a reaction profile is correct?",
             options: [
-              "Ea is measured from zero to the peak.",
-              "ΔH is measured from the peak to the products.",
+              "Ea is measured from zero energy to the peak; ΔH is measured from zero to the products.",
+              "Ea is measured from the reactants to the products; ΔH is measured from the peak to the products.",
               "Ea is measured from the reactants level to the peak; ΔH from reactants to products.",
-              "Ea and ΔH are always equal in magnitude.",
+              "Ea and ΔH are always equal in magnitude because both end at the same peak energy level.",
             ],
             answerIndex: 2,
             explanation:
@@ -1557,10 +1557,10 @@ export const chemEnergetics: Topic = {
             question:
               "Which piece of evidence, on its own, best shows that a reaction is endothermic?",
             options: [
-              "A gas is produced.",
+              "Bubbles of a colourless gas are given off rapidly.",
               "The temperature of the reaction mixture falls.",
-              "A colour change occurs.",
-              "A precipitate forms.",
+              "The colour of the reaction solution changes clearly.",
+              "An insoluble solid precipitate forms in the beaker.",
             ],
             answerIndex: 1,
             explanation:

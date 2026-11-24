@@ -700,10 +700,10 @@ export const physNuclear: Topic = {
             id: "phys-nuclear-bm1-10",
             question: "Smoke detectors commonly contain americium-241, an alpha emitter. Why is an alpha emitter a safe choice for the user?",
             options: [
-              "Alpha radiation cannot ionise air, so it never reaches the user",
+              "Alpha radiation is too weakly ionising to affect air molecules or living tissue outside the detector",
               "Alpha particles are absorbed by the detector casing and a short layer of air, so they do not reach the user",
-              "Alpha emitters never have a long half-life",
-              "Alpha radiation is the most penetrating type",
+              "Alpha emitters always have a very short half-life of a few days, so the source decays away quickly",
+              "Alpha radiation is the most penetrating type, so it passes straight through people without being absorbed",
             ],
             answerIndex: 1,
             explanation:
@@ -756,7 +756,7 @@ export const physNuclear: Topic = {
           {
             id: "phys-nuclear-bm2-04",
             question: "A neutron inside a nucleus changes into a proton. Which radiation is emitted?",
-            options: ["An alpha particle", "A beta-minus particle (electron)", "A gamma ray only", "A second neutron"],
+            options: ["An alpha particle (helium nucleus)", "A beta-minus particle (electron)", "A gamma ray (high-energy photon)", "A free neutron (uncharged nucleon)"],
             answerIndex: 1,
             explanation:
               "When a neutron converts to a proton, a fast-moving electron is created and ejected from the nucleus. This electron is the beta-minus particle. The proton number increases by 1.",
@@ -956,10 +956,10 @@ export const physNuclear: Topic = {
             id: "phys-nuclear-bm3-06",
             question: "Carbon dating is reliable only up to about 50 000 years. Which property of carbon-14 explains this limit?",
             options: [
-              "Its very long half-life of billions of years",
+              "Its extremely long half-life of several billion years means its activity barely changes over 50 000 years",
               "Its half-life of about 5730 years, so after roughly 50 000 years very little carbon-14 remains to measure",
-              "It only decays by alpha emission",
-              "It is not found in living things",
+              "It decays only by emitting alpha particles, which are completely absorbed inside ancient wooden samples",
+              "It is only absorbed by non-living rocks and minerals, so living organisms never contain enough to detect",
             ],
             answerIndex: 1,
             explanation:
@@ -976,10 +976,10 @@ export const physNuclear: Topic = {
             id: "phys-nuclear-bm3-07",
             question: "Why are beta emitters used to monitor the thickness of metal or paper sheets in a factory?",
             options: [
-              "Alpha would not be absorbed at all by the sheet",
-              "Gamma passes through almost unchanged so changes in thickness would not affect the count, while alpha is stopped completely; beta is partly absorbed so the count changes with thickness",
-              "Beta cannot pass through any thickness of metal",
-              "Beta makes the metal radioactive, which is useful",
+              "Alpha passes straight through any sheet unchanged, while gamma is completely stopped by thin paper or foil",
+              "Alpha is completely stopped and gamma passes through almost unchanged, whereas beta is partly absorbed so the count varies with thickness",
+              "Beta particles cannot penetrate paper or thin metal foil, so any reading at the detector immediately signals a hole",
+              "Beta particles make the rolled sheet slightly radioactive, allowing workers to measure thickness by checking the foil",
             ],
             answerIndex: 1,
             explanation:
@@ -1054,10 +1054,10 @@ export const physNuclear: Topic = {
             id: "phys-nuclear-bm4-01",
             question: "Which observation from the alpha-scattering experiment showed that the atom is mostly empty space?",
             options: [
-              "A few alpha particles bounced straight back",
+              "A small fraction of alpha particles were deflected backwards through angles over 90°",
               "Most alpha particles passed straight through the foil with little or no deflection",
-              "Some alpha particles were absorbed by the screen",
-              "The foil became hot",
+              "Some alpha particles were absorbed inside the zinc sulfide detector screen on impact",
+              "The thin gold foil warmed up rapidly as alpha particles collided with orbiting electrons",
             ],
             answerIndex: 1,
             explanation:
@@ -1130,10 +1130,10 @@ export const physNuclear: Topic = {
             id: "phys-nuclear-bm4-06",
             question: "Why does a medical gamma tracer need to be a gamma emitter rather than an alpha emitter?",
             options: [
-              "Alpha radiation is not ionising",
+              "Alpha radiation is non-ionising and too weak to produce any signal inside human body tissue",
               "Gamma can pass out of the body to reach a detector, while alpha would be absorbed inside the body",
-              "Gamma stays in the body longer than alpha",
-              "Alpha emitters are always more expensive",
+              "Gamma radiation stays inside the patient's body far longer than alpha, giving brighter scan images",
+              "Alpha-emitting isotopes are always much more expensive to manufacture than gamma-emitting tracers",
             ],
             answerIndex: 1,
             explanation:
@@ -1190,10 +1190,10 @@ export const physNuclear: Topic = {
             id: "phys-nuclear-bm4-09",
             question: "Uranium-238 has a half-life of 4.5 billion years, while technetium-99m has a half-life of 6 hours. Which statement comparing them is correct?",
             options: [
-              "Both decay to negligible activity in the same time",
-              "Uranium-238 is far more useful as a short-term medical tracer",
+              "Both isotopes decay to a negligible activity within the same time once removed from a reactor",
+              "Uranium-238 is far safer as a short-term medical tracer because it decays slowly inside the patient",
               "Technetium-99m decays to a low activity in about a day, whereas uranium-238 remains active over geological timescales",
-              "Half-life depends on the size of the sample, so neither value is fixed",
+              "Half-life depends directly on the starting mass of each sample, so neither value stays constant",
             ],
             answerIndex: 2,
             explanation:
@@ -1464,9 +1464,10 @@ export const physNuclear: Topic = {
             modelAnswer:
               "(a) The activity has fallen to one quarter, which is (1/2) to the power 2, so 2 half-lives have passed.\n(b) Age = number of half-lives times half-life = 2 times 5730 = 11 460 years.",
             markScheme: [
-              "(a) one quarter = (1/2) squared, so n = 2 half-lives",
-              "(b) age = n times half-life = 2 times 5730",
-              "(b) age = 11 460 years (accept about 11 500 years)",
+              "(a) Recognises one quarter = (1/2) to the power 2 / two halvings",
+              "(a) Number of half-lives = 2",
+              "(b) Age = 2 times 5730",
+              "(b) Age = 11 460 years (accept about 11 500 years)",
             ],
             commonError:
               "Students sometimes treat one quarter as two half-lives of time directly without multiplying by the half-life, or read one quarter as four half-lives. One quarter equals (1/2) squared, which is 2 half-lives.",
@@ -2246,10 +2247,11 @@ export const physNuclear: Topic = {
             modelAnswer:
               "(a) Mass of original isotope remaining = 80 minus 75 = 5 g. Fraction remaining = 5 divided by 80 = 1/16 = (1/2) to the power 4, so 4 half-lives have passed.\n(b) Half-life = total time divided by number of half-lives = 36 divided by 4 = 9 hours.",
             markScheme: [
-              "(a) remaining original isotope = 80 minus 75 = 5 g",
-              "(a) fraction remaining = 5 / 80 = 1/16",
-              "(a) 1/16 = (1/2) to power 4, so n = 4 half-lives",
-              "(b) half-life = 36 / 4 = 9 hours",
+              "(a) Remaining original isotope = 80 minus 75 = 5 g",
+              "(a) Fraction remaining = 5 divided by 80 = 1/16",
+              "(a) 1/16 = (1/2) to the power 4, so 4 half-lives have passed",
+              "(b) Half-life = total time divided by number of half-lives = 36 divided by 4",
+              "(b) Half-life = 9 hours",
             ],
             commonError:
               "Students sometimes use the 75 g that has decayed as the remaining amount. The amount remaining is the original mass minus the decayed mass (80 minus 75 = 5 g).",

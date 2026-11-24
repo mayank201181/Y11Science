@@ -5,7 +5,7 @@ import { useParams, notFound } from "next/navigation";
 import { useStore } from "@/lib/store";
 import { subjectMeta, topicsBySubject, examsBySubject } from "@/lib/content";
 import type { SubjectId } from "@/lib/types";
-import { comedyDoneKey, masterclassDoneKey, sitcomDoneKey } from "@/components/WatchTab";
+import { comedyDoneKey, masterclassDoneKey, sitcomDoneKey } from "@/lib/watchKeys";
 import { getMemoryVault } from "@/lib/memoryPitfalls";
 
 const VALID: SubjectId[] = ["biology", "chemistry", "physics"];

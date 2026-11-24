@@ -778,10 +778,10 @@ Both ions are absorbed from soil solution by active transport — an energy-requ
             question:
               "In the photosynthesis equation, where are light energy and chlorophyll usually written?",
             options: [
-              "As reactants on the left of the arrow",
-              "As products on the right of the arrow",
+              "As chemical reactants on the left of the arrow that are used up",
+              "As chemical products on the right of the arrow released by cells",
               "Above or below the arrow, because they are conditions, not reactants",
-              "They are not shown in the equation at all",
+              "They are omitted completely because they have no role in the reaction",
             ],
             answerIndex: 2,
             explanation:
@@ -929,9 +929,9 @@ Both ions are absorbed from soil solution by active transport — an energy-requ
               "A plant is kept in continuous bright light. Over 24 hours, why might the mass of starch in its leaves still rise and fall rather than only rise?",
             options: [
               "Starch is constantly broken down and respired or exported as sucrose, even while photosynthesis adds more",
-              "Photosynthesis stops completely once enough starch is made",
-              "Chlorophyll is destroyed and remade in a daily cycle",
-              "Starch is converted directly back into light energy",
+              "Photosynthesis shuts down completely for 12 hours once leaf cells reach their maximum starch capacity",
+              "Chlorophyll molecules are completely destroyed each evening and must be rebuilt from scratch next day",
+              "Starch molecules are converted directly back into light energy and radiated out through the stomata",
             ],
             answerIndex: 0,
             explanation:
@@ -992,10 +992,10 @@ Both ions are absorbed from soil solution by active transport — an energy-requ
             question:
               "What is the main role of the air spaces in the spongy mesophyll?",
             options: [
-              "To store starch made by photosynthesis",
+              "To store large grains of insoluble starch produced during photosynthesis",
               "To allow rapid diffusion of carbon dioxide and oxygen through the leaf",
-              "To strengthen and support the leaf",
-              "To absorb red and blue light",
+              "To provide rigid woody support that holds the leaf flat towards the Sun",
+              "To absorb red and blue wavelengths of sunlight with extra chlorophyll",
             ],
             answerIndex: 1,
             explanation:
@@ -1050,10 +1050,10 @@ Both ions are absorbed from soil solution by active transport — an energy-requ
             question:
               "Why does the upper epidermis of a leaf contain few or no chloroplasts?",
             options: [
-              "It is too far from the veins to receive water",
+              "It is too far from the xylem veins to receive enough water for photosynthesis",
               "It is transparent so that light can pass through to the palisade layer below",
-              "It is responsible only for gas exchange",
-              "It is always in shade",
+              "It is responsible solely for gas exchange and never receives direct sunlight",
+              "It lies permanently in deep shade beneath the spongy mesophyll cell layer",
             ],
             answerIndex: 1,
             explanation:
@@ -1071,10 +1071,10 @@ Both ions are absorbed from soil solution by active transport — an energy-requ
             question:
               "Which feature increases the surface area for the absorption of light and CO₂ by a leaf?",
             options: [
-              "Its thick waxy cuticle",
+              "Its thick, waterproof waxy outer cuticle",
               "Its broad, flat, thin lamina (leaf blade)",
-              "Its woody stem",
-              "Its deep root system",
+              "Its lignified, woody supporting plant stem",
+              "Its deeply branched underground root system",
             ],
             answerIndex: 1,
             explanation:
@@ -1113,10 +1113,10 @@ Both ions are absorbed from soil solution by active transport — an energy-requ
             question:
               "A leaf adapted to deep shade is often larger and thinner with chloroplasts spread through more layers than a leaf in full sun. Which is the best explanation?",
             options: [
-              "Larger, thinner leaves capture the limited available light over a bigger area, and spread-out chloroplasts intercept more of the weak light",
-              "Shade leaves photosynthesise faster than sun leaves at all light intensities",
-              "Thin leaves lose less water, which is the main limit in shade",
-              "Shade leaves do not need stomata because there is little light",
+              "Larger, thinner leaves capture dim light over a wider area, and spread-out chloroplasts intercept more of it",
+              "Shade leaves always photosynthesise faster than sun leaves at every light intensity, including full midday sun",
+              "Thin leaves have a much thicker waxy cuticle to cut water loss, which is the main limiting factor in deep shade",
+              "Shade leaves do not need stomata or carbon dioxide because they rely mainly on respiration instead of light",
             ],
             answerIndex: 0,
             explanation:
@@ -1136,10 +1136,10 @@ Both ions are absorbed from soil solution by active transport — an energy-requ
             question:
               "Removing the lower epidermis of a leaf (so the spongy mesophyll is exposed) would most directly increase which process, assuming the leaf survives?",
             options: [
-              "Light absorption by the palisade layer",
+              "Light absorption by the upper palisade mesophyll layer, because more sunlight enters from above",
               "Water loss by transpiration and gas diffusion, because the stomatal/cuticle barrier is gone",
-              "The rate of the light-independent reactions only",
-              "Active transport of mineral ions in the root",
+              "The rate of enzyme-controlled carbon fixation only, because chlorophyll is now directly exposed",
+              "Active transport of nitrate and magnesium ions into root hair cells deep below the soil surface",
             ],
             answerIndex: 1,
             explanation:
@@ -1184,10 +1184,10 @@ Both ions are absorbed from soil solution by active transport — an energy-requ
             question:
               "On a graph of rate of photosynthesis against light intensity, what does a flat plateau region indicate?",
             options: [
-              "Light intensity is the limiting factor",
+              "Light intensity is still the main limiting factor controlling the rate",
               "A different factor (CO₂ or temperature) has become the limiting factor",
-              "The plant has stopped respiring",
-              "Chlorophyll has run out",
+              "The plant cells have completely stopped carrying out aerobic respiration",
+              "All of the chlorophyll in the leaves has been used up during the reaction",
             ],
             answerIndex: 1,
             explanation:
@@ -1324,10 +1324,10 @@ Both ions are absorbed from soil solution by active transport — an energy-requ
             question:
               "At a given moment only one factor is described as 'the limiting factor'. Which statement is correct?",
             options: [
-              "Increasing any factor will always increase the rate",
+              "Increasing any one of the three factors will always increase the rate of photosynthesis",
               "Only increasing the limiting factor will increase the rate; increasing the others will not",
-              "All three factors limit the rate at the same time",
-              "The limiting factor is always carbon dioxide",
+              "All three factors always limit the rate equally at the exact same moment in every leaf",
+              "Carbon dioxide concentration is always the limiting factor regardless of light or heat",
             ],
             answerIndex: 1,
             explanation:
@@ -1345,10 +1345,10 @@ Both ions are absorbed from soil solution by active transport — an energy-requ
             question:
               "An Elodea plant gives 12 bubbles per minute at 25 °C and 24 bubbles per minute at 35 °C, but only 2 bubbles per minute at 45 °C. Which statement best explains the full pattern?",
             options: [
-              "Rate always increases with temperature",
+              "Rate increases continuously with every rise in temperature because kinetic energy never stops rising",
               "Rate roughly doubles from 25 to 35 °C as enzymes work faster, then falls at 45 °C as enzymes denature",
-              "Light became limiting only at 45 °C",
-              "Bubbles are oxygen, so more bubbles mean less photosynthesis",
+              "Light intensity suddenly became the limiting factor at 45 °C, causing photosynthesis to drop sharply",
+              "The bubbles are oxygen, so more bubbles at 35 °C means less photosynthesis than at 25 °C or 45 °C",
             ],
             answerIndex: 1,
             explanation:
@@ -1395,10 +1395,10 @@ Both ions are absorbed from soil solution by active transport — an energy-requ
             question:
               "Why is a plant 'destarched' by keeping it in the dark for 24–48 hours before a photosynthesis experiment?",
             options: [
-              "To kill the leaf cells before testing",
+              "To kill all the leaf cells before the experiment so they cannot respire",
               "To use up existing starch so any new starch must come from the experiment",
-              "To make the chlorophyll dissolve more easily",
-              "To increase the amount of CO₂ in the leaf",
+              "To break down cell membranes so chlorophyll dissolves faster in cold water",
+              "To build up a large store of carbon dioxide inside the leaf air spaces",
             ],
             answerIndex: 1,
             explanation:
@@ -1412,10 +1412,10 @@ Both ions are absorbed from soil solution by active transport — an energy-requ
             question:
               "In the leaf starch test, why is the leaf placed in hot ethanol?",
             options: [
-              "To kill the leaf",
+              "To kill the leaf cells and soften the tough outer waxy cuticle layer",
               "To remove (decolourise) the chlorophyll so the iodine colour can be seen",
-              "To add starch to the leaf",
-              "To supply carbon dioxide",
+              "To coat the leaf cells with extra starch before adding iodine solution",
+              "To supply dissolved carbon dioxide so photosynthesis continues faster",
             ],
             answerIndex: 1,
             explanation:
@@ -1456,10 +1456,10 @@ Both ions are absorbed from soil solution by active transport — an energy-requ
             question:
               "A destarched variegated leaf (green and white areas) is left in light, then tested with iodine. Which result is expected?",
             options: [
-              "The whole leaf turns blue-black",
+              "The whole leaf turns blue-black because both areas receive sunlight",
               "Only the green areas turn blue-black; the white areas stay orange-brown",
-              "Only the white areas turn blue-black",
-              "The whole leaf stays orange-brown",
+              "Only the white areas turn blue-black; the green areas stay orange-brown",
+              "The whole leaf stays orange-brown because ethanol removes all the starch",
             ],
             answerIndex: 1,
             explanation:
@@ -1501,10 +1501,10 @@ Both ions are absorbed from soil solution by active transport — an energy-requ
             question:
               "In a sealed flask experiment, sodium hydroxide solution is placed beside a destarched leaf. What is the purpose of the sodium hydroxide?",
             options: [
-              "To provide extra carbon dioxide",
+              "To release extra carbon dioxide gas into the sealed flask",
               "To absorb carbon dioxide so the leaf is deprived of it",
-              "To supply light energy",
-              "To kill any bacteria on the leaf",
+              "To reflect and supply extra light energy onto the leaf",
+              "To sterilise the air and kill any bacteria on the leaf",
             ],
             answerIndex: 1,
             explanation:
@@ -2502,9 +2502,10 @@ Both ions are absorbed from soil solution by active transport — an energy-requ
             modelAnswer:
               "1. Heat the ethanol in a water bath (hot water) and away from a naked flame, because ethanol is highly flammable and could catch fire if heated directly. 2. Use forceps/tongs and care when handling the leaf in boiling water and hot ethanol, and wear eye protection, because the hot liquids can scald or burn the skin (and iodine can irritate/stain). (Accept: switch off the Bunsen before pouring ethanol; handle iodine with care as it stains and irritates.)",
             markScheme: [
-              "ethanol heated in water bath / away from flame — because it is flammable",
-              "use forceps/care with hot water and ethanol — to avoid scalds/burns",
-              "wear eye protection / handle iodine carefully — irritant/stains (any valid second precaution + reason)",
+              "Precaution 1: heat ethanol in a water bath / away from a naked flame / switch off Bunsen burner",
+              "Reason 1: ethanol is flammable / could catch fire",
+              "Precaution 2: use forceps or tongs / wear eye protection / handle hot liquids or iodine carefully",
+              "Reason 2: prevents scalds or burns from hot liquids / iodine irritates or stains",
             ],
             commonError:
               "Giving a precaution without a reason, or only mentioning the flammable ethanol point twice in different words.",

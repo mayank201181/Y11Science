@@ -5,7 +5,7 @@ import Link from "next/link";
 import type { Topic } from "@/lib/types";
 import { subjectMeta } from "@/lib/content";
 import { useStore } from "@/lib/store";
-import { masterclassDoneKey, sitcomDoneKey } from "./WatchTab";
+import { masterclassDoneKey, sitcomDoneKey } from "@/lib/watchKeys";
 
 const emptySubscribe = () => () => {};
 

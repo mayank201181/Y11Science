@@ -84,9 +84,9 @@ export const chemistryExam: ComprehensiveExam = {
             "Which of the following is a property typical of a Group I metal (alkali metal)?",
           options: [
             "Reacts vigorously with water to form an alkaline solution",
-            "High density and high melting point",
-            "Forms coloured compounds",
-            "Has a full outer electron shell",
+            "Has a very high density, high strength and high melting point",
+            "Forms brightly coloured compounds and acts as a catalyst",
+            "Has a full outer electron shell and is chemically unreactive",
           ],
           answerIndex: 0,
           explanation:
@@ -135,10 +135,10 @@ export const chemistryExam: ComprehensiveExam = {
           question:
             "Which type of bonding is present in a sample of magnesium metal?",
           options: [
-            "Ionic bonding",
-            "Simple molecular covalent bonding",
+            "Ionic bonding: electrostatic attraction between oppositely charged ions",
+            "Simple molecular bonding: small molecules held by weak intermolecular forces",
             "Metallic bonding: a lattice of positive ions in a sea of delocalised electrons",
-            "Giant covalent bonding",
+            "Giant covalent bonding: a rigid network of atoms linked by covalent bonds",
           ],
           answerIndex: 2,
           explanation:
@@ -150,10 +150,10 @@ export const chemistryExam: ComprehensiveExam = {
           question:
             "Diamond and graphite are both forms of carbon. Why can graphite conduct electricity but diamond cannot?",
           options: [
-            "In graphite each carbon forms three bonds, leaving one delocalised electron per atom that is free to move",
-            "Graphite has ionic bonds",
-            "Diamond contains no carbon-carbon bonds",
-            "Graphite is a metal",
+            "Each carbon in graphite forms three bonds, leaving one delocalised electron free to move",
+            "Graphite contains mobile carbon ions formed by ionic bonding between adjacent layers",
+            "Diamond has no strong carbon-carbon bonds and holds all its electrons in separate molecules",
+            "Graphite is a metallic allotrope of carbon with positive metal ions in a sea of electrons",
           ],
           answerIndex: 0,
           explanation:
@@ -495,9 +495,9 @@ export const chemistryExam: ComprehensiveExam = {
             "Why are the noble gases (Group VIII / 0) very unreactive?",
           options: [
             "They have full outer electron shells",
-            "They are very dense",
-            "They have no protons",
-            "They readily form ions",
+            "They are very dense gases with large atoms",
+            "Their atoms contain no protons or neutrons",
+            "They readily gain electrons to form ions",
           ],
           answerIndex: 0,
           explanation:
@@ -682,10 +682,10 @@ export const chemistryExam: ComprehensiveExam = {
           question:
             "Which method is most suitable for preparing the soluble salt copper(II) sulfate from copper(II) oxide and dilute sulfuric acid?",
           options: [
-            "Titration",
+            "Titrating dilute sulfuric acid with copper(II) oxide using an indicator, then drying",
             "Adding excess copper(II) oxide, filtering, then evaporating and crystallising the filtrate",
-            "Mixing two soluble solutions and filtering off the salt",
-            "Electrolysis of the oxide",
+            "Mixing two soluble aqueous solutions together, then filtering off the insoluble salt",
+            "Electrolysing molten copper(II) oxide using inert graphite electrodes to obtain the salt",
           ],
           answerIndex: 1,
           explanation:
@@ -703,9 +703,9 @@ export const chemistryExam: ComprehensiveExam = {
           question:
             "Aluminium is extracted by electrolysis rather than by reduction with carbon. Why?",
           options: [
-            "Aluminium is less reactive than carbon",
-            "Aluminium is found as the pure metal",
-            "Aluminium oxide does not melt",
+            "Aluminium is less reactive than carbon, so carbon only reacts with it slowly",
+            "Aluminium occurs naturally as the pure uncombined metal in bauxite ore",
+            "Aluminium oxide cannot be melted even when mixed with molten cryolite",
             "Aluminium is more reactive than carbon, so carbon cannot reduce its oxide",
           ],
           answerIndex: 3,
@@ -1125,10 +1125,10 @@ export const chemistryExam: ComprehensiveExam = {
           question:
             "Which method is used to prepare an insoluble salt such as lead(II) iodide?",
           options: [
-            "Titration",
+            "Titration: reacting an acid and alkali using an indicator",
             "Precipitation: mixing two soluble solutions then filtering",
-            "Adding excess metal to acid",
-            "Electrolysis",
+            "Excess metal: adding excess metal to acid then crystallising",
+            "Electrolysis: passing a direct current through an aqueous salt",
           ],
           answerIndex: 1,
           explanation:
@@ -1155,7 +1155,12 @@ export const chemistryExam: ComprehensiveExam = {
           id: "exam-chemistry-mcq-p3-18",
           question:
             "Limewater turns milky/cloudy when a certain gas is bubbled through it. Which gas is it?",
-          options: ["Oxygen", "Hydrogen", "Carbon dioxide", "Ammonia"],
+          options: [
+            "Oxygen (O₂)",
+            "Hydrogen (H₂)",
+            "Carbon dioxide (CO₂)",
+            "Carbon monoxide (CO)",
+          ],
           answerIndex: 2,
           explanation:
             "Carbon dioxide turns limewater (calcium hydroxide solution) milky/cloudy by forming insoluble calcium carbonate: CO₂ + Ca(OH)₂ → CaCO₃ + H₂O. This is the standard test for CO₂.",
@@ -1224,10 +1229,10 @@ export const chemistryExam: ComprehensiveExam = {
           question:
             "Carbon monoxide is a harmful pollutant from car engines. Why is it dangerous?",
           options: [
-            "It causes acid rain",
+            "It dissolves rapidly in atmospheric moisture to form strongly acidic rain",
             "It is a toxic gas that combines with haemoglobin, reducing oxygen transport in the blood",
-            "It depletes the ozone layer",
-            "It is highly explosive in air at all concentrations",
+            "It rises to the upper atmosphere and breaks down the protective ozone layer",
+            "It is an extremely unstable gas that explodes spontaneously in air at any level",
           ],
           answerIndex: 1,
           explanation:
@@ -1245,10 +1250,10 @@ export const chemistryExam: ComprehensiveExam = {
           question:
             "Which statement about the catalytic converter in a car exhaust is correct?",
           options: [
-            "It converts carbon dioxide into oxygen",
+            "It converts carbon dioxide and water vapour back into pure oxygen and unburned fuel",
             "It converts carbon monoxide and oxides of nitrogen into less harmful carbon dioxide and nitrogen",
-            "It removes carbon dioxide completely",
-            "It produces sulfur dioxide",
+            "It absorbs all carbon dioxide emissions completely so no greenhouse gases leave the car",
+            "It oxidises nitrogen gas from the air into sulfur dioxide and acidic exhaust fumes",
           ],
           answerIndex: 1,
           explanation:
@@ -1287,10 +1292,10 @@ export const chemistryExam: ComprehensiveExam = {
           question:
             "Which procedure would give a pure dry sample of sodium chloride from a sodium chloride solution?",
           options: [
-            "Filtration",
-            "Chromatography",
+            "Filtration through filter paper to trap the salt",
+            "Paper chromatography using water as the solvent",
             "Crystallisation / evaporation of the water",
-            "Adding excess acid",
+            "Adding excess dilute nitric acid and filtering",
           ],
           answerIndex: 2,
           explanation:
@@ -1415,9 +1420,9 @@ export const chemistryExam: ComprehensiveExam = {
             "Concentrated sulfuric acid is added to a sample of hydrated copper(II) sulfate (CuSO₄·5H₂O). Which best describes water of crystallisation?",
           options: [
             "Water chemically bonded into the crystal structure in a fixed ratio",
-            "Water left on the surface after washing",
-            "Water that is part of the solvent",
-            "Water produced when the salt dissolves",
+            "Damp surface moisture left clinging to the outside of washed crystals",
+            "Liquid solvent water that remains trapped around crystals in a beaker",
+            "Water newly formed by a chemical reaction when an anhydrous salt dissolves",
           ],
           answerIndex: 0,
           explanation:
@@ -1571,10 +1576,10 @@ export const chemistryExam: ComprehensiveExam = {
           question:
             "Zinc is used to protect iron from rusting by sacrificial protection. Why does this work?",
           options: [
-            "Zinc is less reactive than iron",
+            "Zinc is less reactive than iron, so it stops electrons leaving the iron surface",
             "Zinc is more reactive than iron, so it is oxidised in preference to the iron",
-            "Zinc forms a waterproof paint",
-            "Zinc is a non-metal",
+            "Zinc melts into a waterproof plastic-like paint that seals the metal permanently",
+            "Zinc is an unreactive non-metal that cannot combine with oxygen or water",
           ],
           answerIndex: 1,
           explanation:
@@ -1639,10 +1644,10 @@ export const chemistryExam: ComprehensiveExam = {
           question:
             "Which statement about a condensation polymer such as a polyester is correct?",
           options: [
-            "It is made from a single alkene monomer with no by-product",
-            "It is made from two different monomers (e.g. a diol and a dicarboxylic acid) with loss of a small molecule such as water",
-            "It contains C=C double bonds along its backbone",
-            "It cannot be hydrolysed",
+            "It forms by addition from a single alkene monomer with no small molecule by-product",
+            "It forms from two monomers (e.g. a diol and dicarboxylic acid), releasing a small molecule like water",
+            "It contains repeating C=C double bonds along its main carbon chain backbone",
+            "It is chemically inert and can never be broken back down by hydrolysis",
           ],
           answerIndex: 1,
           explanation:
@@ -1660,10 +1665,10 @@ export const chemistryExam: ComprehensiveExam = {
           question:
             "A sample of water is tested. Which result confirms it is pure water?",
           options: [
-            "It turns blue cobalt chloride paper pink",
+            "It turns dry blue cobalt(II) chloride paper pink at room temperature",
             "It boils at exactly 100 °C and freezes at exactly 0 °C (at standard pressure)",
-            "It turns anhydrous copper(II) sulfate blue",
-            "It is colourless",
+            "It turns white anhydrous copper(II) sulfate powder bright blue on contact",
+            "It is completely colourless, clear and has no detectable smell or taste",
           ],
           answerIndex: 1,
           explanation:
@@ -2817,10 +2822,12 @@ export const chemistryExam: ComprehensiveExam = {
           modelAnswer:
             "(a) Water (moisture) and oxygen (from the air) are both required for iron to rust.\n\n(b) Method 1 — Barrier method (e.g. painting, oiling/greasing, or coating with plastic): the coating keeps out water and oxygen, so the iron cannot react. Method 2 — Sacrificial protection (e.g. attaching blocks of zinc, or galvanising with zinc): zinc is more reactive than iron, so the zinc is oxidised (corrodes) in preference to the iron, protecting it even if the surface is scratched. (Accept galvanising as a combined barrier + sacrificial method.)",
           markScheme: [
-            "(a) water [1]",
-            "(a) oxygen [1]",
-            "(b) barrier method named (paint/oil/plastic) and explained: keeps out water/oxygen [2]",
-            "(b) sacrificial protection named (zinc/galvanising) and explained: more reactive metal corrodes instead [2]",
+            "(a) Water / moisture [1]",
+            "(a) Oxygen / air [1]",
+            "(b) Barrier method named: painting / oiling / greasing / plastic coating [1]",
+            "(b) Barrier explanation: coating keeps out water and oxygen / prevents contact with air and moisture [1]",
+            "(b) Sacrificial protection / galvanising named (e.g. zinc / magnesium) [1]",
+            "(b) Sacrificial explanation: zinc is more reactive than iron so it is oxidised / corrodes in preference to iron [1]",
           ],
           commonError:
             "Just listing methods without explaining HOW each prevents rusting.",
@@ -3554,7 +3561,8 @@ export const chemistryExam: ComprehensiveExam = {
           markScheme: [
             "(a) higher concentration → more particles per volume [1]",
             "(a) more frequent collisions → more successful collisions → faster rate [1]",
-            "(b) two valid control variables (surface area/temperature/volume of acid/amount of CaCO₃) [2]",
+            "(b) Same temperature / same volume of acid [1]",
+            "(b) Same surface area / size of chips / mass or amount of calcium carbonate [1]",
             "(c) CaCO₃ is the limiting reactant (acid in excess) [1]",
             "(c) same moles CaCO₃ → same moles/mass CO₂ produced [1]",
           ],

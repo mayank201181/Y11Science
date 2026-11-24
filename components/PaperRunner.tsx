@@ -5,6 +5,7 @@ import Link from "next/link";
 import type { MCQ, QA } from "@/lib/types";
 import { useStore } from "@/lib/store";
 import { gradeAnswer } from "@/lib/grade";
+import { optionOrder } from "@/lib/optionOrder";
 import { Markdown } from "./Markdown";
 import { AskAI } from "./AskAI";
 
@@ -292,11 +293,13 @@ function McqBody({
   st: QState;
   onCheck: (i: number) => void;
 }) {
+  const order = useMemo(() => optionOrder(q.id, q.options), [q.id, q.options]);
   return (
     <div className="mt-4 space-y-2">
-      {q.options.map((opt, i) => {
-        const chosen = st.selected === i;
-        const isAnswer = i === q.answerIndex;
+      {order.map((origIdx, dispIdx) => {
+        const opt = q.options[origIdx];
+        const chosen = st.selected === origIdx;
+        const isAnswer = origIdx === q.answerIndex;
         let cls = "border-line bg-bg-soft";
         if (st.checked) {
           if (isAnswer) cls = "border-emerald-500 bg-emerald-500/15";
@@ -304,12 +307,12 @@ function McqBody({
         } else if (chosen) cls = "border-indigo-500 bg-indigo-500/15";
         return (
           <button
-            key={i}
+            key={origIdx}
             disabled={st.checked}
-            onClick={() => onCheck(i)}
+            onClick={() => onCheck(origIdx)}
             className={`w-full text-left px-4 py-3 rounded-xl border transition ${cls}`}
           >
-            <span className="font-bold mr-2">{String.fromCharCode(65 + i)}.</span>
+            <span className="font-bold mr-2">{String.fromCharCode(65 + dispIdx)}.</span>
             {opt}
             {st.checked && isAnswer && <span className="float-right">✓</span>}
             {st.checked && chosen && !isAnswer && <span className="float-right">✗</span>}

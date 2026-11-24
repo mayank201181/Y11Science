@@ -553,10 +553,11 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
         marks: 5,
         modelAnswer: "KCl: No visible colour change. Bromine cannot displace chloride ions because Br₂ is less reactive than Cl₂, so no reaction occurs.\n\nKBr: No visible colour change. Bromine cannot displace bromide ions from a solution of its own salt — a halogen cannot displace itself.\n\nKI: The solution turns orange-brown or dark brown. Bromine displaces iodide because Br₂ is more reactive than I₂, producing iodine.\nIonic equation: Br₂(aq) + 2I⁻(aq) → 2Br⁻(aq) + I₂(aq)",
         markScheme: [
-          "KCl: no colour change / no reaction (1 mark)",
-          "KBr: no colour change / no reaction (1 mark)",
-          "KI: orange-brown / dark brown colour appears (1 mark)",
-          "Correct ionic equation: Br₂(aq) + 2I⁻(aq) → 2Br⁻(aq) + I₂(aq) (1 mark for species, 1 mark for balancing)"
+          "KCl: no colour change / no reaction (1)",
+          "KBr: no colour change / no reaction (1)",
+          "KI: orange-brown / dark brown colour appears as iodine forms (1)",
+          "Correct reacting species in ionic equation: Br₂, 2I⁻, 2Br⁻ and I₂ (accept unbalanced Br₂ + I⁻ → Br⁻ + I₂) (1)",
+          "Correctly balanced ionic equation with state symbols: Br₂(aq) + 2I⁻(aq) → 2Br⁻(aq) + I₂(aq) (1)"
         ],
         commonError: "A common mistake is predicting that bromine reacts with KBr (it cannot displace itself). Another is omitting state symbols from the ionic equation.",
         guideRef: "Group VII — The Halogens",
@@ -575,10 +576,14 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
         marks: 8,
         modelAnswer: "1. High melting points: Transition metals have much higher melting points than Group I/II metals. Example: iron melts at 1538 °C, far higher than sodium (98 °C).\n\n2. Variable oxidation states: Transition metals can form ions with more than one charge. Example: iron forms Fe²⁺ (iron(II)) in iron(II) sulfate and Fe³⁺ (iron(III)) in iron(III) chloride.\n\n3. Coloured compounds: The ions and compounds of transition metals are often coloured. Example: copper(II) sulfate solution is blue (Cu²⁺ ions); potassium manganate(VII) solution is purple (MnO₄⁻ ions).\n\n4. Catalytic activity: Many transition metals and their compounds act as catalysts. Example: iron is the catalyst in the Haber process (manufacture of ammonia); vanadium(V) oxide (V₂O₅) is the catalyst in the Contact process (manufacture of sulfuric acid).",
         markScheme: [
-          "High melting points / high density — with a named example (e.g. iron 1538 °C) (2 marks)",
-          "Variable oxidation states — with a named example (e.g. Fe²⁺ and Fe³⁺ / Cu⁺ and Cu²⁺) (2 marks)",
-          "Coloured compounds/ions — with a named example (e.g. Cu²⁺ blue / Fe³⁺ yellow-brown / MnO₄⁻ purple) (2 marks)",
-          "Catalytic activity — with a named example (e.g. Fe in Haber / V₂O₅ in Contact / Ni in hydrogenation) (2 marks)"
+          "High melting points / high density (1)",
+          "Named example of high melting point/density (e.g. iron melts at 1538 °C) (1)",
+          "Variable oxidation states / form ions with more than one charge (1)",
+          "Named example of variable oxidation states (e.g. Fe²⁺ and Fe³⁺ / Cu⁺ and Cu²⁺) (1)",
+          "Coloured compounds / coloured ions (1)",
+          "Named example of coloured compound/ion (e.g. Cu²⁺ blue / MnO₄⁻ purple / Fe³⁺ yellow-brown) (1)",
+          "Catalytic activity / act as catalysts (1)",
+          "Named example of catalyst (e.g. iron in Haber process / V₂O₅ in Contact process / Ni in hydrogenation) (1)"
         ],
         commonError: "Students often forget to include a specific named example for each property, losing the 'with example' mark in each pair.",
         guideRef: "Transition Elements",
@@ -820,10 +825,10 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             id: "chem-periodic-bm2-04",
             question: "Going down Group VII, why does reactivity decrease?",
             options: [
-              "The outer electron is lost more easily",
-              "The atoms have fewer outer electrons",
-              "The incoming electron is added to a shell further from the nucleus and more shielded, so is gained less easily",
-              "The atoms become smaller down the group"
+              "The outer electrons are held more tightly in a smaller shell, so they are lost less easily",
+              "The atoms have fewer electrons in their outer shell down the group, so they need to gain more electrons",
+              "The incoming electron joins a shell further from the nucleus and more shielded, so is gained less easily",
+              "The atoms become smaller down the group with less shielding, reducing the pull on an incoming electron"
             ],
             answerIndex: 2,
             explanation: "Halogens react by gaining an electron. Down the group there are more shells, so the incoming electron joins a shell further from the nucleus and more shielded by inner shells. The attraction is weaker, so the electron is gained less easily and reactivity falls.",
@@ -915,10 +920,10 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             id: "chem-periodic-bm2-09",
             question: "Caesium (Cs) is below potassium in Group I. Which observation is most likely when a small piece of caesium is dropped into water?",
             options: [
-              "A slow steady fizz, less vigorous than sodium",
-              "No visible reaction",
+              "A slow, gentle fizz less vigorous than sodium, producing CsOH and oxygen",
+              "No visible reaction at room temperature because caesium is coated in oxide",
               "An extremely violent, possibly explosive reaction producing CsOH and hydrogen",
-              "It dissolves quietly forming an acidic solution"
+              "It dissolves quietly without fizzing to form an acidic solution of CsH"
             ],
             answerIndex: 2,
             explanation: "Reactivity increases down Group I, so Cs (below K) reacts more violently than potassium — typically explosively. The products are still a hydroxide (CsOH) and hydrogen, and the solution is alkaline, not acidic.",
@@ -1042,10 +1047,10 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             id: "chem-periodic-bm3-06",
             question: "Silicon has the highest melting point of the Period 3 elements. This is because silicon:",
             options: [
-              "Is a metal with strong metallic bonding",
+              "Is a reactive metal with very strong metallic bonding between positive ions",
               "Has a giant covalent (macromolecular) structure with many strong covalent bonds",
-              "Exists as small Si₂ molecules with weak forces",
-              "Has the most delocalised electrons"
+              "Exists as small Si₂ molecules held together by strong intermolecular forces",
+              "Has the highest number of delocalised electrons per atom across Period 3"
             ],
             answerIndex: 1,
             explanation: "Silicon has a giant covalent structure: each atom is bonded to four others in a continuous network. A huge amount of energy is needed to break these many strong covalent bonds, giving a very high melting point. It is not metallic and does not form small molecules.",
@@ -1061,10 +1066,10 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             id: "chem-periodic-bm3-07",
             question: "Across a period the atomic radius decreases. The best explanation is that:",
             options: [
-              "More electron shells are added, pulling electrons in",
-              "The number of protons increases while electrons fill the same shell, so the stronger nuclear charge pulls the shell in",
-              "The atoms lose electrons across the period",
-              "The number of neutrons decreases"
+              "More electron shells are added across the period, increasing shielding and pulling outer electrons inward",
+              "Proton number increases while electrons enter the same shell, so stronger nuclear charge pulls the shell in",
+              "The atoms lose outer-shell electrons across the period, leaving fewer occupied shells around the nucleus",
+              "The number of neutrons decreases across the period, making the nucleus smaller and shrinking the atom"
             ],
             answerIndex: 1,
             explanation: "Across a period electrons are added to the same outer shell while the proton number rises. The shell stays the same distance out, but the greater nuclear charge pulls it in more strongly, so the atom gets smaller. No new shells are added across a period.",
@@ -1174,10 +1179,10 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             id: "chem-periodic-bm4-03",
             question: "When a Group I metal reacts with water, the resulting solution is tested with universal indicator. The colour seen is most likely:",
             options: [
-              "Red",
-              "Green",
+              "Dark red",
+              "Bright green",
               "Purple/violet",
-              "Orange"
+              "Pale orange"
             ],
             answerIndex: 2,
             explanation: "Group I metals form a metal hydroxide (a strong alkali) which gives a high pH. Universal indicator turns purple/violet at pH 13–14. Red would indicate a strong acid.",
@@ -1226,10 +1231,10 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             id: "chem-periodic-bm4-06",
             question: "An element is a hard solid with a high melting point, forms a green compound and acts as a catalyst. In which part of the periodic table is it found?",
             options: [
-              "Group I",
-              "Group VII",
+              "Group I (the alkali metals)",
+              "Group VII (the halogens)",
               "The transition (d-block) elements",
-              "Group 0"
+              "Group 0 (the noble gases)"
             ],
             answerIndex: 2,
             explanation: "High melting point, hardness, coloured compounds and catalytic activity are all characteristic of the transition elements. Group I metals are soft and form white compounds; Group VII are non-metals; Group 0 are inert gases.",
@@ -1335,8 +1340,10 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             marks: 5,
             modelAnswer: "(a) Z is in Group I (1 outer electron) and Period 4 (4 occupied shells).\n\n(b) Z is a metal. It has 1 outer electron, which it loses to form a 1+ ion (Z⁺).\n\n(c) Z is potassium (K).",
             markScheme: [
-              "(a) Group I (1); Period 4 (1)",
-              "(b) Metal (1); forms a 1+ ion / Z⁺ (1)",
+              "(a) Group I / Group 1 (1)",
+              "(a) Period 4 (1)",
+              "(b) Metal (1)",
+              "(b) Forms a 1+ ion / Z⁺ (1)",
               "(c) Potassium / K (1)"
             ],
             commonError: "Students sometimes count the shells as the group number or vice versa — remember group = outer electrons, period = number of shells.",
@@ -1349,7 +1356,8 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             marks: 4,
             modelAnswer: "(a) Any two: the sodium floats on the surface; it melts into a shiny ball; it moves/fizzes on the surface; effervescence (hydrogen gas) is seen; it gradually disappears.\n\n(b) Potassium reacts more vigorously than sodium, and the hydrogen produced ignites with a lilac flame.\n\n(c) Potassium + water → potassium hydroxide + hydrogen.",
             markScheme: [
-              "(a) Any two correct observations: floats / melts into a ball / moves on surface / fizzes / disappears — 1 mark each (2)",
+              "(a) First observation: floats on the surface / melts into a shiny ball (1)",
+              "(a) Second observation: fizzes / effervescence / moves on surface / disappears (1)",
               "(b) More vigorous / lilac flame / hydrogen ignites (1)",
               "(c) Potassium + water → potassium hydroxide + hydrogen (1)"
             ],
@@ -1427,9 +1435,12 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             marks: 6,
             modelAnswer: "(a) 2Na(s) + 2H₂O(l) → 2NaOH(aq) + H₂(g)\n\n(b) Moles of Na = mass / Ar = 0.69 / 23 = 0.030 mol.\n\n(c) From the equation, 2 mol Na produce 1 mol H₂, so moles of H₂ = 0.030 / 2 = 0.015 mol. Volume = moles × 24 000 = 0.015 × 24 000 = 360 cm³.",
             markScheme: [
-              "(a) Correct balanced equation 2Na + 2H₂O → 2NaOH + H₂ (1); correct state symbols (s)(l)(aq)(g) (1)",
+              "(a) Correct balanced equation: 2Na + 2H₂O → 2NaOH + H₂ (1)",
+              "(a) Correct state symbols: (s), (l), (aq), (g) (1)",
               "(b) Moles Na = 0.69 / 23 = 0.030 mol (1)",
-              "(c) Moles H₂ = 0.015 mol using 2:1 ratio (1); volume = moles × 24 000 (1); = 360 cm³ (1)"
+              "(c) Moles H₂ = 0.030 / 2 = 0.015 mol using 2:1 ratio (1)",
+              "(c) Volume = 0.015 × 24 000 (1)",
+              "(c) Volume = 360 cm³ (1)"
             ],
             commonError: "The most common error is using a 1:1 ratio of Na to H₂; the balanced equation gives a 2:1 ratio, so the moles of H₂ are half the moles of Na.",
             guideRef: "Group I — The Alkali Metals",
@@ -1460,8 +1471,9 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             modelAnswer: "(a) 2M + 2H₂O → 2MOH + H₂.\n\n(b) A salt (and water) is formed; the reaction is a neutralisation (acid + alkali → salt + water).\n\n(c) Group I metals are very reactive and would otherwise react with oxygen and moisture (water vapour) in the air; storing them under oil keeps air and water away from the metal.",
             markScheme: [
               "(a) 2M + 2H₂O → 2MOH + H₂ (1)",
-              "(b) Salt (+ water) formed (1); neutralisation reaction (1)",
-              "(c) They are very reactive / react with oxygen and water in air; oil excludes air and moisture (1)"
+              "(b) A salt (and water) is formed (1)",
+              "(b) Neutralisation reaction (1)",
+              "(c) Very reactive / react with oxygen and water in air; oil keeps air and moisture away (1)"
             ],
             commonError: "In (c) students sometimes say only 'to stop it reacting' without naming what it reacts with (oxygen/water in the air).",
             guideRef: "Group I — The Alkali Metals",
@@ -1478,8 +1490,11 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             marks: 5,
             modelAnswer: "(a) Any three: francium is a metal with one outer electron; it forms a 1+ ion (Fr⁺); it would react extremely violently (explosively) with water; it has a very low melting point; it would form a hydroxide FrOH which is strongly alkaline; it is soft and has a low density typical of Group I.\n\n(b) Francium has even more electron shells than caesium, so its single outer electron is even further from the nucleus and even more shielded by inner shells. The nuclear attraction on the outer electron is the weakest of all Group I metals, so the electron is lost most easily — making francium the most reactive.",
             markScheme: [
-              "(a) Any three valid predictions: 1 outer electron / forms 1+ ion / reacts explosively with water / very low melting point / soft / forms strongly alkaline hydroxide — 1 mark each (3)",
-              "(b) More shells / outer electron further from nucleus and more shielded than in Cs (1); weakest attraction → electron lost most easily → most reactive (1)"
+              "(a) Prediction 1: metal with 1 outer electron / forms a 1+ ion (Fr⁺) (1)",
+              "(a) Prediction 2: reacts extremely violently / explosively with water / forms strongly alkaline hydroxide FrOH (1)",
+              "(a) Prediction 3: very low melting point / soft / low density (1)",
+              "(b) More electron shells than caesium, so outer electron is further from nucleus and more shielded (1)",
+              "(b) Weakest nuclear attraction on outer electron, so electron is lost most easily (1)"
             ],
             commonError: "Students sometimes predict francium forms a 2+ ion or an acidic solution; all Group I metals form 1+ ions and alkaline hydroxides.",
             guideRef: "Group I — The Alkali Metals",
@@ -1512,9 +1527,11 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             marks: 5,
             modelAnswer: "(a) The pH is high, in the range 13–14 (strongly alkaline). Universal indicator turns purple/violet.\n\n(b) NaOH(aq) → Na⁺(aq) + OH⁻(aq); it is the OH⁻(aq) ions that make the solution alkaline.\n\n(c) The salt formed is sodium chloride (NaCl). The reaction is neutralisation (acid + alkali → salt + water).",
             markScheme: [
-              "(a) pH 13–14 / strongly alkaline (1); universal indicator purple/violet (1)",
-              "(b) Solution contains OH⁻(aq) ions / NaOH → Na⁺ + OH⁻ (1)",
-              "(c) Sodium chloride / NaCl (1); neutralisation (1)"
+              "(a) pH 13–14 / strongly alkaline (1)",
+              "(a) Universal indicator turns purple / violet (1)",
+              "(b) Solution contains OH⁻(aq) ions / NaOH(aq) → Na⁺(aq) + OH⁻(aq) (1)",
+              "(c) Sodium chloride / NaCl (1)",
+              "(c) Neutralisation reaction (1)"
             ],
             commonError: "Students sometimes state the indicator turns blue (pH ~9); a strong alkali like NaOH gives a purple/violet colour at pH 13–14.",
             guideRef: "Group I — The Alkali Metals",
@@ -1538,7 +1555,9 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             marks: 4,
             modelAnswer: "(a) Chlorine: pale yellow-green gas. Bromine: red-brown (orange-brown) liquid. Iodine: grey-black solid (gives off a purple vapour).\n\n(b) Reactivity decreases down Group VII (Cl > Br > I).",
             markScheme: [
-              "(a) Chlorine: (pale) yellow-green / green gas (1); Bromine: red-brown / orange-brown liquid (1); Iodine: grey-black / dark solid (1)",
+              "(a) Chlorine: pale yellow-green / green gas (1)",
+              "(a) Bromine: red-brown / orange-brown liquid (1)",
+              "(a) Iodine: grey-black / dark solid (1)",
               "(b) Reactivity decreases down the group (1)"
             ],
             commonError: "Students often muddle the states — remember the sequence gas, liquid, solid as you go down Cl, Br, I.",
@@ -1552,8 +1571,9 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             modelAnswer: "(a) Cl₂ + 2KBr → 2KCl + Br₂.\n\n(b) Cl₂(aq) + 2Br⁻(aq) → 2Cl⁻(aq) + Br₂(aq).\n\n(c) The colourless solution turns orange-brown as bromine (Br₂) is formed.",
             markScheme: [
               "(a) Cl₂ + 2KBr → 2KCl + Br₂ (1)",
-              "(b) Cl₂(aq) + 2Br⁻(aq) → 2Cl⁻(aq) + Br₂(aq) — correct species (1), balanced with state symbols (1)",
-              "(c) Colourless → orange-brown / orange / yellow-brown (1)"
+              "(b) Correct balanced ionic equation: Cl₂ + 2Br⁻ → 2Cl⁻ + Br₂ (1)",
+              "(b) Correct state symbols: (aq) for all four aqueous species (1)",
+              "(c) Colourless solution turns orange-brown / orange / yellow-brown (1)"
             ],
             commonError: "In the ionic equation, students often leave in the spectator potassium ions (K⁺) or forget to balance the bromide ions (2Br⁻).",
             guideRef: "Group VII — The Halogens",
@@ -1591,8 +1611,11 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             marks: 5,
             modelAnswer: "(a) Potassium chloride: no colour change (chlorine cannot displace chloride / cannot displace itself). Potassium bromide: the solution turns orange-brown as bromine is displaced. Potassium iodide: the solution turns dark brown as iodine is displaced.\n\n(b) With chlorine water, potassium chloride shows no reaction at all — it looks exactly the same as any non-reacting solution. Because there is no observable change, chlorine water alone gives no positive evidence to identify the chloride; it can only confirm chloride by elimination (the tube that does not react after the other two are identified).",
             markScheme: [
-              "(a) KCl: no change (1); KBr: orange-brown (1); KI: dark brown (1)",
-              "(b) KCl gives no reaction / no colour change (1); a 'no change' result is not a positive identification / only identifiable by elimination (1)"
+              "(a) Potassium chloride (KCl): no colour change / no reaction (1)",
+              "(a) Potassium bromide (KBr): turns orange-brown as bromine is displaced (1)",
+              "(a) Potassium iodide (KI): turns dark brown as iodine is displaced (1)",
+              "(b) Potassium chloride gives no reaction and looks the same as any non-reacting solution (1)",
+              "(b) No observable change is not positive evidence / can only be confirmed by elimination (1)"
             ],
             commonError: "Students sometimes claim chlorine turns the chloride solution green; chlorine cannot displace chloride, so there is no colour change at all.",
             guideRef: "Group VII — The Halogens",
@@ -1610,8 +1633,10 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             modelAnswer: "(a) H₂ + Cl₂ → 2HCl.\n\n(b) The acid formed is hydrochloric acid. This shows that hydrogen chloride is acidic in water because it ionises (dissociates) to release H⁺ ions in aqueous solution.\n\n(c) Hydrogen reacts more readily with chlorine than with iodine, because chlorine is more reactive than iodine (reactivity decreases down Group VII). The reaction of hydrogen with iodine is slow and reversible/incomplete.",
             markScheme: [
               "(a) H₂ + Cl₂ → 2HCl (1)",
-              "(b) Hydrochloric acid (1); HCl ionises / releases H⁺ ions in water (1)",
-              "(c) Chlorine (reacts more readily) (1); because chlorine is more reactive than iodine / reactivity decreases down the group (1)"
+              "(b) Hydrochloric acid (1)",
+              "(b) HCl ionises / dissociates to release H⁺ ions in aqueous solution (1)",
+              "(c) Hydrogen reacts more readily with chlorine (1)",
+              "(c) Chlorine is more reactive than iodine / reactivity decreases down Group VII (1)"
             ],
             commonError: "In (a) students may forget the coefficient 2 in front of HCl. In (b) some name 'chloric acid' instead of hydrochloric acid.",
             guideRef: "Group VII — The Halogens",
@@ -1628,9 +1653,12 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             marks: 6,
             modelAnswer: "(a) Oxidation is the loss of electrons; reduction is the gain of electrons.\n\n(b) The iodide ions (I⁻) are oxidised because they lose electrons (2I⁻ → I₂ + 2e⁻). The chlorine (Cl₂) is reduced because it gains electrons (Cl₂ + 2e⁻ → 2Cl⁻).\n\n(c) Iodine is less reactive than chlorine (reactivity decreases down Group VII), so iodine cannot take electrons from chloride ions. A halogen can only displace a halide that is LESS reactive than itself; since chlorine is more reactive than iodine, iodine cannot displace chloride.",
             markScheme: [
-              "(a) Oxidation = loss of electrons (1); reduction = gain of electrons (1)",
-              "(b) Iodide ions oxidised (lose electrons) (1); chlorine reduced (gains electrons) (1)",
-              "(c) Iodine less reactive than chlorine (1); a halogen only displaces a less reactive halide, so no reaction (1)"
+              "(a) Oxidation is the loss of electrons (1)",
+              "(a) Reduction is the gain of electrons (1)",
+              "(b) Iodide ions (I⁻) are oxidised because they lose electrons (1)",
+              "(b) Chlorine (Cl₂) is reduced because it gains electrons (1)",
+              "(c) Iodine is less reactive than chlorine (1)",
+              "(c) A halogen can only displace a less reactive halide / iodine cannot take electrons from chloride ions (1)"
             ],
             commonError: "Students mix up OIL RIG — remember Oxidation Is Loss, Reduction Is Gain of electrons.",
             guideRef: "Group VII — The Halogens",
@@ -1649,8 +1677,10 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             modelAnswer: "(a) Cl₂(aq) + 2I⁻(aq) → 2Cl⁻(aq) + I₂(aq).\n\n(b) From the equation, 1 mol Cl₂ produces 1 mol I₂, so moles of I₂ = 0.020 mol.\n\n(c) Mr of I₂ = 2 × 127 = 254. Mass of I₂ = moles × Mr = 0.020 × 254 = 5.08 g.",
             markScheme: [
               "(a) Cl₂(aq) + 2I⁻(aq) → 2Cl⁻(aq) + I₂(aq) (1)",
-              "(b) Ratio Cl₂ : I₂ = 1 : 1 (1); moles I₂ = 0.020 mol (1)",
-              "(c) Mr(I₂) = 254 (1); mass = 0.020 × 254 = 5.08 g (1)"
+              "(b) 1:1 ratio / 1 mol Cl₂ produces 1 mol I₂ (1)",
+              "(b) Moles of I₂ = 0.020 mol (1)",
+              "(c) Mr(I₂) = 2 × 127 = 254 (1)",
+              "(c) Mass = 0.020 × 254 = 5.08 g (1)"
             ],
             commonError: "Students often use Ar of iodine (127) instead of Mr of the I₂ molecule (254) when calculating the mass of iodine produced.",
             guideRef: "Group VII — The Halogens",
@@ -1680,9 +1710,11 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             marks: 5,
             modelAnswer: "(a) Fluorine is a gas at room temperature (it is above chlorine, so even lower boiling) and is more reactive than chlorine (reactivity increases up Group VII).\n\n(b) Fluorine would displace chloride ions, forming chlorine: F₂ + 2Cl⁻ → 2F⁻ + Cl₂. This happens because fluorine is more reactive than chlorine, so it can take electrons from chloride ions.\n\n(c) Fluorine is extremely reactive (the most reactive of all halogens), so it reacts violently and is very toxic/corrosive, making it hazardous to handle safely.",
             markScheme: [
-              "(a) Gas at room temperature (1); more reactive than chlorine (1)",
-              "(b) Displaces chloride / forms chlorine, F₂ + 2Cl⁻ → 2F⁻ + Cl₂ (1); because fluorine is more reactive than chlorine (1)",
-              "(c) Fluorine is extremely reactive / toxic / corrosive → dangerous to handle (1)"
+              "(a) Gas at room temperature (1)",
+              "(a) More reactive than chlorine (1)",
+              "(b) Fluorine displaces chloride ions to form chlorine / F₂ + 2Cl⁻ → 2F⁻ + Cl₂ (1)",
+              "(b) Because fluorine is more reactive than chlorine / takes electrons from chloride ions (1)",
+              "(c) Fluorine is extremely reactive / reacts violently / toxic / corrosive / hazardous (1)"
             ],
             commonError: "Students sometimes say fluorine cannot displace chloride; in fact fluorine is MORE reactive than chlorine and does displace it.",
             guideRef: "Group VII — The Halogens",
@@ -1700,9 +1732,12 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             marks: 6,
             modelAnswer: "(a) Bromine gives an orange-brown vapour; iodine gives a purple (violet) vapour.\n\n(b) Both chlorine and iodine exist as simple diatomic molecules held together by weak intermolecular (van der Waals) forces. Iodine molecules have more electrons than chlorine molecules, so the intermolecular forces between iodine molecules are stronger. More energy is needed to separate iodine molecules, so iodine is a solid while chlorine, with weaker forces, is a gas.\n\n(c) A halide ion has a charge of 1−. It forms when a halogen atom gains one electron to complete its outer shell (e.g. Cl + e⁻ → Cl⁻).",
             markScheme: [
-              "(a) Bromine: orange-brown vapour (1); iodine: purple/violet vapour (1)",
-              "(b) Weak intermolecular forces between molecules (1); iodine has more electrons → stronger forces → solid, more energy to separate (1)",
-              "(c) 1− charge (1); halogen atom gains one electron to fill its outer shell (1)"
+              "(a) Bromine: orange-brown vapour (1)",
+              "(a) Iodine: purple / violet vapour (1)",
+              "(b) Simple diatomic molecules held together by weak intermolecular forces (1)",
+              "(b) Iodine molecules have more electrons so stronger intermolecular forces / more energy needed to separate (1)",
+              "(c) Charge is 1− (1)",
+              "(c) Halogen atom gains one electron to complete its outer shell (1)"
             ],
             commonError: "Students sometimes say iodine has 'stronger bonds'; the covalent bond within I₂ is not what is overcome on melting — it is the weak forces BETWEEN molecules.",
             guideRef: "Group VII — The Halogens",
@@ -1719,9 +1754,13 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             marks: 7,
             modelAnswer: "(a) Solution P is potassium iodide (KI). Bromine is more reactive than iodine, so it displaces iodide ions to form iodine, which is dark brown. Solution Q is potassium chloride (KCl): bromine is less reactive than chlorine, so it cannot displace chloride, giving no change.\n\n(b) Br₂(aq) + 2I⁻(aq) → 2Br⁻(aq) + I₂(aq).\n\n(c) Bromine water gives no reaction with KCl, so a 'no change' result cannot positively prove the solution is chloride — any non-reacting solution would look the same. Chlorine water would react with KI (but not KCl), so it does not help either; a better choice is to add silver nitrate solution (acidified with dilute nitric acid), which gives a white precipitate of silver chloride with chloride ions.",
             markScheme: [
-              "(a) P is KI (1); justified — bromine displaces iodide → dark brown iodine (1); Q is KCl, no displacement as bromine less reactive than chlorine (1)",
-              "(b) Br₂(aq) + 2I⁻(aq) → 2Br⁻(aq) + I₂(aq) — species (1), balanced with states (1)",
-              "(c) 'No change' is not positive proof of chloride (1); suggest acidified silver nitrate → white precipitate (1)"
+              "(a) Solution P is potassium iodide / KI (1)",
+              "(a) Bromine is more reactive than iodine so it displaces iodide ions to form dark brown iodine (1)",
+              "(a) Solution Q is potassium chloride / KCl because bromine is less reactive than chlorine and cannot displace chloride (1)",
+              "(b) Correct balanced ionic equation: Br₂ + 2I⁻ → 2Br⁻ + I₂ (1)",
+              "(b) Correct state symbols: (aq) for all four species (1)",
+              "(c) No reaction / 'no change' cannot positively prove chloride is present (1)",
+              "(c) Add acidified silver nitrate solution (gives white precipitate of silver chloride) (1)"
             ],
             commonError: "Students often state that bromine 'turns KCl green'; bromine cannot react with chloride, so there is genuinely no change, which is why a different test is needed.",
             guideRef: "Group VII — The Halogens",
@@ -1748,7 +1787,9 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             modelAnswer: "(a) They all have a full outer electron shell (helium has 2 electrons; neon and argon have 8 in their outer shell).\n\n(b) Helium: filling balloons/airships (or cooling superconducting magnets). Neon: electric discharge tubes (neon signs/lighting). Argon: filling (incandescent) light bulbs (or shielding gas in welding).",
             markScheme: [
               "(a) Full outer electron shell (1)",
-              "(b) Helium: balloons / airships / cooling magnets / divers' gas (1); Neon: discharge tubes / advertising signs (1); Argon: light bulbs / welding shield / double glazing (1)"
+              "(b) Helium: filling balloons / airships / cooling superconducting magnets (1)",
+              "(b) Neon: electric discharge tubes / neon signs / lighting (1)",
+              "(b) Argon: filling light bulbs / shielding gas in welding (1)"
             ],
             commonError: "Students sometimes give the same use for two gases; each noble gas should be matched to its own typical use.",
             guideRef: "Group 0 — The Noble Gases",
@@ -1774,9 +1815,10 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             marks: 4,
             modelAnswer: "(a) Air contains oxygen. The metal filament becomes very hot when the bulb is on; the oxygen in air would react with (oxidise) the hot filament, causing it to burn away quickly and the bulb to fail.\n\n(b) Argon is chemically inert (full outer shell), so it does not react with the hot filament; it provides an unreactive atmosphere that lets the filament glow without burning away.\n\n(c) In a vacuum the hot filament would evaporate (sublime) more quickly; the inert gas pressure reduces evaporation of the filament, prolonging its life.",
             markScheme: [
-              "(a) Air contains oxygen (1); oxygen would oxidise / react with the hot filament (1)",
-              "(b) Argon is inert / unreactive, so does not react with the filament (1)",
-              "(c) A gas reduces evaporation/sublimation of the hot filament compared with a vacuum (1)"
+              "(a) Air contains oxygen (1)",
+              "(a) Oxygen would react with / oxidise the hot filament so it burns away (1)",
+              "(b) Argon is inert / unreactive, so does not react with the hot filament (1)",
+              "(c) Inert gas pressure reduces evaporation / sublimation of the hot filament compared with a vacuum (1)"
             ],
             commonError: "For (c) students may say a vacuum would let the filament react; in fact there is nothing to react with in a vacuum — the issue is faster evaporation of the filament.",
             guideRef: "Group 0 — The Noble Gases",
@@ -1813,11 +1855,15 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             marks: 9,
             modelAnswer: "(a) 1. High melting point / high density: e.g. iron melts at 1538 °C (far above sodium's 98 °C). 2. Variable oxidation states: e.g. iron forms Fe²⁺ and Fe³⁺; copper forms Cu⁺ and Cu²⁺. 3. Coloured compounds: e.g. copper(II) sulfate solution is blue (Cu²⁺); iron(III) solutions are yellow-brown (Fe³⁺); manganate(VII) is purple (MnO₄⁻). 4. Catalytic activity: e.g. iron catalyses the Haber process; vanadium(V) oxide catalyses the Contact process; nickel catalyses the hydrogenation of oils.\n\n(b) Iron, like Group I metals, conducts electricity (and heat) and is a solid that forms positive ions.",
             markScheme: [
-              "(a) High melting point/density with example (2)",
-              "(a) Variable oxidation states with example, e.g. Fe²⁺/Fe³⁺ (2)",
-              "(a) Coloured compounds with example, e.g. Cu²⁺ blue (2)",
-              "(a) Catalytic activity with example, e.g. Fe in Haber / V₂O₅ in Contact (2)",
-              "(b) Any shared property: conducts electricity / forms positive ions / is a solid metal (1)"
+              "(a) High melting point / high density (1)",
+              "(a) Named example for high melting point/density (e.g. iron melts at 1538 °C) (1)",
+              "(a) Variable oxidation states / form ions with different charges (1)",
+              "(a) Named example for variable oxidation states (e.g. Fe²⁺ and Fe³⁺ / Cu⁺ and Cu²⁺) (1)",
+              "(a) Coloured compounds / coloured ions (1)",
+              "(a) Named example for coloured compounds (e.g. copper(II) sulfate blue / Cu²⁺ blue / Fe³⁺ yellow-brown / MnO₄⁻ purple) (1)",
+              "(a) Catalytic activity / act as catalysts (1)",
+              "(a) Named example for catalyst (e.g. iron in Haber process / vanadium(V) oxide in Contact process / nickel in hydrogenation) (1)",
+              "(b) Shared property: conducts electricity / conducts heat / forms positive ions / solid metal (1)"
             ],
             commonError: "Students lose the 'example' mark by stating the property only; each of the four properties needs a specific named example.",
             guideRef: "Transition Elements",
@@ -1834,9 +1880,12 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             marks: 6,
             modelAnswer: "(a) Iron has a much higher melting point (1538 °C vs 98 °C) and is much harder/stronger and denser than sodium, which is soft enough to cut with a knife.\n\n(b) Iron forms more than one ion (Fe²⁺ and Fe³⁺) whereas sodium forms only Na⁺; iron is much less reactive than sodium (sodium reacts violently with water, iron only slowly); iron forms coloured compounds whereas sodium compounds are white.\n\n(c) Iron is hard, strong and has a high melting point, so it keeps its shape and strength as a structural material. It is also far less reactive than sodium, so it does not react dangerously with water or air. Sodium is too soft and far too reactive (it would react violently with rain/moisture), so it is unusable for a car body.",
             markScheme: [
-              "(a) Any two: iron higher melting point / harder / stronger / denser than sodium — 1 mark each (2)",
-              "(b) Any two: iron variable oxidation states vs Na only 1+ / iron less reactive than Na / iron coloured compounds vs white — 1 mark each (2)",
-              "(c) Iron is hard/strong/high melting → keeps shape (1); iron much less reactive than sodium / sodium reacts with water and air (1)"
+              "(a) Physical difference 1: iron has a much higher melting point than sodium (1)",
+              "(a) Physical difference 2: iron is harder / stronger / denser than soft sodium (1)",
+              "(b) Chemical difference 1: iron forms variable oxidation states (Fe²⁺ and Fe³⁺) vs sodium only Na⁺ / iron forms coloured compounds vs white (1)",
+              "(b) Chemical difference 2: iron is much less reactive than sodium (1)",
+              "(c) Iron is hard / strong / high melting point so it keeps its shape as a structural material (1)",
+              "(c) Iron is much less reactive than sodium / sodium reacts violently with water and air (1)"
             ],
             commonError: "Students often address only strength and forget reactivity (or vice versa); a full comparison for (c) needs both the mechanical and the reactivity reasons.",
             guideRef: "Transition Elements",
@@ -1853,9 +1902,12 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             marks: 6,
             modelAnswer: "(a) A catalyst is a substance that increases the rate of a chemical reaction without being used up (chemically unchanged at the end).\n\n(b) From the equation, 2 mol H₂O₂ produce 1 mol O₂, so moles of O₂ = 0.020 / 2 = 0.010 mol. Volume of O₂ = moles × 24 000 = 0.010 × 24 000 = 240 cm³.\n\n(c) Weigh the manganese(IV) oxide before the reaction. After the reaction, filter it off, dry it and weigh it again. If its mass is unchanged (and it could be reused to speed up another batch), this shows it was not used up and was acting as a catalyst.",
             markScheme: [
-              "(a) Speeds up a reaction without being used up / chemically unchanged (1)",
-              "(b) Ratio H₂O₂ : O₂ = 2 : 1, moles O₂ = 0.010 mol (1); volume = moles × 24 000 (1); = 240 cm³ (1)",
-              "(c) Weigh MnO₂ before and after / recover by filtering (1); same mass shows it is not used up / can be reused (1)"
+              "(a) Increases the rate of a reaction without being used up / chemically unchanged at the end (1)",
+              "(b) Ratio H₂O₂ : O₂ = 2 : 1, so moles of O₂ = 0.020 / 2 = 0.010 mol (1)",
+              "(b) Volume = 0.010 × 24 000 (1)",
+              "(b) Volume = 240 cm³ (1)",
+              "(c) Weigh MnO₂ before the reaction, then filter, dry and weigh it again afterwards (1)",
+              "(c) Mass is unchanged / can be reused, showing it is not used up (1)"
             ],
             commonError: "In (b) students may forget the 2:1 ratio and use 0.020 mol of O₂; the moles of oxygen are half the moles of hydrogen peroxide.",
             guideRef: "Transition Elements",
@@ -1884,9 +1936,13 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             marks: 7,
             modelAnswer: "(a) The suggestion is incorrect. Iron(II) (Fe²⁺) solutions are pale green, not blue, and iron(III) (Fe³⁺) solutions are yellow-brown. Neither iron ion is blue, so the solution is unlikely to contain an iron ion at all.\n\n(b) A blue solution is most likely to contain copper(II) ions (Cu²⁺).\n\n(c) Add sodium hydroxide solution to a sample. Fe²⁺ gives a green precipitate of iron(II) hydroxide [Fe²⁺(aq) + 2OH⁻(aq) → Fe(OH)₂(s)]. Fe³⁺ gives a red-brown precipitate of iron(III) hydroxide [Fe³⁺(aq) + 3OH⁻(aq) → Fe(OH)₃(s)]. The colour of the precipitate distinguishes the two ions.",
             markScheme: [
-              "(a) Suggestion is wrong (1); Fe²⁺ is pale green (1); Fe³⁺ is yellow-brown (1)",
+              "(a) The suggestion is incorrect / wrong (1)",
+              "(a) Fe²⁺ solution is pale green (1)",
+              "(a) Fe³⁺ solution is yellow-brown (1)",
               "(b) Copper(II) / Cu²⁺ (1)",
-              "(c) Add sodium hydroxide solution (1); Fe²⁺ → green precipitate (1); Fe³⁺ → red-brown precipitate (1)"
+              "(c) Add sodium hydroxide solution (1)",
+              "(c) Fe²⁺ forms a green precipitate / Fe(OH)₂ (1)",
+              "(c) Fe³⁺ forms a red-brown precipitate / Fe(OH)₃ (1)"
             ],
             commonError: "Students often accept 'blue = iron' because copper(II) blue is famous but they associate the colour with whatever metal is mentioned in the question; check the actual ion colours.",
             guideRef: "Transition Elements",
@@ -1904,9 +1960,11 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             marks: 5,
             modelAnswer: "(a) The catalyst is iron (Fe). The reaction is N₂(g) + 3H₂(g) ⇌ 2NH₃(g).\n\n(b) The catalyst in the Contact process is vanadium(V) oxide (V₂O₅).\n\n(c) The catalyst is nickel (Ni). The process hardens liquid vegetable oils into solid fats, used to make margarine.",
             markScheme: [
-              "(a) Iron / Fe (1); N₂ + 3H₂ ⇌ 2NH₃ (1)",
+              "(a) Iron / Fe (1)",
+              "(a) N₂ + 3H₂ ⇌ 2NH₃ (1)",
               "(b) Vanadium(V) oxide / V₂O₅ (1)",
-              "(c) Nickel / Ni (1); used to make margarine / harden oils into fats (1)"
+              "(c) Nickel / Ni (1)",
+              "(c) Hardens liquid oils into solid fats / used to make margarine (1)"
             ],
             commonError: "Students sometimes swap the Haber and Contact catalysts; iron is for the Haber process and V₂O₅ for the Contact process.",
             guideRef: "Transition Elements",
@@ -1923,9 +1981,11 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             marks: 5,
             modelAnswer: "(a) Zinc does not show variable oxidation states (it forms only Zn²⁺) and does not form coloured compounds (its compounds are white/colourless).\n\n(b) Zinc shares properties such as being a fairly hard, dense metal with a relatively high melting point (or it has some catalytic uses), like other d-block metals.\n\n(c) Recognising zinc as a special case prevents the error of assuming every d-block metal must have variable oxidation states and coloured compounds. It shows that the 'typical' transition properties are general trends with exceptions, so each metal's actual behaviour should be checked rather than assumed.",
             markScheme: [
-              "(a) Only one oxidation state / forms only Zn²⁺ (1); white/colourless compounds, not coloured (1)",
-              "(b) Any valid shared property: hard / dense / fairly high melting point / metallic (1)",
-              "(c) Avoids assuming all d-block metals are identical (1); typical properties are general trends with exceptions (1)"
+              "(a) Does not show variable oxidation states / forms only Zn²⁺ (1)",
+              "(a) Does not form coloured compounds / compounds are white or colourless (1)",
+              "(b) Shared property: hard / dense / relatively high melting point / metallic (1)",
+              "(c) Prevents assuming every d-block metal has variable oxidation states and coloured compounds (1)",
+              "(c) Typical properties are general trends with exceptions so actual behaviour must be checked (1)"
             ],
             commonError: "Students often list coloured compounds and variable oxidation states as zinc properties; zinc is the common exception that lacks both.",
             guideRef: "Transition Elements",
@@ -1951,9 +2011,11 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             marks: 5,
             modelAnswer: "(a) Metals: Na, Mg, Al (Si is often classed as a metalloid/semi-metal). Non-metals: (Si,) P, S, Cl, Ar.\n\n(b) Metallic character decreases (and non-metallic character increases) from left to right across the period.\n\n(c) A metal property: good electrical conductivity / shiny / forms positive ions. A non-metal property: poor electrical conductor (insulator) / dull / forms negative ions or covalent bonds.",
             markScheme: [
-              "(a) Metals Na, Mg, Al (1); non-metals P, S, Cl, Ar (Si as metalloid accepted) (1)",
-              "(b) Metallic character decreases across the period (1)",
-              "(c) Metal property e.g. conducts electricity / shiny (1); non-metal property e.g. does not conduct / dull (1)"
+              "(a) Metals: Na, Mg, Al (1)",
+              "(a) Non-metals: P, S, Cl, Ar (accept Si as metalloid / semi-metal) (1)",
+              "(b) Metallic character decreases across the period from left to right (1)",
+              "(c) Metal property: good electrical conductivity / shiny / malleable (1)",
+              "(c) Non-metal property: poor electrical conductor / insulator / dull (1)"
             ],
             commonError: "Students sometimes class silicon as a clear metal or non-metal; at IGCSE it is best described as a metalloid (semi-metal) with intermediate properties.",
             guideRef: "Trends Across a Period",
@@ -1965,7 +2027,9 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             marks: 4,
             modelAnswer: "(a) Sodium oxide (Na₂O) is a basic oxide; aluminium oxide (Al₂O₃) is an amphoteric oxide; sulfur oxide (SO₃ or SO₂) is an acidic oxide.\n\n(b) Aluminium oxide is described as amphoteric (it reacts with both acids and bases).",
             markScheme: [
-              "(a) Na₂O basic (1); Al₂O₃ amphoteric (1); SO₃/SO₂ acidic (1)",
+              "(a) Sodium oxide (Na₂O) is a basic oxide (1)",
+              "(a) Aluminium oxide (Al₂O₃) is an amphoteric oxide (1)",
+              "(a) Sulfur oxide (SO₃ / SO₂) is an acidic oxide (1)",
               "(b) Amphoteric (1)"
             ],
             commonError: "Students sometimes call aluminium oxide 'neutral'; it is amphoteric, reacting with both acids and bases.",
@@ -1983,9 +2047,12 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             marks: 6,
             modelAnswer: "(a) Na, Mg and Al are metals with metallic bonding. From Na to Al the number of delocalised (outer) electrons per atom increases (1, 2 then 3) and the ions become smaller with a higher charge, so the metallic bond becomes stronger. Stronger bonding needs more energy to break, so the melting point rises.\n\n(b) Silicon has a giant covalent (macromolecular) structure in which each atom is covalently bonded to four others in a continuous network. A very large amount of energy is needed to break the many strong covalent bonds, so the melting point is very high.\n\n(c) Phosphorus (P₄) and sulfur (S₈) exist as simple molecules. The atoms within each molecule are covalently bonded, but the molecules are held to each other only by weak intermolecular (van der Waals) forces. Only a little energy is needed to overcome these weak forces, so the melting points are much lower than silicon's.",
             markScheme: [
-              "(a) Metallic bonding; more delocalised electrons / smaller more highly charged ions from Na to Al (1); stronger metallic bond → higher melting point (1)",
-              "(b) Giant covalent / macromolecular structure with strong covalent bonds (1); large energy needed to break many bonds → very high melting point (1)",
-              "(c) P₄ / S₈ are simple molecules (1); weak intermolecular forces between molecules → little energy to overcome → low melting point (1)"
+              "(a) Metallic bonding with more delocalised electrons and smaller, higher-charged ions from Na to Al (1)",
+              "(a) Stronger metallic bond needs more energy to break, so melting point rises (1)",
+              "(b) Giant covalent / macromolecular structure with many strong covalent bonds (1)",
+              "(b) Very large amount of energy needed to break the strong covalent bonds (1)",
+              "(c) Phosphorus (P₄) and sulfur (S₈) exist as simple molecules (1)",
+              "(c) Weak intermolecular forces between molecules require little energy to overcome (1)"
             ],
             commonError: "For (c) students often say 'phosphorus has weak bonds'; the covalent bonds within P₄ are strong — it is the forces BETWEEN molecules that are weak.",
             guideRef: "Trends Across a Period",
@@ -2004,9 +2071,11 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             marks: 5,
             modelAnswer: "(a) Magnesium forms Mg²⁺ (loses 2 electrons) and oxygen forms O²⁻ (gains 2 electrons). The charges balance one-to-one, so the formula is MgO.\n\n(b) Aluminium forms Al³⁺ (loses 3 electrons) and chlorine forms Cl⁻ (gains 1 electron). To balance the 3+ charge, three Cl⁻ are needed, giving AlCl₃.\n\n(c) Argon is a noble gas with a full outer electron shell, so it has no tendency to gain, lose or share electrons and therefore forms no compounds.",
             markScheme: [
-              "(a) Mg²⁺ and O²⁻ identified (1); formula MgO (1)",
-              "(b) Al³⁺ and Cl⁻ identified (1); formula AlCl₃ (1)",
-              "(c) Argon has a full outer shell / is inert, so forms no compounds (1)"
+              "(a) Magnesium forms Mg²⁺ and oxygen forms O²⁻ (1)",
+              "(a) Formula is MgO (charges balance 1:1) (1)",
+              "(b) Aluminium forms Al³⁺ and chlorine forms Cl⁻ (1)",
+              "(b) Formula is AlCl₃ (three Cl⁻ balance one Al³⁺) (1)",
+              "(c) Argon has a full outer electron shell / is a noble gas, so forms no compounds (1)"
             ],
             commonError: "Students sometimes write Mg₂O₂ for magnesium oxide; the formula should always be written in its simplest whole-number ratio (MgO).",
             guideRef: "Arrangement of the Periodic Table",
@@ -2024,8 +2093,11 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             marks: 5,
             modelAnswer: "(a) Element E is aluminium (Al), in Group III.\n\n(b) 'Solid that conducts electricity' shows E is a metal. 'Oxide reacts with both acid and base' shows the oxide is amphoteric, which is characteristic of aluminium oxide. 'Forms a 3+ ion' shows E has 3 outer electrons, placing it in Group III. Together these clues uniquely identify aluminium.",
             markScheme: [
-              "(a) Aluminium / Al (1); Group III (1)",
-              "(b) Conducts → metal (1); amphoteric oxide → aluminium oxide (1); 3+ ion → Group III / 3 outer electrons (1)"
+              "(a) Element E is aluminium / Al (1)",
+              "(a) Group III / Group 3 (1)",
+              "(b) Solid that conducts electricity shows E is a metal (1)",
+              "(b) Oxide reacting with both acid and base shows it is amphoteric (aluminium oxide) (1)",
+              "(b) Forming a 3+ ion shows 3 outer electrons / Group III (1)"
             ],
             commonError: "Students may choose sodium or magnesium; only aluminium has an amphoteric oxide and forms a 3+ ion.",
             guideRef: "Trends Across a Period",
@@ -2042,9 +2114,12 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             marks: 6,
             modelAnswer: "(a) Reactivity increases down Group I; reactivity decreases down Group VII.\n\n(b) Group I metals react by LOSING their single outer electron. Down the group there are more shells, so the outer electron is further from the nucleus and more shielded; it is therefore lost more easily, so reactivity increases. Group VII non-metals react by GAINING one electron. Down the group the incoming electron is added to a shell further from the nucleus and more shielded; it is therefore gained less easily, so reactivity decreases. Because one group loses an electron and the other gains one, the same increase in atomic size and shielding makes Group I more reactive but Group VII less reactive — opposite trends.",
             markScheme: [
-              "(a) Group I reactivity increases down the group (1); Group VII reactivity decreases down the group (1)",
-              "(b) Group I reacts by losing an electron (1); easier to lose down the group (further/more shielded) → more reactive (1)",
-              "(b) Group VII reacts by gaining an electron (1); harder to gain down the group (further/more shielded) → less reactive (1)"
+              "(a) Reactivity increases down Group I (1)",
+              "(a) Reactivity decreases down Group VII (1)",
+              "(b) Group I metals react by losing their outer electron (1)",
+              "(b) Down Group I more shells / further from nucleus / more shielded, so outer electron is lost more easily (1)",
+              "(b) Group VII non-metals react by gaining one electron (1)",
+              "(b) Down Group VII incoming electron enters a shell further from nucleus and more shielded, so gained less easily (1)"
             ],
             commonError: "Students often explain both groups in the same way; the key is that Group I LOSES an electron while Group VII GAINS one, so the same size change has opposite effects.",
             guideRef: "Group VII — The Halogens",
@@ -2064,8 +2139,11 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             modelAnswer: "(a) Moles of Mg = mass / Ar = 0.48 / 24 = 0.020 mol.\n\n(b) From the equation, 1 mol Mg produces 1 mol H₂, so moles of H₂ = 0.020 mol. Volume = moles × 24 000 = 0.020 × 24 000 = 480 cm³.\n\n(c) Magnesium is in Group II, so it forms Mg²⁺ (loses 2 electrons). Chlorine is in Group VII, so it forms Cl⁻ (gains 1 electron). Two chloride ions are needed to balance the 2+ charge on magnesium, giving the formula MgCl₂.",
             markScheme: [
               "(a) Moles Mg = 0.48 / 24 = 0.020 mol (1)",
-              "(b) Ratio Mg : H₂ = 1 : 1, moles H₂ = 0.020 mol (1); volume = moles × 24 000 (1); = 480 cm³ (1)",
-              "(c) Mg²⁺ from Group II and Cl⁻ from Group VII (1); two Cl⁻ balance one Mg²⁺ → MgCl₂ (1)"
+              "(b) Ratio Mg : H₂ = 1 : 1, so moles of H₂ = 0.020 mol (1)",
+              "(b) Volume = 0.020 × 24 000 (1)",
+              "(b) Volume = 480 cm³ (1)",
+              "(c) Magnesium (Group II) forms Mg²⁺ and chlorine (Group VII) forms Cl⁻ (1)",
+              "(c) Two chloride ions (Cl⁻) balance one Mg²⁺ ion, giving MgCl₂ (1)"
             ],
             commonError: "In (b) the ratio of Mg to H₂ is 1:1 (unlike the 2:1 ratio for Group I metals); some students wrongly halve the moles of hydrogen here.",
             guideRef: "Arrangement of the Periodic Table",
@@ -2095,9 +2173,14 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             marks: 8,
             modelAnswer: "(a) W is in Group I (soft, very reactive metal that fizzes in water). X is in Group VII (yellow-green gas that bleaches litmus — chlorine). Y is in Group 0 (unreactive gas used in light bulbs — argon). Z is a transition element / d-block metal (hard, dense, coloured compounds, catalytic).\n\n(b) The green compound contains Fe²⁺ (iron(II)) ions and the yellow-brown compound contains Fe³⁺ (iron(III)) ions, so Z is iron.\n\n(c) Moving one place DOWN Group I, W would become MORE reactive (the outer electron is further from the nucleus and more shielded, so lost more easily). Moving one place DOWN Group VII, X would become LESS reactive (the incoming electron is added further from the nucleus and more shielded, so gained less easily).",
             markScheme: [
-              "(a) W Group I (1); X Group VII (1); Y Group 0 (1); Z transition / d-block (1)",
-              "(b) Green = Fe²⁺ / iron(II) (1); yellow-brown = Fe³⁺ / iron(III) (1)",
-              "(c) W more reactive down Group I — easier electron loss (1); X less reactive down Group VII — harder electron gain (1)"
+              "(a) W is in Group I (1)",
+              "(a) X is in Group VII (1)",
+              "(a) Y is in Group 0 (1)",
+              "(a) Z is a transition element / d-block metal (1)",
+              "(b) Green compound: Fe²⁺ / iron(II) ions (1)",
+              "(b) Yellow-brown compound: Fe³⁺ / iron(III) ions (1)",
+              "(c) W becomes more reactive down Group I because the outer electron is lost more easily (1)",
+              "(c) X becomes less reactive down Group VII because the incoming electron is gained less easily (1)"
             ],
             commonError: "In (c) students sometimes apply the same direction of trend to both groups; remember Group I reactivity increases down while Group VII decreases down.",
             guideRef: "Transition Elements",
@@ -2116,9 +2199,11 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             marks: 5,
             modelAnswer: "(a) The metals sodium, magnesium and aluminium are good conductors (silicon is a semiconductor; it conducts only slightly).\n\n(b) In metals such as sodium and aluminium there is a 'sea' of delocalised (free-moving) outer electrons. These mobile electrons can move through the structure and carry charge, so the metal conducts electricity.\n\n(c) Sulfur and chlorine are non-metals that exist as simple molecules (S₈ and Cl₂). They have no delocalised electrons and no free-moving ions, so there are no charged particles able to move and carry current, and they do not conduct.",
             markScheme: [
-              "(a) Na, Mg, Al (metals) conduct (1)",
-              "(b) Metals have delocalised / free / mobile outer electrons (1); these move and carry charge (1)",
-              "(c) Non-metals / simple molecules with no free electrons or ions (1); no charged particles free to move → no conduction (1)"
+              "(a) Sodium, magnesium and aluminium (Na, Mg, Al) are good conductors (1)",
+              "(b) Metals have delocalised / free-moving outer electrons (1)",
+              "(b) These mobile electrons move through the structure and carry charge (1)",
+              "(c) Sulfur and chlorine are simple molecular non-metals with no delocalised electrons or free-moving ions (1)",
+              "(c) No charged particles are free to move and carry current (1)"
             ],
             commonError: "Students sometimes say non-metals 'do not have electrons'; they have electrons, but the electrons are not delocalised/free to move.",
             guideRef: "Trends Across a Period",
@@ -2135,9 +2220,12 @@ Note: **zinc (Zn)** is sometimes debated as a transition metal because it only f
             marks: 6,
             modelAnswer: "(a) Both are metals with metallic bonding. Aluminium provides 3 delocalised electrons per atom while sodium provides only 1, and the Al³⁺ ion is smaller and more highly charged than Na⁺. The metallic bond in aluminium is therefore much stronger, needing more energy to break, so aluminium has the higher melting point.\n\n(b) Silicon has a giant covalent (macromolecular) structure in which every atom is covalently bonded to four others. Melting requires breaking very many strong covalent bonds throughout the structure, which needs a huge amount of energy, so silicon's melting point is by far the highest.\n\n(c) Sulfur exists as S₈ molecules held together by weak intermolecular forces, but these S₈ molecules are quite large (each has eight sulfur atoms and many electrons). The intermolecular forces, although weak compared with covalent bonds, are stronger than for very small molecules, and are enough to give sulfur a melting point a little above that of sodium. The forces overcome on melting are still only the weak intermolecular forces, not covalent bonds.",
             markScheme: [
-              "(a) Aluminium has more delocalised electrons / smaller, more highly charged ion than sodium (1); stronger metallic bond → higher melting point (1)",
-              "(b) Giant covalent structure / many strong covalent bonds (1); large energy to break them → highest melting point (1)",
-              "(c) S₈ are relatively large molecules / more electrons → larger intermolecular forces than tiny molecules (1); only weak intermolecular forces (not covalent bonds) are overcome on melting (1)"
+              "(a) Aluminium provides 3 delocalised electrons per atom and has smaller, higher-charged Al³⁺ ions than Na⁺ (1)",
+              "(a) Metallic bond in aluminium is stronger and needs more energy to break (1)",
+              "(b) Silicon has a giant covalent / macromolecular structure with many strong covalent bonds (1)",
+              "(b) Huge amount of energy is needed to break the strong covalent bonds (1)",
+              "(c) Sulfur forms relatively large S₈ molecules with many electrons, giving stronger intermolecular forces than small molecules (1)",
+              "(c) Only weak intermolecular forces (not covalent bonds) are overcome on melting (1)"
             ],
             commonError: "For (c) students may claim sulfur has strong covalent bonds broken on melting; only the weak intermolecular forces between S₈ molecules are overcome, not the covalent S–S bonds within them.",
             guideRef: "Trends Across a Period",

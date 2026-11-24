@@ -582,10 +582,10 @@ All living organisms share **eight** life processes (notice Edexcel adds **Contr
         id: "bio-cells-mcq-ed02",
         question: "Why does Edexcel classify viruses (such as TMV and HIV) as non-living particles rather than prokaryotes?",
         options: [
-          "They have chitin cell walls instead of peptidoglycan",
-          "They have no cellular structure (only a protein coat and DNA or RNA) and carry out no life processes outside a host cell",
-          "They store carbohydrates as starch rather than glycogen",
-          "They contain chloroplasts and respire anaerobically"
+          "They have chitin cell walls instead of peptidoglycan and reproduce only by budding spores",
+          "They lack cellular structure (just a protein coat and DNA or RNA) and carry out no life processes outside a host",
+          "They store carbohydrates as starch rather than glycogen and carry out photosynthesis in light",
+          "They contain chloroplasts and mitochondria but respire only anaerobically in living tissues",
         ],
         answerIndex: 1,
         explanation: "Viruses lack cytoplasm, cell membranes, ribosomes, and independent metabolism; they consist solely of a protein capsid enclosing DNA or RNA and replicate only inside living host cells.",
@@ -972,10 +972,10 @@ All living organisms share **eight** life processes (notice Edexcel adds **Contr
             id: "bio-cells-bm2-06",
             question: "Some antibiotics damage bacterial ribosomes (70S) but not human ribosomes (80S). What does this suggest?",
             options: [
-              "Human cells have no ribosomes",
+              "Human cells have no ribosomes because they synthesise all proteins inside the nucleus",
               "The two types of ribosome differ in structure, so the drug binds only the bacterial type",
-              "Antibiotics cannot enter human cells",
-              "Bacterial ribosomes are stored inside a nucleus",
+              "Antibiotics are too large to cross any eukaryotic plasma membrane into human cells",
+              "Bacterial ribosomes are enclosed inside a double-membraned nucleus that traps the drug",
             ],
             answerIndex: 1,
             explanation:
@@ -994,10 +994,10 @@ All living organisms share **eight** life processes (notice Edexcel adds **Contr
             id: "bio-cells-bm2-07",
             question: "A palisade mesophyll cell is found near the upper surface of a leaf. Which adaptation best suits its function?",
             options: [
-              "A long flagellum for swimming",
+              "A long flagellum and many mitochondria to swim towards light",
               "Many chloroplasts and a tall column shape to capture maximum light",
-              "A thick lignified wall to resist collapse",
-              "No nucleus, leaving space for haemoglobin",
+              "A thick lignified wall and hollow lumen to resist collapse under tension",
+              "No nucleus and a biconcave shape, leaving space to carry haemoglobin",
             ],
             answerIndex: 1,
             explanation:
@@ -1082,10 +1082,10 @@ All living organisms share **eight** life processes (notice Edexcel adds **Contr
             id: "bio-cells-bm3-02",
             question: "What is the function of the permanent sap vacuole in a plant cell?",
             options: [
-              "It is the site of photosynthesis",
+              "It absorbs light energy as the main site of photosynthesis",
               "It stores cell sap and helps keep the cell turgid (firm)",
-              "It releases energy by respiration",
-              "It makes the cellulose cell wall",
+              "It breaks down glucose to release ATP by aerobic respiration",
+              "It synthesises and lays down the outer cellulose cell wall",
             ],
             answerIndex: 1,
             explanation:
@@ -1097,10 +1097,10 @@ All living organisms share **eight** life processes (notice Edexcel adds **Contr
             id: "bio-cells-bm3-03",
             question: "A ciliated epithelial cell in the windpipe is rich in mitochondria. Why?",
             options: [
-              "To store oxygen for the lungs",
+              "To store oxygen gas before it diffuses into the blood in the lungs",
               "To provide ATP energy to power the constant beating of the cilia",
-              "To photosynthesise and release oxygen",
-              "To produce the mucus that traps dust",
+              "To carry out photosynthesis and release extra oxygen into the airway",
+              "To synthesise and secrete the sticky mucus that traps dust particles",
             ],
             answerIndex: 1,
             explanation:
@@ -1275,10 +1275,10 @@ All living organisms share **eight** life processes (notice Edexcel adds **Contr
             id: "bio-cells-bm4-02",
             question: "Which feature is shared by a sperm cell and a ciliated epithelial cell?",
             options: [
-              "Both have chloroplasts",
+              "Both contain chloroplasts to absorb light for photosynthesis",
               "Both have many mitochondria to provide energy for movement",
-              "Both are dead cells",
-              "Both lack a nucleus",
+              "Both are dead, hollow cells reinforced with tough lignin walls",
+              "Both lack a nucleus so there is extra room in the cytoplasm",
             ],
             answerIndex: 1,
             explanation:
@@ -1372,9 +1372,9 @@ All living organisms share **eight** life processes (notice Edexcel adds **Contr
             question: "Mitochondria and chloroplasts each have their own small circular DNA and a double membrane. Which idea does this evidence support?",
             options: [
               "They evolved from ancient bacteria taken inside a host cell (endosymbiosis)",
-              "They are non-living crystals",
-              "They are made by the nucleus each day",
-              "They are only found in bacteria",
+              "They are non-living mineral crystals that assemble spontaneously in cytoplasm",
+              "They are rebuilt from scratch by the cell nucleus every time a cell divides",
+              "They are found only inside prokaryotic bacteria and never in eukaryotic cells",
             ],
             answerIndex: 0,
             explanation:
@@ -1430,10 +1430,10 @@ All living organisms share **eight** life processes (notice Edexcel adds **Contr
             id: "bio-cells-bm4-10",
             question: "A bacterium gains a plasmid carrying a gene for an enzyme that breaks down an antibiotic. Which statement best describes the consequence?",
             options: [
-              "The bacterium becomes a eukaryote",
+              "The bacterium develops a true nucleus and becomes a eukaryotic organism",
               "The bacterium becomes resistant to that antibiotic and can pass the plasmid to others",
-              "The bacterium loses its cell wall",
-              "The bacterium can now photosynthesise",
+              "The bacterium immediately loses its cell wall and bursts by osmosis in water",
+              "The bacterium gains chloroplasts and can now carry out photosynthesis in light",
             ],
             answerIndex: 1,
             explanation:

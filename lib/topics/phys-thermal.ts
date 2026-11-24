@@ -853,10 +853,10 @@ All objects emit thermal radiation. The rate of emission depends on:
             id: "phys-thermal-bm1-06",
             question: "At the particle level, why does a solid metal bar get longer when its temperature is raised?",
             options: [
-              "The atoms themselves grow larger",
-              "Extra atoms are created inside the bar",
+              "The individual metal atoms expand and swell to a larger diameter as they warm up",
+              "Extra metal atoms are formed from thermal energy and fill spaces inside the bar",
               "The atoms vibrate with greater amplitude, increasing their average separation",
-              "The atoms gain mass and so take up more space"
+              "The atoms gain mass as they heat up and push neighbouring atoms further apart"
             ],
             answerIndex: 2,
             explanation: "Heating gives the atoms more kinetic energy, so they vibrate with a larger amplitude about their lattice positions. Because the inter-particle forces are asymmetric, a larger vibration corresponds to a slightly greater average separation, so the bar lengthens. Atoms do not grow, gain mass, or multiply.",
@@ -891,10 +891,10 @@ All objects emit thermal radiation. The rate of emission depends on:
             id: "phys-thermal-bm1-08",
             question: "A flask of water is heated and almost fills to the brim. Just before boiling, the water level is seen to rise a little and then fall slightly at the very start of heating. The brief initial fall in level is because:",
             options: [
-              "the water evaporates before it can rise",
+              "the water at the surface evaporates rapidly before the bulk warms up",
               "the glass flask expands first, before the water inside warms up",
-              "the water contracts when heated",
-              "air bubbles leave the water"
+              "liquid water contracts uniformly whenever thermal energy is supplied to it",
+              "dissolved air bubbles escape immediately and reduce the water's total volume"
             ],
             answerIndex: 1,
             explanation: "When heating begins, the glass flask receives the heat first and expands, increasing the volume of the container, so the water level appears to dip. Once the water itself warms up, it expands much more than the glass (liquids expand more than solids), and the level rises. This is a classic demonstration that solids and liquids expand by different amounts.",
@@ -910,9 +910,9 @@ All objects emit thermal radiation. The rate of emission depends on:
             id: "phys-thermal-bm1-09",
             question: "Overhead power cables are deliberately strung with some slack between pylons. The main reason is that on a cold day the cables will:",
             options: [
-              "expand and could touch the ground",
-              "conduct electricity more poorly",
-              "vibrate and produce sound",
+              "expand and sag downwards, so they could touch trees or the ground below",
+              "increase sharply in electrical resistance, causing excessive heating in the wires",
+              "vibrate violently in the wind and snap unless the wires are kept loose",
               "contract and become shorter, so they could snap if pulled tight"
             ],
             answerIndex: 3,
@@ -956,9 +956,9 @@ All objects emit thermal radiation. The rate of emission depends on:
             question: "What causes the pressure that a gas exerts on the walls of its container?",
             options: [
               "Gas molecules colliding with the walls and transferring momentum",
-              "The weight of the gas pressing down",
-              "The molecules sticking to the walls",
-              "Heat flowing out through the walls"
+              "The gravitational weight of the gas molecules pressing downwards",
+              "Gas molecules sticking to the inner walls and pulling them inward",
+              "Thermal energy conducting steadily outwards through the container walls"
             ],
             answerIndex: 0,
             explanation: "Gas pressure is the result of countless molecules colliding with the container walls. Each collision transfers a small amount of momentum to the wall; the average effect of billions of collisions per second is a steady force per unit area — the pressure.",
@@ -1011,9 +1011,9 @@ All objects emit thermal radiation. The rate of emission depends on:
             id: "phys-thermal-bm2-05",
             question: "The pressure of a fixed mass of gas at constant volume is plotted against its temperature in degrees Celsius. The graph is a straight line that does NOT pass through the origin. Why not?",
             options: [
-              "Because pressure is not related to temperature",
-              "Because the gas leaks during the experiment",
-              "Because the volume is changing",
+              "Because gas pressure is not linearly related to temperature when volume is kept constant",
+              "Because gas molecules steadily leak out of the container during the heating experiment",
+              "Because the container volume expands significantly as the temperature of the gas increases",
               "Because the Celsius scale does not start at the point where molecular motion ceases"
             ],
             answerIndex: 3,
@@ -1030,9 +1030,9 @@ All objects emit thermal radiation. The rate of emission depends on:
             id: "phys-thermal-bm2-06",
             question: "A sealed syringe of gas is squashed quickly so its volume halves. Immediately afterwards the temperature is the same as before. Using particle ideas, the pressure has roughly doubled because:",
             options: [
-              "the molecules now move twice as fast",
-              "the molecules become twice as heavy",
-              "the molecules stop colliding with each other",
+              "the gas molecules now move twice as fast and hit the walls with twice the momentum",
+              "the gas molecules become twice as massive, doubling the force of every collision",
+              "the gas molecules stop colliding with one another and only strike the syringe walls",
               "each molecule travels a shorter distance between wall collisions, so the collision rate roughly doubles"
             ],
             answerIndex: 3,
@@ -1294,9 +1294,9 @@ All objects emit thermal radiation. The rate of emission depends on:
             question: "Metals are much better thermal conductors than non-metals mainly because metals have:",
             options: [
               "free (delocalised) electrons that carry energy quickly through the lattice",
-              "heavier atoms",
-              "a higher specific heat capacity",
-              "a more disordered particle arrangement"
+              "much heavier atoms that transfer thermal energy faster by slow collisions",
+              "a much higher specific heat capacity that stores extra thermal energy",
+              "a disordered liquid-like particle arrangement that allows rapid convection"
             ],
             answerIndex: 0,
             explanation: "Metals contain free (delocalised) electrons that move rapidly throughout the lattice. They gain kinetic energy at the hot end and transfer it quickly to cooler regions by collisions, in addition to lattice vibration. Non-metals lack free electrons and rely only on the slower vibration mechanism.",
@@ -1307,10 +1307,10 @@ All objects emit thermal radiation. The rate of emission depends on:
             id: "phys-thermal-bm4-03",
             question: "Why is trapped air, such as that in a woollen jumper or in loft insulation, a good thermal insulator?",
             options: [
-              "Air is a good conductor but a poor radiator",
+              "Air is a strong thermal conductor when still, but radiates almost no infrared energy to its surroundings",
               "Air molecules are far apart and poor conductors, and trapping the air stops convection currents forming",
-              "Air reflects all infrared radiation",
-              "Air has a very high specific heat capacity"
+              "Air molecules reflect all incoming infrared radiation back towards the warmer surface like a mirror",
+              "Air has an exceptionally high specific heat capacity, so it absorbs heat without warming up"
             ],
             answerIndex: 1,
             explanation: "Air is a poor conductor because its molecules are widely spaced. Crucially, the fibres trap the air in tiny pockets so it cannot move freely — this prevents convection currents. With both conduction and convection suppressed, trapped air is an excellent insulator.",
@@ -1327,9 +1327,9 @@ All objects emit thermal radiation. The rate of emission depends on:
             question: "A convection current forms in a beaker of water heated from below because the warm water:",
             options: [
               "becomes less dense and rises, while cooler denser water sinks to replace it",
-              "becomes denser and sinks",
-              "stops moving once heated",
-              "loses mass as it is heated"
+              "becomes more dense and sinks, pushing cooler less dense water to the surface",
+              "stops moving once heated, forcing cooler water to conduct heat upwards",
+              "loses mass as it warms up, making the heated particles lighter than before"
             ],
             answerIndex: 0,
             explanation: "Heated water expands and becomes less dense, so it rises. Cooler, denser water sinks to take its place, setting up a circulating convection current that carries thermal energy through the fluid. Mass is conserved; it is the density that changes.",
@@ -1359,9 +1359,9 @@ All objects emit thermal radiation. The rate of emission depends on:
             id: "phys-thermal-bm4-06",
             question: "A vacuum flask keeps a drink hot. Which feature of the flask reduces heat loss by radiation specifically?",
             options: [
-              "The vacuum between the walls",
-              "The insulating plastic stopper",
-              "The double-walled glass",
+              "The vacuum gap between the inner and outer glass walls",
+              "The tightly fitting insulating plastic stopper at the top",
+              "The thin double-walled glass container holding the drink",
               "The silvered (mirrored) inner surfaces of the walls"
             ],
             answerIndex: 3,
@@ -1398,9 +1398,9 @@ All objects emit thermal radiation. The rate of emission depends on:
             question: "A room heater is placed near the floor rather than near the ceiling so that it warms the whole room effectively. The best reason is that:",
             options: [
               "warm air rises by convection, so heating low down circulates warmth through the whole room",
-              "radiation only travels upwards",
-              "conduction is faster near the floor",
-              "cold air cannot reach the ceiling"
+              "infrared radiation from a heater can only travel upwards through air and never downwards",
+              "thermal conduction through air is much faster near the floor than near the ceiling",
+              "cold air is unable to rise to the ceiling, so a high heater would remain completely cool"
             ],
             answerIndex: 0,
             explanation: "Warm air is less dense and rises. A heater placed low heats air that then rises, while cooler air sinks to be heated in turn — setting up a convection current that circulates warmth throughout the room. A heater near the ceiling would leave the warm air trapped at the top.",
@@ -1435,9 +1435,9 @@ All objects emit thermal radiation. The rate of emission depends on:
             id: "phys-thermal-bm4-10",
             question: "A teacher holds a piece of paper wrapped tightly around a wooden rod and a copper rod (half wood, half copper) in a flame. The paper over the copper does not scorch, but the paper over the wood scorches. The best explanation is that:",
             options: [
-              "copper reflects the flame",
-              "wood is a better conductor than copper",
-              "the flame only touches the wood",
+              "copper reflects the heat radiation from the flame straight back out through the paper so the paper stays cold",
+              "wood conducts thermal energy from the flame into the paper much faster than copper can absorb it",
+              "convection currents in the flame bend away from the dense copper half and only heat the wooden half",
               "copper conducts heat away from the paper quickly, keeping the paper below its scorching temperature, while wood does not"
             ],
             answerIndex: 3,
@@ -2082,11 +2082,13 @@ All objects emit thermal radiation. The rate of emission depends on:
             marks: 7,
             modelAnswer: "(a) Melting: E₁ = mL = 0.50 × 3.34 × 10⁵ = 1.67 × 10⁵ J\n\n(b) Heating water: E₂ = mcΔT = 0.50 × 4200 × 40 = 84 000 J = 8.4 × 10⁴ J\n\n(c) Total energy = E₁ + E₂ = 1.67 × 10⁵ + 0.84 × 10⁵ = 2.51 × 10⁵ J\ntime = E / P = 2.51 × 10⁵ / 80 = 3137.5 s ≈ 3140 s (about 52 minutes)",
             markScheme: [
-              "(a) E₁ = mL = 0.50 × 3.34 × 10⁵ = 1.67 × 10⁵ J (1 for method, 1 for answer)",
-              "(b) E₂ = mcΔT = 0.50 × 4200 × 40 = 84 000 J (1 for method, 1 for answer)",
-              "(c) Total energy = 2.51 × 10⁵ J (1)",
-              "(c) Uses time = E / P (1)",
-              "(c) time ≈ 3140 s / ~52 min (1)"
+              "(a) E₁ = mL = 0.50 × 3.34 × 10⁵ (1 mark)",
+              "(a) E₁ = 1.67 × 10⁵ J (1 mark)",
+              "(b) E₂ = mcΔT = 0.50 × 4200 × 40 (1 mark)",
+              "(b) E₂ = 84 000 J / 8.4 × 10⁴ J (1 mark)",
+              "(c) Total energy = E₁ + E₂ = 2.51 × 10⁵ J (1 mark)",
+              "(c) Uses time = E / P = 2.51 × 10⁵ / 80 (1 mark)",
+              "(c) time = 3137.5 s / 3140 s / ~52 min (1 mark)"
             ],
             commonError: "Adding the two stages incorrectly, or using mcΔT for the melting stage — melting needs E = mL (no temperature change), heating needs E = mcΔT.",
             guideRef: "Specific Heat Capacity and Latent Heat",
@@ -2353,9 +2355,12 @@ All objects emit thermal radiation. The rate of emission depends on:
             marks: 6,
             modelAnswer: "Loft insulation (glass fibre/mineral wool): traps air in the fibres in the loft. The trapped air is a poor conductor and cannot form convection currents, so it reduces heat loss by conduction and convection through the roof.\n\nCavity wall insulation (foam in the gap between two walls): traps air in the foam, again reducing conduction and convection through the walls.\n\nDouble glazing (two panes of glass with a gap, often containing low-pressure gas): the trapped gas/air is a poor conductor and limits convection, reducing conduction and convection through the windows.\n\n(Other acceptable: reflective foil behind radiators or in the loft to reduce radiation loss; draught excluders to reduce convection through gaps; thick curtains to trap air at the windows.)",
             markScheme: [
-              "First method named with correct mode(s), e.g. loft insulation reduces conduction/convection (1 + 1)",
-              "Second method named with correct mode(s), e.g. cavity wall insulation reduces conduction/convection (1 + 1)",
-              "Third method named with correct mode(s), e.g. double glazing reduces conduction/convection (1 + 1)"
+              "First method named: loft insulation / glass fibre / mineral wool (accept reflective foil / draught excluders / thick curtains) (1 mark)",
+              "Explanation and heat transfer mode for first method: traps air, reducing conduction and convection (or reflects radiation / stops draughts) (1 mark)",
+              "Second method named: cavity wall insulation / foam in wall gap (accept any second distinct valid method) (1 mark)",
+              "Explanation and heat transfer mode for second method: traps air in the gap, reducing conduction and convection (1 mark)",
+              "Third method named: double glazing / two panes with trapped air or gas (accept any third distinct valid method) (1 mark)",
+              "Explanation and heat transfer mode for third method: trapped gas/air is a poor conductor and limits convection, reducing conduction and convection (1 mark)"
             ],
             commonError: "Listing three methods that all work by the same trapped-air idea without naming the modes of transfer, or claiming insulation reduces radiation when it mainly reduces conduction and convection.",
             guideRef: "Conduction and Convection",

@@ -596,10 +596,10 @@ export const bioCoordination: Topic = {
             question:
               "Why can nerve impulses only travel in ONE direction across a synapse?",
             options: [
-              "The synaptic cleft is too narrow for reverse diffusion",
+              "The fluid-filled synaptic cleft is too narrow for electrical ions to diffuse backwards across the gap",
               "Neurotransmitter is released only from the pre-synaptic membrane and receptors are only on the post-synaptic membrane",
-              "Myelin sheath blocks the backward pathway",
-              "The relay neurone prevents backward transmission",
+              "The fatty myelin sheath covers the entire synaptic cleft and blocks any impulse travelling in reverse",
+              "The relay neurone contains one-way mechanical valves that close whenever an impulse tries to reverse",
             ],
             answerIndex: 1,
             explanation:
@@ -1076,10 +1076,10 @@ export const bioCoordination: Topic = {
             question:
               "Enzymes work best at 37°C in the human body. Why is maintaining this temperature so critical for metabolism?",
             options: [
-              "Above 37°C, enzymes become permanently inactive because they run out of substrate",
-              "At temperatures significantly above or below 37°C, enzyme shape changes, reducing active site complementarity and slowing metabolic reactions",
-              "Below 37°C, enzymes are destroyed by the immune system",
-              "Enzyme activity is unaffected by temperature; only pH matters",
+              "Above 37°C, enzymes become permanently inactive only because all substrate molecules evaporate out of cells",
+              "Significantly above 37°C enzymes denature (losing active-site shape), while below 37°C lower kinetic energy slows reactions",
+              "Below 37°C, white blood cells immediately recognise body enzymes as foreign antigens and destroy them",
+              "Enzyme activity in mammals is unaffected by body temperature because only blood pH controls metabolic rate",
             ],
             answerIndex: 1,
             explanation:
@@ -1190,10 +1190,10 @@ export const bioCoordination: Topic = {
             question:
               "Weed killers (herbicides) such as 2,4-D are synthetic auxins. At high concentrations they selectively kill broad-leaved weeds but not narrow-leaved grass. Which of the following best explains this selectivity?",
             options: [
-              "Grass lacks the receptor proteins for auxin and is completely unaffected",
-              "Broad-leaved plants are more sensitive to high auxin concentrations and their growth becomes abnormally stimulated leading to death; grass can tolerate these concentrations",
-              "The herbicide is broken down by grass cells before it can act",
-              "Grass has thicker cell walls that prevent auxin uptake",
+              "Narrow-leaved grass completely lacks auxin hormones and receptor proteins, so synthetic auxins have no effect on its cells",
+              "Broad-leaved weeds are more sensitive to high auxin, causing uncontrolled growth and death, whereas grass tolerates it",
+              "Grass leaves secrete specific digestive enzymes onto their cuticle that break down the herbicide before it can enter cells",
+              "Narrow-leaved grass has lignified waterproof cell walls across every leaf surface that block any synthetic auxin uptake",
             ],
             answerIndex: 1,
             explanation:
@@ -1301,10 +1301,10 @@ export const bioCoordination: Topic = {
             question:
               "A doctor tests a patient's reflexes with a tendon hammer. The knee-jerk reflex is absent. Which of the following could explain this? (Select the most precise answer.)",
             options: [
-              "The patient's brain has been damaged, preventing voluntary movement",
+              "Damage to the conscious region of the brain, which is required to initiate every simple spinal reflex arc",
               "Damage to the sensory or motor neurones in the reflex arc for that reflex, or damage within the spinal cord at that level",
-              "Hormonal imbalance reducing muscle contraction strength",
-              "Excess insulin lowering blood glucose and weakening muscles",
+              "A general hormonal imbalance from the pituitary gland that selectively stops only the knee-jerk reflex",
+              "Excess insulin secreted by the pancreas lowering blood glucose and stopping only the thigh extensor muscle",
             ],
             answerIndex: 1,
             explanation:

@@ -41,3 +41,4 @@ yarn-error.log*
 next-env.d.ts
 scripts/comedy/.work/
 scripts/comedy/**/__pycache__/
+scripts/comedy/live/bio-coordination/veo/

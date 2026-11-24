@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import type { MCQ, QA } from "@/lib/types";
+import { optionOrder } from "@/lib/optionOrder";
 import { useStore } from "@/lib/store";
 import { Markdown } from "./Markdown";
 
@@ -119,21 +120,22 @@ export function ChallengeMode({
 
         {isMcq ? (
           <div className="space-y-2">
-            {(q as MCQ).options.map((opt, oi) => {
+            {optionOrder(q.id, (q as MCQ).options).map((origIdx, dispIdx) => {
+              const opt = (q as MCQ).options[origIdx];
               const ans = (q as MCQ).answerIndex;
               let cls = "border-line bg-bg-soft";
               if (picked !== null) {
-                if (oi === ans) cls = "border-emerald-500 bg-emerald-500/15";
-                else if (oi === picked) cls = "border-rose-500 bg-rose-500/15";
+                if (origIdx === ans) cls = "border-emerald-500 bg-emerald-500/15";
+                else if (origIdx === picked) cls = "border-rose-500 bg-rose-500/15";
               }
               return (
                 <button
-                  key={oi}
+                  key={origIdx}
                   disabled={picked !== null}
-                  onClick={() => setPicked(oi)}
+                  onClick={() => setPicked(origIdx)}
                   className={`w-full text-left px-4 py-3 rounded-xl border ${cls}`}
                 >
-                  <span className="font-bold mr-2">{String.fromCharCode(65 + oi)}.</span>
+                  <span className="font-bold mr-2">{String.fromCharCode(65 + dispIdx)}.</span>
                   {opt}
                 </button>
               );

@@ -597,10 +597,11 @@ Note that the same plant carries out both at once: water travels up the xylem in
         marks: 5,
         modelAnswer: "(a) Volume = π × r² × d = π × 0.6² × 15 = π × 0.36 × 15 = 16.96 mm³. Rate = 16.96 / 5 = 3.39 mm³ min⁻¹ (accept 3.4). (b) In humid air, the water vapour concentration of the surrounding air is high. This reduces (or eliminates) the concentration gradient of water vapour between the leaf interior and the outside air. Because diffusion rate depends on the concentration gradient, the rate of diffusion of water vapour out of stomata is reduced, so the rate of transpiration (and thus water uptake) decreases. (c) Any one of: repeat each condition and calculate a mean; use a thermometer to ensure temperature is constant between conditions; allow the shoot to equilibrate for 5 minutes before recording each condition.",
         markScheme: [
-          "(a) Correct volume = 16.96 mm³ (or 17.0 mm³) [1]; Rate = 3.4 mm³ min⁻¹ [1]",
-          "(b) High humidity reduces the water vapour concentration gradient between leaf interior and outside air [1]",
-          "(b) Lower gradient → slower diffusion of water vapour / lower transpiration rate [1]",
-          "(c) Repeat measurements and calculate mean / control temperature / equilibration time (any one) [1]",
+          "(a) Correct volume calculation: π × 0.6² × 15 = 16.96 mm³ / 17.0 mm³",
+          "(a) Correct rate: 16.96 ÷ 5 = 3.39 / 3.4 mm³ min⁻¹",
+          "(b) High humidity reduces the water vapour concentration gradient between leaf interior and outside air",
+          "(b) Lower gradient causes slower diffusion of water vapour out of stomata / lower transpiration rate",
+          "(c) Repeat measurements and calculate a mean / control temperature / allow shoot to equilibrate",
         ],
         commonError: "In part (a), students often forget to divide by time and give total volume rather than rate. In (b), students say 'less evaporation' without explaining the gradient — the gradient explanation is what the mark scheme rewards.",
         guideRef: "Investigating Transpiration with a Potometer",
@@ -985,10 +986,10 @@ Note that the same plant carries out both at once: water travels up the xylem in
             id: "bio-transport-plants-bm2-10",
             question: "A farmer adds an excess of fertiliser to soil. He later notices his crops wilting. Which explanation best accounts for this?",
             options: [
-              "Excess nitrate ions block the xylem vessels, preventing water flow",
+              "Excess nitrate ions crystallise and physically block the hollow xylem vessels, stopping water rising",
               "The very concentrated soil solution has a lower water potential than the roots, causing water to leave cells",
-              "Fertiliser ions are toxic and kill the root hair cells",
-              "Excess ions are absorbed too quickly, using up all the ATP"
+              "Dissolved fertiliser ions are directly toxic poisons that burst and kill the root hair cell membranes",
+              "Excess mineral ions are absorbed by active transport so fast that root cells run out of ATP for water uptake",
             ],
             answerIndex: 1,
             explanation: "Excess fertiliser makes the soil solution very concentrated. Its water potential drops below that of root cells. Water moves out of root cells by osmosis, causing plasmolysis and wilting.",
@@ -1056,10 +1057,10 @@ Note that the same plant carries out both at once: water travels up the xylem in
             id: "bio-transport-plants-bm3-04",
             question: "Guard cells become turgid in the light. Which substance is produced in guard cells in the light that lowers their water potential?",
             options: [
-              "Starch",
-              "Cellulose",
+              "Insoluble starch (stored in granules)",
+              "Cellulose (built into cell walls)",
               "Sucrose (from conversion of starch)",
-              "Lignin"
+              "Lignin (deposited for wall strength)",
             ],
             answerIndex: 2,
             explanation: "In light, guard cells photosynthesise and convert starch to sucrose. This lowers their water potential, drawing water in by osmosis and making them turgid, opening the stoma.",
@@ -1074,10 +1075,10 @@ Note that the same plant carries out both at once: water travels up the xylem in
             id: "bio-transport-plants-bm3-05",
             question: "Why do most plants close their stomata in the dark?",
             options: [
-              "To retain carbon dioxide produced by respiration",
-              "Because photosynthesis stops, guard cells lose sucrose, water potential rises, water leaves, they become flaccid",
-              "Because temperature drops at night, freezing the guard cells",
-              "To prevent excess mineral ions from leaking out"
+              "To trap carbon dioxide produced by aerobic respiration so the leaf can photosynthesise without light",
+              "Photosynthesis stops, guard cells lose sucrose, water potential rises, water leaves and they become flaccid",
+              "Because night-time air temperatures drop sharply, freezing water inside the guard cells until sunrise",
+              "To prevent dissolved nitrate and magnesium ions from diffusing out of the spongy mesophyll into the air",
             ],
             answerIndex: 1,
             explanation: "In darkness, guard cells stop photosynthesising. Sucrose is converted back to starch, raising their water potential. Water leaves by osmosis, guard cells become flaccid and the stoma closes.",
@@ -1203,10 +1204,10 @@ Note that the same plant carries out both at once: water travels up the xylem in
             id: "bio-transport-plants-bm4-02",
             question: "How does low humidity increase the rate of transpiration?",
             options: [
-              "It increases the water potential inside the leaf",
+              "It directly increases the hydrostatic pressure and water potential inside xylem",
               "It creates a steeper water vapour concentration gradient between leaf and air",
-              "It causes guard cells to open by osmosis",
-              "It reduces the thickness of the waxy cuticle"
+              "It forces guard cells to absorb extra water by osmosis so stomata open wider",
+              "It rapidly evaporates and thins the waterproof waxy cuticle on the epidermis",
             ],
             answerIndex: 1,
             explanation: "In dry air (low humidity), the concentration of water vapour outside the leaf is much lower than inside. This steeper gradient accelerates diffusion of water vapour out through stomata.",
@@ -1732,7 +1733,10 @@ Note that the same plant carries out both at once: water travels up the xylem in
             marks: 4,
             modelAnswer: "Light intensity, temperature, humidity (water vapour concentration in the air), and wind speed (air movement).",
             markScheme: [
-              "One mark each: light intensity (1), temperature (1), humidity (1), wind speed / air movement (1)."
+              "Light intensity",
+              "Temperature",
+              "Humidity / water vapour concentration in the air",
+              "Wind speed / air movement",
             ],
             commonError: "Giving leaf area or number of stomata — these are plant features not environmental factors.",
             guideRef: "Factors Affecting the Rate of Transpiration",
@@ -1933,10 +1937,12 @@ Note that the same plant carries out both at once: water travels up the xylem in
             marks: 6,
             modelAnswer: "1. Thick waxy cuticle: reduces cuticular transpiration by forming an impermeable layer over the leaf surface. 2. Sunken stomata or stomata in pits: creates a humid microclimate around the stomatal pore, reducing the concentration gradient between inside and outside the leaf, so water vapour diffuses out more slowly. 3. Rolled leaves (or reduced leaf area / leaves modified to spines): reduces the total surface area exposed to the atmosphere, reducing overall evaporation. Other valid adaptations: hairs on leaf surface (trap moist air), opening stomata only at night (avoid peak evaporation times during the day).",
             markScheme: [
-              "Thick/waxy cuticle — reduces cuticular evaporation — 1 mark + 1 mark explanation.",
-              "Sunken stomata — humid microclimate, reduced gradient — 1 mark + 1 mark explanation.",
-              "Rolled/reduced leaves — reduced surface area — 1 mark + 1 mark explanation.",
-              "Any three adaptations with correct explanation, up to 6 marks total."
+              "Adaptation 1: thick waxy cuticle",
+              "Explanation 1: forms an impermeable layer / reduces cuticular transpiration",
+              "Adaptation 2: sunken stomata / stomata in pits / leaf hairs",
+              "Explanation 2: creates a humid microclimate / reduces concentration gradient / slows diffusion of water vapour",
+              "Adaptation 3: rolled leaves / reduced leaf area / spines",
+              "Explanation 3: reduces exposed surface area / reduces overall evaporation",
             ],
             commonError: "Listing adaptations without explaining the mechanism by which each one reduces water loss.",
             guideRef: "Factors Affecting the Rate of Transpiration",

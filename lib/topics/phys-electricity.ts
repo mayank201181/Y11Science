@@ -866,9 +866,9 @@ A 2 kW electric kettle runs for 5 minutes. Electricity costs $0.28 per kWh.
             id: "phys-electricity-bm2-02",
             question: "A component has a straight I-V graph passing through the origin. What type of component is it?",
             options: [
-              "Filament lamp",
-              "Diode",
-              "Thermistor",
+              "Filament lamp (hot metal wire)",
+              "Semiconductor diode (one-way)",
+              "NTC thermistor (heat-sensitive)",
               "Fixed resistor (ohmic conductor)"
             ],
             answerIndex: 3,
@@ -1161,10 +1161,10 @@ A 2 kW electric kettle runs for 5 minutes. Electricity costs $0.28 per kWh.
             id: "phys-electricity-bm4-04",
             question: "Why must the fuse be placed in the LIVE wire rather than the neutral wire?",
             options: [
-              "The neutral wire cannot carry enough current for the fuse to work",
+              "The neutral wire carries much less current than the live wire, so a fuse placed there would never melt",
               "If the fuse were in the neutral wire, the appliance would still be connected to the live supply even after the fuse blows",
-              "Fuses in neutral wires would cause sparking",
-              "The live wire has a lower resistance, so the fuse must be there"
+              "A fuse in the neutral wire would create continuous sparks across the earth pin and overheat the plug",
+              "The live wire has a much lower electrical resistance than the neutral wire, so fuses only melt there"
             ],
             answerIndex: 1,
             explanation: "If the fuse blows in the neutral wire, the circuit current stops — but the live wire remains connected to the appliance terminal. The appliance casing can still be at 230 V, posing a shock risk. The fuse must be in the live wire so that blowing disconnects the appliance from the dangerous live supply completely.",
@@ -1599,10 +1599,11 @@ A 2 kW electric kettle runs for 5 minutes. Electricity costs $0.28 per kWh.
             marks: 5,
             modelAnswer: "(a) R_T = 4 x 20 = 80 Ohm. (b) All 4 in parallel: 1/R_T = 4/20 = 1/5, so R_T = 5 Ohm. (c) Each pair in series: R_pair = 20 + 20 = 40 Ohm. Two 40 Ohm in parallel: R_T = (40 x 40)/(40 + 40) = 1600/80 = 20 Ohm.",
             markScheme: [
-              "R = 80 Ohm (1 mark)",
-              "1/R_T = 4/20; R_T = 5 Ohm (2 marks)",
-              "Each pair = 40 Ohm (1 mark)",
-              "Two 40 Ohm in parallel = 20 Ohm (1 mark)"
+              "R_T = 4 x 20 = 80 Ohm (1 mark)",
+              "All in parallel method: 1/R_T = 4/20 = 1/5 (1 mark)",
+              "All in parallel answer: R_T = 5 Ohm (1 mark)",
+              "Each series pair = 20 + 20 = 40 Ohm (1 mark)",
+              "Two 40 Ohm in parallel: R_T = 20 Ohm (1 mark)"
             ],
             commonError: "For part (c), not recognising that two resistors in series first form a 40 Ohm equivalent before combining in parallel.",
             difficulty: "core",
@@ -1933,11 +1934,12 @@ A 2 kW electric kettle runs for 5 minutes. Electricity costs $0.28 per kWh.
             marks: 6,
             modelAnswer: "(a) Dryer: 2.5 x (45/60) = 2.5 x 0.75 = 1.875 kWh. Dishwasher: 1.8 x 1.5 = 2.7 kWh. LEDs: (6 x 0.008) x 4 = 0.048 x 4 = 0.192 kWh. Daily total = 1.875 + 2.7 + 0.192 = 4.767 kWh. (b) Monthly energy = 4.767 x 30 = 143.0 kWh. Cost = 143.0 x $0.30 = $42.90. (c) Any one of: use the dryer less / only run the dishwasher when full / switch to lower-wattage lights / reduce dryer time.",
             markScheme: [
-              "Dryer: 1.875 kWh (1 mark)",
-              "Dishwasher: 2.7 kWh (1 mark)",
-              "LEDs: 6 x 0.008 x 4 = 0.192 kWh (1 mark)",
-              "Monthly cost: 4.767 x 30 x 0.30 = $42.90 (2 marks — 1 for kWh x 30, 1 for x price)",
-              "Sensible suggestion (1 mark)"
+              "Dryer: 2.5 x 0.75 = 1.875 kWh (1 mark)",
+              "Dishwasher: 1.8 x 1.5 = 2.7 kWh (1 mark)",
+              "LEDs: 6 x 0.008 x 4 = 0.192 kWh and daily total = 4.767 kWh (1 mark)",
+              "Monthly energy = 4.767 x 30 = 143.0 kWh (1 mark)",
+              "Monthly cost = 143.0 x $0.30 = $42.90 (1 mark)",
+              "One sensible energy-saving suggestion (e.g. use dryer less / full dishwasher loads / lower-wattage lights) (1 mark)"
             ],
             commonError: "Not converting LED power from W to kW before using E = P(kW) x t(h).",
             difficulty: "challenge",
@@ -1967,10 +1969,12 @@ A 2 kW electric kettle runs for 5 minutes. Electricity costs $0.28 per kWh.
             marks: 6,
             modelAnswer: "(a) Incandescent: 0.06 kW x 5 h x 365 = 109.5 kWh. LED: 0.012 kW x 5 h x 365 = 21.9 kWh. (b) Energy saving = 109.5 - 21.9 = 87.6 kWh/year. Cost saving = 87.6 x $0.25 = $21.90/year. (c) Extra cost of LED = $12 - $1 = $11. Time to pay back = $11 / $21.90 per year = 0.502 years, approximately 6 months.",
             markScheme: [
-              "Incandescent: 109.5 kWh (1 mark)",
-              "LED: 21.9 kWh (1 mark)",
-              "Annual saving = $21.90 (2 marks: 1 for energy difference, 1 for cost)",
-              "Extra cost = $11; payback approximately 6 months (2 marks)"
+              "Incandescent annual energy: 0.06 x 5 x 365 = 109.5 kWh (1 mark)",
+              "LED annual energy: 0.012 x 5 x 365 = 21.9 kWh (1 mark)",
+              "Annual energy saving = 109.5 - 21.9 = 87.6 kWh (1 mark)",
+              "Annual cost saving = 87.6 x $0.25 = $21.90 (1 mark)",
+              "Extra purchase cost of LED = $12 - $1 = $11 (1 mark)",
+              "Payback time = $11 / $21.90 = 0.502 years / approximately 6 months (1 mark)"
             ],
             commonError: "Not subtracting the purchase price of the incandescent lamp from the LED cost when finding the net extra expenditure.",
             difficulty: "challenge",

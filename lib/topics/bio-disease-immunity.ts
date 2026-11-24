@@ -456,10 +456,10 @@ export const bioDiseaseImmunity: Topic = {
             id: "bio-disease-immunity-bm1-02",
             question: "A transmissible disease is one that can be:",
             options: [
-              "Inherited from a parent",
-              "Caused only by poor diet",
+              "Inherited directly through faulty alleles from a parent",
+              "Caused solely by a lack of vitamins in a poor diet",
               "Passed from an infected to an uninfected person",
-              "Cured without treatment",
+              "Cured automatically by antibiotics without immunity",
             ],
             answerIndex: 2,
             explanation:
@@ -767,10 +767,10 @@ export const bioDiseaseImmunity: Topic = {
             id: "bio-disease-immunity-bm2-09",
             question: "A patient has damaged cilia in their airways. Which consequence is most likely?",
             options: [
-              "Faster blood clotting",
+              "Faster blood clotting and thicker scabs forming over skin cuts",
               "Mucus and trapped pathogens build up, increasing lung infections",
-              "Higher stomach acidity",
-              "More antibody production",
+              "Higher hydrochloric acid production inside the stomach lining",
+              "Increased antibody secretion directly into the trachea walls",
             ],
             answerIndex: 1,
             explanation:
@@ -788,10 +788,10 @@ export const bioDiseaseImmunity: Topic = {
             id: "bio-disease-immunity-bm2-10",
             question: "Which statement best explains why non-specific defences are described as the body's 'first line of defence'?",
             options: [
-              "They produce antibodies before pathogens enter",
+              "They produce antigen-specific antibodies in the skin before any pathogen has reached the body",
               "They act immediately and prevent or limit entry of pathogens before the immune response is needed",
-              "They are only used after vaccination",
-              "They give long-lasting immunity to one disease",
+              "They are switched on only after a person has received a vaccination against a specific pathogen",
+              "They create memory lymphocytes that give long-lasting specific immunity to one particular disease",
             ],
             answerIndex: 1,
             explanation:
@@ -826,10 +826,10 @@ export const bioDiseaseImmunity: Topic = {
             id: "bio-disease-immunity-bm3-02",
             question: "An antigen is best described as:",
             options: [
-              "A protein made by lymphocytes",
+              "A Y-shaped protein made by lymphocytes to bind and destroy invading microbes",
               "A molecule on the surface of a pathogen that the body recognises as foreign",
-              "A type of white blood cell",
-              "A chemical that clots blood",
+              "A type of phagocytic white blood cell that engulfs and digests invading cells",
+              "An insoluble fibrin mesh chemical that clots blood at the site of a skin cut",
             ],
             answerIndex: 1,
             explanation:
@@ -876,10 +876,10 @@ export const bioDiseaseImmunity: Topic = {
             id: "bio-disease-immunity-bm3-05",
             question: "How can antibodies help destroy pathogens?",
             options: [
-              "By producing stomach acid",
+              "By secreting concentrated hydrochloric acid into the blood to dissolve bacterial walls",
               "By clumping pathogens together (agglutination) so phagocytes engulf them more easily",
-              "By forming a scab",
-              "By beating like cilia",
+              "By converting soluble fibrinogen into a dry scab that traps pathogens inside arteries",
+              "By beating rhythmically like airway cilia to sweep pathogens directly out of the blood",
             ],
             answerIndex: 1,
             explanation:
@@ -896,10 +896,10 @@ export const bioDiseaseImmunity: Topic = {
             id: "bio-disease-immunity-bm3-06",
             question: "What is the function of memory cells produced after an infection?",
             options: [
-              "They engulf pathogens immediately",
+              "They engulf and digest any type of invading pathogen immediately by phagocytosis",
               "They allow a faster, stronger antibody response if the same pathogen returns",
-              "They produce stomach acid",
-              "They form blood clots",
+              "They line the stomach wall and secrete hydrochloric acid to kill swallowed microbes",
+              "They clump together with platelets to seal cuts and form protective blood clots",
             ],
             answerIndex: 1,
             explanation:
@@ -952,10 +952,10 @@ export const bioDiseaseImmunity: Topic = {
             id: "bio-disease-immunity-bm3-09",
             question: "A pathogen mutates so that its surface antigens change shape. What is the likely effect on existing immunity?",
             options: [
-              "Existing antibodies still fit perfectly",
+              "Existing antibodies change shape instantly to fit the new antigens perfectly",
               "Existing antibodies no longer match the new antigens, so immunity is reduced",
-              "The pathogen can no longer cause disease",
-              "Phagocytes can no longer engulf any pathogen",
+              "The mutated pathogen immediately loses its ability to infect cells or cause harm",
+              "Phagocytes can no longer engulf or digest any type of pathogen anywhere in the body",
             ],
             answerIndex: 1,
             explanation:
@@ -973,10 +973,10 @@ export const bioDiseaseImmunity: Topic = {
             id: "bio-disease-immunity-bm3-10",
             question: "Why is the specific immune response slower the first time a pathogen is encountered than during the non-specific response?",
             options: [
-              "Non-specific defences must be switched off first",
+              "All non-specific physical defences must be completely switched off before lymphocytes can start",
               "Specific lymphocytes must recognise the antigen and multiply before enough antibodies are made",
-              "Antibodies are made by phagocytes, which are rare",
-              "Stomach acid blocks the immune response",
+              "Specific antibodies are synthesised only by phagocytes, which are extremely rare in blood",
+              "Hydrochloric acid absorbed from the stomach temporarily blocks lymphocytes from dividing",
             ],
             answerIndex: 1,
             explanation:
@@ -1016,10 +1016,10 @@ export const bioDiseaseImmunity: Topic = {
             id: "bio-disease-immunity-bm4-02",
             question: "Passive immunity is provided by:",
             options: [
-              "Making your own antibodies after a vaccine",
+              "Making your own antibodies and memory cells after receiving a vaccination",
               "Receiving ready-made antibodies, e.g. through the placenta or breast milk",
-              "Memory cells made after infection",
-              "Phagocytosis",
+              "Long-lived memory lymphocytes formed by your body after a natural infection",
+              "Non-specific phagocytosis of invading bacteria by white blood cells in tissue",
             ],
             answerIndex: 1,
             explanation:
@@ -1031,10 +1031,10 @@ export const bioDiseaseImmunity: Topic = {
             id: "bio-disease-immunity-bm4-03",
             question: "What does a vaccine usually contain?",
             options: [
-              "A large dose of antibiotics",
+              "A large preventive dose of broad-spectrum antibiotics",
               "Weakened, dead or modified pathogens (or their antigens)",
-              "Ready-made antibodies only",
-              "Memory cells from another person",
+              "Ready-made antibodies purified from another person only",
+              "Live memory lymphocytes taken from an immune donor",
             ],
             answerIndex: 1,
             explanation:
@@ -1091,10 +1091,10 @@ export const bioDiseaseImmunity: Topic = {
             id: "bio-disease-immunity-bm4-06",
             question: "Herd immunity protects unvaccinated people because:",
             options: [
-              "The vaccine spreads from person to person",
-              "When most people are immune, the pathogen cannot spread easily, so unvaccinated people are less likely to meet it",
-              "Antibodies are shared between people",
-              "Unvaccinated people produce more antibodies",
+              "The vaccine itself spreads through the air from vaccinated people to immunise everyone nearby",
+              "When most people are immune, the pathogen spreads poorly, so unvaccinated people rarely encounter it",
+              "Vaccinated people continuously share ready-made antibodies with unvaccinated people by skin contact",
+              "Unvaccinated people automatically start producing memory cells and extra antibodies around immune crowds",
             ],
             answerIndex: 1,
             explanation:
@@ -1152,10 +1152,10 @@ export const bioDiseaseImmunity: Topic = {
             id: "bio-disease-immunity-bm4-09",
             question: "A traveller is bitten by a venomous snake and given an injection of ready-made antibodies (antiserum). This is an example of:",
             options: [
-              "Active immunity from vaccination",
+              "Active immunity triggered by vaccination with antigens",
               "Passive immunity giving rapid but short-term protection",
-              "Herd immunity",
-              "Non-specific defence",
+              "Herd immunity that blocks spread across a population",
+              "Non-specific physical defence like skin or mucus",
             ],
             answerIndex: 1,
             explanation:

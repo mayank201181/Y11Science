@@ -615,10 +615,10 @@ export const physicsExam: ComprehensiveExam = {
           question:
             "A converging (convex) lens is used as a magnifying glass. The object must be placed:",
           options: [
-            "Beyond 2F",
-            "At 2F",
+            "Further than 2F from the centre of the lens",
+            "At a distance of exactly 2F from the lens",
             "Between the lens and the focal point F",
-            "At the focal point F",
+            "Exactly at the principal focal point F",
           ],
           answerIndex: 2,
           explanation:
@@ -922,7 +922,7 @@ export const physicsExam: ComprehensiveExam = {
           id: "exam-physics-mcq-p3-14",
           question:
             "Which electromagnetic radiation is used in optical fibres for high-speed communication?",
-          options: ["Radio waves", "Microwaves", "Infrared / visible light", "Gamma rays"],
+          options: ["Long-wavelength radio waves", "High-frequency microwaves", "Infrared / visible light", "Ionising gamma radiation"],
           answerIndex: 2,
           explanation:
             "Infrared and visible light are guided along optical fibres by total internal reflection for fast, high-capacity communication.",
@@ -998,10 +998,10 @@ export const physicsExam: ComprehensiveExam = {
           question:
             "In the UK three-pin plug, the earth wire is connected to a metal appliance casing to:",
           options: [
-            "Increase the current",
+            "Increase the normal operating current flowing through the heating element or motor",
             "Provide a low-resistance path so a fault current blows the fuse and the case stays safe",
-            "Reduce the voltage",
-            "Store charge",
+            "Step down the 230 V mains potential difference to a lower voltage for the casing",
+            "Store excess electrostatic charge safely inside the casing while switched on",
           ],
           answerIndex: 1,
           explanation:
@@ -1048,10 +1048,10 @@ export const physicsExam: ComprehensiveExam = {
           question:
             "An a.c. generator produces an alternating e.m.f. because:",
           options: [
-            "The coil's resistance changes",
+            "The electrical resistance of the rotating copper coil rises and falls each half-turn",
             "The coil cuts magnetic field lines and the direction of cutting reverses each half-turn",
-            "The magnet gets stronger",
-            "The current is direct",
+            "The permanent magnet alternates its north and south poles twice during every rotation",
+            "A split-ring commutator reverses the coil connections to keep output current direct",
           ],
           answerIndex: 1,
           explanation:
@@ -1136,10 +1136,10 @@ export const physicsExam: ComprehensiveExam = {
           question:
             "Which statement is an example of Newton's third law?",
           options: [
-            "A heavier object falls faster",
+            "A heavier object falls with a greater gravitational acceleration in a vacuum",
             "A rocket pushes gas backwards and the gas pushes the rocket forwards",
-            "An object at rest stays at rest",
-            "Force equals mass times acceleration",
+            "An object at rest remains at rest unless a resultant external force acts",
+            "The resultant force on an object equals its mass multiplied by acceleration",
           ],
           answerIndex: 1,
           explanation:
@@ -1392,9 +1392,9 @@ export const physicsExam: ComprehensiveExam = {
             "High voltages are used for transmitting electrical power across the National Grid because:",
           options: [
             "Higher voltage means a lower current for the same power, reducing energy lost as heat in the cables",
-            "Higher voltage makes the current faster",
-            "It is cheaper to make high-voltage cables",
-            "Low voltage cannot travel long distances",
+            "Higher voltage makes free electrons drift much faster, so electrical energy arrives with zero loss",
+            "High-voltage overhead transmission cables require less insulation and are cheaper to build safely",
+            "Low-voltage alternating current cannot travel through copper or aluminium wires over long distances",
           ],
           answerIndex: 0,
           explanation:
@@ -1436,10 +1436,10 @@ export const physicsExam: ComprehensiveExam = {
           question:
             "When a magnet is pushed into a coil of wire connected to a sensitive meter, the meter deflects because:",
           options: [
-            "The coil's resistance drops to zero",
+            "The resistance of the copper coil momentarily drops to zero",
             "A changing magnetic field through the coil induces an e.m.f.",
-            "The magnet supplies current directly",
-            "The coil becomes a permanent magnet",
+            "Free electrons flow directly from the bar magnet into the wire",
+            "The copper coil becomes magnetised into a permanent bar magnet",
           ],
           answerIndex: 1,
           explanation:
@@ -1496,10 +1496,10 @@ export const physicsExam: ComprehensiveExam = {
           question:
             "Light from distant galaxies shows redshift. This is evidence that:",
           options: [
-            "The galaxies are moving towards us",
-            "The Universe is contracting",
+            "The galaxies are moving rapidly towards Earth as gravity pulls them in",
+            "The Universe is gradually contracting and galaxies are getting closer",
             "The galaxies are moving away from us (the Universe is expanding)",
-            "Light slows down over long distances",
+            "Light waves slow down significantly as they travel through empty space",
           ],
           answerIndex: 2,
           explanation:
@@ -1952,10 +1952,11 @@ export const physicsExam: ComprehensiveExam = {
           modelAnswer:
             "(a) Any two of: they are transverse waves; they travel at the same speed (3.0 × 10⁸ m/s) in a vacuum; they transfer energy; they can travel through a vacuum; they can be reflected/refracted.\n\n(b) Use: sterilising/security marking/detecting forged banknotes/sun-tanning beds. Danger: can damage skin cells/cause skin cancer or damage the eyes.\n\n(c) Microwaves can pass through the atmosphere (and ionosphere) with little absorption/refraction and can be sent in a narrow beam to the satellite, whereas some radio waves are reflected by the ionosphere.",
           markScheme: [
-            "(a) any two correct common properties [2]",
-            "(b) one valid use of UV [1]",
-            "(b) one valid danger of UV [1]",
-            "(c) microwaves pass through the atmosphere/ionosphere (radio reflected) [1]",
+            "(a) First common property: transverse waves (accept travel at same speed 3.0 × 10⁸ m/s in vacuum / transfer energy / travel through vacuum / reflect and refract) [1]",
+            "(a) Second common property: travel at the same speed (3.0 × 10⁸ m/s) in a vacuum (accept any second distinct valid property) [1]",
+            "(b) One valid use of UV: sterilising / security marking / detecting forged banknotes / sun-tanning beds [1]",
+            "(b) One valid danger of UV: damage skin cells / skin cancer / eye damage [1]",
+            "(c) Microwaves pass through the atmosphere / ionosphere (whereas radio waves are reflected) [1]",
           ],
           commonError:
             "Stating that all EM waves travel at the same speed in any medium — they only share the same speed in a vacuum.",
@@ -3049,12 +3050,13 @@ export const physicsExam: ComprehensiveExam = {
             "A coil is rotated in a magnetic field to act as an a.c. generator.\n\n(a) State two ways to increase the peak e.m.f. produced by the generator. [2]\n(b) Sketch and describe the shape of the output voltage against time. [2]\n(c) State the function of the slip rings. [1]",
           marks: 5,
           modelAnswer:
-            "(a) Any two of: rotate the coil faster (higher frequency); use more turns on the coil; use a stronger magnet (greater flux density); use a coil of larger area.\n\n(b) The output is alternating: a sine curve that goes positive then negative, repeating. The voltage is zero when the coil is parallel to the field (moving along the field lines, cutting none) and maximum when the coil is perpendicular (cutting field lines fastest).\n\n(c) Slip rings (with brushes) make a continuous sliding electrical contact between the rotating coil and the external circuit, allowing the alternating current to be carried out without the wires twisting.",
+            "(a) Any two of: rotate the coil faster (higher frequency); use more turns on the coil; use a stronger magnet (greater flux density); use a coil of larger area.\n\n(b) The output is alternating: a sine curve that goes positive then negative, repeating. The voltage is zero when the plane of the coil is perpendicular to the field (sides moving along the field lines, cutting none) and maximum when the plane of the coil is parallel to the field (sides cutting field lines fastest).\n\n(c) Slip rings (with brushes) make a continuous sliding electrical contact between the rotating coil and the external circuit, allowing the alternating current to be carried out without the wires twisting.",
           markScheme: [
-            "(a) rotate faster / more turns / stronger magnet / larger area (any two) [2]",
-            "(b) sine curve, alternating positive and negative [1]",
-            "(b) zero/max linked to coil orientation [1]",
-            "(c) slip rings give continuous contact to external circuit [1]",
+            "(a) First way to increase peak e.m.f.: rotate the coil faster / use more turns / stronger magnet / larger coil area [1]",
+            "(a) Second way to increase peak e.m.f.: use more turns on the coil / stronger magnet / larger area / rotate faster (distinct from first) [1]",
+            "(b) Alternating sine curve going positive and negative repeatedly [1]",
+            "(b) Zero voltage when coil plane is perpendicular to field (cutting no lines) and maximum when parallel (cutting fastest) [1]",
+            "(c) Slip rings give continuous sliding electrical contact between rotating coil and external circuit [1]",
           ],
           commonError:
             "Describing a split-ring commutator (used in motors / d.c. generators) instead of slip rings for a.c.",
@@ -3541,10 +3543,11 @@ export const physicsExam: ComprehensiveExam = {
           modelAnswer:
             "(a) Any two of: the image is the same size as the object; upright (the same way up); laterally inverted (left–right swapped); virtual; as far behind the mirror as the object is in front.\n\n(b) The image is 8.0 cm behind the mirror (the same distance as the object is in front). The object-to-image distance = 8.0 + 8.0 = 16 cm.\n\n(c) A virtual image is one from which light rays only appear to come; the rays do not actually pass through the image position, so it cannot be projected onto a screen.",
           markScheme: [
-            "(a) two correct properties [2]",
-            "(b) image 8.0 cm behind mirror [1]",
-            "(b) object–image distance 16 cm [1]",
-            "(c) rays only appear to come from it / cannot be projected on a screen [1]",
+            "(a) First plane mirror image property: same size as the object (accept upright / laterally inverted / virtual / same distance behind mirror) [1]",
+            "(a) Second plane mirror image property: upright / laterally inverted / virtual / as far behind the mirror as object is in front (distinct from first) [1]",
+            "(b) Image is 8.0 cm behind the mirror [1]",
+            "(b) Object-to-image distance = 8.0 + 8.0 = 16 cm [1]",
+            "(c) Light rays only appear to come from it / cannot be projected onto a screen [1]",
           ],
           commonError:
             "Saying the image is real, or that it can be formed on a screen.",

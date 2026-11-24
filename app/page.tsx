@@ -7,7 +7,7 @@ import { TOPICS, SUBJECTS, topicsBySubject, totalQuestionCount } from "@/lib/con
 import type { SubjectId } from "@/lib/types";
 import { rankForStars } from "@/lib/gamify";
 import { useHeartbeat } from "@/lib/useHeartbeat";
-import { comedyDoneKey, masterclassDoneKey, sitcomDoneKey } from "@/components/WatchTab";
+import { comedyDoneKey, masterclassDoneKey, sitcomDoneKey } from "@/lib/watchKeys";
 import { MEMORY_PITFALLS } from "@/lib/memoryPitfalls";
 import { renderPitfallRichText } from "@/components/MemoryPitfallsView";
 

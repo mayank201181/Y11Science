@@ -1096,7 +1096,12 @@ The trade-off with all cloning is **low genetic variation**: a clone population 
           {
             id: "bio-inheritance-bm3-06",
             question: "Which of the following crosses would produce offspring in a 1:2:1 genotype ratio?",
-            options: ["AA × aa", "Aa × Aa", "Aa × aa", "AA × Aa"],
+            options: [
+              "AA × aa (two opposite homozygotes)",
+              "Aa × Aa (two heterozygotes)",
+              "Aa × aa (heterozygote × recessive)",
+              "AA × Aa (dominant × heterozygote)",
+            ],
             answerIndex: 1,
             explanation: "Aa × Aa gives: AA (25%), Aa (50%), aa (25%) = 1 AA : 2 Aa : 1 aa. The 1:2:1 genotype ratio is the signature of a heterozygous × heterozygous cross.",
             guideRef: "Monohybrid Crosses and Punnett Squares",
@@ -1165,7 +1170,12 @@ The trade-off with all cloning is **low genetic variation**: a clone population 
           {
             id: "bio-inheritance-bm4-01",
             question: "Which blood group results from the genotype I^A I^B?",
-            options: ["A", "B", "AB", "O"],
+            options: [
+              "Blood group A",
+              "Blood group B",
+              "Blood group AB",
+              "Blood group O",
+            ],
             answerIndex: 2,
             explanation: "When both I^A and I^B alleles are present, this is a case of codominance — both alleles are fully expressed. The person produces both A and B antigens on their red blood cells, giving blood group AB.",
             guideRef: "Codominance, Blood Groups and Sex Determination",
@@ -1347,9 +1357,10 @@ The trade-off with all cloning is **low genetic variation**: a clone population 
             marks: 4,
             modelAnswer: "The statement is incorrect. First, mitosis produces two daughter cells, whereas meiosis produces four daughter cells. Second, the cells produced by mitosis are genetically identical to each other and to the parent cell (same chromosome number, same alleles), whereas cells produced by meiosis are genetically different from one another and haploid (half the chromosome number). Meiosis introduces genetic variation through crossing over and independent assortment; mitosis does not.",
             markScheme: [
-              "Mitosis produces 2 cells; meiosis produces 4 cells",
-              "Mitosis produces genetically identical/diploid cells; meiosis produces genetically different/haploid cells",
-              "Meiosis introduces genetic variation (crossing over / independent assortment); mitosis does not"
+              "Statement is incorrect: mitosis produces two daughter cells whereas meiosis produces four daughter cells",
+              "Mitosis produces genetically identical cells whereas meiosis produces genetically different cells",
+              "Mitosis preserves the parent chromosome number (diploid) whereas meiosis produces haploid cells (half the chromosome number)",
+              "Meiosis introduces genetic variation through crossing over / independent assortment; mitosis does not",
             ],
             commonError: "Stating that meiosis cells are genetically identical — they are not; crossing over and independent assortment ensure each is unique.",
             guideRef: "Mitosis and Meiosis",
@@ -1453,8 +1464,9 @@ The trade-off with all cloning is **low genetic variation**: a clone population 
             markScheme: [
               "(a) q = √0.36 = 0.6",
               "(b) p = 1 − 0.6 = 0.4",
-              "(c) 2pq = 2 × 0.4 × 0.6 = 0.48 / 48%",
-              "(d) Any valid Hardy-Weinberg assumption stated (no selection / random mating / no mutation / no gene flow / large population)"
+              "(c) Correct formula / working: 2pq = 2 × 0.4 × 0.6",
+              "(c) Final answer: 0.48 / 48%",
+              "(d) Valid Hardy-Weinberg assumption: no natural selection / random mating / no mutation / no gene flow or migration / large population",
             ],
             commonError: "Calculating 2pq as p × q (forgetting the factor of 2). Heterozygous individuals can be Aa in two ways, so the formula is 2pq not pq.",
             guideRef: "Natural Selection, Evolution and Selective Breeding",
@@ -1593,10 +1605,11 @@ The trade-off with all cloning is **low genetic variation**: a clone population 
             marks: 5,
             modelAnswer: "(a) Yellow coat requires ee (regardless of B locus). From Ee × Ee: P(ee) = 1/4. So 1/4 of all offspring are expected to have yellow coats. (b) Black coat requires E_ B_ (at least one E and at least one B). P(E_) = 3/4; P(B_) = 3/4; P(black) = 9/16. P(EEBB) = P(EE) × P(BB) = 1/4 × 1/4 = 1/16. P(EEBB | black) = (1/16) ÷ (9/16) = 1/9.",
             markScheme: [
-              "(a) Yellow = ee; P(ee) from Ee × Ee = 1/4",
-              "(b) Black = E_B_; P(black) = 3/4 × 3/4 = 9/16",
+              "(a) Yellow coat requires genotype ee (regardless of B locus)",
+              "(a) From Ee × Ee, probability P(ee) = 1/4",
+              "(b) Black coat requires E_ B_, giving P(black) = 3/4 × 3/4 = 9/16",
               "(b) P(EEBB) = 1/4 × 1/4 = 1/16",
-              "(b) Conditional probability = (1/16) ÷ (9/16) = 1/9"
+              "(b) Conditional probability = (1/16) ÷ (9/16) = 1/9",
             ],
             guideRef: "Monohybrid Crosses and Punnett Squares",
             difficulty: "challenge",
@@ -1620,10 +1633,11 @@ The trade-off with all cloning is **low genetic variation**: a clone population 
             marks: 5,
             modelAnswer: "(a) Both parents are unaffected but have an affected child (hh). Therefore both must have passed on an h allele to that child: I-1 = Hh and I-2 = Hh. (b) If II-2 is a carrier, her genotype is Hh. (c) II-2 is unaffected and from Hh × Hh cross; unaffected offspring are HH or Hh in ratio 1:2, so P(Hh | unaffected) = 2/3. Her husband is HH (not a carrier). Cross Hh × HH → HH or Hh, both unaffected. Even if II-2 is Hh, her husband can only contribute H alleles. No child can receive two h alleles (hh). P(affected child) = 0%.",
             markScheme: [
-              "(a) I-1 = Hh; I-2 = Hh (both carriers)",
-              "(b) Hh",
-              "(c) Husband is HH — only provides H alleles",
-              "(c) Child cannot be hh; P(affected) = 0 / 0%"
+              "(a) Both I-1 and I-2 have genotype Hh",
+              "(a) Affected child is hh, so both unaffected parents must carry and pass on an h allele",
+              "(b) Carrier genotype of II-2 is Hh",
+              "(c) Husband is HH and can only contribute H alleles",
+              "(c) No child can be hh, so probability of affected child = 0 / 0%",
             ],
             commonError: "Not recognising that the husband being HH (not a carrier) means he provides only H alleles — so children can never receive two h alleles and be affected.",
             guideRef: "Monohybrid Crosses and Punnett Squares",
@@ -1711,10 +1725,11 @@ The trade-off with all cloning is **low genetic variation**: a clone population 
             marks: 5,
             modelAnswer: "(a) Both parents are Cc (heterozygous carriers). (b) Cc × Cc: Punnett square gives CC, Cc, Cc, cc. P(cc = affected) = 1/4 = 25%. (c) Each pregnancy is an independent event. The outcome of previous pregnancies does not affect the outcome of future ones. Each time gametes combine at fertilisation, there is always a 1/4 probability of producing a cc (cystic fibrosis) child, regardless of how many children have already been born.",
             markScheme: [
-              "(a) Both parents: Cc",
-              "(b) Punnett square correct; P(cc) = 1/4 / 25%",
+              "(a) Both parents are Cc / heterozygous",
+              "(b) Punnett square gives CC, Cc, Cc, cc",
+              "(b) Probability of cystic fibrosis (cc) = 1/4 / 25%",
               "(c) Each pregnancy is an independent event",
-              "(c) Previous outcomes do not change the probability; always 1/4 chance of cc"
+              "(c) Previous pregnancies do not affect future outcomes; probability remains 1/4 at each fertilisation",
             ],
             commonError: "Thinking the probability changes after having unaffected children — genetic probabilities are reset for each independent pregnancy.",
             guideRef: "Monohybrid Crosses and Punnett Squares",
@@ -1752,9 +1767,10 @@ The trade-off with all cloning is **low genetic variation**: a clone population 
             marks: 4,
             modelAnswer: "(a) I-2 is unaffected, so genotype is dd (homozygous recessive — must have two recessive alleles to show unaffected phenotype for a dominant condition). (b) I-1 is affected. Since some children are unaffected (dd), I-1 must have passed on a d allele to those children. Therefore I-1 is Dd (heterozygous). If I-1 were DD, all offspring would be Dd and all affected — but some are unaffected. (c) Assuming II-3 is Dd (from a Dd × dd cross): II-3 (Dd) × unaffected partner (dd) → Dd (affected) and dd (unaffected) in 1:1 ratio. P(affected) = 1/2 = 50%.",
             markScheme: [
-              "(a) dd",
-              "(b) Dd — some children are unaffected; I-1 must contribute d to those children; DD would give all affected",
-              "(c) Dd × dd → 1:1 ratio; P(affected) = 1/2 / 50%"
+              "(a) I-2 has genotype dd (homozygous recessive)",
+              "(b) I-1 has genotype Dd (heterozygous)",
+              "(b) Must pass a d allele to unaffected (dd) children; DD would give all affected offspring",
+              "(c) Dd × dd gives 1:1 ratio, so probability child is affected = 1/2 / 50%",
             ],
             commonError: "Saying I-1 is DD without considering that unaffected children (dd) must have received a d allele from I-1.",
             guideRef: "Monohybrid Crosses and Punnett Squares",
@@ -1777,9 +1793,11 @@ The trade-off with all cloning is **low genetic variation**: a clone population 
             marks: 5,
             modelAnswer: "(a) Both parents are affected (have at least one P allele). They have an unaffected child (pp), so each parent must have contributed one p allele to that child — each parent is Pp (heterozygous). (b) Pp × Pp: Punnett square gives PP, Pp, Pp, pp. Phenotypes: polydactyly (PP or Pp) = 3/4 = 75%; unaffected (pp) = 1/4 = 25%. (c) Probability of an unaffected child = 25% (1 in 4). There is a relatively high chance (75%) of any child having polydactyly — this is a significant concern.",
             markScheme: [
-              "(a) Both parents: Pp (heterozygous) — must pass p to unaffected child",
-              "(b) Punnett square correct; polydactyly 3/4 (75%); unaffected 1/4 (25%)",
-              "(c) 25% / 1 in 4; relatively high risk of polydactyly (75%); concern appropriate"
+              "(a) Both parents are Pp / heterozygous",
+              "(a) Unaffected child is pp, so each affected parent must contribute a p allele",
+              "(b) Punnett square gives PP, Pp, Pp, pp",
+              "(b) Phenotype probabilities: polydactyly 3/4 (75%) and unaffected 1/4 (25%)",
+              "(c) 25% (1 in 4) unaffected / 75% high chance of polydactyly — significant concern",
             ],
             commonError: "Making one parent PP because they are affected — ignoring the unaffected child as evidence that both parents must carry a p allele.",
             guideRef: "Monohybrid Crosses and Punnett Squares",
@@ -1817,9 +1835,12 @@ The trade-off with all cloning is **low genetic variation**: a clone population 
             marks: 6,
             modelAnswer: "(a) For gene 1: Aa × Aa → P(A_) = 3/4; P(aa) = 1/4. For gene 2: Bb × bb → P(B_) = 1/2; P(bb) = 1/2. All combinations: A_B_ = 3/4 × 1/2 = 3/8; A_bb = 3/4 × 1/2 = 3/8; aaB_ = 1/4 × 1/2 = 1/8; aabb = 1/4 × 1/2 = 1/8. (b) Purple (A_B_) = 3/8; Red (A_bb) = 3/8; White (aaB_ + aabb) = 1/8 + 1/8 = 2/8 = 1/4. (c) The student is incorrect. White requires aa genotype, which occurs with probability 1/4 (not 1/8), combined with any B genotype. Total white = 1/4 = 2/8. The student only counted aabb (1/8) as white, but aaB_ (1/8) is also white — both lack pigment.",
             markScheme: [
-              "(a) A_B_ = 3/8; A_bb = 3/8; aaB_ = 1/8; aabb = 1/8",
-              "(b) Purple 3/8; Red 3/8; White 1/4 (= 2/8)",
-              "(c) Student is incorrect; aaB_ is also white; total white = 2/8 = 1/4, not 1/8"
+              "(a) Gene 1 (Aa × Aa) gives P(A_) = 3/4 and P(aa) = 1/4",
+              "(a) Gene 2 (Bb × bb) gives P(B_) = 1/2 and P(bb) = 1/2",
+              "(a) Combined genotype classes: A_B_ = 3/8, A_bb = 3/8, aaB_ = 1/8, aabb = 1/8",
+              "(b) Purple = 3/8 and red = 3/8",
+              "(b) White = 1/8 + 1/8 = 2/8 / 1/4",
+              "(c) Student is incorrect: both aaB_ and aabb lack pigment and are white, so total white = 2/8 / 1/4",
             ],
             guideRef: "Monohybrid Crosses and Punnett Squares",
             difficulty: "challenge",
@@ -1844,10 +1865,11 @@ The trade-off with all cloning is **low genetic variation**: a clone population 
             marks: 5,
             modelAnswer: "(a) I-2 is a carrier: X^D X^d. (b) I-1: X^D Y; I-2: X^D X^d. Punnett square gives: X^D X^D (unaffected female), X^D X^d (carrier female), X^D Y (unaffected male), X^d Y (affected male). (c) Unaffected daughters from this cross: X^D X^D or X^D X^d in 1:1 ratio. P(carrier | unaffected daughter) = 1/2 = 50%. (d) If II-2 is X^D X^d and her husband is X^D Y: offspring: X^D X^D, X^D X^d, X^D Y, X^d Y. P(affected = X^d Y) = 1/4 = 25%.",
             markScheme: [
-              "(a) X^D X^d",
-              "(b) Punnett square: X^D X^D, X^D X^d, X^D Y, X^d Y all correctly placed",
-              "(c) 50% / 1/2",
-              "(d) 25% / 1/4"
+              "(a) Genotype of I-2: X^D X^d",
+              "(b) I-1: X^D Y and I-2: X^D X^d",
+              "(b) Punnett square gives X^D X^D, X^D X^d, X^D Y, X^d Y",
+              "(c) Probability II-2 is a carrier = 1/2 / 50%",
+              "(d) Probability first child is affected (X^d Y) = 1/4 / 25%",
             ],
             commonError: "In (c), saying 100% carrier because her brother is affected — ignoring the 50% chance she could be X^D X^D (homozygous dominant, not a carrier).",
             guideRef: "Codominance, Blood Groups and Sex Determination",
@@ -1904,9 +1926,10 @@ The trade-off with all cloning is **low genetic variation**: a clone population 
             marks: 4,
             modelAnswer: "(a) Man: I^A I^B; Woman: I^A i. Punnett square: I^A I^A (blood group A), I^A i (blood group A), I^A I^B (blood group AB), I^B i (blood group B). Possible blood groups: A, B, AB. (b) Blood group O requires genotype ii. The man (I^A I^B) can only contribute I^A or I^B — he has no i allele. Therefore no child can receive two i alleles, and blood group O is NOT genetically possible for this couple.",
             markScheme: [
-              "(a) Punnett square correct: I^A I^A, I^A i, I^A I^B, I^B i",
-              "(a) Blood groups listed: A, B, AB",
-              "(b) Not possible; man has no i allele; child cannot be ii"
+              "(a) Parental genotypes identified: man I^A I^B and woman I^A i",
+              "(a) Punnett square offspring genotypes: I^A I^A, I^A i, I^A I^B, I^B i",
+              "(a) Possible blood groups: A, B, and AB",
+              "(b) Not genetically possible: blood group O requires ii, and the man has no i allele",
             ],
             commonError: "Forgetting that the AB father can only contribute I^A or I^B — he has no i allele, so blood group O is impossible.",
             guideRef: "Codominance, Blood Groups and Sex Determination",
@@ -1930,10 +1953,11 @@ The trade-off with all cloning is **low genetic variation**: a clone population 
             marks: 5,
             modelAnswer: "(a) The woman's mother was colour blind (X^n X^n), so the woman must have inherited one X^n from her mother. She has normal vision, so her genotype is X^N X^n (carrier). (b) Woman: X^N X^n; Man: X^N Y. Punnett square: X^N X^N (normal female), X^N X^n (carrier female), X^N Y (normal male), X^n Y (colour-blind male). (c)(i) Of sons: X^N Y (normal) or X^n Y (colour blind) — P(son has normal vision) = 1/2 = 50% of sons (or 1/4 = 25% of all children). (ii) Daughters are X^N X^N or X^N X^n — neither is colour blind. P(daughter colour blind) = 0%.",
             markScheme: [
-              "(a) X^N X^n (carrier)",
-              "(b) Punnett square: X^N X^N, X^N X^n, X^N Y, X^n Y correctly placed",
-              "(c)(i) 50% of sons / 25% of all children (accept either with correct working)",
-              "(c)(ii) 0% — no daughter can be X^n X^n in this cross"
+              "(a) Woman's genotype is X^N X^n (carrier)",
+              "(b) Woman: X^N X^n and man: X^N Y",
+              "(b) Punnett square: X^N X^N (normal female), X^N X^n (carrier female), X^N Y (normal male), X^n Y (colour-blind male)",
+              "(c)(i) Probability son has normal vision = 1/2 / 50% of sons (or 1/4 / 25% of all children)",
+              "(c)(ii) Probability daughter is colour blind = 0% (daughters are X^N X^N or X^N X^n)",
             ],
             commonError: "Saying daughters can be colour blind in this cross — impossible because the father is X^N Y and can only give X^N to daughters; daughters will always have at least one X^N allele.",
             guideRef: "Codominance, Blood Groups and Sex Determination",
@@ -1971,9 +1995,10 @@ The trade-off with all cloning is **low genetic variation**: a clone population 
             marks: 4,
             modelAnswer: "In natural selection, the environment acts as the selection pressure. Individuals with heritable characteristics better suited to their environment survive and reproduce more successfully, passing favourable alleles to offspring. Over many generations, allele frequencies change — this is evolution. Example: antibiotic-resistant bacteria — the antibiotic kills sensitive bacteria; resistant bacteria survive and multiply. In selective breeding, humans act as the selection pressure. Breeders deliberately choose which individuals reproduce based on desired characteristics, repeating this over many generations. Example: selectively breeding wheat for high grain yield — farmers choose the highest-yielding plants as parents each generation. Key difference: in natural selection, the environment selects; in selective breeding, humans select.",
             markScheme: [
-              "Natural selection: environment selects; heritable variation; favourable alleles increase in frequency; named example",
-              "Selective breeding: humans choose parents; repeated over generations; named example",
-              "Key difference: selection pressure is the environment vs. humans"
+              "Natural selection: environment acts as selection pressure / better-adapted individuals survive and reproduce, passing favourable alleles",
+              "Valid example of natural selection (e.g. antibiotic-resistant bacteria)",
+              "Selective breeding: humans choose parents with desired characteristics over many generations",
+              "Valid example of selective breeding (e.g. selectively breeding wheat for high grain yield)",
             ],
             commonError: "Saying selective breeding changes DNA directly — it only changes allele frequencies by controlling which organisms breed.",
             guideRef: "Natural Selection, Evolution and Selective Breeding",
@@ -1985,9 +2010,11 @@ The trade-off with all cloning is **low genetic variation**: a clone population 
             marks: 5,
             modelAnswer: "(a) Leaf length shows continuous variation — it is a quantitative measurement that can take any value within a range, with no distinct categories. It is influenced by many genes (polygenic) and by environmental factors, producing an approximately normal distribution. (b) Leaves in shade receive less light for photosynthesis. A larger surface area increases the amount of light the leaf can intercept. There may be phenotypic plasticity — the plant adjusts leaf size in response to light availability to maximise photosynthesis. (c) The conclusion is oversimplified. Differences in leaf length could be due to: (1) environmental differences (light, water, temperature) between the two locations; (2) genetic differences between the two trees (they are different individual organisms with different genotypes); or (3) a combination of both. Without using genetically identical plants (clones) in both conditions, it is impossible to attribute differences solely to the environment.",
             markScheme: [
-              "(a) Continuous; quantitative/smooth range/no distinct categories; polygenic + environmental influence",
-              "(b) More surface area captures more light; phenotypic plasticity / adaptive response to low light",
-              "(c) Could be genetic differences between trees; need identical genotypes (clones) to isolate environmental effect; cannot attribute solely to environment"
+              "(a) Continuous variation",
+              "(a) Quantitative measurement across a range with no distinct categories / polygenic and environmental influence",
+              "(b) Leaves in shade receive less light for photosynthesis",
+              "(b) Larger surface area intercepts more light / phenotypic plasticity to maximise photosynthesis",
+              "(c) Could be genetic differences between the two trees — would need genetically identical clones to isolate environmental effect",
             ],
             commonError: "Saying leaf length is discontinuous because measurements give discrete numbers — measurements are always discrete; the underlying variation is still continuous.",
             guideRef: "Variation, Mutation and Sources of Genetic Difference",
@@ -2000,8 +2027,9 @@ The trade-off with all cloning is **low genetic variation**: a clone population 
             modelAnswer: "(a) Carrier woman: X^H X^h. Unaffected man: X^H Y. (b) Punnett square (X^H X^h × X^H Y): X^H X^H (unaffected female), X^H X^h (carrier female), X^H Y (unaffected male), X^h Y (haemophilia male). (c) Sons: X^H Y (normal) or X^h Y (haemophilia) in 1:1 ratio. P(son has haemophilia) = 1/2 = 50%.",
             markScheme: [
               "(a) Carrier woman: X^H X^h; unaffected man: X^H Y",
-              "(b) Punnett square: X^H X^H, X^H X^h, X^H Y, X^h Y all correct",
-              "(c) 1/2 / 50%"
+              "(b) Punnett square (X^H X^h × X^H Y)",
+              "(b) X^H X^H (unaffected female), X^H X^h (carrier female), X^H Y (unaffected male), X^h Y (haemophilia male)",
+              "(c) Probability son has haemophilia = 1/2 / 50%",
             ],
             commonError: "Giving P = 1/4 — this is the probability for all children, not specifically for sons. The question asks about sons only.",
             guideRef: "Codominance, Blood Groups and Sex Determination",

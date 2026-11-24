@@ -6,7 +6,7 @@ import { TOPICS, SUBJECTS } from "@/lib/content";
 import type { SubjectId } from "@/lib/types";
 import { rankForStars } from "@/lib/gamify";
 import { useStore } from "@/lib/store";
-import { masterclassDoneKey, sitcomDoneKey } from "@/components/WatchTab";
+import { masterclassDoneKey, sitcomDoneKey } from "@/lib/watchKeys";
 
 interface Achievement {
   id: string;

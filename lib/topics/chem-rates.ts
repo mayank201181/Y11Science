@@ -618,10 +618,10 @@ The Contact process makes sulfuric acid. Its key reversible step is:
             id: "chem-rates-bm1-01",
             question: "Which two conditions must both be met for a collision between reactant particles to be successful?",
             options: [
-              "High temperature and high pressure",
+              "A high reaction temperature and a high gas pressure inside the vessel",
               "Energy greater than or equal to the activation energy and the correct orientation",
-              "Correct orientation and the presence of a catalyst",
-              "A large surface area and a high concentration"
+              "The correct collision orientation and the presence of a solid catalyst",
+              "A large solid surface area and a high concentration of reactant solution"
             ],
             answerIndex: 1,
             explanation: "A successful (effective) collision requires the colliding particles to have energy ≥ Ea AND to approach with the correct orientation. The other options describe conditions that raise the rate but are not the defining requirements of a single successful collision.",
@@ -632,10 +632,10 @@ The Contact process makes sulfuric acid. Its key reversible step is:
             id: "chem-rates-bm1-02",
             question: "Which change would decrease the rate of reaction between magnesium ribbon and dilute hydrochloric acid?",
             options: [
-              "Warming the acid",
-              "Using a more concentrated acid",
+              "Warming the dilute hydrochloric acid in a water bath before adding the magnesium",
+              "Using the same volume of a more concentrated hydrochloric acid solution instead",
               "Using the same mass of magnesium as a single coiled ribbon instead of small pieces",
-              "Adding a suitable catalyst"
+              "Adding a suitable catalyst that lowers the activation energy of the reaction"
             ],
             answerIndex: 2,
             explanation: "A single coiled ribbon has a smaller surface area than the same mass cut into small pieces, so fewer Mg atoms are exposed to acid particles — collision frequency falls and the rate decreases. Warming, increasing concentration and adding a catalyst all increase the rate.",
@@ -829,10 +829,10 @@ The Contact process makes sulfuric acid. Its key reversible step is:
             id: "chem-rates-bm2-03",
             question: "In the sodium thiosulfate and acid 'disappearing cross' experiment, what is actually measured to compare rates?",
             options: [
-              "The volume of gas produced",
-              "The mass lost during the reaction",
+              "The total volume of sulfur dioxide gas collected in a gas syringe",
+              "The total mass lost from the conical flask on an electronic balance",
               "The time taken for a cross drawn under the flask to become invisible",
-              "The temperature rise of the mixture"
+              "The maximum temperature rise of the reaction mixture on a thermometer"
             ],
             answerIndex: 2,
             explanation: "A pale yellow sulfur precipitate gradually clouds the mixture; the time for the cross to disappear is recorded. A shorter time means a faster reaction, and rate is taken as proportional to 1/time. No gas is collected and mass change is negligible.",
@@ -960,10 +960,10 @@ The Contact process makes sulfuric acid. Its key reversible step is:
             id: "chem-rates-bm2-10",
             question: "Two volume-vs-time curves are drawn for the same reaction. Curve P is steeper at the start AND levels off at a higher final volume than curve Q. Which single change could account for BOTH differences?",
             options: [
-              "Q used a catalyst that P did not.",
+              "Q used a suitable catalyst that P did not, while all reactant amounts stayed the same.",
               "P used a larger amount (more moles) of the limiting reactant at a higher concentration.",
-              "P was carried out at a lower temperature than Q.",
-              "Only the surface area was changed between P and Q."
+              "P was carried out at a lower temperature than Q with the exact same masses of reactants.",
+              "Only the surface area of the solid reactant was increased in P while moles stayed equal."
             ],
             answerIndex: 1,
             explanation: "A higher final volume means more product, so more of the limiting reactant was used. A steeper start as well means the rate was also higher (e.g. higher concentration). Using more reactant at a higher concentration changes BOTH the amount and the rate. Surface area, catalyst or temperature alone change only the rate, not the final volume.",
@@ -987,10 +987,10 @@ The Contact process makes sulfuric acid. Its key reversible step is:
             id: "chem-rates-bm3-01",
             question: "What does the symbol ⇌ in a chemical equation tell you?",
             options: [
-              "The reaction is very fast.",
+              "The reaction is very fast and goes to completion immediately.",
               "The reaction is reversible and can go in both directions.",
-              "The reaction releases a gas.",
-              "The reaction needs a catalyst."
+              "The reaction releases a gas that escapes from the container.",
+              "The reaction needs a catalyst before any products can form."
             ],
             answerIndex: 1,
             explanation: "The half-arrows ⇌ show a reversible reaction: under suitable conditions it can proceed both forwards and backwards. It says nothing about speed, gas release or catalysts.",
@@ -1105,10 +1105,10 @@ The Contact process makes sulfuric acid. Its key reversible step is:
             id: "chem-rates-bm3-08",
             question: "For the equilibrium H2(g) + I2(g) ⇌ 2HI(g), increasing the total pressure has no effect on the position of equilibrium. Why?",
             options: [
-              "Because the reaction is exothermic.",
+              "Because the reaction is exothermic, so only temperature changes apply.",
               "Because there are equal numbers of gas moles on both sides (2 and 2).",
-              "Because a catalyst is present.",
-              "Because iodine is a solid."
+              "Because a catalyst is always present, preventing any shift in position.",
+              "Because iodine is a solid here, so it does not exert any gas pressure."
             ],
             answerIndex: 1,
             explanation: "Both sides have 2 moles of gas (1 + 1 on the left, 2 on the right). When the moles of gas are equal, a pressure change does not favour either side, so the position of equilibrium does not move.",
@@ -1270,10 +1270,10 @@ The Contact process makes sulfuric acid. Its key reversible step is:
             id: "chem-rates-bm4-07",
             question: "The Contact process step 2SO2(g) + O2(g) ⇌ 2SO3(g) is exothermic and uses only about 1–2 atm pressure, even though the right side has fewer gas moles. Why is high pressure NOT used?",
             options: [
-              "Pressure has no effect because the moles are equal.",
+              "Pressure has no effect on this equilibrium because there are equal moles of gas on both sides.",
               "The yield is already very high (~98%) at low pressure, so high pressure is not worth the cost.",
-              "High pressure would shift equilibrium to the left.",
-              "SO3 is a solid, so pressure is irrelevant."
+              "High pressure would shift the equilibrium to the left toward the reactants and lower the yield.",
+              "Sulfur trioxide is a solid under reactor conditions, so gas pressure cannot affect the reaction."
             ],
             answerIndex: 1,
             explanation: "Higher pressure would shift the equilibrium right (3 moles → 2 moles) and raise yield slightly, but the yield is already about 98% at 1–2 atm. The extra cost and danger of high-pressure plant is not justified by the marginal gain.",
@@ -1289,10 +1289,10 @@ The Contact process makes sulfuric acid. Its key reversible step is:
             id: "chem-rates-bm4-08",
             question: "Increasing the pressure in the Haber process speeds up the rate of reaction AND increases the equilibrium yield. Which statement explains BOTH effects?",
             options: [
-              "Higher pressure lowers the activation energy and is endothermic.",
+              "Higher pressure lowers the activation energy (faster rate) and makes the forward reaction endothermic (higher yield).",
               "Higher pressure increases collision frequency (faster rate) and shifts equilibrium toward fewer gas moles (higher yield).",
-              "Higher pressure increases the temperature, which raises both.",
-              "Higher pressure removes the catalyst, speeding the reaction."
+              "Higher pressure raises the reactor temperature (faster rate) and shifts equilibrium toward more gas moles (higher yield).",
+              "Higher pressure activates the iron catalyst (faster rate) and makes the catalyst shift equilibrium right (higher yield)."
             ],
             answerIndex: 1,
             explanation: "Compressing the gases increases the number of particles per unit volume, so collisions are more frequent (faster rate). At the same time, Le Chatelier shifts the equilibrium toward the side with fewer gas moles (the products), raising the yield. One change produces both effects.",
@@ -1434,12 +1434,13 @@ The Contact process makes sulfuric acid. Its key reversible step is:
             marks: 7,
             modelAnswer: "(a) Mean rate = change in volume ÷ time = 42 cm³ ÷ 20 s = 2.1 cm³/s.\n\n(b) The reaction is fastest in the first interval, 0–10 s. The volume produced in this interval (26 cm³) is greater than in any later 10 s interval, so the gradient is steepest here.\n\n(c) As the reaction proceeds the hydrochloric acid is used up, so the concentration of acid falls. There are fewer acid particles per unit volume, so collisions with the magnesium are less frequent and there are fewer successful collisions per second — the rate decreases.\n\n(d) After 50 s one reactant (the acid) has been completely used up, so no more hydrogen can be produced and the volume stays constant.",
             markScheme: [
-              "Volume in first 20 s = 42 cm³ used (1)",
-              "Mean rate = 42 ÷ 20 = 2.1 cm³/s (with units) (1)",
-              "Fastest in 0–10 s interval (1)",
-              "Largest volume change (26 cm³) / steepest gradient in that interval (1)",
-              "Acid is used up → concentration falls → fewer/less frequent collisions (1)",
-              "(d) A reactant (acid) is completely used up so no more H2 forms (1)"
+              "(a) Volume produced in first 20 s = 42 cm³ (1)",
+              "(a) Mean rate = 42 ÷ 20 = 2.1 cm³/s (with units) (1)",
+              "(b) Fastest in 0–10 s interval (1)",
+              "(b) Largest volume change (26 cm³) / steepest gradient in that interval (1)",
+              "(c) Acid is used up so concentration falls / fewer acid particles per unit volume (1)",
+              "(c) Collisions are less frequent / fewer successful collisions per second (1)",
+              "(d) Reactant (acid) is completely used up so no more hydrogen forms (1)"
             ],
             commonError: "In (c), writing only 'there is less acid' without linking the falling concentration to a lower collision frequency.",
             guideRef: "Measuring Rate & Interpreting Rate Graphs",
@@ -1468,11 +1469,13 @@ The Contact process makes sulfuric acid. Its key reversible step is:
             marks: 7,
             modelAnswer: "(a) Beaker A: rate = 1/72 = 0.0139 s⁻¹ (3 s.f.). Beaker B: rate = 1/18 = 0.0556 s⁻¹ (3 s.f.).\n\n(b) Number of times faster = rate B ÷ rate A = (1/18) ÷ (1/72) = 72/18 = 4. Beaker B is 4 times faster than beaker A.\n\n(c) A 20 °C rise is two 10 °C steps, so the rule predicts the rate should increase by a factor of 2 × 2 = 4. The measured factor is also 4, so the data does support the rule for this reaction over this temperature range.",
             markScheme: [
-              "Rate A = 1/72 = 0.0139 s⁻¹ (1)",
-              "Rate B = 1/18 = 0.0556 s⁻¹ (1)",
-              "Ratio = (1/18) ÷ (1/72) = 72/18 = 4 / B is 4 times faster (1)",
-              "20 °C = two 10 °C steps → predicted factor 2 × 2 = 4 (1)",
-              "Measured factor (4) matches predicted (4) → data supports the rule (1)"
+              "(a) Rate A = 1/72 = 0.0139 s⁻¹ (1)",
+              "(a) Rate B = 1/18 = 0.0556 s⁻¹ (1)",
+              "(b) Ratio working: rate B ÷ rate A / (1/18) ÷ (1/72) / 72/18 (1)",
+              "(b) Beaker B is 4 times faster than beaker A (1)",
+              "(c) 20 °C rise is two 10 °C steps (1)",
+              "(c) Rule predicts rate increases by a factor of 2 × 2 = 4 (1)",
+              "(c) Measured factor (4) matches predicted factor (4), so data supports the rule (1)"
             ],
             commonError: "Dividing the times the wrong way round (18/72 = 0.25) and concluding B is slower — remember rate ∝ 1/time, so the shorter time is faster.",
             guideRef: "Measuring Rate & Interpreting Rate Graphs",
@@ -1532,9 +1535,12 @@ The Contact process makes sulfuric acid. Its key reversible step is:
             marks: 6,
             modelAnswer: "(i) Increasing the pressure increases the rate by increasing the collision frequency. Compressing the gases puts more particles into the same volume, so they collide more often. (The proportion of successful collisions is unchanged.)\n\n(ii) Increasing the temperature increases the rate by both effects, but mainly by increasing the proportion of successful collisions. Faster particles collide a little more often (higher frequency), and a much greater proportion of collisions now have energy ≥ the activation energy.\n\n(iii) Adding a catalyst increases the rate by increasing the proportion of successful collisions. It lowers the activation energy, so a greater fraction of the existing collisions are successful. (It does not change the collision frequency.)",
             markScheme: [
-              "(i) Pressure → collision frequency (1); more particles in the same volume collide more often (1)",
-              "(ii) Temperature → mainly proportion of successful collisions / both (1); greater proportion of collisions have energy ≥ Ea (1)",
-              "(iii) Catalyst → proportion of successful collisions (1); lowers activation energy so more collisions succeed (1)"
+              "(i) Pressure increases collision frequency (1)",
+              "(i) Compressing gases puts more particles in the same volume so they collide more often (1)",
+              "(ii) Temperature acts by both effects / mainly increases proportion of successful collisions (1)",
+              "(ii) Faster particles collide more often and a greater proportion have energy ≥ activation energy (1)",
+              "(iii) Catalyst increases proportion of successful collisions (1)",
+              "(iii) Lowers the activation energy so a greater fraction of collisions are successful (1)"
             ],
             commonError: "Saying a catalyst increases the collision frequency — it does not; it raises the proportion of successful collisions by lowering the activation energy.",
             guideRef: "Factors Affecting Rate of Reaction",
@@ -1552,13 +1558,14 @@ The Contact process makes sulfuric acid. Its key reversible step is:
             marks: 8,
             modelAnswer: "(a) Moles of HCl = concentration × volume in dm³ = 1.0 mol/dm³ × (40 ÷ 1000) dm³ = 1.0 × 0.040 = 0.040 mol.\n\n(b) From the equation, 2 mol HCl produce 1 mol CO2, so moles of CO2 = 0.040 ÷ 2 = 0.020 mol. Mr(CO2) = 12 + (2 × 16) = 44. Mass of CO2 = moles × Mr = 0.020 × 44 = 0.88 g.\n\n(c)(i) The rate increases. Powder has a greater surface area, so more CaCO3 particles are exposed and collisions with the acid are more frequent, giving more successful collisions per second.\n\n(ii) The maximum mass of CO2 is unchanged (still 0.88 g). The acid is the limiting reactant and the same amount (0.040 mol HCl) is used, so the same amount of CO2 is produced — only the rate is different.",
             markScheme: [
-              "Moles HCl = 1.0 × 40/1000 (1)",
-              "= 0.040 mol (1)",
-              "Moles CO2 = 0.040 ÷ 2 = 0.020 mol (1)",
-              "Mr(CO2) = 44 (1)",
-              "Mass CO2 = 0.020 × 44 = 0.88 g (1)",
-              "(c)(i) Rate increases — greater surface area → more frequent collisions (1)",
-              "(c)(ii) Maximum mass unchanged — same moles of limiting reactant (acid) (1)"
+              "(a) Moles HCl = 1.0 × 40/1000 (1)",
+              "(a) = 0.040 mol (1)",
+              "(b) Moles CO2 = 0.040 ÷ 2 = 0.020 mol (1)",
+              "(b) Mr(CO2) = 44 (1)",
+              "(b) Mass CO2 = 0.020 × 44 = 0.88 g (1)",
+              "(c)(i) Rate increases (1)",
+              "(c)(i) Powder has greater surface area so collisions are more frequent / more successful collisions per second (1)",
+              "(c)(ii) Maximum mass unchanged (0.88 g) because same moles of limiting reactant (acid) used (1)"
             ],
             commonError: "Using a 1:1 ratio of HCl to CO2 (giving 0.040 mol CO2 and 1.76 g). The equation needs 2 mol HCl per 1 mol CO2, so the moles of CO2 are halved.",
             guideRef: "Measuring Rate & Interpreting Rate Graphs",
@@ -1647,9 +1654,12 @@ The Contact process makes sulfuric acid. Its key reversible step is:
             marks: 6,
             modelAnswer: "(a) Increasing the pressure shifts the equilibrium to the right. There are 3 moles of gas on the left (2 SO2 + 1 O2) and 2 moles on the right (2 SO3). Le Chatelier predicts the system shifts toward the side with fewer gas moles (the right) to reduce the pressure, so more SO3 forms.\n\n(b) Increasing the temperature shifts the equilibrium to the left. The forward reaction is exothermic (ΔH = −196 kJ/mol), so the reverse reaction is endothermic. Le Chatelier predicts the system shifts in the endothermic direction (left) to absorb the extra heat, so less SO3 forms.\n\n(c) Adding more O2 shifts the equilibrium to the right. The increase in O2 concentration is opposed by the system shifting away from O2 (to the right), using up the added O2 and producing more SO3.",
             markScheme: [
-              "(a) Shifts right (1); fewer gas moles on right (2 vs 3) / reduces pressure (1)",
-              "(b) Shifts left (1); forward reaction exothermic, so shift is in endothermic direction (1)",
-              "(c) Shifts right (1); system shifts away from the added O2 to use it up (1)"
+              "(a) Equilibrium shifts to the right / more SO3 forms (1)",
+              "(a) Fewer moles of gas on the right (2 vs 3) so system shifts to reduce pressure (1)",
+              "(b) Equilibrium shifts to the left / less SO3 forms (1)",
+              "(b) Forward reaction is exothermic so system shifts in the endothermic direction to absorb heat (1)",
+              "(c) Equilibrium shifts to the right / more SO3 forms (1)",
+              "(c) System opposes added O2 / shifts away from O2 to use it up (1)"
             ],
             commonError: "Saying higher temperature 'shifts right because heat speeds up the forward reaction'. Temperature changes the equilibrium position toward the endothermic direction; for an exothermic forward reaction that is to the left.",
             guideRef: "Le Chatelier's Principle",
@@ -1667,8 +1677,12 @@ The Contact process makes sulfuric acid. Its key reversible step is:
             marks: 6,
             modelAnswer: "(a) In hot water the mixture turns a darker brown. The forward reaction is endothermic, so raising the temperature shifts the equilibrium in the endothermic (forward) direction, producing more brown NO2. More NO2 means a deeper brown colour.\n\n(b) On compression the mixture becomes paler (less brown). There is 1 mole of gas on the left (N2O4) and 2 moles on the right (NO2). Increasing the pressure shifts the equilibrium toward the side with fewer gas moles (the left), forming more colourless N2O4 and less brown NO2, so the colour fades.",
             markScheme: [
-              "(a) Darker brown / more NO2 (1); endothermic forward reaction (1); higher T shifts toward endothermic/forward direction (1)",
-              "(b) Paler / less brown (1); fewer gas moles on left (1 vs 2) (1); higher pressure shifts toward fewer gas moles (left) (1)"
+              "(a) Mixture turns darker / deeper brown (1)",
+              "(a) Raising temperature shifts equilibrium in the endothermic (forward) direction (1)",
+              "(a) More brown NO2 is produced (1)",
+              "(b) Mixture becomes paler / colour fades (1)",
+              "(b) Fewer moles of gas on the left (1 vs 2) (1)",
+              "(b) Higher pressure shifts equilibrium to the left, forming more colourless N2O4 / less NO2 (1)"
             ],
             commonError: "Forgetting to link the observation (colour) to the species: NO2 is brown and N2O4 is colourless, so 'more NO2' must be stated to justify 'darker brown'.",
             guideRef: "Le Chatelier's Principle",
@@ -1731,10 +1745,12 @@ The Contact process makes sulfuric acid. Its key reversible step is:
             marks: 6,
             modelAnswer: "(a) Maximum yield is given by low temperature and high pressure.\n\nLow temperature: the forward reaction is exothermic (ΔH = −114 kJ/mol), so Le Chatelier predicts that lowering the temperature shifts the equilibrium in the exothermic (forward) direction, increasing the yield of NO2.\n\nHigh pressure: there are 3 moles of gas on the left (2 NO + 1 O2) and 2 moles on the right (2 NO2). Increasing the pressure shifts the equilibrium toward the side with fewer gas moles (the right), increasing the yield of NO2.\n\n(b) At a very low temperature the rate of reaction is very slow, because few particles have energy ≥ the activation energy. Although the equilibrium yield is high, it would take a very long time to reach equilibrium, so the actual rate of production is low. A compromise (higher) temperature is used to give an acceptable rate, accepting a somewhat lower yield.",
             markScheme: [
-              "Low temperature (1); forward reaction exothermic → low T shifts toward products (1)",
-              "High pressure (1); fewer gas moles on right (2 vs 3) → high P shifts toward products (1)",
-              "Low temperature gives a slow rate / few particles have E ≥ Ea (1)",
-              "Compromise temperature used for an acceptable rate (rate vs yield) (1)"
+              "(a) Low temperature (1)",
+              "(a) Forward reaction is exothermic so lowering temperature shifts equilibrium in the forward direction (1)",
+              "(a) High pressure (1)",
+              "(a) Fewer moles of gas on the right (2 vs 3) so increasing pressure shifts equilibrium to the right (1)",
+              "(b) Low temperature gives a slow rate / few particles have energy ≥ activation energy (1)",
+              "(b) Compromise higher temperature used for an acceptable rate of production (1)"
             ],
             commonError: "Confusing yield with rate — the conditions for maximum yield (low T) are not the conditions for the fastest rate (high T). Industrial conditions are a compromise.",
             guideRef: "Le Chatelier's Principle",
@@ -1752,10 +1768,13 @@ The Contact process makes sulfuric acid. Its key reversible step is:
             marks: 7,
             modelAnswer: "(a)(i) Increasing the pressure increases the yield of methanol. There are 3 moles of gas on the left (1 CO + 2 H2) and 1 mole on the right (CH3OH). Higher pressure shifts the equilibrium toward fewer gas moles (the right), increasing the yield.\n\n(ii) Increasing the temperature decreases the yield of methanol. The forward reaction is exothermic, so higher temperature shifts the equilibrium in the endothermic (reverse) direction, reducing the yield.\n\n(b) A higher temperature is used because it increases the rate of reaction (more particles have energy ≥ Ea), so equilibrium is reached far more quickly. The lower yield per pass is accepted because a usable amount of methanol is produced in a reasonable time — a compromise between rate and yield.\n\n(c) Continuously remove (condense out) the methanol as it forms / recycle the unreacted CO and H2. Removing the product shifts the equilibrium to the right, increasing the overall yield obtained.",
             markScheme: [
-              "(a)(i) Yield increases (1); fewer gas moles on right (1 vs 3) → high P shifts right (1)",
-              "(a)(ii) Yield decreases (1); exothermic forward reaction → high T shifts toward reactants (1) (max 4)",
-              "(b) Higher T gives a faster rate / equilibrium reached sooner (1); compromise between rate and yield (1)",
-              "(c) Remove/condense methanol as it forms / recycle unreacted gases (1)"
+              "(a)(i) Increasing pressure increases the yield of methanol (1)",
+              "(a)(i) Fewer moles of gas on the right (1 vs 3) so higher pressure shifts equilibrium right (1)",
+              "(a)(ii) Increasing temperature decreases the yield of methanol (1)",
+              "(a)(ii) Forward reaction is exothermic so higher temperature shifts equilibrium in the endothermic / reverse direction (1)",
+              "(b) Higher temperature increases the rate of reaction / equilibrium reached more quickly (1)",
+              "(b) Compromise between rate and yield / usable amount produced in reasonable time (1)",
+              "(c) Remove / condense methanol as it forms / recycle unreacted CO and H2 (1)"
             ],
             commonError: "Forgetting that removing the product (or recycling reactants) is a legitimate way to drive a reversible reaction toward products without altering temperature or pressure.",
             guideRef: "The Haber Process",
@@ -1773,9 +1792,12 @@ The Contact process makes sulfuric acid. Its key reversible step is:
             marks: 6,
             modelAnswer: "(a) There are 2 moles of gas on the left (1 H2 + 1 Cl2) and 2 moles on the right (2 HCl). Because the number of gas moles is the same on both sides, increasing the pressure does not favour either side, so the position of equilibrium is unchanged.\n\n(b) Removing some product lowers its concentration. Le Chatelier predicts the system opposes this change by shifting toward the product side (the forward reaction speeds up relative to the reverse), making more product to partly replace what was removed.\n\n(c) For an endothermic forward reaction, the reverse reaction is exothermic. Cooling (lowering the temperature) shifts the equilibrium in the exothermic direction — that is the reverse direction — so the forward reaction is disfavoured and the yield of product decreases.",
             markScheme: [
-              "(a) Equal moles of gas on both sides (2 and 2) (1); so pressure change does not favour either side (1)",
-              "(b) Removing product lowers its concentration (1); system shifts toward product to replace it (1)",
-              "(c) Endothermic forward → reverse is exothermic (1); cooling shifts toward exothermic (reverse) direction, lowering yield (1)"
+              "(a) Equal / same number of moles of gas on both sides (2 on left and 2 on right) (1)",
+              "(a) Increasing pressure does not favour either side so position is unchanged (1)",
+              "(b) Removing product lowers its concentration (1)",
+              "(b) System opposes the change by shifting toward the product side to replace it (1)",
+              "(c) Reverse reaction is exothermic (since forward reaction is endothermic) (1)",
+              "(c) Cooling shifts equilibrium in the exothermic / reverse direction, lowering yield (1)"
             ],
             commonError: "In (c), assuming cooling always increases yield. It only increases yield when the forward reaction is exothermic; for an endothermic forward reaction, cooling decreases the yield.",
             guideRef: "Le Chatelier's Principle",
@@ -1793,8 +1815,12 @@ The Contact process makes sulfuric acid. Its key reversible step is:
             marks: 6,
             modelAnswer: "(a) Cooling lowers the temperature. The forward reaction (forming NO2) is endothermic, so the reverse reaction (forming N2O4) is exothermic. Le Chatelier predicts that lowering the temperature shifts the equilibrium in the exothermic direction — the reverse direction — forming more colourless N2O4 and less brown NO2. With less NO2 present, the brown colour fades.\n\n(b) Doubling the volume halves the pressure. Le Chatelier predicts the equilibrium shifts toward the side with more gas moles to oppose the drop in pressure. There is 1 mole of gas on the left (N2O4) and 2 moles on the right (NO2), so the equilibrium shifts to the right, forming more brown NO2. The colour therefore becomes a deeper brown (after the initial dilution, the position shift increases the amount of NO2).",
             markScheme: [
-              "(a) Forward reaction endothermic, so reverse is exothermic (1); cooling shifts toward exothermic (reverse) direction (1); more N2O4 / less NO2 → colour fades (1)",
-              "(b) Lower pressure shifts toward more gas moles (1); right side has more gas moles (2 vs 1) (1); shift right forms more NO2 → deeper brown (1)"
+              "(a) Reverse reaction is exothermic (since forward reaction is endothermic) (1)",
+              "(a) Cooling / lowering temperature shifts equilibrium in the exothermic (reverse) direction (1)",
+              "(a) Forming more colourless N2O4 and less brown NO2 so colour fades / less NO2 present (1)",
+              "(b) Lower pressure shifts equilibrium toward the side with more moles of gas (1)",
+              "(b) Right side has more moles of gas (2 mol NO2 vs 1 mol N2O4) so equilibrium shifts right (1)",
+              "(b) More brown NO2 forms so the colour becomes deeper brown (1)"
             ],
             commonError: "For part (b), stopping at 'the gas is diluted so the colour fades' and missing the equilibrium shift. Lowering the pressure shifts the position toward the side with more gas moles (more NO2), which increases the amount of NO2.",
             guideRef: "Le Chatelier's Principle",
@@ -2035,10 +2061,14 @@ The Contact process makes sulfuric acid. Its key reversible step is:
             marks: 8,
             modelAnswer: "(i) Increase the pressure: INCREASES the yield. There are fewer gas moles on the product side (2 vs 4), so higher pressure shifts the equilibrium toward ammonia.\n\n(ii) Increase the temperature: DECREASES the yield. The forward reaction is exothermic, so a higher temperature shifts the equilibrium in the endothermic (reverse) direction, away from ammonia.\n\n(iii) Add an iron catalyst: NO EFFECT on the yield. A catalyst speeds up the forward and reverse reactions equally, so equilibrium is reached faster but its position (the yield) is unchanged.\n\n(iv) Remove ammonia as it forms: INCREASES the yield (the overall amount obtained). Removing the product lowers its concentration, so the equilibrium shifts to the right to replace it, converting more reactants to ammonia.",
             markScheme: [
-              "(i) Increases (1); fewer gas moles on product side / high P shifts right (1)",
-              "(ii) Decreases (1); exothermic forward reaction → high T shifts toward reactants (1)",
-              "(iii) No effect (1); catalyst speeds both directions equally / position unchanged (1)",
-              "(iv) Increases (1); removing product shifts equilibrium right to replace it (1)"
+              "(i) Higher pressure increases the yield (1)",
+              "(i) Fewer gas moles on product side (2 vs 4) so higher pressure shifts equilibrium toward ammonia (1)",
+              "(ii) Higher temperature decreases the yield (1)",
+              "(ii) Forward reaction is exothermic so higher temperature shifts equilibrium in the endothermic / reverse direction (1)",
+              "(iii) Iron catalyst has no effect on yield / yield unchanged (1)",
+              "(iii) Catalyst speeds up forward and reverse reactions equally so equilibrium position is unchanged (1)",
+              "(iv) Removing ammonia increases the yield (1)",
+              "(iv) Removing product lowers concentration so equilibrium shifts right to replace it (1)"
             ],
             commonError: "Marking the catalyst as 'increases yield'. A catalyst never changes the equilibrium position; it only changes how quickly equilibrium is reached.",
             guideRef: "The Haber Process",
@@ -2078,9 +2108,10 @@ The Contact process makes sulfuric acid. Its key reversible step is:
             marks: 4,
             modelAnswer: "(a) Any two of: temperature; surface area (particle size) of a solid; pressure (for gases); use of a catalyst.\n\n(b) For example: temperature changes the rate mainly by changing the proportion of successful collisions (a greater fraction reach energy ≥ Ea). Surface area / pressure changes the rate by changing the collision frequency (more contact / more particles per volume). A catalyst changes the proportion of successful collisions (by lowering Ea). (Two correct pairings required.)",
             markScheme: [
-              "Two valid factors named (1 each, max 2)",
-              "Temperature or catalyst → proportion of successful collisions (1)",
-              "Surface area or pressure → collision frequency (1) (max 2 for part b)"
+              "(a) First valid factor: temperature / surface area / pressure / catalyst (1)",
+              "(a) Second valid factor: surface area / particle size / pressure / catalyst / temperature (1)",
+              "(b) Temperature or catalyst changes mainly the proportion of successful collisions (1)",
+              "(b) Surface area or pressure changes the collision frequency (1)"
             ],
             commonError: "Pairing surface area or pressure with 'energy of collisions' — these act on collision frequency, not on the proportion exceeding Ea.",
             guideRef: "Factors Affecting Rate of Reaction",
@@ -2127,10 +2158,12 @@ The Contact process makes sulfuric acid. Its key reversible step is:
             marks: 6,
             modelAnswer: "(a) Experiment 1: moles HCl = 2.0 × (25 ÷ 1000) = 2.0 × 0.025 = 0.050 mol. Experiment 2: moles HCl = 1.0 × (50 ÷ 1000) = 1.0 × 0.050 = 0.050 mol.\n\n(b) Yes — both produce the same final volume of hydrogen. Each contains the same number of moles of HCl (0.050 mol), and HCl is the limiting reactant (zinc is in excess), so the same amount of hydrogen is produced in each.\n\n(c) Experiment 1 has the faster initial rate. It uses the more concentrated acid (2.0 mol/dm³ vs 1.0 mol/dm³), so there are more acid particles per unit volume, giving more frequent collisions with the zinc and a faster initial rate.",
             markScheme: [
-              "Exp 1: moles HCl = 2.0 × 0.025 = 0.050 mol (1)",
-              "Exp 2: moles HCl = 1.0 × 0.050 = 0.050 mol (1)",
-              "Same final volume of H2 (1); same moles of limiting reactant (HCl), zinc in excess (1)",
-              "Experiment 1 faster initial rate (1); higher concentration → more frequent collisions (1)"
+              "(a) Experiment 1: moles HCl = 2.0 × 0.025 = 0.050 mol (1)",
+              "(a) Experiment 2: moles HCl = 1.0 × 0.050 = 0.050 mol (1)",
+              "(b) Yes / both produce the same final volume of H2 (1)",
+              "(b) Same number of moles of limiting reactant (0.050 mol HCl; zinc is in excess) (1)",
+              "(c) Experiment 1 has the faster initial rate (1)",
+              "(c) Higher concentration (2.0 mol/dm³) → more acid particles per unit volume / more frequent collisions (1)"
             ],
             commonError: "Assuming the more concentrated acid must also give more hydrogen. The two acids contain the same moles of HCl, so the final volume is the same — only the rate differs.",
             guideRef: "Measuring Rate & Interpreting Rate Graphs",
@@ -2217,10 +2250,12 @@ The Contact process makes sulfuric acid. Its key reversible step is:
             marks: 6,
             modelAnswer: "(a) Any three of: increase the temperature; increase the pressure (or concentration of X or Y); increase the surface area (if a solid catalyst is involved); add a catalyst.\n\n(b) Increase the temperature: speeds up reaching equilibrium, but DECREASES the yield because the forward reaction is exothermic (higher T shifts equilibrium to the reactants). Increase the pressure: speeds up reaching equilibrium AND increases the yield, because there are 2 moles of gas on the left and 1 on the right, so higher pressure shifts the equilibrium toward Z. Add a catalyst: speeds up reaching equilibrium but has NO effect on the yield, because it speeds both directions equally and does not change the equilibrium position.",
             markScheme: [
-              "Three valid rate-increasing changes (1 each, max 3): temperature / pressure (or concentration) / catalyst",
-              "Temperature: faster but lowers yield (exothermic → high T shifts to reactants) (1)",
-              "Pressure: faster AND raises yield (fewer gas moles on product side, 2 → 1) (1)",
-              "Catalyst: faster but no change in yield (1) (max 3 for part b)"
+              "(a) Increase the temperature (1)",
+              "(a) Increase the pressure / concentration of reactants (1)",
+              "(a) Add a catalyst (1)",
+              "(b) Temperature: faster but decreases yield because forward reaction is exothermic / shifts to reactants (1)",
+              "(b) Pressure: faster and increases yield because fewer gas moles on product side (2 → 1) (1)",
+              "(b) Catalyst: faster but no effect on yield because it speeds both directions equally (1)"
             ],
             commonError: "Assuming that anything which speeds up the reaction must also increase the yield. Only changes that shift the equilibrium position (here, pressure) affect the yield; a catalyst and (for an exothermic reaction) raising the temperature do not increase it.",
             guideRef: "Le Chatelier's Principle",
@@ -2274,11 +2309,13 @@ The Contact process makes sulfuric acid. Its key reversible step is:
             marks: 7,
             modelAnswer: "(a) Activation energy = energy of the peak − energy of the reactants = 410 − 250 = 160 kJ/mol.\n\n(b) ΔH = energy of products − energy of reactants = 150 − 250 = −100 kJ/mol. The negative sign shows the reaction is exothermic.\n\n(c) The catalyst lowers the peak by 90 kJ/mol, so the new peak height = 410 − 90 = 320 kJ/mol. The new activation energy = 320 − 250 = 70 kJ/mol (equivalently, the original 160 − 90 = 70 kJ/mol). ΔH is unchanged at −100 kJ/mol, because the catalyst lowers only the peak (activation energy), not the energies of the reactants or products.",
             markScheme: [
-              "Ea = 410 − 250 = 160 kJ/mol (1); correct method (1)",
-              "ΔH = 150 − 250 = −100 kJ/mol (1); exothermic (1) (max 2 each)",
-              "New peak = 410 − 90 = 320 kJ/mol (1)",
-              "New Ea = 320 − 250 = 70 kJ/mol (or 160 − 90 = 70) (1)",
-              "ΔH unchanged at −100 kJ/mol (1) (max 3 for part c)"
+              "(a) Method: activation energy = peak energy − reactant energy (410 − 250) (1)",
+              "(a) Ea = 160 kJ/mol (1)",
+              "(b) ΔH = 150 − 250 = −100 kJ/mol (1)",
+              "(b) Negative ΔH shows the reaction is exothermic (1)",
+              "(c) New peak height = 410 − 90 = 320 kJ/mol (1)",
+              "(c) New activation energy = 320 − 250 = 70 kJ/mol / 160 − 90 = 70 kJ/mol (1)",
+              "(c) ΔH is unchanged at −100 kJ/mol (1)"
             ],
             commonError: "Calculating the activation energy as peak − products (410 − 150 = 260) instead of peak − reactants. The activation energy is always measured from the reactants up to the peak.",
             guideRef: "Collision Theory: Why Reactions Happen",
@@ -2308,14 +2345,15 @@ The Contact process makes sulfuric acid. Its key reversible step is:
             marks: 9,
             modelAnswer: "(a) The forward reaction is exothermic, so a lower temperature would shift the equilibrium toward the products and give a higher yield of SO3 (Le Chatelier). However, at a much lower temperature the rate of reaction would be very slow, because few particles have energy ≥ the activation energy, and the catalyst also needs a high enough temperature to work effectively. 450 °C is a compromise that gives a fast enough rate while keeping the yield high.\n\n(b) There are 3 moles of gas on the left and 2 on the right, so a higher pressure would shift the equilibrium toward SO3 and increase the yield. However, the yield is already very high (about 98%) at 1–2 atm, so a higher pressure would give only a tiny extra yield. The large cost and danger of high-pressure equipment is not justified by such a small gain, so a low pressure is used.\n\n(c) If the catalyst is poisoned its activity falls, so the rate of reaction decreases and equilibrium is reached more slowly. This lowers the rate of SO3 production (throughput), making the plant less efficient and increasing costs. To reduce the problem, the gases can be purified before they enter the reactor to remove the impurities (catalyst poisons), or the catalyst can be regenerated or replaced periodically.",
             markScheme: [
-              "Lower T gives higher yield (exothermic, Le Chatelier) (1)",
-              "Lower T gives a slower rate / few particles with E ≥ Ea (1)",
-              "450 °C is a compromise between rate and yield (1)",
-              "Higher pressure shifts equilibrium right (3 → 2 gas moles), raising yield (1)",
-              "Yield already ~98% at low pressure / extra gain small (1)",
-              "High-pressure equipment too costly/dangerous to justify → low pressure used (1)",
-              "Poisoning lowers catalyst activity → slower rate / lower throughput / higher cost (1)",
-              "Purify the gas feed / regenerate or replace the catalyst (1) (max 9)"
+              "(a) Lower temperature gives higher yield because forward reaction is exothermic (Le Chatelier) (1)",
+              "(a) Lower temperature gives a slower rate / few particles with energy ≥ activation energy (1)",
+              "(a) 450 °C is a compromise between rate and yield (1)",
+              "(b) Higher pressure shifts equilibrium right (3 → 2 gas moles), increasing yield (1)",
+              "(b) Yield is already very high (~98%) at 1–2 atm so extra gain is small (1)",
+              "(b) High-pressure equipment is too costly and dangerous to justify so low pressure is used (1)",
+              "(c) Poisoning lowers catalyst activity so rate decreases / equilibrium reached more slowly (1)",
+              "(c) Lower rate of SO3 production / throughput makes plant less efficient / increases costs (1)",
+              "(c) Purify gases to remove impurities / regenerate or replace the catalyst (1)"
             ],
             commonError: "In (b), saying high pressure 'has no effect' because the yield is already 98%. Higher pressure would still increase the yield slightly; the point is that the small gain does not justify the cost, not that there is no effect.",
             guideRef: "The Haber Process",

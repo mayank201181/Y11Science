@@ -766,10 +766,10 @@ To farm large numbers of fish efficiently as a protein source, farmers control s
         id: "bio-ecology-mcq-ed01",
         question: "In commercial fish farming (Edexcel 5.9B), how do farmers prevent INTRAspecific predation versus INTERspecific predation?",
         options: [
-          "Intraspecific: overhead nets against birds; Interspecific: antibiotics in feed",
-          "Intraspecific: separating fish of different ages/sizes into separate cages; Interspecific: covering enclosures with nets against birds and seals",
-          "Intraspecific: aerating the water; Interspecific: feeding high-protein pellets",
-          "Intraspecific: biological control with wrasse; Interspecific: selective breeding"
+          "Intraspecific: overhead netting to keep out birds and seals; Interspecific: mixing antibiotics into pelleted fish feed",
+          "Intraspecific: sorting fish of different ages/sizes into separate cages; Interspecific: netting cages against birds and seals",
+          "Intraspecific: pumping air continuously through the cage water; Interspecific: feeding high-protein pellets little and often",
+          "Intraspecific: adding cleaner wrasse to eat sea lice parasites; Interspecific: selectively breeding faster-growing adult fish",
         ],
         answerIndex: 1,
         explanation: "Intraspecific predation occurs between members of the SAME species (bigger fish eating smaller ones, prevented by size-sorting), whereas interspecific predation involves OTHER species such as herons or seals (prevented by nets).",
@@ -829,11 +829,12 @@ To farm large numbers of fish efficiently as a protein source, farmers control s
           "(b) Any two from: energy is released as heat during respiration; energy is lost in undigested material (egestion/faeces); energy is lost in excretion (urine/nitrogenous waste); energy is used for movement/growth.\n\n" +
           "(c) Energy is always lost at each trophic level (as heat and in waste) and can never be gained. Therefore, the energy at each successive level must be less than the level below, giving an unchanging pyramid shape.",
         markScheme: [
-          "(a) Shows 10% applied at EACH of 4 steps (accept working shown)",
-          "(a) Correct final answer: 20 kJ (allow ecf for method shown)",
-          "(b) Any TWO from: heat from respiration / movement; egestion (undigested food in faeces); excretion; used for growth/movement",
+          "(a) Working showing 10% (× 0.1) applied across 4 steps (20 000 → 2 000 → 200 → 20)",
+          "(a) Correct final answer: 20 kJ",
+          "(b) Reason 1: heat lost during respiration / movement",
+          "(b) Reason 2: undigested material (egestion / faeces) / excretion (urine / nitrogenous waste)",
           "(c) Energy is always lost (as heat / waste) at each trophic level",
-          "(c) Cannot be regained / energy decreases inevitably at each step, so bars always smaller going up",
+          "(c) Energy cannot be gained / each successive level has less energy than the level below",
         ],
         commonError:
           "Applying 10% only once to the whole chain (200 000 × 0.1 = 20 000) instead of at each step — the correct answer is 20 kJ, not 20 000 kJ.",
@@ -1230,10 +1231,10 @@ To farm large numbers of fish efficiently as a protein source, farmers control s
             question:
               "Why are food chains usually limited to four or five trophic levels?",
             options: [
-              "Predators above this size do not exist",
+              "Large predators above the fourth trophic level cannot evolve in nature",
               "So little energy remains at high levels that it cannot support another consumer",
-              "Decomposers stop working beyond four levels",
-              "The Sun cannot provide enough light",
+              "Decomposers cannot break down dead bodies above the fourth trophic level",
+              "The Sun cannot provide enough light energy for producers to start longer chains",
             ],
             answerIndex: 1,
             explanation:
@@ -1251,10 +1252,10 @@ To farm large numbers of fish efficiently as a protein source, farmers control s
             question:
               "An ecologist measures fresh mass to compare biomass at two trophic levels. Why is DRY mass a more reliable measure?",
             options: [
-              "Dry mass includes the energy in water",
+              "Dry mass includes the chemical energy stored inside liquid water molecules",
               "Water content varies between organisms and over time, so fresh mass is inconsistent",
-              "Drying adds carbon to the sample",
-              "Fresh mass cannot be measured on a balance",
+              "Drying organisms in an oven adds extra carbon and organic matter to the sample",
+              "Fresh living organisms cannot be weighed accurately on a laboratory mass balance",
             ],
             answerIndex: 1,
             explanation:
@@ -1317,10 +1318,10 @@ To farm large numbers of fish efficiently as a protein source, farmers control s
             id: "bio-ecology-bm3-03",
             question: "Which process locks carbon away for millions of years?",
             options: [
-              "Combustion of wood",
+              "Rapid combustion of dry wood and plant biomass in air",
               "Formation of fossil fuels from undecomposed organisms",
-              "Respiration of animals",
-              "Decomposition of leaf litter",
+              "Aerobic respiration of living animals and soil microbes",
+              "Aerobic decomposition of fallen leaf litter by fungi",
             ],
             answerIndex: 1,
             explanation:
@@ -1360,9 +1361,9 @@ To farm large numbers of fish efficiently as a protein source, farmers control s
               "Decomposition of leaf litter slows markedly during a cold winter. Which factor best explains this?",
             options: [
               "Low temperature slows the enzyme activity and respiration of decomposers",
-              "There is more oxygen available in winter",
-              "Leaves contain more nitrogen in winter",
-              "Decomposers stop needing water in winter",
+              "Higher dissolved oxygen levels in winter air inhibit bacterial decay",
+              "Fallen leaves contain much more protein and nitrogen during cold winters",
+              "Soil fungi and bacteria stop needing liquid water to digest dead leaves",
             ],
             answerIndex: 0,
             explanation:
@@ -1417,10 +1418,10 @@ To farm large numbers of fish efficiently as a protein source, farmers control s
             question:
               "A predator and its prey show repeating linked cycles: prey numbers rise, then predator numbers rise, then prey fall, then predators fall. Why do the predator peaks come AFTER the prey peaks?",
             options: [
-              "Predators reproduce instantly when prey appear",
+              "Predators always reproduce instantaneously the exact day prey numbers start to rise in spring",
               "There is a time delay: more prey means more food, so predators reproduce and increase only later",
-              "Prey eat the predators",
-              "The two cycles are unrelated and the timing is coincidence",
+              "Growing prey populations feed directly on predators, forcing predator numbers to wait before rising",
+              "The two population cycles are completely unrelated, so the offset timing is purely random chance",
             ],
             answerIndex: 1,
             explanation:
@@ -1439,10 +1440,10 @@ To farm large numbers of fish efficiently as a protein source, farmers control s
             question:
               "Why does growing a legume crop (with Rhizobium in its root nodules) improve soil fertility for the next crop?",
             options: [
-              "Legumes remove nitrate from the soil",
+              "Legume roots remove all dissolved nitrate ions from the soil before the next crop",
               "Rhizobium fix nitrogen gas into compounds, adding combined nitrogen to the soil",
-              "Legumes raise the soil temperature",
-              "Rhizobium denitrify the soil, releasing N₂",
+              "Legume crops permanently raise the soil temperature to speed up seed germination",
+              "Rhizobium carry out denitrification, converting soil nitrates back into N₂ gas",
             ],
             answerIndex: 1,
             explanation:
@@ -1461,10 +1462,10 @@ To farm large numbers of fish efficiently as a protein source, farmers control s
             question:
               "Waterlogged, compacted soil tends to be low in nitrate. Which process is most responsible?",
             options: [
-              "Increased nitrification by nitrifying bacteria",
+              "Increased nitrification by aerobic nitrifying bacteria in waterlogged soil",
               "Increased denitrification by denitrifying bacteria in anaerobic conditions",
-              "Increased nitrogen fixation",
-              "Increased absorption of nitrate by decomposers",
+              "Increased nitrogen fixation converting soil nitrate back into plant protein",
+              "Increased active absorption of nitrate ions by aerobic decomposer fungi",
             ],
             answerIndex: 1,
             explanation:
@@ -1489,7 +1490,12 @@ To farm large numbers of fish efficiently as a protein source, farmers control s
           {
             id: "bio-ecology-bm4-01",
             question: "Which gas is the main contributor to the enhanced greenhouse effect from burning fossil fuels?",
-            options: ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
+            options: [
+              "Oxygen gas (O₂)",
+              "Carbon dioxide (CO₂)",
+              "Nitrogen gas (N₂)",
+              "Hydrogen gas (H₂)",
+            ],
             answerIndex: 1,
             explanation:
               "Carbon dioxide released by burning fossil fuels is the main greenhouse gas driving the enhanced greenhouse effect. Methane also contributes. Oxygen and nitrogen are not greenhouse gases.",
@@ -1515,10 +1521,10 @@ To farm large numbers of fish efficiently as a protein source, farmers control s
             id: "bio-ecology-bm4-03",
             question: "What is the IMMEDIATE cause of fish death in eutrophication?",
             options: [
-              "Fertiliser poisoning the fish",
+              "Direct toxic poisoning of the fish by dissolved nitrate ions",
               "Lack of dissolved oxygen as bacteria decompose dead plants",
-              "Algae blocking the fishes' gills",
-              "A rise in water temperature",
+              "Thick surface algae physically clogging the fishes' gills",
+              "A sudden lethal rise in water temperature from algal decay",
             ],
             answerIndex: 1,
             explanation:
@@ -1578,10 +1584,10 @@ To farm large numbers of fish efficiently as a protein source, farmers control s
             question:
               "How does the natural greenhouse effect keep the Earth warm?",
             options: [
-              "Greenhouse gases reflect sunlight back to space",
+              "Greenhouse gases reflect incoming short-wave sunlight straight back into outer space",
               "Greenhouse gases absorb outgoing infrared radiation and re-radiate some of it back to the surface",
-              "Greenhouse gases generate heat by reacting with oxygen",
-              "Greenhouse gases stop the Sun's rays reaching the Earth",
+              "Greenhouse gases continuously combust with atmospheric oxygen to release thermal energy",
+              "Greenhouse gases form an opaque blanket that stops the Sun's rays from reaching Earth's surface",
             ],
             answerIndex: 1,
             explanation:
@@ -1599,10 +1605,10 @@ To farm large numbers of fish efficiently as a protein source, farmers control s
             question:
               "Why do micro-plastics pose a particular risk to top predators such as seabirds?",
             options: [
-              "Plastics dissolve quickly and release oxygen",
+              "Plastics dissolve rapidly in seawater and release excess oxygen that poisons seabirds",
               "Plastics are eaten low in the food chain and pass up to predators, accumulating along the way",
-              "Plastics increase the energy available to predators",
-              "Plastics only affect producers, never consumers",
+              "Plastics are digested into fat, increasing the energy available to top marine predators",
+              "Plastics are absorbed only through plant roots and cannot pass into animal consumers",
             ],
             answerIndex: 1,
             explanation:
@@ -1621,10 +1627,10 @@ To farm large numbers of fish efficiently as a protein source, farmers control s
             question:
               "A captive-breeding programme for an endangered mammal keeps detailed records to pair unrelated individuals. Why is this important?",
             options: [
-              "To increase the body size of offspring",
+              "To double the adult body size of every offspring born inside the zoo",
               "To maintain genetic variation and avoid the harmful effects of inbreeding",
-              "To make the animals tamer",
-              "To reduce the number of offspring produced",
+              "To make the endangered animals much tamer so they rely on human keepers",
+              "To reduce the total number of offspring produced during each breeding year",
             ],
             answerIndex: 1,
             explanation:
@@ -1664,10 +1670,10 @@ To farm large numbers of fish efficiently as a protein source, farmers control s
             question:
               "Which statement best defines SUSTAINABLE use of a resource such as timber?",
             options: [
-              "Using as much as possible while it is cheap",
+              "Harvesting as much of the resource as rapidly as possible while market prices remain low",
               "Using the resource at a rate that allows it to be replaced, so future generations can still use it",
-              "Never using the resource at all",
-              "Replacing the resource only after it has run out",
+              "Completely banning all human use of the resource forever, even when trees can be replanted",
+              "Clearing the entire forest first and planting replacement seedlings only after stocks run out",
             ],
             answerIndex: 1,
             explanation:
@@ -2552,8 +2558,10 @@ To farm large numbers of fish efficiently as a protein source, farmers control s
             modelAnswer:
               "Three conservation methods are: establishing nature reserves and protected areas; running captive-breeding programmes (e.g. in zoos) to increase numbers before releasing animals back into the wild; and storing seeds in seed banks to preserve plant genetic material. Captive breeding is effective because it allows endangered animals to reproduce safely away from predators and habitat loss, with breeding records used to pair unrelated individuals and maintain genetic variation, so a healthy population can be built up and reintroduced.",
             markScheme: [
-              "Three valid methods (nature reserves / protected areas; captive breeding; seed banks; sustainable fishing/forestry; controlling pollution) (1)+(1)+(1)",
-              "Clear explanation of why ONE chosen method is effective (e.g. captive breeding boosts numbers / maintains genetic variation for reintroduction) (1)",
+              "Method 1: nature reserves / protected areas",
+              "Method 2: captive-breeding programmes (e.g. zoos)",
+              "Method 3: seed banks / sustainable fishing or forestry / controlling pollution",
+              "Explanation of effectiveness: reproduces safely away from predators or habitat loss / maintains genetic variation / preserves plant genetic material for reintroduction",
             ],
             commonError:
               "Listing methods without an explanation. The question requires a reason WHY one method works for the final mark.",
