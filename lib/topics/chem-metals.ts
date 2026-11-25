@@ -4,6 +4,8 @@ export const chemMetals: Topic = {
   id: "chem-metals",
   title: "Metals",
   subject: "chemistry",
+  courseYear: 10,
+  courseOrder: 21,
   icon: "🪙",
   blurb: "Reactivity series, reactions, extraction, rusting, alloys and recycling.",
   intro:

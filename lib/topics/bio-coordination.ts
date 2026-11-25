@@ -4,6 +4,8 @@ export const bioCoordination: Topic = {
   id: "bio-coordination",
   title: "Coordination & Response",
   subject: "biology",
+  courseYear: 11,
+  courseOrder: 11,
   icon: "🧠",
   blurb: "Nervous system, reflexes, hormones, homeostasis and plant tropisms.",
   intro:

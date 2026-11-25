@@ -4,6 +4,8 @@ export const chemElectrochemistry: Topic = {
   id: "chem-electrochemistry",
   title: "Electrochemistry",
   subject: "chemistry",
+  courseYear: 11,
+  courseOrder: 24,
   icon: "🔌",
   blurb: "Electrolysis, electrode reactions, electroplating, and fuel cells.",
   intro:

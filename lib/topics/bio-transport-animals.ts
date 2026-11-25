@@ -4,6 +4,8 @@ export const bioTransportAnimals: Topic = {
   id: "bio-transport-animals",
   title: "Transport in Animals",
   subject: "biology",
+  courseYear: 10,
+  courseOrder: 8,
   icon: "❤️",
   blurb: "Heart structure, blood vessels, blood components and the double circulatory system.",
   intro:

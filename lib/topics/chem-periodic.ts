@@ -4,6 +4,8 @@ export const chemPeriodic: Topic = {
   id: "chem-periodic",
   title: "The Periodic Table",
   subject: "chemistry",
+  courseYear: 10,
+  courseOrder: 17,
   icon: "📋",
   blurb: "Groups, periods, Group I alkali metals, Group VII halogens, noble gases, and transition elements.",
   intro: "The periodic table arranges all known elements in order of increasing proton number, revealing patterns so powerful that chemists can predict the properties of an element just from its position. In this topic you will explore why elements in the same group behave alike, how reactivity trends emerge from electron configuration, and what makes the transition metals so uniquely useful.",

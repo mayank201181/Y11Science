@@ -4,6 +4,8 @@ export const bioMolecules: Topic = {
   id: "bio-molecules",
   title: "Biological Molecules",
   subject: "biology",
+  courseYear: 10,
+  courseOrder: 3,
   icon: "🧪",
   blurb: "Carbohydrates, proteins, fats, water and food tests — the chemical building blocks of life.",
   intro: "Every living cell is built from a small set of chemical molecules: carbohydrates for energy and structure, proteins for catalysis and support, lipids for membranes and insulation, DNA to carry genetic information, and water as the universal solvent. Understanding how small subunits join into giant polymers — and how we detect each class in the lab with food tests — is a cornerstone of IGCSE Biology and underpins all of cell biology, nutrition, genetics, and disease.",

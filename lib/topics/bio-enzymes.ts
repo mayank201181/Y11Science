@@ -4,6 +4,8 @@ export const bioEnzymes: Topic = {
   id: "bio-enzymes",
   title: "Enzymes",
   subject: "biology",
+  courseYear: 10,
+  courseOrder: 4,
   icon: "🔑",
   blurb: "Biological catalysts — lock-and-key model, temperature, pH, and experimental investigation.",
   intro:

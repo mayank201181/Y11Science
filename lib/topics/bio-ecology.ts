@@ -4,6 +4,8 @@ export const bioEcology: Topic = {
   id: "bio-ecology",
   title: "Organisms & Environment",
   subject: "biology",
+  courseYear: 11,
+  courseOrder: 14,
   icon: "🌍",
   blurb: "Ecosystems, energy flow, nutrient cycles, human impact, and biotechnology.",
   intro:

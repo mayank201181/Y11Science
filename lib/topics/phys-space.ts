@@ -4,6 +4,8 @@ export const physSpace: Topic = {
   id: "phys-space",
   title: "Space Physics",
   subject: "physics",
+  courseYear: 11,
+  courseOrder: 37,
   icon: "🚀",
   blurb: "The Solar System, stellar life cycles, galaxies, and the expanding Universe.",
   intro:

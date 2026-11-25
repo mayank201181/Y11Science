@@ -4,6 +4,8 @@ export const physMotion: Topic = {
   id: "phys-motion",
   title: "Motion",
   subject: "physics",
+  courseYear: 10,
+  courseOrder: 28,
   icon: "🏃",
   blurb: "Distance, displacement, speed, velocity, acceleration and motion graphs — the foundations of mechanics.",
   intro: "Motion is the study of how objects move — how far they travel, how fast, and whether they are speeding up or slowing down. In this topic you will build the language of kinematics (distance, displacement, speed, velocity, acceleration), master distance–time and velocity–time graphs, use the equations of motion (SUVAT) for constant acceleration, learn how speed, acceleration and g are measured, and apply these ideas to free fall and terminal velocity. These concepts underpin almost every other area of physics.",

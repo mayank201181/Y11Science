@@ -4,6 +4,8 @@ export const bioHumanNutrition: Topic = {
   id: "bio-human-nutrition",
   title: "Human Nutrition",
   subject: "biology",
+  courseYear: 10,
+  courseOrder: 6,
   icon: "🍎",
   blurb: "Balanced diet, digestive system, enzymes, absorption and assimilation.",
   intro:

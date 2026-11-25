@@ -4,6 +4,8 @@ export const chemParticles: Topic = {
   id: "chem-particles",
   title: "States of Matter & Particles",
   subject: "chemistry",
+  courseYear: 10,
+  courseOrder: 15,
   icon: "❄️",
   blurb: "Kinetic particle theory, changes of state, heating curves and diffusion.",
   intro: "Everything around us is made of particles in constant motion — the key insight of kinetic particle theory. By understanding how particles are arranged, separated and moving in solids, liquids and gases, we can explain melting, boiling, evaporation, sublimation and diffusion, and read the story hidden inside a heating or cooling curve.",

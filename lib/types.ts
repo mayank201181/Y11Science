@@ -77,6 +77,10 @@ export interface Topic {
   id: string;
   title: string;
   subject: SubjectId;
+  /** Which IGCSE year normally teaches this topic (Year 10 vs Year 11). */
+  courseYear: 10 | 11;
+  /** Teaching order used when ?year=10 is active (1..37). */
+  courseOrder: number;
   icon: string; // emoji for the topic card
   blurb: string; // one-line summary for cards
   intro: string; // short intro paragraph for the guide

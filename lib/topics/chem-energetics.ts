@@ -4,6 +4,8 @@ export const chemEnergetics: Topic = {
   id: "chem-energetics",
   title: "Chemical Energetics",
   subject: "chemistry",
+  courseYear: 11,
+  courseOrder: 22,
   icon: "🔥",
   blurb: "Exothermic and endothermic reactions, energy level diagrams, and bond energy calculations.",
   intro:

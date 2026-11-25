@@ -4,6 +4,8 @@ export const bioTransportCell: Topic = {
   id: "bio-transport-cell",
   title: "Movement In & Out of Cells",
   subject: "biology",
+  courseYear: 10,
+  courseOrder: 2,
   icon: "💧",
   blurb: "Diffusion, osmosis and active transport across membranes.",
   intro:

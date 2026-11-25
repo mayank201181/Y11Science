@@ -8,12 +8,15 @@ import { useStore } from "@/lib/store";
 import { useHeartbeat } from "@/lib/useHeartbeat";
 import { comedyDoneKey, masterclassDoneKey, sitcomDoneKey } from "@/lib/watchKeys";
 import { getMemoryVault } from "@/lib/memoryPitfalls";
+import { sortForYear10, useCourseYearFilter } from "@/lib/courseYear";
+import { CourseYearBanner, Year11Divider } from "@/components/CourseYearBanner";
 
 export default function TopicsDirectoryPage() {
   const { progress } = useStore();
   useHeartbeat();
   const [filter, setFilter] = useState<"all" | SubjectId>("all");
   const [query, setQuery] = useState("");
+  const year10 = useCourseYearFilter() === 10;
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -28,8 +31,20 @@ export default function TopicsDirectoryPage() {
     });
   }, [filter, query]);
 
+  const y10AllCount = useMemo(() => TOPICS.filter((t) => t.courseYear === 10).length, []);
+  const y11AllCount = TOPICS.length - y10AllCount;
+  const { y10Filtered, y11Filtered } = useMemo(() => {
+    if (!year10) return { y10Filtered: [] as typeof TOPICS, y11Filtered: [] as typeof TOPICS };
+    const sorted = sortForYear10(filtered);
+    return {
+      y10Filtered: sorted.filter((t) => t.courseYear === 10),
+      y11Filtered: sorted.filter((t) => t.courseYear !== 10),
+    };
+  }, [year10, filtered]);
+
   return (
     <div className="space-y-6">
+      {year10 ? <CourseYearBanner y10Count={y10AllCount} y11Count={y11AllCount} /> : null}
       <div className="flex items-center justify-between gap-2 flex-wrap">
         <Link href="/" className="chip">
           ← Home
@@ -93,6 +108,156 @@ export default function TopicsDirectoryPage() {
       {filtered.length === 0 ? (
         <div className="card p-8 text-center text-ink-soft">
           No topics matched &ldquo;{query}&rdquo;. Try clearing your search filter.
+        </div>
+      ) : year10 ? (
+        <div className="space-y-6">
+          {y10Filtered.length > 0 && (
+            <div className="grid sm:grid-cols-2 gap-4">
+              {y10Filtered.map((t) => {
+                const meta = subjectMeta(t.subject);
+                const read = progress.guidesRead.includes(t.id);
+                const watched =
+                  Boolean(progress.awarded[masterclassDoneKey(t.id)]) ||
+                  Boolean(progress.awarded[sitcomDoneKey(t.id)]) ||
+                  Boolean(progress.awarded[comedyDoneKey(t.id)]);
+                const att = progress.analytics.perTopic[t.id];
+                const vault = getMemoryVault(t.id);
+
+                return (
+                  <div
+                    key={t.id}
+                    data-course-year-item={10}
+                    className={`card p-4 flex flex-col justify-between gap-3 accent-${t.subject}`}
+                    style={{
+                      borderColor: "color-mix(in srgb, var(--accent) 30%, var(--color-line))",
+                    }}
+                  >
+                    <div className="flex gap-3">
+                      <span className="text-3xl shrink-0">{t.icon}</span>
+                      <div className="min-w-0 flex-1">
+                        <div className="flex items-center gap-1.5 flex-wrap">
+                          <span className="chip tone-indigo text-[0.68rem]">Year 10</span>
+                          <span className="chip text-[0.68rem]">
+                            {meta.icon} {vault?.specCode || meta.title}
+                          </span>
+                          {read && <span className="chip tone-emerald">✓ Guide</span>}
+                          {watched && <span className="chip tone-indigo">🎬 Watched</span>}
+                          {att && att.answered > 0 && (
+                            <span className="chip">
+                              {att.correct}/{att.answered} Qs
+                            </span>
+                          )}
+                        </div>
+                        <Link
+                          href={`/topic/${t.id}`}
+                          className="font-black text-base leading-snug mt-1.5 block hover:underline"
+                        >
+                          {t.title}
+                        </Link>
+                        <p className="text-xs text-ink-soft mt-1 line-clamp-2">{t.blurb}</p>
+                      </div>
+                    </div>
+
+                    <div className="flex flex-wrap gap-1.5 pt-2 border-t border-line">
+                      <Link href={`/topic/${t.id}`} className="chip">
+                        📖 Guide
+                      </Link>
+                      <Link href={`/topic/${t.id}?tab=watch`} className="chip">
+                        🎬 Watch
+                      </Link>
+                      <Link href={`/topic/${t.id}?tab=cram`} className="chip tone-rose">
+                        🚨 Cram
+                      </Link>
+                      <Link href={`/topic/${t.id}?tab=memory`} className="chip tone-emerald">
+                        🛡️ {vault ? `${vault.pitfalls.length} Pitfalls` : "Pitfalls"}
+                      </Link>
+                      <Link href={`/topic/${t.id}?tab=quiz`} className="chip">
+                        ✏️ Quiz
+                      </Link>
+                      <Link href={`/topic/${t.id}?tab=bank`} className="chip">
+                        🏦 Bank
+                      </Link>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+          {y11Filtered.length > 0 && (
+            <>
+              <Year11Divider count={y11Filtered.length} />
+              <div className="grid sm:grid-cols-2 gap-4">
+                {y11Filtered.map((t) => {
+                  const meta = subjectMeta(t.subject);
+                  const read = progress.guidesRead.includes(t.id);
+                  const watched =
+                    Boolean(progress.awarded[masterclassDoneKey(t.id)]) ||
+                    Boolean(progress.awarded[sitcomDoneKey(t.id)]) ||
+                    Boolean(progress.awarded[comedyDoneKey(t.id)]);
+                  const att = progress.analytics.perTopic[t.id];
+                  const vault = getMemoryVault(t.id);
+
+                  return (
+                    <div
+                      key={t.id}
+                      data-course-year-item={11}
+                      className={`card p-4 flex flex-col justify-between gap-3 accent-${t.subject} opacity-60 grayscale-[35%] hover:opacity-95 transition`}
+                      style={{
+                        borderColor: "color-mix(in srgb, var(--accent) 30%, var(--color-line))",
+                      }}
+                    >
+                      <div className="flex gap-3">
+                        <span className="text-3xl shrink-0">{t.icon}</span>
+                        <div className="min-w-0 flex-1">
+                          <div className="flex items-center gap-1.5 flex-wrap">
+                            <span className="chip text-[0.68rem]">Year 11</span>
+                            <span className="chip text-[0.68rem]">
+                              {meta.icon} {vault?.specCode || meta.title}
+                            </span>
+                            {read && <span className="chip tone-emerald">✓ Guide</span>}
+                            {watched && <span className="chip tone-indigo">🎬 Watched</span>}
+                            {att && att.answered > 0 && (
+                              <span className="chip">
+                                {att.correct}/{att.answered} Qs
+                              </span>
+                            )}
+                          </div>
+                          <Link
+                            href={`/topic/${t.id}`}
+                            className="font-black text-base leading-snug mt-1.5 block hover:underline"
+                          >
+                            {t.title}
+                          </Link>
+                          <p className="text-xs text-ink-soft mt-1 line-clamp-2">{t.blurb}</p>
+                        </div>
+                      </div>
+
+                      <div className="flex flex-wrap gap-1.5 pt-2 border-t border-line">
+                        <Link href={`/topic/${t.id}`} className="chip">
+                          📖 Guide
+                        </Link>
+                        <Link href={`/topic/${t.id}?tab=watch`} className="chip">
+                          🎬 Watch
+                        </Link>
+                        <Link href={`/topic/${t.id}?tab=cram`} className="chip tone-rose">
+                          🚨 Cram
+                        </Link>
+                        <Link href={`/topic/${t.id}?tab=memory`} className="chip tone-emerald">
+                          🛡️ {vault ? `${vault.pitfalls.length} Pitfalls` : "Pitfalls"}
+                        </Link>
+                        <Link href={`/topic/${t.id}?tab=quiz`} className="chip">
+                          ✏️ Quiz
+                        </Link>
+                        <Link href={`/topic/${t.id}?tab=bank`} className="chip">
+                          🏦 Bank
+                        </Link>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </>
+          )}
         </div>
       ) : (
         <div className="grid sm:grid-cols-2 gap-4">

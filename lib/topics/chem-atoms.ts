@@ -4,6 +4,8 @@ export const chemAtoms: Topic = {
   id: "chem-atoms",
   title: "Atomic Structure",
   subject: "chemistry",
+  courseYear: 10,
+  courseOrder: 16,
   icon: "⚛️",
   blurb: "Protons, neutrons, electrons, isotopes, electron shells, and relative atomic mass.",
   intro:

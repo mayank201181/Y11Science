@@ -4,6 +4,8 @@ export const chemOrganic: Topic = {
   id: "chem-organic",
   title: "Organic Chemistry",
   subject: "chemistry",
+  courseYear: 11,
+  courseOrder: 25,
   icon: "🛢️",
   blurb: "Hydrocarbons, crude oil fractions, alkanes, alkenes, alcohols, carboxylic acids and polymers.",
   intro: "Organic chemistry is the study of carbon compounds — a vast family that includes fuels, plastics, medicines and food. We start with crude oil, a mixture of hydrocarbons separated by fractional distillation, and then explore four homologous series: alkanes, alkenes, alcohols and carboxylic acids, plus the esters and polymers built from them. Along the way you will learn to name compounds, draw displayed formulae, recognise structural isomers, and — the key thread of the whole topic — see how a molecule's structure (its functional group and bonding) determines how it reacts.",

@@ -4,6 +4,8 @@ export const physMagnetism: Topic = {
   id: "phys-magnetism",
   title: "Magnetism & Electromagnetism",
   subject: "physics",
+  courseYear: 11,
+  courseOrder: 35,
   icon: "🧲",
   blurb: "Magnets, fields, motors, generators and transformers — the backbone of all electrical technology.",
   intro:

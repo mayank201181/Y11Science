@@ -4,6 +4,8 @@ export const bioReproduction: Topic = {
   id: "bio-reproduction",
   title: "Reproduction",
   subject: "biology",
+  courseYear: 11,
+  courseOrder: 12,
   icon: "🌸",
   blurb: "Asexual vs sexual reproduction, plant and human reproductive systems, hormones, and STIs.",
   intro: "Reproduction is the biological process by which living organisms produce offspring, ensuring the continuation of species. In this topic we contrast asexual and sexual reproduction, explore how flowering plants attract pollinators and form seeds, and unpack the human reproductive system — from gamete production to pregnancy, hormonal control, and protection against sexually transmitted infections.",

@@ -4,6 +4,8 @@ export const bioPlantNutrition: Topic = {
   id: "bio-plant-nutrition",
   title: "Plant Nutrition",
   subject: "biology",
+  courseYear: 10,
+  courseOrder: 5,
   icon: "🌱",
   blurb: "Photosynthesis equations, leaf structure, limiting factors and mineral nutrition.",
   intro:

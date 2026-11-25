@@ -4,6 +4,8 @@ export const chemAcidsBases: Topic = {
   id: "chem-acids-bases",
   title: "Acids, Bases & Salts",
   subject: "chemistry",
+  courseYear: 10,
+  courseOrder: 20,
   icon: "🧂",
   blurb: "pH, neutralisation, acid reactions, oxides, and salt preparation — core IGCSE chemistry.",
   intro:

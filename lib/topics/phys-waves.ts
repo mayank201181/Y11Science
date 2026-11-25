@@ -4,6 +4,8 @@ export const physWaves: Topic = {
   id: "phys-waves",
   title: "Waves & Light",
   subject: "physics",
+  courseYear: 10,
+  courseOrder: 32,
   icon: "🌊",
   blurb: "Wave properties, reflection, refraction, lenses, and dispersion — with worked calculations.",
   intro: "Waves carry energy across space without transporting matter — from the ripples on a pond to the light reaching your eyes from a distant star. In this topic you will master the vocabulary and equations that describe all waves, then trace exactly what happens when light reflects off mirrors, bends through glass, focuses through a convex lens, and splits into a rainbow through a prism.",

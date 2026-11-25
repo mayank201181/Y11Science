@@ -8,6 +8,8 @@ import { useStore } from "@/lib/store";
 import { useHeartbeat } from "@/lib/useHeartbeat";
 import { COMEDY_SPECS, comedyDoneKey, sitcomDoneKey } from "@/components/WatchTab";
 import { getMemoryVault } from "@/lib/memoryPitfalls";
+import { sortForYear10, useCourseYearFilter } from "@/lib/courseYear";
+import { CourseYearBanner, Year11Divider } from "@/components/CourseYearBanner";
 
 export default function SitcomHubPage() {
   const { progress, awardActivity } = useStore();
@@ -15,6 +17,7 @@ export default function SitcomHubPage() {
   const [filter, setFilter] = useState<"all" | SubjectId>("all");
   const [query, setQuery] = useState("");
   const [toast, setToast] = useState<string | null>(null);
+  const year10 = useCourseYearFilter() === 10;
 
   const sitDoneTotal = useMemo(
     () => TOPICS.filter((t) => Boolean(progress.awarded[sitcomDoneKey(t.id)])).length,
@@ -41,9 +44,20 @@ export default function SitcomHubPage() {
   }, [filter, query]);
 
   const ep1Done = Boolean(progress.awarded[comedyDoneKey("bio-coordination")]);
+  const y10AllCount = useMemo(() => TOPICS.filter((t) => t.courseYear === 10).length, []);
+  const y11AllCount = TOPICS.length - y10AllCount;
+  const { y10Filtered, y11Filtered } = useMemo(() => {
+    if (!year10) return { y10Filtered: [] as typeof TOPICS, y11Filtered: [] as typeof TOPICS };
+    const sorted = sortForYear10(filtered);
+    return {
+      y10Filtered: sorted.filter((t) => t.courseYear === 10),
+      y11Filtered: sorted.filter((t) => t.courseYear !== 10),
+    };
+  }, [year10, filtered]);
 
   return (
     <div className="space-y-6">
+      {year10 ? <CourseYearBanner y10Count={y10AllCount} y11Count={y11AllCount} noun="episodes" /> : null}
       <div className="flex items-center justify-between gap-2 flex-wrap">
         <Link href="/" className="chip">
           ← Home
@@ -149,74 +163,230 @@ export default function SitcomHubPage() {
         />
       </div>
 
-      <div className="grid sm:grid-cols-2 gap-4">
-        {filtered.map((t, idx) => {
-          const meta = subjectMeta(t.subject);
-          const vault = getMemoryVault(t.id);
-          const comedy = COMEDY_SPECS[t.id];
-          const sitDone = Boolean(progress.awarded[sitcomDoneKey(t.id)]);
-          const comDone = Boolean(progress.awarded[comedyDoneKey(t.id)]);
+      {year10 ? (
+        <div className="space-y-6">
+          {y10Filtered.length > 0 && (
+            <div className="grid sm:grid-cols-2 gap-4">
+              {y10Filtered.map((t, idx) => {
+                const meta = subjectMeta(t.subject);
+                const vault = getMemoryVault(t.id);
+                const comedy = COMEDY_SPECS[t.id];
+                const sitDone = Boolean(progress.awarded[sitcomDoneKey(t.id)]);
+                const comDone = Boolean(progress.awarded[comedyDoneKey(t.id)]);
 
-          return (
-            <div
-              key={t.id}
-              className={`card p-4 flex flex-col justify-between gap-3 accent-${t.subject}`}
-              style={{
-                borderColor: "color-mix(in srgb, var(--accent) 30%, var(--color-line))",
-              }}
-            >
-              <div className="space-y-2">
-                <div className="flex items-center justify-between gap-2 flex-wrap">
-                  <span className="chip text-[0.68rem]">
-                    {meta.icon} Ep {idx + 1} · {vault?.specCode || meta.title}
-                  </span>
-                  <div className="flex items-center gap-1">
-                    {sitDone && <span className="chip tone-emerald">✓ Sitcom</span>}
-                    {comDone && <span className="chip tone-amber">✓ {comedy?.show || "Comedy"}</span>}
+                return (
+                  <div
+                    key={t.id}
+                    data-course-year-item={10}
+                    className={`card p-4 flex flex-col justify-between gap-3 accent-${t.subject}`}
+                    style={{
+                      borderColor: "color-mix(in srgb, var(--accent) 30%, var(--color-line))",
+                    }}
+                  >
+                    <div className="space-y-2">
+                      <div className="flex items-center justify-between gap-2 flex-wrap">
+                        <div className="flex items-center gap-1.5 flex-wrap">
+                          <span className="chip tone-indigo text-[0.68rem]">Year 10</span>
+                          <span className="chip text-[0.68rem]">
+                            {meta.icon} Ep {idx + 1} · {vault?.specCode || meta.title}
+                          </span>
+                        </div>
+                        <div className="flex items-center gap-1">
+                          {sitDone && <span className="chip tone-emerald">✓ Sitcom</span>}
+                          {comDone && <span className="chip tone-amber">✓ {comedy?.show || "Comedy"}</span>}
+                        </div>
+                      </div>
+
+                      <div className="flex items-start gap-3">
+                        <span className="text-3xl shrink-0">{t.icon}</span>
+                        <div>
+                          <div className="text-xs font-bold tone-indigo">{t.title}</div>
+                          <h2 className="font-black text-base leading-snug">
+                            {vault?.epTitle ? `“${vault.epTitle}”` : t.title}
+                          </h2>
+                          {comedy && (
+                            <p className="text-xs text-ink-soft mt-1 leading-relaxed">
+                              <strong>{comedy.show}:</strong> &ldquo;{comedy.title}&rdquo; — {comedy.cold}
+                            </p>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="flex flex-wrap gap-2 pt-2 border-t border-line">
+                      <Link
+                        href={`/topic/${t.id}?tab=watch&mode=sitcom`}
+                        className="btn btn-primary text-xs py-1.5 px-3"
+                      >
+                        🍿 Watch Sitcom (+⭐)
+                      </Link>
+                      <Link
+                        href={`/topic/${t.id}?tab=watch&mode=comedy`}
+                        className="btn btn-ghost text-xs py-1.5 px-3"
+                      >
+                        😂 {comedy?.show || "Comedy"}
+                      </Link>
+                      <a
+                        href={`/season1/index.html?ep=${encodeURIComponent(t.id)}`}
+                        className="chip"
+                        title="Open in standalone Season 1 player"
+                      >
+                        ↗ Fullscreen
+                      </a>
+                    </div>
                   </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <span className="text-3xl shrink-0">{t.icon}</span>
-                  <div>
-                    <div className="text-xs font-bold tone-indigo">{t.title}</div>
-                    <h2 className="font-black text-base leading-snug">
-                      {vault?.epTitle ? `“${vault.epTitle}”` : t.title}
-                    </h2>
-                    {comedy && (
-                      <p className="text-xs text-ink-soft mt-1 leading-relaxed">
-                        <strong>{comedy.show}:</strong> &ldquo;{comedy.title}&rdquo; — {comedy.cold}
-                      </p>
-                    )}
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex flex-wrap gap-2 pt-2 border-t border-line">
-                <Link
-                  href={`/topic/${t.id}?tab=watch&mode=sitcom`}
-                  className="btn btn-primary text-xs py-1.5 px-3"
-                >
-                  🍿 Watch Sitcom (+⭐)
-                </Link>
-                <Link
-                  href={`/topic/${t.id}?tab=watch&mode=comedy`}
-                  className="btn btn-ghost text-xs py-1.5 px-3"
-                >
-                  😂 {comedy?.show || "Comedy"}
-                </Link>
-                <a
-                  href={`/season1/index.html?ep=${encodeURIComponent(t.id)}`}
-                  className="chip"
-                  title="Open in standalone Season 1 player"
-                >
-                  ↗ Fullscreen
-                </a>
-              </div>
+                );
+              })}
             </div>
-          );
-        })}
-      </div>
+          )}
+          {y11Filtered.length > 0 && (
+            <>
+              <Year11Divider count={y11Filtered.length} noun="episodes" />
+              <div className="grid sm:grid-cols-2 gap-4">
+                {y11Filtered.map((t, idx) => {
+                  const meta = subjectMeta(t.subject);
+                  const vault = getMemoryVault(t.id);
+                  const comedy = COMEDY_SPECS[t.id];
+                  const sitDone = Boolean(progress.awarded[sitcomDoneKey(t.id)]);
+                  const comDone = Boolean(progress.awarded[comedyDoneKey(t.id)]);
+
+                  return (
+                    <div
+                      key={t.id}
+                      data-course-year-item={11}
+                      className={`card p-4 flex flex-col justify-between gap-3 accent-${t.subject} opacity-60 grayscale-[35%] hover:opacity-95 transition`}
+                      style={{
+                        borderColor: "color-mix(in srgb, var(--accent) 30%, var(--color-line))",
+                      }}
+                    >
+                      <div className="space-y-2">
+                        <div className="flex items-center justify-between gap-2 flex-wrap">
+                          <div className="flex items-center gap-1.5 flex-wrap">
+                            <span className="chip text-[0.68rem]">Year 11</span>
+                            <span className="chip text-[0.68rem]">
+                              {meta.icon} Ep {y10Filtered.length + idx + 1} · {vault?.specCode || meta.title}
+                            </span>
+                          </div>
+                          <div className="flex items-center gap-1">
+                            {sitDone && <span className="chip tone-emerald">✓ Sitcom</span>}
+                            {comDone && <span className="chip tone-amber">✓ {comedy?.show || "Comedy"}</span>}
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3">
+                          <span className="text-3xl shrink-0">{t.icon}</span>
+                          <div>
+                            <div className="text-xs font-bold tone-indigo">{t.title}</div>
+                            <h2 className="font-black text-base leading-snug">
+                              {vault?.epTitle ? `“${vault.epTitle}”` : t.title}
+                            </h2>
+                            {comedy && (
+                              <p className="text-xs text-ink-soft mt-1 leading-relaxed">
+                                <strong>{comedy.show}:</strong> &ldquo;{comedy.title}&rdquo; — {comedy.cold}
+                              </p>
+                            )}
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="flex flex-wrap gap-2 pt-2 border-t border-line">
+                        <Link
+                          href={`/topic/${t.id}?tab=watch&mode=sitcom`}
+                          className="btn btn-primary text-xs py-1.5 px-3"
+                        >
+                          🍿 Watch Sitcom (+⭐)
+                        </Link>
+                        <Link
+                          href={`/topic/${t.id}?tab=watch&mode=comedy`}
+                          className="btn btn-ghost text-xs py-1.5 px-3"
+                        >
+                          😂 {comedy?.show || "Comedy"}
+                        </Link>
+                        <a
+                          href={`/season1/index.html?ep=${encodeURIComponent(t.id)}`}
+                          className="chip"
+                          title="Open in standalone Season 1 player"
+                        >
+                          ↗ Fullscreen
+                        </a>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </>
+          )}
+        </div>
+      ) : (
+        <div className="grid sm:grid-cols-2 gap-4">
+          {filtered.map((t, idx) => {
+            const meta = subjectMeta(t.subject);
+            const vault = getMemoryVault(t.id);
+            const comedy = COMEDY_SPECS[t.id];
+            const sitDone = Boolean(progress.awarded[sitcomDoneKey(t.id)]);
+            const comDone = Boolean(progress.awarded[comedyDoneKey(t.id)]);
+
+            return (
+              <div
+                key={t.id}
+                className={`card p-4 flex flex-col justify-between gap-3 accent-${t.subject}`}
+                style={{
+                  borderColor: "color-mix(in srgb, var(--accent) 30%, var(--color-line))",
+                }}
+              >
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between gap-2 flex-wrap">
+                    <span className="chip text-[0.68rem]">
+                      {meta.icon} Ep {idx + 1} · {vault?.specCode || meta.title}
+                    </span>
+                    <div className="flex items-center gap-1">
+                      {sitDone && <span className="chip tone-emerald">✓ Sitcom</span>}
+                      {comDone && <span className="chip tone-amber">✓ {comedy?.show || "Comedy"}</span>}
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <span className="text-3xl shrink-0">{t.icon}</span>
+                    <div>
+                      <div className="text-xs font-bold tone-indigo">{t.title}</div>
+                      <h2 className="font-black text-base leading-snug">
+                        {vault?.epTitle ? `“${vault.epTitle}”` : t.title}
+                      </h2>
+                      {comedy && (
+                        <p className="text-xs text-ink-soft mt-1 leading-relaxed">
+                          <strong>{comedy.show}:</strong> &ldquo;{comedy.title}&rdquo; — {comedy.cold}
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex flex-wrap gap-2 pt-2 border-t border-line">
+                  <Link
+                    href={`/topic/${t.id}?tab=watch&mode=sitcom`}
+                    className="btn btn-primary text-xs py-1.5 px-3"
+                  >
+                    🍿 Watch Sitcom (+⭐)
+                  </Link>
+                  <Link
+                    href={`/topic/${t.id}?tab=watch&mode=comedy`}
+                    className="btn btn-ghost text-xs py-1.5 px-3"
+                  >
+                    😂 {comedy?.show || "Comedy"}
+                  </Link>
+                  <a
+                    href={`/season1/index.html?ep=${encodeURIComponent(t.id)}`}
+                    className="chip"
+                    title="Open in standalone Season 1 player"
+                  >
+                    ↗ Fullscreen
+                  </a>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 }

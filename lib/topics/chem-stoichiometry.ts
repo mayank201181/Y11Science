@@ -4,6 +4,8 @@ export const chemStoichiometry: Topic = {
   id: "chem-stoichiometry",
   title: "Stoichiometry & The Mole",
   subject: "chemistry",
+  courseYear: 10,
+  courseOrder: 19,
   icon: "🧮",
   blurb: "Master moles, reacting masses, concentrations and titration calculations for IGCSE.",
   intro:

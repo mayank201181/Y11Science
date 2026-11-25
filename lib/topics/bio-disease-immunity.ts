@@ -4,6 +4,8 @@ export const bioDiseaseImmunity: Topic = {
   id: "bio-disease-immunity",
   title: "Diseases & Immunity",
   subject: "biology",
+  courseYear: 11,
+  courseOrder: 10,
   icon: "🦠",
   blurb: "Pathogens, transmission, body defences, antibodies, and vaccination.",
   intro:

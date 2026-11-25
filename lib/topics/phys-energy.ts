@@ -4,6 +4,8 @@ export const physEnergy: Topic = {
   id: "phys-energy",
   title: "Energy, Work & Power",
   subject: "physics",
+  courseYear: 10,
+  courseOrder: 30,
   icon: "⚡",
   blurb: "Energy stores, transfers, work, power, efficiency, Sankey diagrams and energy resources.",
   intro:

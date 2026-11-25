@@ -4,6 +4,8 @@ export const bioCells: Topic = {
   id: "bio-cells",
   title: "Cell Structure & Organisation",
   subject: "biology",
+  courseYear: 10,
+  courseOrder: 1,
   icon: "🔬",
   blurb: "Animal, plant and bacterial cell structure, specialised cells, levels of organisation, and magnification calculations.",
   intro: "Every living thing is made of cells — the smallest units of life. Understanding how cells are built, how they differ between animals, plants and bacteria, and how they specialise for particular jobs is the foundation of all IGCSE Biology. In this topic you will master cell ultrastructure, compare cell types, explore remarkable specialised cells, and learn to calculate magnification and actual size with confidence.",

@@ -4,6 +4,8 @@ export const physThermal: Topic = {
   id: "phys-thermal",
   title: "Thermal Physics",
   subject: "physics",
+  courseYear: 10,
+  courseOrder: 31,
   icon: "🌡️",
   blurb: "Kinetic particle model, thermal expansion, gas laws, specific heat, latent heat, and heat transfer by conduction, convection and radiation.",
   intro: "Everything you feel as 'hot' or 'cold' comes down to the random motion of particles. In this topic you will build the kinetic particle model from the ground up, use it to explain pressure, thermal expansion, and changes of state, and master three distinct mechanisms by which thermal energy moves from place to place — conduction, convection, and radiation.",

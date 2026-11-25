@@ -4,6 +4,8 @@ export const chemAnalysis: Topic = {
   id: "chem-analysis",
   title: "Experimental Techniques & Analysis",
   subject: "chemistry",
+  courseYear: 11,
+  courseOrder: 27,
   icon: "🔎",
   blurb: "Separation techniques, purity tests, ion identification, gas tests and paper chromatography.",
   intro: "Every measurement in chemistry depends on working with pure substances and reliable tests. In this topic you will master the separation techniques used to purify mixtures, learn how purity is assessed by sharp melting and boiling points, and build a systematic toolkit of chemical tests to identify cations, anions and gases. These are exactly the skills Edexcel International GCSE 4CH1 (which places strong emphasis on separation and purification) and Cambridge IGCSE 0620 Extended examiners probe — in written papers and in the practical-skills paper (Edexcel Paper 2 / Cambridge Paper 6, Alternative to Practical).",

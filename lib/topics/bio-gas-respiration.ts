@@ -4,6 +4,8 @@ export const bioGasRespiration: Topic = {
   id: "bio-gas-respiration",
   title: "Gas Exchange & Respiration",
   subject: "biology",
+  courseYear: 10,
+  courseOrder: 9,
   icon: "🫁",
   blurb: "Lungs, breathing mechanics, gas exchange adaptations, aerobic and anaerobic respiration.",
   intro: "Every cell in your body needs a constant energy supply — and that energy comes from respiration, the controlled release of chemical energy from glucose. To fuel aerobic respiration, your breathing system must deliver oxygen deep into the lungs where it can diffuse into the blood, while simultaneously removing carbon dioxide. Understanding how the breathing apparatus is built, how ventilation works, and why the alveoli are so effective at gas exchange gives you the full picture of one of biology's most elegant systems.",

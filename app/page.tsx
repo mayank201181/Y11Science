@@ -10,12 +10,23 @@ import { useHeartbeat } from "@/lib/useHeartbeat";
 import { comedyDoneKey, masterclassDoneKey, sitcomDoneKey } from "@/lib/watchKeys";
 import { MEMORY_PITFALLS } from "@/lib/memoryPitfalls";
 import { renderPitfallRichText } from "@/components/MemoryPitfallsView";
+import { sortForYear10, useCourseYearFilter } from "@/lib/courseYear";
+import { CourseYearBanner, Year11Divider } from "@/components/CourseYearBanner";
 
 export default function Home() {
   const { activeProfile, progress, dueReviews, guest } = useStore();
   useHeartbeat();
   const [spotSubj, setSpotSubj] = useState<SubjectId>("biology");
   const [spotOffset, setSpotOffset] = useState(0);
+  const year10 = useCourseYearFilter() === 10;
+  const y10Topics = useMemo(
+    () => (year10 ? sortForYear10(TOPICS).filter((t) => t.courseYear === 10) : []),
+    [year10],
+  );
+  const y11Topics = useMemo(
+    () => (year10 ? sortForYear10(TOPICS).filter((t) => t.courseYear !== 10) : []),
+    [year10],
+  );
 
   const { rank, next, progress: rp } = rankForStars(progress.stars);
   const due = dueReviews().length;
@@ -66,6 +77,7 @@ export default function Home() {
 
   return (
     <div className="space-y-8">
+      {year10 ? <CourseYearBanner y10Count={y10Topics.length} y11Count={y11Topics.length} /> : null}
       <section className="card p-6 sm:p-8 overflow-hidden relative">
         <div className="relative z-10">
           <div className="flex items-center justify-between gap-2 flex-wrap">
@@ -233,13 +245,73 @@ export default function Home() {
                 </div>
                 <p className="text-sm text-ink-soft mt-1">{s.blurb}</p>
                 <div className="mt-3 text-xs text-ink-soft font-semibold">
-                  {topics.length} topics · {read} guides · {watched} watched
+                  {year10 ? (
+                    <>
+                      {topics.filter((t) => t.courseYear === 10).length} Year 10 topics · {topics.length} full IGCSE · {read} guides
+                    </>
+                  ) : (
+                    <>
+                      {topics.length} topics · {read} guides · {watched} watched
+                    </>
+                  )}
                 </div>
               </Link>
             );
           })}
         </div>
       </section>
+
+      {year10 ? (
+        <section className="space-y-4">
+          <div className="flex items-center justify-between gap-2">
+            <h2 className="text-xl font-black">Year 10 Science Topics First</h2>
+            <Link href="/topics?year=10" className="text-xs font-extrabold tone-indigo hover:underline">
+              Filter by Biology / Chemistry / Physics →
+            </Link>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {y10Topics.map((t) => (
+              <Link
+                key={t.id}
+                href={`/topic/${t.id}`}
+                data-course-year-item={10}
+                className={`card p-3.5 flex items-start gap-3 accent-${t.subject} hover:-translate-y-0.5 transition`}
+                style={{ borderColor: "color-mix(in srgb, var(--accent) 30%, var(--color-line))" }}
+              >
+                <span className="text-2xl shrink-0">{t.icon}</span>
+                <div className="min-w-0 flex-1">
+                  <div className="flex items-center gap-1.5 flex-wrap">
+                    <span className="chip tone-indigo text-[0.68rem]">Year 10</span>
+                    <span className="text-[0.7rem] font-bold uppercase text-ink-soft">{t.subject}</span>
+                  </div>
+                  <div className="font-bold leading-snug mt-1 text-sm">{t.title}</div>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <Year11Divider count={y11Topics.length} />
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {y11Topics.map((t) => (
+              <Link
+                key={t.id}
+                href={`/topic/${t.id}`}
+                data-course-year-item={11}
+                className={`card p-3.5 flex items-start gap-3 accent-${t.subject} opacity-60 grayscale-[35%] hover:opacity-95 hover:-translate-y-0.5 transition`}
+                style={{ borderColor: "color-mix(in srgb, var(--accent) 30%, var(--color-line))" }}
+              >
+                <span className="text-2xl shrink-0">{t.icon}</span>
+                <div className="min-w-0 flex-1">
+                  <div className="flex items-center gap-1.5 flex-wrap">
+                    <span className="chip text-[0.68rem]">Year 11</span>
+                    <span className="text-[0.7rem] font-bold uppercase text-ink-soft">{t.subject}</span>
+                  </div>
+                  <div className="font-bold leading-snug mt-1 text-sm">{t.title}</div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+      ) : null}
 
       <section>
         <h2 className="text-xl font-black mb-3">Watch, Revise &amp; Sit Mock Papers</h2>

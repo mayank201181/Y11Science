@@ -4,6 +4,8 @@ export const physNuclear: Topic = {
   id: "phys-nuclear",
   title: "Nuclear Physics",
   subject: "physics",
+  courseYear: 11,
+  courseOrder: 36,
   icon: "☢️",
   blurb: "The nuclear atom, radioactivity, half-life, decay equations and safety.",
   intro:

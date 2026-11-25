@@ -4,6 +4,8 @@ export const physElectricity: Topic = {
   id: "phys-electricity",
   title: "Electricity & Circuits",
   subject: "physics",
+  courseYear: 10,
+  courseOrder: 33,
   icon: "🔋",
   blurb: "Charge, current, voltage, resistance and circuit rules — from static electricity to power bills.",
   intro: "Electricity underpins almost every technology you use, from the phone in your pocket to the power grid outside. In this topic you will build up from the microscopic picture of electrons transferring charge, through the quantitative laws that govern current, voltage and resistance, to the rules governing series and parallel circuits — and finish by calculating how much your appliances cost to run.",

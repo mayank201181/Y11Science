@@ -164,6 +164,9 @@ export function validateTopic(
   checkText(`${t.id}.title`, t.title, issues);
   checkText(`${t.id}.blurb`, t.blurb, issues);
   checkText(`${t.id}.intro`, t.intro, issues);
+  if (t.courseYear !== 10 && t.courseYear !== 11) {
+    issues.push({ where: `${t.id}.courseYear`, problem: `expected 10 or 11, got ${String(t.courseYear)}` });
+  }
 
   for (const s of t.guide) {
     const w = `${t.id}.guide[${s.heading}]`;

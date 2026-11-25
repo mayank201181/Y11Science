@@ -4,6 +4,8 @@ export const physForces: Topic = {
   id: "phys-forces",
   title: "Forces & Momentum",
   subject: "physics",
+  courseYear: 10,
+  courseOrder: 29,
   icon: "🧱",
   blurb: "Newton's laws, mass & weight, moments, pressure and momentum — the mechanics core of IGCSE Physics.",
   intro: "Forces govern everything from a falling apple to a crashing car: they change shape, speed, and direction. In this topic you will master Newton's three laws, the turning effect of forces, pressure in fluids, circular motion, stopping distances, and the conservation of momentum (including F = Δp/Δt) — all calculation-heavy areas that carry major marks in Paper 4 (Extended).",

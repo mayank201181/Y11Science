@@ -4,6 +4,8 @@ export const chemBonding: Topic = {
   id: "chem-bonding",
   title: "Chemical Bonding & Structure",
   subject: "chemistry",
+  courseYear: 10,
+  courseOrder: 18,
   icon: "🔗",
   blurb: "Ionic, covalent and metallic bonding — from dot-and-cross diagrams to giant structures and their properties.",
   intro: "Every material around you — from table salt to diamond to copper wire — gets its properties from the way its atoms bond together. In this topic you will master three types of chemical bonding (ionic, covalent, metallic), draw dot-and-cross diagrams, build giant-structure models in your mind, and use structure-to-property reasoning to explain why substances behave the way they do — exactly the skills Edexcel IGCSE examiners reward.",

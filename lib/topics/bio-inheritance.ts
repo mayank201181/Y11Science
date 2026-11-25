@@ -4,6 +4,8 @@ export const bioInheritance: Topic = {
   id: "bio-inheritance",
   title: "Inheritance & Variation",
   subject: "biology",
+  courseYear: 11,
+  courseOrder: 13,
   icon: "🧬",
   blurb: "DNA, mitosis & meiosis, Punnett squares, codominance, sex determination, variation, natural selection and evolution.",
   intro: "Every organism carries a molecular instruction manual — DNA — that is copied, shuffled and passed on through generations, explaining why offspring resemble parents yet vary. In this topic you will trace inheritance from the double helix, through cell division, all the way to evolution by natural selection, mastering the Punnett square and the language of genetics along the way.",

@@ -4,6 +4,8 @@ export const chemRates: Topic = {
   id: "chem-rates",
   title: "Rate of Reaction & Equilibrium",
   subject: "chemistry",
+  courseYear: 11,
+  courseOrder: 23,
   icon: "⏱️",
   blurb: "Collision theory, factors that change rate, measuring reactions, and Le Chatelier equilibrium including the Haber process.",
   intro: "Every chemical reaction depends on particles colliding — but not every collision leads to a reaction. Understanding *why* some conditions speed things up and others slow them down unlocks the logic behind industrial chemistry, from making ammonia to designing catalytic converters. In this topic you will master collision theory, learn to read rate graphs, and discover how reversible reactions settle into a dynamic balance — and how we can nudge that balance to our advantage.",

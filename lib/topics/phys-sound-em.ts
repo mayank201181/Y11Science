@@ -4,6 +4,8 @@ export const physSoundEm: Topic = {
   id: "phys-sound-em",
   title: "Sound & the EM Spectrum",
   subject: "physics",
+  courseYear: 11,
+  courseOrder: 34,
   icon: "🔊",
   blurb: "Longitudinal sound waves, echoes, ultrasound, and the full electromagnetic spectrum — uses and dangers.",
   intro: "Sound is a mechanical, longitudinal wave that needs a material medium to travel — it simply cannot pass through a vacuum. The electromagnetic spectrum is an entirely different family of transverse waves that all travel at the speed of light and require no medium at all. Together these two wave families underpin technologies from sonar depth-finders to medical X-rays, making them some of the most practically important ideas in IGCSE Physics.",
